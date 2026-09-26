@@ -165,3 +165,174 @@ class EvidenceCache:
         if _canonical(obj['key'])!=_canonical(key) or hashlib.sha256(_canonical(raw)).hexdigest()!=obj['payload_sha256']:
             raise ValueError('cache key/payload hash mismatch')
         return unjsonable(raw)
+
+class AdaptiveQuadratureError(RuntimeError):
+    """Raised when the bounded adaptive Eq54 quadrature cannot meet its budget."""
+
+
+# QUADPACK QK15 nodes/weights on [-1,1].  The 7-point Gauss nodes are the
+# Kronrod entries at indices 1,3,5,7.  All physical discontinuities are split
+# before this open rule is applied, so support endpoints are never sampled.
+_GK15_X=np.array([
+    .9914553711208126,.9491079123427585,.8648644233597691,
+    .7415311855993944,.5860872354676911,.4058451513773972,
+    .20778495500789847,0.0])
+_GK15_WK=np.array([
+    .022935322010529225,.06309209262997855,.10479001032225018,
+    .14065325971552592,.1690047266392679,.19035057806478542,
+    .20443294007529889,.20948214108472783])
+_GK15_WG=np.array([
+    .1294849661688697,.27970539148927667,.3818300505051189,
+    .4179591836734694])
+
+
+def _gk15_interval(evaluate,u0,u1):
+    mid=.5*(u0+u1);half=.5*(u1-u0)
+    # Order nodes as symmetric pairs followed by the centre.  evaluate_many is
+    # deliberately vector-valued so the expensive geometry can be batched.
+    us=[]
+    for x in _GK15_X[:-1]:us.extend((mid-half*x,mid+half*x))
+    us.append(mid)
+    us=np.asarray(us,float);rhos=np.sqrt(us)
+    vals=np.asarray(evaluate(rhos),float)
+    if vals.ndim==1:vals=vals[:,None]
+    if vals.shape[0]!=15 or np.any(~np.isfinite(vals)):
+        raise ValueError('evaluate must return finite shape (n_nodes,n_components)')
+    high=np.zeros(vals.shape[1]);low=np.zeros(vals.shape[1])
+    # Kronrod: pair weights for the first seven abscissae plus centre.
+    for j,w in enumerate(_GK15_WK[:-1]):high+=w*(vals[2*j]+vals[2*j+1])
+    high+=_GK15_WK[-1]*vals[-1]
+    # Gauss-7 subset: xgk indices 1,3,5 and centre index 7.
+    for w,j in zip(_GK15_WG[:-1],(1,3,5)):
+        high_pair=vals[2*j]+vals[2*j+1]
+        low+=w*high_pair
+    low+=_GK15_WG[-1]*vals[-1]
+    # Eq54 after u=rho^2: 2*pi*rho drho = pi du.
+    scale=np.pi*half
+    return dict(u0=float(u0),u1=float(u1),high=scale*high,low=scale*low,
+                error=scale*np.abs(high-low),evaluations=15)
+
+
+def _gk15_nodes(u0,u1):
+    mid=.5*(u0+u1);half=.5*(u1-u0);us=[]
+    for x in _GK15_X[:-1]:us.extend((mid-half*x,mid+half*x))
+    us.append(mid)
+    return np.asarray(us,float)
+
+
+def _gk15_reduce(u0,u1,vals):
+    vals=np.asarray(vals,float)
+    if vals.ndim==1:vals=vals[:,None]
+    if vals.shape[0]!=15 or np.any(~np.isfinite(vals)):
+        raise ValueError('evaluate must return finite shape (n_nodes,n_components)')
+    high=np.zeros(vals.shape[1]);low=np.zeros(vals.shape[1])
+    for j,w in enumerate(_GK15_WK[:-1]):high+=w*(vals[2*j]+vals[2*j+1])
+    high+=_GK15_WK[-1]*vals[-1]
+    for w,j in zip(_GK15_WG[:-1],(1,3,5)):low+=w*(vals[2*j]+vals[2*j+1])
+    low+=_GK15_WG[-1]*vals[-1]
+    scale=np.pi*.5*(u1-u0)
+    return dict(u0=float(u0),u1=float(u1),high=scale*high,low=scale*low,
+                error=scale*np.abs(high-low),evaluations=15)
+
+
+def _gk15_batch(evaluate,specs):
+    specs=list(specs)
+    if not specs:return []
+    nodes=[_gk15_nodes(a,b) for a,b in specs]
+    all_u=np.concatenate(nodes)
+    vals=np.asarray(evaluate(np.sqrt(all_u)),float)
+    if vals.ndim==1:vals=vals[:,None]
+    if vals.shape[0]!=len(all_u) or np.any(~np.isfinite(vals)):
+        raise ValueError('evaluate must return finite shape (n_nodes,n_components)')
+    return [_gk15_reduce(a,b,vals[15*i:15*(i+1)]) for i,(a,b) in enumerate(specs)]
+
+
+_GK7_X=np.array([.9604912687080203,.7745966692414834,.43424374934680256,0.0])
+_GK7_WK=np.array([.10465622602646727,.26848808986833344,.4013974147759622,.45091653865847414])
+_GK7_WG=np.array([5./9.,8./9.])
+
+def _gk7_nodes(u0,u1):
+    mid=.5*(u0+u1);half=.5*(u1-u0);us=[]
+    for x in _GK7_X[:-1]:us.extend((mid-half*x,mid+half*x))
+    us.append(mid)
+    return np.asarray(us,float)
+
+def _gk7_reduce(u0,u1,vals):
+    vals=np.asarray(vals,float)
+    if vals.ndim==1:vals=vals[:,None]
+    if vals.shape[0]!=7 or np.any(~np.isfinite(vals)):
+        raise ValueError('evaluate must return finite shape (n_nodes,n_components)')
+    high=np.zeros(vals.shape[1]);low=np.zeros(vals.shape[1])
+    for j,w in enumerate(_GK7_WK[:-1]):high+=w*(vals[2*j]+vals[2*j+1])
+    high+=_GK7_WK[-1]*vals[-1]
+    low+=_GK7_WG[0]*(vals[2]+vals[3])+_GK7_WG[1]*vals[-1]
+    scale=np.pi*.5*(u1-u0)
+    return dict(u0=float(u0),u1=float(u1),high=scale*high,low=scale*low,
+                error=scale*np.abs(high-low),evaluations=7)
+
+def _gk7_batch(evaluate,specs):
+    specs=list(specs)
+    if not specs:return []
+    nodes=[_gk7_nodes(a,b) for a,b in specs];all_u=np.concatenate(nodes)
+    vals=np.asarray(evaluate(np.sqrt(all_u)),float)
+    if vals.ndim==1:vals=vals[:,None]
+    if vals.shape[0]!=len(all_u) or np.any(~np.isfinite(vals)):
+        raise ValueError('evaluate must return finite shape (n_nodes,n_components)')
+    return [_gk7_reduce(a,b,vals[7*i:7*(i+1)]) for i,(a,b) in enumerate(specs)]
+
+
+def adaptive_seed_rhos(cutoffs,*,rule='gk15'):
+    c=np.asarray(cutoffs,float)
+    if c.ndim!=1 or len(c)<2 or c[0]!=0 or np.any(~np.isfinite(c)) or np.any(np.diff(c)<=0):
+        raise ValueError('cutoffs must be finite, start at 0 and strictly increase')
+    if rule=='gk15':node_fn=_gk15_nodes
+    elif rule=='gk7':node_fn=_gk7_nodes
+    else:raise ValueError("rule must be 'gk7' or 'gk15'")
+    r=[]
+    for a,b in zip(c[:-1],c[1:]):r.extend(np.sqrt(node_fn(a*a,b*b)).tolist())
+    return np.asarray(r,float)
+
+
+def adaptive_vector_quadrature(evaluate,cutoffs,*,rtol=1e-4,atol=1e-10,max_intervals=128,rule='gk15'):
+    """Adaptive finite Eq54 integral with known discontinuities pre-split.
+
+    `evaluate(rhos)` returns one or more nonnegative/finite indexed-state
+    integrands *without* the cylindrical Jacobian.  Integration is performed in
+    u=rho^2, for which 2*pi*rho drho = pi du.  A 7/15 Gauss-Kronrod pair gives a
+    local vector error estimate.  The global stopping test is component-wise,
+    never only on a summed total.
+
+    The estimator is numerical rather than interval-rigorous.  Budget exhaustion
+    is an explicit unresolved result, not silently accepted convergence.
+    """
+    c=np.asarray(cutoffs,float)
+    if c.ndim!=1 or len(c)<2 or c[0]!=0 or np.any(~np.isfinite(c)) or np.any(np.diff(c)<=0):
+        raise ValueError('cutoffs must be finite, start at 0 and strictly increase')
+    if not np.isfinite(rtol) or rtol<=0 or not np.isfinite(atol) or atol<0:
+        raise ValueError('require finite rtol>0 and atol>=0')
+    if not isinstance(max_intervals,int) or max_intervals<len(c)-1:
+        raise ValueError('max_intervals smaller than mandatory split count')
+    if rule=='gk15':batch_rule=_gk15_batch;evals_per=15;rule_name='GAUSS_KRONROD_7_15'
+    elif rule=='gk7':batch_rule=_gk7_batch;evals_per=7;rule_name='GAUSS_KRONROD_3_7'
+    else:raise ValueError("rule must be 'gk7' or 'gk15'")
+    intervals=batch_rule(evaluate,[(a*a,b*b) for a,b in zip(c[:-1],c[1:])])
+    neval=evals_per*len(intervals);refinements=0
+    while True:
+        total=sum((x['high'] for x in intervals),np.zeros_like(intervals[0]['high']))
+        err=sum((x['error'] for x in intervals),np.zeros_like(total))
+        tol=atol+rtol*np.abs(total)
+        if np.all(err<=tol):
+            return dict(integral=total,component_error_estimate=err,component_tolerance=tol,
+                        converged=True,interval_count=len(intervals),evaluations=neval,
+                        refinements=refinements,known_splits_preserved=c.tolist(),
+                        method='SUPPORT_SPLIT_ADAPTIVE_'+rule_name+'_IN_U_RHO2',
+                        error_claim='EMBEDDED_NUMERICAL_ESTIMATE_NOT_INTERVAL_BOUND')
+        if len(intervals)>=max_intervals:
+            worst=float(np.max(err/np.maximum(tol,np.finfo(float).tiny)))
+            raise AdaptiveQuadratureError(f'adaptive quadrature budget exhausted; worst normalized component error={worst:.6g}')
+        # Refine the interval carrying the largest normalized component error.
+        denom=np.maximum(tol,np.finfo(float).tiny)
+        scores=[float(np.max(x['error']/denom)) for x in intervals]
+        k=int(np.argmax(scores));old=intervals.pop(k);mid=.5*(old['u0']+old['u1'])
+        children=batch_rule(evaluate,[(old['u0'],mid),(mid,old['u1'])])
+        intervals[k:k]=children;neval+=2*evals_per;refinements+=1

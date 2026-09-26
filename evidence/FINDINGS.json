@@ -1,5 +1,5 @@
 {
-  "node": "BASS_HE_AUDIT1",
+  "node": "BASS_HE_AUDIT2_ADAPTIVE_EQ54",
   "scope": "recovered DR1-DR7 implementation and seven return archives",
   "findings": [
     {
@@ -30,7 +30,8 @@
       "severity": "major",
       "category": "source_convention",
       "claim": "printed Eq52/Eq55 exponent discrepancy; normalization mapping not established",
-      "status": "TWO_EXPLICIT_LANES_UNRESOLVED"
+      "status": "TWO_EXPLICIT_LANES_UNRESOLVED_QUANTITATIVELY_DOMINANT",
+      "evidence": "At E=0.5 keV/u indexed loss differs ~21.0036 vs 1.95526 a0^2 between factors 1 and 2."
     },
     {
       "id": "A05",
@@ -81,6 +82,45 @@
       "category": "validation_scope",
       "claim": "same-code cross-runtime match and stochasticity are implementation evidence, not independent physical oracle",
       "status": "CLAIM_DOWNGRADE_PRESERVED"
+    },
+    {
+      "id": "A12",
+      "severity": "major",
+      "category": "numerical_quadrature",
+      "claim": "coarse fixed-order Eq54 total agreement can hide large component errors; known support jumps must be split before smooth quadrature",
+      "status": "SUPPORT_SPLIT_COMPONENTWISE_ADAPTIVE_GATE_IMPLEMENTED",
+      "evidence": "adaptive exact/surrogate runs; gk7/gk15 comparison"
+    },
+    {
+      "id": "A13",
+      "severity": "major",
+      "category": "optimization_validation",
+      "claim": "Delta(rho) surrogate can accelerate refinement only if exact held-out geometry validates it and support extrapolation is forbidden",
+      "status": "LOCAL_CUBIC_IN_U_HELDOUT_VALIDATED_NOT_GLOBAL_BOUND",
+      "evidence": "DR8_ADAPTIVE_SURROGATE_STUDY.json; SURROGATE_VALIDATION.json"
+    },
+    {
+      "id": "A14",
+      "severity": "major",
+      "category": "physical_model",
+      "claim": "rotational matching-radius systematic exceeds the 0.2% quadrature target in the low-energy factor-2 lane",
+      "status": "MODEL_SYSTEMATIC_OPEN",
+      "evidence": "Rcut +/-10% moves 0.5 keV/u factor-2 reaction-loss area by about -6.44%/+6.82%."
+    },
+    {
+      "id": "A15",
+      "severity": "notice",
+      "category": "runtime_environment",
+      "claim": "long multiprocessing sessions in the sandbox show wall-time inflation not reproduced in individual or short-batch scientific solves",
+      "status": "ENVIRONMENT_RUNTIME_ANOMALY_OPEN_NO_SCIENTIFIC_FIX_RETAINED"
+    },
+    {
+      "id": "A16",
+      "severity": "major",
+      "category": "provenance_cache",
+      "claim": "file-level geometry source hashing can invalidate exact geometry cache after unrelated helper edits",
+      "status": "DEPENDENCY_SCOPE_REFINED_SCRATCH_REKEY_REQUIRES_KERNEL_IDENTITY_PROOF",
+      "evidence": "DR8_CACHE_REKEY_RECEIPT.json"
     }
   ]
 }

@@ -145,3 +145,20 @@ SciSpace에서 [6–8]도 후보로 발견했지만 이번 응답에서 그 전�
 [6] Krstic & Janev, PRA47,3894 (1993), DOI 10.1103/PhysRevA.47.3894. SciSpace metadata/abstract 후보, full-text 미감사.
 [7] Grozdanov & Solov'ev, PRA90,032706 (2014), DOI 10.1103/PhysRevA.90.032706. dynamical-basis 후보, full-text 미감사.
 [8] Grozdanov & Solov'ev, EPJD (2018), DOI 10.1140/epjd/e2018-80758-x. hidden-crossing 적용범위 후보, full-text 미감사.
+
+
+## 7. AUDIT2: support-split adaptive Eq. (54)와 모델 민감도
+
+AUDIT1의 fixed-order order1/2 비교는 indexed-state vector에서 최대 25.94% 차이를 보였으므로 Eq. (54) 수렴 gate를 열어 둘 수 없었다. AUDIT2에서는 단순히 order를 높이는 대신 물리적으로 알려진 불연속을 먼저 분리하고, `u=rho^2`를 사용하여 `2*pi*rho drho = pi du`로 바꿨다. 모든 Eq. (52) support cutoff와 inherited rotational matching boundary를 정확한 subinterval 경계로 넣고, 각 smooth interval에서 embedded Gauss-Kronrod pair를 사용한다. 수렴 판정은 총합 하나가 아니라 모든 material indexed-state component에 `atol+rtol*|I_i|`를 적용한다.
+
+저비용 adaptive lane은 Gauss-3/Kronrod-7, 독립 verification lane은 Gauss-7/Kronrod-15다. 2% exact support-split GK7은 7 intervals, 49 evaluations, refinement 없이 component-wise gate를 통과했다. 이후 `Delta(rho)`가 현재 static-Coulomb/straight-line model에서는 energy 및 exponent factor와 독립이라는 separability를 이용해 `u=rho^2`의 local-cubic surrogate를 도입했다. 이 surrogate는 branch support 밖으로 extrapolate하지 않으며 exact held-out geometry validation을 런타임 gate로 요구한다.
+
+10개 exact sentinel의 최대 상대 Delta 오차는 `1.388034624856879e-05`였고 threshold `2e-4`를 통과했다. 별도의 212 exact cached GK15 point에 대한 적대적 hold-out에서는 최대 상대오차가 `4.3469e-05`였으며 worst branch는 S23였다. 이것은 numerical held-out evidence이지 전역 interpolation error theorem은 아니다.
+
+0.2% adaptive target에서 GK7은 8 intervals / 63 evaluations / 1 refinement, GK15는 7 intervals / 105 evaluations / 0 refinement였다. 두 독립 quadrature lane의 최대 component 상대차이는 `3.3442230407223834e-05`, 전체 vector relative L1 차이는 `4.3540716529505146e-06`이었다. S23 contour를 32->64 panels로 올린 별도 검산의 최대 상대 변화는 `2.2470166629794012e-06`였다.
+
+그러나 numerical convergence가 물리모형 gate를 닫지는 않는다. rotational matching radius를 ±10% 변화시키면 total indexed reaction-loss area는 0.5 keV/u factor-2 lane에서 약 `-6.44% / +6.82%` 이동한다. 이는 0.2% quadrature target보다 훨씬 크다. factor-1 0.5 keV/u는 약 `-0.478% / +0.510%`, 고에너지 5 keV/u lane은 더 작았다. 따라서 low-energy 결과의 dominant uncertainty는 현재 적분오차가 아니라 matching-radius authority와 model choice다.
+
+또한 nominal indexed reaction-loss area는 exponent factor=1과 2 사이에서 크게 다르다. 0.5 keV/u에서는 약 `21.0036` 대 `1.95526 a0^2`, 5 keV/u에서는 `148.5255` 대 `60.4574 a0^2`다. Eq. (52)/Eq. (55)의 factor-of-two source convention은 단순 수치오차가 아니라 결과를 지배하는 독립 gate다.
+
+따라서 AUDIT2의 판정은 `SCOPED_NUMERICAL_EQ54_CONVERGENCE_PASS`이며, `PHYSICAL_PRODUCTION_CROSS_SECTION`은 주장하지 않는다. stochastic-vs-coherent dynamics, low-energy trajectory validity, upper-shell semantics, exponent normalization, rotational matching-radius authority는 계속 OPEN이다. 구조화된 수치는 `evidence/DR8_ADAPTIVE_SURROGATE_STUDY.json` 및 `evidence/DR8_FINAL_VERIFICATION.json`에 기록한다.
