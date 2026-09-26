@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BASS_HE — audited He–H collision research kernels
 
 **독립 논문 기반 재구현이며 저자 ARSENY 코드가 아니다.** 물리 production release가 아닌 audit-led research release `0.2.0`이다.
@@ -65,3 +66,16 @@ python3 -m venv .venv
 - 배포 라이선스는 프로젝트 소유자가 별도로 정하며, 저자 program의 라이선스를 자동 상속한다고 표시하지 않는다.
 
 원본 데이터 identity와 실행 증거는 `evidence/`, 보존된 기존 값과 convention 문서는 `legacy/`에 있다. GitHub publication의 실제 상태는 별도 publication receipt를 확인한다. 로컬 commit을 remote push 완료로 부르지 않는다.
+=======
+# BASS_HE
+
+Independent paper-derived research implementation of He–H charge-transfer methods. **Not the author ARSENY code.**
+
+## Status
+
+Adversarial audit and analytic-optimization work is in progress. Baseline: `BASS_ARSENY_MANUAL_DR7_20260926_v1.zip`, SHA-256 `efcc252fcf0bfc8ed8d4a36949c0d1ee859835bd356c3fb5a0b317a1dd6625b8`.
+
+A small duplicated-sheet residual alone is not a branch-point certificate. The audit has reproduced this counterexample and added double-root and local monodromy checks. Full cross-section and production CT2 validation remain **open**.
+
+The forthcoming source/evidence commit will include the audit, derivations, bounded tests and measured optimizations. Third-party paper PDFs, credentials and machine-local environments are not redistributed.
+>>>>>>> origin/main
