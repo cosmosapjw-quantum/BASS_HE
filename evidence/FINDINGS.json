@@ -135,7 +135,7 @@
       "severity": "major",
       "category": "trajectory_model",
       "claim": "straight-line nuclear trajectories are not adequate for low-energy rotational/isotope physics",
-      "status": "SOURCE_ANCHORED_TRAJECTORY_GATE_OPEN__RUTHERFORD_PROXY_DIAGNOSTIC_ADDED__NOT_CORRECTION",
+      "status": "OBSERVABLE_SPECIFIC__TOTAL_H_CAPTURE_RECENTLY_TRAJECTORY_ROBUST__STATE_ISOTOPE_ROTATIONAL_GATES_REMAIN_OPEN",
       "evidence": "DR9A_TRAJECTORY_GATE.json"
     },
     {

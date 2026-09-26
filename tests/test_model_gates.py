@@ -91,3 +91,13 @@ def test_rutherford_proxy_rejects_being_used_as_negative_or_invalid_geometry():
     from bass_he.model_gates import rutherford_proxy_rmin_a0, rutherford_proxy_bmax_for_radius
     with pytest.raises(ValueError): rutherford_proxy_rmin_a0(100,'H',-0.1)
     with pytest.raises(ValueError): rutherford_proxy_bmax_for_radius(100,'H',0.0)
+
+
+
+def test_trajectory_observable_gate_distinguishes_total_from_state_and_isotope_sensitive_claims():
+    from bass_he.model_gates import trajectory_observable_gate
+    assert trajectory_observable_gate('total_capture_H') == 'RECENT_COUPLED_TRAJECTORY_STUDY_SUPPORTS_APPROXIMATE_TRAJECTORY_ROBUSTNESS'
+    assert trajectory_observable_gate('state_resolved_capture') == 'LOW_ENERGY_TRAJECTORY_SENSITIVITY_REMAINS_OPEN'
+    assert trajectory_observable_gate('isotope_resolved_capture') == 'LOW_ENERGY_TRAJECTORY_SENSITIVITY_ESTABLISHED_IN_SOURCE'
+    assert trajectory_observable_gate('projectile_energy_loss') == 'TRAJECTORY_SENSITIVITY_ESTABLISHED'
+    with pytest.raises(ValueError): trajectory_observable_gate('everything')

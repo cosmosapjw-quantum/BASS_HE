@@ -285,5 +285,22 @@
       }
     }
   },
-  "proxy_interpretation": "For H and inherited l=1 Rcut, the proxy accessible-area fraction is 0 at 100 eV/u, 0.554 at 250 eV/u, 0.777 at 500 eV/u, and 0.978 at 5 keV/u. This quantifies potential straight-line over-access but is not an authorized multiplicative correction."
+  "proxy_interpretation": "For H and inherited l=1 Rcut, the proxy accessible-area fraction is 0 at 100 eV/u, 0.554 at 250 eV/u, 0.777 at 500 eV/u, and 0.978 at 5 keV/u. This quantifies potential straight-line over-access but is not an authorized multiplicative correction.",
+  "recent_counterevidence": {
+    "citation": "M. Nichols, D. Hanstorp, R. Cabrera-Trujillo, Eur. Phys. J. D 80, 34 (2026), DOI 10.1140/epjd/s10053-026-01147-6",
+    "system": "H+ and He2+ projectiles on H(1s), coupled electron-nuclear LTDSE versus straight-line trajectories, 0.1-900 keV/u",
+    "findings": [
+      "total He2+ + H electron-capture cross section shows no significant trajectory dependence in the studied range",
+      "state-resolved low-energy He+ 2s and 2p capture shows trajectory-dependent redistribution: straight-line tends to underestimate 2s and overestimate 2p",
+      "small-impact-parameter capture probabilities show the largest coupled-vs-straight-line differences",
+      "projectile energy loss/stopping remains trajectory sensitive"
+    ]
+  },
+  "observable_specific_gates": {
+    "total_capture_H": "RECENT_COUPLED_TRAJECTORY_STUDY_SUPPORTS_APPROXIMATE_TRAJECTORY_ROBUSTNESS",
+    "state_resolved_capture": "LOW_ENERGY_TRAJECTORY_SENSITIVITY_REMAINS_OPEN",
+    "isotope_resolved_capture": "LOW_ENERGY_TRAJECTORY_SENSITIVITY_ESTABLISHED_IN_SOURCE",
+    "projectile_energy_loss": "TRAJECTORY_SENSITIVITY_ESTABLISHED"
+  },
+  "reconciled_interpretation": "Stolterfoht 2010 and Nichols et al. 2026 are not treated as contradictory. Total H-target capture can be trajectory-robust while state-resolved redistribution, isotope-sensitive rotational dynamics, and stopping remain trajectory dependent. The present BASS_HE audit integrates indexed-state probabilities rather than only a total-capture scalar, so the state-resolved trajectory gate remains OPEN even though the total-capture gate is partially relaxed."
 }

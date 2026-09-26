@@ -129,3 +129,25 @@ def rutherford_proxy_accessible_area_fraction(energy_eV_per_amu: float, isotope:
         raise ValueError("finite radius_a0>0 required")
     r0=source_headon_rmin_a0(energy_eV_per_amu,isotope)
     return max(0.0,1.0-r0/R)
+
+
+
+def trajectory_observable_gate(observable: str) -> str:
+    """Return the current literature gate for a trajectory-sensitive observable.
+
+    A 2026 coupled electron-nuclear LTDSE study reports total He2+ + H capture
+    to be approximately trajectory-robust over its studied range, while
+    state-resolved low-energy capture still redistributes between final states.
+    Stolterfoht et al. 2010 establish strong low-energy isotope sensitivity,
+    and stopping/energy loss is trajectory sensitive.
+    """
+    gates={
+        'total_capture_H':'RECENT_COUPLED_TRAJECTORY_STUDY_SUPPORTS_APPROXIMATE_TRAJECTORY_ROBUSTNESS',
+        'state_resolved_capture':'LOW_ENERGY_TRAJECTORY_SENSITIVITY_REMAINS_OPEN',
+        'isotope_resolved_capture':'LOW_ENERGY_TRAJECTORY_SENSITIVITY_ESTABLISHED_IN_SOURCE',
+        'projectile_energy_loss':'TRAJECTORY_SENSITIVITY_ESTABLISHED',
+    }
+    try:
+        return gates[str(observable)]
+    except KeyError as exc:
+        raise ValueError('unsupported observable gate') from exc

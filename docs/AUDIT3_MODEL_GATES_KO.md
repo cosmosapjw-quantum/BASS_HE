@@ -39,3 +39,10 @@ Source head-on Rmin을 repulsive Coulomb turning-point 식의 R0로만 사용하
 ## 6. DR9B literature support for factor 2
 
 Richter & Solov'ev, Phys. Rev. A 48, 432 (1993)은 같은 advanced-adiabatic/hidden-crossing 계열에서 branch-point transition probability를 P=exp(-2 Delta/v)로 쓰며, semiclassical action 형태 P(E,rho)=exp{-2 Im[S(E,rho)]}도 제시한다. 따라서 factor-2는 이제 단순 modulus-square derivation뿐 아니라 직접적인 선행 hidden-crossing 문헌 지지를 가진다. Appendix-A Nmax=3 shell benchmark도 factor-2를 강하게 선호한다. 다만 CPC 2023 Eq.(52)의 p=exp(-Delta/v) 표기가 어떤 내부 normalization/elementary-step convention을 뜻하는지는 여전히 해명되지 않았으므로 Eq.(52)를 오타로 확정하거나 production default를 바꾸지 않는다.
+
+
+## 7. Observable-specific trajectory reconciliation
+
+Nichols, Hanstorp & Cabrera-Trujillo, Eur. Phys. J. D 80, 34 (2026)은 coupled electron-nuclear LTDSE와 straight-line trajectory를 0.1--900 keV/u에서 직접 비교해 He2+ + H의 total electron-capture cross section에는 significant trajectory difference가 없다고 보고한다. 그러나 같은 연구는 low-energy 2s/2p state-resolved capture에서 straight-line이 각각 under/over-estimate하는 redistribution을 보이고, small impact parameter probability에서 trajectory difference가 가장 크다고 보고한다. Stopping/energy-loss 역시 trajectory sensitive하다.
+
+따라서 Stolterfoht 2010의 저에너지 isotope/rotational trajectory sensitivity와 2026 total-capture robustness는 서로 배타적이지 않다. 현재 BASS_HE observable은 total 하나가 아니라 indexed-state distribution을 적분하므로 state-resolved trajectory gate는 OPEN으로 유지한다. 반면 total H-target capture에 대해서는 straight-line model을 자동 FAIL로 분류하지 않고 recent coupled-trajectory evidence에 의해 partially relaxed한다.
