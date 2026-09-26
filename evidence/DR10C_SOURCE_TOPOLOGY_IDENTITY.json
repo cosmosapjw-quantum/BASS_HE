@@ -1,0 +1,47 @@
+{
+  "node": "AUDIT6_DR10C_SOURCE_TOPOLOGY_IDENTITY",
+  "source": {
+    "citation": "R. K. Janev, J. Pop-Jordanov, E. A. Solov'ev, J. Phys. B 30, L353-L360 (1997), DOI 10.1088/0953-4075/30/10/005",
+    "equation": "Eq. (15)",
+    "coherent_formula": "P=p12(1-p12)(1-p23)|exp[i(chi1+gamma)]+(1-pS)sqrt(1-p_rot)exp[i(chi2-gamma)]|^2",
+    "uniform_phase_average": "Pbar=p12(1-p12)(1-p23)[1+(1-pS)^2(1-p_rot)]"
+  },
+  "current_sparse_eq50": {
+    "event_order_recession": [
+      "S23",
+      "Qother",
+      "Q12",
+      "Qm1",
+      "Q23"
+    ],
+    "event_order_approach": [
+      "Q23",
+      "Qm1",
+      "Q12",
+      "Qother",
+      "S23"
+    ],
+    "initial_state": "united 2p-sigma (j=3)",
+    "final_state": "1s-sigma (j=1)",
+    "symbolic_result": "p12(1-p12)(1-p23)[1+(1-pS)^2(1-p_rot)]",
+    "qother_qm1_dependence": "NONE",
+    "reverse_pi_column_dependence": "NONE_FOR_THIS_INITIAL_FINAL_ELEMENT"
+  },
+  "verification": {
+    "wolfram_symbolic_difference": "0",
+    "random_stress_points": 10000,
+    "random_stress_max_abs_error": 1.1102230246251565e-16,
+    "irrelevant_branch_sensitivity_max_abs": 0
+  },
+  "verdicts": [
+    "JANEV1997_EQ15_COHERENT_FORMULA_IMPLEMENTED",
+    "UNIFORM_PHASE_AVERAGE_ANALYTICALLY_CLOSED",
+    "CURRENT_SPARSE_EQ50_ONE_CHANNEL_TOPOLOGY__EXACT_SOURCE_PHASE_AVERAGE_IDENTITY",
+    "QOTHER_QM1_IRRELEVANT_FOR_THIS_CHANNEL__EXACT",
+    "COMPLETE_PATH_PHASES__STILL_OPEN",
+    "FORWARD_EQ13_EQ14_TOPOLOGY__NOT_YET_AUDITED",
+    "FULL_COHERENT_NETWORK__NOT_IMPLEMENTED",
+    "PRODUCTION_CT2__CLOSED_NOT_STARTED"
+  ],
+  "production": false
+}

@@ -84,3 +84,63 @@ def hidden_crossing_two_pass_probability(p: float, dynamical_phase: float, topol
     if not math.isfinite(chi) or not math.isfinite(gamma):
         raise ValueError("phases must be finite")
     return 4.0*p*(1.0-p)*math.cos(chi+gamma)**2
+
+
+
+def janev1997_eq15_probability(p12: float, p23: float, p_s: float,
+                               p_rot: float, chi1: float, chi2: float,
+                               *, gamma: float=math.pi/2) -> float:
+    """Janev-Pop-Jordanov-Solov'ev 1997 Eq. (15).
+
+    This is the inverse-reaction two-path 1s-sigma/2p-sigma channel formula:
+      p12(1-p12)(1-p23) |exp[i(chi1+gamma)]
+        +(1-p_s)sqrt(1-p_rot)exp[i(chi2-gamma)]|^2.
+
+    The function reproduces the published coherent topology but does not
+    construct chi1/chi2.  Complete reaction-path phase authority remains the
+    separate DR10B gate.
+    """
+    p12=_p(p12);p23=_p(p23);p_s=_p(p_s);p_rot=_p(p_rot)
+    c1=float(chi1);c2=float(chi2);g=float(gamma)
+    if not all(math.isfinite(x) for x in (c1,c2,g)):
+        raise ValueError("phases must be finite")
+    a1=complex(math.cos(c1+g),math.sin(c1+g))
+    amp=(1.0-p_s)*math.sqrt(1.0-p_rot)
+    a2=amp*complex(math.cos(c2-g),math.sin(c2-g))
+    return p12*(1.0-p12)*(1.0-p23)*abs(a1+a2)**2
+
+
+def janev1997_eq15_phase_average(p12: float, p23: float,
+                                  p_s: float, p_rot: float) -> float:
+    """Uniform relative-phase average of Janev et al. 1997 Eq. (15).
+
+    The exact average is
+      p12(1-p12)(1-p23) [1+(1-p_s)^2(1-p_rot)].
+    """
+    p12=_p(p12);p23=_p(p23);p_s=_p(p_s);p_rot=_p(p_rot)
+    return p12*(1.0-p12)*(1.0-p23)*(1.0+(1.0-p_s)**2*(1.0-p_rot))
+
+
+
+def janev1997_eq13_phase_average_simplified_no_3d_rotation(
+    p23: float, p12: float, p_s23: float, p_rot2: float
+) -> float:
+    """Simplified Eq. (13) diagnostic with all 3d-manifold rotation disabled.
+
+    This helper intentionally omits the published 3d rotational factor and all
+    N=4 couplings.  It is NOT the full Janev-1997 Eq. (13) and it is NOT an
+    identity for the current full P_rot implementation.  It is retained only
+    to reproduce the algebraic submodel used in the AUDIT6 counterexample.
+    """
+    p23=_p(p23);p12=_p(p12);p_s23=_p(p_s23);p_rot2=_p(p_rot2)
+    surviving_inner=(1.0-p12)*(1.0-p_s23)*math.sqrt(1.0-p_rot2)
+    first_path=p12+surviving_inner
+    return p23*(1.0-p23)*(1.0+first_path*first_path)
+
+
+def janev1997_eq14_2ppi_probability(
+    p23: float, p12: float, p_s23: float, p_pi3dpi: float, p_rot2: float
+) -> float:
+    """Janev et al. 1997 Eq. (14) for the 2p-pi final channel."""
+    p23=_p(p23);p12=_p(p12);p_s23=_p(p_s23);p_pi3dpi=_p(p_pi3dpi);p_rot2=_p(p_rot2)
+    return (1.0-p23)*(1.0-p12)*(1.0-p_s23)*(1.0-p_pi3dpi)*p_rot2

@@ -1,0 +1,57 @@
+{
+  "node": "AUDIT6_DR10D_FORWARD_TOPOLOGY_AUDIT",
+  "source": {
+    "citation": "R. K. Janev, J. Pop-Jordanov, E. A. Solov'ev, J. Phys. B 30, L353-L360 (1997), DOI 10.1088/0953-4075/30/10/005",
+    "eq13_scope": "3d-sigma coherent forward channel; compared only after explicit Nmax=3 projection with N=4 transitions disabled",
+    "eq14": "P_2ppi=(1-p23)(1-p12)(1-pS)(1-p_pi3dpi)p_rot"
+  },
+  "eq14": {
+    "current_sparse_identity": "EXACT",
+    "wolfram_symbolic_difference": "0",
+    "random_stress_points": 10000,
+    "random_stress_max_abs_error": 1.1102230246251565e-16
+  },
+  "eq13_nmax3_projection": {
+    "definitions": [
+      "s=sqrt(1-p_rot)",
+      "B=(1-p12)(1-pS)s"
+    ],
+    "source_phase_average": "p23(1-p23)[1+(p12+B)^2]",
+    "reversible_markov": "p23(1-p23)[1+p12^2+B^2]",
+    "reversible_minus_source": "-2 p23(1-p23)p12(1-p12)(1-pS)s",
+    "current_absorbing": "reversible_markov+p23^2",
+    "current_minus_source": "p23^2-2 p23(1-p23)p12(1-p12)(1-pS)s",
+    "wolfram_decomposition": "EXACT",
+    "random_stress_points": 10000,
+    "random_decomposition_max_abs_residual": 2.220446049250313e-16
+  },
+  "causes": [
+    "same-chi1 intra-contour coherent cross term is erased by population-only propagation",
+    "upper Nmax=3 Q23 absorbing semantics adds p23^2 relative to a reversible bound 3d-sigma channel"
+  ],
+  "verdicts": [
+    "JANEV1997_EQ14_2PPI__EXACT_CURRENT_TOPOLOGY_IDENTITY",
+    "JANEV1997_EQ13_SIMPLIFIED_NO_3D_ROTATION__ALGEBRAIC_DIAGNOSTIC_ONLY",
+    "JANEV1997_EQ13_FULL_CURRENT_P_ROT__OPEN_AFTER_ADVERSARIAL_COUNTERCHECK",
+    "CURRENT_NMAX_SINK__NOT_PHYSICAL_3DSIGMA_CHANNEL",
+    "FULL_FORWARD_COHERENT_NETWORK__OPEN",
+    "PRODUCTION_CT2__CLOSED_NOT_STARTED"
+  ],
+  "production": false,
+  "correction": {
+    "status": "PRIOR_EQ13_EXACT_DECOMPOSITION_DOWNGRADED",
+    "reason": "The original diagnostic projection suppressed the N=3,l=2 rotational block, whereas the current P_rot propagates it.",
+    "archived_q2_full_P_rot_countercheck": {
+      "max_nodewise_residual_0p5_keV_u": 0.010279455868261494,
+      "max_nodewise_residual_5_keV_u": 0.23027093903892096
+    },
+    "retained": [
+      "Eq14 2p-pi exact current-topology identity",
+      "Eq15 inverse-sigma exact uniform-phase-average identity"
+    ],
+    "open": [
+      "full Janev Eq13 with actual 3d rotational block",
+      "full source-vs-current 3d-sigma decomposition"
+    ]
+  }
+}
