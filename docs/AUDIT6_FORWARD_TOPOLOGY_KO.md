@@ -56,3 +56,16 @@ The source comparison is channel-selective:
 This is stronger than a generic warning about coherence. It identifies the exact algebraic place where the scoped stochastic model ceases to reproduce the published coherent topology.
 
 No attempt is made to call the Nmax sink a physical 3d-sigma cross section.
+
+
+## Correction after full-P_rot adversarial replay
+
+The first version of this audit disabled the N=3,l=2 rotational block while comparing the projected Eq. (13) with the actual current transport. That produced an exact decomposition only for a simplified no-3d-rotation submodel.
+
+Replaying the archived q2 evidence with the actual full P_rot falsifies that promotion: the nodewise residual of "current = reversible Markov + p23^2" reaches about 0.0103 at 0.5 keV/u and 0.2303 at 5 keV/u. The current l=2 rotational block therefore materially participates in the 3d-sigma channel.
+
+The corrected claim is:
+- Eq. (14) 2p-pi exact current-topology identity: RETAINED.
+- Eq. (15) inverse sigma phase-average identity: RETAINED.
+- Eq. (13) two-term decomposition: VALID ONLY IN THE EXPLICIT SIMPLIFIED NO-3D-ROTATION SUBMODEL.
+- Actual full-P_rot Eq. (13) topology: OPEN and requires the complete published 3d rotational factor/path structure.

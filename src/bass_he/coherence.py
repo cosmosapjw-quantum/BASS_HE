@@ -122,15 +122,15 @@ def janev1997_eq15_phase_average(p12: float, p23: float,
 
 
 
-def janev1997_eq13_phase_average_nmax3_projection(
+def janev1997_eq13_phase_average_simplified_no_3d_rotation(
     p23: float, p12: float, p_s23: float, p_rot2: float
 ) -> float:
-    """Uniform-phase average of 1997 Eq. (13) under an explicit Nmax=3 projection.
+    """Simplified Eq. (13) diagnostic with all 3d-manifold rotation disabled.
 
-    Higher N=4 couplings from 3d-sigma (Q 3d->4f, S 3d->4d and the associated
-    higher-shell rotational loss) are frozen to zero transition probability.
-    This is a diagnostic projection of the published formula, not the full
-    Janev-1997 forward-channel result.
+    This helper intentionally omits the published 3d rotational factor and all
+    N=4 couplings.  It is NOT the full Janev-1997 Eq. (13) and it is NOT an
+    identity for the current full P_rot implementation.  It is retained only
+    to reproduce the algebraic submodel used in the AUDIT6 counterexample.
     """
     p23=_p(p23);p12=_p(p12);p_s23=_p(p_s23);p_rot2=_p(p_rot2)
     surviving_inner=(1.0-p12)*(1.0-p_s23)*math.sqrt(1.0-p_rot2)

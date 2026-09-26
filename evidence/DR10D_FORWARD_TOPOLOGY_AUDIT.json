@@ -31,11 +31,27 @@
   ],
   "verdicts": [
     "JANEV1997_EQ14_2PPI__EXACT_CURRENT_TOPOLOGY_IDENTITY",
-    "JANEV1997_EQ13_3DSIGMA__CURRENT_TOPOLOGY_MISMATCH",
-    "EQ13_MISMATCH__COHERENCE_AND_ABSORBING_COMPONENTS_EXACTLY_DECOMPOSED",
+    "JANEV1997_EQ13_SIMPLIFIED_NO_3D_ROTATION__ALGEBRAIC_DIAGNOSTIC_ONLY",
+    "JANEV1997_EQ13_FULL_CURRENT_P_ROT__OPEN_AFTER_ADVERSARIAL_COUNTERCHECK",
     "CURRENT_NMAX_SINK__NOT_PHYSICAL_3DSIGMA_CHANNEL",
     "FULL_FORWARD_COHERENT_NETWORK__OPEN",
     "PRODUCTION_CT2__CLOSED_NOT_STARTED"
   ],
-  "production": false
+  "production": false,
+  "correction": {
+    "status": "PRIOR_EQ13_EXACT_DECOMPOSITION_DOWNGRADED",
+    "reason": "The original diagnostic projection suppressed the N=3,l=2 rotational block, whereas the current P_rot propagates it.",
+    "archived_q2_full_P_rot_countercheck": {
+      "max_nodewise_residual_0p5_keV_u": 0.010279455868261494,
+      "max_nodewise_residual_5_keV_u": 0.23027093903892096
+    },
+    "retained": [
+      "Eq14 2p-pi exact current-topology identity",
+      "Eq15 inverse-sigma exact uniform-phase-average identity"
+    ],
+    "open": [
+      "full Janev Eq13 with actual 3d rotational block",
+      "full source-vs-current 3d-sigma decomposition"
+    ]
+  }
 }

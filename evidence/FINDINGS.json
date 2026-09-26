@@ -182,8 +182,8 @@
       "id": "A24",
       "severity": "critical_if_state_resolved_promoted",
       "category": "coherent_topology",
-      "claim": "Janev-1997 forward channels are selective: Eq14 2p-pi matches current stochastic topology exactly, while Eq13 3d-sigma differs by a lost same-phase coherent cross term plus an Nmax absorbing-sink bias",
-      "status": "EQ14_EXACT__EQ13_MISMATCH_EXACTLY_DECOMPOSED__PHYSICAL_3DSIGMA_PROMOTION_BLOCKED",
+      "claim": "Janev-1997 Eq14 2p-pi matches current topology exactly, while the earlier Eq13 3d-sigma decomposition was only valid in a simplified no-3d-rotation submodel",
+      "status": "EQ14_EXACT__EQ13_SIMPLIFIED_DECOMPOSITION_DOWNGRADED__FULL_P_ROT_EQ13_OPEN",
       "evidence": "DR10D_FORWARD_TOPOLOGY_AUDIT.json"
     }
   ]

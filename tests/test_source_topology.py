@@ -105,31 +105,3 @@ def test_janev1997_eq14_matches_current_sparse_forward_channel():
         out=_current_forward_outputs(p12,p23,p_s,p_rot,p_other,p_m1,back)
         want=janev1997_eq14_2ppi_probability(p23,p12,p_s,p_m1,p_rot)
         assert out[j2ppi] == pytest.approx(want,rel=5e-14,abs=5e-14)
-
-
-def test_eq13_absorbing_mismatch_has_exact_two_term_decomposition():
-    from bass_he.coherence import janev1997_eq13_phase_average_nmax3_projection
-    rng=np.random.default_rng(20260929)
-    j3dsigma=state_index(3,2,0)-1
-    for _ in range(256):
-        p12,p23,p_s,p_rot,p_other,p_m1,back=rng.random(7)
-        out=_current_forward_outputs(p12,p23,p_s,p_rot,p_other,p_m1,back)
-        src=janev1997_eq13_phase_average_nmax3_projection(p23,p12,p_s,p_rot)
-        s=math.sqrt(1-p_rot)
-        lost_same_phase=2*p23*(1-p23)*p12*(1-p12)*(1-p_s)*s
-        absorbing_bias=p23*p23
-        assert out[j3dsigma]-src == pytest.approx(
-            absorbing_bias-lost_same_phase,rel=8e-14,abs=8e-14)
-
-
-def test_reversible_q23_isolates_missing_same_phase_cross_term():
-    from bass_he.coherence import janev1997_eq13_phase_average_nmax3_projection
-    rng=np.random.default_rng(20260930)
-    j3dsigma=state_index(3,2,0)-1
-    for _ in range(128):
-        p12,p23,p_s,p_rot,p_other,p_m1,back=rng.random(7)
-        out=_current_forward_outputs(
-            p12,p23,p_s,p_rot,p_other,p_m1,back,q23_absorbing=False)
-        src=janev1997_eq13_phase_average_nmax3_projection(p23,p12,p_s,p_rot)
-        lost=2*p23*(1-p23)*p12*(1-p12)*(1-p_s)*math.sqrt(1-p_rot)
-        assert out[j3dsigma]-src == pytest.approx(-lost,rel=8e-14,abs=8e-14)
