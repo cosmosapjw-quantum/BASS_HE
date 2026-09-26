@@ -1,5 +1,5 @@
 {
-  "node": "BASS_HE_AUDIT5_PHASE_AUTHORITY",
+  "node": "BASS_HE_AUDIT6_SOURCE_TOPOLOGY",
   "scope": "recovered DR1-DR7 implementation and seven return archives",
   "findings": [
     {
@@ -169,6 +169,14 @@
       "claim": "the real part of a local Eq56 branch contour is not the complete coherent reaction-path phase",
       "status": "LOCAL_IMAG_ACTION_AUTHORIZED_FOR_SINGLE_PASS__LOCAL_REAL_ACTION_AS_FULL_PHASE_FORBIDDEN__COMPLETE_PATH_ACTION_REQUIRED",
       "evidence": "DR10B_PHASE_AUTHORITY_INVENTORY.json"
+    },
+    {
+      "id": "A23",
+      "severity": "major",
+      "category": "coherent_topology",
+      "claim": "for the Janev-1997 Eq.(15) inverse sigma channel, current sparse Eq50 stochastic propagation exactly equals the uniform-phase average of the published coherent two-path formula",
+      "status": "EXACT_SYMBOLIC_IDENTITY_CLOSED_FOR_ONE_CHANNEL__FORWARD_CHANNELS_AND_FULL_NETWORK_OPEN",
+      "evidence": "DR10C_SOURCE_TOPOLOGY_IDENTITY.json"
     }
   ]
 }
