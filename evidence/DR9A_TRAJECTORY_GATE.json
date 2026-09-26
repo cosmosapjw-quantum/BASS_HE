@@ -1,0 +1,43 @@
+{
+  "node": "AUDIT3_DR9A_TRAJECTORY_DOMAIN_GATE",
+  "source": {
+    "doi": "10.1103/PhysRevA.81.052704",
+    "paper": "Stolterfoht et al. 2010",
+    "statements": [
+      "realistic classical internuclear trajectories are crucial for low-energy isotope effects",
+      "straight-line trajectories cannot reproduce rotational-transition-dominated isotope effects",
+      "head-on Rmin at 100 eV/u: H 0.65 a0, D 0.40 a0, T 0.30 a0",
+      "radial coupling dominates above about 500 eV/u; rotational coupling grows below that and is important around 100 eV/u"
+    ]
+  },
+  "critical_energy_eV_per_amu_where_source_headon_Rmin_equals_inherited_matching_radius": {
+    "H": {
+      "l1": 111.42857142857143,
+      "l2": 33.91304347826087
+    },
+    "D": {
+      "l1": 68.57142857142857,
+      "l2": 20.869565217391305
+    },
+    "T": {
+      "l1": 51.42857142857143,
+      "l2": 15.652173913043478
+    }
+  },
+  "current_audit2_energies": {
+    "0.5_keV_per_amu": {
+      "E_eV_per_amu": 500,
+      "H_Rmin_a0": 0.13,
+      "H_Rmin_over_l1_matching_radius": 0.22285714285714284,
+      "verdict": "TRANSITION_BOUNDARY__TRAJECTORY_MODEL_GATE_OPEN"
+    },
+    "5_keV_per_amu": {
+      "E_eV_per_amu": 5000,
+      "H_Rmin_a0": 0.013,
+      "H_Rmin_over_l1_matching_radius": 0.022285714285714284,
+      "verdict": "RADIAL_DOMINANT_SOURCE_REGIME__STRAIGHT_LINE_MORE_PLAUSIBLE_NOT_INDEPENDENTLY_VALIDATED"
+    }
+  },
+  "claim": "SOURCE_ANCHORED_DIAGNOSTIC_NOT_REALISTIC_TRAJECTORY_CALCULATION",
+  "low_energy_extension_policy": "DO_NOT_EXTEND_BELOW_0.5_KEV_PER_AMU_AS_PRODUCTION_WITHOUT_TRAJECTORY_AWARE_MODEL_OR_BENCHMARK"
+}

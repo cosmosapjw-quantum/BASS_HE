@@ -1,5 +1,5 @@
 {
-  "node": "BASS_HE_AUDIT2_ADAPTIVE_EQ54",
+  "node": "BASS_HE_AUDIT3_MODEL_GATES",
   "scope": "recovered DR1-DR7 implementation and seven return archives",
   "findings": [
     {
@@ -121,6 +121,38 @@
       "claim": "file-level geometry source hashing can invalidate exact geometry cache after unrelated helper edits",
       "status": "DEPENDENCY_SCOPE_REFINED_SCRATCH_REKEY_REQUIRES_KERNEL_IDENTITY_PROOF",
       "evidence": "DR8_CACHE_REKEY_RECEIPT.json"
+    },
+    {
+      "id": "A17",
+      "severity": "notice",
+      "category": "surrogate_validation",
+      "claim": "endpoint and adaptive-refinement nodes require adversarial exact surrogate holdout",
+      "status": "100_EXACT_HOLDOUTS_PASS__MAX_RELATIVE_ERROR_4P01E-5__NOT_GLOBAL_BOUND",
+      "evidence": "DR8V_ADVERSARIAL_HOLDOUT.json"
+    },
+    {
+      "id": "A18",
+      "severity": "major",
+      "category": "trajectory_model",
+      "claim": "straight-line nuclear trajectories are not adequate for low-energy rotational/isotope physics",
+      "status": "SOURCE_ANCHORED_TRAJECTORY_GATE_OPEN_AT_0P5_KEV_PER_AMU__5_KEV_MORE_PLAUSIBLE_NOT_VALIDATED",
+      "evidence": "DR9A_TRAJECTORY_GATE.json"
+    },
+    {
+      "id": "A19",
+      "severity": "major",
+      "category": "source_convention",
+      "claim": "Eq52 factor-1 and Eq55 factor-2 cannot both be the same-normalization single-pass probability",
+      "status": "FACTOR2_THEORY_AND_AUTHOR_NMAX3_BENCHMARK_FAVORED__SOURCE_NORMALIZATION_OPEN",
+      "evidence": "DR9B_EXPONENT_CHANNEL_AUDIT.json"
+    },
+    {
+      "id": "A20",
+      "severity": "major",
+      "category": "channel_semantics",
+      "claim": "upper Nmax absorbing population is not a disjoint physical ionization channel",
+      "status": "APPENDIX_A_CX_N3_EQUALS_IONIZATION_AND_CORDIR_NONDISJOINTNESS_CONFIRMED",
+      "evidence": "DR9B_EXPONENT_CHANNEL_AUDIT.json"
     }
   ]
 }
