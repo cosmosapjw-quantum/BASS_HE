@@ -1,0 +1,86 @@
+{
+  "node": "BASS_HE_AUDIT1",
+  "scope": "recovered DR1-DR7 implementation and seven return archives",
+  "findings": [
+    {
+      "id": "A01",
+      "severity": "critical",
+      "category": "mathematical",
+      "claim": "duplicate-root equality is not a branch certificate",
+      "status": "REPAIRED_NUMERICAL_FOLD_AND_MONODROMY_GATE",
+      "evidence": "BRANCH_FALSE_POSITIVE_WITNESS.json"
+    },
+    {
+      "id": "A02",
+      "severity": "major",
+      "category": "numerical",
+      "claim": "successful solves and small residuals do not prove sheet identity or quadrature convergence",
+      "status": "SHEET_GUARDS_IMPLEMENTED_QUADRATURE_STILL_OPEN",
+      "evidence": "DISCRETIZATION_AUDIT.json"
+    },
+    {
+      "id": "A03",
+      "severity": "major",
+      "category": "physical_model",
+      "claim": "probability products erase coherent two-passage phase",
+      "status": "EXPLICIT_MARKOV_MODEL_LIMITATION_NOT_REPAIRED_AS_COHERENT"
+    },
+    {
+      "id": "A04",
+      "severity": "major",
+      "category": "source_convention",
+      "claim": "printed Eq52/Eq55 exponent discrepancy; normalization mapping not established",
+      "status": "TWO_EXPLICIT_LANES_UNRESOLVED"
+    },
+    {
+      "id": "A05",
+      "severity": "critical_if_promoted",
+      "category": "observable",
+      "claim": "integrated identity survival tail is not finite elastic scattering",
+      "status": "FINITE_OFFDIAGONAL_OBSERVABLE_IMPLEMENTED"
+    },
+    {
+      "id": "A06",
+      "severity": "major",
+      "category": "physical_model",
+      "claim": "upper Nmax surrogate is not simultaneously independent physical bound capture and ionization",
+      "status": "DISJOINT_LABEL_API_INDEXED_PILOT_ONLY"
+    },
+    {
+      "id": "A07",
+      "severity": "major",
+      "category": "physical_domain",
+      "claim": "straight-line and small-R model is not low-energy END trajectory physics",
+      "status": "DOMAIN_LIMITATION_OPEN"
+    },
+    {
+      "id": "A08",
+      "severity": "major",
+      "category": "implementation",
+      "claim": "same-key cache race and overwrite/resume evidence loss",
+      "status": "LOCKS_IMMUTABLE_BINDINGS_AND_ATTEMPT_SNAPSHOTS_TESTED"
+    },
+    {
+      "id": "A09",
+      "severity": "major",
+      "category": "numerical",
+      "claim": "difference-form exact swap erases a 1e-80 rare population",
+      "status": "CONVEX_UPDATE_REPAIRED",
+      "evidence": "RED_RARE_CHANNEL.txt"
+    },
+    {
+      "id": "A10",
+      "severity": "notice",
+      "category": "runtime_recovery",
+      "claim": "only stale DR7 README files recovered under DR8 path",
+      "status": "NO_DR8_EXECUTION_INHERITED"
+    },
+    {
+      "id": "A11",
+      "severity": "major",
+      "category": "validation_scope",
+      "claim": "same-code cross-runtime match and stochasticity are implementation evidence, not independent physical oracle",
+      "status": "CLAIM_DOWNGRADE_PRESERVED"
+    }
+  ]
+}

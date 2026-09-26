@@ -51,3 +51,10 @@ def test_top_shell_is_not_counted_as_bound_capture_and_sink():
     out=mod.channel_partition(np.array([.2,.3,.5]),labels)
     assert out['bound_total']==.5 and out['sink_total']==.5
     assert out['bound_total']+out['sink_total']==1
+
+
+def test_exact_swap_does_not_erase_a_tiny_positive_channel():
+    mod=api(); initial=np.array([[1.],[1e-80]])
+    y=mod.apply_eq50(np.array([[1.]]),[(0,1,False)],np.eye(2)[None],initial)
+    # Two exact swaps must restore both channels, not round the rare one to zero.
+    np.testing.assert_array_equal(y[0],initial)

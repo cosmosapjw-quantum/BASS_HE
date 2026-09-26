@@ -31,7 +31,7 @@ def apply_eq50(probabilities,events,P_rot,initial):
         if sink:
             y[:,i]=(1-q)*yi;y[:,j]=yj+q*yi
         else:
-            y[:,i]=yi+q*(yj-yi);y[:,j]=yj+q*(yi-yj)
+            y[:,i]=(1-q)*yi+q*yj;y[:,j]=(1-q)*yj+q*yi
     for k in reversed(range(len(events))):update(k)
     y=rot@y
     for k in range(len(events)):update(k)

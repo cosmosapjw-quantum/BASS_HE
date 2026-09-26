@@ -7,3 +7,6 @@ runs/
 *.pdf
 *.zip
 *.bundle
+
+build/
+dist/
