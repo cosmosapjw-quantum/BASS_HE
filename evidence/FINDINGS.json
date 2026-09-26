@@ -1,5 +1,5 @@
 {
-  "node": "BASS_HE_AUDIT6_SOURCE_TOPOLOGY",
+  "node": "BASS_HE_AUDIT7_CHANNEL_SEMANTICS",
   "scope": "recovered DR1-DR7 implementation and seven return archives",
   "findings": [
     {
@@ -185,6 +185,14 @@
       "claim": "Janev-1997 Eq14 2p-pi matches current topology exactly, while the earlier Eq13 3d-sigma decomposition was only valid in a simplified no-3d-rotation submodel",
       "status": "EQ14_EXACT__EQ13_SIMPLIFIED_DECOMPOSITION_DOWNGRADED__FULL_P_ROT_EQ13_OPEN",
       "evidence": "DR10D_FORWARD_TOPOLOGY_AUDIT.json"
+    },
+    {
+      "id": "A25",
+      "severity": "critical_if_physical_channels_promoted",
+      "category": "channel_semantics",
+      "claim": "CPC-2023 Nmax=3 output labels are non-disjoint: united upper-shell states correlate to bound separated states, while Appendix-A ionization equals separated n=3 capture at both test energies",
+      "status": "SOURCE_EXPORT_ALIAS_NONDISJOINTNESS_CLOSED__INTERNAL_Q23_ABSORBING_SEMANTICS_OPEN",
+      "evidence": "DR11A_CHANNEL_SEMANTICS.json"
     }
   ]
 }

@@ -1,0 +1,127 @@
+{
+  "node": "AUDIT7_DR11A_CHANNEL_SEMANTICS",
+  "source_facts": {
+    "cpc_section_2_7": "ionization channel is identified with population of the upper shell; downward transitions from the upper shell are closed",
+    "appendix_cordir_nmax3": [
+      {
+        "united": [
+          3,
+          0,
+          0
+        ],
+        "separated": {
+          "center": "Z2",
+          "n": 3
+        }
+      },
+      {
+        "united": [
+          3,
+          1,
+          0
+        ],
+        "separated": {
+          "center": "Z2",
+          "n": 3
+        }
+      },
+      {
+        "united": [
+          3,
+          2,
+          0
+        ],
+        "separated": {
+          "center": "Z2",
+          "n": 2
+        }
+      },
+      {
+        "united": [
+          3,
+          1,
+          1
+        ],
+        "separated": {
+          "center": "Z2",
+          "n": 3
+        }
+      },
+      {
+        "united": [
+          3,
+          2,
+          1
+        ],
+        "separated": {
+          "center": "Z2",
+          "n": 3
+        }
+      },
+      {
+        "united": [
+          3,
+          2,
+          2
+        ],
+        "separated": {
+          "center": "Z2",
+          "n": 3
+        }
+      }
+    ],
+    "appendix_aliases": {
+      "0.5_keV_u": {
+        "capture_n3_cm2": 3.285e-18,
+        "ionization_cm2": 3.285e-18,
+        "exact_equal": true
+      },
+      "5_keV_u": {
+        "capture_n3_cm2": 7.708e-17,
+        "ionization_cm2": 7.708e-17,
+        "exact_equal": true
+      }
+    }
+  },
+  "branch_destination_audit": {
+    "Q23": {
+      "united_Nmax": true,
+      "separated_n": 2,
+      "semantic_tension": "BOUND_CORRELATION_INSIDE_UPPER_TRUNCATION_SHELL"
+    },
+    "S23": {
+      "united_Nmax": true,
+      "separated_n": 3
+    },
+    "Qother": {
+      "united_Nmax": true,
+      "separated_n": 3
+    },
+    "Qm1": {
+      "united_Nmax": true,
+      "separated_n": 3
+    }
+  },
+  "archived_q2_factor2_diagnostic": {
+    "status": "STRUCTURAL_ONLY_NOT_CONVERGED_PRODUCTION_RESULT",
+    "0.5_keV_u": {
+      "mapped_n3_area_a0sq": 0.09526898422137335,
+      "all_united_N3_area_a0sq": 1.2633512363359138,
+      "ratio": 13.260887020694026
+    },
+    "5_keV_u": {
+      "mapped_n3_area_a0sq": 2.471528160203186,
+      "all_united_N3_area_a0sq": 59.98791671114194,
+      "ratio": 24.271589406535547
+    }
+  },
+  "verdicts": [
+    "SOURCE_EXPORT_CHANNELS__NONDISJOINT_TRUNCATION_ALIASES",
+    "APPENDIX_A_N3_CAPTURE_EQUALS_IONIZATION__EXACT_SOURCE_ORACLE",
+    "Q23_DESTINATION__UNITED_NMAX_BUT_SEPARATED_N2",
+    "INTERNAL_2023_Q23_ABSORBING_RULE__UNRESOLVED_FROM_PUBLICATION_OUTPUT",
+    "REACTION_LOSS_AREA__MUST_NOT_BE_RELABELED_PHYSICAL_IONIZATION",
+    "PRODUCTION_CHANNEL_PARTITION__OPEN"
+  ],
+  "production": false
+}
