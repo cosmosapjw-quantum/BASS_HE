@@ -49,6 +49,13 @@ python3 -m venv .venv
 
 이 명령은 physical capture/ionization 합이 아니라 indexed-state off-diagonal area를 출력한다. 기존 order1/2 비교의 vector 오차가 최대25.9%여서 **수렴 판정은 OPEN**이다. 해상도를 크게 늘리는 것으로 모형의 coherence/trajectory/upper-shell/exponent ambiguities가 해결되지는 않는다.
 
+
+## AUDIT2 adaptive Eq. (54)
+
+`audit2/adaptive-eq54` adds support-split, component-wise adaptive Eq. (54) research integration in `u=rho^2`, explicit exponent-factor lanes, and an exact-held-out-validated local-cubic `Delta(u)` surrogate. The current numerical result reaches a 0.2% component-wise target with independent GK3/7 and GK7/15 agreement, but **does not promote the result to a physical production cross section**. At 0.5 keV/u the ±10% rotational matching-radius sensitivity reaches about 6–7% in the factor-2 lane, and the Eq. (52)/Eq. (55) exponent normalization remains unresolved.
+
+Use `scripts/run_research.py --stage adaptive`; `--geometry-mode exact` is the direct lane and `--geometry-mode surrogate` requires exact runtime held-out validation before integration.
+
 ## 파일과 실패 보존
 
 `RUN_BINDING.json`은 source/Python/NumPy/수치 설정을 고정한다. `EP_CERTIFICATES.json`, `GEOMETRY_RESULTS.json`, `INITIAL_COLUMN_OUTPUTS.json`, `SUMMARY.json`은 각 단계에서 atomic write된다. 실패는 traceback과 함께 남고 임의 0으로 대체하지 않는다. 동시에 같은 run을 열면 lock으로 거부한다. `.RUN.lock`이나 cache의 `.lock` 파일을 지워 우회하지 않는다. 중단 후 재개 단위는 완료된 branch/geometry이며 Newton 내부 stack의 byte-level 복원은 아니다.

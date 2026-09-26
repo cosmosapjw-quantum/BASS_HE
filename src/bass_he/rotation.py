@@ -77,14 +77,15 @@ def rotation_batch(N,l,energies,rhos,*,steps=32,R_cut=None):
                 velocity_policy='PAPER_LEGACY_27.07_1.836153')
 
 
-def full_rotation_batch(Nmax,energies,rhos,*,steps=32):
+def full_rotation_batch(Nmax,energies,rhos,*,steps=32,R_cut_scale=1.0):
     from arseny_reimpl.state_index import state_index
     E,r=np.broadcast_arrays(np.asarray(energies,float),np.asarray(rhos,float));E=E.ravel();r=r.ravel()
+    if not np.isfinite(R_cut_scale) or R_cut_scale<=0:raise ValueError('finite positive R_cut_scale required')
     dim=state_index(Nmax,Nmax-1,Nmax-1)
     P=np.broadcast_to(np.eye(dim),(len(E),dim,dim)).copy()
     for N in range(2,Nmax+1):
         for l in range(1,N):
             inds=np.array([state_index(N,l,m)-1 for m in range(l+1)])
-            block=rotation_batch(N,l,E,r,steps=steps)['P_abs']
+            block=rotation_batch(N,l,E,r,steps=steps,R_cut=s_sigma_boundary(l)*R_cut_scale)['P_abs']
             P[:,inds[:,None],inds]=block
     return P
