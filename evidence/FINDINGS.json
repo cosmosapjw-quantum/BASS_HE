@@ -1,5 +1,5 @@
 {
-  "node": "BASS_HE_AUDIT4_COHERENCE_GATE",
+  "node": "BASS_HE_AUDIT5_PHASE_AUTHORITY",
   "scope": "recovered DR1-DR7 implementation and seven return archives",
   "findings": [
     {
@@ -161,6 +161,14 @@
       "claim": "Eq50 probability-matrix transport discards Stückelberg phase; isolated double-pass Markov propagation equals only the uniform phase average of the coherent result",
       "status": "ISOLATED_EQUIVALENCE_CLOSED__ADIABATIC_TOTAL_CROSS_SECTION_PHASE_AVERAGING_SOURCE_SUPPORTED__STATE_RESOLVED_FULL_NETWORK_COHERENCE_OPEN",
       "evidence": "DR10_COHERENCE_GATE.json"
+    },
+    {
+      "id": "A22",
+      "severity": "critical_if_coherent_solver_opened",
+      "category": "phase_authority",
+      "claim": "the real part of a local Eq56 branch contour is not the complete coherent reaction-path phase",
+      "status": "LOCAL_IMAG_ACTION_AUTHORIZED_FOR_SINGLE_PASS__LOCAL_REAL_ACTION_AS_FULL_PHASE_FORBIDDEN__COMPLETE_PATH_ACTION_REQUIRED",
+      "evidence": "DR10B_PHASE_AUTHORITY_INVENTORY.json"
     }
   ]
 }
