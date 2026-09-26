@@ -1,5 +1,5 @@
 {
-  "node": "BASS_HE_AUDIT5_PHASE_AUTHORITY",
+  "node": "BASS_HE_AUDIT6_COHERENT_TOPOLOGY",
   "scope": "recovered DR1-DR7 implementation and seven return archives",
   "findings": [
     {
@@ -169,6 +169,14 @@
       "claim": "the real part of a local Eq56 branch contour is not the complete coherent reaction-path phase",
       "status": "LOCAL_IMAG_ACTION_AUTHORIZED_FOR_SINGLE_PASS__LOCAL_REAL_ACTION_AS_FULL_PHASE_FORBIDDEN__COMPLETE_PATH_ACTION_REQUIRED",
       "evidence": "DR10B_PHASE_AUTHORITY_INVENTORY.json"
+    },
+    {
+      "id": "A23",
+      "severity": "notice",
+      "category": "coherent_topology",
+      "claim": "phase-averaged Janev-Pop-Jordanov-Solov'ev 1997 Eq.(15) and phase-free Eq.(14) should match the scoped Eq.(50) Markov topology for the corresponding Nmax=3 non-absorbing channels",
+      "status": "EQ14_EXACT_TOPOLOGY_IDENTITY_PASS__EQ15_UNIFORM_PHASE_AVERAGE_IDENTITY_PASS__EQ13_OUT_OF_SCOPE_DUE_ADDITIONAL_HIGHER_SHELL_BRANCHES",
+      "evidence": "DR10C_COHERENT_TOPOLOGY_VALIDATION.json"
     }
   ]
 }
