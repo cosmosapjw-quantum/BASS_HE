@@ -1,5 +1,5 @@
 {
-  "node": "BASS_HE_AUDIT3_MODEL_GATES",
+  "node": "BASS_HE_AUDIT4_COHERENCE_GATE",
   "scope": "recovered DR1-DR7 implementation and seven return archives",
   "findings": [
     {
@@ -153,6 +153,14 @@
       "claim": "upper Nmax absorbing population is not a disjoint physical ionization channel",
       "status": "APPENDIX_A_CX_N3_EQUALS_IONIZATION_AND_CORDIR_NONDISJOINTNESS_CONFIRMED",
       "evidence": "DR9B_EXPONENT_CHANNEL_AUDIT.json"
+    },
+    {
+      "id": "A21",
+      "severity": "major",
+      "category": "coherence_model",
+      "claim": "Eq50 probability-matrix transport discards Stückelberg phase; isolated double-pass Markov propagation equals only the uniform phase average of the coherent result",
+      "status": "ISOLATED_PHASE_AVERAGE_EQUIVALENCE_CLOSED__FULL_NETWORK_COHERENCE_AND_DEPHASING_AUTHORITY_OPEN",
+      "evidence": "DR10_COHERENCE_GATE.json"
     }
   ]
 }

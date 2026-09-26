@@ -6,6 +6,13 @@ diagnostics used by the AUDIT3 research loop.
 from __future__ import annotations
 import math
 from arseny_reimpl.rotational import s_sigma_boundary
+from .coherence import (
+    markov_double_pass_probability,
+    coherent_double_pass_probability,
+    phase_averaged_double_pass_probability,
+    coherent_double_pass_envelope,
+    phase_uncertainty_report,
+)
 
 _RMIN_100_EVU_A0 = {"H": 0.65, "D": 0.40, "T": 0.30}
 
