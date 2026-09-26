@@ -81,11 +81,23 @@
     "authority for random-phase/dephasing assumptions if Markov propagation is retained as a physical approximation"
   ],
   "verdicts": [
-    "ISOLATED_DOUBLE_PASS_MARKOV_EQUALS_UNIFORM_PHASE_AVERAGE__PROVED_AND_TESTED",
-    "COHERENT_PHASE_ENVELOPE_IS_ORDER_UNITY_RELATIVE_TO_MARKOV_MEAN",
-    "FULL_EQ50_PHASE_AVERAGE_EQUIVALENCE__NOT_ESTABLISHED",
-    "CURRENT_EQ50_STOCHASTIC_TRANSPORT__PHASE_ERASED_MODEL",
+    "ISOLATED_DOUBLE_PASS_MARKOV_EQUALS_UNIFORM_PHASE_AVERAGE__PROVED_TESTED_AND_SOURCE_ALIGNED",
+    "FACTOR2_ONE_PASS__DIRECT_SAME_SYSTEM_HIDDEN_CROSSING_SUPPORT",
+    "TOPOLOGICAL_PHASE_GAMMA_PI_OVER_2__SOURCE_SUPPORTED_ADIABATIC_LIMIT",
+    "TOTAL_CROSS_SECTION_PHASE_AVERAGING__LITERATURE_SUPPORTED_IN_ADIABATIC_LIMIT",
+    "FULL_EQ50_STATE_RESOLVED_PHASE_AVERAGE_EQUIVALENCE__NOT_ESTABLISHED",
+    "CURRENT_EQ50_STOCHASTIC_TRANSPORT__PHASE_ERASED_MODEL_WITH_ADIABATIC_TOTAL_CROSS_SECTION_PRECEDENT",
     "COHERENT_MULTI_BRANCH_PRODUCTION_SOLVER__NOT_OPENED",
     "PRODUCTION_CT2__CLOSED_NOT_STARTED"
-  ]
+  ],
+  "direct_hidden_crossing_authority": {
+    "citation": "R. K. Janev, J. Pop-Jordanov, E. A. Solov'ev, J. Phys. B 30, L353-L360 (1997), DOI 10.1088/0953-4075/30/10/005",
+    "same_system": "He2+ + H and inverse charge exchange",
+    "one_pass": "q=exp(-xi), p=q^2=exp(-2 xi)",
+    "topological_phase": "gamma=pi/2 for a square-root branch point in the adiabatic v->0 limit",
+    "two_pass": "P=4 p (1-p) cos^2[chi(b)+gamma]",
+    "impact_parameter_average": "at sufficiently small v, chi(b) varies rapidly with b and cos^2 may be replaced by mean 1/2 in total-cross-section integration",
+    "modified_ARSENY": "the 1997 work states that a modified ARSENY evolution matrix incorporated dynamical and topological phases",
+    "scope_limit": "source averaging statement is for adiabatic total cross sections; it is not authority for phase erasure in differential/state-resolved/full multibranch observables at arbitrary velocity"
+  }
 }

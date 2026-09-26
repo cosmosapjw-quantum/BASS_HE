@@ -27,3 +27,12 @@ Using the factor-2 single-pass lane favored by DR9B: at 5 keV/u the Q23 branch h
 - random-phase/decoherence authority: OPEN;
 - coherent multi-branch transport: NOT IMPLEMENTED;
 - physical production cross section / production CT2: CLOSED.
+
+
+## 5. Same-system hidden-crossing phase authority
+
+Janev, Pop-Jordanov & Solov'ev (J. Phys. B 30, L353, 1997) provide the missing same-system phase structure explicitly. They write q=exp(-xi), so the one-pass transition probability is p=q^2=exp(-2 xi). For a square-root branch point the topological phase is gamma=pi/2 in the adiabatic v->0 limit, and the two-pass probability is P=4 p(1-p) cos^2[chi(b)+gamma]. This is algebraically equivalent to the generic sin^2 form after the pi/2 phase shift.
+
+The same paper states that chi(b) varies inversely with v and oscillates rapidly with impact parameter at sufficiently small v. Under the impact-parameter integral for the total cross section, cos^2 can then be replaced by its mean 1/2, so the phase does not affect the total cross section in the adiabatic region. It also reports a modified ARSENY evolution matrix that included dynamical and topological phases.
+
+This materially refines the gate: phase averaging has direct hidden-crossing authority for adiabatic total cross sections, but not automatically for differential probabilities, state-resolved outputs, finite-v multibranch interference, or the present absorbing-sink semantics.

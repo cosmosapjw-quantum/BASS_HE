@@ -60,3 +60,27 @@ def phase_uncertainty_report(p: float) -> dict:
         "relative_half_width_about_markov":rel,
         "scope":"ISOLATED_SYMMETRIC_DOUBLE_PASS_ONLY_NOT_FULL_EQ50_NETWORK",
     }
+
+
+
+def adiabatic_topological_phase() -> float:
+    """Square-root hidden-crossing topological phase in the v->0 limit.
+
+    Janev, Pop-Jordanov & Solov'ev (J. Phys. B 30, L353, 1997) give gamma=pi/2
+    for a square-root branching point in the adiabatic limit.
+    """
+    return math.pi/2.0
+
+
+def hidden_crossing_two_pass_probability(p: float, dynamical_phase: float, topological_phase: float | None = None) -> float:
+    """Source-aligned two-pass hidden-crossing interference probability.
+
+    P=4 p(1-p) cos^2(chi+gamma), with gamma=pi/2 by default in the
+    adiabatic limit. This is still an isolated two-state formula, not the
+    complete multi-branch ARSENY evolution matrix.
+    """
+    p=_p(p);chi=float(dynamical_phase)
+    gamma=adiabatic_topological_phase() if topological_phase is None else float(topological_phase)
+    if not math.isfinite(chi) or not math.isfinite(gamma):
+        raise ValueError("phases must be finite")
+    return 4.0*p*(1.0-p)*math.cos(chi+gamma)**2

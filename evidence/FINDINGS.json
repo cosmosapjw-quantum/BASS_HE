@@ -159,7 +159,7 @@
       "severity": "major",
       "category": "coherence_model",
       "claim": "Eq50 probability-matrix transport discards Stückelberg phase; isolated double-pass Markov propagation equals only the uniform phase average of the coherent result",
-      "status": "ISOLATED_PHASE_AVERAGE_EQUIVALENCE_CLOSED__FULL_NETWORK_COHERENCE_AND_DEPHASING_AUTHORITY_OPEN",
+      "status": "ISOLATED_EQUIVALENCE_CLOSED__ADIABATIC_TOTAL_CROSS_SECTION_PHASE_AVERAGING_SOURCE_SUPPORTED__STATE_RESOLVED_FULL_NETWORK_COHERENCE_OPEN",
       "evidence": "DR10_COHERENCE_GATE.json"
     }
   ]
