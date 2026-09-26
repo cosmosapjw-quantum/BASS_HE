@@ -101,3 +101,30 @@ def test_trajectory_observable_gate_distinguishes_total_from_state_and_isotope_s
     assert trajectory_observable_gate('isotope_resolved_capture') == 'LOW_ENERGY_TRAJECTORY_SENSITIVITY_ESTABLISHED_IN_SOURCE'
     assert trajectory_observable_gate('projectile_energy_loss') == 'TRAJECTORY_SENSITIVITY_ESTABLISHED'
     with pytest.raises(ValueError): trajectory_observable_gate('everything')
+
+
+def test_two_pass_markov_is_phase_average_of_coherent_interference():
+    import numpy as np
+    from bass_he.model_gates import markov_double_pass_probability, coherent_double_pass_probability
+    x,w=np.polynomial.legendre.leggauss(32)
+    phases=(x+1)*math.pi/2
+    for p in (1e-6,0.01,0.2,0.5,0.9,1-1e-6):
+        avg=sum(wi*coherent_double_pass_probability(p,phi) for wi,phi in zip(w,phases))/2
+        assert avg == pytest.approx(markov_double_pass_probability(p), rel=2e-14, abs=2e-14)
+
+
+def test_coherent_two_pass_envelope_contains_markov_average_and_reaches_twice_it():
+    from bass_he.model_gates import markov_double_pass_probability, coherent_double_pass_envelope
+    for p in (0.01,0.2,0.5,0.8,0.99):
+        lo,hi=coherent_double_pass_envelope(p)
+        pm=markov_double_pass_probability(p)
+        assert lo == 0.0
+        assert hi == pytest.approx(2*pm)
+        assert lo <= pm <= hi <= 1.0
+
+
+def test_coherent_probability_input_validation():
+    from bass_he.model_gates import coherent_double_pass_probability, markov_double_pass_probability
+    with pytest.raises(ValueError): markov_double_pass_probability(-0.1)
+    with pytest.raises(ValueError): coherent_double_pass_probability(1.1,0.0)
+    with pytest.raises(ValueError): coherent_double_pass_probability(0.5,float('nan'))
