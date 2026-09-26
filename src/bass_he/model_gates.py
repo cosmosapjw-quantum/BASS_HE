@@ -93,3 +93,39 @@ def upper_shell_absorbing_diagnostics(Nmax: int = 3) -> list[dict]:
             "claim":"SOURCE_TRUNCATION_DIAGNOSTIC_NOT_DISJOINT_PHYSICAL_CHANNEL_ASSIGNMENT",
         })
     return rows
+
+
+
+def rutherford_proxy_rmin_a0(energy_eV_per_amu: float, isotope: str, impact_parameter_a0: float) -> float:
+    """Repulsive-Coulomb turning-point proxy anchored to source head-on Rmin.
+
+    With R0=k/E fixed by the source head-on diagnostic and asymptotic impact
+    parameter b, a pure repulsive 1/R trajectory gives
+        r_min=(R0+sqrt(R0^2+4 b^2))/2.
+    Stolterfoht et al. explicitly state that even a Coulomb-trajectory
+    approximation is inadequate at the low-energy end, so this is a geometric
+    sensitivity bracket only, never a physical trajectory correction.
+    """
+    b=float(impact_parameter_a0)
+    if not math.isfinite(b) or b < 0:
+        raise ValueError("finite impact_parameter_a0>=0 required")
+    r0=source_headon_rmin_a0(energy_eV_per_amu,isotope)
+    return 0.5*(r0+math.sqrt(r0*r0+4.0*b*b))
+
+
+def rutherford_proxy_bmax_for_radius(energy_eV_per_amu: float, isotope: str, radius_a0: float) -> float:
+    """Largest asymptotic b whose Coulomb proxy reaches radius_a0."""
+    R=float(radius_a0)
+    if not math.isfinite(R) or R <= 0:
+        raise ValueError("finite radius_a0>0 required")
+    r0=source_headon_rmin_a0(energy_eV_per_amu,isotope)
+    return math.sqrt(max(0.0,R*(R-r0)))
+
+
+def rutherford_proxy_accessible_area_fraction(energy_eV_per_amu: float, isotope: str, radius_a0: float) -> float:
+    """Coulomb-proxy accessible disk area / straight-line pi R^2; diagnostic only."""
+    R=float(radius_a0)
+    if not math.isfinite(R) or R <= 0:
+        raise ValueError("finite radius_a0>0 required")
+    r0=source_headon_rmin_a0(energy_eV_per_amu,isotope)
+    return max(0.0,1.0-r0/R)

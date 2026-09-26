@@ -30,3 +30,12 @@ This strongly favors factor-2 as the theory/benchmark research lane, but does no
 - DR9B exponent: factor-2 theory-and-author-benchmark favored; source normalization remains OPEN.
 - Nmax upper-shell physical channel partition: OPEN.
 - Physical production cross section / BASS CT2 promotion: CLOSED_NOT_STARTED.
+
+
+## 5. DR9A Coulomb accessibility proxy
+
+Source head-on Rmin을 repulsive Coulomb turning-point 식의 R0로만 사용하면, impact parameter b에 대해 rmin=(R0+sqrt(R0^2+4b^2))/2이고 주어진 matching radius Rcut에 도달할 수 있는 최대 b는 bmax^2=Rcut(Rcut-R0)이다. 따라서 straight-line disk pi Rcut^2 대비 접근 가능한 proxy area fraction은 max(0,1-R0/Rcut)이다. H, l=1 inherited Rcut에서는 이 fraction이 100 eV/u에서 0, 250 eV/u에서 0.554, 500 eV/u에서 0.777, 5 keV/u에서 0.978이다. 이것은 straight-line이 rotational window를 얼마나 과대평가할 수 있는지 보여주는 bracket이다. Stolterfoht 원문은 low-energy에서 Coulomb trajectory 자체도 rotational/isotope effect를 정확히 기술하지 못한다고 명시하므로 correction factor로 사용하지 않는다.
+
+## 6. DR9B literature support for factor 2
+
+Richter & Solov'ev, Phys. Rev. A 48, 432 (1993)은 같은 advanced-adiabatic/hidden-crossing 계열에서 branch-point transition probability를 P=exp(-2 Delta/v)로 쓰며, semiclassical action 형태 P(E,rho)=exp{-2 Im[S(E,rho)]}도 제시한다. 따라서 factor-2는 이제 단순 modulus-square derivation뿐 아니라 직접적인 선행 hidden-crossing 문헌 지지를 가진다. Appendix-A Nmax=3 shell benchmark도 factor-2를 강하게 선호한다. 다만 CPC 2023 Eq.(52)의 p=exp(-Delta/v) 표기가 어떤 내부 normalization/elementary-step convention을 뜻하는지는 여전히 해명되지 않았으므로 Eq.(52)를 오타로 확정하거나 production default를 바꾸지 않는다.

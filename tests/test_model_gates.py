@@ -60,3 +60,34 @@ def test_source_anchor_implies_energy_threshold_for_inherited_matching_radius():
     assert critical_energy_for_matching_radius_eVu('D',1) == pytest.approx(68.57142857142857)
     assert critical_energy_for_matching_radius_eVu('T',1) == pytest.approx(51.42857142857143)
     assert critical_energy_for_matching_radius_eVu('H',2) == pytest.approx(33.91304347826087)
+
+
+
+def test_rutherford_proxy_turning_point_recovers_headon_source_anchor():
+    from bass_he.model_gates import rutherford_proxy_rmin_a0
+    for E in (50.0,100.0,250.0,500.0,5000.0):
+        assert rutherford_proxy_rmin_a0(E,'H',0.0) == pytest.approx(source_headon_rmin_a0(E,'H'))
+
+
+def test_rutherford_proxy_bmax_solves_turning_point_equal_matching_radius():
+    from bass_he.model_gates import rutherford_proxy_bmax_for_radius, rutherford_proxy_rmin_a0
+    Rcut=7/12
+    for E in (250.0,500.0,5000.0):
+        bmax=rutherford_proxy_bmax_for_radius(E,'H',Rcut)
+        assert bmax > 0
+        assert rutherford_proxy_rmin_a0(E,'H',bmax) == pytest.approx(Rcut, rel=2e-14, abs=2e-14)
+    assert rutherford_proxy_bmax_for_radius(100.0,'H',Rcut) == 0.0
+
+
+def test_rutherford_proxy_accessible_area_fraction_is_one_minus_r0_over_radius():
+    from bass_he.model_gates import rutherford_proxy_accessible_area_fraction
+    Rcut=7/12
+    expected={100.0:0.0,250.0:1-(0.65*100/250)/Rcut,500.0:1-.13/Rcut,5000.0:1-.013/Rcut}
+    for E,want in expected.items():
+        assert rutherford_proxy_accessible_area_fraction(E,'H',Rcut) == pytest.approx(want, rel=2e-14, abs=2e-14)
+
+
+def test_rutherford_proxy_rejects_being_used_as_negative_or_invalid_geometry():
+    from bass_he.model_gates import rutherford_proxy_rmin_a0, rutherford_proxy_bmax_for_radius
+    with pytest.raises(ValueError): rutherford_proxy_rmin_a0(100,'H',-0.1)
+    with pytest.raises(ValueError): rutherford_proxy_bmax_for_radius(100,'H',0.0)

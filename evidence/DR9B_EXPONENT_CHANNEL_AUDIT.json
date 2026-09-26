@@ -48,6 +48,14 @@
     }
   },
   "upper_shell_observation": "Q23 terminates in united Nmax=3 but correlates through CORDIR to separated Z2 n=2; Nmax sink and bound-shell labels are therefore not disjoint physical channels.",
-  "verdict": "FACTOR2_THEORY_AND_AUTHOR_NMAX3_BENCHMARK_FAVORED__EQ52_EQ55_SOURCE_NORMALIZATION_REMAINS_OPEN",
-  "production_default_change": "NOT_AUTHORIZED; retain both explicit lanes until source/code normalization is independently resolved"
+  "verdict": "FACTOR2_SINGLE_PASS__LITERATURE_SUPPORTED_AND_AUTHOR_NMAX3_BENCHMARK_FAVORED__CPC_EQ52_INTERNAL_NORMALIZATION_INCONSISTENCY_OPEN",
+  "production_default_change": "NOT_AUTHORIZED; retain factor-1 as a literal Eq.(52) compatibility lane and factor-2 as the literature/benchmark-favored single-pass lane until source/code normalization is independently resolved.",
+  "literature_support": {
+    "Richter_Solovev_1993": {
+      "citation": "K. Richter and E. A. Solov'ev, Phys. Rev. A 48, 432 (1993), DOI 10.1103/PhysRevA.48.432",
+      "result": "The advanced-adiabatic hidden-crossing paper writes the branch-point transition probability P=exp(-2 Delta/v), and also gives P(E,rho)=exp{-2 Im[S(E,rho)]}.",
+      "status": "DIRECT_LITERATURE_SUPPORT_FOR_FACTOR2_SINGLE_PASS_CONVENTION"
+    },
+    "relation_to_CPC_2023": "This strengthens factor-2 as the single-pass research convention but does not explain or erase the CPC 2023 Eq.(52) factor-1 elementary-probability notation."
+  }
 }

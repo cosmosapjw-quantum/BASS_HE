@@ -135,7 +135,7 @@
       "severity": "major",
       "category": "trajectory_model",
       "claim": "straight-line nuclear trajectories are not adequate for low-energy rotational/isotope physics",
-      "status": "SOURCE_ANCHORED_TRAJECTORY_GATE_OPEN_AT_0P5_KEV_PER_AMU__5_KEV_MORE_PLAUSIBLE_NOT_VALIDATED",
+      "status": "SOURCE_ANCHORED_TRAJECTORY_GATE_OPEN__RUTHERFORD_PROXY_DIAGNOSTIC_ADDED__NOT_CORRECTION",
       "evidence": "DR9A_TRAJECTORY_GATE.json"
     },
     {
@@ -143,7 +143,7 @@
       "severity": "major",
       "category": "source_convention",
       "claim": "Eq52 factor-1 and Eq55 factor-2 cannot both be the same-normalization single-pass probability",
-      "status": "FACTOR2_THEORY_AND_AUTHOR_NMAX3_BENCHMARK_FAVORED__SOURCE_NORMALIZATION_OPEN",
+      "status": "FACTOR2_SINGLE_PASS__LITERATURE_SUPPORTED_AND_AUTHOR_NMAX3_BENCHMARK_FAVORED__CPC_EQ52_INTERNAL_INCONSISTENCY_OPEN",
       "evidence": "DR9B_EXPONENT_CHANNEL_AUDIT.json"
     },
     {
