@@ -91,7 +91,7 @@ H1,H2가 Hermitian이면 K도 Hermitian이므로 각 단계는 반올림 오차 
 
 ### 3.3 Observable만 전파한다
 
-Eq. (51)/(53)는 identity의 두 행만 바꾸므로, 특정 initial column을 위한 full dense d×d product는 불필요하다. incoming에는 큰-ReRc부터, outgoing에는 작은-ReRc부터 2행 update를 적용한다. 선택한 C개 initial columns에 대해 비용은 O(K d C)이다. 기존 dense product와 absorbing block을 포함한 비가환 테스트에서 동일성을 확인했다.
+Eq. (51)/(53)는 identity의 두 행만 바꾸므로, 특정 initial column을 위한 full dense d×d product는 불필요하다. incoming에는 큰-ReRc부터, outgoing에는 작은-ReRc부터 2행 update를 적용한다. 선택한 C개 initial columns에 대해 crossing update 비용은 O(K C), 현재 dense P_rot 적용 비용은 O(d² C)이며 batch 크기만큼 곱해진다. P_rot의 작은 block을 직접 적용하면 후자도 더 줄일 수 있지만 이번 구현에서는 dense batch multiplication을 유지했다. 기존 dense product와 absorbing block을 포함한 비가환 테스트에서 동일성을 확인했다.
 
 column-stochastic M은 l1 contraction이다. 따라서 operator error의 telescoping bound는
 

@@ -28,8 +28,8 @@
     },
     {
       "path": "docs/RESEARCH_REPORT_KO.md",
-      "bytes": 16749,
-      "sha256": "bfd944dcedf6ae19b7f7c0ef6aaea05f2db2098d2eb0222f4143a2638f3692d1"
+      "bytes": 16988,
+      "sha256": "2deb7945b3eaad3997d34ce371cea5c39be0abc397597b65a18d445940c3b7a4"
     },
     {
       "path": "evidence/ASSEMBLY_RECHECK.json",
@@ -528,8 +528,8 @@
     },
     {
       "path": "src/bass_he/transport.py",
-      "bytes": 3811,
-      "sha256": "2d3b27ae28d503faaf4c294bfd30e02e155f424a6cfc29aea846edec18681f55"
+      "bytes": 3899,
+      "sha256": "0427d799961c8fd4e2a0925e0a355d1e6cf5b13f06160b14fa1f5a137bcafdd8"
     },
     {
       "path": "tests/test_geometry_pipeline.py",

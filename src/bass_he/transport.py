@@ -14,7 +14,8 @@ def transition_probabilities(delta,velocities,*,exponent_factor):
 def apply_eq50(probabilities,events,P_rot,initial):
     """Exact Eq50 column action. Each event is zero-based (i,j,absorbing_j).
 
-    Complexity O(batch*K*d*columns) rather than dense O(batch*K*d^3).
+    Event updates cost O(batch*K*columns); the retained dense P_rot action costs
+    O(batch*d^2*columns), versus constructing dense O(batch*K*d^3) products.
     No Markov/coherence approximation beyond the chosen source probability model.
     """
     p=np.asarray(probabilities,float);rot=np.asarray(P_rot,float);init=np.asarray(initial,float)
