@@ -119,3 +119,28 @@ def janev1997_eq15_phase_average(p12: float, p23: float,
     """
     p12=_p(p12);p23=_p(p23);p_s=_p(p_s);p_rot=_p(p_rot)
     return p12*(1.0-p12)*(1.0-p23)*(1.0+(1.0-p_s)**2*(1.0-p_rot))
+
+
+
+def janev1997_eq13_phase_average_nmax3_projection(
+    p23: float, p12: float, p_s23: float, p_rot2: float
+) -> float:
+    """Uniform-phase average of 1997 Eq. (13) under an explicit Nmax=3 projection.
+
+    Higher N=4 couplings from 3d-sigma (Q 3d->4f, S 3d->4d and the associated
+    higher-shell rotational loss) are frozen to zero transition probability.
+    This is a diagnostic projection of the published formula, not the full
+    Janev-1997 forward-channel result.
+    """
+    p23=_p(p23);p12=_p(p12);p_s23=_p(p_s23);p_rot2=_p(p_rot2)
+    surviving_inner=(1.0-p12)*(1.0-p_s23)*math.sqrt(1.0-p_rot2)
+    first_path=p12+surviving_inner
+    return p23*(1.0-p23)*(1.0+first_path*first_path)
+
+
+def janev1997_eq14_2ppi_probability(
+    p23: float, p12: float, p_s23: float, p_pi3dpi: float, p_rot2: float
+) -> float:
+    """Janev et al. 1997 Eq. (14) for the 2p-pi final channel."""
+    p23=_p(p23);p12=_p(p12);p_s23=_p(p_s23);p_pi3dpi=_p(p_pi3dpi);p_rot2=_p(p_rot2)
+    return (1.0-p23)*(1.0-p12)*(1.0-p_s23)*(1.0-p_pi3dpi)*p_rot2

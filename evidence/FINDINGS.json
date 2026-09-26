@@ -177,6 +177,14 @@
       "claim": "for the Janev-1997 Eq.(15) inverse sigma channel, current sparse Eq50 stochastic propagation exactly equals the uniform-phase average of the published coherent two-path formula",
       "status": "EXACT_SYMBOLIC_IDENTITY_CLOSED_FOR_ONE_CHANNEL__FORWARD_CHANNELS_AND_FULL_NETWORK_OPEN",
       "evidence": "DR10C_SOURCE_TOPOLOGY_IDENTITY.json"
+    },
+    {
+      "id": "A24",
+      "severity": "critical_if_state_resolved_promoted",
+      "category": "coherent_topology",
+      "claim": "Janev-1997 forward channels are selective: Eq14 2p-pi matches current stochastic topology exactly, while Eq13 3d-sigma differs by a lost same-phase coherent cross term plus an Nmax absorbing-sink bias",
+      "status": "EQ14_EXACT__EQ13_MISMATCH_EXACTLY_DECOMPOSED__PHYSICAL_3DSIGMA_PROMOTION_BLOCKED",
+      "evidence": "DR10D_FORWARD_TOPOLOGY_AUDIT.json"
     }
   ]
 }
