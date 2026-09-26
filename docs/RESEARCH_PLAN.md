@@ -36,7 +36,7 @@ Canonical base: GitHub `main@6ef63136d14dbe68a1c9eff4a43fece78cd87b35`, tree `1d
 - D6: cache scientific dependencies split by EP / geometry / transport ownership. Scratch cache re-key was allowed only after AST equality of the contour kernel and clean spectral dependencies; it is not a general cache-migration policy.
 
 ### Fresh numerical gates
-- final fresh full suite after DR8 code and documentation/evidence updates: `48 passed in 8.87s`; `git diff --check`, package build/install/import and `compileall` also passed. The verified `src+scripts+tests` tree SHA-256 is `8ceb2ba6ff94a52e961db2d4aadd1d0c7b08bd547ad122ce6cd1fa546ae4b8e5`.
+- pre-interruption final suite recorded `48 passed in 8.87s`. After runtime interruption and publication reconstruction, the reconstructed publication tree was freshly reverified: `48 passed in 5.51s`; `git diff --check`, package build/install/import and `compileall` passed. The pre-interruption tree hash is historical evidence only; `evidence/DR8_FINAL_VERIFICATION.json` is the publication-verification authority.
 - exact support-split GK7 at 2%: 7 intervals, 49 evaluations, no refinement, component-wise gate pass.
 - surrogate runtime validation: 10 exact held-out sentinels, maximum relative `Delta` error `1.388034624856879e-05` against threshold `2e-4`.
 - broader held-out study: 212 exact cached GK15 geometry points; maximum local-cubic relative `Delta` error `4.3469e-05` (S23), with other branches smaller.
