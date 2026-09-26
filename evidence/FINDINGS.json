@@ -1,5 +1,5 @@
 {
-  "node": "BASS_HE_AUDIT6_COHERENT_TOPOLOGY",
+  "node": "BASS_HE_AUDIT7_ABSORBING_SEMANTICS",
   "scope": "recovered DR1-DR7 implementation and seven return archives",
   "findings": [
     {
@@ -177,6 +177,14 @@
       "claim": "phase-averaged Janev-Pop-Jordanov-Solov'ev 1997 Eq.(15) and phase-free Eq.(14) should match the scoped Eq.(50) Markov topology for the corresponding Nmax=3 non-absorbing channels",
       "status": "EQ14_EXACT_TOPOLOGY_IDENTITY_PASS__EQ15_UNIFORM_PHASE_AVERAGE_IDENTITY_PASS__EQ13_OUT_OF_SCOPE_DUE_ADDITIONAL_HIGHER_SHELL_BRANCHES",
       "evidence": "DR10C_COHERENT_TOPOLOGY_VALIDATION.json"
+    },
+    {
+      "id": "A24",
+      "severity": "critical_if_physical_channel_promoted",
+      "category": "absorbing_truncation",
+      "claim": "the Nmax one-way absorbing sink is not the reversible physical upper-state population even for an isolated crossing traversed twice",
+      "status": "ABSORBING_DOUBLE_PASS_EQUALS_P_2_MINUS_P__REVERSIBLE_PHASE_AVERAGE_EQUALS_2P1_MINUS_P__STRUCTURAL_EXCESS_P_SQUARED_CONFIRMED",
+      "evidence": "DR10D_ABSORBING_SEMANTICS.json"
     }
   ]
 }
