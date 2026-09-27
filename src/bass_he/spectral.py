@@ -80,6 +80,62 @@ def spectral_certificate(state,R,p,lam,*,depth=96,Z1=1.,Z2=2.,rank_tol=1e-7):
                 simple_fold=bool(res<1e-8 and ratio<rank_tol and abs(trans)>1e-7 and abs(curvature)>1e-7))
 
 
+def _pair_membership_certificate(state_a,state_b,R,p,lam,*,depth,Z1,Z2,
+                                 tolerance=5e-6,probe_scale=1e-4):
+    """Verify that the advertised ordinal states are the two local sheets.
+
+    A simple fold of ``state_a`` is not sufficient to identify which second
+    physical/ordinal state meets it.  We therefore compare two independently
+    continued named states with the two square-root local roots generated from
+    the fold null direction at a small positive-real displacement from the
+    candidate.  The comparison is permutation-invariant in scaled ``(p,lambda)``
+    space and fails closed when either advertised state approaches a different
+    regular root.
+
+    This is a finite-CF numerical membership certificate, not a proof about all
+    possible branches of the exact two-centre spectrum.
+    """
+    if not np.isfinite(tolerance) or tolerance<=0:
+        raise ValueError('positive finite pair-membership tolerance required')
+    if not np.isfinite(probe_scale) or probe_scale<=0:
+        raise ValueError('positive finite pair-membership probe_scale required')
+    center=complex(R);zc=np.array([p,lam],complex)
+    F,J=spectral_system(state_a,center,*zc,depth=depth,Z1=Z1,Z2=Z2)
+    u,s,vh=np.linalg.svd(J[:,:2]);null=vh.conj().T[:,-1];left=u[:,-1].conj()
+    h=2e-4
+    fp=spectral_system(state_a,center,*(zc+h*null),depth=depth,Z1=Z1,Z2=Z2)[0]
+    fm=spectral_system(state_a,center,*(zc-h*null),depth=depth,Z1=Z1,Z2=Z2)[0]
+    curvature=left@((fp-2*F+fm)/(h*h));trans=left@J[:,2]
+    if abs(curvature)<=1e-12 or abs(trans)<=1e-12:
+        raise RuntimeError('pair membership cannot resolve degenerate fold geometry')
+    radius=float(probe_scale*max(1.,abs(center)))
+    probe=center+radius
+    amp=np.sqrt(-2*trans*radius/curvature)
+
+    def local_root(seed):
+        q=solve_complex_term(state_a,probe,p0=seed[0],lam0=seed[1],depth=depth,
+                             tol=2e-12,Z1=Z1,Z2=Z2)
+        return np.array([q.p,q.separation_lambda],complex)
+
+    local=(local_root(zc+amp*null),local_root(zc-amp*null))
+    named=[]
+    for state in (state_a,state_b):
+        q=continue_complex_from_real(state,probe,depth=depth,tol=2e-11,Z1=Z1,Z2=Z2)
+        named.append(np.array([q.p,q.separation_lambda],complex))
+    scale=np.maximum(1.,np.maximum(abs(zc),np.maximum(abs(local[0]),abs(local[1]))))
+    def distance(x,y):return float(np.linalg.norm((x-y)/scale))
+    d=np.array([[distance(named[i],local[j]) for j in range(2)] for i in range(2)])
+    options=((max(d[0,0],d[1,1]),d[0,0]+d[1,1],(0,1)),
+             (max(d[0,1],d[1,0]),d[0,1]+d[1,0],(1,0)))
+    best=min(options,key=lambda x:(x[0],x[1]))
+    return dict(passed=bool(best[0] <= tolerance),
+                tolerance=float(tolerance),probe_scale=float(probe_scale),probe_radius=radius,
+                probe_R=probe,max_scaled_matching_error=float(best[0]),
+                sum_scaled_matching_error=float(best[1]),permutation=list(best[2]),
+                scaled_distance_matrix=d.tolist(),local_sheet_gap=float(np.linalg.norm(local[0]-local[1])),
+                claim='FINITE_CF_ADVERTISED_ORDINAL_PAIR_MEMBERSHIP')
+
+
 def find_exceptional_point(state_a,state_b,R_seed,*,depth=96,Z1=1.,Z2=2.,tol=2e-11):
     if state_a[2]!=state_b[2]: raise ValueError('different m cannot coalesce in this model')
     # Nearby independently continued sheets give a seed, never a certificate.
@@ -109,9 +165,12 @@ def find_exceptional_point(state_a,state_b,R_seed,*,depth=96,Z1=1.,Z2=2.,tol=2e-
     else:raise RuntimeError('discriminant Newton iteration budget exhausted')
     cert=spectral_certificate(state_a,z[2],z[0],z[1],depth=depth,Z1=Z1,Z2=Z2)
     if not cert['simple_fold']:raise RuntimeError(f'branch candidate not a simple fold: {cert}')
+    membership=_pair_membership_certificate(state_a,state_b,z[2],z[0],z[1],depth=depth,Z1=Z1,Z2=Z2)
+    if not membership['passed']:
+        raise RuntimeError(f'pair membership rejected advertised states: {membership}')
     return dict(state_a=tuple(state_a),state_b=tuple(state_b),R=z[2],p=z[0],lam=z[1],
-                depth=int(depth),Z1=Z1,Z2=Z2,certificate=cert,iterations=it+1,
-                status='SPECTRAL_SIMPLE_FOLD_NOT_YET_MONODROMY_CHECKED')
+                depth=int(depth),Z1=Z1,Z2=Z2,certificate=cert,pair_membership=membership,
+                iterations=it+1,status='SPECTRAL_SIMPLE_FOLD_PAIR_MEMBERSHIP_CERTIFIED_NOT_YET_MONODROMY_CHECKED')
 
 
 def monodromy(ep,*,radius=.01,steps=96):
