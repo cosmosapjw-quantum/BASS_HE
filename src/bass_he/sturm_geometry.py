@@ -16,6 +16,8 @@ def contour_geometry(ep: dict, rho: float, *, panels: int=32,
     """Compute a finite-CF straight-line action using ordinal real-state labels."""
     if not ep['certificate']['simple_fold']:
         raise ValueError('certified simple fold required')
+    if not ep.get('pair_membership',{}).get('passed',False):
+        raise ValueError('certified pair membership required')
     if (isinstance(rho,(bool,np.bool_)) or not np.isscalar(rho)
         or np.iscomplexobj(rho) or not np.isfinite(rho) or rho<0
         or isinstance(panels,(bool,np.bool_)) or not isinstance(panels,Integral)
