@@ -51,5 +51,8 @@ def export_checkpoint(store,dest:Path):
     data=archive.read_bytes();receipt=ExportReceipt(str(archive),hashlib.sha256(data).hexdigest(),len(data),sum(1 for _,arc,_ in files if arc.startswith('results/')))
     with (dest/(name+'.receipt.json')).open('xb') as f:
         f.write((json.dumps(receipt.__dict__,sort_keys=True)+'\n').encode());f.flush();os.fsync(f.fileno())
+    fd=os.open(dest,os.O_DIRECTORY)
+    try:os.fsync(fd)
+    finally:os.close(fd)
     snapshot.unlink();(stage/'MANIFEST.json').unlink();stage.rmdir()
     return receipt

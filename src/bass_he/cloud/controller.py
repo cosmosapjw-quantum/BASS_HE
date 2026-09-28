@@ -21,7 +21,7 @@ class Controller:
             from .export import export_checkpoint
             checkpoint=lambda:export_checkpoint(store,store.root/'exports')
         self.checkpoint=checkpoint
-        self.source=store.binding.source_commit+':'+store.binding.source_tree
+        self.source=store.binding.scientific_source_id or store.binding.source_commit+':'+store.binding.source_tree
     def _common(self,pair,seed):return {'source':self.source,'backend':'python','depth':DEPTH,'pair':pair,'seed':{'complex':[seed.real,seed.imag]}}
     def initial_specs(self):
         return [CaseSpec('wrong_pair_check',self._common(WRONG_PAIR,CONTROL_SEED)),CaseSpec('control',self._common(CONTROL_PAIR,CONTROL_SEED))]

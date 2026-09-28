@@ -1,7 +1,7 @@
 """Persistent spawned workers with owned-process deadline enforcement."""
 from __future__ import annotations
 from dataclasses import dataclass
-import json, multiprocessing as mp, os, time, traceback
+import inspect, json, multiprocessing as mp, os, time, traceback
 from pathlib import Path
 from .contracts import CaseSpec, CaseOutcome, ExecutionBinding, Attempt, outcome_document, task_id
 
@@ -67,7 +67,7 @@ class Supervisor:
             if p.is_alive():self._reap(p)
             slot['conn'].close()
         self.slots=[]
-    def run_ready(self,specs:list[CaseSpec],workers:int,store,retry_failed=False,dispatch_limit=None,dispatch_deadline=None,checkpoint=None,checkpoint_interval=900):
+    def run_ready(self,specs:list[CaseSpec],workers:int,store,retry_failed=False,dispatch_limit=None,dispatch_deadline=None,checkpoint=None,checkpoint_interval=900,observe=None):
         if workers<1:raise ValueError('no eligible worker')
         failures={task_id(s):store.failure(task_id(s)) for s in specs if store.failure(task_id(s)) is not None and not retry_failed}
         pending=[s for s in specs if store.load(task_id(s)) is None and task_id(s) not in failures]
@@ -75,16 +75,27 @@ class Supervisor:
         receipts={}
         if not pending:return StageReport(outcomes,receipts,failures)
         if store.epoch is None:store.begin_epoch()
-        initial=min(workers,len(pending),dispatch_limit(len(pending)) if dispatch_limit else workers)
+        def capacity(ready,active):
+            if dispatch_limit is None:return workers
+            params=inspect.signature(dispatch_limit).parameters
+            return dispatch_limit(ready,active) if len(params)>=2 else dispatch_limit(ready)
+        initial=min(workers,len(pending),capacity(len(pending),0))
         if initial<1:return StageReport(outcomes,receipts,{'_stage':{'status':'RESOURCE_PAUSED','remaining':len(pending)}})
         while len(self.slots)<initial:
+            if len(self.slots)>=capacity(len(pending),len(self.slots)):break
             slot=self._start();self.slots.append(slot);store._event('WORKER_READY',**slot['attestation'])
         active={};next_checkpoint=time.monotonic()+checkpoint_interval
         while pending or active:
             budget_expired=dispatch_deadline is not None and time.monotonic()>=dispatch_deadline
-            capacity=dispatch_limit(len(pending)+len(active)) if dispatch_limit else workers
+            allowed=capacity(len(pending)+len(active),len(active))
+            if observe is not None and observe(self.slots) is False:
+                for tid,slot in list(active.items()):
+                    spec,att,_=slot['busy'];evidence={'status':'BLOCKED_MEMORY_CALIBRATION',**self._reap(slot['process'])}
+                    store.record_failure(att,evidence);failures[tid]=evidence;slot['busy']=None;del active[tid]
+                failures['_stage']={'status':'BLOCKED_MEMORY_CALIBRATION','remaining':len(pending)}
+                break
             for slot in self.slots:
-                if not pending or budget_expired or len(active)>=capacity:break
+                if not pending or budget_expired or len(active)>=allowed:break
                 if slot['busy'] is None and slot['process'].is_alive():
                     spec=pending.pop(0);att=store.claim(spec,retry_failed=retry_failed);path=store.attempt_path(att)
                     slot['conn'].send((spec,att,str(path)));slot['busy']=(spec,att,time.monotonic());active[att.task_id]=slot
@@ -114,7 +125,7 @@ class Supervisor:
                     slot['busy']=None;del active[tid]
             if checkpoint and time.monotonic()>=next_checkpoint:
                 checkpoint();next_checkpoint=time.monotonic()+checkpoint_interval
-            if pending and not active and (budget_expired or capacity<=0 or all(not x['process'].is_alive() for x in self.slots)):
+            if pending and not active and (budget_expired or allowed<=0 or all(not x['process'].is_alive() for x in self.slots)):
                 failures['_stage']={'status':'PILOT_DISPATCH_BUDGET' if budget_expired else 'RESOURCE_PAUSED_OR_WORKERS_UNAVAILABLE','remaining':len(pending)}
                 break
             time.sleep(.01)

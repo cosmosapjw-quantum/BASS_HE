@@ -56,7 +56,11 @@ class ExecutionBinding:
     thread_policy: dict
     scientific_parent: str = "ac09160bae74f051e5e2e17d8a1cde4084576c16"
     plan_commit: str = "4e775fdb61e72fd75f956fe0a83064e37e0522da"
-    def identity(self): return digest(asdict(self))
+    scientific_source_id: str = ''
+    def identity(self):
+        data=asdict(self)
+        if not self.scientific_source_id:data.pop('scientific_source_id') # v1 receipt compatibility
+        return digest(data)
 
 @dataclass(frozen=True)
 class CaseOutcome:
