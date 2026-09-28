@@ -8,6 +8,7 @@ from __future__ import annotations
 from numbers import Integral
 import numpy as np
 from .geometry import _advance_pair, _energy
+from .spectral import validate_pair_membership_certificate
 from .sturm_anchor import bound_pair
 
 
@@ -16,8 +17,7 @@ def contour_geometry(ep: dict, rho: float, *, panels: int=32,
     """Compute a finite-CF straight-line action using ordinal real-state labels."""
     if not ep['certificate']['simple_fold']:
         raise ValueError('certified simple fold required')
-    if not ep.get('pair_membership',{}).get('passed',False):
-        raise ValueError('certified pair membership required')
+    validate_pair_membership_certificate(ep)
     if (isinstance(rho,(bool,np.bool_)) or not np.isscalar(rho)
         or np.iscomplexobj(rho) or not np.isfinite(rho) or rho<0
         or isinstance(panels,(bool,np.bool_)) or not isinstance(panels,Integral)
