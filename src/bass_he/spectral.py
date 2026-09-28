@@ -5,6 +5,7 @@ Duplicate spectral roots are therefore NOT branch-point evidence.
 Coulomb charges, R, p and energies use the legacy paper's atomic-unit convention.
 """
 from __future__ import annotations
+from numbers import Integral
 import hashlib, json
 import numpy as np
 from arseny_reimpl.term_complex import continue_complex_from_real, solve_complex_term
@@ -27,15 +28,27 @@ def _hex_complex(z):
     return [_hex_float(z.real), _hex_float(z.imag)]
 
 
+def _identity_integer(x,name):
+    if isinstance(x,(bool,np.bool_)) or not isinstance(x,Integral):
+        raise ValueError(f'{name} must be an integer without lossy coercion')
+    return int(x)
+
+
+def _identity_state(state,name):
+    if not isinstance(state,(tuple,list)) or len(state)!=3:
+        raise ValueError(f'{name} must be a three-integer state label')
+    return [_identity_integer(x,f'{name}[{i}]') for i,x in enumerate(state)]
+
+
 def _pair_membership_binding(state_a,state_b,R,p,lam,*,depth,Z1,Z2,tolerance,probe_scale):
     return {
         'policy_id': PAIR_MEMBERSHIP_POLICY_ID,
-        'state_a': [int(x) for x in state_a],
-        'state_b': [int(x) for x in state_b],
+        'state_a': _identity_state(state_a,'state_a'),
+        'state_b': _identity_state(state_b,'state_b'),
         'R_complex128_hex': _hex_complex(R),
         'p_complex128_hex': _hex_complex(p),
         'lambda_complex128_hex': _hex_complex(lam),
-        'depth': int(depth),
+        'depth': _identity_integer(depth,'depth'),
         'Z1_float64_hex': _hex_float(Z1),
         'Z2_float64_hex': _hex_float(Z2),
         'tolerance_float64_hex': _hex_float(tolerance),
@@ -57,10 +70,13 @@ def validate_pair_membership_certificate(ep):
         binding=cert['binding']; actual_sha=cert['binding_sha256']
     except (KeyError,TypeError,ValueError) as exc:
         raise ValueError('pair membership certificate binding mismatch') from exc
-    expected=_pair_membership_binding(
-        ep['state_a'],ep['state_b'],ep['R'],ep['p'],ep['lam'],
-        depth=ep['depth'],Z1=ep['Z1'],Z2=ep['Z2'],
-        tolerance=tolerance,probe_scale=probe_scale)
+    try:
+        expected=_pair_membership_binding(
+            ep['state_a'],ep['state_b'],ep['R'],ep['p'],ep['lam'],
+            depth=ep['depth'],Z1=ep['Z1'],Z2=ep['Z2'],
+            tolerance=tolerance,probe_scale=probe_scale)
+    except (KeyError,TypeError,ValueError,OverflowError) as exc:
+        raise ValueError('pair membership certificate binding mismatch') from exc
     if binding!=expected or actual_sha!=_binding_sha256(expected):
         raise ValueError('pair membership certificate binding mismatch')
     if cert.get('claim')!=PAIR_MEMBERSHIP_POLICY_ID:
