@@ -231,3 +231,4 @@ Current status after this research loop:
 - production physics = unchanged
 - implementation of R4 design = NOT_RUN in this loop
 - next required node = bounded certificate-admission implementation + fresh independent rereview
+
