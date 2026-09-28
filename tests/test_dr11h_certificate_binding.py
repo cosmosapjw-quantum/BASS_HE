@@ -25,6 +25,22 @@ def test_geometry_rejects_stale_pair_membership_certificate(ep,mutate):
         contour_geometry(changed,0.0,panels=8)
 
 
+@pytest.mark.parametrize('mutate', [
+    lambda x: x.__setitem__('state_a',(1.5,0,0)),
+    lambda x: x.__setitem__('state_a',(True,0,0)),
+    lambda x: x.__setitem__('state_a',(1.0,0,0)),
+    lambda x: x.__setitem__('state_b',(2.5,1,0)),
+    lambda x: x.__setitem__('state_b',(2.0,1,0)),
+    lambda x: x.__setitem__('depth',64.5),
+    lambda x: x.__setitem__('depth',64.0),
+    lambda x: x.__setitem__('depth',True),
+])
+def test_geometry_rejects_lossy_integer_identity_aliases(ep,mutate):
+    changed=copy.deepcopy(ep);mutate(changed)
+    with pytest.raises(ValueError, match='pair membership certificate binding mismatch'):
+        contour_geometry(changed,0.0,panels=8)
+
+
 def test_constructor_membership_certificate_is_endpoint_and_policy_bound(ep):
     cert=ep['pair_membership']
     assert cert['passed'] is True
