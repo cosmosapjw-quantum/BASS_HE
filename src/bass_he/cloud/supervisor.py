@@ -80,7 +80,7 @@ class Supervisor:
             params=inspect.signature(dispatch_limit).parameters
             return dispatch_limit(ready,active) if len(params)>=2 else dispatch_limit(ready)
         initial=min(workers,len(pending),capacity(len(pending),0))
-        if initial<1:return StageReport(outcomes,receipts,{'_stage':{'status':'RESOURCE_PAUSED','remaining':len(pending)}})
+        if initial<1:return StageReport(outcomes,receipts,{'_stage':{'status':getattr(dispatch_limit,'pause_reason',None) or 'RESOURCE_PAUSED','remaining':len(pending)}})
         while len(self.slots)<initial:
             if len(self.slots)>=capacity(len(pending),len(self.slots)):break
             slot=self._start();self.slots.append(slot);store._event('WORKER_READY',**slot['attestation'])
@@ -126,7 +126,7 @@ class Supervisor:
             if checkpoint and time.monotonic()>=next_checkpoint:
                 checkpoint();next_checkpoint=time.monotonic()+checkpoint_interval
             if pending and not active and (budget_expired or allowed<=0 or all(not x['process'].is_alive() for x in self.slots)):
-                failures['_stage']={'status':'PILOT_DISPATCH_BUDGET' if budget_expired else 'RESOURCE_PAUSED_OR_WORKERS_UNAVAILABLE','remaining':len(pending)}
+                failures['_stage']={'status':'PILOT_DISPATCH_BUDGET' if budget_expired else (getattr(dispatch_limit,'pause_reason',None) or 'RESOURCE_PAUSED_OR_WORKERS_UNAVAILABLE'),'remaining':len(pending)}
                 break
             time.sleep(.01)
         return StageReport(outcomes,receipts,failures)

@@ -67,3 +67,19 @@ def test_zero_dynamic_capacity_starts_no_worker(tmp_path,monkeypatch):
     report=su.run_ready([spec()],1,st,dispatch_limit=lambda ready:0)
     assert report.failures['_stage']['status']=='RESOURCE_PAUSED'
     su.close();st.close()
+
+def test_storage_soft_pause_preserves_committed_worker_result(tmp_path):
+    st=ResultStore(tmp_path,BIND);su=Supervisor(BIND,runner=immediate)
+    first=spec();second=CaseSpec('wrong_pair_check',{**first.science_fields,'source':'second'})
+    class StorageCapacity:
+        pause_reason=None
+        def __call__(self,ready,active=0):
+            if st.db.execute("SELECT count(*) FROM tasks WHERE state='COMMITTED'").fetchone()[0]:
+                self.pause_reason='BLOCKED_STORAGE_HEADROOM';return 0
+            return 1
+    report=su.run_ready([first,second],1,st,dispatch_limit=StorageCapacity())
+    assert len(report.receipts)==1
+    assert report.failures['_stage']['status']=='BLOCKED_STORAGE_HEADROOM'
+    assert st.load(next(iter(report.receipts))) is not None
+    assert st.db.execute('SELECT count(*) FROM tasks').fetchone()[0]==1
+    su.close();st.close()

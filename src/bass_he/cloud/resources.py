@@ -51,7 +51,7 @@ def inventory(data_path:Path=Path('/srv/bass-he'),proc_root:Path=Path('/proc'),c
     return HostInventory(affinity,min(quota) if quota else (affinity if rel is not None and not any('cpu.max' in x for x in unknown) else None),effective,current,mount,tuple(unknown))
 
 def worker_limit(profile,host:HostInventory,ready_count:int,worker_rss_p95:int,active_count:int=0):
-    if not host.data_mount:raise RuntimeError('BLOCKED_DATA_MOUNT')
+    if profile.get('storage_mode')!='root_backed_host' and not host.data_mount:raise RuntimeError('BLOCKED_DATA_MOUNT')
     if worker_rss_p95 <= 0:raise ValueError('positive measured worker RSS required')
     if host.unknown_limits or host.usable_cpus is None or host.effective_memory is None or host.memory_current is None:raise RuntimeError('BLOCKED_UNKNOWN_RESOURCE_LIMIT')
     if host.memory_current >= .65*host.effective_memory:return 0
@@ -64,12 +64,13 @@ def worker_limit(profile,host:HostInventory,ready_count:int,worker_rss_p95:int,a
     return max(0,min(int(profile.get('workers',32)),host.usable_cpus,memworkers,ready_count))
 
 def render_service(profile,host:HostInventory):
-    if not host.data_mount or host.effective_memory is None:raise RuntimeError('BLOCKED_DATA_MOUNT_OR_MEMORY')
+    root_backed=profile.get('storage_mode')=='root_backed_host' and profile.get('same_filesystem_as_root') is True
+    if (not host.data_mount and not root_backed) or host.effective_memory is None:raise RuntimeError('BLOCKED_DATA_MOUNT_OR_MEMORY')
     soft=int(.65*host.effective_memory);hard=int(.75*host.effective_memory)
+    mounts='' if root_backed else 'RequiresMountsFor=/srv/bass-he\n'
     return f'''[Unit]
 Description=BASS HE replay %i
-RequiresMountsFor=/srv/bass-he
-After=local-fs.target
+{mounts}After=local-fs.target
 [Service]
 Type=exec
 User=bass-he
