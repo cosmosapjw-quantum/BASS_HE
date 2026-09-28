@@ -84,7 +84,9 @@ def validate_pair_membership_certificate(ep):
     if float(cert.get('max_scaled_matching_error',np.inf))>tolerance:
         raise ValueError('pair membership certificate binding mismatch')
     perm=cert.get('permutation')
-    if not isinstance(perm,list) or sorted(perm) != [0,1]:
+    if (not isinstance(perm,list) or len(perm)!=2
+        or any(isinstance(x,(bool,np.bool_)) or not isinstance(x,Integral) for x in perm)
+        or sorted(int(x) for x in perm) != [0,1]):
         raise ValueError('pair membership certificate binding mismatch')
     return cert
 
