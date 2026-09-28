@@ -29,9 +29,9 @@ def export_checkpoint(store,dest:Path):
     name='checkpoint-'+uuid.uuid4().hex;stage=dest/(name+'.staging');stage.mkdir()
     snapshot=stage/'controller.sqlite';store.snapshot(snapshot)
     files=[(store.root/'RUN_BINDING.json','RUN_BINDING.json',hashlib.sha256((store.root/'RUN_BINDING.json').read_bytes()).hexdigest())]
-    for name in ('RUN_PROFILE.json','EVENTS.jsonl'):
-        path=store.root/name
-        if path.exists():files.append((path,name,hashlib.sha256(path.read_bytes()).hexdigest()))
+    for filename in ('RUN_PROFILE.json','EVENTS.jsonl'):
+        path=store.root/filename
+        if path.exists():files.append((path,filename,hashlib.sha256(path.read_bytes()).hexdigest()))
     for tid,sha in store.db.execute("SELECT task_id,sha256 FROM tasks WHERE state='COMMITTED' ORDER BY task_id"):
         path=store.root/'results'/tid/'result.json';data=path.read_bytes()
         if hashlib.sha256(data).hexdigest()!=sha:raise ValueError('checkpoint source changed')
