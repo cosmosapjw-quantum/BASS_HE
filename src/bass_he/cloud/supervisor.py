@@ -67,7 +67,7 @@ class Supervisor:
             if p.is_alive():self._reap(p)
             slot['conn'].close()
         self.slots=[]
-    def run_ready(self,specs:list[CaseSpec],workers:int,store,retry_failed=False,dispatch_limit=None,dispatch_deadline=None):
+    def run_ready(self,specs:list[CaseSpec],workers:int,store,retry_failed=False,dispatch_limit=None,dispatch_deadline=None,checkpoint=None,checkpoint_interval=900):
         if workers<1:raise ValueError('no eligible worker')
         failures={task_id(s):store.failure(task_id(s)) for s in specs if store.failure(task_id(s)) is not None and not retry_failed}
         pending=[s for s in specs if store.load(task_id(s)) is None and task_id(s) not in failures]
@@ -75,9 +75,11 @@ class Supervisor:
         receipts={}
         if not pending:return StageReport(outcomes,receipts,failures)
         if store.epoch is None:store.begin_epoch()
-        while len(self.slots)<min(workers,len(pending)):
+        initial=min(workers,len(pending),dispatch_limit(len(pending)) if dispatch_limit else workers)
+        if initial<1:return StageReport(outcomes,receipts,{'_stage':{'status':'RESOURCE_PAUSED','remaining':len(pending)}})
+        while len(self.slots)<initial:
             slot=self._start();self.slots.append(slot);store._event('WORKER_READY',**slot['attestation'])
-        active={}
+        active={};next_checkpoint=time.monotonic()+checkpoint_interval
         while pending or active:
             budget_expired=dispatch_deadline is not None and time.monotonic()>=dispatch_deadline
             capacity=dispatch_limit(len(pending)+len(active)) if dispatch_limit else workers
@@ -96,23 +98,24 @@ class Supervisor:
                     if msg[0]=='DONE' and msg[1:3]==(att.run_epoch,att.task_id):
                         try:
                             receipt=store.commit(att,Path(msg[3]));receipts[tid]=receipt;outcomes[tid]=store.load(tid)
-                        except ValueError as exc:failures[tid]={'status':'PAYLOAD_OR_BINDING_MISMATCH','reason':str(exc)}
+                        except (ValueError,OSError) as exc:failures[tid]={'status':'PAYLOAD_OR_BINDING_MISMATCH','reason':str(exc)}
                     elif msg[0]=='ERROR' and msg[1:3]==(att.run_epoch,att.task_id):
                         failures[tid]={'status':'CASE_EXCEPTION','reason':msg[3],'traceback':msg[4]}
                     else:failures[tid]={'status':'WORKER_CRASH','reason':'stale or malformed worker reply'}
+                    if tid in failures:store.record_failure(att,failures[tid])
                     slot['busy']=None;del active[tid]
                 elif not p.is_alive():
-                    failures[tid]={'status':'WORKER_CRASH',**self._reap(p)};slot['busy']=None;del active[tid]
+                    failures[tid]={'status':'WORKER_CRASH',**self._reap(p)};store.record_failure(att,failures[tid]);slot['busy']=None;del active[tid]
                 elif time.monotonic()-start>self.deadline:
                     overshoot=time.monotonic()-start-self.deadline
                     evidence=self._reap(p)
                     failures[tid]={'status':'TIME_BUDGET_EXCEEDED','overshoot_seconds':overshoot,**evidence}
+                    store.record_failure(att,failures[tid])
                     slot['busy']=None;del active[tid]
+            if checkpoint and time.monotonic()>=next_checkpoint:
+                checkpoint();next_checkpoint=time.monotonic()+checkpoint_interval
             if pending and not active and (budget_expired or capacity<=0 or all(not x['process'].is_alive() for x in self.slots)):
                 failures['_stage']={'status':'PILOT_DISPATCH_BUDGET' if budget_expired else 'RESOURCE_PAUSED_OR_WORKERS_UNAVAILABLE','remaining':len(pending)}
                 break
             time.sleep(.01)
-        for tid,evidence in failures.items():
-            row=store.db.execute('SELECT number,epoch FROM tasks WHERE task_id=?',(tid,)).fetchone()
-            if row and row[1]==store.epoch:store.record_failure(Attempt(tid,row[1],row[0]),evidence)
         return StageReport(outcomes,receipts,failures)

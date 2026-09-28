@@ -19,7 +19,7 @@ def main():
     max_workers=worker_limit(profile,host,len(cases),profile['worker_rss_p95_bytes'])
     if max_workers<1:raise RuntimeError('no eligible host workers')
     class LimitedHost:usable_cpus=max_workers
-    workload=PerfWorkload(cases,b,a.out/'PERF')
+    workload=PerfWorkload(cases,b,a.out/'PERF',worker_cap=lambda ready:worker_limit(profile,inventory(Path('/srv/bass-he')),ready,profile['worker_rss_p95_bytes']))
     report=benchmark(profile,LimitedHost(),workload,a.budget_seconds,a.seed)
     a.out.mkdir(parents=True,exist_ok=True)
     result={'status':report.status,'selected':report.selected,'observations':report.observations,'seed':report.seed,'binding':b.identity(),'namespace':'PERF_NOT_SCIENCE'}

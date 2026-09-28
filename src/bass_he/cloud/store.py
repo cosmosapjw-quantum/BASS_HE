@@ -19,6 +19,7 @@ class RecoveryReport:
 class ResultStore:
     def __init__(self, root: Path, binding: ExecutionBinding):
         self.root=Path(root); self.root.mkdir(parents=True,exist_ok=True)
+        self._fsync_dir(self.root.parent)
         self.binding=binding
         self._lock=(self.root/'.controller.lock').open('a+b')
         try: fcntl.flock(self._lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
@@ -34,11 +35,23 @@ class ResultStore:
         else:
             self._write_exclusive(bp,value.encode())
         self.epoch=None
+    @staticmethod
+    def _fsync_dir(path):
+        fd=os.open(path,os.O_DIRECTORY)
+        try:os.fsync(fd)
+        finally:os.close(fd)
+    def _ensure_dir_durable(self,path):
+        missing=[];current=path
+        while not current.exists():missing.append(current);current=current.parent
+        if current.is_symlink():raise ValueError('symlink directory')
+        for directory in reversed(missing):
+            directory.mkdir()
+            self._fsync_dir(directory.parent)
     def _event(self,typ,**kw):
         with (self.root/'EVENTS.jsonl').open('ab') as f:
             f.write((json.dumps({'type':typ,**kw},sort_keys=True)+'\n').encode());f.flush();os.fsync(f.fileno())
     def _write_exclusive(self,path,data):
-        path.parent.mkdir(parents=True,exist_ok=True)
+        self._ensure_dir_durable(path.parent)
         with path.open('xb') as f:f.write(data);f.flush();os.fsync(f.fileno())
         fd=os.open(path.parent,os.O_DIRECTORY)
         try: os.fsync(fd)
@@ -59,7 +72,7 @@ class ResultStore:
         self._event('STARTED',task_id=tid,epoch=self.epoch,number=number)
         return Attempt(tid,self.epoch,number)
     def attempt_path(self,attempt):
-        p=self.root/'tasks'/attempt.task_id/f'attempt-{attempt.number:04d}'/'prepared.json';p.parent.mkdir(parents=True,exist_ok=True);return p
+        p=self.root/'tasks'/attempt.task_id/f'attempt-{attempt.number:04d}'/'prepared.json';self._ensure_dir_durable(p.parent);return p
     def _final(self,tid):return self.root/'results'/tid/'result.json'
     def _validate_file(self,path,spec,attempt):
         if path.is_symlink() or not path.is_file(): raise ValueError('missing or symlink result')
@@ -72,7 +85,7 @@ class ResultStore:
         spec=CaseSpec(**json.loads(row[0])); expected=self.attempt_path(attempt).resolve(strict=False); src=Path(prepared_path)
         if src.is_symlink() or any(p.is_symlink() for p in (src.parent,*src.parents)) or src.resolve(strict=True)!=expected or not src.is_file(): raise ValueError('unowned prepared path')
         outcome,sha=self._validate_file(src,spec,attempt)
-        dest=self._final(attempt.task_id);dest.parent.mkdir(parents=True,exist_ok=True)
+        dest=self._final(attempt.task_id);self._ensure_dir_durable(dest.parent)
         if dest.exists():
             _,oldsha=self._validate_file(dest,spec,attempt)
             if oldsha!=sha: raise ValueError('conflicting final')

@@ -53,3 +53,17 @@ def test_soft_limit_stops_new_dispatch(tmp_path):
     assert len(report.receipts)==1 and report.failures['_stage']['status']=='RESOURCE_PAUSED_OR_WORKERS_UNAVAILABLE'
     assert st.db.execute('SELECT count(*) FROM tasks').fetchone()[0]==1
     su.close();st.close()
+
+def test_elapsed_checkpoint_occurs_during_active_case(tmp_path):
+    st=ResultStore(tmp_path,BIND);su=Supervisor(BIND,deadline=1,runner=two_calls,heartbeat=True)
+    times=[]
+    report=su.run_ready([spec()],1,st,checkpoint=lambda:times.append(time.monotonic()),checkpoint_interval=.05)
+    assert not report.failures and times
+    su.close();st.close()
+
+def test_zero_dynamic_capacity_starts_no_worker(tmp_path,monkeypatch):
+    st=ResultStore(tmp_path,BIND);su=Supervisor(BIND,runner=immediate)
+    monkeypatch.setattr(su,'_start',lambda: (_ for _ in ()).throw(AssertionError('worker started')))
+    report=su.run_ready([spec()],1,st,dispatch_limit=lambda ready:0)
+    assert report.failures['_stage']['status']=='RESOURCE_PAUSED'
+    su.close();st.close()

@@ -17,15 +17,15 @@ def _read(path):
     try:return path.read_text().strip()
     except (OSError,ValueError):return None
 
-def inventory(data_path:Path=Path('/srv/bass-he')):
-    affinity=len(os.sched_getaffinity(0));meminfo=_read(Path('/proc/meminfo'))
+def inventory(data_path:Path=Path('/srv/bass-he'),proc_root:Path=Path('/proc'),cgroup_root:Path=Path('/sys/fs/cgroup')):
+    affinity=len(os.sched_getaffinity(0));meminfo=_read(proc_root/'meminfo')
     osmem=int(next(x.split()[1] for x in meminfo.splitlines() if x.startswith('MemTotal:')))*1024 if meminfo else None
-    groups=_read(Path('/proc/self/cgroup')) or ''; rel=next((x.split(':')[-1].lstrip('/') for x in groups.splitlines() if x.startswith('0::')),None)
+    groups=_read(proc_root/'self'/'cgroup') or ''; rel=next((x.split(':')[-1].lstrip('/') for x in groups.splitlines() if x.startswith('0::')),None)
     unknown=[];quota=[];memlimits=[];current=None
     if rel is None:unknown.append('cgroup path')
     else:
-        path=Path('/sys/fs/cgroup')/rel
-        while path.is_relative_to('/sys/fs/cgroup'):
+        path=cgroup_root/rel
+        while path!=cgroup_root and path.is_relative_to(cgroup_root):
             cpu=_read(path/'cpu.max');memory=_read(path/'memory.max')
             if cpu is None:unknown.append(str(path/'cpu.max'))
             elif cpu.split()[0]!='max':
@@ -35,15 +35,14 @@ def inventory(data_path:Path=Path('/srv/bass-he')):
             elif memory!='max':
                 try:memlimits.append(int(memory))
                 except ValueError:unknown.append(str(path/'memory.max'))
-            if path==Path('/sys/fs/cgroup'):break
             path=path.parent
-        raw=_read(Path('/sys/fs/cgroup')/rel/'memory.current')
+        raw=_read(cgroup_root/rel/'memory.current')
         try:current=int(raw) if raw is not None else None
         except ValueError:unknown.append('memory.current')
     effective=min([osmem,*memlimits]) if osmem else None
     if effective is None:unknown.append('effective memory')
     if current is None:unknown.append('memory.current')
-    mountinfo=_read(Path('/proc/self/mountinfo')) or ''
+    mountinfo=_read(proc_root/'self'/'mountinfo') or ''
     mount=data_path.is_mount() and any(
         line.split(' - ',1)[0].split()[4]==str(data_path) and line.split(' - ',1)[1].split()[0]=='ext4'
         for line in mountinfo.splitlines() if ' - ' in line

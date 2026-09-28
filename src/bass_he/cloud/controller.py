@@ -15,8 +15,12 @@ class RunReturn:
     scientific_PROMOTE: str='HOLD_PENDING_RE_REVIEW'
 
 class Controller:
-    def __init__(self,store,workers=1,supervisor=None,worker_cap=None,retry_failed=False):
+    def __init__(self,store,workers=1,supervisor=None,worker_cap=None,retry_failed=False,checkpoint=None):
         self.store=store;self.workers=workers;self.supervisor=supervisor or Supervisor(store.binding);self.worker_cap=worker_cap or (lambda ready:min(workers,ready));self.retry_failed=retry_failed;self.dispatch_deadline=None
+        if checkpoint is None and hasattr(store,'root'):
+            from .export import export_checkpoint
+            checkpoint=lambda:export_checkpoint(store,store.root/'exports')
+        self.checkpoint=checkpoint
         self.source=store.binding.source_commit+':'+store.binding.source_tree
     def _common(self,pair,seed):return {'source':self.source,'backend':'python','depth':DEPTH,'pair':pair,'seed':{'complex':[seed.real,seed.imag]}}
     def initial_specs(self):
@@ -39,7 +43,7 @@ class Controller:
         ready=sum(self.store.load(task_id(s)) is None for s in values)
         cap=self.worker_cap(ready) if ready else 1
         if cap<1:return None,{'_stage':{'status':'RESOURCE_PAUSED','remaining':ready}}
-        report=self.supervisor.run_ready(values,cap,self.store,retry_failed=self.retry_failed,dispatch_limit=self.worker_cap,dispatch_deadline=self.dispatch_deadline)
+        report=self.supervisor.run_ready(values,cap,self.store,retry_failed=self.retry_failed,dispatch_limit=self.worker_cap,dispatch_deadline=self.dispatch_deadline,checkpoint=self.checkpoint)
         if report.failures:return None,report.failures
         for spec in (specs.values() if isinstance(specs,dict) else specs):
             out=report.outcomes.get(task_id(spec))
@@ -58,16 +62,20 @@ class Controller:
             specs=self.initial_specs();results,fail=self._stage(specs)
             if fail:return RunReturn('BLOCKED','source_control',total,fail)
             total+=len(specs)
+            if self.checkpoint:self.checkpoint()
             epspecs=self.endpoint_specs();results,fail=self._stage(epspecs)
             if fail:return RunReturn('BLOCKED','endpoints',total,fail)
             eps={name:results[task_id(s)] for name,s in epspecs.items()};total+=len(epspecs)
+            if self.checkpoint:self.checkpoint()
             d0=self.geometry_specs(eps,(0.0,));results,fail=self._stage(d0)
             if fail:return RunReturn('BLOCKED','d0',total,fail)
             if not self._panels_pass(d0,results):return RunReturn('BLOCKED','d0_gate',total,{'panel_convergence':'FAILED'})
             total+=len(d0)
+            if self.checkpoint:self.checkpoint()
             finite=self.geometry_specs(eps,FRACTIONS[1:]);results,fail=self._stage(finite)
             if fail:return RunReturn('BLOCKED','finite_rho',total,fail)
             if not self._panels_pass(finite,results):return RunReturn('BLOCKED','finite_rho_gate',total,{'panel_convergence':'FAILED'})
             total+=len(finite)
+            if self.checkpoint:self.checkpoint()
             return RunReturn('PASS','closeout',total,{})
         finally:self.supervisor.close()

@@ -12,7 +12,7 @@ Python 3.11 이상에서 격리 venv를 만들고 `python -m pip install -e '.[c
 {"source_commit":"<preflight의 source_commit>","backend":"python","storage_mode":"local_sandbox"}
 ```
 
-로컬 bounded scratch에서 `python scripts/run_cloud_replay.py run --profile /tmp/profile.json --out /tmp/bass-he-run-001 --workers 2`를 실행한다. `run`은 기존 run을 덮어쓰지 않는다. 중단 후에는 `python scripts/run_cloud_replay.py resume --out /tmp/bass-he-run-001`을 사용한다. `status --out ...`는 DB와 결과 파일을 reconcile하고, `export --out ...`는 SQLite 일관 snapshot과 완료 결과만 새 checkpoint에 담는다. `resume --retry-failed --out ...`는 기록된 runtime 실패에 한해 명시적으로 최대 한 번 더 시도한다. 과학 거절은 retry하지 않는다.
+로컬 bounded scratch에서 `python scripts/run_cloud_replay.py run --profile /tmp/profile.json --out /tmp/bass-he-run-001 --workers 2`를 실행한다. `run`은 기존 run을 덮어쓰지 않는다. 중단 후에는 `python scripts/run_cloud_replay.py resume --out /tmp/bass-he-run-001`을 사용한다. `status --out ...`는 DB와 결과 파일을 reconcile하고, `export --out ...`는 SQLite 일관 snapshot, run profile, event log와 완료 결과만 새 checkpoint에 담는다. Controller는 stage 완료 시와 실행 중 900초 경과 시 로컬 checkpoint를 자동 생성한다. `resume --retry-failed --out ...`는 기록된 runtime 실패에 한해 명시적으로 최대 한 번 더 시도한다. 과학 거절은 retry하지 않는다.
 
 `run`은 control/wrong-pair, 7 endpoints, 14 D0, 42 finite-rho case 순서로 barrier를 통과한다. 32/64 panel은 서로 다른 case로 계산한다. 완료된 결과는 검증 후 재사용한다. RUN_BINDING 불일치나 payload 손상은 중단한다.
 

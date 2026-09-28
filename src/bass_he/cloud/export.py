@@ -29,11 +29,14 @@ def export_checkpoint(store,dest:Path):
     name='checkpoint-'+uuid.uuid4().hex;stage=dest/(name+'.staging');stage.mkdir()
     snapshot=stage/'controller.sqlite';store.snapshot(snapshot)
     files=[(store.root/'RUN_BINDING.json','RUN_BINDING.json',hashlib.sha256((store.root/'RUN_BINDING.json').read_bytes()).hexdigest())]
+    for name in ('RUN_PROFILE.json','EVENTS.jsonl'):
+        path=store.root/name
+        if path.exists():files.append((path,name,hashlib.sha256(path.read_bytes()).hexdigest()))
     for tid,sha in store.db.execute("SELECT task_id,sha256 FROM tasks WHERE state='COMMITTED' ORDER BY task_id"):
         path=store.root/'results'/tid/'result.json';data=path.read_bytes()
         if hashlib.sha256(data).hexdigest()!=sha:raise ValueError('checkpoint source changed')
         files.append((path,f'results/{tid}/result.json',sha))
-    manifest={'schema':'bass_he.checkpoint.v1','binding':store.binding.identity(),'artifacts':[{'path':arc,'sha256':sha} for _,arc,sha in files]}
+    manifest={'schema':'bass_he.checkpoint.v1','binding':store.binding.identity(),'artifacts':[{'path':'controller.sqlite','sha256':hashlib.sha256(snapshot.read_bytes()).hexdigest()},*({'path':arc,'sha256':sha} for _,arc,sha in files)]}
     (stage/'MANIFEST.json').write_text(json.dumps(manifest,sort_keys=True)+'\n')
     archive=dest/(name+'.tar.gz');partial=dest/(name+'.partial')
     with partial.open('xb') as raw:
@@ -45,7 +48,7 @@ def export_checkpoint(store,dest:Path):
     fd=os.open(dest,os.O_DIRECTORY)
     try:os.fsync(fd)
     finally:os.close(fd)
-    data=archive.read_bytes();receipt=ExportReceipt(str(archive),hashlib.sha256(data).hexdigest(),len(data),len(files)-1)
+    data=archive.read_bytes();receipt=ExportReceipt(str(archive),hashlib.sha256(data).hexdigest(),len(data),sum(1 for _,arc,_ in files if arc.startswith('results/')))
     with (dest/(name+'.receipt.json')).open('xb') as f:
         f.write((json.dumps(receipt.__dict__,sort_keys=True)+'\n').encode());f.flush();os.fsync(f.fileno())
     snapshot.unlink();(stage/'MANIFEST.json').unlink();stage.rmdir()

@@ -23,8 +23,8 @@ def benchmark(profile,host,workload,budget=900,seed=20260928):
     start=time.monotonic();rows=[]
     for workers,repeat in arms:
         if time.monotonic()-start>=budget:break
-        result=workload.run_fresh(workers,repeat)
-        rows.append({'workers':workers,'repeat':repeat,'valid':result['valid'],'throughput':result['throughput'],'elapsed':result['elapsed'],'failures':result.get('failures',{})})
+        result=workload.run_fresh(workers,repeat,start+budget)
+        rows.append({'workers':workers,'repeat':repeat,'valid':result['valid'],'throughput':result['throughput'],'elapsed':result['elapsed'],'failures':result.get('failures',{}),'outcome_statuses':result.get('outcome_statuses',{})})
     grouped=[]
     for w in candidates:
         rs=[x for x in rows if x['workers']==w]
@@ -33,9 +33,9 @@ def benchmark(profile,host,workload,budget=900,seed=20260928):
 
 class PerfWorkload:
     """Fresh result namespace per arm; never consults a science run store."""
-    def __init__(self,cases,binding,root):
-        self.cases=list(cases);self.binding=binding;self.root=root
-    def run_fresh(self,workers,repeat):
+    def __init__(self,cases,binding,root,worker_cap=None):
+        self.cases=list(cases);self.binding=binding;self.root=root;self.worker_cap=worker_cap
+    def run_fresh(self,workers,repeat,dispatch_deadline):
         from pathlib import Path
         from .store import ResultStore
         from .supervisor import Supervisor
@@ -44,8 +44,9 @@ class PerfWorkload:
         if root.exists():raise FileExistsError('PERF arm already exists')
         start=time.monotonic();store=ResultStore(root,self.binding);supervisor=Supervisor(self.binding)
         try:
-            report=supervisor.run_ready(self.cases,workers,store)
+            report=supervisor.run_ready(self.cases,workers,store,dispatch_deadline=dispatch_deadline,dispatch_limit=self.worker_cap)
             elapsed=time.monotonic()-start
-            valid=not report.failures and len(report.outcomes)==len(self.cases)
-            return {'valid':valid,'throughput':len(report.outcomes)/elapsed if valid and elapsed else 0.,'elapsed':elapsed,'failures':report.failures}
+            valid=not report.failures and len(report.outcomes)==len(self.cases) and all(
+                report.outcomes.get(task_id(s)) is not None and report.outcomes[task_id(s)].status==('WRONG_PAIR' if s.kind=='wrong_pair_check' else 'PASS') for s in self.cases)
+            return {'valid':valid,'throughput':len(report.outcomes)/elapsed if valid and elapsed else 0.,'elapsed':elapsed,'failures':report.failures,'outcome_statuses':{tid:out.status for tid,out in report.outcomes.items()}}
         finally:supervisor.close();store.close()

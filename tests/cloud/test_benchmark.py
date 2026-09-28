@@ -3,7 +3,7 @@ class Host:usable_cpus=16
 class Work:
     cases=list(range(16))
     def __init__(self):self.calls=[]
-    def run_fresh(self,w,r):
+    def run_fresh(self,w,r,dispatch_deadline):
         self.calls.append((w,r));return {'valid':True,'throughput':{1:1,8:8,16:8.2}[w],'elapsed':.1}
 def test_seeded_three_repeat_selection():
     w=Work();r=benchmark({},Host(),w,seed=3)
