@@ -46,16 +46,16 @@
       "sha256": "8309a1159edac6711925c63e10a613518c2355791fe69da2f28d0ab15c9d0081"
     },
     "README_KO.md": {
-      "bytes": 1491,
-      "sha256": "e6545f2b181ea9a66d5291bbee36601f441fb47855c06f82226887292eee35fc"
+      "bytes": 1682,
+      "sha256": "258b06f5c09b6633ec75c30e8471ce17c8691b154cd1906af679e1ec92a0ac94"
     },
     "REPLAY_CLOSEOUT.json": {
       "bytes": 1492,
       "sha256": "5e9d2eae065133b243a32b1f4e19d2dae51041f5599da40c4453750741d6565b"
     },
     "RUN_RETURN.json": {
-      "bytes": 2447,
-      "sha256": "083a5ea252ff69421fa29efb785e5eba157742144311a63a19713c5502e698fa"
+      "bytes": 2637,
+      "sha256": "2b2d908f85c34f54cf4346e8033bd60c5d5c99377c914b08dd6c8e2810b968fd"
     },
     "SCIENCE_TRACER.json": {
       "bytes": 1367,
@@ -70,8 +70,8 @@
       "sha256": "ffe409f67e71c0c2ea00c5d236419d2ab5c6697f915c9433843f80ec0a177b6d"
     },
     "VALIDATION_SUMMARY.json": {
-      "bytes": 2891,
-      "sha256": "b0589ed380ebfe17d37e4ffbf1b1e31b52d941a06c1b569a96277a342686b3f7"
+      "bytes": 3165,
+      "sha256": "ff89f7ec71ee10cc0c916532637ca1543c4e569798d059c51d9e205125fdeab1"
     },
     "WORKER_SWEEP.json": {
       "bytes": 1434,

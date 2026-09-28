@@ -7,3 +7,6 @@
 첫 미완료 기준은 H2 HOST_PREFLIGHT다. 승인된 ext4 volume이 외부 운영자에 의해 `/srv/bass-he`에 마운트되면 H2를 다시 확인한 뒤 H3부터 진행한다. 이 작업은 disk/VM/service/firewall/credential을 변경하지 않았다. 과학 PROMOTE는 HOLD다.
 
 `COMMAND_LOG.txt`는 실제 명령, UTC, exit code, 민감 host 필드를 제거한 결정적 출력, 원본 stdout SHA256을 포함한다. `FULL_TESTS.xml`은 새 전체 실행의 JUnit이며 hostname 필드만 hash로 바꿨다. `CLOUD_TESTS.xml`은 그 실행에서 추출한 61개 cloud testcase이며 별도 재실행이 아니다. 최종 evidence commit/tree는 Git commit이 자기 hash를 파일에 포함할 수 없으므로 draft PR 본문에 기록한다.
+
+검증 draft PR: https://github.com/cosmosapjw-quantum/BASS_HE/pull/14
+첫 evidence snapshot commit/tree: 486cbdaebbadd47876f4ae7504c97c8a56b52924 / 0d84722381e4b659528f586e6143e7a81317fc3c

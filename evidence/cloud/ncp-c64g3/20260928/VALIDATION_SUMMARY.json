@@ -75,8 +75,9 @@
     "final_commit_in_pr_metadata": true,
     "starting_commit": "ad12eec6023c41b7791eb3958fc00b0adcd5bc14",
     "starting_tree": "bdf79f93d54baac022e776f124033a623bad3a52",
-    "validation_commit": null,
-    "validation_tree": null
+    "validation_commit": "486cbdaebbadd47876f4ae7504c97c8a56b52924",
+    "validation_commit_semantics": "First published evidence snapshot; current publication index is a later commit.",
+    "validation_tree": "0d84722381e4b659528f586e6143e7a81317fc3c"
   },
   "source_commit": "ad12eec6023c41b7791eb3958fc00b0adcd5bc14",
   "source_tree": "bdf79f93d54baac022e776f124033a623bad3a52",
@@ -85,6 +86,7 @@
   "validation_branch": "validation/ncp-c64g3-cloud-20260928",
   "validation_branch_commit_at_capture": "ad12eec6023c41b7791eb3958fc00b0adcd5bc14",
   "validation_branch_tree_at_capture": "bdf79f93d54baac022e776f124033a623bad3a52",
+  "validation_pr_url": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/14",
   "worker_calibration": {
     "best_throughput": null,
     "selected_workers": null,
