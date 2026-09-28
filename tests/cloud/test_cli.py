@@ -11,3 +11,8 @@ def test_missing_data_mount_precedes_run_creation(tmp_path,monkeypatch):
 def test_local_sandbox_caps_two(tmp_path):
     cap=module.admit_storage(tmp_path/'run',{'storage_mode':'local_sandbox','workers':32})
     assert cap(42)==2
+
+def test_root_backed_host_is_explicit_mode():
+    out=Path('/srv/bass-he/runs/test-root-backed')
+    with pytest.raises(RuntimeError,match='BLOCKED_ROOT_STORAGE|BLOCKED_MEMORY_CALIBRATION'):
+        module.admit_storage(out,{'storage_mode':'root_backed_host','workers':1})

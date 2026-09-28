@@ -42,7 +42,7 @@ class Controller:
         if prior and not self.retry_failed:return None,prior
         ready=sum(self.store.load(task_id(s)) is None for s in values)
         cap=self.worker_cap(ready) if ready else 1
-        if cap<1:return None,{'_stage':{'status':'RESOURCE_PAUSED','remaining':ready}}
+        if cap<1:return None,{'_stage':{'status':getattr(self.worker_cap,'pause_reason',None) or 'RESOURCE_PAUSED','remaining':ready}}
         report=self.supervisor.run_ready(values,cap,self.store,retry_failed=self.retry_failed,dispatch_limit=self.worker_cap,dispatch_deadline=self.dispatch_deadline,checkpoint=self.checkpoint)
         if report.failures:return None,report.failures
         for spec in (specs.values() if isinstance(specs,dict) else specs):
