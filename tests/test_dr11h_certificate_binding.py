@@ -11,6 +11,7 @@ def ep():
     return find_exceptional_point((1,0,0),(2,1,0),SEED,depth=64)
 
 @pytest.mark.parametrize('mutate', [
+    lambda x: x.__setitem__('state_a',(2,0,0)),
     lambda x: x.__setitem__('state_b',(2,0,0)),
     lambda x: x.__setitem__('R',x['R']*1.01),
     lambda x: x.__setitem__('p',x['p']*(1+1e-6)),
@@ -54,5 +55,24 @@ def test_constructor_membership_certificate_is_endpoint_and_policy_bound(ep):
 def test_geometry_rejects_stale_policy_identity(ep):
     changed=copy.deepcopy(ep)
     changed['pair_membership']['binding']['policy_id']='STALE_POLICY'
+    with pytest.raises(ValueError, match='pair membership certificate binding mismatch'):
+        contour_geometry(changed,0.0,panels=8)
+
+
+@pytest.mark.parametrize('mutate', [
+    lambda x: x['pair_membership'].__setitem__('tolerance',x['pair_membership']['tolerance']*2),
+    lambda x: x['pair_membership'].__setitem__('probe_scale',x['pair_membership']['probe_scale']*2),
+    lambda x: x['pair_membership'].__setitem__('binding_sha256','0'*64),
+    lambda x: x['pair_membership'].pop('binding_sha256'),
+])
+def test_geometry_rejects_stale_certificate_metadata(ep,mutate):
+    changed=copy.deepcopy(ep);mutate(changed)
+    with pytest.raises(ValueError, match='pair membership certificate binding mismatch'):
+        contour_geometry(changed,0.0,panels=8)
+
+
+def test_geometry_rejects_boolean_permutation_alias(ep):
+    changed=copy.deepcopy(ep)
+    changed['pair_membership']['permutation']=[False,True]
     with pytest.raises(ValueError, match='pair membership certificate binding mismatch'):
         contour_geometry(changed,0.0,panels=8)
