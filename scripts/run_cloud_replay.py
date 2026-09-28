@@ -65,7 +65,6 @@ def main():
             finally:os.close(fd)
         print(json.dumps({'status':'PASS','source_commit':bind.source_commit,'source_tree':bind.source_tree,'binding':bind.identity(),'accelerator':'ACCELERATOR_PAYLOAD_UNAVAILABLE'},sort_keys=True));return 0
     if args.command=='calibrate-memory':
-        from bass_he.cloud.controller import Controller
         class BindingOnly:binding=bind
         controller=Controller(BindingOnly())
         try:spec=controller.initial_specs()[1] if args.case=='control' else next(iter(controller.endpoint_specs().values()))
