@@ -5,8 +5,72 @@ Duplicate spectral roots are therefore NOT branch-point evidence.
 Coulomb charges, R, p and energies use the legacy paper's atomic-unit convention.
 """
 from __future__ import annotations
+import hashlib, json
 import numpy as np
 from arseny_reimpl.term_complex import continue_complex_from_real, solve_complex_term
+
+
+PAIR_MEMBERSHIP_POLICY_ID = "FINITE_CF_ADVERTISED_ORDINAL_PAIR_MEMBERSHIP_V2"
+
+
+def _hex_float(x):
+    x=float(x)
+    if not np.isfinite(x):
+        raise ValueError('finite membership binding scalar required')
+    return x.hex()
+
+
+def _hex_complex(z):
+    z=complex(z)
+    if not np.isfinite(z):
+        raise ValueError('finite membership binding complex required')
+    return [_hex_float(z.real), _hex_float(z.imag)]
+
+
+def _pair_membership_binding(state_a,state_b,R,p,lam,*,depth,Z1,Z2,tolerance,probe_scale):
+    return {
+        'policy_id': PAIR_MEMBERSHIP_POLICY_ID,
+        'state_a': [int(x) for x in state_a],
+        'state_b': [int(x) for x in state_b],
+        'R_complex128_hex': _hex_complex(R),
+        'p_complex128_hex': _hex_complex(p),
+        'lambda_complex128_hex': _hex_complex(lam),
+        'depth': int(depth),
+        'Z1_float64_hex': _hex_float(Z1),
+        'Z2_float64_hex': _hex_float(Z2),
+        'tolerance_float64_hex': _hex_float(tolerance),
+        'probe_scale_float64_hex': _hex_float(probe_scale),
+    }
+
+
+def _binding_sha256(binding):
+    raw=json.dumps(binding,sort_keys=True,separators=(',',':')).encode()
+    return hashlib.sha256(raw).hexdigest()
+
+
+def validate_pair_membership_certificate(ep):
+    cert=ep.get('pair_membership')
+    if not isinstance(cert,dict) or not cert.get('passed',False):
+        raise ValueError('certified pair membership required')
+    try:
+        tolerance=float(cert['tolerance']); probe_scale=float(cert['probe_scale'])
+        binding=cert['binding']; actual_sha=cert['binding_sha256']
+    except (KeyError,TypeError,ValueError) as exc:
+        raise ValueError('pair membership certificate binding mismatch') from exc
+    expected=_pair_membership_binding(
+        ep['state_a'],ep['state_b'],ep['R'],ep['p'],ep['lam'],
+        depth=ep['depth'],Z1=ep['Z1'],Z2=ep['Z2'],
+        tolerance=tolerance,probe_scale=probe_scale)
+    if binding!=expected or actual_sha!=_binding_sha256(expected):
+        raise ValueError('pair membership certificate binding mismatch')
+    if cert.get('claim')!=PAIR_MEMBERSHIP_POLICY_ID:
+        raise ValueError('pair membership certificate binding mismatch')
+    if float(cert.get('max_scaled_matching_error',np.inf))>tolerance:
+        raise ValueError('pair membership certificate binding mismatch')
+    perm=cert.get('permutation')
+    if not isinstance(perm,list) or sorted(perm) != [0,1]:
+        raise ValueError('pair membership certificate binding mismatch')
+    return cert
 
 
 def _coefficients(s, p, lam, R, m, Z1, Z2, radial):
@@ -128,12 +192,15 @@ def _pair_membership_certificate(state_a,state_b,R,p,lam,*,depth,Z1,Z2,
     options=((max(d[0,0],d[1,1]),d[0,0]+d[1,1],(0,1)),
              (max(d[0,1],d[1,0]),d[0,1]+d[1,0],(1,0)))
     best=min(options,key=lambda x:(x[0],x[1]))
+    binding=_pair_membership_binding(state_a,state_b,R,p,lam,depth=depth,Z1=Z1,Z2=Z2,
+                                    tolerance=tolerance,probe_scale=probe_scale)
     return dict(passed=bool(best[0] <= tolerance),
                 tolerance=float(tolerance),probe_scale=float(probe_scale),probe_radius=radius,
                 probe_R=probe,max_scaled_matching_error=float(best[0]),
                 sum_scaled_matching_error=float(best[1]),permutation=list(best[2]),
                 scaled_distance_matrix=d.tolist(),local_sheet_gap=float(np.linalg.norm(local[0]-local[1])),
-                claim='FINITE_CF_ADVERTISED_ORDINAL_PAIR_MEMBERSHIP')
+                binding=binding,binding_sha256=_binding_sha256(binding),
+                claim=PAIR_MEMBERSHIP_POLICY_ID)
 
 
 def find_exceptional_point(state_a,state_b,R_seed,*,depth=96,Z1=1.,Z2=2.,tol=2e-11):
