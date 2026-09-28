@@ -24,12 +24,14 @@ runner 변경 후 이전 run의 결과를 재사용하려면 새 profile과 새 
 
 root-backed 준비는 `lsblk -o NAME,SIZE,TYPE,FSTYPE,UUID,MOUNTPOINTS,MODEL`, `findmnt -no SOURCE,FSTYPE,TARGET,OPTIONS /`, `df -B1 /`, `statvfs("/")`로 읽기 전용 확인 후 `bass-he` 비루트 계정과 `/srv/bass-he` 디렉터리를 만든다. `chown bass-he:bass-he`, `chmod 0750` 후 그 계정으로 write/fsync와 directory fsync를 확인한다. 실행 profile은 아래처럼 root-backed 모드를 명시한다.
 
+`bass-he` 계정은 `/root` 아래 worktree의 Git pointer를 읽을 수 없다. 검증에는 `/srv/bass-he/source/current`에 독립적으로 checkout한 exact execution commit을 사용했다. 실행 계정이 source와 `.git`을 읽을 수 있는지 `git rev-parse HEAD HEAD^{tree}`로 확인한다.
+
 ```bash
 python scripts/run_cloud_replay.py preflight --env-out /srv/bass-he/runs/env-001.json
 python scripts/run_cloud_replay.py calibrate-memory --storage-mode root_backed_host --case control --out /srv/bass-he/runs/memory-001
 ```
 
-`calibrate-memory`는 승인된 control case 하나를 별도 `PERF_MEMORY` namespace에서 한 worker로 실행한다. 0.05초 간격의 process VmRSS와 service-cgroup `memory.current`를 표본화해 sample count, interval, RSS peak/p95, service peak, 시작 시 controller memory, case/source/binding/thread identity를 `MEMORY_CALIBRATION.json`에 기록한다. 이는 과학 결과 개수에 넣지 않는다. 측정·case gate 실패, 표본 부족, mount/limit 문제는 `BLOCKED_MEMORY_CALIBRATION`이며 추정 RSS fallback이 없다. local sandbox에서도 `--storage-mode local_sandbox --out /tmp/memory-001`로 같은 CLI를 연습할 수 있다.
+`calibrate-memory`는 승인된 control case 하나를 별도 `PERF_MEMORY` namespace에서 한 worker로 실행한다. 0.05초 간격의 process VmRSS와 현재 실행 cgroup의 `memory.current`를 표본화해 sample count, interval, RSS peak/p95, cgroup peak, 시작 시 controller memory, case/source/binding/thread identity를 `MEMORY_CALIBRATION.json`에 기록한다. 2026-09-28 검증은 전용 service unit을 시작하지 않았으므로 `/user.slice/user-0.slice/session-2.scope`에서 측정했다. 이는 과학 결과 개수에 넣지 않는다. 측정·case gate 실패, 표본 부족, mount/limit 문제는 `BLOCKED_MEMORY_CALIBRATION`이며 추정 RSS fallback이 없다. local sandbox에서도 `--storage-mode local_sandbox --out /tmp/memory-001`로 같은 CLI를 연습할 수 있다.
 
 host runtime profile 예시는 다음과 같다. `worker_rss_p95_bytes`는 사람이 입력하지 않고 receipt에서 읽는다.
 
@@ -37,12 +39,12 @@ host runtime profile 예시는 다음과 같다. `worker_rss_p95_bytes`는 사�
 {"source_commit":"<preflight의 source_commit>","backend":"python","storage_mode":"root_backed_host","memory_calibration_receipt":"/srv/bass-he/runs/memory-001/MEMORY_CALIBRATION.json","controller_reserve_bytes":0,"memory_buffer_bytes":1073741824}
 ```
 
-`python scripts/run_cloud_replay.py run --profile /srv/bass-he/profile.json --out /srv/bass-he/runs/replay-001 --workers 32`는 receipt의 binding/source/thread/hash를 검증한다. 메모리 계산은 실제 service-cgroup `memory.current`를 먼저 빼고, 향후 controller 성장 reserve와 미사용 safety buffer를 뺀 뒤 worker RSS p95로 추가 여유를 구한다. 현재 controller/worker는 이미 `memory.current`에 포함되므로 다시 빼지 않는다. spawn 전과 dispatch 때 같은 규칙을 적용한다. 0.65M 이상에서 새 dispatch를 멈추며 예상 점유는 0.75M 이하여야 한다. CPU affinity, ancestor/root cgroup limits, ready case 수도 상한이다. 이 중 필요한 값이 unknown이면 차단한다.
+`python scripts/run_cloud_replay.py run --profile /srv/bass-he/profile.json --out /srv/bass-he/runs/replay-001 --workers 16`은 receipt의 binding/source/thread/hash를 검증한다. 메모리 계산은 현재 실행 cgroup의 `memory.current`를 먼저 빼고, 향후 controller 성장 reserve와 미사용 safety buffer를 뺀 뒤 worker RSS p95로 추가 여유를 구한다. 현재 controller/worker는 이미 `memory.current`에 포함되므로 다시 빼지 않는다. spawn 전과 dispatch 때 같은 규칙을 적용한다. 0.65M 이상에서 새 dispatch를 멈추며 예상 점유는 0.75M 이하여야 한다. CPU affinity, ancestor/root cgroup limits, ready case 수도 상한이다. 이 중 필요한 값이 unknown이면 차단한다. 첫 migration replay는 `--reuse-evidence` 없이 새 output directory에서 실행한다.
 
-`deploy/ncp-c64g3/bass-he-replay@.service`는 설치 전 참고 template이다. 해당 host에서 `bass_he.cloud.resources.inventory()`와 `render_service(profile, host)`로 실제 bytes 기준 MemoryHigh/MemoryMax가 들어간 unit을 생성하고 검토한다. 이 작업에서는 service 설치·시작, SSH 단절/reboot 검증을 하지 않았다. 결제 대상 cloud replay와 calibration은 별도 host admission 뒤 실행한다. Codex 세션을 supervisor로 사용하지 않는다.
+`deploy/ncp-c64g3/bass-he-replay@.service`는 설치 전 참고 template이다. 해당 host에서 `bass_he.cloud.resources.inventory()`와 `render_service(profile, host)`로 실제 bytes 기준 MemoryHigh/MemoryMax가 들어간 unit을 생성하고 검토한다. root-backed profile로 생성한 unit은 별도 `/srv/bass-he` mount를 요구하지 않는다. 이번 host replay는 완료됐지만 service 설치·시작, SSH 단절/reboot 검증은 수행하지 않았다. Codex 세션을 supervisor로 사용하지 않는다.
 
-checkpoint export는 로컬 파일 생성까지 지원한다. provider adapter contract는 `upload_segment(path, expected_digest) -> ProviderReceipt`이다. 연결된 두 provider 및 자격 증명이 없으므로 Google Drive/Dropbox ACK와 실제 독립 restore는 미수행이다. upload ACK는 restore 검증을 뜻하지 않는다.
+checkpoint export와 새 디렉터리의 실제 로컬 restore를 수행했다. 2026-09-28 archive는 Google Drive와 Dropbox의 기존 dossier 폴더에 create-only 업로드했고 양쪽 ACK와 metadata size readback을 얻었다. 원격 바이트의 재다운로드·해시·복원은 `NOT_RUN`이다. upload ACK는 원격 restore 검증을 뜻하지 않는다.
 
 Numba 원본 source/tests/lock이 없으므로 명시적 `numba` 요청은 `ACCELERATOR_PAYLOAD_UNAVAILABLE`로 실패한다. Python backend만 지원한다. 과학적 독립 검수와 PROMOTE는 실행기 PASS와 별개다.
 
-host admission 후 worker-count calibration은 승인된 동일 stage의 `CaseSpec` JSON 배열을 `--cases`에 주고 `python scripts/benchmark_cloud_workers.py --profile /srv/bass-he/profile.json --cases /srv/bass-he/approved_cases.json --out /srv/bass-he/runs/calibration-001`로 시작한다. 각 arm은 새 PERF namespace에서 3회 실행하며 과학 결과 개수에는 넣지 않는다. 32 초과 worker를 쓰려면 선택된 arm의 `ADMISSION_RECEIPT.json`을 명시해 `run ... --workers 40 --admit-calibrated-workers /srv/bass-he/runs/calibration-001/ADMISSION_RECEIPT.json`을 실행한다. receipt의 checksum, checkout/environment binding, thread policy, memory receipt가 다르면 거부한다. 42-case finite-rho stage에서 실제 동시 실행 상한은 ready count 42다. 48/56/64 arm 측정에는 그 이상의 승인된 PERF case 목록이 필요하다. 현재 환경에서는 host/예산 부재로 worker sweep 및 유료 replay를 실행하지 않았다.
+host admission 후 worker-count calibration은 승인된 동일 stage의 `CaseSpec` JSON 배열을 `--cases`에 주고 `python scripts/benchmark_cloud_workers.py --profile /srv/bass-he/profile.json --cases /srv/bass-he/approved_cases.json --out /srv/bass-he/runs/calibration-001`로 시작한다. 각 arm은 새 PERF namespace에서 3회 실행하며 과학 결과 개수에는 넣지 않는다. 2026-09-28 c64-g3의 실제 42-case sweep은 1/8/16/24/32 workers를 각 3회 측정했고, 최고 평균 throughput의 95% 이내인 최소 수 16을 선택했다. 32 초과 worker를 쓰려면 별도 `ADMISSION_RECEIPT.json`을 명시해야 한다. receipt의 checksum, checkout/environment binding, thread policy, memory receipt가 다르면 거부한다. 42-case finite-rho stage에서 실제 동시 실행 상한은 ready count 42다. 48/56/64 arm 측정에는 그 이상의 승인된 PERF case 목록이 필요하다. 이번 fresh replay는 16 workers로 56 geometry action을 완료했고 imported evidence는 0이다. 상세 결과와 한계는 `evidence/cloud/ncp-c64g3/20260928/resume-002/RUN_RETURN.json`에서 시작한다.
