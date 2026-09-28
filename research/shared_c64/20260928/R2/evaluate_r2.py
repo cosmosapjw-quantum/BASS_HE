@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 """Bounded replay on R1 saved traces. Never calls a spectral solver or cloud API."""
-import argparse, hashlib, json, math, platform
-from collections import Counter
+import argparse, hashlib, json, platform
 from pathlib import Path
-import numpy as np
-import sympy as sy
-from error_envelopes import action_jet, interpolation_bound, gap_error_bound, certified_mesh, hybrid_telescope
+from prepared_io import publish_json, read_trace_inputs, require_new_output, tests_not_run
 
 
 def dec(x):
@@ -16,11 +13,28 @@ def dec(x):
 
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--r1-root',type=Path,required=True);ap.add_argument('--out',type=Path,required=True)
-    args=ap.parse_args();rows=[];budget=1e-5;files=sorted((args.r1_root/'results').glob('*.json'))
-    if len(files)!=7:raise ValueError('exactly seven R1 trace files expected')
-    for path in files:
-        raw=path.read_bytes();o=json.loads(raw);traces={}
+    ap=argparse.ArgumentParser()
+    ap.add_argument('--r1-root',type=Path,required=True)
+    ap.add_argument('--input-manifest',type=Path,default=Path(__file__).with_name('TRACE_INPUTS.json'))
+    ap.add_argument('--out',type=Path,required=True)
+    ap.add_argument('--verify-only',action='store_true',help='Check byte identity only; no numeric imports or computation')
+    args=ap.parse_args()
+    require_new_output(args.out)
+    files,input_receipt=read_trace_inputs(args.r1_root,args.input_manifest)
+    if args.verify_only:
+        output=dict(node='SHARED_C64_R2',status='INPUT_IDENTITY_VERIFIED',
+                    input_identity=input_receipt,saved_trace_analysis='NOT_RUN',
+                    new_spectral_solves=0,new_cloud_runs=0,tests=tests_not_run(),
+                    PROMOTE='HOLD',Eq55='NOT_RUN',continuum_ionization='NOT_ADMITTED')
+        publish_json(args.out,output)
+        print(json.dumps(output,indent=2,allow_nan=False))
+        return
+    import numpy as np
+    import sympy as sy
+    from error_envelopes import action_jet, interpolation_bound, gap_error_bound, certified_mesh, hybrid_telescope
+    rows=[];budget=1e-5
+    for relative,raw in files:
+        o=json.loads(raw);traces={}
         for panels in ('32','64'):
             t=o['traces'][panels]
             R,g,dR=[np.array([dec(x) for x in t[key]],complex) for key in ('R','gap','dR')]
@@ -79,7 +93,7 @@ def main():
     output=dict(node='SHARED_C64_R2',scope='FIXED_DISCRETE_TRACE_ANALYSIS_AND_TOY_OPERATORS',
         python=platform.python_version(),numpy=np.__version__,sympy=sy.__version__,
         source_trace_files=7,analyzed_traces=14,new_spectral_solves=0,new_cloud_runs=0,
-        tests=dict(passed=12,scope='R2 research tests; original scientific suite not rerun'),
+        tests=tests_not_run(),input_identity=input_receipt,
         symbolic_residuals=residuals,rows=rows,
         interpolation=dict(budget=budget,budget_kind='new absolute RESEARCH-only interpolation budget, not production tolerance',
             sampled_validation_points=sum(r['withheld_comparisons'] for r in rows),
@@ -92,7 +106,7 @@ def main():
         benchmark_histogram_diagnostic=hist,
         transfer_claim='reuse the structural-validation/cached-evaluator method, never foreign physical matrices or claim gates',
         live_three_job_idle_status='USER_REPORTED_NOT_OBSERVED',PROMOTE='HOLD',Eq55='NOT_RUN')
-    args.out.write_text(json.dumps(output,indent=2,allow_nan=False)+'\n')
+    publish_json(args.out,output)
     print(json.dumps({k:output[k] for k in ('analyzed_traces','new_spectral_solves','interpolation','hybrid_telescope')},indent=2))
 
 if __name__=='__main__':main()
