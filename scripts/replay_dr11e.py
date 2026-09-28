@@ -13,15 +13,9 @@ import numpy as np
 from bass_he.spectral import find_exceptional_point
 from bass_he.sturm_geometry import contour_geometry
 
-BRANCHES={
- 'S_3p_sigma_4p_sigma':((3,1,0),(4,1,0),complex(.490824831704868,.7201512942653545)),
- 'S_3d_sigma_4d_sigma':((3,2,0),(4,2,0),complex(1.9861101965857686,1.3649585042669394)),
- 'Q_3p_sigma_4d_sigma':((3,1,0),(4,2,0),complex(7.9283658479841215,3.2285957034060395)),
- 'Q_3p_pi_4d_pi':((3,1,1),(4,2,1),complex(3.3246903179815623,5.069402501109532)),
- 'Q_3d_sigma_4f_sigma':((3,2,0),(4,3,0),complex(7.36009269188776,4.39297617387613)),
- 'Q_3d_pi_4f_pi':((3,2,1),(4,3,1),complex(11.819211257373258,3.977637384885511)),
- 'Q_3d_delta_4f_delta':((3,2,2),(4,3,2),complex(6.5362889891415,6.486618399302258)),
-}
+from bass_he.replay_contract import (BRANCHES, CONTROL_PAIR, CONTROL_SEED, DEPTH, FRACTIONS, PANELS,
+    SOURCE_DELTA, SOURCE_REL_LIMIT, EP_DISTANCE_LIMIT, RESIDUAL_LIMIT, SHEET_GAP_MIN, panel_limit)
+
 DEPENDENCIES=('bass_he/sturm_anchor.py','bass_he/sturm_geometry.py','bass_he/geometry.py',
               'bass_he/spectral.py','arseny_reimpl/term_complex.py','arseny_reimpl/term_real.py')
 def enc(x):
@@ -67,8 +61,8 @@ def measure(ep,frac,cache_dir=None):
   result=geo(ep,rho,n);save(path,dict(key=key,result=result))
   return result
  a=one(32);b=one(64)
- rel=abs(a['delta']-b['delta'])/b['delta'];lim=1e-4 if frac==0 else 5e-4
- ok=rel<=lim and all(np.isfinite(v['delta']) and v['delta']>0 and v['max_spectral_residual']<=5e-9 and v['minimum_normalized_sheet_gap']>1e-6 for v in (a,b))
+ rel=abs(a['delta']-b['delta'])/b['delta'];lim=panel_limit(frac)
+ ok=rel<=lim and all(np.isfinite(v['delta']) and v['delta']>0 and v['max_spectral_residual']<=RESIDUAL_LIMIT and v['minimum_normalized_sheet_gap']>SHEET_GAP_MIN for v in (a,b))
  return dict(fraction=frac,rho=rho,panel32=a,panel64=b,relative_32_64=rel,threshold=lim,passed=bool(ok))
 
 def main():
@@ -88,15 +82,15 @@ def main():
   return obj
  try:
   if args.stage=='control':
-   ep,t=bounded(find_exceptional_point,(1,0,0),(2,1,0),1.2125718090356707+1.363814370435508j,depth=160)
-   g=geo(ep,0.,64);relative=abs(g['delta']-1.42615)/1.42615
-   rec.update(ep=ep,geometry=g,relative_to_source=relative,status='PASS' if relative<=1e-4 and g['max_spectral_residual']<=5e-9 else 'FAIL')
+   ep,t=bounded(find_exceptional_point,*CONTROL_PAIR,CONTROL_SEED,depth=DEPTH)
+   g=geo(ep,0.,64);relative=abs(g['delta']-SOURCE_DELTA)/SOURCE_DELTA
+   rec.update(ep=ep,geometry=g,relative_to_source=relative,status='PASS' if relative<=SOURCE_REL_LIMIT and g['max_spectral_residual']<=RESIDUAL_LIMIT else 'FAIL')
   elif args.stage=='endpoints':
    read('control.json');rows={}
    for name,(a,b,R) in BRANCHES.items():
-    ep,t=bounded(find_exceptional_point,a,b,R,depth=160)
+    ep,t=bounded(find_exceptional_point,a,b,R,depth=DEPTH)
     rows[name]=dict(ep=ep,distance=abs(ep['R']-R),elapsed_seconds=t)
-   rec.update(rows=rows,status='PASS' if all(x['distance']<=1e-8 and x['ep']['certificate']['simple_fold'] for x in rows.values()) else 'FAIL')
+   rec.update(rows=rows,status='PASS' if all(x['distance']<=EP_DISTANCE_LIMIT and x['ep']['certificate']['simple_fold'] for x in rows.values()) else 'FAIL')
   elif args.stage=='d0':
    eps=read('endpoints.json')['rows'];rows={}
    for name in BRANCHES:rows[name]=measure(eps[name]['ep'],0.,out/'case_cache')
@@ -104,7 +98,7 @@ def main():
   elif args.stage=='rho':
    if not args.branch:raise ValueError('--branch required for rho stage')
    read('d0.json');ep=read('endpoints.json')['rows'][args.branch]['ep']
-   rows=[measure(ep,f,out/'case_cache') for f in (.25,.5,.75)]
+   rows=[measure(ep,f,out/'case_cache') for f in FRACTIONS[1:]]
    rec.update(branch=args.branch,rows=rows,status='PASS' if all(x['passed'] for x in rows) else 'FAIL')
   else:
    c=read('control.json');e=read('endpoints.json');z=read('d0.json')
