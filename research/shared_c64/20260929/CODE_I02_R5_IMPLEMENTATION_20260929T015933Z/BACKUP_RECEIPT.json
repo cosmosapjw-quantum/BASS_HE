@@ -1,0 +1,38 @@
+{
+  "artifact": "BASS_HE_CODE_I02_R5_d507989_20260929.tar.gz",
+  "contents": [
+    "AGENTS.md",
+    "src/bass_he/spectral.py",
+    "src/bass_he/sturm_geometry.py",
+    "tests/test_code_i02_r5_admission.py",
+    "research/shared_c64/20260929/CODE_I02_R5_IMPLEMENTATION_20260929T015933Z/RED_GREEN_EVIDENCE.json",
+    "research/shared_c64/20260929/CODE_I02_R5_IMPLEMENTATION_20260929T015933Z/INDEPENDENT_REREVIEW_PROMPT.md"
+  ],
+  "dropbox": {
+    "local_content_hash": "cc1a5981265d8faf34ba1000806f477344cb17e9bad9f84df3f0981f9ed2fd0b",
+    "metadata_size_bytes": 11546,
+    "object_id": "id:BSpOijBcT10AAAAAADvEVQ",
+    "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_CODE_I02_R5_d507989_20260929.tar.gz",
+    "provider_content_hash": "cc1a5981265d8faf34ba1000806f477344cb17e9bad9f84df3f0981f9ed2fd0b",
+    "restore_downloaded": true,
+    "restore_sha256": "2f4f6b866726a34ab6e4b9eba3625685b3f91380022225e9a1ba4ea4676b73da",
+    "restore_verified": true,
+    "upload_ack": true
+  },
+  "google_drive": {
+    "metadata_size_bytes": 11546,
+    "object_id": "1LhDOSOcCjqTJi995ec5snGNlgD9u8djQ",
+    "parent_id": "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI",
+    "provider_checksum": "not_exposed",
+    "restore_downloaded": true,
+    "restore_sha256": "2f4f6b866726a34ab6e4b9eba3625685b3f91380022225e9a1ba4ea4676b73da",
+    "restore_verified": true,
+    "upload_ack": true
+  },
+  "local_sha256": "2f4f6b866726a34ab6e4b9eba3625685b3f91380022225e9a1ba4ea4676b73da",
+  "schema": "bass_he.code_i02.r5_dual_backup_receipt.v1",
+  "size_bytes": 11546,
+  "source_commit": "d507989da43423f1226468b06a258daa33058ffa",
+  "source_tree": "2800c34d8736cd1c3783fa62cb7d9e04a1ff59bd",
+  "verification_boundary": "Upload ACK and size were checked separately from byte-for-byte restore downloads. No scientific closure follows from backup verification."
+}
