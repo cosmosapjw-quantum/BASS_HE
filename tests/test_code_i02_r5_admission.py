@@ -137,6 +137,14 @@ def test_extended_precision_scalar_cannot_alias_float64_cache_key(ep):
         cache.key(candidate)
 
 
+def test_exact_integer_charges_remain_constructor_compatible_and_cache_distinct(ep):
+    integer_charges = spectral.find_exceptional_point(
+        (1, 0, 0), (2, 1, 0), SEED, depth=64, Z1=1, Z2=2)
+    assert spectral.validate_pair_membership_certificate(integer_charges)["passed"] is True
+    cache = spectral._SemanticAdmissionCache()
+    assert cache.key(integer_charges) != cache.key(ep)
+
+
 @pytest.mark.parametrize("field", ["R", "p", "lam", "Z1", "Z2"])
 def test_one_ulp_endpoint_changes_cache_key(ep, field):
     cache = spectral._SemanticAdmissionCache()

@@ -1,5 +1,5 @@
 {
-  "cache_identity": "SHA256(canonical JSON bytes of verifier_revision and verifier-reconstructed binding with state_a,state_b,R,p,lambda,depth,Z1,Z2,policy ID,tolerance,probe scale); float64/complex128 hex; in-process only",
+  "cache_identity": "SHA256(canonical JSON bytes of verifier revision, verifier-reconstructed binding with state_a,state_b,R,p,lambda,depth,Z1,Z2,policy ID,tolerance,probe scale, and original Z1/Z2 scalar type tags); float64/complex128 hex; in-process only",
   "decision": {
     "CODE_I02_CLOSED": false,
     "Eq55": "NOT_RUN",
@@ -12,13 +12,13 @@
     {
       "command": "/tmp/BASS_HE_CODE_I02_R5_venv/bin/pytest -q tests/test_code_i02_r5_admission.py tests/test_dr11h_certificate_binding.py --tb=short",
       "exit_code": 0,
-      "passed": 56
+      "passed": 57
     },
     {
       "command": "/tmp/BASS_HE_CODE_I02_R5_venv/bin/pytest -q --tb=short",
-      "elapsed_seconds": 56.24,
+      "elapsed_seconds": 58.33,
       "exit_code": 0,
-      "passed": 188
+      "passed": 189
     },
     {
       "command": "/tmp/BASS_HE_CODE_I02_R5_venv/bin/python -m compileall -q src tests",
@@ -77,6 +77,13 @@
       "failed": 1,
       "failure": "np.longdouble change rounded to same float64 key",
       "passed": 0
+    },
+    {
+      "command": "/tmp/BASS_HE_CODE_I02_R5_venv/bin/pytest -q tests/test_code_i02_r5_admission.py::test_exact_integer_charges_remain_constructor_compatible_and_cache_distinct --tb=short",
+      "exit_code": 1,
+      "failed": 1,
+      "failure": "int Z1/Z2 accepted by constructor but rejected by overly narrow binding scalar guard",
+      "passed": 0
     }
   ],
   "research_basis_head": "a0b81a2cd65f223798fc26d6e62b69117f3e6c30",
@@ -86,9 +93,9 @@
   "source_identity_policy": "Process-local cache only. SEMANTIC_ADMISSION_REVISION must bump with verifier or transitive spectral/continuation changes; no persistent reuse or caller digest authority.",
   "source_tree": "5697bfb7b2ceae5854499a8132b44e573672df85",
   "timing_seconds": {
-    "cold_semantic_revalidation": 0.7127166459977161,
-    "one_ulp_R_revalidation_miss": 0.7107312770094723,
+    "cold_semantic_revalidation": 0.7125154179957462,
+    "one_ulp_R_revalidation_miss": 0.7186540510010673,
     "one_ulp_key_changed": true,
-    "repeated_exact_endpoint_cached": 0.000205435004318133
+    "repeated_exact_endpoint_cached": 0.00021383000421337783
   }
 }

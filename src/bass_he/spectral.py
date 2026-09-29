@@ -19,7 +19,12 @@ SEMANTIC_ADMISSION_REVISION = "CODE_I02_R5_SPECTRAL_PAIR_V1"
 
 
 def _hex_float(x):
-    if type(x) not in (float,np.float64):
+    if isinstance(x,(bool,np.bool_)):
+        raise ValueError('float64 membership binding scalar required')
+    if isinstance(x,Integral):
+        if abs(int(x))>2**53:
+            raise ValueError('integer is not safely exact in float64')
+    elif type(x) not in (float,np.float64):
         raise ValueError('float64 membership binding scalar required')
     x=float(x)
     if not np.isfinite(x):
@@ -96,7 +101,10 @@ class _SemanticAdmissionCache:
 
     def key(self, ep):
         identity={'verifier_revision':self.verifier_revision,
-                  'binding':self.binding(ep)}
+                  'binding':self.binding(ep),
+                  'charge_source_types':[
+                      type(ep[name]).__module__+'.'+type(ep[name]).__qualname__
+                      for name in ('Z1','Z2')]}
         raw=_canonical_binding_bytes(identity)
         return hashlib.sha256(raw).hexdigest()
 
@@ -125,6 +133,8 @@ def validate_pair_membership_certificate(ep):
         raise ValueError('certified pair membership required')
     try:
         tolerance=cert['tolerance'];probe_scale=cert['probe_scale']
+        if type(tolerance) not in (float,np.float64) or type(probe_scale) not in (float,np.float64):
+            raise ValueError('stored policy scalars must be float64')
         if (_hex_float(tolerance)!=_hex_float(cache.tolerance)
             or _hex_float(probe_scale)!=_hex_float(cache.probe_scale)):
             raise ValueError('caller policy differs from verifier policy')
@@ -135,6 +145,8 @@ def validate_pair_membership_certificate(ep):
         if cert['claim']!=PAIR_MEMBERSHIP_POLICY_ID:
             raise ValueError('policy identity mismatch')
         error=cert['max_scaled_matching_error']
+        if type(error) not in (float,np.float64):
+            raise ValueError('stored matching error must be float64')
         error_hex=_hex_float(error)
         if error<0 or error>cache.tolerance:
             raise ValueError('stored matching error outside policy')
