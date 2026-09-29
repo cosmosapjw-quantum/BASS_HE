@@ -1,0 +1,30 @@
+{
+  "artifact": "BASS_HE_CODE_I02_R5_8bf9ce2_20260929.tar.gz",
+  "dropbox": {
+    "local_content_hash": "b8dcb33cfdd79337b63004032bac7c7f8bb6675bd63c65d01163bcd96c1810e4",
+    "metadata_size_bytes": 12449,
+    "object_id": "id:BSpOijBcT10AAAAAADvE5g",
+    "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_CODE_I02_R5_8bf9ce2_20260929.tar.gz",
+    "provider_content_hash": "b8dcb33cfdd79337b63004032bac7c7f8bb6675bd63c65d01163bcd96c1810e4",
+    "restore_downloaded": true,
+    "restore_sha256": "2ccd0073af25768b2e9d2706d6071506f74cc544c40fa9ac9788a54d92866b48",
+    "restore_verified": true,
+    "upload_ack": true
+  },
+  "google_drive": {
+    "metadata_size_bytes": 12449,
+    "object_id": "1Y_-BXmshaTsivQDvRqn1EDCYtB8h1S9O",
+    "parent_id": "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI",
+    "provider_checksum": "not_exposed",
+    "restore_downloaded": true,
+    "restore_sha256": "2ccd0073af25768b2e9d2706d6071506f74cc544c40fa9ac9788a54d92866b48",
+    "restore_verified": true,
+    "upload_ack": true
+  },
+  "local_sha256": "2ccd0073af25768b2e9d2706d6071506f74cc544c40fa9ac9788a54d92866b48",
+  "schema": "bass_he.code_i02.r5_dual_backup_receipt.v1",
+  "size_bytes": 12449,
+  "source_commit": "8bf9ce27a39be06d2487fffd40c2b97a2cdb3e1a",
+  "source_tree": "54c522773944ca00d3eee0b91952ffce5ecd413a",
+  "verification_boundary": "Upload ACK and metadata size were checked separately from downloaded bytes and SHA256. The archive contains the final source/test evidence at 8bf9ce2, plus the earlier receipt; this later receipt is recorded separately in Git. No scientific closure follows from backup verification."
+}
