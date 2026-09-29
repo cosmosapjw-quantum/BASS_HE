@@ -12,9 +12,15 @@ from arseny_reimpl.term_complex import continue_complex_from_real, solve_complex
 
 
 PAIR_MEMBERSHIP_POLICY_ID = "FINITE_CF_ADVERTISED_ORDINAL_PAIR_MEMBERSHIP_V2"
+PAIR_MEMBERSHIP_TOLERANCE = 5e-6
+PAIR_MEMBERSHIP_PROBE_SCALE = 1e-4
+# Bump this whenever the admission relation or its transitive scientific solver changes.
+SEMANTIC_ADMISSION_REVISION = "CODE_I02_R5_SPECTRAL_PAIR_V1"
 
 
 def _hex_float(x):
+    if type(x) not in (float,np.float64):
+        raise ValueError('float64 membership binding scalar required')
     x=float(x)
     if not np.isfinite(x):
         raise ValueError('finite membership binding scalar required')
@@ -22,6 +28,8 @@ def _hex_float(x):
 
 
 def _hex_complex(z):
+    if type(z) not in (complex,np.complex128):
+        raise ValueError('complex128 membership binding scalar required')
     z=complex(z)
     if not np.isfinite(z):
         raise ValueError('finite membership binding complex required')
@@ -57,37 +65,95 @@ def _pair_membership_binding(state_a,state_b,R,p,lam,*,depth,Z1,Z2,tolerance,pro
 
 
 def _binding_sha256(binding):
-    raw=json.dumps(binding,sort_keys=True,separators=(',',':')).encode()
-    return hashlib.sha256(raw).hexdigest()
+    return hashlib.sha256(_canonical_binding_bytes(binding)).hexdigest()
+
+
+def _canonical_binding_bytes(binding):
+    if not isinstance(binding,dict):
+        raise ValueError('membership binding must be an object')
+    return json.dumps(binding,sort_keys=True,separators=(',',':'),allow_nan=False).encode()
+
+
+class _SemanticAdmissionCache:
+    """Process-local revalidation indexed by verifier-derived exact JSON bytes.
+
+    The revision is a code-owned invalidation token for the verifier and its
+    transitive spectral/continuation implementation. No persisted result is read.
+    """
+    def __init__(self, *, tolerance=PAIR_MEMBERSHIP_TOLERANCE,
+                 probe_scale=PAIR_MEMBERSHIP_PROBE_SCALE,
+                 verifier_revision=SEMANTIC_ADMISSION_REVISION):
+        self.tolerance=tolerance
+        self.probe_scale=probe_scale
+        self.verifier_revision=verifier_revision
+        self._results={}
+
+    def binding(self, ep):
+        return _pair_membership_binding(
+            ep['state_a'],ep['state_b'],ep['R'],ep['p'],ep['lam'],
+            depth=ep['depth'],Z1=ep['Z1'],Z2=ep['Z2'],
+            tolerance=self.tolerance,probe_scale=self.probe_scale)
+
+    def key(self, ep):
+        identity={'verifier_revision':self.verifier_revision,
+                  'binding':self.binding(ep)}
+        raw=_canonical_binding_bytes(identity)
+        return hashlib.sha256(raw).hexdigest()
+
+    def revalidate(self, ep):
+        key=self.key(ep)
+        if key not in self._results:
+            args=(ep['state_a'],ep['R'],ep['p'],ep['lam'])
+            opts=dict(depth=ep['depth'],Z1=ep['Z1'],Z2=ep['Z2'])
+            fold=spectral_certificate(*args,**opts)
+            membership=_pair_membership_certificate(
+                ep['state_a'],ep['state_b'],ep['R'],ep['p'],ep['lam'],
+                **opts,tolerance=self.tolerance,probe_scale=self.probe_scale)
+            self._results[key]=(fold['simple_fold'],membership['passed'],
+                                membership['max_scaled_matching_error'])
+        return self._results[key]
+
+
+_SEMANTIC_ADMISSION_CACHE=_SemanticAdmissionCache()
 
 
 def validate_pair_membership_certificate(ep):
+    """Admit only a well-formed record agreeing with fresh current-endpoint work."""
+    cache=_SEMANTIC_ADMISSION_CACHE
     cert=ep.get('pair_membership')
-    if not isinstance(cert,dict) or not cert.get('passed',False):
+    if not isinstance(cert,dict) or cert.get('passed') is not True:
         raise ValueError('certified pair membership required')
     try:
-        tolerance=float(cert['tolerance']); probe_scale=float(cert['probe_scale'])
-        binding=cert['binding']; actual_sha=cert['binding_sha256']
-    except (KeyError,TypeError,ValueError) as exc:
-        raise ValueError('pair membership certificate binding mismatch') from exc
-    try:
-        expected=_pair_membership_binding(
-            ep['state_a'],ep['state_b'],ep['R'],ep['p'],ep['lam'],
-            depth=ep['depth'],Z1=ep['Z1'],Z2=ep['Z2'],
-            tolerance=tolerance,probe_scale=probe_scale)
+        tolerance=cert['tolerance'];probe_scale=cert['probe_scale']
+        if (_hex_float(tolerance)!=_hex_float(cache.tolerance)
+            or _hex_float(probe_scale)!=_hex_float(cache.probe_scale)):
+            raise ValueError('caller policy differs from verifier policy')
+        stored=_canonical_binding_bytes(cert['binding'])
+        expected=_canonical_binding_bytes(cache.binding(ep))
+        if stored!=expected or cert['binding_sha256']!=hashlib.sha256(stored).hexdigest():
+            raise ValueError('stored binding identity mismatch')
+        if cert['claim']!=PAIR_MEMBERSHIP_POLICY_ID:
+            raise ValueError('policy identity mismatch')
+        error=cert['max_scaled_matching_error']
+        error_hex=_hex_float(error)
+        if error<0 or error>cache.tolerance:
+            raise ValueError('stored matching error outside policy')
     except (KeyError,TypeError,ValueError,OverflowError) as exc:
         raise ValueError('pair membership certificate binding mismatch') from exc
-    if binding!=expected or actual_sha!=_binding_sha256(expected):
-        raise ValueError('pair membership certificate binding mismatch')
-    if cert.get('claim')!=PAIR_MEMBERSHIP_POLICY_ID:
-        raise ValueError('pair membership certificate binding mismatch')
-    if float(cert.get('max_scaled_matching_error',np.inf))>tolerance:
-        raise ValueError('pair membership certificate binding mismatch')
     perm=cert.get('permutation')
     if (not isinstance(perm,list) or len(perm)!=2
         or any(isinstance(x,(bool,np.bool_)) or not isinstance(x,Integral) for x in perm)
         or sorted(int(x) for x in perm) != [0,1]):
         raise ValueError('pair membership certificate binding mismatch')
+    certificate=ep.get('certificate')
+    if not isinstance(certificate,dict) or certificate.get('simple_fold') is not True:
+        raise ValueError('certified simple fold required')
+    try:
+        fresh_fold,fresh_pair,fresh_error=cache.revalidate(ep)
+    except (ValueError,RuntimeError,FloatingPointError,OverflowError,np.linalg.LinAlgError) as exc:
+        raise ValueError('fresh pair membership revalidation failed') from exc
+    if not fresh_fold or not fresh_pair or error_hex!=_hex_float(fresh_error):
+        raise ValueError('fresh pair membership revalidation mismatch')
     return cert
 
 

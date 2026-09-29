@@ -15,8 +15,6 @@ from .sturm_anchor import bound_pair
 def contour_geometry(ep: dict, rho: float, *, panels: int=32,
                      anchor_sizes=(40,56,72)) -> dict:
     """Compute a finite-CF straight-line action using ordinal real-state labels."""
-    if not ep['certificate']['simple_fold']:
-        raise ValueError('certified simple fold required')
     validate_pair_membership_certificate(ep)
     if (isinstance(rho,(bool,np.bool_)) or not np.isscalar(rho)
         or np.iscomplexobj(rho) or not np.isfinite(rho) or rho<0
