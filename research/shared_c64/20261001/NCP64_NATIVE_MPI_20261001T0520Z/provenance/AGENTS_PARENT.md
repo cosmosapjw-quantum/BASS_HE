@@ -21,15 +21,3 @@ Reuse unchanged, dependency-matched evidence; do not rerun completed HE resume-0
 or the consumed bass_cr exactly-once F1-R2 under a new handoff label.
 Keep immutable execution identity separate from the moving publication branch.
 Detailed current delivery: research/shared_c64/20260928/R2/CHAT_FIRST_EXECUTION_POLICY_KO.md
-
-## Accuracy-preserving HPC development (owner requested 2026-10-01)
-For subsequent BASS_HE numerical research, use the measured HPC workflow in
-research/shared_c64/20261001/NCP64_NATIVE_MPI_20261001T0520Z/HPC_POLICY_KO.md.
-Develop binary64 Fortran/OpenMP/SIMD hot kernels and explicit OpenMPI task
-parallelism, keeping the pinned Python/reference lane and numerical parity gates.
-Select kernels and rank/thread layouts by same-workload measurements; do not
-assume a Fortran rewrite or 64 ranks is faster. Preserve physics, conventions,
-discretization and tolerances. No fast-math, hidden mixed precision or implicit
-backend fallback. Detect actual CPU topology and memory limits before execution.
-This is a development policy, not physical production promotion. C1b remains
-scoped to R=2; C2 needs its own exact grid/continuation/scientific contract.
