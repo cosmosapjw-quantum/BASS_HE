@@ -29,7 +29,7 @@ def public():
     print(json.dumps({'files':len(elements),'payload_bytes':len(payload),'namespace':namespace}))
 def archive():
     paths=files()
-    if any(p.name=='MANIFEST.json' or p.is_symlink() for p in paths):raise ValueError('existing manifest or symlink')
+    if any(p==ROOT/'MANIFEST.json' or p.is_symlink() for p in paths):raise ValueError('existing root manifest or symlink')
     records={str(p.relative_to(ROOT)):{'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in paths}
     dump(ROOT/'MANIFEST.json',{'schema':1,'scope':'all archive payload except manifest','files':records});paths.append(ROOT/'MANIFEST.json')
     buffer=io.BytesIO()
