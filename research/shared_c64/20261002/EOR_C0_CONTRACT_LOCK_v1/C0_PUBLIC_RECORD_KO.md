@@ -58,5 +58,4 @@ BASS_HE_EOR_C0_CONTRACT_LOCK_20261002_v1.zip
 - Dropbox object: id:BSpOijBcT10AAAAAADxlEw, /BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_EOR_C0_CONTRACT_LOCK_20261002_v1.zip, completed + size121289 observed.
 - Library archive: libfile_f5179c0640dc819186f295bbcd4a14c9.
 
-全コード・試験ではなく、この公開Gitファイルは状態と配布記録のみを掲載する。
 전체 코드·계약·시험·유도·원 receiver 보고서와 실패 근거는 SHA-bound ZIP에 있다. 이 public namespace는 상태·결정·검증·배포 기록만 게시하며 전체 runtime source를 개별 Git 파일로 모두 게시했다는 뜻이 아니다. Raw copyrighted papers는 배포하지 않는다. Cloud RESTORE_VERIFIED는 주장하지 않는다.
