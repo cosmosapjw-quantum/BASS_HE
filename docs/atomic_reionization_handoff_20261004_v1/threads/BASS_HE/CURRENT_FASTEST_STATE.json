@@ -34,8 +34,8 @@
   "HE_F2_global_completed": false,
   "consumer_document_commit": "7a15daa38b60a5174315747b9194564dc2d4eb8b",
   "HE_F3": "WAIT_REI_F09_RESULT",
-  "HE_FLRW02B_mixed_native": "SEPARATE_PENDING",
-  "latest_consumer_delta": "FLRW06 reference/native-blocked docs plus HE-FLRW02B prepared mixed regression and REC Peebles reference crate; no HE mixed native execution receipt or RCT STEP01/F09 return",
+  "HE_FLRW02B_mixed_native": "FIXED_INPUT_NATIVE_PASS__CONSUMER_ACK_PENDING",
+  "latest_consumer_delta": "Same mixed test added in 4f7cefc6 plus separate REC reference crate. New local fixed-input native return is available; latest whole-crate build and RCT STEP01/F09 remain separate.",
   "supplier_latest_observed_commit": "b1afe7a24c09d527681b14d5c3eadd9c09bf8930",
   "RCT_RHS_sources_unchanged_through_latest_observation": true,
   "HE_F3_domain_gate": {
@@ -83,10 +83,24 @@
     "commit": "4f7cefc6fe73e2aa1ca03515d47053d929dde17f",
     "path": "rust/rei_microphysics/tests/he_flrw02_absorption.rs",
     "sha256": "a1223f89a1c54c731df5c505415af969077ab7a94e920ce2e9efc955090dad54",
-    "status": "SOURCE_RECEIVED_WAIT_OWNER_EXECUTION_RETURN",
+    "status": "FIXED_INPUT_NATIVE_EXECUTED__LIVE_CRATE_BUILD_NOT_RUN",
     "source_presence_is_native_gate_completion": false,
-    "command_exit_and_residual_return_received": false,
+    "command_exit_and_residual_return_received": true,
     "source_relative_tolerance": 5e-14,
     "source_absolute_tolerance": 1e-300
+  },
+  "HE_FLRW02B_native_return": {
+    "path": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/runs/HE-FLRW02B_NATIVE_20261005/RETURN.json",
+    "core_commit": "87533d755b5c23751cb247cc0be416f1ea608c68",
+    "executed_consumer_commit": "3dceea736f9aaa363617a9a6a5bb2854d9ff9986",
+    "native_tests_passed": 2,
+    "logged_comparisons": 274,
+    "command_exit": 0,
+    "scope": "original contracted full crate plus exact prepared mixed test; four absorption dependencies match live source",
+    "whole_live_crate_built": false,
+    "consumer_ack": "PENDING",
+    "physical_admission": false,
+    "current_chat_compiler_blocker": "RESOLVED_BY_USER_SUPPLIED_RUST_1_94_1",
+    "historical_scientific_suite_replay": false
   }
 }
