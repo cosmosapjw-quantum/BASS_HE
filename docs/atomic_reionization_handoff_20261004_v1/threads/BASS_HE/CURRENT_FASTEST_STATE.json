@@ -23,11 +23,11 @@
   "result_path": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/execution/HE_F2C_20261005T001658KST/RETURN.json",
   "sync_policy": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/REPO_SYNC_POLICY.json",
   "consumer_dependency_commit": "41e4592aa494b48929dcd23fc8504c169a98a908",
-  "consumer_latest_observed_commit": "b553698a114fbff05640ab6ecb95d260410de492",
+  "consumer_latest_observed_commit": "4f7cefc6fe73e2aa1ca03515d47053d929dde17f",
   "dependency_unchanged_through_latest_observation": false,
   "generic_REI_F01": "COMPLETE_IN_RAW_REFERENCE_SCOPE_ONLY",
   "generic_REI_F01_receipt_sha256": "52fc8e2f8abf73f14a368fbca1af74fb90456390c2e0a49f86d568708167ce98",
-  "latest_sync_return": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/execution/REPO_SYNC_20261004T192753Z/RETURN.json",
+  "latest_sync_return": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/execution/REPO_SYNC_20261004T195725Z/RETURN.json",
   "actual_RCT_binding_acceptance_scope": "EXPLICIT_CONDITIONAL_LOCAL_RHS_ONLY",
   "physical_provider_admission": false,
   "time_integrator_RCT_binding_accepted": false,
@@ -35,8 +35,8 @@
   "consumer_document_commit": "7a15daa38b60a5174315747b9194564dc2d4eb8b",
   "HE_F3": "WAIT_REI_F09_RESULT",
   "HE_FLRW02B_mixed_native": "SEPARATE_PENDING",
-  "latest_consumer_delta": "F06 geometry, F07 scenario, interval and actual static F04 certificate; accepted RCT RHS source files unchanged, crate/lib changed",
-  "supplier_latest_observed_commit": "74b5ae2563fe7c0cf9afa60a5b65d94759f3d098",
+  "latest_consumer_delta": "FLRW06 reference/native-blocked docs plus HE-FLRW02B prepared mixed regression and REC Peebles reference crate; no HE mixed native execution receipt or RCT STEP01/F09 return",
+  "supplier_latest_observed_commit": "b1afe7a24c09d527681b14d5c3eadd9c09bf8930",
   "RCT_RHS_sources_unchanged_through_latest_observation": true,
   "HE_F3_domain_gate": {
     "path": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/runs/HE-F2C_20261005/HE_F3_DOMAIN_GATE.json",
@@ -66,5 +66,27 @@
     "scope": "received conditional direct-event/thermal-forcing bound; no coupled observable materiality or physical admission",
     "new_tests_this_Codex_loop": 0
   },
-  "consumer_next_task_observed": "REI-F05 static continuation; not blocked by optional HE/RCT reference"
+  "consumer_next_task_observed": "REI-F05 static continuation; not blocked by optional HE/RCT reference",
+  "external_FLRW06": {
+    "status": "PARTIAL__REFERENCE_AND_CONE_CLOSED__NATIVE_BLOCKED",
+    "source_pin": "8fd440a2e547a61d14d7a890147f7e835fae4f2b",
+    "native_regression_complete": false,
+    "native_calls": 0,
+    "sender_native_preflight_exit": 78,
+    "sender_driver_compiled": false,
+    "reference_or_protocol_is_native_success": false,
+    "HE_FLRW02B_gate_closed": false,
+    "physical_admission": false,
+    "next_owner_action": "same FLRW06 actual native spectral-stage regression in owner environment"
+  },
+  "HE_FLRW02B_mixed_source": {
+    "commit": "4f7cefc6fe73e2aa1ca03515d47053d929dde17f",
+    "path": "rust/rei_microphysics/tests/he_flrw02_absorption.rs",
+    "sha256": "a1223f89a1c54c731df5c505415af969077ab7a94e920ce2e9efc955090dad54",
+    "status": "SOURCE_RECEIVED_WAIT_OWNER_EXECUTION_RETURN",
+    "source_presence_is_native_gate_completion": false,
+    "command_exit_and_residual_return_received": false,
+    "source_relative_tolerance": 5e-14,
+    "source_absolute_tolerance": 1e-300
+  }
 }

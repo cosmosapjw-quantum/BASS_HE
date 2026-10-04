@@ -8,6 +8,14 @@
 
 ## 전달 내용
 
+최신 동기화는 `REPO_SYNC_20261004T195725Z/RETURN.json`이다. Consumer8fd440a의 FLRW06 문서 전달물만 추가됐다. 7개 immutable 문서 SHA256과 native 상태를 확인했다. Sender의 rustc/cargo 부재로 preflight78, actual native calls0, driver uncompiled, native regression incomplete다. 기준값/protocol 제조 출력을 native PASS나 HE-FLRW02B mixed gate 완료로 승격하지 않는다. Compiler blocker는 sender runtime의 보고이며 BASS_HE host 진단이 아니다.
+
+Rust/source/runtime-return 변경이나 RCT-STEP01/F09 실제 반환은 없다. 이번에 새 wrapper/과학 계산/반복 테스트를 추가하지 않았다. 다음 owner 실행은 같은 FLRW06 실제 native regression이다. BASS_HE는 기존 조건부 local RHS 수락과 RCT 시간 적분·공통-domain F09 대기를 유지한다. 기존 reference/native/원자 suite 재실행0, consumer mutation0, direct ChatGPT 대화 전달 미확인이다.
+
+게시 경계에서 consumer4f7cefc의 HE-FLRW02B 혼합 회귀 코드도 도착했다. 공개 test source SHA256을 고정하고 두 테스트/기존5e-14 relative+1e-300 absolute 허용오차를 확인했다. 실제 command/exit/잔차 반환은 미수신이며 SOURCE_RECEIVED_WAIT_OWNER_EXECUTION_RETURN이다. 이를 mixed native PASS로 승격하지 않는다. 함께 추가된 REC Peebles reference crate는 이 HE 루프에서 독립 재검토하지 않았다. 실제 changed paths와 필요한 반환 필드는 PREPUBLICATION_OBSERVATION을 따른다.
+
+아래는 과거 동기화 기록이다.
+
 최신 동기화는 `REPO_SYNC_20261004T192753Z/RETURN.json`이다. Supplier be81c95의 isolated RCT exact/BE reference와 HE-F3 domain gate를 수신했다. 기존 조건부 RHS 수락은 그대로 유지하며, 중복 intake를 새 milestone이나 독립 검증으로 세지 않는다. 현재 FT03 30000–110000 K와 GM25 200–10000 K의 공통 영역은 공집합이다. OFF/KF96만으로 paired F09 완료를 주장하지 않는다.
 
 Consumer b553698의 새 F04/F06/F07 반환을 관측했다. F04 선택 산출물14개/parent source5개/저장 입력24개를 해시 결속하고 schema/claim ceiling을 확인했다. 원자/native/MPFI/reference/우주론 suite는 재실행하지 않았다. 새 입력 경계 테스트10개는 잘못된 domain/완료 승격/과거 snapshot 오용을 거절한다. F04는 reported static FT03 certificate를 수신한 것이며 expanding S0/RCT stepper/physical admission을 닫지 않는다. 최종 bytes 독립 재검토 미실행도 보존한다.
