@@ -23,11 +23,11 @@
   "result_path": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/execution/HE_F2C_20261005T001658KST/RETURN.json",
   "sync_policy": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/REPO_SYNC_POLICY.json",
   "consumer_dependency_commit": "41e4592aa494b48929dcd23fc8504c169a98a908",
-  "consumer_latest_observed_commit": "8e8ea0c664e2ba2f2f8560e0c64266d206fbd50f",
+  "consumer_latest_observed_commit": "7c5469101f8d6ef027c8c3119cc5c053e15ba1d9",
   "dependency_unchanged_through_latest_observation": false,
   "generic_REI_F01": "COMPLETE_IN_RAW_REFERENCE_SCOPE_ONLY",
   "generic_REI_F01_receipt_sha256": "52fc8e2f8abf73f14a368fbca1af74fb90456390c2e0a49f86d568708167ce98",
-  "latest_sync_return": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/execution/HE_FLRW06_INTAKE_20261004T205344Z/RETURN.json",
+  "latest_sync_return": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/execution/HE_NATIVE_ACK_20261004T203328Z/RETURN.json",
   "actual_RCT_binding_acceptance_scope": "EXPLICIT_CONDITIONAL_LOCAL_RHS_ONLY",
   "physical_provider_admission": false,
   "time_integrator_RCT_binding_accepted": false,
@@ -35,8 +35,8 @@
   "consumer_document_commit": "7a15daa38b60a5174315747b9194564dc2d4eb8b",
   "HE_F3": "WAIT_REI_F09_RESULT",
   "HE_FLRW02B_mixed_native": "FINITE_GATE_ACCEPTED__PEER_RECEIPT_LOOP_CLOSED__LIVE_BUILD_SEPARATE",
-  "latest_consumer_delta": "REI-CHAT-FLRW06-NATIVE receipt-only delta: saved baseline replay and new96node single primary-stage evidence restored/hash-bound; all12stage dependencies and acceptedRCTsources unchanged. No RCT stepper or expanding/paired history admission.",
-  "supplier_latest_observed_commit": "07256778a02a18cbd796477f393c3d8dd6c3b9e4",
+  "latest_consumer_delta": "Reviewed mixed native finite2/274 return received and supplier ACK recorded; F05 static first interval completed owner report, F08 conditional stage only. No whole current crate or RCT stepper/history acceptance.",
+  "supplier_latest_observed_commit": "18c9368fe86783db538a406536bb7eb51b8751bd",
   "RCT_RHS_sources_unchanged_through_latest_observation": true,
   "HE_F3_domain_gate": {
     "path": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/runs/HE-F2C_20261005/HE_F3_DOMAIN_GATE.json",
@@ -85,11 +85,7 @@
     "physical_admission": false,
     "historical_compiler_absent_receipt_preserved_in": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/execution/HE_NATIVE_ACK_20261004T203328Z/STATE_BEFORE.json",
     "source_owner_ack": "PENDING_EXTERNAL_TO_BASS_HE",
-    "next_owner_action": "REI-CHAT-FLRW07 short expanding split-step source-bound return after checking F08 history; no repeated pointwise regression",
-    "latest_native_return_commit": "8e8ea0c664e2ba2f2f8560e0c64266d206fbd50f",
-    "latest_native_return": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/execution/HE_FLRW06_INTAKE_20261004T205344Z/inputs/consumer/NATIVE_EXECUTION_RECEIPT.json",
-    "sender_replay_stdout_matches_previous": true,
-    "sender_replay_binary_matches_previous": false
+    "next_owner_action": "delivered accepted-stage/U/edge/work native contract; no duplicate pointwise replay"
   },
   "HE_FLRW02B_mixed_source": {
     "commit": "4f7cefc6fe73e2aa1ca03515d47053d929dde17f",
@@ -167,22 +163,5 @@
     "actual_stepper_implemented": false,
     "physical_admission": false,
     "consumer_source_edit_reservation": "REI-F08 owner coordination required before source edits"
-  },
-  "external_HHE_PRIMARY_STAGE": {
-    "status": "RECEIVED_SCOPED_ACTUAL96NODE_STAGE_RETURN",
-    "receipt_commit": "8e8ea0c664e2ba2f2f8560e0c64266d206fbd50f",
-    "executed_source_commit": "7c5469101f8d6ef027c8c3119cc5c053e15ba1d9",
-    "source_blob": "09bb770a30c6605348e78106faa4b278fd5c3c13",
-    "intake": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/execution/HE_FLRW06_INTAKE_20261004T205344Z/RETURN.json",
-    "current_stage_source_blobs_verified": 12,
-    "fixture": "nH1e-4cm^-3,fHe0.083,T50000K,H5e-14s^-1,dt1e7s,96positive nodes",
-    "stage": "FROZEN_DENSITY_FIXED_PHOTON_ENERGY_WITH_GASWORK_ONLY",
-    "sender_independent_scalar_comparisons": 1182,
-    "independent_root_recomputed_here": false,
-    "native_rerun_here": false,
-    "new_independent_scientific_review": false,
-    "paired_or_expanding_history_admitted": false,
-    "RCT_stepper_admitted": false,
-    "physical_or_interval_admission": false
   }
 }
