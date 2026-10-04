@@ -29,3 +29,7 @@ source선택·실제감도·legacy원자연구를자동재개하지않는다. �
 ## 2026-10-05 HE-F2C changed-contract intake
 
 구체적인 RCT 반환과 native `41e4592`를 수신했다. 현재 수락은 명시적 선택·caller Ebar를 요구하는 조건부 local RHS 접속이며, `CURRENT_FASTEST_STATE.json`과 그 `result_path`를 따른다. 이전 RCT instance 미수신 관측을 현재 상태로 사용하지 않는다. 기본 RCT는 OFF이며 물리 source/moment 및 실제 time stepper admission은 미완료다. 소비기 RCT-STEP01 변경 계약 또는 실제 REI-F09 결과가 다음 trigger다. HE-FLRW02B mixed-native gate와 legacy lane은 별개다.
+
+## 2026-10-05 reference/domain live-sync
+
+새 supplier reference를 수신했으며 HE-F3 domain gate는 current FT03/GM25 교집합 공집합을 기록한다. 정적 F04 certificate는 수신 범위에 한정하고 RCT stepper나 expanding S0를 승인하지 않는다. F04 top-level lib hash는 과거6279036 snapshot이며 현재 crate 결속으로 사용하지 않는다. 최신 관측은 CURRENT_FASTEST_STATE의 latest_sync_return을 따른다. 기존 reference/native suites를 반복하지 않는다.

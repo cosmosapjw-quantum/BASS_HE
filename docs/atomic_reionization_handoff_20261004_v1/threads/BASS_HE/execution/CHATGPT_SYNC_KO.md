@@ -8,6 +8,16 @@
 
 ## 전달 내용
 
+최신 동기화는 `REPO_SYNC_20261004T192753Z/RETURN.json`이다. Supplier be81c95의 isolated RCT exact/BE reference와 HE-F3 domain gate를 수신했다. 기존 조건부 RHS 수락은 그대로 유지하며, 중복 intake를 새 milestone이나 독립 검증으로 세지 않는다. 현재 FT03 30000–110000 K와 GM25 200–10000 K의 공통 영역은 공집합이다. OFF/KF96만으로 paired F09 완료를 주장하지 않는다.
+
+Consumer b553698의 새 F04/F06/F07 반환을 관측했다. F04 선택 산출물14개/parent source5개/저장 입력24개를 해시 결속하고 schema/claim ceiling을 확인했다. 원자/native/MPFI/reference/우주론 suite는 재실행하지 않았다. 새 입력 경계 테스트10개는 잘못된 domain/완료 승격/과거 snapshot 오용을 거절한다. F04는 reported static FT03 certificate를 수신한 것이며 expanding S0/RCT stepper/physical admission을 닫지 않는다. 최종 bytes 독립 재검토 미실행도 보존한다.
+
+F04 top-level lib.rs hash 불일치의 실패를 보존하고 그 hash가6279036의 역사 snapshot임을 확인했다. 최신 crate 전체 결속으로 수락하지 않는다. 새 certificate/checker/parent 산출물은 별도 결속한다. 수락된 RCT/FT03 RHS 3개 source는 그대로지만 crate/lib의 변경은 구별한다. 다음 RCT-STEP01과 실제 common-domain REI-F09 반환을 기다린다. HE-FLRW02B mixed-native와 legacy/Eq55/physical HOLD는 별개다. ChatGPT 직접 대화 전달은 확인되지 않았다.
+
+게시 경계에서 supplier28c3da1의 HE-F2D 조건부 S0 exposure reference도 수신했다. 여섯 additive 파일/claim ceiling을 pin으로 보존했고 보고된13개 검사를 재실행하지 않았다. 직접-event 상한은 전체 coupled ON/OFF·paired observable 상한이 아니며 F05 baseline의 새 선행조건도 아니다. 이 late delta는 PREPUBLICATION_OBSERVATION에 기록한다.
+
+아래는 과거 동기화 기록이다.
+
 최신 동기화는 `HE_F2C_20261005T001658KST/RETURN.json`이다. BASS_HE `faea058`의 구체적인 RCT 반환을 수신하고, rei native `41e4592`와 문서 `7a15daa`를 분리하여 고정했다. 공개 source 8개·공급자 core 2개·스키마 2개·저장된 입력 15개의 identity/계약을 확인했다. 변경된 입력 경계의 17개 테스트가 통과했다. 새 원자/native/oracle/cosmological suite는 실행하지 않았다.
 
 HE-F2C는 KF96 명시적 primary 및 GM25 대안, source-domain 거절, caller-supplied positive Ebar를 요구하는 **조건부 local RHS binding**을 수락했다. actual ft03_rhs의 RR/CI/DR 보존에 대한 native116/E2/E2X 및 최종 POST_FT03_REVIEW는 해시로 결속한 기존 증거다. 초기 104개 검토를 최종 FT03 검토로 사용하지 않는다. 두 baseline OFF, null source moments, physical HOLD, time stepper 미연결, strict underflow 미계승을 유지한다. REACTION_BINDING과 CONSUMER_LEDGER_ACCEPTANCE는 최신 execution 경로에 있다.
