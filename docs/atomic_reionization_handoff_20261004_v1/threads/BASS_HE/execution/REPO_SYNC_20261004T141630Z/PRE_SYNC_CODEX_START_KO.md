@@ -16,12 +16,4 @@
 
 재개 키: fastest=`HE-F2`; thermal precision=`HE-L1`; fast-ion population=`HE-L2`; coherent/continuum=`HE-L3`. 후자의 세 키는 LEGACY_LANE.json의 trigger에 의해 선택하며 서로를 무조건 선행조건으로 만들지 않는다.
 
-## 2026-10-04 HE-F2B live-sync update
-
-매 재개 시 `CURRENT_FASTEST_STATE.json`과 `REPO_SYNC_POLICY.json`을 먼저 읽는다.
-HE-F2A 전달물은완료, HE-F2B는실제REI-F00의RCT제외를결속했다. 현재baseline은BASS_HE source를필요로하지않는다.
-현재scope가없다는옛관측은재사용하지않는다. RCT포함의실제수락은여전히미완료이고새owner opt-in/provider/closure가필요하다.
-source선택·실제감도·legacy원자연구를자동재개하지않는다. 입력변경이없으면같은검증을반복하지않는다.
-시작·게시직전·게시직후에실제Git HEAD를조회하고변경경로만조정한다. 백그라운드worker는없다.
-현재 실행상태는 `CURRENT_FASTEST_STATE.json`이 우선하며, 기존 `TASKS.json`의 연구 의존성과 acceptance는 삭제하지 않는다.
-최신 Codex 동기화 결과는 `CURRENT_FASTEST_STATE.json`의 `latest_sync_return`과 [스레드 전달 기록](execution/CHATGPT_SYNC_KO.md)을 따른다. 과거 execution intake의 missing-F00/F01 관측 또는 초기 선택기의 READY를 현재 RCT 수락으로 사용하지 않는다.
+2026-10-04 Codex 재개 확인: [스레드 전달·재개 기록](execution/CHATGPT_SYNC_KO.md)과 [최신 HE-F2 입력 확인 반환](execution/HE_F2_INTAKE_20261004T131324Z/RETURN.json)을 읽는다. 게시 초기 `EXECUTION_STATE.json` 대신 선택기의 `--state`에 `execution/HE_F2_INTAKE_20261004T131324Z/RESUME_STATE.json`의 저장소 기준 전체 경로를 지정한다. 이 사본은 기존 HE-F1 완료 영수증과 해시 검증한 REI-F00 design-lock 완료만 반영한다. REI-F01과 enabled RCT closure는 아직 미충족이다. 새 외부 결과가 도착하면 정확한 commit/content identity를 확인하고 별도 실행 기록으로 재개한다. ChatGPT URL의 본문 접근과 실제 게시가 확인되기 전에는 자동 동기화 완료로 부르지 않는다. 최초 확인은 `execution/HE_F2_INTAKE_20261004T130100Z/`에 보존한다.
