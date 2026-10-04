@@ -11,7 +11,8 @@ def get(name):
 def test_registry_requires_explicit_source():
     r=get('sources')()
     assert r['default_source_id'] is None
-    assert len(r['sources'])==2
+    assert len(r['sources'])==3
+    assert r['sources'][2]['source_id']=='KF96_HEIII_HI_RCT_NOMINAL_V1'
     assert r['sources'][0]['availability']=='LITERATURE_FIT_OPT_IN'
     assert r['sources'][1]['thermal_rate_available'] is False
 

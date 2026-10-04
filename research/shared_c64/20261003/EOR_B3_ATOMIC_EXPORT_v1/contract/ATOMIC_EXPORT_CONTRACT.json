@@ -45,5 +45,28 @@
     "fast_math": false,
     "reassociation": false,
     "hidden_mixed_precision": false
-  }
+  },
+  "available_rate_source_ids": [
+    "GM25_W82_RCX_CONSTANT_200_10000_K_V1",
+    "KF96_HEIII_HI_RCT_NOMINAL_V1"
+  ],
+  "available_nominal_prescription": "KF96_HEIII_HI_RCT_NOMINAL_V1",
+  "common_comparison_domain_K": [
+    1000,
+    10000
+  ],
+  "kf96_domain_K": [
+    1000,
+    10000000
+  ],
+  "kf96_source_lower_endpoint_approximate": true,
+  "kf96_isotope_source_resolved": false,
+  "release_version": "0.1.1",
+  "legacy_gm25_packet_compatibility": {
+    "accepted_exporter": "bass-he-atomic-export==0.1.0",
+    "only_normalized_field": "exporter",
+    "all_other_fields": "exact selected-code replay; source/records/request unchanged"
+  },
+  "optical_and_legacy_research_state": "PARKED_OPEN_NOT_AUTO_REOPENED",
+  "source_spread_is_confidence_interval": false
 }

@@ -1,7 +1,7 @@
 {
   "schema": "low-cost-llm-tasks.v1",
   "thread": "BASS_HE",
-  "first_task": "HE-F1",
+  "first_task": "HE-F2",
   "selection_rule": "Execute one first pending task whose local and external dependencies are actually satisfied. Skip completed HE-P0. Parked tasks need explicit recorded trigger. Do not infer scientific PASS from task status.",
   "branch": "research/shared-c64-crossrepo-20260928",
   "new_branch": false,
@@ -62,7 +62,7 @@
         "HE-P0"
       ],
       "external_dependencies": [],
-      "status": "READY_FOR_IMPLEMENTATION",
+      "status": "COMPLETE_IN_DECLARED_SCOPE",
       "inputs": [
         "research/shared_c64/20261003/EOR_B3_ATOMIC_EXPORT_v1/src/bass_he_atomic_export/registry.py",
         "research/shared_c64/20261003/EOR_B3_ATOMIC_EXPORT_v1/src/bass_he_atomic_export/api.py",
@@ -117,7 +117,8 @@
           "physical source admission from packet validator",
           "photon moment inferred from scalar rate"
         ]
-      }
+      },
+      "completed_evidence": "runs/HE-F1_20261004/RETURN.json"
     },
     {
       "id": "HE-F2",
@@ -376,5 +377,12 @@
   "external_dependency_aliases": {
     "REI_ATOMIC_SENSITIVITY_RESULT": "REI-F09"
   },
-  "nonblocking_baseline_rule": "HE-F2 incompleteness blocks only optional REI-F09 atomic sensitivity; REI-F08 baseline may continue under its explicit scope"
+  "nonblocking_baseline_rule": "HE-F2 incompleteness blocks only optional REI-F09 atomic sensitivity; REI-F08 baseline may continue under its explicit scope",
+  "initial_first_task": "HE-F1",
+  "latest_execution": {
+    "task_id": "HE-F1",
+    "state": "completed",
+    "result_path": "runs/HE-F1_20261004/RETURN.json",
+    "physical_runtime": false
+  }
 }

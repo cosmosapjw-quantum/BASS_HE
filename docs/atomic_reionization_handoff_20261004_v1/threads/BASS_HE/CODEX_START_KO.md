@@ -5,7 +5,7 @@
 처음 읽을 파일은 이 파일, `TASKS.json`, `REPO_SNAPSHOT.json`, `PREWORK_KO.md`의 1–4절뿐이다. legacy 물리 연구를 호출할 때만 `LEGACY_LANE.json`과 지정 원본을 읽는다. 원자 문헌 전수검색이나 원격 전체 archive redownload를 반복하지 않는다.
 
 1. 실제 현재 HEAD/작업트리/AGENTS를 확인한다. `REPO_SNAPSHOT.json`의 observed commit은 2026-10-04 읽기 시점 pin이며 이번 게시 commit은 최종 publication receipt를 따른다. branch가 전진했다면 관련 paths 차이만 확인하고 이 패키지를 예전 HEAD로 reset하지 않는다.
-2. `HE-F1`이 다음 구현 단위다. B3의 `registry.py`, `api.py`, `_rate.py`, `_io.py`, contract와 focused tests를 읽는다. 기존 GM25 source core를 고치지 않고 KF96 별도 source ID를 추가하는 최소 변경을 준비한다. 계약은 PR 단위로 작성되어 있으며 실행 전 source identity·domain·null fields를 유지한다.
+2. `HE-F1`은 2026-10-04 구현·변경영역 검증 완료다. 결과는 `runs/HE-F1_20261004/RETURN.json`이다. 다음은 `HE-F2`의 실제 `REI_SCOPE_LOCK`·`REI_PROVIDER_CONTRACT` 확인이다. 이후 문장의 HE-F1 구현 절차는 완료 이력으로 보존한다: B3의 `registry.py`, `api.py`, `_rate.py`, `_io.py`, contract와 focused tests를 읽는다. 기존 GM25 source core를 고치지 않고 KF96 별도 source ID를 추가하는 최소 변경을 준비한다. 계약은 PR 단위로 작성되어 있으며 실행 전 source identity·domain·null fields를 유지한다.
 3. 기존 GM25(`1.70e-13 cm3/s`,200–10000K)와 KF96(`1e-14`,표1000–1e7K) 중 자동 선택은 금지다. paired sensitivity는 공통1000–10000K에서만 두 근거의 직접 비교로 부른다. 더 넓은 모델을 요청받으면 domain 이탈을 정직하게 반환하고 임의 clamp하지 않는다.
 4. density, Bianchi geometry, effective opacity를 원자 API에 넣지 않는다. 기존 T4 exact registry/source ownership와 새 rei homogeneous/effective-opacity 구분을 연결한다. 열·recoil·photonenergy·spectrum이 null이면 숫자0으로 승격하지 않는다.
 5. 변경영역 검증만 시행한다. 원 B5C2 59개 또는 기존 76개 전체 suite를 문서 이동 때문에 반복하지 않는다. GM25 바이트 identity와 필요한 focused parity, KF96 boundary/unit/rejection, duplicate reaction, packet compatibility가 검증 대상이다.
@@ -14,4 +14,4 @@
 
 이번 사용자 요청은 선행 연구·계획·PR/DAG·백업 게시다. 이 패키지는 실행 승인을 가장한 scientific admission token이 아니다. 본 요청으로 작성하지 않은 후속 제품 구현과 physical runtime은 해당 task의 explicit input/acceptance contract를 만족시킨 뒤 수행한다. 이미 존재하는 source/assumptions를 바꾸는 문제는 근거와 실패를 보존하여 연구 스레드에 반환한다.
 
-재개 키: fastest=`HE-F1`; thermal precision=`HE-L1`; fast-ion population=`HE-L2`; coherent/continuum=`HE-L3`. 후자의 세 키는 LEGACY_LANE.json의 trigger에 의해 선택하며 서로를 무조건 선행조건으로 만들지 않는다.
+재개 키: fastest=`HE-F2`; thermal precision=`HE-L1`; fast-ion population=`HE-L2`; coherent/continuum=`HE-L3`. 후자의 세 키는 LEGACY_LANE.json의 trigger에 의해 선택하며 서로를 무조건 선행조건으로 만들지 않는다.

@@ -11,9 +11,9 @@ from importlib import resources
 import json
 from pathlib import Path
 from typing import Any
-from . import _rate
+from . import _rate, _kf96
 from ._io import write_json_create_only
-from .registry import CORE_SHA256, IO_SHA256, sources
+from .registry import CORE_SHA256, IO_SHA256, KF96_SHA256, sources
 
 ContractError = _rate.ContractError
 SourceUnavailable = _rate.SourceUnavailable
@@ -27,7 +27,7 @@ REQUIRED_FIELDS = frozenset({
 
 def verify_runtime_bindings() -> dict[str, str]:
     """Detect changed inherited implementations; this is code identity, not physics."""
-    expected = {'_rate.py': CORE_SHA256, '_io.py': IO_SHA256}
+    expected = {'_rate.py': CORE_SHA256, '_io.py': IO_SHA256, '_kf96.py': KF96_SHA256}
     actual = {}
     for name, sha in expected.items():
         b = resources.files('bass_he_atomic_export').joinpath(name).read_bytes()
@@ -90,18 +90,22 @@ def export_packet(request: dict[str, Any]) -> dict[str, Any]:
     """
     req = _request(request)
     verify_runtime_bindings()
-    if req['source_id'] != _rate.SOURCE_ID:
+    if req['source_id'] == _rate.SOURCE_ID:
+        provider = _rate
+    elif req['source_id'] == _kf96.SOURCE_ID:
+        provider = _kf96
+    else:
         raise SourceUnavailable('EXPLICIT_REGISTERED_RATE_SOURCE_REQUIRED')
     kw = {k: req[k] for k in ('source_id', 'distribution', 'isotope_basis',
         'initial_state', 'relative_drift_m_s', 'radiation_model',
         'acknowledge_source_conflict', 'unit')}
-    evaluator = _rate.rate if req['quantity'] == 'thermal_rate' else _rate.count_coefficients
+    evaluator = provider.rate if req['quantity'] == 'thermal_rate' else provider.count_coefficients
     records = [evaluator(t, **kw) for t in req['temperature_K']]
     return {
         'schema': 'bass-he.atomic-export.v1',
-        'exporter': 'bass-he-atomic-export==0.1.0',
+        'exporter': 'bass-he-atomic-export==0.1.1',
         'request': req,
-        'source': sources()['sources'][0],
+        'source': next(s for s in sources()['sources'] if s['source_id'] == req['source_id']),
         'records': records,
         'contribution_role': 'ONE_SELECTED_PROVIDER_PER_REACTION',
         'reaction_id': _rate.REACTION_ID,
@@ -127,6 +131,10 @@ def validate_packet(packet: Any) -> bool:
     if not isinstance(packet, dict) or 'request' not in packet:
         raise ContractError('ATOMIC_PACKET_WITH_REQUEST_REQUIRED')
     expected = export_packet(packet['request'])
+    # Explicit 0.1.0 GM25 compatibility only. No KF96 packet existed in that release.
+    if (packet.get('exporter') == 'bass-he-atomic-export==0.1.0'
+            and expected['request']['source_id'] == _rate.SOURCE_ID):
+        expected['exporter'] = 'bass-he-atomic-export==0.1.0'
     if _canonical(packet) != _canonical(expected):
         raise ContractError('PACKET_SEMANTICS_OR_PAYLOAD_MISMATCH')
     return True
