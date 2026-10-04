@@ -25,3 +25,7 @@ source선택·실제감도·legacy원자연구를자동재개하지않는다. �
 시작·게시직전·게시직후에실제Git HEAD를조회하고변경경로만조정한다. 백그라운드worker는없다.
 현재 실행상태는 `CURRENT_FASTEST_STATE.json`이 우선하며, 기존 `TASKS.json`의 연구 의존성과 acceptance는 삭제하지 않는다.
 최신 Codex 동기화 결과는 `CURRENT_FASTEST_STATE.json`의 `latest_sync_return`과 [스레드 전달 기록](execution/CHATGPT_SYNC_KO.md)을 따른다. 과거 execution intake의 missing-F00/F01 관측 또는 초기 선택기의 READY를 현재 RCT 수락으로 사용하지 않는다.
+
+## 2026-10-05 HE-F2C changed-contract intake
+
+구체적인 RCT 반환과 native `41e4592`를 수신했다. 현재 수락은 명시적 선택·caller Ebar를 요구하는 조건부 local RHS 접속이며, `CURRENT_FASTEST_STATE.json`과 그 `result_path`를 따른다. 이전 RCT instance 미수신 관측을 현재 상태로 사용하지 않는다. 기본 RCT는 OFF이며 물리 source/moment 및 실제 time stepper admission은 미완료다. 소비기 RCT-STEP01 변경 계약 또는 실제 REI-F09 결과가 다음 trigger다. HE-FLRW02B mixed-native gate와 legacy lane은 별개다.

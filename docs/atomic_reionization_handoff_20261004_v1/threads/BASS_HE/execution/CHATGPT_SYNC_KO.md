@@ -8,11 +8,13 @@
 
 ## 전달 내용
 
-최신 동기화는 `REPO_SYNC_20261004T141630Z/RETURN.json`이다. 연구 스레드의 HE-F2A/B를 fast-forward로 수신하고, rei의 `67957715cf3336b89c27c1e59c33ca23098f8934`에서 일반 REI-F01 완료 영수증을 확인했다. 영수증에 기록된 6개 산출물 SHA256을 대조했고, provider record 21개의 schema를 확인했다. 이는 소스/구조 검사이며 기존 Rust/원자물리 suite를 다시 실행한 결과가 아니다.
+최신 동기화는 `HE_F2C_20261005T001658KST/RETURN.json`이다. BASS_HE `faea058`의 구체적인 RCT 반환을 수신하고, rei native `41e4592`와 문서 `7a15daa`를 분리하여 고정했다. 공개 source 8개·공급자 core 2개·스키마 2개·저장된 입력 15개의 identity/계약을 확인했다. 변경된 입력 경계의 17개 테스트가 통과했다. 새 원자/native/oracle/cosmological suite는 실행하지 않았다.
 
-새 manifest는 Grackle 참조율과 Verner 광흡수를 제공한다. HeIII+HI 전하교환 provider record는 없으며, 일반 F01 완료를 선택적 RCT provider 계약으로 승격하지 않는다. F00의 모형·process·lane 파일 3개는 이전 pin과 SHA256이 동일하고 RCT/NRCT는 여전히 제외됐다. 현재 baseline에 BASS_HE rate를 연결할 필요는 없다. RCT owner opt-in/domain/source/energy closure 또는 실제 F09 결과가 생길 때만 공급자 코딩을 다시 연다. 새 wrapper/원자 계산은 추가하지 않았다.
+HE-F2C는 KF96 명시적 primary 및 GM25 대안, source-domain 거절, caller-supplied positive Ebar를 요구하는 **조건부 local RHS binding**을 수락했다. actual ft03_rhs의 RR/CI/DR 보존에 대한 native116/E2/E2X 및 최종 POST_FT03_REVIEW는 해시로 결속한 기존 증거다. 초기 104개 검토를 최종 FT03 검토로 사용하지 않는다. 두 baseline OFF, null source moments, physical HOLD, time stepper 미연결, strict underflow 미계승을 유지한다. REACTION_BINDING과 CONSUMER_LEDGER_ACCEPTANCE는 최신 execution 경로에 있다.
 
-일반 F01 경로의 과거 HTTP404 관측은 이번 완료 영수증으로 대체한다. HE-F2A 후보 제안과 HE-F2B 제외 binding은 연구 스레드의 완료 범위 그대로 수신했다. 현재 RCT 포함의 수락, physical provider admission, scientific promotion은 여전히 미완료다. 형식 검사 로그의 정상적인 빈 파일을 초기 동기화 검사가 거절한 기록은 `REPO_SYNC_20261004T141630Z/VERIFICATION_FAILURE.json`에 보존했고, 남은 조회만 이어서 확인했다.
+다음 소비기 노드는 실제 stepper와 수치 계약을 결속하는 RCT-STEP01이다. HE-F3는 실제 REI-F09 paired 반환을 기다린다. HE-FLRW02B mixed-native와 HE-L1/L2/L3·Eq55·F04 fullfalse는 독립적으로 유지한다. generic F01만 있고 RCT 반환이 없다는 이전 상태는 아래 과거 기록에 한정한다. 직접 ChatGPT 스레드 전달은 확인하지 못했으며 이 기록과 Git 게시를 대화 동기화 성공으로 부르지 않는다.
+
+이전 동기화 `REPO_SYNC_20261004T141630Z/RETURN.json`은 generic F01만 받아 실제 RCT 계약을 기다리던 당시 관측이다. 그 검사와 실패 기록을 보존한다.
 
 아래 두 intake는 과거 코딩 기록이며 최신 작업 선택 지침이 아니다.
 

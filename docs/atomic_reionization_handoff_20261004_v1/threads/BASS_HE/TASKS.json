@@ -130,7 +130,7 @@
         "REI_SCOPE_LOCK",
         "REI_PROVIDER_CONTRACT"
       ],
-      "status": "WAITING_DEPENDENCIES",
+      "status": "PARTIAL_LOCAL_RHS_BINDING_ACCEPTED",
       "inputs": [
         "B3 source packet",
         "PREWORK_KO.md sections2–4",
@@ -175,7 +175,10 @@
           "physical source admission from packet validator",
           "photon moment inferred from scalar rate"
         ]
-      }
+      },
+      "latest_evidence": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/execution/HE_F2C_20261005T001658KST/RETURN.json",
+      "acceptance_scope": "EXPLICIT_CONDITIONAL_LOCAL_RHS_ONLY; default OFF; no time-integrator/physical admission",
+      "remaining_scope": "changed stepper contract and actual paired campaign remain consumer work; no new atomic source calculation"
     },
     {
       "id": "HE-F3",
