@@ -15,3 +15,12 @@
 이번 사용자 요청은 선행 연구·계획·PR/DAG·백업 게시다. 이 패키지는 실행 승인을 가장한 scientific admission token이 아니다. 본 요청으로 작성하지 않은 후속 제품 구현과 physical runtime은 해당 task의 explicit input/acceptance contract를 만족시킨 뒤 수행한다. 이미 존재하는 source/assumptions를 바꾸는 문제는 근거와 실패를 보존하여 연구 스레드에 반환한다.
 
 재개 키: fastest=`HE-F2`; thermal precision=`HE-L1`; fast-ion population=`HE-L2`; coherent/continuum=`HE-L3`. 후자의 세 키는 LEGACY_LANE.json의 trigger에 의해 선택하며 서로를 무조건 선행조건으로 만들지 않는다.
+
+## 2026-10-04 HE-F2B live-sync update
+
+매 재개 시 `CURRENT_FASTEST_STATE.json`과 `REPO_SYNC_POLICY.json`을 먼저 읽는다.
+HE-F2A 전달물은완료, HE-F2B는실제REI-F00의RCT제외를결속했다. 현재baseline은BASS_HE source를필요로하지않는다.
+현재scope가없다는옛관측은재사용하지않는다. RCT포함의실제수락은여전히미완료이고새owner opt-in/provider/closure가필요하다.
+source선택·실제감도·legacy원자연구를자동재개하지않는다. 입력변경이없으면같은검증을반복하지않는다.
+시작·게시직전·게시직후에실제Git HEAD를조회하고변경경로만조정한다. 백그라운드worker는없다.
+현재 실행상태는 `CURRENT_FASTEST_STATE.json`이 우선하며, 기존 `TASKS.json`의 연구 의존성과 acceptance는 삭제하지 않는다.

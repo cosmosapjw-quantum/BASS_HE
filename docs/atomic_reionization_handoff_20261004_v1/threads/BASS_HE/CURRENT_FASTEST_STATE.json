@@ -1,0 +1,28 @@
+{
+  "schema": "bass-he.fastest-state.v1",
+  "task_id": "HE-F2",
+  "latest_completed_component": "HE-F2B_OWNER_SCOPE_EXCLUSION_BINDING",
+  "state": "WAIT_OWNER_OPT_IN_AND_PROVIDER_CONTRACT",
+  "supplier_input_commit": "ec568e8b3ee7d66de910422332d0b327728d08b9",
+  "consumer_scope_model": "R1HomogeneousSuccessor_SYNTHETIC_HHE_3GROUP_V1",
+  "baseline_RCT": "EXCLUDED_BY_OWNER_SCOPE",
+  "baseline_requires_BASS_HE_rate": false,
+  "REI_SCOPE_LOCK": "RECOVERED_AND_BOUND",
+  "REI_PROVIDER_CONTRACT": "RCT_INSTANCE_NOT_RECEIVED; canonical F01 path 404 at pin",
+  "actual_RCT_binding_accepted": false,
+  "optional_F09_cancelled": false,
+  "scientific_PROMOTE": "HOLD",
+  "EOR_THEORY_GATE": "NOT_SATISFIED",
+  "Eq55": "NOT_RUN",
+  "legacy": {
+    "HE-L1": "PARKED_OPEN",
+    "HE-L2": "PARKED_OPEN",
+    "HE-L3": "PARKED_OPEN"
+  },
+  "next_trigger": "actual changed owner RCT selection/domain/closure/provider or F09 result; otherwise no repeated atomic work",
+  "result_path": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/runs/HE-F2B_20261004/RETURN.json",
+  "sync_policy": "docs/atomic_reionization_handoff_20261004_v1/threads/BASS_HE/REPO_SYNC_POLICY.json",
+  "consumer_dependency_commit": "5f3bfe2fc8fe275ab6a054ca9082f03c5b91427a",
+  "consumer_latest_observed_commit": "dc931a67cd5ed25046a96eb5deb42186d72176da",
+  "dependency_unchanged_through_latest_observation": true
+}
