@@ -25,3 +25,5 @@ H6: 이 보고서/RETURN/source lock/실패/검토 및 원 raw runtime을 immuta
 ## 실패·복구·다음 작업
 
 원 Git fetch의 권한/서버중단, RED, row-count 거절, collision 거절, owner CLI config-path 차이, 병렬 supervisor race를 성공으로 바꾸지 않았다. native debug State 체크포인트는 원 density/장부 상태를 보존하지만 restart codec가 없으므로 NONRESUMABLE이다. 새로운 full history를 허용하려면 연구 thread가 원 owner opt-in KF/GM code+계약과 OFF regression/시계/gates를 source lock으로 전달해야 한다. 임의 owner mutation, staged substitution, 25→385 보간, full F09는 금지. 실행 command/hash는 RETURN_HANDOFF_KO.md와 SOURCE_AND_TOOLCHAIN_LOCK.json 참조.
+
+H6 최종 전달: Git preseal commit `4af25af78369337a328192e9ad4db45f2899fccb`, 두 provider ACK/name/parent/path/38,139,729 bytes readback 일치. Archive SHA256 `1ddd8a347d5640ad15e027005c2d29e5b2ba92bf42be04ca0f95dfdd6da2984a`. Drive object `1TzbtsbD-PrZC7KCoSZr9f3n-6lpw7pw6`, Dropbox `id:BSpOijBcT10AAAAAAD3fpg`. 두 runtime backup은 R1 UPLOAD_VERIFIED이며 재다운로드 RESTORE_VERIFIED는 NOT_RUN. immutable ZIP 안의 H6 상태는 seal 당시 snapshot, 사후 완료와 영수증은 외부 RETURN/DELIVERY_RECEIPT에 있다.

@@ -13,5 +13,8 @@
   "runtime_failure": [
     "parallel supervisor shared PROCESS.json.tmp race; second wait UNKNOWN, time raw exit0"
   ],
-  "no_records_deleted": true
+  "no_records_deleted": true,
+  "delivery_environment_failure": [
+    "initial HTTPS git push lacked credential helper; ordinary push succeeded using existing gh credential helper"
+  ]
 }
