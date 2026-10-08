@@ -1,0 +1,58 @@
+{
+  "schema": "bass-he.e9.ncp-heavy-return.v1",
+  "status": "PARTIAL_OWNER_OFF_PREFIX_VERIFIED__KF_GM_NATIVE_BLOCKED",
+  "source_commit": "5caf06ccb395f959b1d9e359ccd062b6927ad6f5",
+  "nodes": {
+    "H0": "DONE",
+    "H1": "DONE_HASH_CHECKED_SIGNATURE_NOT_VERIFIED",
+    "H2_FIRST_TWO": "PARTIAL_OFF_ONLY",
+    "H2_3X384": "BLOCKED_OWNER_NATIVE_MODE_UNAVAILABLE",
+    "H3": "NOT_RUN_OPTIONAL_SOURCE_GATED",
+    "H4": "PARTIAL_PARITY_PASS_PARALLEL_SUPERVISOR_INCONCLUSIVE",
+    "H5": "PARTIAL_READONLY_SUCCESSOR_INVENTORY_XTHREAD01_NOT_FRESHLY_RETRIEVED",
+    "H6": "PENDING_PUBLICATION_AND_DUAL_BACKUP"
+  },
+  "tests": {
+    "new_adapter_pass": 3,
+    "expected_red_exit": 101,
+    "output_collision_exit": 2,
+    "partial_full_consumer_rejection": "OWNER_CLOCK_OR_ROW_COUNT",
+    "old_science_tests_replayed": 0
+  },
+  "execution": {
+    "unique_native_owner_OFF_steps": 2,
+    "rows": 3,
+    "full_385_outputs": 0,
+    "KF_GM_steps": 0,
+    "benchmark_duplicate_steps": 4,
+    "total_accepted_steps": 6,
+    "clock_and_xyz_w_equal_bits": 15,
+    "source_kind": "original owner library with independent bounded N384 observer harness",
+    "owner_cli_executed": false,
+    "owner_remote_adopted": false,
+    "checkpoint": "CHECKPOINT_NONRESUMABLE.txt raw State Debug: cannot resume"
+  },
+  "gates": {
+    "max_nonlinear_ratio": 0.3600935098552125,
+    "max_number_ratio": 1.4733107956201776e-05,
+    "max_energy_ratio": 0.4904761552570339,
+    "positivity_EOS_branches": "native advance guards retained; separate continuous audit NOT_EVALUATED",
+    "atomic_photon_heat_recoil": null,
+    "physical": "HOLD",
+    "baseline_RCT": "OFF",
+    "HE_F2_F09": "OPEN",
+    "continuous_true_error_certificate": false,
+    "native_gamma_bit_identical": false,
+    "native_gamma_finite_prefix_max_allowance_ratio": 0.9283862694620415,
+    "native_gamma_scope": "first two OFF steps only, live solver density vs fixed-history endpoint; no true error"
+  },
+  "performance": {
+    "single_wall_s": 10.36,
+    "single_cpu_s": 0.28,
+    "peakRSS_KiB": 2560,
+    "concurrency": 2,
+    "parallel_timing_claim": "INCONCLUSIVE_NO_PROMOTION"
+  },
+  "next": "research thread must deliver original owner opt-in KF/GM native source/clock/history contract; no staged substitution, no old suite replay",
+  "delivery": "external receipts after immutable archive seal"
+}
