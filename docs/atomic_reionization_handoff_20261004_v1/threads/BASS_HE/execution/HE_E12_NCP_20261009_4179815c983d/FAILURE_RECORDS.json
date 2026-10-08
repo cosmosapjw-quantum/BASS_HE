@@ -27,5 +27,11 @@
     "correction": "HOST_LIMITS and HOST_CGROUP_ANCESTORS actual self and all ancestors inspected; all unlimited",
     "timing": "after first full mode launch",
     "native_reruns": 0
+  },
+  {
+    "phase": "final_discovery",
+    "exit": 128,
+    "error": "git status invoked in runtime non-Git directory",
+    "resolution": "publication worktree Git status checked separately; no source/output effects"
   }
 ]

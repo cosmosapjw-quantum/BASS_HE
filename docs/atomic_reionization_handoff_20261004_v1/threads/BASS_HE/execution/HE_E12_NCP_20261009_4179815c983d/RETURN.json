@@ -52,5 +52,7 @@
   "recovery_inventory": "RECOVERY_INVENTORY.json",
   "next": "NEXT_DAG.json",
   "independent_review": "review/INDEPENDENT_REVIEW.json",
-  "delivery": "PENDING_IMMUTABLE_SEAL_AND_DETACHED_R1_RECEIPTS"
+  "delivery": "R1_UPLOAD_VERIFIED_RESTORE_NOT_RUN",
+  "delivery_receipt": "DELIVERY_RECEIPT.json",
+  "git_final_readback": "FINAL_GIT_READBACK.json detached postcommit"
 }

@@ -37,3 +37,5 @@ baseline RCT OFF, actual atomic photon/heat/recoil moments null, physical/produc
 ## 전달·복구
 
 raw CSV/stdout/stderr/native EXIT, source/config/compiler pins, tests/gates/실패, inventory/mtime/SHA, verifier view 및 boundary scripts와 source inputs를 immutable private ZIP으로 보존한다. 각 step CSV fsync는 durable evidence이며 resume codec가 아니다. 공개 Git은 authorized branch에 작은 report/계약/검증/additive execution scripts만 non-force 게시하고 readback한다. 양쪽 cloud R1 ACK·name·size·parent와 remote restore는 서로 다른 판정이다. 봉인 시 delivery pending snapshot과 사후 detached receipts를 구분한다. 다음 DAG의 독립 stage/owner adoption/atomic moments는 BLOCKED로 유지한다.
+
+사후 runtime R1 전달 완료: `BASS_HE_E12_NCP_RUNTIME_20261008T165053Z_4179815c983d.zip`, 6,298,776bytes, SHA256 `a7ee2893289119e10741afb9e4e80e701dbcd2c95e987cb41a11218eefe320e7`. Drive `1oXon8Eu3k3j_DbADu2UzQ6Nu1Q7i9evo`, Dropbox `id:BSpOijBcT10AAAAAAD3jlA`. 두 provider 완료 응답·metadata size/parent/path 확인. UPLOAD_VERIFIED, RESTORE_NOT_RUN. 봉인 ZIP은 그대로이며 최종 Git commit/tree/blob readback과 이 보고서는 detached final receipts capsule로 추가 보존한다.

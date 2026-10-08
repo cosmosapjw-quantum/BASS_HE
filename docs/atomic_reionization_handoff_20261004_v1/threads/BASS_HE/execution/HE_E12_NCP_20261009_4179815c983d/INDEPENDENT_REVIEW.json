@@ -2,7 +2,7 @@
   "reviewer": "fresh read-only independent context",
   "scope": "E12 native internal5/stage telemetry",
   "source_commit": "a61b6a0294e88f135df226f092e6fee2adf8e28c",
-  "status": "FULL_OBSERVABILITY_REVIEW",
+  "status": "PRESEAL_BOUNDED_OBSERVABILITY_REVIEW_COMPLETE",
   "findings": [
     {
       "criterion": "source_identity",
@@ -76,6 +76,12 @@
       "evidence": "actual3full EXIT0; single sequential campaign; 9old CSV bytes exact E10; 5775internal+1155clock bit checks exact E7;1152 accepted steps/3456 accepted stage records;3stage IDs per step; finite positive count valid u16 masks; post84base SHA intact;VERIFY_FULL exit0",
       "reviewer_check_exit": 0,
       "independent_stage_certificate": false
+    },
+    {
+      "criterion": "report_bounded_claims",
+      "verdict": "confirmed",
+      "evidence": "REPORT_KO/RETURN/CLAIM_GATES reviewed; true physical moments null, HOLD, receiver shadow, rawfailure/cgroup timing/near1/endpointFAIL retained",
+      "scope": "bounded observability only"
     }
   ],
   "checks": [
@@ -112,5 +118,20 @@
   "native_or_scientific_reruns": 0,
   "pending": [
     "delivery evidence"
-  ]
+  ],
+  "current_criterion_verdicts": {
+    "source_identity": "confirmed",
+    "native_build_test": "confirmed",
+    "pilot_actual_bits_oldbytes_stages": "confirmed",
+    "pilot_derived_consumer": "confirmed",
+    "full_scope": "confirmed",
+    "actual_host_limits": "confirmed",
+    "host_preflight_timing": "rejected_preserved_procedural_finding",
+    "bounded_full_native_observability": "confirmed",
+    "raw_delivered_consumer": "rejected_preserved_boundary_failure",
+    "stage_independent_numerical_certification": "inconclusive_NOT_EVALUATED",
+    "report_bounded_claims": "confirmed",
+    "delivery": "pending"
+  },
+  "superseded_inconclusive_entries": "Earlier full eligibility and host limits inconclusive findings are retained as chronological review history and superseded by current_criterion_verdicts; independent stage evaluation remains inconclusive."
 }
