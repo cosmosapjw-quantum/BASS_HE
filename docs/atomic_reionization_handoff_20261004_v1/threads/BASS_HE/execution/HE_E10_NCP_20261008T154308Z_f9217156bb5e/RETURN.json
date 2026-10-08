@@ -11,7 +11,7 @@
     "GM_FULL384": "DONE",
     "OFF_FULL384": "DONE",
     "INDEPENDENT_REVIEW": "DONE",
-    "GITHUB_DUAL_CLOUD_DELIVERY": "PENDING"
+    "GITHUB_DUAL_CLOUD_DELIVERY": "DONE"
   },
   "native_test_count": 5,
   "native_test_accepted_steps_separate": 8,
@@ -179,5 +179,6 @@
     "review/INDEPENDENT_REVIEW.json",
     "review/FULL_REVIEW.json",
     "review/ALL3_FINAL_REVIEW.json"
-  ]
+  ],
+  "delivery_receipt": "DELIVERY_RECEIPT.json"
 }

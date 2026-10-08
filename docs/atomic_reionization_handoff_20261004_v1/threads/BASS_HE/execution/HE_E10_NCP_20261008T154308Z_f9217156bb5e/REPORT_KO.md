@@ -45,3 +45,5 @@ H3 실제 photoheat first moment 및 방출 photon-energy/recoil moments는 null
 ## 전달
 
 이 보고서·SOURCE_IDENTITY·TEST/PREFIX/FULL gates·rawCSV/stdout/stderr/exit·실패/복구·source manifest를 immutable runtime ZIP으로 보존한다. 원 E10 archive/E7 ZIP은 private source inputs로 포함, 원 E9 runtime는 이미 양쪽 cloud에 봉인된 content identity로 참조한다. 공개 Git에는 작은 요약/계약/검증/영수증만 additive nonforce 게시한다. 봉인 당시 DELIVERY pending snapshot과 사후 detached receipts를 구분하며, 두 provider R1 ACK/name/path/size 확인은 UPLOAD_VERIFIED이고 remote byte restore는 별도 NOT_RUN이다.
+
+사후 R1 전달 완료: runtime SHA256 `d2cec9451719d534b78bdd6ebd7570e03697e9fdd69696c24a966c1a25c91598`, 2,528,362 bytes. Drive `1ZsLe1LlC_hHNOUbhXug1llUZsLzt4mHS`, Dropbox `id:BSpOijBcT10AAAAAAD3izA`. 두 provider 완료 ACK 및 크기 확인. UPLOAD_VERIFIED, RESTORE_NOT_RUN. Git preseal `157def8e78fafe4e32b961b48b5c6d1512263d43`; 최종 delivery Git readback은 별도 FINAL_GIT_READBACK.json/capsule로 보존한다.
