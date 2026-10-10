@@ -1,0 +1,30 @@
+{
+  "schema": "bass-he-e13c5-delivery-static-review-transcription-v1",
+  "transcribed_utc": "2026-10-10 23:13:47 UTC",
+  "source": "Final message from /root/e13c5_return_inventory, received by /root",
+  "review_type": "Independent static transfer dependency check; not a new scientific review",
+  "reported_decision": "PASS",
+  "reviewed_archive": "BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip",
+  "reviewed_archive_sha256": "e2aac517d7088c5d5d17f7ee994c6b084a33a9c1df5e5e28eb99d5de6af8634f",
+  "conclusions": [
+    "Outer START, handoff, DELIVERY_RECEIPT, CORE_PUBLICATION_READBACK, scientific ZIP and manifest are present.",
+    "External DELIVERY_RECEIPT in the handoff means the receipt included in the outer ZIP.",
+    "Core f2fefc0c51de41f8ea036a21ba2e0728c3260490, tree 7991cff42f09861366311f4cdfba0edcaa99af1e, parent e25039b3a53031ce37800cebefb51200aa5a63a2, PR19 and branch agree.",
+    "All 19 CONTINUATION_LOCK files and all 10 EXECUTION_LOCK files are inside the scientific ZIP.",
+    "Runtime inputs resolve to included package paths or fresh output paths. E13C4 certificates and controls, PR19 result/START/cover.py, pilot result and baseline projection are included.",
+    "Old /tmp/E13C5-DyIbg0hn, an external E13C4 ZIP and old checkout are provenance only, not runtime dependencies. cover.py is identity-read only and not executed.",
+    "Detached backup ACK is operational evidence and is not a required runtime input.",
+    "Lock-file SHA guard and documented success conditions agree."
+  ],
+  "counts": {
+    "continuation_runtime_files_present": 19,
+    "physics_execution_files_present": 10,
+    "payload_modifications": 0,
+    "solver_runs": 0,
+    "coefficient_evaluations": 0,
+    "verify_wrapper_runs": 0,
+    "external_uploads_by_reviewer": 0
+  },
+  "whole_archive_hash_and_CRC_repetition": "NOT_RUN; owner already checked full integrity",
+  "additional_transfer_files_required": false
+}

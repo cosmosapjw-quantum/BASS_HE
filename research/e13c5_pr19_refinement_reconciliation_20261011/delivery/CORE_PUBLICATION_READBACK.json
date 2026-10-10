@@ -1,0 +1,61 @@
+{
+  "schema": "bass-he-e13c5-core-publication-readback-v1",
+  "observed_utc": "2026-10-10 23:08:00 UTC",
+  "repository": "cosmosapjw-quantum/BASS_HE",
+  "branch": "research/e13c5-first2-branch-cover-20261011",
+  "pr": 19,
+  "pr_url": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/19",
+  "core_commit": "f2fefc0c51de41f8ea036a21ba2e0728c3260490",
+  "core_tree": "7991cff42f09861366311f4cdfba0edcaa99af1e",
+  "parent_commit": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+  "expected_parent_tree": "fe861762030cb7b669512fdfa3be8f2c0a188d2c",
+  "update_ref_expected_sha": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+  "force": false,
+  "update_ref_ack": {
+    "success": true
+  },
+  "pr_state": "open",
+  "draft": true,
+  "merged": false,
+  "fetched_commit_sha": "f2fefc0c51de41f8ea036a21ba2e0728c3260490",
+  "exact_commit_file_set_match": true,
+  "expected_new_files": 246,
+  "read_back_new_files": 246,
+  "pr_total_deletions": 0,
+  "all_commit_paths_in_new_prefix": true,
+  "critical_source_blob_checks": [
+    {
+      "path": "code/ncp_continue.py",
+      "bytes": 10931,
+      "sha256": "38957cb24f58b5d36dd4823ce7e642c708f0f4cae725ac2377d3f824b2b41626",
+      "git_blob_sha": "25f9dedcfc011544a5ecaffe864e6ad7f6a952cf",
+      "remote_git_blob_sha": "25f9dedcfc011544a5ecaffe864e6ad7f6a952cf",
+      "match": true
+    },
+    {
+      "path": "CONTINUATION_LOCK.json",
+      "bytes": 3917,
+      "sha256": "a1ccb4f352a7bd12d97419b09dc41bc2782332ae01c4a7b8173f3cdd3bcdbef7",
+      "git_blob_sha": "b8d4220e322a804f360b8b0242fe6c48bce4582e",
+      "remote_git_blob_sha": "b8d4220e322a804f360b8b0242fe6c48bce4582e",
+      "match": true
+    },
+    {
+      "path": "INDEPENDENT_LINEAGE_REVIEW.json",
+      "bytes": 12931,
+      "sha256": "0253a6c5e33adf84438e07437deef2e12eba231cc895ac4bf64479e77f207635",
+      "git_blob_sha": "ebf658c0199414814109b21042b8f16faa7062f0",
+      "remote_git_blob_sha": "ebf658c0199414814109b21042b8f16faa7062f0",
+      "match": true
+    },
+    {
+      "path": "CONTINUATION_REPORT_KO.md",
+      "bytes": 18365,
+      "sha256": "98efd02c7ed226d1a73d3401fc6121d09468bb5c4a10f84f6a5cd1daa73fc390",
+      "git_blob_sha": "80ae776a0f257ae677b416a1f18cf43d98e50d03",
+      "remote_git_blob_sha": "80ae776a0f257ae677b416a1f18cf43d98e50d03",
+      "match": true
+    }
+  ],
+  "verification_scope": "Exact commit file set, four source blob identities, branch head, draft/open/unmerged state; not an archive restore or scientific rerun."
+}

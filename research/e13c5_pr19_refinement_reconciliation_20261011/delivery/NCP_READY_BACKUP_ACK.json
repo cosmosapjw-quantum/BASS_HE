@@ -1,0 +1,65 @@
+{
+  "schema": "bass-he-e13c5-ncp-ready-backup-ack-v1",
+  "observed_utc": "2026-10-10 23:12:13 UTC",
+  "task_id": "HE_E13C5_PR19_REFINEMENT_RECONCILIATION01",
+  "ncp_ready": {
+    "file_name": "BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip",
+    "bytes": 3455297,
+    "sha256": "e2aac517d7088c5d5d17f7ee994c6b084a33a9c1df5e5e28eb99d5de6af8634f",
+    "package_root": "BASS_HE_E13C5_NCP_READY_20261011",
+    "manifest_sha256": "9f3faeb9515024524c02cf70d8046be477d257aa01bb142ae13509054f69ee80"
+  },
+  "scientific_archive": {
+    "file_name": "BASS_HE_E13C5_PR19_REFINEMENT_20261011_sha_291b57399184.zip",
+    "bytes": 3843064,
+    "sha256": "291b57399184bb3042ec1b3e0aae4a648b6ba909273d8dbd50752954df639cf3",
+    "package_root": "BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1",
+    "manifest_sha256": "f6d86d6c8f6bc753c8f40eb44189c93ac03898feae602db72aa85c6e8d4f132b",
+    "payload_files": 851,
+    "zip_members": 852,
+    "local_crc_and_every_manifest_payload": "PASS"
+  },
+  "git_scientific_core_commit": "f2fefc0c51de41f8ea036a21ba2e0728c3260490",
+  "git_pr_url": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/19",
+  "backup_status": "COMPLETE_TWO_CREATE_ONLY_UPLOADS",
+  "google_drive": {
+    "status": "ACK_SUCCESS_AND_METADATA_MATCH",
+    "id": "1dYsblmWq0BJaGZ4yY4hmGgpXTOURFrG0",
+    "file_name": "BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip",
+    "bytes": 3455297,
+    "parent_id": "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI",
+    "url": "https://drive.google.com/file/d/1dYsblmWq0BJaGZ4yY4hmGgpXTOURFrG0/view?usp=drivesdk",
+    "server_sha256": "NOT_RETURNED",
+    "remote_restore": "NOT_RUN"
+  },
+  "dropbox": {
+    "status": "COMPLETED_AND_METADATA_MATCH",
+    "file_id": "id:BSpOijBcT10AAAAAAD37LA",
+    "name": "BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip",
+    "bytes": 3455297,
+    "path": "ns:183516487//BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip",
+    "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip",
+    "modified_time": "2026-10-10T23:11:45Z",
+    "server_sha256": "NOT_RETURNED",
+    "remote_restore": "NOT_RUN"
+  },
+  "verification": {
+    "level": "R1_UPLOAD_ACK_AND_NAME_PATH_SIZE_METADATA",
+    "local_archive_verification": {
+      "outer_CRC": "PASS",
+      "every_outer_payload_size_and_sha256": "PASS",
+      "inner_CRC": "PASS",
+      "every_inner_payload_size_and_sha256": "PASS",
+      "unsafe_or_duplicate_members": 0
+    },
+    "remote_download_and_every_byte_restore": "NOT_RUN",
+    "sha256_scope": "SHA256 identifies the local uploaded bytes; provider ACK and metadata confirm named objects and sizes, not an independent remote restore."
+  },
+  "actual_NCP_scientific_execution": "NOT_RUN",
+  "recipient_execution_ACK": "NOT_RECEIVED",
+  "additional_transfer_file_required_for_execution": false,
+  "execution_handoff": "Complete NCP_LOCAL_CODEX_HANDOFF_KO.md is inside the NCP_READY ZIP",
+  "receipt_boundary": "Detached actual backup ACK. Its absence from the already sealed NCP_READY archive creates no NCP runtime dependency. No self-hash or future publication is asserted.",
+  "overwritten_files": 0,
+  "merged_pull_requests": 0
+}
