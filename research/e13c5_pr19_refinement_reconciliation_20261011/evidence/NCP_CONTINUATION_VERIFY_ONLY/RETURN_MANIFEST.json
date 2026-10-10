@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "path": "CONTINUATION_IDENTITY.json",
+      "bytes": 3181,
+      "sha256": "a171ef6d61223be6521970d51aa2d26c56a004fd71963c7d57c5b8e22334b960"
+    },
+    {
+      "path": "NCP_CONTINUATION_RESULT.json",
+      "bytes": 843,
+      "sha256": "e9effce56d504c5be381dcfb03698ee4f0b19516e6741cd14bdd0842d7525b8f"
+    },
+    {
+      "path": "PHYSICS_HOST_RUN.json",
+      "bytes": 748,
+      "sha256": "ecb1f40677b1385ae75edcae66ea8ab5a8edefad1111f59c0a1739bc2a310123"
+    },
+    {
+      "path": "PHYSICS_HOST_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PHYSICS_HOST_stdout.txt",
+      "bytes": 515,
+      "sha256": "a941754a06155181f97956bb09e19e855051bac4b2d0cde8fbc23607157d6fb7"
+    },
+    {
+      "path": "physics/ARITHMETIC_SMOKE.json",
+      "bytes": 501,
+      "sha256": "fc18c1218a80e641aa57481b87f78b0068155e22e231a4c6eb79181577636700"
+    },
+    {
+      "path": "physics/HOST.json",
+      "bytes": 4682,
+      "sha256": "6ba72ee296cad6470e06f0557df48763917945934196b9d3e0f539b30ce94864"
+    },
+    {
+      "path": "physics/IDENTITY_CHECK.json",
+      "bytes": 1753,
+      "sha256": "251b86184079efec836eec3d492faf2d3c79744f1a8a2568eabb2a50eb899176"
+    },
+    {
+      "path": "physics/NCP_RESULT.json",
+      "bytes": 547,
+      "sha256": "bdcfa38c64a1f2b6c967e9d52749dc28c3b12a10d48df27b7ecb59f6a40ef8f2"
+    }
+  ],
+  "excludes": [
+    "RETURN_MANIFEST.json"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "bass-he-e13c5-theory-execution-v1",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/scratch/7fd51143e473/e13c5_theory_work/exact_incoming_anchor_toys.py",
+    "--output",
+    "/workspace/scratch/7fd51143e473/e13c5_theory_work/EXACT_TOY_RESULTS.json"
+  ],
+  "started_utc": "2026-10-10T22:19:09.774065+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "source_sha256_before": "797f71c8a532f558972ca3467811f1cd0bf6aa24b556ef0bf9f3a13e942f9e9c",
+  "native_runs": 0,
+  "gas_advances": 0,
+  "continuous_solves": 0,
+  "candidate_imports": 0
+}

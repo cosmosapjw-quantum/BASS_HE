@@ -1,0 +1,45 @@
+{
+  "node": "HE_E13C5_PR19_REFINEMENT_RECONCILIATION01",
+  "phase": "complete_scoped_science_and_prepare_delivery",
+  "status": "PASS_SCOPED",
+  "recorded_utc": "2026-10-10T23:03:22.947359+00:00",
+  "reviews": {
+    "two_track": {
+      "path": "INDEPENDENT_REVIEW.json",
+      "sha256": "5d492eb3f181d31ee4a29569ba28609f550c48d1827502ac87b987dbc6228b8a",
+      "verdict": "PASS_SCOPED"
+    },
+    "lineage_and_ncp": {
+      "path": "INDEPENDENT_LINEAGE_REVIEW.json",
+      "sha256": "0253a6c5e33adf84438e07437deef2e12eba231cc895ac4bf64479e77f207635",
+      "verdict": "PASS_SCOPED"
+    }
+  },
+  "prior_latest_scoped_science": {
+    "commit": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+    "pr": 19,
+    "scope": "12selectedpaths/36segments N128P60"
+  },
+  "new_scoped_science": "two common OFF paths refined toN512, exact semantic and per-mode selected-subset reduction; inherited12pathscope notrerun",
+  "actual_new_physics_invocations": 4,
+  "new_coefficient_evaluations": 5632,
+  "next_research_node": "E13C5_SELECTED_SUBSET_BUDGET_AND_MISSING_NODE_COMPLEMENT_CONTRACT",
+  "next_host_task": "NCP_E13C5_PR19_REFINEMENT_PARITY_AND_REDUCTION",
+  "actual_NCP_execution": "NOT_RUN_BY_THIS_CHAT",
+  "recipient_execution_ack": "SEPARATE_NOT_OBSERVED",
+  "full_first2": "HOLD_RESOURCE_AUTHORIZATION",
+  "publication": "sealedscience_ready; actualcommit/tree/backupACKrecordedindetachedDELIVERY_RECEIPTandNCP_READY_BACKUP_ACK",
+  "protected": {
+    "baseline_RCT": "OFF",
+    "actual_atomic_photon_heat_recoil": null,
+    "physical": "HOLD",
+    "production": "HOLD",
+    "HE_F2_F09": "OPEN",
+    "receiver_adoption": "SEPARATE",
+    "legacy_Gamma_alias": {
+      "value": 3.543295,
+      "status": "FAIL"
+    },
+    "uniform_path_certificate": false
+  }
+}

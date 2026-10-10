@@ -1,0 +1,105 @@
+{
+  "schema": "bass-he-e13c5-ncp-contract-v1",
+  "task": "NCP_E13C5_TWO_TRACK_HOST_PARITY",
+  "status": "PREPARED_NOT_RUN_ON_NCP",
+  "scientific_scope": {
+    "tracks": [
+      {
+        "mode": "OFF",
+        "node": 0,
+        "keys": [
+          [
+            "OFF",
+            1,
+            0,
+            0
+          ],
+          [
+            "OFF",
+            2,
+            0,
+            0
+          ],
+          [
+            "OFF",
+            2,
+            0,
+            1
+          ]
+        ],
+        "event": "external source turns off at13.7eV"
+      },
+      {
+        "mode": "OFF",
+        "node": 700,
+        "keys": [
+          [
+            "OFF",
+            1,
+            700,
+            0
+          ],
+          [
+            "OFF",
+            2,
+            700,
+            0
+          ],
+          [
+            "OFF",
+            2,
+            700,
+            1
+          ]
+        ],
+        "event": "HeI opacity turns off at24.59eV"
+      }
+    ],
+    "initial_photon_defect": "exact0 at first captured step1 segment",
+    "incoming_later": "propagate candidate plus certified absolute radius, including exact-frozen/native representation and captured stitch residual",
+    "gas": "same inherited affine gas perstage",
+    "baseline_moments": "exact real sum of captured persegment values after exact-lift eV conversion; not native weighted aggregate reduction",
+    "new_native_runs": 0,
+    "gas_advances": 0,
+    "old_continuous_solves": 0,
+    "fullfirst2_or_fullpath_expansion": false,
+    "outflow": "exact0"
+  },
+  "N": 512,
+  "precision_digits": 60,
+  "new_local_enclosures": 4,
+  "reused_local_enclosures": 2,
+  "new_coefficient_evaluations": 4096,
+  "interpreter": "CPython3.12.x",
+  "dependencies": "stdlibonly",
+  "layout": {
+    "processes": 1,
+    "threads": 1,
+    "MPI": false
+  },
+  "resource_limits": {
+    "wall_seconds": 180,
+    "memory_bytes": 1073741824,
+    "scientific_attempts": 1
+  },
+  "executable": "code/ncp_execute.py",
+  "execution_lock_sha256": "6a66683c2f28b0ed35b0914064129815481b7ff5f907f779150b62ef4c12e852",
+  "baseline_numerical_sha256": "f4d0f8c7e37e5c8a013ab133af748173f3ef1a8247f413f4798fdb3518c04a86",
+  "default_without_execute": "VERIFY_ONLY_PASS_NOT_RUN",
+  "success": "PASS_SCOPED_HOST_PARITY_ACTUALLY_EXECUTED_SCOPED_PARITY_PASS",
+  "failure_policy": "preservefirstsource_stdout_stderr_checkpoint; noautomatic scientific retry or tolerancechange",
+  "all_required_transfer_files_inside_NCP_READY": true,
+  "protected": {
+    "baseline_RCT": "OFF",
+    "actual_atomic_photon_heat_recoil": null,
+    "physical": "HOLD",
+    "production": "HOLD",
+    "HE_F2_F09": "OPEN",
+    "receiver_adoption": "SEPARATE",
+    "legacy_Gamma_alias": {
+      "value": 3.543295,
+      "status": "FAIL"
+    },
+    "uniform_path_certificate": false
+  }
+}

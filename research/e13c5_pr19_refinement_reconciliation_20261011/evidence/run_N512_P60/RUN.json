@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-10-10T22:20:36.978117+00:00",
+  "command": [
+    "python3",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/code/path_enclosure.py",
+    "--subdivisions",
+    "512",
+    "--precision",
+    "60",
+    "--output",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N512_P60.json"
+  ],
+  "timeout_seconds": 180,
+  "wrapper_sha256": "1af302354787f5e5e185b9fe66f97d5bb21a9fdb9a1b3c4650d26a8189b17e6b",
+  "status": "COMPLETE",
+  "actual_exit": 0,
+  "finished_utc": "2026-10-10T22:20:52.019836+00:00",
+  "elapsed_seconds": 15.041765196998313,
+  "stdout_sha256": "9f5ec875909a4b56f61600ddafc5282e69be6e62563443bfad9b5a2a9f59e63c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

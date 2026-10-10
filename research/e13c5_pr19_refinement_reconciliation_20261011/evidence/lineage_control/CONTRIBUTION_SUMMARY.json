@@ -1,0 +1,116 @@
+{
+  "schema": "bass-he-e13c5-lineage-contribution-summary-v1",
+  "node": "HE_E13C5_PR19_REFINEMENT_RECONCILIATION01",
+  "created_utc": "2026-10-10T22:49:04.911935+00:00",
+  "contributor": "/root/e13c5_recurrence_control",
+  "role": "INDEPENDENT_POSTPROCESSING_CONTRIBUTOR_NOT_FINAL_REVIEWER",
+  "status": "PASS_SCOPED_POSTPROCESSING",
+  "actual_exit": 0,
+  "elapsed_seconds": 0.2665349399976549,
+  "check_count": 1180,
+  "failed_count": 0,
+  "comparison_count": 604,
+  "disjoint_count": 0,
+  "prior_lineage": {
+    "commit": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+    "paths": 12,
+    "segments": 36,
+    "N": 128,
+    "precision": 60
+  },
+  "replacement": {
+    "paths": [
+      {
+        "mode": "OFF",
+        "node": 0
+      },
+      {
+        "mode": "OFF",
+        "node": 700
+      }
+    ],
+    "N": 512,
+    "precision": 60,
+    "untouched_prior_paths": 10,
+    "mode_mixing": false
+  },
+  "source_sha256": "dd8796ae232d3d72384df14263658d1e48e87a8fad6982f64a6ab811ce2eb985",
+  "numerical_projection_file_sha256": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69",
+  "input_identities": {
+    "prior": {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/RESULTS.json",
+      "bytes": 950019,
+      "sha256": "418dcac9280947abc227c69f9178c0163bbdb00fa34bff1f9e34ab9eea35ece4"
+    },
+    "prior_start": {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/START.json",
+      "bytes": 3563,
+      "sha256": "5f75633b9bd4b55aeaab4ca727972c6b7da4aba0fbaaf050b3d183a45a2ce6d1"
+    },
+    "prior_code": {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/cover.py",
+      "bytes": 12327,
+      "sha256": "aaae27a0d053d42ce6727593df676352697dd042486aa448d1e9104b16f979f6"
+    },
+    "pilot": {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/pilot/RESULTS.json",
+      "bytes": 77603,
+      "sha256": "75648e29291c3c364c2d8a0c859710d95074f1c12c5d910c61a4856465034b96"
+    },
+    "current": {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N512_P60.json",
+      "bytes": 417016,
+      "sha256": "5a3b9f17c6d250afed0e4270e4cce71d22d930a482084bc12c3e7dcc66cb68d7"
+    },
+    "controls": {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/PATH_CONTROLS.json",
+      "bytes": 24911,
+      "sha256": "41891a30f61976d2c19165ee48a077bccbd41b17011939e1ed4dd80eb49cfd63"
+    },
+    "diagnostic": {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N128_P60.json",
+      "bytes": 416248,
+      "sha256": "a7215a1a4a7af5c7b53bc9e41da47a4ba108301f06578a4075866310945d9835"
+    }
+  },
+  "ncp_optional_diagnostic_control": {
+    "TestID": "CLI_OPTIONAL_DIAGNOSTIC_PROJECTION_INVARIANCE",
+    "status": "PASS",
+    "actual_command_exit": 0,
+    "with_diagnostic_projection_sha256": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69",
+    "without_diagnostic_projection_sha256": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69",
+    "scope": "same saved N512 input, optional N128 diagnosis omitted; no new producer physics",
+    "elapsed_seconds": 0.21581908000371186
+  },
+  "primary_baseline": "output_v2/RESULTS.json",
+  "projection_baseline": "output_v2/NUMERICAL_PROJECTION.json",
+  "preserved_prior_interfaces": [
+    "run_v1",
+    "output_v1"
+  ],
+  "first_failures": [],
+  "interface_update": "v1 passed; v2 only adds explicit exact projection-file hash and input_identities alias for the NCP wrapper. Numeric findings unchanged; no repeated checks added to distinct count.",
+  "claim_ceiling": "Conditional selected-subset hybrid arithmetic after same-quantity identity/compatibility audit, never full-first2 or physical admission. Prior/local coefficients share the inherited physical model and interval primitives.",
+  "new_producer_runs": 0,
+  "new_coefficient_evaluations": 0,
+  "new_physics_solver_runs": 0,
+  "holds": [
+    "full_first2",
+    "physical",
+    "production",
+    "new_gas_evolution",
+    "actual_atomic_photon_heat_recoil",
+    "receiver_adoption",
+    "automatic_E13C6"
+  ],
+  "report_identity": {
+    "path": "REPORT_KO.md",
+    "bytes": 11785,
+    "sha256": "30c75920781b0ebbd683ebdf83387cc0d105624e8e44108f23b3af5e4ce401b4"
+  },
+  "report_math_display_fix": {
+    "receipt": "MATH_DISPLAY_FIX_RECEIPT.json",
+    "preserved_original": "REPORT_KO_pre_math_display_fix.md",
+    "new_science_runs": 0
+  }
+}

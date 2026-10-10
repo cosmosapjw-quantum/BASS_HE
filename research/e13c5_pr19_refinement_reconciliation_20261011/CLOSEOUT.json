@@ -1,0 +1,90 @@
+{
+  "schema": "bass-he-e13c5-closeout-v1",
+  "node": "HE_E13C5_PR19_REFINEMENT_RECONCILIATION01",
+  "status": "PASS_SCOPED",
+  "reviews": {
+    "two_track": {
+      "path": "INDEPENDENT_REVIEW.json",
+      "sha256": "5d492eb3f181d31ee4a29569ba28609f550c48d1827502ac87b987dbc6228b8a",
+      "verdict": "PASS_SCOPED"
+    },
+    "lineage_and_ncp": {
+      "path": "INDEPENDENT_LINEAGE_REVIEW.json",
+      "sha256": "0253a6c5e33adf84438e07437deef2e12eba231cc895ac4bf64479e77f207635",
+      "verdict": "PASS_SCOPED"
+    }
+  },
+  "actual_physics_runs": [
+    {
+      "elapsed_seconds": 1.1200437429943122,
+      "peak_RSS_KiB": 17272,
+      "new_coefficient_evaluations": 256,
+      "reused_local_enclosures": 2,
+      "new_local_enclosures": 4,
+      "name": "N32_P60",
+      "actual_exit": 0
+    },
+    {
+      "elapsed_seconds": 3.8105916059939773,
+      "peak_RSS_KiB": 15672,
+      "new_coefficient_evaluations": 1024,
+      "reused_local_enclosures": 2,
+      "new_local_enclosures": 4,
+      "name": "N128_P60",
+      "actual_exit": 0
+    },
+    {
+      "elapsed_seconds": 14.92950566700165,
+      "peak_RSS_KiB": 15556,
+      "new_coefficient_evaluations": 4096,
+      "reused_local_enclosures": 2,
+      "new_local_enclosures": 4,
+      "name": "N512_P60",
+      "actual_exit": 0
+    },
+    {
+      "elapsed_seconds": 1.1534644579951419,
+      "peak_RSS_KiB": 15964,
+      "new_coefficient_evaluations": 256,
+      "reused_local_enclosures": 2,
+      "new_local_enclosures": 4,
+      "name": "N32_P80",
+      "actual_exit": 0
+    }
+  ],
+  "new_coefficient_evaluations": 5632,
+  "new_scientific_kernel_seconds": 21.01360547398508,
+  "actual_NCP": "NOT_RUN",
+  "actual_full_first2_runs": 0,
+  "actual_native_runs": 0,
+  "actual_gas_advances": 0,
+  "actual_old_continuous_solves": 0,
+  "lineage_contract": "LINEAGE_RECONCILIATION_CONTRACT.json",
+  "continuation_report": "CONTINUATION_REPORT_KO.md",
+  "continuation_lock_sha256": "a1ccb4f352a7bd12d97419b09dc41bc2782332ae01c4a7b8173f3cdd3bcdbef7",
+  "ncp_handoff_sha256": "7c5519e0a44892326c43d30a06b42d449dd40665f9bcef8f12d0828217942e4c",
+  "postprocessing_result_sha256": "2fd04e6c6f300bbe19344fcf7d0e000174241ebd719716f897f8f6c5104d6bd9",
+  "first_failure_records": [
+    "evidence/independent_recurrence/",
+    "evidence/ncp_continuation_boundary/FIRST_FAILURE.json",
+    "evidence/NCP_CONTINUATION_VERIFY_TRANSPORT_FAILURE.json"
+  ],
+  "non_scientific_document_fix": "evidence/lineage_control/MATH_DISPLAY_FIX_RECEIPT.json",
+  "first_failures_preserved": true,
+  "protected": {
+    "baseline_RCT": "OFF",
+    "actual_atomic_photon_heat_recoil": null,
+    "physical": "HOLD",
+    "production": "HOLD",
+    "HE_F2_F09": "OPEN",
+    "receiver_adoption": "SEPARATE",
+    "legacy_Gamma_alias": {
+      "value": 3.543295,
+      "status": "FAIL"
+    },
+    "uniform_path_certificate": false
+  },
+  "next_dag": "NEXT_DAG.json",
+  "publication": "Actualpublication/backupfields are detached receipts; this sealedsource never predicts futureidentity",
+  "archive_packaging_is_scientific_validation": false
+}

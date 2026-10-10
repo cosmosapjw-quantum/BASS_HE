@@ -1,0 +1,570 @@
+{
+  "schema": "e13c5-independent-exact-native-anchor-audit-v1",
+  "role": "INDEPENDENT_DECISION_REVIEWER",
+  "arithmetic": "fractions.Fraction; exact stored decimal rationals and exact binary64 input lift",
+  "scope": "saved N512/P60 only: native energy stock, incoming radii, anchor products and cumulative/global energy bookkeeping",
+  "candidate_imports": 0,
+  "coefficient_evaluations": 0,
+  "continuous_solves": 0,
+  "native_runs": 0,
+  "checks": [
+    {
+      "id": "OFF/1/0/0/exact_native_photon",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/exact_native_energy_erg_to_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/native_energy_stock_gap_nonzero",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/native_stock_gap_included",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/full_native_energy_representation",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/represented_firstvariation_inclusion",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/full_radius_includes_representation_rounding",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/true_correction_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/true_absolute_energy_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/S_bound_includes_incoming",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/incoming_gain/P1",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/incoming_gain/A_total",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/incoming_gain/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/0/0/incoming_gain/P1_energy_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/exact_native_photon",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/exact_native_energy_erg_to_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/native_energy_stock_gap_nonzero",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/native_stock_gap_included",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/full_native_energy_representation",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/represented_firstvariation_inclusion",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/full_radius_includes_representation_rounding",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/true_correction_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/true_absolute_energy_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/S_bound_includes_incoming",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/incoming_gain/P1",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/incoming_gain/A_total",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/incoming_gain/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/0/incoming_gain/P1_energy_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/exact_native_photon",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/exact_native_energy_erg_to_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/native_energy_stock_gap_nonzero",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/native_stock_gap_included",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/full_native_energy_representation",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/represented_firstvariation_inclusion",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/full_radius_includes_representation_rounding",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/true_correction_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/true_absolute_energy_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/S_bound_includes_incoming",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/incoming_gain/P1",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/incoming_gain/A_total",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/incoming_gain/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/0/1/incoming_gain/P1_energy_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_0/signed_deltaE",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_0/full_signed_correction_product",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_0/native_anchor_product",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_0/true_anchor_product",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_0/incoming_carry_not_reset",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_0/outgoing_radius_carried",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_1/signed_deltaE",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_1/full_signed_correction_product",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_1/native_anchor_product",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_1/true_anchor_product",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_1/incoming_carry_not_reset",
+      "pass": true
+    },
+    {
+      "id": "node_0/seam_1/outgoing_radius_carried",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_0/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_0/H_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_0/Z_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_0/QE_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_1/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_1/H_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_1/Z_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_1/QE_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_2/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_2/H_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_2/Z_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/cumulative_2/QE_eV",
+      "pass": true
+    },
+    {
+      "id": "node_0/anchor_sum",
+      "pass": true
+    },
+    {
+      "id": "node_0/global_anchor_subtracted_ledger_formula",
+      "pass": true
+    },
+    {
+      "id": "node_0/global_energy_contains_zero",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/exact_native_photon",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/exact_native_energy_erg_to_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/native_energy_stock_gap_nonzero",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/native_stock_gap_included",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/full_native_energy_representation",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/represented_firstvariation_inclusion",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/full_radius_includes_representation_rounding",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/true_correction_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/true_absolute_energy_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/S_bound_includes_incoming",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/incoming_gain/P1",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/incoming_gain/A_total",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/incoming_gain/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/1/700/0/incoming_gain/P1_energy_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/exact_native_photon",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/exact_native_energy_erg_to_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/native_energy_stock_gap_nonzero",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/native_stock_gap_included",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/full_native_energy_representation",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/represented_firstvariation_inclusion",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/full_radius_includes_representation_rounding",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/true_correction_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/true_absolute_energy_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/S_bound_includes_incoming",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/incoming_gain/P1",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/incoming_gain/A_total",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/incoming_gain/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/0/incoming_gain/P1_energy_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/exact_native_photon",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/exact_native_energy_erg_to_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/native_energy_stock_gap_nonzero",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/native_stock_gap_included",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/full_native_energy_representation",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/represented_firstvariation_inclusion",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/full_radius_includes_representation_rounding",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/true_correction_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/true_absolute_energy_interval",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/S_bound_includes_incoming",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/incoming_gain/P1",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/incoming_gain/A_total",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/incoming_gain/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "OFF/2/700/1/incoming_gain/P1_energy_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_0/signed_deltaE",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_0/full_signed_correction_product",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_0/native_anchor_product",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_0/true_anchor_product",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_0/incoming_carry_not_reset",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_0/outgoing_radius_carried",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_1/signed_deltaE",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_1/full_signed_correction_product",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_1/native_anchor_product",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_1/true_anchor_product",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_1/incoming_carry_not_reset",
+      "pass": true
+    },
+    {
+      "id": "node_700/seam_1/outgoing_radius_carried",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_0/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_0/H_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_0/Z_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_0/QE_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_1/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_1/H_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_1/Z_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_1/QE_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_2/B_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_2/H_total_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_2/Z_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/cumulative_2/QE_eV",
+      "pass": true
+    },
+    {
+      "id": "node_700/anchor_sum",
+      "pass": true
+    },
+    {
+      "id": "node_700/global_anchor_subtracted_ledger_formula",
+      "pass": true
+    },
+    {
+      "id": "node_700/global_energy_contains_zero",
+      "pass": true
+    }
+  ],
+  "passed": 138,
+  "failed": 0,
+  "input_sha256": {
+    "inputs/PATH_CONTROLS.json": "41891a30f61976d2c19165ee48a077bccbd41b17011939e1ed4dd80eb49cfd63",
+    "evidence/N512_P60.json": "5a3b9f17c6d250afed0e4270e4cce71d22d930a482084bc12c3e7dcc66cb68d7"
+  }
+}

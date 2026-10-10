@@ -1,0 +1,17 @@
+{
+  "task": "NCP_E13C5_TWO_TRACK_HOST_PARITY",
+  "execute_requested": false,
+  "started_utc": "2026-10-10T22:22:52.131857+00:00",
+  "status": "VERIFY_ONLY_PASS",
+  "new_host_scientific_runs": 0,
+  "old_continuous_solves": 0,
+  "native_runs": 0,
+  "gas_advances": 0,
+  "physical": "HOLD",
+  "production": "HOLD",
+  "uniform_fullpath_enclosure": false,
+  "two_track_scope": "OFF_nodes0_and700_three_segments_each",
+  "scientific_execution": "NOT_RUN",
+  "new_result_accuracy": "NOT_EVALUATED",
+  "finished_utc": "2026-10-10T22:22:52.147766+00:00"
+}

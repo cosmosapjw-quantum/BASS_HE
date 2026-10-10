@@ -1,0 +1,31 @@
+{
+  "NO_SCIENCE": true,
+  "role": "independent synthetic infrastructure controls, not physics review",
+  "started_utc": "2026-10-10T22:52:19.799832+00:00",
+  "source_path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/code/ncp_continue.py",
+  "source_sha256": "38957cb24f58b5d36dd4823ce7e642c708f0f4cae725ac2377d3f824b2b41626",
+  "original_source_bytes": 10931,
+  "cases": [
+    {
+      "name": "verify_only",
+      "execute": false,
+      "expected_success": true,
+      "expected_reduction_mock_calls": 0
+    },
+    {
+      "name": "fresh_success",
+      "execute": true,
+      "expected_success": true,
+      "expected_reduction_mock_calls": 1
+    },
+    {
+      "name": "lock_metadata_tamper_during",
+      "execute": true,
+      "expected_success": false,
+      "expected_reduction_mock_calls": 1
+    }
+  ],
+  "real_science_invocations": 0,
+  "remote_mutations": 0,
+  "write_scope": "/workspace/scratch/7fd51143e473/e13c5_ncp_continuation_boundary_work/repair_01"
+}

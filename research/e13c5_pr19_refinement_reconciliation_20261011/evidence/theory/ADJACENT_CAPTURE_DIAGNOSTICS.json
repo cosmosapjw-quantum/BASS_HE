@@ -1,0 +1,164 @@
+{
+  "schema": "bass-he-e13c5-theory-adjacent-capture-diagnostics-v1",
+  "arithmetic": "Decimal100 exact binary64 lifts; single exp evaluation is diagnostic, NOT outward certificate",
+  "source": {
+    "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C4_LOCAL_REMAINDER_ENCLOSURE_20261010_v1/inputs/e13c3/inputs/e13c2/inputs/upstream_e13c1/evidence/capture/OFF/SEGMENTS.csv",
+    "bytes": 3962990,
+    "sha256": "2a43dae808a0ca262dd175d2a1b74eeecc2c674d537f524bdba08e9d709076f7",
+    "read_scope": "parsed full; selected node0,700,1162,1976 rows inspected"
+  },
+  "tracks": [
+    {
+      "node": 0,
+      "ordered_ids": [
+        [
+          "OFF",
+          1,
+          0,
+          0
+        ],
+        [
+          "OFF",
+          2,
+          0,
+          0
+        ],
+        [
+          "OFF",
+          2,
+          0,
+          1
+        ]
+      ],
+      "source_on": [
+        true,
+        true,
+        false
+      ],
+      "HeI_active": [
+        false,
+        false,
+        false
+      ],
+      "anchored": [
+        false,
+        false,
+        false
+      ],
+      "seams": [
+        {
+          "from": [
+            "OFF",
+            1,
+            0,
+            0
+          ],
+          "to": [
+            "OFF",
+            2,
+            0,
+            0
+          ],
+          "captured_photon_transfer_exact_zero": true,
+          "captured_time_transfer_exact_zero": true,
+          "energy_anchor_delta_eV_diagnostic": "-1.11006097831913413627439197019003697064442970539747577159473880623618769831307352518E-15",
+          "captured_energy_minus_exact_energy_times_captured_photon_eV_diagnostic": "1.52854930332467486329412562685107698700281599418895263629976076585567379619185315897E-20"
+        },
+        {
+          "from": [
+            "OFF",
+            2,
+            0,
+            0
+          ],
+          "to": [
+            "OFF",
+            2,
+            0,
+            1
+          ],
+          "captured_photon_transfer_exact_zero": true,
+          "captured_time_transfer_exact_zero": true,
+          "energy_anchor_delta_eV_diagnostic": "7.4169661253990394869523123647202313876961364140281927458224902188553253120367760660E-16",
+          "captured_energy_minus_exact_energy_times_captured_photon_eV_diagnostic": "1.51791456868253064819335686075635724579195787814960280563773917597720715454107128904E-20"
+        }
+      ]
+    },
+    {
+      "node": 700,
+      "ordered_ids": [
+        [
+          "OFF",
+          1,
+          700,
+          0
+        ],
+        [
+          "OFF",
+          2,
+          700,
+          0
+        ],
+        [
+          "OFF",
+          2,
+          700,
+          1
+        ]
+      ],
+      "source_on": [
+        true,
+        true,
+        true
+      ],
+      "HeI_active": [
+        true,
+        true,
+        false
+      ],
+      "anchored": [
+        false,
+        true,
+        true
+      ],
+      "seams": [
+        {
+          "from": [
+            "OFF",
+            1,
+            700,
+            0
+          ],
+          "to": [
+            "OFF",
+            2,
+            700,
+            0
+          ],
+          "captured_photon_transfer_exact_zero": true,
+          "captured_time_transfer_exact_zero": true,
+          "energy_anchor_delta_eV_diagnostic": "2.65072444722552644225386255634923276774538849771956818839573125873279635814464412297E-15",
+          "captured_energy_minus_exact_energy_times_captured_photon_eV_diagnostic": "2.9153410465290475285823829040929367382680145119848752665166833296738015569448560791E-21"
+        },
+        {
+          "from": [
+            "OFF",
+            2,
+            700,
+            0
+          ],
+          "to": [
+            "OFF",
+            2,
+            700,
+            1
+          ],
+          "captured_photon_transfer_exact_zero": true,
+          "captured_time_transfer_exact_zero": true,
+          "energy_anchor_delta_eV_diagnostic": "-2.1170252325525802676536650369298326671211102611467275539430614806432527478932394585E-16",
+          "captured_energy_minus_exact_energy_times_captured_photon_eV_diagnostic": "-1.77237559737731818363943397622742490920377683098554268576966250218749105867565687155E-20"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "schema": "bass-he-e13c5-independent-lineage-read-identities-v1",
+  "reviewer": "/root/e13c5_independent_review",
+  "recorded_utc": "2026-10-10T23:02:43.054563+00:00",
+  "entry_count": 77,
+  "entries": [
+    {
+      "path": "CONTINUATION_LOCK.json",
+      "bytes": 3917,
+      "sha256": "a1ccb4f352a7bd12d97419b09dc41bc2782332ae01c4a7b8173f3cdd3bcdbef7",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "CONTINUATION_REPORT_KO.md",
+      "bytes": 18365,
+      "sha256": "98efd02c7ed226d1a73d3401fc6121d09468bb5c4a10f84f6a5cd1daa73fc390",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "EXECUTION_LOCK.json",
+      "bytes": 1881,
+      "sha256": "6a66683c2f28b0ed35b0914064129815481b7ff5f907f779150b62ef4c12e852",
+      "read_scope": "inherited prior full review; identity rechecked, unchanged science not recursively rereviewed"
+    },
+    {
+      "path": "INDEPENDENT_REVIEW.json",
+      "bytes": 37948,
+      "sha256": "5d492eb3f181d31ee4a29569ba28609f550c48d1827502ac87b987dbc6228b8a",
+      "read_scope": "inherited prior full review; identity rechecked, unchanged science not recursively rereviewed"
+    },
+    {
+      "path": "INDEPENDENT_REVIEW_KO.md",
+      "bytes": 14149,
+      "sha256": "5b596c5d4a4725981b519c991ea75ad78d9ec2127108b20638dfdab7162d999d",
+      "read_scope": "inherited prior full review; identity rechecked, unchanged science not recursively rereviewed"
+    },
+    {
+      "path": "LINEAGE_ADDENDUM_KO.md",
+      "bytes": 4583,
+      "sha256": "bbd4d76a3d5491d78565c9ec526faa0af3b8a4bad0e49d81d9b33f24b61f83cf",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "LINEAGE_RECONCILIATION_CONTRACT.json",
+      "bytes": 3664,
+      "sha256": "334c77ea0b5af3c0e4d237756467231823cc6aac7500cf3fdabf269948c22177",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "NCP_CONTINUATION_CONTRACT.json",
+      "bytes": 4499,
+      "sha256": "330df4e11c105772171ff6b8a7a9ab31f2932c36a73a0fcf3e3d1fc81ad96552",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "NCP_LOCAL_CODEX_HANDOFF_KO.md",
+      "bytes": 10753,
+      "sha256": "7c5519e0a44892326c43d30a06b42d449dd40665f9bcef8f12d0828217942e4c",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "NEXT_DAG.json",
+      "bytes": 3097,
+      "sha256": "a2970056b0378c765f0c79d3bf15a93dd3cdfc587e7297e06b32b9b626ae2467",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 5031,
+      "sha256": "8e883b3b8a156e403460b7e270f104719698651fa411e467289a25fd85f26625",
+      "read_scope": "inherited prior full review; identity rechecked, unchanged science not recursively rereviewed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2251,
+      "sha256": "44fa044db86819b74fc1c85e88f91be4fd2f2fb01bd95e9e9ecf5bb894148c8c",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "REPORT_KO.md",
+      "bytes": 22124,
+      "sha256": "bbd365f81ab0fabf29135db3367728ad193dd48b722be9781061a76a7d6bfd2f",
+      "read_scope": "inherited prior full review; identity rechecked, unchanged science not recursively rereviewed"
+    },
+    {
+      "path": "code/directed_interval.py",
+      "bytes": 9103,
+      "sha256": "ce4a44b11d1c0a3a5c52861033fa817a587bca9a5b852fab48329213b9a732e5",
+      "read_scope": "inherited prior full review; identity rechecked, unchanged science not recursively rereviewed"
+    },
+    {
+      "path": "code/lineage_reduction.py",
+      "bytes": 28050,
+      "sha256": "dd8796ae232d3d72384df14263658d1e48e87a8fad6982f64a6ab811ce2eb985",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "code/local_enclosure.py",
+      "bytes": 20261,
+      "sha256": "fade8983b7db8974c479ac4473424b7d572e8f7a0f09c042669fb3c40c32e370",
+      "read_scope": "inherited prior full review; identity rechecked, unchanged science not recursively rereviewed"
+    },
+    {
+      "path": "code/ncp_continue.py",
+      "bytes": 10931,
+      "sha256": "38957cb24f58b5d36dd4823ce7e642c708f0f4cae725ac2377d3f824b2b41626",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "code/ncp_execute.py",
+      "bytes": 12445,
+      "sha256": "098e5bf7531e227d407e94cef36dbbfe26bca9cdde9583c8d416836608602bed",
+      "read_scope": "inherited prior full review; identity rechecked, unchanged science not recursively rereviewed"
+    },
+    {
+      "path": "code/path_enclosure.py",
+      "bytes": 21111,
+      "sha256": "c424c8b980ece05618e427e4373f13a41fe7b4d02a8ddd4a0b3fa7da30109d73",
+      "read_scope": "inherited prior full review; identity rechecked, unchanged science not recursively rereviewed"
+    },
+    {
+      "path": "code/run_recorded.py",
+      "bytes": 2324,
+      "sha256": "1af302354787f5e5e185b9fe66f97d5bb21a9fdb9a1b3c4650d26a8189b17e6b",
+      "read_scope": "inherited prior full review; identity rechecked, unchanged science not recursively rereviewed"
+    },
+    {
+      "path": "evidence/N512_P60.json",
+      "bytes": 417016,
+      "sha256": "5a3b9f17c6d250afed0e4270e4cce71d22d930a482084bc12c3e7dcc66cb68d7",
+      "read_scope": "JSON parsed; targeted saved-endpoint, identity, compatibility and reduction fields; not a fresh all-path physics audit"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/CONTINUATION_IDENTITY.json",
+      "bytes": 3181,
+      "sha256": "e0d3b76ced73b6c697f18d9e3d7562e8d487d2b88101805dce24faaa1b670d4a",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/NCP_CONTINUATION_RESULT.json",
+      "bytes": 843,
+      "sha256": "eb8739a02d11468e70f44c1c5aff8d5a8fa13c82f6586c26dd432070a3dd2371",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/CONTINUATION_IDENTITY.json",
+      "bytes": 3181,
+      "sha256": "a171ef6d61223be6521970d51aa2d26c56a004fd71963c7d57c5b8e22334b960",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/NCP_CONTINUATION_RESULT.json",
+      "bytes": 843,
+      "sha256": "e9effce56d504c5be381dcfb03698ee4f0b19516e6741cd14bdd0842d7525b8f",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_TRANSPORT_FAILURE.json",
+      "bytes": 761,
+      "sha256": "03c5a8a6103979e825b54243a210d3334dcd991b416ca2af5f749ffcf1f14f35",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/lineage_control/CONTRACT.md",
+      "bytes": 3832,
+      "sha256": "f4bab213828716ba8bcff06fd86392a08ec7afb8c684c86ee0a9d293c754777c",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_control/CONTRIBUTION_SUMMARY.json",
+      "bytes": 4579,
+      "sha256": "844f5ed2fe9a2c19416e864fbb7467e03fbcdabc10ed50cbb692555d6b686176",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_control/PROTOCOL_CHECK.json",
+      "bytes": 465,
+      "sha256": "00a2ffa1d748ddccc8c6b09bd77a75210e7c7607dfe8cbadc14339cc2faa85f1",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_control/REPORT_KO.md",
+      "bytes": 11785,
+      "sha256": "30c75920781b0ebbd683ebdf83387cc0d105624e8e44108f23b3af5e4ce401b4",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_control/output_v2/NUMERICAL_IDENTITY.json",
+      "bytes": 687,
+      "sha256": "7cec4ba2db9e808fff72ef787dbc8317f8c513a53fae365203402d82d227b65a",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+      "bytes": 419815,
+      "sha256": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69",
+      "read_scope": "JSON parsed; targeted saved-endpoint, identity, compatibility and reduction fields; not a fresh all-path physics audit",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_control/output_v2/RESULTS.json",
+      "bytes": 870091,
+      "sha256": "2fd04e6c6f300bbe19344fcf7d0e000174241ebd719716f897f8f6c5104d6bd9",
+      "read_scope": "JSON parsed; targeted saved-endpoint, identity, compatibility and reduction fields; not a fresh all-path physics audit",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_control/protocol_no_diagnostic_output/RESULTS.json",
+      "bytes": 566095,
+      "sha256": "3d0dfa595161f79693a863277b1180ab10e98bb0068035c55150013db01cf687",
+      "read_scope": "JSON parsed; targeted saved-endpoint, identity, compatibility and reduction fields; not a fresh all-path physics audit",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_control/protocol_no_diagnostic_run/FINISH.json",
+      "bytes": 2663,
+      "sha256": "dc6f49ba463787f0c97342cd5b96130752ca92920dc56dcf510924c12d2659ab",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_control/run_v1/lineage_reduction_initial_interface.py",
+      "bytes": 27774,
+      "sha256": "487ea005a8a4297f914fa6d0cfc5a03cd0737f81150b776f849991d4c4dc66f6",
+      "read_scope": "read original source plus bounded version diff; preservation identity verified",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_control/run_v2/FINISH.json",
+      "bytes": 3019,
+      "sha256": "64e4597268b1e294d0edab2c5266d72be75215e1b644b5056e0f07e471c46942",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/lineage_intake/BASS_HE_E13C5_FIRST2_PUBLICATION_RECEIPT_20261011_e25039b.json",
+      "bytes": 2606,
+      "sha256": "0a0b23cabcd6a5244ca57a5c336605dd8ac1310f87dea137416218ef2fdd80f7",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/lineage_intake/FETCH_METADATA_AND_IDENTITIES.json",
+      "bytes": 6611,
+      "sha256": "75edfedfcd50dcaa47599f46d5e11fe1873a9212e69d1e1cd128ea6864fe3f84",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/lineage_intake/LIVE_PR18_PR19.json",
+      "bytes": 3484,
+      "sha256": "6a6be0f6716721e0be316e4799b10d4ef823fda1561dc8bbcf29c5f03ac7961c",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/lineage_intake/RECONNAISSANCE.json",
+      "bytes": 9903,
+      "sha256": "1c604c5c2158de91426e33eb54c145c195a5f8e523b73e2f3831d064a08110c7",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/lineage_review/EXACT_LINEAGE_EXECUTION.json",
+      "bytes": 783,
+      "sha256": "7ccbfe9aab8e35ae0d1d6c4ee66a84cbcecd47eb3767ea4a4ca639008f8cf076",
+      "read_scope": "reviewer-owned bounded exact audit source and actual execution evidence"
+    },
+    {
+      "path": "evidence/lineage_review/EXACT_LINEAGE_RESULTS.json",
+      "bytes": 23546,
+      "sha256": "ab437893f2137fe5a62e4ec4597993df3239aa08b2012af86f125cf6fb0b999b",
+      "read_scope": "reviewer-owned bounded exact audit source and actual execution evidence"
+    },
+    {
+      "path": "evidence/lineage_review/EXACT_LINEAGE_START.json",
+      "bytes": 461,
+      "sha256": "b24fa73e2f76e4e9fd08cec5294f0740e6ddfb3dfaf2601084049c0db7c1bc0d",
+      "read_scope": "reviewer-owned bounded exact audit source and actual execution evidence"
+    },
+    {
+      "path": "evidence/lineage_review/REVIEW_SCOPE.md",
+      "bytes": 1739,
+      "sha256": "9ed2bd4e6b78be23bf7797800614132ae5e17123a04021293217de10550010c7",
+      "read_scope": "reviewer-owned bounded exact audit source and actual execution evidence"
+    },
+    {
+      "path": "evidence/lineage_review/exact_lineage_audit.py",
+      "bytes": 8792,
+      "sha256": "f9b846fc0e963712f7979040dc6768e237546f9cc3182eba60930f617ebeb53b",
+      "read_scope": "reviewer-owned bounded exact audit source and actual execution evidence"
+    },
+    {
+      "path": "evidence/lineage_review/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "read_scope": "reviewer-owned bounded exact audit source and actual execution evidence"
+    },
+    {
+      "path": "evidence/lineage_review/stdout.txt",
+      "bytes": 143,
+      "sha256": "c1999124e3a9a3c1919b78c8f809048ac2544c02ebb9f72cdbb00c14c8d1c985",
+      "read_scope": "reviewer-owned bounded exact audit source and actual execution evidence"
+    },
+    {
+      "path": "evidence/lineage_theory/LINEAGE_REDUCTION_CONTRACT.md",
+      "bytes": 12207,
+      "sha256": "f241fbc859c7c3ea94d30e13388fc0a1eae60691062b7e503b3209128d1b4c40",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/CONTRACT.json",
+      "bytes": 2194,
+      "sha256": "b45ecff94238e77996291fd1b3b609fcf8f7badd798306b2b5898c615d9e21ba",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/FINAL_SUMMARY.json",
+      "bytes": 3226,
+      "sha256": "55eafe87f37c44d0665ee1a4bcf550ad4d1571c9ea5b38c50502bdb417407481",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/FIRST_FAILURE.json",
+      "bytes": 881,
+      "sha256": "96de46f6541b93f540ee5c1c6ff096fe708c5addb21b67656a7d47afdec292ea",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/REPORT_KO.md",
+      "bytes": 3185,
+      "sha256": "ed4fdc6d0d573cef19da18ce9f76977b6d3915217abf17dd81ed387d076fa680",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/RESULTS.json",
+      "bytes": 9248,
+      "sha256": "87798c8a622db90331c48c25849ec36e04dfead9d35a72bfd37f1b213eaf59c2",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/NCP_CONTINUATION_RESULT.json",
+      "bytes": 1156,
+      "sha256": "4fad8aae858fc53a9844256f7c42a235ea346d30afeec322142ca930adb0e687",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/recheck_lock_guard.py",
+      "bytes": 938,
+      "sha256": "3792f3e194576497d04ab4b24589df249ab1b968fdc4abd3318593ecca10506f",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/repair_01/RESULTS.json",
+      "bytes": 2890,
+      "sha256": "ec53a058968ac15b8c3ef39d98392231ae0ba3b5da203ba1d90191f7baec0e1d",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/RUN_FINISH.json",
+      "bytes": 1167,
+      "sha256": "afefac3598c3d776e1979c5153324c48f4917b89d675aaa855651f8e3747b4d0",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/RUN_START.json",
+      "bytes": 892,
+      "sha256": "2e863eb07ece3f41da0c9fe144aa835ef96df912b063dac77aaa2503d0aea211",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/NCP_CONTINUATION_RESULT.json",
+      "bytes": 1178,
+      "sha256": "789f8959cd3ba26631db499bdf38d29cda971a41b3b9af06d9e1947e14ffad14",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/wrapper_stderr.txt",
+      "bytes": 568,
+      "sha256": "471b36c93c88a0c84b9a374949e82c7d5d8e4239547b5314f8e55fdef0fdff2d",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/run_synthetic_boundaries.py",
+      "bytes": 10393,
+      "sha256": "5e693a41dcd4a803d0b8dbbb37a87caf626e265c931e29c6f01b1d47340c826c",
+      "read_scope": "full text/source read in this added review",
+      "work_copy_byte_identity_matches": true
+    },
+    {
+      "path": "evidence/ncp_continuation_verify_guard_fixed_run/RUN.json",
+      "bytes": 778,
+      "sha256": "21ba37ffdb83310172bcdb0b403e115612129fff4a1c5f8607b72fe3d9cc9335",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/ncp_continuation_verify_run/RUN.json",
+      "bytes": 771,
+      "sha256": "76d0dd5af425867373e018d22ec7e65638ce0a22abc89e0f7031df2f735bca46",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "evidence/pre_reconciliation/ncp_continue_pre_lock_guard.py",
+      "bytes": 10760,
+      "sha256": "24daad3ca88bbb0d8aa64329376e4ab412cb2cf5a6adbc24feb09b44407db921",
+      "read_scope": "read original source plus bounded version diff; preservation identity verified"
+    },
+    {
+      "path": "figures/PR19_REFINEMENT_WIDTHS.png",
+      "bytes": 98450,
+      "sha256": "53eecd31aeba53d1f3decf371dc4484f7c10dc2d32c0713f755ad523860fad99",
+      "read_scope": "direct visual inspection plus saved-data displayed-number comparison"
+    },
+    {
+      "path": "inputs/PATH_CONTROLS.json",
+      "bytes": 24911,
+      "sha256": "41891a30f61976d2c19165ee48a077bccbd41b17011939e1ed4dd80eb49cfd63",
+      "read_scope": "JSON parsed; targeted saved-endpoint, identity, compatibility and reduction fields; not a fresh all-path physics audit"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/CONTRACT.md",
+      "bytes": 4202,
+      "sha256": "cbea11086727b06fac350451b433f10f344664bcdee85948901cac14b62b56dd",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/NEXT_DAG.json",
+      "bytes": 776,
+      "sha256": "e1dfc0fda51136e3a085283b0176ba4c270f684ad5fc3b80dca252cd1c07fd8a",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/REPORT.md",
+      "bytes": 3399,
+      "sha256": "bd4c7886e4aa24390752ad86b16d01d6f3b739b192e94e0bbaa4ca46bc1fb1aa",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/RESULTS.json",
+      "bytes": 950019,
+      "sha256": "418dcac9280947abc227c69f9178c0163bbdb00fa34bff1f9e34ab9eea35ece4",
+      "read_scope": "JSON parsed; targeted saved-endpoint, identity, compatibility and reduction fields; not a fresh all-path physics audit"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/START.json",
+      "bytes": 3563,
+      "sha256": "5f75633b9bd4b55aeaab4ca727972c6b7da4aba0fbaaf050b3d183a45a2ce6d1",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/cover.py",
+      "bytes": 12327,
+      "sha256": "aaae27a0d053d42ce6727593df676352697dd042486aa448d1e9104b16f979f6",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/independent_review.md",
+      "bytes": 1133,
+      "sha256": "999e841eb3ac55d744946682215d00b1c5dc1db3650b2a81a6c8c228286f237f",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/stderr.log",
+      "bytes": 749,
+      "sha256": "1bf1557ba42c4291f2b2ed69ef7ea335781f02dc2e166afaccc684f098a55efe",
+      "read_scope": "full text/source read in this added review"
+    },
+    {
+      "path": "inputs/pr19_lineage/pilot/RESULTS.json",
+      "bytes": 77603,
+      "sha256": "75648e29291c3c364c2d8a0c859710d95074f1c12c5d910c61a4856465034b96",
+      "read_scope": "JSON parsed; targeted saved-endpoint, identity, compatibility and reduction fields; not a fresh all-path physics audit"
+    },
+    {
+      "path": "inputs/pr19_lineage/pilot/pilot.py",
+      "bytes": 8224,
+      "sha256": "104eb217e32266289fbffc5e3349b72390bc36e9392ca016c8e35edbaa157f83",
+      "read_scope": "full text/source read in this added review"
+    }
+  ],
+  "read_scope_note": "This manifest records actual read snapshots and exact copy identities. Full physical validation of unchanged primitives and the other ten prior paths is explicitly excluded.",
+  "mutable_postreview_pointer_files": [
+    "state/RESEARCH_STATE.json",
+    "state/CLAIM_LEDGER.json",
+    "CLOSEOUT.json",
+    "FILE_MANIFEST.json",
+    "actual publication/delivery/backup receipts"
+  ],
+  "not_claimed": "No current NCP scientific job, remote publication/backup success, receiver ACK or global absence/latest-lineage proof follows from this read manifest."
+}

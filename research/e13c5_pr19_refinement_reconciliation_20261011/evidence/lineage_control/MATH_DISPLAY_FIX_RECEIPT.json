@@ -1,0 +1,27 @@
+{
+  "schema": "bass-he-e13c5-lineage-math-display-fix-v1",
+  "scope": "two Markdown display-math blocks only; escaped LaTeX restored using raw strings",
+  "before": {
+    "path": "REPORT_KO_pre_math_display_fix.md",
+    "bytes": 11757,
+    "sha256": "89cc61aa8115cdbb3230182d3bf55bd850d0f77465d9ccd0bc52409007f7883d"
+  },
+  "after": {
+    "path": "REPORT_KO.md",
+    "bytes": 11785,
+    "sha256": "30c75920781b0ebbd683ebdf83387cc0d105624e8e44108f23b3af5e4ce401b4"
+  },
+  "math_delimiter_lines": [
+    47,
+    51,
+    59,
+    63
+  ],
+  "unchanged_scientific_artifacts": {
+    "lineage_reduction.py": "dd8796ae232d3d72384df14263658d1e48e87a8fad6982f64a6ab811ce2eb985",
+    "output_v2/RESULTS.json": "2fd04e6c6f300bbe19344fcf7d0e000174241ebd719716f897f8f6c5104d6bd9",
+    "output_v2/NUMERICAL_PROJECTION.json": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69"
+  },
+  "new_postprocessing_runs": 0,
+  "new_scientific_executions": 0
+}

@@ -1,0 +1,914 @@
+{
+  "reviewer": "/root/e13c5_independent_review",
+  "audit": "independent saved-endpoint PR19 carry and direct positive-weight reduction audit",
+  "finished_utc": "2026-10-10T22:51:24.017841+00:00",
+  "source_sha256": "f9b846fc0e963712f7979040dc6768e237546f9cc3182eba60930f617ebeb53b",
+  "inputs": {
+    "prior": {
+      "path": "inputs/pr19_lineage/first2/RESULTS.json",
+      "bytes": 950019,
+      "sha256": "418dcac9280947abc227c69f9178c0163bbdb00fa34bff1f9e34ab9eea35ece4"
+    },
+    "pilot": {
+      "path": "inputs/pr19_lineage/pilot/RESULTS.json",
+      "bytes": 77603,
+      "sha256": "75648e29291c3c364c2d8a0c859710d95074f1c12c5d910c61a4856465034b96"
+    },
+    "controls": {
+      "path": "inputs/PATH_CONTROLS.json",
+      "bytes": 24911,
+      "sha256": "41891a30f61976d2c19165ee48a077bccbd41b17011939e1ed4dd80eb49cfd63"
+    },
+    "current": {
+      "path": "evidence/N512_P60.json",
+      "bytes": 417016,
+      "sha256": "5a3b9f17c6d250afed0e4270e4cce71d22d930a482084bc12c3e7dcc66cb68d7"
+    },
+    "reduction": {
+      "path": "evidence/lineage_control/output_v2/RESULTS.json",
+      "bytes": 870091,
+      "sha256": "2fd04e6c6f300bbe19344fcf7d0e000174241ebd719716f897f8f6c5104d6bd9"
+    }
+  },
+  "arithmetic": "stdlib Fraction; captured constants lifted using Fraction.from_float(float(csv_string))",
+  "candidate_imports": false,
+  "coefficient_or_exponential_evaluations": 0,
+  "new_native_gas_or_continuous_solves": 0,
+  "check_count": 199,
+  "failed_count": 0,
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "keys/current_exactly_OFF0_OFF700",
+      "pass": true
+    },
+    {
+      "check": "keys/all_twelve_preserved",
+      "pass": true
+    },
+    {
+      "check": "keys/exactly_two_replacement_tags",
+      "pass": true
+    },
+    {
+      "check": "modes/no_cross_mode_sum",
+      "pass": true
+    },
+    {
+      "check": "reuse/0/same_key",
+      "pass": true
+    },
+    {
+      "check": "reuse/0/incoming_exact_equal",
+      "pass": true
+    },
+    {
+      "check": "reuse/0/original_incoming_contains_exact_carry",
+      "pass": true
+    },
+    {
+      "check": "reuse/0/absolute_endpoint_payload_identical",
+      "pass": true
+    },
+    {
+      "check": "reuse/1/same_key",
+      "pass": true
+    },
+    {
+      "check": "reuse/1/incoming_exact_equal",
+      "pass": true
+    },
+    {
+      "check": "reuse/1/original_incoming_contains_exact_carry",
+      "pass": true
+    },
+    {
+      "check": "reuse/1/absolute_endpoint_payload_identical",
+      "pass": true
+    },
+    {
+      "check": "reuse/2/same_key",
+      "pass": true
+    },
+    {
+      "check": "reuse/2/incoming_exact_equal",
+      "pass": true
+    },
+    {
+      "check": "reuse/2/original_incoming_contains_exact_carry",
+      "pass": true
+    },
+    {
+      "check": "reuse/2/absolute_endpoint_payload_identical",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 0)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 0)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('OFF', 0)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('OFF', 0)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 1, 0, 0)/same_captured_binary64",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 2, 0, 0)/same_captured_binary64",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 2, 0, 1)/same_captured_binary64",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/Z_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/QN/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/QE_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/A_HI/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/B_HI_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/H_HI_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/A_HeI/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/B_HeI_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/H_HeI_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/A_HeII/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/B_HeII_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/H_HeII_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/P_final/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 0)/anchor/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 700)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 700)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('OFF', 700)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('OFF', 700)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 1, 700, 0)/same_captured_binary64",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 2, 700, 0)/same_captured_binary64",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 2, 700, 1)/same_captured_binary64",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/Z_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/QN/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/QE_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/A_HI/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/B_HI_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/H_HI_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/A_HeI/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/B_HeI_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/H_HeI_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/A_HeII/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/B_HeII_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/H_HeII_eV/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/P_final/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "replacement/('OFF', 700)/anchor/exact_weighted_absolute",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 1620)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 1620)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('OFF', 1620)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('OFF', 1620)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "unchanged/('OFF', 1620)/weighted_term_payload",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 2344)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('OFF', 2344)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('OFF', 2344)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('OFF', 2344)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "unchanged/('OFF', 2344)/weighted_term_payload",
+      "pass": true
+    },
+    {
+      "check": "weight/('KF', 0)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('KF', 0)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('KF', 0)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('KF', 0)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "unchanged/('KF', 0)/weighted_term_payload",
+      "pass": true
+    },
+    {
+      "check": "weight/('KF', 700)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('KF', 700)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('KF', 700)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('KF', 700)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "unchanged/('KF', 700)/weighted_term_payload",
+      "pass": true
+    },
+    {
+      "check": "weight/('KF', 1620)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('KF', 1620)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('KF', 1620)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('KF', 1620)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "unchanged/('KF', 1620)/weighted_term_payload",
+      "pass": true
+    },
+    {
+      "check": "weight/('KF', 2344)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('KF', 2344)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('KF', 2344)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('KF', 2344)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "unchanged/('KF', 2344)/weighted_term_payload",
+      "pass": true
+    },
+    {
+      "check": "weight/('GM', 0)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('GM', 0)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('GM', 0)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('GM', 0)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "unchanged/('GM', 0)/weighted_term_payload",
+      "pass": true
+    },
+    {
+      "check": "weight/('GM', 700)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('GM', 700)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('GM', 700)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('GM', 700)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "unchanged/('GM', 700)/weighted_term_payload",
+      "pass": true
+    },
+    {
+      "check": "weight/('GM', 1620)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('GM', 1620)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('GM', 1620)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('GM', 1620)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "unchanged/('GM', 1620)/weighted_term_payload",
+      "pass": true
+    },
+    {
+      "check": "weight/('GM', 2344)/positive_exact_point",
+      "pass": true
+    },
+    {
+      "check": "weight/('GM', 2344)/preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('GM', 2344)/segments_preserved",
+      "pass": true
+    },
+    {
+      "check": "capture/('GM', 2344)/node_reductions_preserved",
+      "pass": true
+    },
+    {
+      "check": "unchanged/('GM', 2344)/weighted_term_payload",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/Z_eV/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/Z_eV/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/QN/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/QN/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/QE_eV/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/QE_eV/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/A_HI/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/A_HI/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/B_HI_eV/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/B_HI_eV/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/H_HI_eV/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/H_HI_eV/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/A_HeI/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/A_HeI/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/B_HeI_eV/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/B_HeI_eV/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/H_HeI_eV/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/H_HeI_eV/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/A_HeII/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/A_HeII/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/B_HeII_eV/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/B_HeII_eV/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/H_HeII_eV/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/H_HeII_eV/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/P_final/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/P_final/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/anchor/direct_exact_four_terms",
+      "pass": true
+    },
+    {
+      "check": "OFF_sum/anchor/nested_in_prior",
+      "pass": true
+    },
+    {
+      "check": "KF/published_aggregate_payload_unchanged",
+      "pass": true
+    },
+    {
+      "check": "GM/published_aggregate_payload_unchanged",
+      "pass": true
+    },
+    {
+      "check": "node_bridges/exact_four_keys",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/native_baseline_preserved",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/Z_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/QN/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/QE_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/A_HI/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/B_HI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/H_HI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/A_HeI/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/B_HeI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/H_HeI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/A_HeII/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/B_HeII_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/H_HeII_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/P_endpoint/exact_single_conversion",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/1/U_endpoint_eV/exact_single_conversion",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/native_baseline_preserved",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/Z_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/QN/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/QE_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/A_HI/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/B_HI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/H_HI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/A_HeI/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/B_HeI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/H_HeI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/A_HeII/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/B_HeII_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/H_HeII_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/P_endpoint/exact_single_conversion",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 0)/2/U_endpoint_eV/exact_single_conversion",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/native_baseline_preserved",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/Z_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/QN/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/QE_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/A_HI/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/B_HI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/H_HI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/A_HeI/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/B_HeI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/H_HeI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/A_HeII/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/B_HeII_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/H_HeII_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/P_endpoint/exact_single_conversion",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/1/U_endpoint_eV/exact_single_conversion",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/native_baseline_preserved",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/Z_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/QN/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/QE_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/A_HI/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/B_HI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/H_HI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/A_HeI/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/B_HeI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/H_HeI_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/A_HeII/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/B_HeII_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/H_HeII_eV/exact",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/P_endpoint/exact_single_conversion",
+      "pass": true
+    },
+    {
+      "check": "bridge/('OFF', 700)/2/U_endpoint_eV/exact_single_conversion",
+      "pass": true
+    }
+  ],
+  "reuse_exact_carry": [
+    {
+      "key": [
+        "OFF",
+        1,
+        700,
+        0
+      ],
+      "exact_carry": {
+        "lo_exact": "0",
+        "hi_exact": "0"
+      },
+      "saved_original_incoming": {
+        "lo": "0",
+        "hi": "0"
+      },
+      "endpoint_equal": true,
+      "contains_exact_carry": true
+    },
+    {
+      "key": [
+        "OFF",
+        2,
+        700,
+        0
+      ],
+      "exact_carry": {
+        "lo_exact": "267221441835540705510492259908442113899198553930378537/3200000000000000000000000000000000000000000000000000000000000000000",
+        "hi_exact": "267254440976785440870651481532082058467626067519265769/3200000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "saved_original_incoming": {
+        "lo": "8.35067005736064704720288312213881605934995481032432928125E-14",
+        "hi": "8.35170128052454502720785879787756432711331460997705528125E-14"
+      },
+      "endpoint_equal": true,
+      "contains_exact_carry": true
+    },
+    {
+      "key": [
+        "OFF",
+        2,
+        700,
+        1
+      ],
+      "exact_carry": {
+        "lo_exact": "264159109182828549704218038791946126272431288385017343/3200000000000000000000000000000000000000000000000000000000000000000",
+        "hi_exact": "264191729591085229950347182592229163910321846189369087/3200000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "saved_original_incoming": {
+        "lo": "8.25497216196339217825681371224831644601347776203179196875E-14",
+        "hi": "8.25599154972141343594834945600716137219755769341778396875E-14"
+      },
+      "endpoint_equal": true,
+      "contains_exact_carry": true
+    }
+  ],
+  "OFF_prior_over_hybrid_width_exact": {
+    "Z_eV": "1252963181794758648290155885207639597674330481799815054013505262845952/575078648147486547850354054438677935133568085153523277545666076831755",
+    "QN": "405356961916959307572864747687914019453458754982549957724078080/105955501383622443511781691168992527798817207781509862829186413",
+    "QE_eV": "45694374689244281775421254305068324377260340481935621090181120/23024326130318531664473124899390806036815934907430780976125169",
+    "A_HI": "48007438769204896549428286263211164094176759081607860807547391836160000/3635671616147799688579914618134959311642763080353310336176510046162913",
+    "B_HI_eV": "61552226840004330492472233288010517879115194633951582908038170804224000/5867368119637272338066708016555045387671106785117119780793997791423801",
+    "H_HI_eV": "7647041807984866192189100152151794328049758979463783641788001571307520/1532974698619946088987145926439920301970524131862585902614317952986787",
+    "A_HeI": "7530343043626655292741521296268185283850721856311842614806459711488000/1974275542239690772076388327931449278873216748690946063609188886889081",
+    "B_HeI_eV": "4717615234180612823327408574641235009359604145181461514771827135610880/1985139090178445790966349798087039288954025189552327885998545309760169",
+    "H_HeI_eV": "8147609937834420719901901389004157877993651598415361912442062687436800/8116873611826866978521525659112335562363197094049309657483453793333547",
+    "A_HeII": "831633319937329883261251825709567919495785407163235/831633319937329883261251825709567919495785407163233",
+    "B_HeII_eV": "478220549617314781066644935465053044116894501637555/478220549617314781066644935465053044116894501637553",
+    "H_HeII_eV": "1026691131580975764702220630055963289728546113315785000/1026691131580975764702220630055963289728546113315784321",
+    "P_final": "733365476853479322129730674732463944361637044517257477263367958691840/77968952260271568524019463282094268572994097373590881059065976806421",
+    "anchor": "184850421433147100125131871688510683544967273488739810079916527976448/15251816666628249756228545519536161779752479646466953655443268559079"
+  },
+  "exclusions": [
+    "no fresh validity review of the other ten constituent physical paths",
+    "no full first2, missing-complement, global native-reduction, gas or production claim"
+  ]
+}

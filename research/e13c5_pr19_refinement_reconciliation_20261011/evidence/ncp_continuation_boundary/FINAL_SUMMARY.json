@@ -1,0 +1,76 @@
+{
+  "schema": "bass-he-e13c5-continuation-synthetic-boundary-closeout-v1",
+  "NO_SCIENCE": true,
+  "status": "PASS_SCOPED_SYNTHETIC_BOUNDARY_REPAIR",
+  "role": "independent infrastructure fixture control; not final scientific decision",
+  "finished_utc": "2026-10-10T22:53:23.161144+00:00",
+  "initial": {
+    "source_sha256": "24daad3ca88bbb0d8aa64329376e4ab412cb2cf5a6adbc24feb09b44407db921",
+    "distinct_cases": 11,
+    "expected_outcomes": 10,
+    "unexpected_outcomes": 1,
+    "actual_harness_exit": 1,
+    "first_failure": "FIRST_FAILURE.json",
+    "all_results": "RESULTS.json"
+  },
+  "repair": {
+    "source_sha256": "38957cb24f58b5d36dd4823ce7e642c708f0f4cae725ac2377d3f824b2b41626",
+    "main_continuation_lock_sha256_before_recheck": "a1ccb4f352a7bd12d97419b09dc41bc2782332ae01c4a7b8173f3cdd3bcdbef7",
+    "focused_cases": 3,
+    "expected_outcomes": 3,
+    "actual_harness_exit": 0,
+    "actual_harness_wall_seconds_from_tool": 0.579502755,
+    "results": "repair_01/RESULTS.json",
+    "cases": [
+      {
+        "name": "verify_only",
+        "actual_fixture_exit": 0,
+        "wrapper_status": "VERIFY_ONLY_READY",
+        "error": null
+      },
+      {
+        "name": "fresh_success",
+        "actual_fixture_exit": 0,
+        "wrapper_status": "PASS_SCOPED_HOST_PARITY_AND_REDUCTION",
+        "error": null
+      },
+      {
+        "name": "lock_metadata_tamper_during",
+        "actual_fixture_exit": 1,
+        "wrapper_status": "FAILED",
+        "error": "continuation lock metadata changed during run"
+      }
+    ]
+  },
+  "finding": {
+    "cause": "check_lock after run reused parsed lock and never compared on-disk CONTINUATION_LOCK.json to intake digest",
+    "unexpected_behavior": "changing lock metadata during reduction left original wrapper exit0/PASS and source_unchanged_during_run true",
+    "repair_by_owner": "pin intake lock SHA and reject changed on-disk lock metadata before source_unchanged success",
+    "resolved_by_case": "repair_01/cases/lock_metadata_tamper_during"
+  },
+  "provenance": {
+    "original_wrapper_copy": "FIRST_FAILURE_SOURCE_ncp_continue.py",
+    "fixture_generator": "run_synthetic_boundaries.py",
+    "focused_recheck_driver": "recheck_lock_guard.py",
+    "original_raw_logs": [
+      "SYNTHETIC.stdout.txt",
+      "SYNTHETIC.stderr.txt"
+    ],
+    "repair_raw_logs": [
+      "REPAIR_01.stdout.txt",
+      "REPAIR_01.stderr.txt"
+    ],
+    "per_case_start_finish_and_child_raw_evidence": "cases/ and repair_01/cases/"
+  },
+  "scope_limits": [
+    "Both child executables and scientific payloads are mocks explicitly labeled NO_SCIENCE; wrapper bytes are copied unchanged.",
+    "These results validate wrapper process ordering and identity/failure boundaries only; they are not numerical accuracy, scientific execution, or NCP host evidence.",
+    "Initial 11 cases are preserved; only three affected success/verify/metadata cases were rerun after the guard repair.",
+    "No timeout/resource-exhaustion stress or real host job was requested or performed."
+  ],
+  "actual_scientific_solver_invocations": 0,
+  "actual_NCP_host_jobs": 0,
+  "actual_remote_mutations": 0,
+  "main_source_modifications_by_this_agent": 0,
+  "synthetic_wrapper_process_invocations": 14
+}

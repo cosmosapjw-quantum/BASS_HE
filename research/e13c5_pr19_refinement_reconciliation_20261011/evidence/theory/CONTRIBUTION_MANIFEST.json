@@ -1,0 +1,56 @@
+{
+  "schema": "bass-he-e13c5-theory-contribution-manifest-v1",
+  "files": [
+    {
+      "path": "ADJACENT_CAPTURE_DIAGNOSTICS.json",
+      "bytes": 4200,
+      "sha256": "4ce5ca4463c759e6e6fa89436e63bb2d3e9b954bc830e474e6a8dea4e382db2b"
+    },
+    {
+      "path": "CONTRACT.json",
+      "bytes": 1677,
+      "sha256": "df80026123344b1c30cc3fe6b6fdaf708e1f367ab390f5eed4db2c2cc08252b9"
+    },
+    {
+      "path": "EXACT_TOY_RESULTS.json",
+      "bytes": 28691,
+      "sha256": "e42b33c7fb13c6afc978734daa6c699c2f9402fffb3f193bf1e135e94369677a"
+    },
+    {
+      "path": "EXECUTION.json",
+      "bytes": 1229,
+      "sha256": "54ca4bf4bcd5fa27696d18012812b19b4dc53ec880433cb4beca0f35beec7b4d"
+    },
+    {
+      "path": "EXECUTION_START.json",
+      "bytes": 694,
+      "sha256": "7a453873ae59d01df928dc46281319ca3a527586b116b74435aba9f2d8c5e04f"
+    },
+    {
+      "path": "READ_IDENTITIES.json",
+      "bytes": 3168,
+      "sha256": "9231a83cdf8817d45ed126d81a9145d0e3ec0a0b2232f8ab9780c5a2d2f2ff20"
+    },
+    {
+      "path": "THEORY_CONTRIBUTION.md",
+      "bytes": 16961,
+      "sha256": "16ef3e4f7ed51c2ace87f7e36570917f3a1074c55dfe7bce5d9c7849d9c069e5"
+    },
+    {
+      "path": "exact_incoming_anchor_toys.py",
+      "bytes": 15149,
+      "sha256": "797f71c8a532f558972ca3467811f1cd0bf6aa24b556ef0bf9f3a13e942f9e9c"
+    },
+    {
+      "path": "stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "stdout.txt",
+      "bytes": 73,
+      "sha256": "73a69e9e9b7a8e62af49d51cb081278b568935e28aeb1199748773fc49bce19d"
+    }
+  ],
+  "exclude_self": true
+}

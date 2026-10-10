@@ -1,0 +1,38 @@
+{
+  "live_pr18": {
+    "number": 18,
+    "url": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/18",
+    "title": "Publish source-bound E13C5 OFF700 incoming and anchor pilot",
+    "body": "Publishes the recovered OFF700 three-segment incoming/anchor pilot and its existing scoped Astra review. The first toy failure, authorized toy-only repair source, raw results, checkpoint, and historical report/review are copied byte-for-byte from the verified recovery archive.\n\nThe publication is based on delivery commit `8fc3fb14dd33da10efa86c97c4beb9b0d12eeaad`. Source binding is `VERIFIED_GIT_PROJECTION_PLUS_ARCHIVE_MANIFEST_BINDING`: all 139 projected archive files and all 303 archive manifest payload hashes verify; the exact 141-entry core contains two declared Git-only packaging sidecars. Nested archive dependencies are not claimed present in PR17. Replay uses the verified full recovery archive's original sibling layout.\n\nValidation: immutable core/tree and manifest/lock identities match; task-only additive diff; 13 pilot files are byte-identical; diff check passes. No scientific replay, native run, gas evolution, six-control replay, full-path expansion, or merge. Existing PASS_SCOPED covers only the three fixed captured-path segments. Full-path, physical, production and receiver-adoption claims remain HOLD; recipient ACK remains separate.\n\nHistorical pending/publication-blocker statements are retained as recorded; the new source-binding sidecar supersedes their source materialization blocker only.\n",
+    "head": "research/he-e13c5-off700-publication-20261011",
+    "head_sha": "48f648cd905cd8c232ae43abe97745ac6a96dec2",
+    "base": "research/shared-c64-crossrepo-20260928",
+    "base_sha": "8fc3fb14dd33da10efa86c97c4beb9b0d12eeaad",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "created_at": "2026-10-10T17:27:11Z",
+    "updated_at": "2026-10-10T17:27:11Z",
+    "changed_files": 14,
+    "additions": 4358,
+    "deletions": 0
+  },
+  "live_pr19": {
+    "number": 19,
+    "url": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/19",
+    "title": "Record reviewed E13C5 selected first2 branch cover",
+    "body": "The incoming-state and energy-anchor enclosure now covers 12 selected captured paths across OFF/KF/GM and four nodes, retaining all chronological carries and seams. The task contains 36 segments: three reviewed OFF700 records are reused and 33 are newly computed.\n\nIndependent Astra review approved PASS_SCOPED after checking source identities, 5490 finite ordered intervals, 144 zero-containing ledger intervals, carries, representation records and controls. One bounded execution exited 0 in 34.60 s; no solver rerun or core-code change occurred.\n\nScope is the finite enclosure of these selected paths with fixed gas interpolation, masks, source branches and energy anchors. Full first2, physical/production admission, new gas evolution, photon/heat/recoil and receiver adoption remain HOLD. This draft is stacked on PR18 and is not a merge request.\n",
+    "head": "research/e13c5-first2-branch-cover-20261011",
+    "head_sha": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+    "base": "research/he-e13c5-off700-publication-20261011",
+    "base_sha": "48f648cd905cd8c232ae43abe97745ac6a96dec2",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "created_at": "2026-10-10T17:51:47Z",
+    "updated_at": "2026-10-10T17:51:47Z",
+    "changed_files": 11,
+    "additions": 47714,
+    "deletions": 0
+  }
+}

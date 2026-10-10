@@ -1,0 +1,9 @@
+{
+  "sha256": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69",
+  "bytes": 419815,
+  "numerical_projection_sha256": "b8d73433d67370176c82f1526907c08e1f5098a741261e92de49c4545c1e0388",
+  "definition": "sha256 of numerical_projection(result) canonical JSON sorted keys and compact separators, excluding trailing newline",
+  "included": "all substantive N512 compatibility, hybrid, representation, reuse and control data",
+  "excluded": "N128 optional diagnostics and associated checks; timing/host/argv/paths/current raw producer file hash",
+  "current_producer_identity_obligation": "outer runner must independently check fresh producer identity and numerical parity"
+}

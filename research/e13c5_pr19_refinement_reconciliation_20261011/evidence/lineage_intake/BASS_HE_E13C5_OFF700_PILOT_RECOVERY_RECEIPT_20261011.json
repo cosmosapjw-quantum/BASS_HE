@@ -1,0 +1,22 @@
+{
+  "artifact": "BASS_HE_E13C5_OFF700_PILOT_REVIEWED_20261011.tar.gz",
+  "sha256": "fbf8cd26e87cdffe83f236d4bc646b2c6ffab9a4ac408b83b1fef09ec7d72020",
+  "bytes": 10541596,
+  "archive_entries": 414,
+  "source_root": "/tmp/E13C5-DyIbg0hn",
+  "readback": "tar --compare --gzip against preserved source root",
+  "readback_exit": 0,
+  "backup_state": "VERIFIED_LOCAL_RECOVERY_PACKAGE",
+  "git_publication": "BLOCKED_MISSING_FROZEN_GIT_CHECKOUT",
+  "git_bundle": "NOT_APPLICABLE_NO_VERIFIED_GIT_CHECKOUT",
+  "remote_ref_verification": "NO_PUBLICATION",
+  "recipient_execution_ack": "NOT_REQUESTED",
+  "live_repository": "cosmosapjw-quantum/BASS_HE",
+  "live_latest_open_pr_observed": {"number":17,"head":"8fc3fb14dd33da10efa86c97c4beb9b0d12eeaad","branch":"research/shared-c64-crossrepo-20260928"},
+  "base_association": "UNRESOLVED_ARCHIVE_SOURCE_TO_GIT",
+  "scope_decision": "PASS_SCOPED",
+  "first_failure_and_repair_evidence": "PRESERVED",
+  "science_reruns": 0,
+  "next_action": "Locate exact source Git checkout/base association; retain reviewed package for reuse without rerunning pilot."
+}
+

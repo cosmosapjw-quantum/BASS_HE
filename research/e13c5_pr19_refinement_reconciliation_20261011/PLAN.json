@@ -1,0 +1,132 @@
+{
+  "schema": "bass-he-e13c5-plan-v1",
+  "node": "E13C5_FIXED_PATH_INCOMING_AND_ANCHOR_ENCLOSURE",
+  "owner": "/root",
+  "runtime_model": "GPT-6 Astra Pro",
+  "harness_version": "4.0.0",
+  "motivation": "Carry local correction certificates across real captured stage and event seams without resetting incoming photon or cumulative moment error.",
+  "scope": {
+    "tracks": [
+      {
+        "mode": "OFF",
+        "node": 0,
+        "keys": [
+          [
+            "OFF",
+            1,
+            0,
+            0
+          ],
+          [
+            "OFF",
+            2,
+            0,
+            0
+          ],
+          [
+            "OFF",
+            2,
+            0,
+            1
+          ]
+        ],
+        "event": "external source turns off at13.7eV"
+      },
+      {
+        "mode": "OFF",
+        "node": 700,
+        "keys": [
+          [
+            "OFF",
+            1,
+            700,
+            0
+          ],
+          [
+            "OFF",
+            2,
+            700,
+            0
+          ],
+          [
+            "OFF",
+            2,
+            700,
+            1
+          ]
+        ],
+        "event": "HeI opacity turns off at24.59eV"
+      }
+    ],
+    "initial_photon_defect": "exact0 at first captured step1 segment",
+    "incoming_later": "propagate candidate plus certified absolute radius, including exact-frozen/native representation and captured stitch residual",
+    "gas": "same inherited affine gas perstage",
+    "baseline_moments": "exact real sum of captured persegment values after exact-lift eV conversion; not native weighted aggregate reduction",
+    "new_native_runs": 0,
+    "gas_advances": 0,
+    "old_continuous_solves": 0,
+    "fullfirst2_or_fullpath_expansion": false,
+    "outflow": "exact0"
+  },
+  "method": {
+    "local_integrands": "unchanged E13C4 Coefficients and integrands with Decimal IV and Jet2",
+    "incoming": "frozen homogeneous gains times carried photon candidate; uncertainty plus S-dependent remainder",
+    "representation": "outward exact frozen closed form minus captured binary64 photon/moment/energy stock; candidate center accounts signed residual",
+    "anchor": "signed ΔE=nextE0−prevE_h, true stock jump and correction relative to captured photon baseline; full interval multiplication",
+    "moments": "sum corrections and their certified radii with explicit rounding envelope; no cumulative reset",
+    "seams": "require exact-lift time/node/photon capture continuity; record anchors and event masks",
+    "reuse": "OFF1/0/0 and OFF2/700/1 certified local integrals reused from sealed E13C4 records for identicalN/P; four other rows newly evaluated"
+  },
+  "execution": {
+    "subdivisions": [
+      32,
+      128,
+      512
+    ],
+    "precision_digits": 60,
+    "precision_control": {
+      "subdivisions": 32,
+      "precision_digits": 80
+    },
+    "max_seconds_per_run": 180,
+    "max_new_scientific_seconds": 900,
+    "max_RSS_MiB": 1024,
+    "serial_primary": true,
+    "no_automatic_fullpath_or_precision_extension": true
+  },
+  "acceptance": [
+    "six captured row/stage/mask/source identities and four exact numeric seams preserved",
+    "local whole-cell domains and signed integral derivative enclosures valid",
+    "photon incoming centers and radii carried through bothseams on eachtrack",
+    "species,totalcount,energy,heat,redshift errors use their own homogeneous gains",
+    "exact-frozen/native photon,moments,source and energy-stock residuals included",
+    "signed energy-anchor contribution and its uncertainty enclosed",
+    "segment frozen/firstvariation and stitched number/energy ledgers contain0 with complete seam bookkeeping",
+    "independent exact controls catch dropped incoming, totalcount misidentification, representation/anchor sign errors",
+    "refinement and precision diagnostics do not replace inclusion proof or create posthoc physical tolerance",
+    "separate decision reviewer with no candidate authorship or acceptance-design role",
+    "freshNCP output identity/parity contract with executable serialrunner; actual NCP not assumed"
+  ],
+  "protected": {
+    "baseline_RCT": "OFF",
+    "actual_atomic_photon_heat_recoil": null,
+    "physical": "HOLD",
+    "production": "HOLD",
+    "HE_F2_F09": "OPEN",
+    "receiver_adoption": "SEPARATE",
+    "legacy_Gamma_alias": {
+      "value": 3.543295,
+      "status": "FAIL"
+    },
+    "uniform_path_certificate": false
+  },
+  "authorization": {
+    "user": "continue next physicsresearchloop and provide NCP localCodex handoff",
+    "persistent_delivery": "samebranch additive nonforce Git publication and createonly Drive+Dropbox backups; include all transferfiles inside NCP_READY bundle",
+    "merge": false,
+    "external_messages": false
+  },
+  "completion": "derived+implemented+actual bounded run+independent decision+Korean scientific report+NCP executablehandoff+sealed selfcontained delivery and authorized backups",
+  "intake_started_utc": "2026-10-10T22:09:40+00:00",
+  "plan_fixed_utc": "2026-10-10T22:19:48.642808+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "failure_class": "RUNTIME_ENVIRONMENT",
+  "operation": "start verify-only ncp_continue.py through run_recorded.py",
+  "tool_error": "Failed to create unified exec process: exec-server transport disconnected; failed to resume exec-server session: exec-server protocol error: executor key changed during session recovery",
+  "execution_status": "CREATE_PROCESS_FAILED_NO_RUN_RECORD",
+  "output_directories_after_recovery": {
+    "ncp_continuation_verify_run": "ABSENT",
+    "NCP_CONTINUATION_VERIFY_ONLY": "ABSENT"
+  },
+  "recovery": "read-only pwd succeeded; verified both intended output directories absent before retrying the verify-only command",
+  "new_scientific_invocations": 0,
+  "scientific_or_numerical_result": "NOT_APPLICABLE_TRANSPORT_FAILURE"
+}

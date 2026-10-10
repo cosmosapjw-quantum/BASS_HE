@@ -1,0 +1,1157 @@
+{
+  "schema": "bass-he-e13c5-owner-saved-evidence-check-v1",
+  "role": "OWNER_SELF_REVIEW",
+  "physics_reexecution": false,
+  "checks": [
+    {
+      "id": "N32_P60_actual_exit_and_source",
+      "pass": true
+    },
+    {
+      "id": "N128_P60_actual_exit_and_source",
+      "pass": true
+    },
+    {
+      "id": "N512_P60_actual_exit_and_source",
+      "pass": true
+    },
+    {
+      "id": "N32_P80_actual_exit_and_source",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_QN_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_QE_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_total_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_total_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_total_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_Z_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_HI_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_HeI_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_HeII_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_HI_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_HeI_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_HeII_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_HI_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_HeI_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_HeII_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_P1_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_P1_energy_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_QN_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_QE_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_total_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_total_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_total_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_Z_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_HI_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_HeI_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_HeII_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_HI_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_HeI_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_HeII_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_HI_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_HeI_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_HeII_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_P1_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_P1_energy_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_QN_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_QE_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_total_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_total_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_total_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_Z_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_HI_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_HeI_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_A_HeII_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_HI_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_HeI_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_B_HeII_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_HI_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_HeI_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_H_HeII_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_P1_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_0_P1_energy_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_QN_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_QE_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_total_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_total_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_total_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_Z_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_HI_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_HeI_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_HeII_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_HI_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_HeI_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_HeII_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_HI_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_HeI_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_HeII_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_P1_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_P1_energy_eV_N32_P60_N128_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_QN_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_QE_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_total_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_total_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_total_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_Z_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_HI_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_HeI_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_HeII_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_HI_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_HeI_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_HeII_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_HI_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_HeI_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_HeII_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_P1_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_P1_energy_eV_N128_P60_N512_P60",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_QN_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_QE_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_total_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_total_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_total_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_Z_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_HI_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_HeI_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_A_HeII_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_HI_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_HeI_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_B_HeII_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_HI_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_HeI_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_H_HeII_eV_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_P1_N32_P60_N32_P80",
+      "pass": true
+    },
+    {
+      "id": "compatible_700_P1_energy_eV_N32_P60_N32_P80",
+      "pass": true
+    }
+  ],
+  "pass_count": 106,
+  "fail_count": 0,
+  "refinement_and_precision_diagnostics": [
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "QN",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "QE_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "A_total",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "B_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "H_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "Z_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "A_HI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "A_HeI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "A_HeII",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "B_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "B_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "B_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "H_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "H_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "H_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "P1",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "P1_energy_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "QN",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "QE_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "A_total",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "B_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "H_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "Z_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "A_HI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "A_HeI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "A_HeII",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "B_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "B_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "B_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "H_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "H_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "H_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "P1",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "P1_energy_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "QN",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "QE_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "A_total",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "B_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "H_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "Z_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "A_HI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "A_HeI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "A_HeII",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "B_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "B_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "B_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "H_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "H_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "H_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "P1",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "P1_energy_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "QN",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "QE_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "A_total",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "B_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "H_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "Z_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "A_HI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "A_HeI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "A_HeII",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "B_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "B_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "B_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "H_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "H_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "H_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "P1",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N128_P60",
+      "observable": "P1_energy_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "QN",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "QE_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "A_total",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "B_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "H_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "Z_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "A_HI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "A_HeI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "A_HeII",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "B_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "B_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "B_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "H_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "H_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "H_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "P1",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N128_P60",
+      "fine": "N512_P60",
+      "observable": "P1_energy_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "QN",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "QE_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "A_total",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "B_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "H_total_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "Z_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "A_HI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "A_HeI",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "A_HeII",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "B_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "B_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "B_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "H_HI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "H_HeI_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "H_HeII_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "P1",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    },
+    {
+      "coarse": "N32_P60",
+      "fine": "N32_P80",
+      "observable": "P1_energy_eV",
+      "intervals_overlap": true,
+      "fine_subset_coarse": true
+    }
+  ],
+  "diagnostic_scope": "interval overlap/nesting is consistency evidence; inclusion comes from analytic+arithmetic arguments, not refinement",
+  "source_sha256": "06f59f39d19b9ca652483d0267a19d62243317daa4628664510a28d3d0121108",
+  "input_sha256": {
+    "N32_P60": "1ed576d35f9b120db3fa342aa30a504d254a76c54d52e0a391bba8ac0876d612",
+    "N128_P60": "a7215a1a4a7af5c7b53bc9e41da47a4ba108301f06578a4075866310945d9835",
+    "N512_P60": "5a3b9f17c6d250afed0e4270e4cce71d22d930a482084bc12c3e7dcc66cb68d7",
+    "N32_P80": "42a4d82982c3e7f416328259206f8fa5fe8593ff18a0b8fa5cf77cd815adfae0"
+  }
+}

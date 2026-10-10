@@ -1,0 +1,56 @@
+{
+  "schema": "bass-he-e13c5-control-execution-v1",
+  "started_utc": "2026-10-10T22:47:08.147596+00:00",
+  "command": [
+    "python3",
+    "/workspace/scratch/7fd51143e473/e13c5_lineage_control_work/lineage_reduction.py",
+    "--prior",
+    "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/RESULTS.json",
+    "--prior-start",
+    "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/START.json",
+    "--pilot",
+    "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/pilot/RESULTS.json",
+    "--current",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N512_P60.json",
+    "--controls",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/PATH_CONTROLS.json",
+    "--out",
+    "/workspace/scratch/7fd51143e473/e13c5_lineage_control_work/protocol_no_diagnostic_output"
+  ],
+  "cwd": "/workspace/scratch/7fd51143e473",
+  "python": "3.12.14",
+  "source_identity": [
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_lineage_control_work/lineage_reduction.py",
+      "bytes": 28050,
+      "sha256": "dd8796ae232d3d72384df14263658d1e48e87a8fad6982f64a6ab811ce2eb985"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/RESULTS.json",
+      "bytes": 950019,
+      "sha256": "418dcac9280947abc227c69f9178c0163bbdb00fa34bff1f9e34ab9eea35ece4"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/START.json",
+      "bytes": 3563,
+      "sha256": "5f75633b9bd4b55aeaab4ca727972c6b7da4aba0fbaaf050b3d183a45a2ce6d1"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/pilot/RESULTS.json",
+      "bytes": 77603,
+      "sha256": "75648e29291c3c364c2d8a0c859710d95074f1c12c5d910c61a4856465034b96"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N512_P60.json",
+      "bytes": 417016,
+      "sha256": "5a3b9f17c6d250afed0e4270e4cce71d22d930a482084bc12c3e7dcc66cb68d7"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/PATH_CONTROLS.json",
+      "bytes": 24911,
+      "sha256": "41891a30f61976d2c19165ee48a077bccbd41b17011939e1ed4dd80eb49cfd63"
+    }
+  ],
+  "timeout_seconds": 30.0,
+  "wrapper_sha256": "f14626902f64145a5fa690ff06766c658b9dfc9fc4e7395798c60135a0b685c0"
+}

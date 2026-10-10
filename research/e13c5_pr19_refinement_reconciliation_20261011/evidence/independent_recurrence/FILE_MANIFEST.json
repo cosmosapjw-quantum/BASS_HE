@@ -1,0 +1,146 @@
+{
+  "schema": "bass-he-e13c5-recurrence-contributor-manifest-v1",
+  "excludes_self": true,
+  "files": [
+    {
+      "path": "CONTRIBUTION_SUMMARY.json",
+      "bytes": 4521,
+      "sha256": "c02e06e3c104c12c13ca83f1253b0c060241ec2d6e6ec6eb25170465112a9a43"
+    },
+    {
+      "path": "CONTROL_CONTRACT.md",
+      "bytes": 1820,
+      "sha256": "6c7a2b4e034867ab59f293fd32656100618aa0e6a9115e973045c4e13a717113"
+    },
+    {
+      "path": "CONTROL_REPORT_KO.md",
+      "bytes": 8750,
+      "sha256": "59f1e7acfca0ba42e0a54a565ddcb3870cfd63d905743c5f604cc8f655a8838f"
+    },
+    {
+      "path": "EXACT_TOY_RESULTS_v1.json",
+      "bytes": 15732,
+      "sha256": "f1a42bf3751b2a522f6a465e189e00a8a4a2da8e83c927d10c77e3ad1afdd13e"
+    },
+    {
+      "path": "EXACT_TOY_RESULTS_v2.json",
+      "bytes": 15655,
+      "sha256": "8fa46fa65085fc7e46918923df431990ca3ffbb5df09759f63fdf482797a03ab"
+    },
+    {
+      "path": "FIRST_FAILURE.md",
+      "bytes": 1456,
+      "sha256": "5185bdc9b25ff2e8a194e85964c7f175f61401f3ee78a335422087ac7fb2a80a"
+    },
+    {
+      "path": "SAVED_PATH_AUDIT_v2.json",
+      "bytes": 428229,
+      "sha256": "0c25cda1e5896c4b0e7b5119f747d5ad5002dbcfbfa377893790444ce38b1946"
+    },
+    {
+      "path": "audit_saved_path.py",
+      "bytes": 21274,
+      "sha256": "93924165bc95a484ad4a6cd520d6264d180f8ccf86c7c04fec0105ef2c811ca9"
+    },
+    {
+      "path": "exact_recurrence_toys.py",
+      "bytes": 12825,
+      "sha256": "bba710d94b751a78dde186956ca668a95a4219d5ed0ee73bcbe652b4334590ec"
+    },
+    {
+      "path": "record_control_run.py",
+      "bytes": 2347,
+      "sha256": "f14626902f64145a5fa690ff06766c658b9dfc9fc4e7395798c60135a0b685c0"
+    },
+    {
+      "path": "saved_audit_run_v1/FINISH.json",
+      "bytes": 1700,
+      "sha256": "692cfca275115ebc013e1491846697225d350c3e010d179586ba270de2457566"
+    },
+    {
+      "path": "saved_audit_run_v1/START.json",
+      "bytes": 1514,
+      "sha256": "960cfac67eed0b33cc3b34daa2d86ca7b4669af0a0bb2cb7f312f4cf60cc8e13"
+    },
+    {
+      "path": "saved_audit_run_v1/audit_saved_path_failed_source.py",
+      "bytes": 21251,
+      "sha256": "6872b2e1fa3289dcbea5fd8e4c7f8b18216e97e496e78403f41557ee19ec8bcf"
+    },
+    {
+      "path": "saved_audit_run_v1/stderr.txt",
+      "bytes": 915,
+      "sha256": "67b7f6a25f0062332db29d685530d68dfbb399d136fd7e3948069feff7812af1"
+    },
+    {
+      "path": "saved_audit_run_v1/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "saved_audit_run_v2/FINISH.json",
+      "bytes": 1700,
+      "sha256": "2f76b642d4c018f1fdeeeaefd1886e4b60fcc7d876b44c7cb490e3e26ae8ab45"
+    },
+    {
+      "path": "saved_audit_run_v2/START.json",
+      "bytes": 1514,
+      "sha256": "a7c15c204a85153227790dd026bf26059afd99b4d7a22bb6bc5c3dc60d2ef21d"
+    },
+    {
+      "path": "saved_audit_run_v2/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "saved_audit_run_v2/stdout.txt",
+      "bytes": 181,
+      "sha256": "34997ce8f031f648ea51fca034faa15c6e366d36bd96be399a081644c2e9d1fe"
+    },
+    {
+      "path": "toy_run_v1/FINISH.json",
+      "bytes": 959,
+      "sha256": "4edc9be7de32a8bb0606a4f1de87d7d3f55773bc29b6ac633c09291bba316f97"
+    },
+    {
+      "path": "toy_run_v1/START.json",
+      "bytes": 773,
+      "sha256": "efc479ef46f2b066e4ecc683d853bf3c5cba191a6782e08e22338d42e76da232"
+    },
+    {
+      "path": "toy_run_v1/exact_recurrence_toys_failed_source.py",
+      "bytes": 12664,
+      "sha256": "60f9aec6b1cd27a7b8c9d36d82aa0d3a792f7e88fdc6c23f8cb4dfd159befc9a"
+    },
+    {
+      "path": "toy_run_v1/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "toy_run_v1/stdout.txt",
+      "bytes": 204,
+      "sha256": "5d3bf6ec420e85fc0e45af3b613d53c8f01251d08c300aa0e6a2c1a334b7ea80"
+    },
+    {
+      "path": "toy_run_v2/FINISH.json",
+      "bytes": 959,
+      "sha256": "663e4165745d8fe6c42ab4093e3b0af99908e85044cf331b2811ac7317550adc"
+    },
+    {
+      "path": "toy_run_v2/START.json",
+      "bytes": 773,
+      "sha256": "e9aa2f61d1a16b5b7f979898c19fb9f0e8560596adc512dcf0df555c18d36c08"
+    },
+    {
+      "path": "toy_run_v2/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "toy_run_v2/stdout.txt",
+      "bytes": 139,
+      "sha256": "e1f6e8b0efb3e9a078b58a468d0879f62e4ff9999025e684fdaf864a0e6d9017"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "node": "NCP_E13C5_PR19_REFINEMENT_PARITY_AND_REDUCTION",
+  "started_utc": "2026-10-10T22:53:05.564590+00:00",
+  "execute_requested": false,
+  "status": "VERIFY_ONLY_READY",
+  "actual_new_host_physics_invocations": 0,
+  "actual_exact_reduction_invocations": 0,
+  "actual_native_runs": 0,
+  "actual_gas_advances": 0,
+  "actual_old_continuous_solves": 0,
+  "actual_full_first2_runs": 0,
+  "physical": "HOLD",
+  "production": "HOLD",
+  "receiver_execution_ack": "SEPARATE",
+  "host_role": "EXECUTING_HOST_NOT_PROVIDER_ATTESTED",
+  "selected_scope": "two OFF N512 paths; prior 12-path evidence reduced separately by OFF/KF/GM",
+  "scientific_execution": "NOT_RUN",
+  "exact_reduction_execution": "NOT_RUN",
+  "new_result_accuracy": "NOT_EVALUATED",
+  "source_unchanged_during_run": true,
+  "finished_utc": "2026-10-10T22:53:05.710831+00:00"
+}
