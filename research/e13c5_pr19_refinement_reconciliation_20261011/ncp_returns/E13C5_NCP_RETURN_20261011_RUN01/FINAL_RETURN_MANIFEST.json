@@ -1,0 +1,127 @@
+{
+  "files": [
+    {
+      "path": "CONTINUATION_IDENTITY.json",
+      "bytes": 3181,
+      "sha256": "e0d3b76ced73b6c697f18d9e3d7562e8d487d2b88101805dce24faaa1b670d4a"
+    },
+    {
+      "path": "EXACT_REDUCTION_RUN.json",
+      "bytes": 1521,
+      "sha256": "50fac5e0ced157d31ac746fe144ac9b24340f3ce3e6aa6ca104ddf5c1148c9a5"
+    },
+    {
+      "path": "EXACT_REDUCTION_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EXACT_REDUCTION_stdout.txt",
+      "bytes": 230,
+      "sha256": "429e9fc497040642b58fdde6c004808defa52f0bad3e22453c6acbf4951d2e74"
+    },
+    {
+      "path": "NCP_CONTINUATION_RESULT.json",
+      "bytes": 1156,
+      "sha256": "bd75f1ca6d73f8b4ce828fc55c6946a112825100b7553ecd3b1db9c7d97bc27f"
+    },
+    {
+      "path": "NCP_EXECUTION_SUMMARY.json",
+      "bytes": 14287,
+      "sha256": "645e6192a1bbdd33c55a2473cee7373f43f86177feb14e5a38281acbfa55aabc"
+    },
+    {
+      "path": "NCP_REPORT_KO.md",
+      "bytes": 4823,
+      "sha256": "7a8c25f37d817923386bc3cbfe3300b66a57082f401b923b54a7632f3d1b7d9b"
+    },
+    {
+      "path": "PHYSICS_HOST_RUN.json",
+      "bytes": 698,
+      "sha256": "9586950a791fef3ea536a80f5140a37c4239b714dcd41779bd74d392ff51c71d"
+    },
+    {
+      "path": "PHYSICS_HOST_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PHYSICS_HOST_stdout.txt",
+      "bytes": 1142,
+      "sha256": "da4eb36a10b314cd4810f12780bd4f69d4c25766b5b30ca1dc1a1e969bd453da"
+    },
+    {
+      "path": "RETURN_MANIFEST.json",
+      "bytes": 3411,
+      "sha256": "fe8819f1b4977fe6d513b404ff32c45364e37da42922fae940127dbdf7630b8e"
+    },
+    {
+      "path": "physics/ARITHMETIC_SMOKE.json",
+      "bytes": 501,
+      "sha256": "fc18c1218a80e641aa57481b87f78b0068155e22e231a4c6eb79181577636700"
+    },
+    {
+      "path": "physics/HOST.json",
+      "bytes": 5031,
+      "sha256": "0b339e17c4682ca2c2bd018386d93f84e387c830548eae53b22d8fe6dc3b7e04"
+    },
+    {
+      "path": "physics/IDENTITY_CHECK.json",
+      "bytes": 1753,
+      "sha256": "251b86184079efec836eec3d492faf2d3c79744f1a8a2568eabb2a50eb899176"
+    },
+    {
+      "path": "physics/NCP_RESULT.json",
+      "bytes": 1232,
+      "sha256": "e2bf1e81bdb666828bafc1731313810dfee87d2c25a68b7c1c5e4b53a70ccc06"
+    },
+    {
+      "path": "physics/PARITY.json",
+      "bytes": 611,
+      "sha256": "8371fc624e7035a44ace9ba796f41aacce627131ae162e2f11c5b918a73da905"
+    },
+    {
+      "path": "physics/RESULTS.json",
+      "bytes": 417162,
+      "sha256": "49925547da42c6233f0b62e50a7bd3f1de0a6beea775aee9291800d152c1a8f3"
+    },
+    {
+      "path": "physics/RESULTS_CHECKPOINT.json",
+      "bytes": 383017,
+      "sha256": "c7b93b9a5870913b1a2860ab9ec5d868f24bb13d6cb4f6138df02dd04ad2b44a"
+    },
+    {
+      "path": "physics/RESULTS_START.json",
+      "bytes": 1552,
+      "sha256": "927f5fed77658ce0bd2d3499762094dd1b446d3d7a62ebaa9e002517ad692991"
+    },
+    {
+      "path": "physics/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "physics/stdout.txt",
+      "bytes": 834,
+      "sha256": "2fa50efe090cb0a007cdb8f1ffcf39f09d6ffb9dfeae0e8c4c2c93fa29400f0c"
+    },
+    {
+      "path": "reduction/NUMERICAL_IDENTITY.json",
+      "bytes": 687,
+      "sha256": "7cec4ba2db9e808fff72ef787dbc8317f8c513a53fae365203402d82d227b65a"
+    },
+    {
+      "path": "reduction/NUMERICAL_PROJECTION.json",
+      "bytes": 419815,
+      "sha256": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69"
+    },
+    {
+      "path": "reduction/RESULTS.json",
+      "bytes": 567076,
+      "sha256": "604efa3478fdef7803cd56623bb2193d639904228bc6f778c470ac25af81a8e2"
+    }
+  ],
+  "excludes": [
+    "FINAL_RETURN_MANIFEST.json itself"
+  ]
+}

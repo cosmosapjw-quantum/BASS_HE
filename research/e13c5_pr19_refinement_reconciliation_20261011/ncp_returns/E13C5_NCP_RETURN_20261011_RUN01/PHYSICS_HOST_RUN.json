@@ -1,0 +1,19 @@
+{
+  "label": "PHYSICS_HOST",
+  "command": [
+    "/usr/bin/python3",
+    "/root/BASS_HE_runtime/E13C5_SCIENTIFIC_291b57399184_20261011/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/code/ncp_execute.py",
+    "--package",
+    "/root/BASS_HE_runtime/E13C5_SCIENTIFIC_291b57399184_20261011/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1",
+    "--out",
+    "/root/BASS_HE_runtime/E13C5_NCP_RETURN_20261011_RUN01/physics",
+    "--execute"
+  ],
+  "started_utc": "2026-10-11T00:46:15.921036+00:00",
+  "timeout_seconds": 205,
+  "memory_limit_bytes": 1073741824,
+  "actual_exit": 0,
+  "status": "EXITED",
+  "finished_utc": "2026-10-11T00:46:42.906240+00:00",
+  "wall_seconds": 26.983636981996824
+}

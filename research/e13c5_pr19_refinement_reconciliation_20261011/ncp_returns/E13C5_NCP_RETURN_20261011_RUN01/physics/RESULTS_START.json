@@ -1,0 +1,32 @@
+{
+  "started_utc": "2026-10-11T00:46:16.110075+00:00",
+  "argv": [
+    "/root/BASS_HE_runtime/E13C5_SCIENTIFIC_291b57399184_20261011/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/code/path_enclosure.py",
+    "--package",
+    "/root/BASS_HE_runtime/E13C5_SCIENTIFIC_291b57399184_20261011/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1",
+    "--subdivisions",
+    "512",
+    "--precision",
+    "60",
+    "--output",
+    "/root/BASS_HE_runtime/E13C5_NCP_RETURN_20261011_RUN01/physics/RESULTS.json"
+  ],
+  "source_sha256_before_run": {
+    "code/path_enclosure.py": "c424c8b980ece05618e427e4373f13a41fe7b4d02a8ddd4a0b3fa7da30109d73",
+    "code/directed_interval.py": "ce4a44b11d1c0a3a5c52861033fa817a587bca9a5b852fab48329213b9a732e5",
+    "code/local_enclosure.py": "fade8983b7db8974c479ac4473424b7d572e8f7a0f09c042669fb3c40c32e370",
+    "PLAN.json": "8e883b3b8a156e403460b7e270f104719698651fa411e467289a25fd85f26625",
+    "inputs/PATH_CONTROLS.json": "41891a30f61976d2c19165ee48a077bccbd41b17011939e1ed4dd80eb49cfd63",
+    "inputs/e13c4/N512_P60.json": "e38fa42d3c08d9710ce89f83746a19b2c41ac9c67086d6ce144f96d31b54a93a",
+    "inputs/e13c4/SIX_CONTROLS.json": "2f543b128bdb6efe020868475619765d1a08f47c102cf0b9e5f65cb615c146dd"
+  },
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "decimal_libmpdec_version": "2.5.1",
+  "subdivisions": 512,
+  "precision_digits": 60,
+  "native_runs": 0,
+  "gas_advances": 0,
+  "old_continuous_solves": 0,
+  "RSS_limit_MiB": 1024
+}
