@@ -1,0 +1,12 @@
+{
+  "comparison": "all deterministic tracks, inputs, local bounds, incoming propagation, representation, anchors, cumulative moments, ledgers and rounding counts",
+  "ignored": [
+    "environment/path/start-finish/elapsed/RSS metadata"
+  ],
+  "expected_numerical_sha256": "f4d0f8c7e37e5c8a013ab133af748173f3ef1a8247f413f4798fdb3518c04a86",
+  "actual_numerical_sha256": "f4d0f8c7e37e5c8a013ab133af748173f3ef1a8247f413f4798fdb3518c04a86",
+  "fresh_as_run_source_matches_execution_lock": true,
+  "fresh_output_compared": true,
+  "bitwise_numerical_json_parity": true,
+  "fresh_new_coefficient_evaluations": 4096
+}

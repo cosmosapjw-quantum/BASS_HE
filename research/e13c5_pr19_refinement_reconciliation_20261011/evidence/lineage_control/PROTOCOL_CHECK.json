@@ -1,0 +1,9 @@
+{
+  "TestID": "CLI_OPTIONAL_DIAGNOSTIC_PROJECTION_INVARIANCE",
+  "status": "PASS",
+  "actual_command_exit": 0,
+  "with_diagnostic_projection_sha256": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69",
+  "without_diagnostic_projection_sha256": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69",
+  "scope": "same saved N512 input, optional N128 diagnosis omitted; no new producer physics",
+  "elapsed_seconds": 0.21581908000371186
+}

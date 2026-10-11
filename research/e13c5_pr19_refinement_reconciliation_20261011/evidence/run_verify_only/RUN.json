@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-10-10T22:22:52.097496+00:00",
+  "command": [
+    "python3",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/code/ncp_execute.py",
+    "--out",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/NCP_VERIFY_ONLY"
+  ],
+  "timeout_seconds": 30,
+  "wrapper_sha256": "1af302354787f5e5e185b9fe66f97d5bb21a9fdb9a1b3c4650d26a8189b17e6b",
+  "status": "COMPLETE",
+  "actual_exit": 0,
+  "finished_utc": "2026-10-10T22:22:52.162139+00:00",
+  "elapsed_seconds": 0.06466350899427198,
+  "stdout_sha256": "41548cc90f3d82b40a1945dcd349c2081593d44b10a8144b3ce407d4705ff38d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

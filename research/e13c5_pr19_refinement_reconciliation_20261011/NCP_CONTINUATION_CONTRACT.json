@@ -1,0 +1,105 @@
+{
+  "schema": "bass-he-e13c5-ncp-continuation-contract-v1",
+  "task": "NCP_E13C5_PR19_REFINEMENT_PARITY_AND_REDUCTION",
+  "entrypoint": "code/ncp_continue.py",
+  "reviewed_scientific_entrypoint": "code/ncp_execute.py",
+  "postprocessor": "code/lineage_reduction.py",
+  "scope": {
+    "new_scientific_paths": [
+      "OFF/0",
+      "OFF/700"
+    ],
+    "segments_per_path": 3,
+    "new_local_enclosures": 4,
+    "same_certified_local_reuses": 2,
+    "subdivisions": 512,
+    "decimal_precision": 60,
+    "new_coefficient_evaluations": 4096,
+    "old_prior_paths_reused_for_exact_reduction": 12,
+    "replaced_prior_contributions": 2,
+    "aggregate_groups": [
+      "OFF",
+      "KF",
+      "GM"
+    ],
+    "never_sum_alternative_modes": true
+  },
+  "source_lineage": {
+    "current_base_commit": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+    "current_base_tree": "fe861762030cb7b669512fdfa3be8f2c0a188d2c",
+    "repository": "cosmosapjw-quantum/BASS_HE",
+    "branch": "research/e13c5-first2-branch-cover-20261011",
+    "pr": 19,
+    "actual_new_core_identity": "Read outer DELIVERY_RECEIPT.json after publication; this source file never predicts its containing commit or archive hash"
+  },
+  "identity": {
+    "continuation_lock": "CONTINUATION_LOCK.json",
+    "continuation_lock_sha256": "a1ccb4f352a7bd12d97419b09dc41bc2782332ae01c4a7b8173f3cdd3bcdbef7",
+    "old_execution_lock": "EXECUTION_LOCK.json",
+    "baseline_physics_numerical_sha256": "f4d0f8c7e37e5c8a013ab133af748173f3ef1a8247f413f4798fdb3518c04a86",
+    "baseline_reduction_projection_file_sha256": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69",
+    "baseline_reduction_projection_file_bytes": 419815,
+    "fresh_raw_input_sha_bound_after_physics": true,
+    "no_saved_result_substitution": true,
+    "projection_includes": "all substantiveN512compatibility, incomingreuse,representation,modegroups,weightedterms,hybridmoments,controls,sourceidentity",
+    "projection_excludes": "optionalN128diagnostics,host,path,timing andfresh rawproducerfileSHA; actualfreshproducerSHA checkedseparately"
+  },
+  "limits": {
+    "python": "CPython3.12.x,stdllib",
+    "processes": 1,
+    "threads": 1,
+    "MPI": false,
+    "primary_physics_invocations": 1,
+    "physics_timeout_seconds": 180,
+    "outer_physics_wrapper_seconds": 205,
+    "exact_reduction_invocations": 1,
+    "exact_reduction_timeout_seconds": 60,
+    "memory_MiB": 1024,
+    "automatic_retries": false,
+    "native_runs": 0,
+    "gas_advances": 0,
+    "old_continuous_solves": 0,
+    "full_first2_runs": 0
+  },
+  "outputs": [
+    "NCP_CONTINUATION_RESULT.json",
+    "CONTINUATION_IDENTITY.json",
+    "PHYSICS_HOST_RUN.json",
+    "PHYSICS_HOST_stdout.txt",
+    "PHYSICS_HOST_stderr.txt",
+    "physics/HOST.json",
+    "physics/IDENTITY_CHECK.json",
+    "physics/ARITHMETIC_SMOKE.json",
+    "physics/NCP_RESULT.json",
+    "physics/RESULTS.json",
+    "physics/PARITY.json",
+    "physics/stdout.txt",
+    "physics/stderr.txt",
+    "EXACT_REDUCTION_RUN.json",
+    "EXACT_REDUCTION_stdout.txt",
+    "EXACT_REDUCTION_stderr.txt",
+    "reduction/RESULTS.json",
+    "reduction/NUMERICAL_PROJECTION.json",
+    "reduction/NUMERICAL_IDENTITY.json",
+    "RETURN_MANIFEST.json"
+  ],
+  "success": "PASS_SCOPED_HOST_PARITY_AND_REDUCTION with exactly1actualphysics+1exactreduction, freshinputschecked, fullprojectionsbyteequal",
+  "verify_only": "VERIFY_ONLY_READY is NOT_RUN/NOT_EVALUATED, notsciencePASS",
+  "failure": "Preserve freshdirectory, firststderr/checkpoint/actualexit. Return diagnosis; no implicitprecision/refinement/source/tolerance/budget change or identicalretry. An interrupted intake before science start may resume only after accounting proves no primary invocation consumed.",
+  "actual_execution_here": "Chat host verify-only plus explicitly syntheticboundarycontrols; actualNCPnewphysicsNOT_RUN",
+  "next_research": "E13C5_SELECTED_SUBSET_BUDGET_AND_MISSING_NODE_COMPLEMENT_CONTRACT; researchdesign withsaveddata, noautomaticE13C6/fullfirst2",
+  "protected": {
+    "baseline_RCT": "OFF",
+    "actual_atomic_photon_heat_recoil": null,
+    "physical": "HOLD",
+    "production": "HOLD",
+    "HE_F2_F09": "OPEN",
+    "receiver_adoption": "SEPARATE",
+    "legacy_Gamma_alias": {
+      "value": 3.543295,
+      "status": "FAIL"
+    },
+    "uniform_path_certificate": false
+  },
+  "publication": "additive nonforce same currentresearchbranch only under newtask/ncp_returns/unique; createonlydesignatedDrive/Dropbox; no merge or otherrecipientmessages"
+}

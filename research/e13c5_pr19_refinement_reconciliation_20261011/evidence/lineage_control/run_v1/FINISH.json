@@ -1,0 +1,68 @@
+{
+  "schema": "bass-he-e13c5-control-execution-v1",
+  "started_utc": "2026-10-10T22:45:33.490048+00:00",
+  "command": [
+    "python3",
+    "/workspace/scratch/7fd51143e473/e13c5_lineage_control_work/lineage_reduction.py",
+    "--prior",
+    "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/RESULTS.json",
+    "--prior-start",
+    "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/START.json",
+    "--pilot",
+    "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/pilot/RESULTS.json",
+    "--current",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N512_P60.json",
+    "--controls",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/PATH_CONTROLS.json",
+    "--diagnostic",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N128_P60.json",
+    "--out",
+    "/workspace/scratch/7fd51143e473/e13c5_lineage_control_work/output_v1"
+  ],
+  "cwd": "/workspace/scratch/7fd51143e473",
+  "python": "3.12.14",
+  "source_identity": [
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_lineage_control_work/lineage_reduction.py",
+      "bytes": 27774,
+      "sha256": "487ea005a8a4297f914fa6d0cfc5a03cd0737f81150b776f849991d4c4dc66f6"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/RESULTS.json",
+      "bytes": 950019,
+      "sha256": "418dcac9280947abc227c69f9178c0163bbdb00fa34bff1f9e34ab9eea35ece4"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/START.json",
+      "bytes": 3563,
+      "sha256": "5f75633b9bd4b55aeaab4ca727972c6b7da4aba0fbaaf050b3d183a45a2ce6d1"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/pilot/RESULTS.json",
+      "bytes": 77603,
+      "sha256": "75648e29291c3c364c2d8a0c859710d95074f1c12c5d910c61a4856465034b96"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N512_P60.json",
+      "bytes": 417016,
+      "sha256": "5a3b9f17c6d250afed0e4270e4cce71d22d930a482084bc12c3e7dcc66cb68d7"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/PATH_CONTROLS.json",
+      "bytes": 24911,
+      "sha256": "41891a30f61976d2c19165ee48a077bccbd41b17011939e1ed4dd80eb49cfd63"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N128_P60.json",
+      "bytes": 416248,
+      "sha256": "a7215a1a4a7af5c7b53bc9e41da47a4ba108301f06578a4075866310945d9835"
+    }
+  ],
+  "timeout_seconds": 30.0,
+  "wrapper_sha256": "f14626902f64145a5fa690ff06766c658b9dfc9fc4e7395798c60135a0b685c0",
+  "finished_utc": "2026-10-10T22:45:33.755469+00:00",
+  "elapsed_seconds": 0.2649991200014483,
+  "actual_exit_code": 0,
+  "process_status": "COMPLETED",
+  "child_ru_maxrss_KiB": 22120
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "bass-he-e13c5-lineage-theory-contribution-manifest-v1",
+  "files": [
+    {
+      "path": "LINEAGE_REDUCTION_CONTRACT.md",
+      "bytes": 12207,
+      "sha256": "f241fbc859c7c3ea94d30e13388fc0a1eae60691062b7e503b3209128d1b4c40"
+    },
+    {
+      "path": "NEXT_DAG_PROPOSAL.json",
+      "bytes": 3138,
+      "sha256": "2d236895d57327c2493b494f318c22155ea2f56414346d6c12604b88afb9a1cf"
+    },
+    {
+      "path": "READ_IDENTITIES.json",
+      "bytes": 3366,
+      "sha256": "832f59b735ed017b12440116c9c4529433a3283f0976394efb4620f56b3ebeba"
+    }
+  ],
+  "exclude_self": true
+}

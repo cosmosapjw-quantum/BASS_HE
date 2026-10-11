@@ -1,0 +1,201 @@
+{
+  "schema": "bass-he-e13c5-new-lineage-reconnaissance-v1",
+  "status": "MATERIAL_PRIOR_E13C5_EXECUTED_LINEAGE_CONFIRMED",
+  "observation_scope": "Read three Dropbox extracted JSON receipts; read live PR18/PR19; fetch exact commit metadata/diffs; read six selected PR19 files at e25039b. No scientific execution or full-bundle download.",
+  "previous_search_limitation": {
+    "previous_scope": "E13C4 and NCP_RESULT/NCP_RETURN keywords, PR17 only",
+    "missed_material": "E13C5 prior execution and stacked publication branches with names not containing E13C4 or NCP_RETURN",
+    "amendment": "Previous NOT_FOUND_IN_SCOPED_SEARCH cannot be used as no-new-research-state evidence. The E13C4 host-parity status is a separate question from this E13C5 lineage."
+  },
+  "lineage": [
+    {
+      "pr": 17,
+      "commit": "8fc3fb14dd33da10efa86c97c4beb9b0d12eeaad",
+      "branch": "research/shared-c64-crossrepo-20260928",
+      "role": "E13C4 delivery base"
+    },
+    {
+      "pr": 18,
+      "commit": "48f648cd905cd8c232ae43abe97745ac6a96dec2",
+      "branch": "research/he-e13c5-off700-publication-20261011",
+      "base_pr": 17,
+      "role": "3-segment OFF700 pilot recovery/source binding/publication",
+      "live_state": "open draft, unmerged",
+      "receipt_science_reruns": 0
+    },
+    {
+      "pr": 19,
+      "commit": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+      "branch": "research/e13c5-first2-branch-cover-20261011",
+      "base_pr": 18,
+      "role": "12 selected captured paths / 36 segments branch cover",
+      "live_state": "open draft, unmerged",
+      "receipt_publication_solver_reruns": 0
+    }
+  ],
+  "prior_scientific_execution": {
+    "evidence": "first2/START.json, first2/REPORT.md, first2/stderr.log; reviewed claim in first2/independent_review.md",
+    "recorded_primary_invocations": 1,
+    "recorded_exit": 0,
+    "recorded_wall_seconds": 34.6,
+    "recorded_max_rss_KiB": 65652,
+    "mode_selector": [
+      "OFF",
+      "KF",
+      "GM"
+    ],
+    "node_selector": [
+      0,
+      700,
+      1620,
+      2344
+    ],
+    "segments": 36,
+    "reused_OFF700_segments": 3,
+    "new_segments": 33,
+    "N": 128,
+    "decimal_precision": 60,
+    "serial": true,
+    "covered_components": [
+      "chronological incoming interval",
+      "source-off incoming stock",
+      "all energy seams including anchored=false",
+      "frozen-minus-captured moments",
+      "captured segment-to-node reduction",
+      "positive weighted subset reductions",
+      "endpoint erg representation discrepancy"
+    ],
+    "recorded_independent_decision": "PASS_SCOPED",
+    "reviewer_note": "The committed independent_review.md explicitly says it transcribes a controller-delivered independent Astra outcome; this reconnaissance did not independently re-review the science.",
+    "host_classification": "Execution record exists; actual NCP host identity is not provided by the selected files.",
+    "recipient_execution_ack": "SEPARATE_NOT_OBSERVED"
+  },
+  "frontier": {
+    "explicit_E13C6_node_present_in_read_DAG": false,
+    "read_DAG": "first2/NEXT_DAG.json",
+    "completed": "selected 12 captured-path branch cover, fresh independent decision",
+    "historical_next": "scoped_publication",
+    "receipt_supersedes_historical_publication_pending": true,
+    "full_first2": "HOLD_RESOURCE_AUTHORIZATION",
+    "cannot_infer": "E13C6 or complete first2 approval is not established by these files."
+  },
+  "holds": [
+    "full first2",
+    "physical/production admission",
+    "new gas evolution",
+    "actual photon/heat/recoil",
+    "receiver adoption"
+  ],
+  "further_searches": {
+    "dropbox_he_in_recovery": {
+      "has_more": false,
+      "results": [
+        {
+          "id": "id:BSpOijBcT10AAAAAAD32eg",
+          "last_modified": "2026-10-10T17:52:20Z",
+          "match_type": "BOTH_FILENAME_AND_CONTENT",
+          "mime_type": "application/octet-stream",
+          "object_type": "file",
+          "path": "ns:183516487//BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_FIRST2_PUBLICATION_RECEIPT_20261011_e25039b.json",
+          "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_FIRST2_PUBLICATION_RECEIPT_20261011_e25039b.json",
+          "rank": 1,
+          "size": 2605,
+          "title": "BASS_HE_E13C5_FIRST2_PUBLICATION_RECEIPT_20261011_e25039b.json",
+          "url": "https://www.dropbox.com/preview/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_FIRST2_PUBLICATION_RECEIPT_20261011_e25039b.json"
+        },
+        {
+          "id": "id:BSpOijBcT10AAAAAAD31gw",
+          "last_modified": "2026-10-10T17:27:32Z",
+          "match_type": "BOTH_FILENAME_AND_CONTENT",
+          "mime_type": "application/octet-stream",
+          "object_type": "file",
+          "path": "ns:183516487//BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE-E13C5-48f648cd-full.bundle",
+          "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE-E13C5-48f648cd-full.bundle",
+          "rank": 2,
+          "size": 6648038,
+          "title": "BASS_HE-E13C5-48f648cd-full.bundle",
+          "url": "https://www.dropbox.com/preview/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE-E13C5-48f648cd-full.bundle"
+        },
+        {
+          "id": "id:BSpOijBcT10AAAAAAD32eQ",
+          "last_modified": "2026-10-10T17:51:36Z",
+          "match_type": "BOTH_FILENAME_AND_CONTENT",
+          "mime_type": "application/octet-stream",
+          "object_type": "file",
+          "path": "ns:183516487//BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE-E13C5-FIRST2-e25039b-full.bundle",
+          "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE-E13C5-FIRST2-e25039b-full.bundle",
+          "rank": 3,
+          "size": 7039633,
+          "title": "BASS_HE-E13C5-FIRST2-e25039b-full.bundle",
+          "url": "https://www.dropbox.com/preview/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE-E13C5-FIRST2-e25039b-full.bundle"
+        },
+        {
+          "id": "id:BSpOijBcT10AAAAAAD30wQ",
+          "last_modified": "2026-10-10T17:14:53Z",
+          "match_type": "BOTH_FILENAME_AND_CONTENT",
+          "mime_type": "application/octet-stream",
+          "object_type": "file",
+          "path": "ns:183516487//BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_OFF700_PILOT_RECOVERY_RECEIPT_20261011.json",
+          "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_OFF700_PILOT_RECOVERY_RECEIPT_20261011.json",
+          "rank": 4,
+          "size": 1092,
+          "title": "BASS_HE_E13C5_OFF700_PILOT_RECOVERY_RECEIPT_20261011.json",
+          "url": "https://www.dropbox.com/preview/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_OFF700_PILOT_RECOVERY_RECEIPT_20261011.json"
+        },
+        {
+          "id": "id:BSpOijBcT10AAAAAAD30wA",
+          "last_modified": "2026-10-10T17:14:53Z",
+          "match_type": "BOTH_FILENAME_AND_CONTENT",
+          "mime_type": "application/octet-stream",
+          "object_type": "file",
+          "path": "ns:183516487//BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_OFF700_PILOT_REVIEWED_20261011.tar.gz",
+          "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_OFF700_PILOT_REVIEWED_20261011.tar.gz",
+          "rank": 5,
+          "size": 10541596,
+          "title": "BASS_HE_E13C5_OFF700_PILOT_REVIEWED_20261011.tar.gz",
+          "url": "https://www.dropbox.com/preview/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_OFF700_PILOT_REVIEWED_20261011.tar.gz"
+        },
+        {
+          "id": "id:BSpOijBcT10AAAAAAD31hw",
+          "last_modified": "2026-10-10T17:28:04Z",
+          "match_type": "BOTH_FILENAME_AND_CONTENT",
+          "mime_type": "application/octet-stream",
+          "object_type": "file",
+          "path": "ns:183516487//BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_PUBLICATION_RECEIPT_20261011_48f648cd.json",
+          "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_PUBLICATION_RECEIPT_20261011_48f648cd.json",
+          "rank": 6,
+          "size": 2842,
+          "title": "BASS_HE_E13C5_PUBLICATION_RECEIPT_20261011_48f648cd.json",
+          "url": "https://www.dropbox.com/preview/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_PUBLICATION_RECEIPT_20261011_48f648cd.json"
+        }
+      ],
+      "total_results": 6
+    },
+    "github_e13c5_branches": {
+      "branches": [
+        {
+          "branch": "research/e13c5-first2-branch-cover-20261011"
+        },
+        {
+          "branch": "research/he-e13c5-off700-publication-20261011"
+        }
+      ],
+      "cursor": "Mg"
+    },
+    "github_e13c6_branches": {
+      "branches": [],
+      "cursor": null
+    },
+    "github_e13c5_commits": {
+      "commits": []
+    }
+  },
+  "additional_limitations": [
+    "Git commit keyword search returned empty despite directly fetched known E13C5 commits, so keyword indexing is incomplete.",
+    "E13C6 branch search returned empty; this is not universal absence.",
+    "E13C5 branch search returned two names with cursor Mg; not all possible differently named branches or controller documents were inspected.",
+    "No new E13C5 NCP handoff filename exists among the 11 added PR19 files. The CONTRACT is a completed bounded-run contract, not an unexecuted current NCP command.",
+    "Dropbox fetch returns extracted text. The three local receipt files preserve that returned text, which is one byte longer than provider size metadata; no raw remote byte identity is claimed."
+  ],
+  "file_evidence": "FETCH_METADATA_AND_IDENTITIES.json"
+}

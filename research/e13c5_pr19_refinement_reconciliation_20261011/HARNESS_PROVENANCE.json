@@ -1,0 +1,21 @@
+{
+  "runtime_model": "GPT-6 Astra Pro",
+  "model_performance_comparison": "NOT_EVALUATED",
+  "skill": "physmath-research-loop",
+  "router": "references/MODEL_ROUTER.json",
+  "selected_version": "v4.0.0",
+  "research_archive_sha256": "dae76c90f2e5d691bcdd595dadbe470bacacba3bb2a036ff9788ffe7d3bfabb7",
+  "coding_archive_sha256": "dc99e7ab2f9629dcce3ec0758d97e19acc5b645f86e208d1b338bb6430ff8d7a",
+  "instructions_read": [
+    "research/START_HERE.md",
+    "research/PROJECT_INSTRUCTIONS.md",
+    "research/state/RESEARCH_STATE.md template",
+    "research/current phase integrated/deep_once prompt",
+    "coding/AGENTS.md",
+    "coding/SCIENTIFIC_CONTRACT.md",
+    "coding/VALIDATION_MATRIX.md",
+    "coding/RUN_STATE.md template",
+    "coding/prompts/01_deep_once.md"
+  ],
+  "template_state_is_execution_evidence": false
+}

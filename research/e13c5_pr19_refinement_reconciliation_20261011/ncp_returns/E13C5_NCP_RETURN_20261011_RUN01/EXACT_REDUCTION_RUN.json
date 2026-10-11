@@ -1,0 +1,28 @@
+{
+  "label": "EXACT_REDUCTION",
+  "command": [
+    "/usr/bin/python3",
+    "/root/BASS_HE_runtime/E13C5_SCIENTIFIC_291b57399184_20261011/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/code/lineage_reduction.py",
+    "--prior",
+    "/root/BASS_HE_runtime/E13C5_SCIENTIFIC_291b57399184_20261011/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/pr19_lineage/first2/RESULTS.json",
+    "--prior-start",
+    "/root/BASS_HE_runtime/E13C5_SCIENTIFIC_291b57399184_20261011/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/pr19_lineage/first2/START.json",
+    "--prior-code",
+    "/root/BASS_HE_runtime/E13C5_SCIENTIFIC_291b57399184_20261011/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/pr19_lineage/first2/cover.py",
+    "--pilot",
+    "/root/BASS_HE_runtime/E13C5_SCIENTIFIC_291b57399184_20261011/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/pr19_lineage/pilot/RESULTS.json",
+    "--controls",
+    "/root/BASS_HE_runtime/E13C5_SCIENTIFIC_291b57399184_20261011/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/PATH_CONTROLS.json",
+    "--current",
+    "/root/BASS_HE_runtime/E13C5_NCP_RETURN_20261011_RUN01/physics/RESULTS.json",
+    "--out",
+    "/root/BASS_HE_runtime/E13C5_NCP_RETURN_20261011_RUN01/reduction"
+  ],
+  "started_utc": "2026-10-11T00:46:42.913988+00:00",
+  "timeout_seconds": 60,
+  "memory_limit_bytes": 1073741824,
+  "actual_exit": 0,
+  "status": "EXITED",
+  "finished_utc": "2026-10-11T00:46:43.187698+00:00",
+  "wall_seconds": 0.2719996409941814
+}

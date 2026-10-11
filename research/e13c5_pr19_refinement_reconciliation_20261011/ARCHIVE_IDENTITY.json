@@ -1,0 +1,10 @@
+{
+  "file_name": "BASS_HE_E13C5_PR19_REFINEMENT_20261011_sha_291b57399184.zip",
+  "bytes": 3843064,
+  "sha256": "291b57399184bb3042ec1b3e0aae4a648b6ba909273d8dbd50752954df639cf3",
+  "package_root": "BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1",
+  "manifest_sha256": "f6d86d6c8f6bc753c8f40eb44189c93ac03898feae602db72aa85c6e8d4f132b",
+  "payload_files": 851,
+  "zip_members": 852,
+  "local_crc_and_every_manifest_payload": "PASS"
+}

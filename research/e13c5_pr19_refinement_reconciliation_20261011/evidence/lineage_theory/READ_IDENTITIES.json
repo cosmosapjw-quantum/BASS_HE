@@ -1,0 +1,80 @@
+{
+  "schema": "bass-he-e13c5-lineage-theory-read-identities-v1",
+  "files": [
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/cover.py",
+      "bytes": 12327,
+      "sha256": "aaae27a0d053d42ce6727593df676352697dd042486aa448d1e9104b16f979f6",
+      "read_scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/CONTRACT.md",
+      "bytes": 4202,
+      "sha256": "cbea11086727b06fac350451b433f10f344664bcdee85948901cac14b62b56dd",
+      "read_scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/REPORT.md",
+      "bytes": 3399,
+      "sha256": "bd4c7886e4aa24390752ad86b16d01d6f3b739b192e94e0bbaa4ca46bc1fb1aa",
+      "read_scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/NEXT_DAG.json",
+      "bytes": 776,
+      "sha256": "e1dfc0fda51136e3a085283b0176ba4c270f684ad5fc3b80dca252cd1c07fd8a",
+      "read_scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/START.json",
+      "bytes": 3563,
+      "sha256": "5f75633b9bd4b55aeaab4ca727972c6b7da4aba0fbaaf050b3d183a45a2ce6d1",
+      "read_scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/independent_review.md",
+      "bytes": 1133,
+      "sha256": "999e841eb3ac55d744946682215d00b1c5dc1db3650b2a81a6c8c228286f237f",
+      "read_scope": "full; controller-transcription status preserved"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/first2/RESULTS.json",
+      "bytes": 950019,
+      "sha256": "418dcac9280947abc227c69f9178c0163bbdb00fa34bff1f9e34ab9eea35ece4",
+      "read_scope": "schema and selector, all12path weights, firstpath weighted/cumulative summary"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_intake_work/new_lineage/pilot/pilot.py",
+      "bytes": 8224,
+      "sha256": "104eb217e32266289fbffc5e3349b72390bc36e9392ca016c8e35edbaa157f83",
+      "read_scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/code/path_enclosure.py",
+      "bytes": 21111,
+      "sha256": "c424c8b980ece05618e427e4373f13a41fe7b4d02a8ddd4a0b3fa7da30109d73",
+      "read_scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/PLAN.json",
+      "bytes": 5031,
+      "sha256": "8e883b3b8a156e403460b7e270f104719698651fa411e467289a25fd85f26625",
+      "read_scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N512_P60.json",
+      "bytes": 417016,
+      "sha256": "5a3b9f17c6d250afed0e4270e4cce71d22d930a482084bc12c3e7dcc66cb68d7",
+      "read_scope": "schema only; no pertrack result arithmetic evaluated by this contributor"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_theory_work/THEORY_CONTRIBUTION.md",
+      "bytes": 16961,
+      "sha256": "16ef3e4f7ed51c2ace87f7e36570917f3a1074c55dfe7bce5d9c7849d9c069e5",
+      "read_scope": "prior authored contribution"
+    }
+  ],
+  "scientific_solver_runs": 0,
+  "new_coefficient_evaluations": 0,
+  "external_mutations": 0
+}

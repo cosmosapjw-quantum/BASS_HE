@@ -1,0 +1,26 @@
+{
+  "schema": "bass-he-e13c5-control-execution-v1",
+  "started_utc": "2026-10-10T22:19:55.836596+00:00",
+  "command": [
+    "python3",
+    "/workspace/scratch/7fd51143e473/e13c5_recurrence_control_work/exact_recurrence_toys.py",
+    "--out",
+    "/workspace/scratch/7fd51143e473/e13c5_recurrence_control_work/EXACT_TOY_RESULTS_v2.json"
+  ],
+  "cwd": "/workspace/scratch/7fd51143e473",
+  "python": "3.12.14",
+  "source_identity": [
+    {
+      "path": "/workspace/scratch/7fd51143e473/e13c5_recurrence_control_work/exact_recurrence_toys.py",
+      "bytes": 12825,
+      "sha256": "bba710d94b751a78dde186956ca668a95a4219d5ed0ee73bcbe652b4334590ec"
+    }
+  ],
+  "timeout_seconds": 30.0,
+  "wrapper_sha256": "f14626902f64145a5fa690ff06766c658b9dfc9fc4e7395798c60135a0b685c0",
+  "finished_utc": "2026-10-10T22:19:55.901868+00:00",
+  "elapsed_seconds": 0.06480025700147962,
+  "actual_exit_code": 0,
+  "process_status": "COMPLETED",
+  "child_ru_maxrss_KiB": 11776
+}

@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-10-10T22:20:05.353559+00:00",
+  "argv": [
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/code/path_enclosure.py",
+    "--subdivisions",
+    "128",
+    "--precision",
+    "60",
+    "--output",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N128_P60.json"
+  ],
+  "source_sha256_before_run": {
+    "code/path_enclosure.py": "c424c8b980ece05618e427e4373f13a41fe7b4d02a8ddd4a0b3fa7da30109d73",
+    "code/directed_interval.py": "ce4a44b11d1c0a3a5c52861033fa817a587bca9a5b852fab48329213b9a732e5",
+    "code/local_enclosure.py": "fade8983b7db8974c479ac4473424b7d572e8f7a0f09c042669fb3c40c32e370",
+    "PLAN.json": "8e883b3b8a156e403460b7e270f104719698651fa411e467289a25fd85f26625",
+    "inputs/PATH_CONTROLS.json": "41891a30f61976d2c19165ee48a077bccbd41b17011939e1ed4dd80eb49cfd63",
+    "inputs/e13c4/N128_P60.json": "6b12759352ec2c0530808ac4cac141a8709803d6014a84d2b3368137d6396419",
+    "inputs/e13c4/SIX_CONTROLS.json": "2f543b128bdb6efe020868475619765d1a08f47c102cf0b9e5f65cb615c146dd"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "decimal_libmpdec_version": "4.0.0",
+  "subdivisions": 128,
+  "precision_digits": 60,
+  "native_runs": 0,
+  "gas_advances": 0,
+  "old_continuous_solves": 0,
+  "RSS_limit_MiB": 1024
+}

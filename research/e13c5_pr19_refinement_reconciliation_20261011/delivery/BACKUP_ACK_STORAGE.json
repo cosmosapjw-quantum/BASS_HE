@@ -1,0 +1,28 @@
+{
+  "schema": "bass-he-e13c5-backup-ack-storage-v1",
+  "observed_utc": "2026-10-10 23:13:47 UTC",
+  "ack_file": {
+    "file_name": "BASS_HE_E13C5_NCP_READY_BACKUP_ACK_20261011_e2aac517d708.json",
+    "bytes": 3205,
+    "sha256": "b91f0ebe4c61152e667192956f9d23d75cc3a6a764f202c61237f6bd7824ab73"
+  },
+  "google_drive": {
+    "success": true,
+    "id": "1YXjkwvUPRipfm5ujCWRgypTw85w5a9NK",
+    "url": "https://drive.google.com/file/d/1YXjkwvUPRipfm5ujCWRgypTw85w5a9NK/view?usp=drivesdk",
+    "parent_id": "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI",
+    "bytes": 3205
+  },
+  "dropbox": {
+    "status": "completed",
+    "file_id": "id:BSpOijBcT10AAAAAAD37LQ",
+    "path": "ns:183516487//BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_E13C5_NCP_READY_BACKUP_ACK_20261011_e2aac517d708.json",
+    "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_E13C5_NCP_READY_BACKUP_ACK_20261011_e2aac517d708.json",
+    "bytes": 3205,
+    "modified_time": "2026-10-10T23:12:40Z"
+  },
+  "verification": "R1_UPLOAD_ACK_AND_NAME_PATH_SIZE_METADATA",
+  "remote_restore": "NOT_RUN",
+  "actual_NCP": "NOT_RUN",
+  "purpose": "Actual storage locations of the detached backup ACK; not required for NCP runtime."
+}

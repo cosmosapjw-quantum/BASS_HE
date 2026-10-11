@@ -1,0 +1,102 @@
+{
+  "schema": "bass-he-e13c5-pr19-refinement-delivery-v1",
+  "created_utc": "2026-10-10T23:10:38.515361+00:00",
+  "task_id": "HE_E13C5_PR19_REFINEMENT_RECONCILIATION01",
+  "scientific_status": "PASS_SCOPED",
+  "scientific_archive": {
+    "file_name": "BASS_HE_E13C5_PR19_REFINEMENT_20261011_sha_291b57399184.zip",
+    "bytes": 3843064,
+    "sha256": "291b57399184bb3042ec1b3e0aae4a648b6ba909273d8dbd50752954df639cf3",
+    "package_root": "BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1",
+    "manifest_sha256": "f6d86d6c8f6bc753c8f40eb44189c93ac03898feae602db72aa85c6e8d4f132b",
+    "payload_files": 851,
+    "zip_members": 852,
+    "local_crc_and_every_manifest_payload": "PASS"
+  },
+  "git_publication": {
+    "repository": "cosmosapjw-quantum/BASS_HE",
+    "branch": "research/e13c5-first2-branch-cover-20261011",
+    "pr": 19,
+    "pr_url": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/19",
+    "scientific_core_commit": "f2fefc0c51de41f8ea036a21ba2e0728c3260490",
+    "scientific_core_tree": "7991cff42f09861366311f4cdfba0edcaa99af1e",
+    "parent_commit": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+    "published_prefix": "research/e13c5_pr19_refinement_reconciliation_20261011/",
+    "ref_update": "ACK_SUCCESS_EXPECTED_PARENT_NONFORCE",
+    "readback": "PASS_EXACT_246_FILES_AND_FOUR_SOURCE_BLOBS",
+    "readback_record": "CORE_PUBLICATION_READBACK.json",
+    "draft": true,
+    "merged": false,
+    "complete_archive_in_git": false,
+    "complete_NCP_runtime_in_git": true,
+    "projected_archive_files": 244,
+    "git_only_sidecars": 2,
+    "omitted_archive_files": 608,
+    "omitted_archive_payload_available": "Entire scientific archive inside this NCP_READY ZIP",
+    "scope": "New prefix only; no deletions; no science execution or PR19 merge"
+  },
+  "scientific_scope": {
+    "prior_cover_paths": 12,
+    "prior_cover_segments": 36,
+    "refined_paths": [
+      "OFF/0",
+      "OFF/700"
+    ],
+    "new_refinement_segments": 6,
+    "unchanged_prior_paths": 10,
+    "aggregate": "Positive-weight direct replacement of two OFF terms; KF and GM remain separate and unchanged",
+    "interval_model": "Captured affine gas, fixed branches, masks, source and energy anchors; conditional finite enclosure",
+    "actual_new_scientific_runs": 4,
+    "new_coefficient_evaluations": 5632,
+    "measured_scientific_kernel_seconds": 21.01360547398508,
+    "new_full_first2_runs": 0,
+    "new_native_runs": 0,
+    "new_gas_advances": 0
+  },
+  "reviews": {
+    "two_track": {
+      "path": "INDEPENDENT_REVIEW.json",
+      "sha256": "5d492eb3f181d31ee4a29569ba28609f550c48d1827502ac87b987dbc6228b8a",
+      "decision": "PASS_SCOPED"
+    },
+    "lineage_and_ncp": {
+      "path": "INDEPENDENT_LINEAGE_REVIEW.json",
+      "sha256": "0253a6c5e33adf84438e07437deef2e12eba231cc895ac4bf64479e77f207635",
+      "decision": "PASS_SCOPED",
+      "open_blocker_count": 0
+    },
+    "prior_ten_paths": "Inherited recorded prior scoped review; not fresh all-path physical review"
+  },
+  "NCP": {
+    "actual_host_scientific_execution": "NOT_RUN",
+    "recipient_execution_ACK": "NOT_RECEIVED",
+    "handoff_file": "NCP_LOCAL_CODEX_HANDOFF_KO.md",
+    "handoff_sha256": "7c5519e0a44892326c43d30a06b42d449dd40665f9bcef8f12d0828217942e4c",
+    "entrypoint": "code/ncp_continue.py",
+    "entrypoint_sha256": "38957cb24f58b5d36dd4823ce7e642c708f0f4cae725ac2377d3f824b2b41626",
+    "continuation_lock_sha256": "a1ccb4f352a7bd12d97419b09dc41bc2782332ae01c4a7b8173f3cdd3bcdbef7",
+    "locked_runtime_files": 19,
+    "execute_work_unit": "One N512/P60 two-OFF-path host parity, then one exact reduction of the fresh result",
+    "expected_new_coefficient_evaluations": 4096,
+    "success_status": "PASS_SCOPED_HOST_PARITY_AND_REDUCTION",
+    "verify_only_is_actual_NCP_success": false
+  },
+  "protected": {
+    "baseline_RCT": "OFF",
+    "actual_atomic_photon_heat_recoil": null,
+    "physical": "HOLD",
+    "production": "HOLD",
+    "HE_F2_F09": "OPEN",
+    "receiver_adoption": "SEPARATE",
+    "legacy_Gamma_alias": {
+      "value": 3.543295,
+      "status": "FAIL"
+    },
+    "full_first2": "HOLD_RESOURCE_AUTHORIZATION",
+    "uniform_full_path_certificate": false
+  },
+  "next_research_node": "E13C5_SELECTED_SUBSET_BUDGET_AND_MISSING_NODE_COMPLEMENT_CONTRACT",
+  "receipt_boundary": "Actual scientific-core publication precedes outer ZIP sealing. Outer ZIP identity and actual backup ACKs are detached to avoid a self-referential hash.",
+  "backup_ACK_in_this_receipt": "NOT_INCLUDED; see detached actual NCP_READY_BACKUP_ACK.json after upload",
+  "additional_user_transfer_files_required": false
+}

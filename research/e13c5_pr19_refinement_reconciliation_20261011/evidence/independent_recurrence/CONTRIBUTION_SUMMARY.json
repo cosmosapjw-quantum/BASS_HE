@@ -1,0 +1,92 @@
+{
+  "schema": "bass-he-e13c5-independent-recurrence-contribution-v1",
+  "created_utc": "2026-10-10T22:24:51.682379+00:00",
+  "contributor": "/root/e13c5_recurrence_control",
+  "role": "INDEPENDENT_ARITHMETIC_CONTRIBUTOR_NOT_DECISION_REVIEWER",
+  "status": "PASS_SCOPED_ARITHMETIC",
+  "exact_toy": {
+    "path": "EXACT_TOY_RESULTS_v2.json",
+    "checks": 76,
+    "failures": [],
+    "actual_exit": 0,
+    "seconds": 0.06480025700147962,
+    "source_sha256": "bba710d94b751a78dde186956ca668a95a4219d5ed0ee73bcbe652b4334590ec"
+  },
+  "saved_output_audit": {
+    "path": "SAVED_PATH_AUDIT_v2.json",
+    "checks": 3867,
+    "interval_order_checks": 1626,
+    "substantive_arithmetic_checks": 2241,
+    "failed_count": 0,
+    "actual_exit": 0,
+    "seconds": 0.16441148200101452,
+    "source_sha256": "93924165bc95a484ad4a6cd520d6264d180f8ccf86c7c04fec0105ef2c811ca9",
+    "audited_inputs": [
+      {
+        "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N512_P60.json",
+        "bytes": 417016,
+        "sha256": "5a3b9f17c6d250afed0e4270e4cce71d22d930a482084bc12c3e7dcc66cb68d7"
+      },
+      {
+        "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/PATH_CONTROLS.json",
+        "bytes": 24911,
+        "sha256": "41891a30f61976d2c19165ee48a077bccbd41b17011939e1ed4dd80eb49cfd63"
+      }
+    ]
+  },
+  "distinct_successful_checks": 3943,
+  "distinct_successful_non_order_checks": 2317,
+  "new_physical_runs": 0,
+  "new_coefficient_evaluations": 0,
+  "old_continuous_solves": 0,
+  "first_failures": [
+    {
+      "execution": "toy_run_v1",
+      "class": "INDEPENDENT_CONTROL_FIXTURE",
+      "actual_exit": 1,
+      "issue": "Two wrong-representation mutation intervals still included selected upper truth endpoint; select lower endpoint for negative representation. Original source/results preserved."
+    },
+    {
+      "execution": "saved_audit_run_v1",
+      "class": "INDEPENDENT_AUDIT_ADAPTER",
+      "actual_exit": 1,
+      "issue": "KeyError: energy_eV; actual key energy_eV_with_anchor_subtracted. Original source/stderr preserved. No partial checks counted."
+    }
+  ],
+  "production_findings": [],
+  "claim_ceiling": "Exact arithmetic audit of incoming, representation, signed anchor, cumulative and ledger bookkeeping conditional on the saved local enclosures; not an independent enclosure of the continuous reference, not final decision review.",
+  "shared_inputs_and_limitations": {
+    "production_module_imports": [],
+    "shared_inputs": "The six captured controls and saved local gain/integral/remainder interval endpoints.",
+    "production_source_read": "path_enclosure.py read for schema/semantics; not imported or executed.",
+    "backend": "Python Fraction; no Decimal interval operations, exp, logarithm or physical solver.",
+    "not_independent_of": "Physical coefficient model, inherited constants, input captures, local C4 interval certificate."
+  },
+  "read_scopes": [
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/PLAN.json",
+      "scope": "complete initial task plan"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/PATH_CONTROLS.json",
+      "scope": "all six selected rows and stages, masks, source state, source identities"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/code/path_enclosure.py",
+      "scope": "lines 1-310 read for output schema and physical definitions; never imported"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N32_P60.json",
+      "scope": "schema exploration and leading local records; not audited as a second run"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/N512_P60.json",
+      "scope": "entire output parsed and exactly audited"
+    },
+    {
+      "path": "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/inputs/e13c4/THEORY.md",
+      "scope": "prior C4 THEORY source sections on exact first variation/remainder, incoming uncertainty, numerical enclosure, representation and limits; same text read from full C4 path"
+    }
+  ],
+  "harness": "GPT-6 Astra research and coding v4.0.0 core, relevant validation/evidence instructions; blank template states not evidence"
+}

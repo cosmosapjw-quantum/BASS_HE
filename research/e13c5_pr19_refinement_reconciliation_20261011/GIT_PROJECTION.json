@@ -1,0 +1,2089 @@
+{
+  "schema": "bass-he-e13c5-additive-git-projection-v1",
+  "prefix": "research/e13c5_pr19_refinement_reconciliation_20261011/",
+  "complete_archive_payload": false,
+  "complete_NCP_runtime_inputs": true,
+  "projected_archive_files": 244,
+  "git_only_sidecars": [
+    "ARCHIVE_IDENTITY.json",
+    "GIT_PROJECTION.json"
+  ],
+  "projected_bytes": 7080894,
+  "projected_files": [
+    {
+      "path": "CLOSEOUT.json",
+      "bytes": 3053,
+      "sha256": "5a11b52fca80623f01625b31cdf14d7b9ab58e4cf50f2ffcf610e56eb82f7ec1",
+      "git_blob_sha": "493005932bf7e5fd0553319046ab6c9ec26e03e2"
+    },
+    {
+      "path": "CONTINUATION_LOCK.json",
+      "bytes": 3917,
+      "sha256": "a1ccb4f352a7bd12d97419b09dc41bc2782332ae01c4a7b8173f3cdd3bcdbef7",
+      "git_blob_sha": "b8d4220e322a804f360b8b0242fe6c48bce4582e"
+    },
+    {
+      "path": "CONTINUATION_NUMERICAL_SUMMARY.json",
+      "bytes": 5204,
+      "sha256": "70b596a4a66f04a240df0e5f2637e808f8a2e8ae6c9014ef6f537e9c892cacd7",
+      "git_blob_sha": "9552eafdab5e4a2964372dc6fbbd823e9b5059b8"
+    },
+    {
+      "path": "CONTINUATION_REPORT_KO.md",
+      "bytes": 18365,
+      "sha256": "98efd02c7ed226d1a73d3401fc6121d09468bb5c4a10f84f6a5cd1daa73fc390",
+      "git_blob_sha": "80ae776a0f257ae677b416a1f18cf43d98e50d03"
+    },
+    {
+      "path": "EXECUTION_LOCK.json",
+      "bytes": 1881,
+      "sha256": "6a66683c2f28b0ed35b0914064129815481b7ff5f907f779150b62ef4c12e852",
+      "git_blob_sha": "de4ad810f8b91b4a8db370dee7d1bd5ebe10ea35"
+    },
+    {
+      "path": "FILE_MANIFEST.json",
+      "bytes": 179055,
+      "sha256": "f6d86d6c8f6bc753c8f40eb44189c93ac03898feae602db72aa85c6e8d4f132b",
+      "git_blob_sha": "33a3ecbb02df74205936b863a4d5f697ff30b512"
+    },
+    {
+      "path": "HARNESS_PROVENANCE.json",
+      "bytes": 822,
+      "sha256": "2b7a51a9cd0ec5a9f2f5316a4c1a6a4a3489b437eb048868395be378bc25baec",
+      "git_blob_sha": "f5bea85175cbe7d05673d23141b7ef3f581ce85f"
+    },
+    {
+      "path": "INDEPENDENT_LINEAGE_REVIEW.json",
+      "bytes": 12931,
+      "sha256": "0253a6c5e33adf84438e07437deef2e12eba231cc895ac4bf64479e77f207635",
+      "git_blob_sha": "ebf658c0199414814109b21042b8f16faa7062f0"
+    },
+    {
+      "path": "INDEPENDENT_LINEAGE_REVIEW_KO.md",
+      "bytes": 15637,
+      "sha256": "900b69a2c05efebb198a169ec9415932333e4cee489f9bcc5bf1c47432b7263b",
+      "git_blob_sha": "f4afbb9510049bb84c6855c4edb25b9449285970"
+    },
+    {
+      "path": "INDEPENDENT_REVIEW.json",
+      "bytes": 37948,
+      "sha256": "5d492eb3f181d31ee4a29569ba28609f550c48d1827502ac87b987dbc6228b8a",
+      "git_blob_sha": "8ab25d8529666574d2a940ec4970f5cf2a967482"
+    },
+    {
+      "path": "INDEPENDENT_REVIEW_KO.md",
+      "bytes": 14149,
+      "sha256": "5b596c5d4a4725981b519c991ea75ad78d9ec2127108b20638dfdab7162d999d",
+      "git_blob_sha": "ae15ed9faa90918902080a9e30fd3e3f3c576124"
+    },
+    {
+      "path": "LINEAGE_ADDENDUM_KO.md",
+      "bytes": 4583,
+      "sha256": "bbd4d76a3d5491d78565c9ec526faa0af3b8a4bad0e49d81d9b33f24b61f83cf",
+      "git_blob_sha": "be4942473ae04cb50276fc06677c3a824466d8ff"
+    },
+    {
+      "path": "LINEAGE_RECONCILIATION_CONTRACT.json",
+      "bytes": 3664,
+      "sha256": "334c77ea0b5af3c0e4d237756467231823cc6aac7500cf3fdabf269948c22177",
+      "git_blob_sha": "0e6ef57daf043cee39924abf0350758d8bccc0c1"
+    },
+    {
+      "path": "NCP_CONTINUATION_CONTRACT.json",
+      "bytes": 4499,
+      "sha256": "330df4e11c105772171ff6b8a7a9ab31f2932c36a73a0fcf3e3d1fc81ad96552",
+      "git_blob_sha": "cc8ea429e9aa9087e895782cb1123be13f03e96d"
+    },
+    {
+      "path": "NCP_EXECUTION_CONTRACT.json",
+      "bytes": 2825,
+      "sha256": "36230af43061c0bcc77f479cc5dc9c31ed241acd45ef7d6dc9c48954855934eb",
+      "git_blob_sha": "3476d7bf0ff10684559a117d3a76bec35120b818"
+    },
+    {
+      "path": "NCP_LOCAL_CODEX_HANDOFF_KO.md",
+      "bytes": 10753,
+      "sha256": "7c5519e0a44892326c43d30a06b42d449dd40665f9bcef8f12d0828217942e4c",
+      "git_blob_sha": "ed443347df9588e5f61bb1f1d31148526c18558c"
+    },
+    {
+      "path": "NEXT_DAG.json",
+      "bytes": 3097,
+      "sha256": "a2970056b0378c765f0c79d3bf15a93dd3cdfc587e7297e06b32b9b626ae2467",
+      "git_blob_sha": "e3c36754022e1adc579a810294b74f82ca08fd43"
+    },
+    {
+      "path": "PHYSICAL_RESULT.json",
+      "bytes": 12562,
+      "sha256": "4b1a02b832e96869922f7aa0f8795c2b770451bbff1ec0ee26769cce8f305c98",
+      "git_blob_sha": "5e1841a4776ca43f8633d1bc14357c9ce2860dd8"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 5031,
+      "sha256": "8e883b3b8a156e403460b7e270f104719698651fa411e467289a25fd85f26625",
+      "git_blob_sha": "55c20a556d27fd5aacb6c0fbb70e6f5c66a124d1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2251,
+      "sha256": "44fa044db86819b74fc1c85e88f91be4fd2f2fb01bd95e9e9ecf5bb894148c8c",
+      "git_blob_sha": "533a2d3b23abb94f7fbe9e114c47c6439742c0d9"
+    },
+    {
+      "path": "REPORT_KO.md",
+      "bytes": 22124,
+      "sha256": "bbd365f81ab0fabf29135db3367728ad193dd48b722be9781061a76a7d6bfd2f",
+      "git_blob_sha": "57a441313e563a7c41984a1ad015cab84df47840"
+    },
+    {
+      "path": "THEORY.md",
+      "bytes": 16961,
+      "sha256": "16ef3e4f7ed51c2ace87f7e36570917f3a1074c55dfe7bce5d9c7849d9c069e5",
+      "git_blob_sha": "ab2ebb4a2e6c52b8e61afcd2c3c92c6083465eac"
+    },
+    {
+      "path": "code/build_continuation_report.py",
+      "bytes": 21744,
+      "sha256": "b7200db911589a416e6e58739e2753adcb680384ec4b90432a7db151d6059618",
+      "git_blob_sha": "024e925f8264fca8e839d601ce15c8828f962fa6"
+    },
+    {
+      "path": "code/build_report.py",
+      "bytes": 21845,
+      "sha256": "2cee3facb84d7007f4531f2713cd5d86dc1de2bc97359b1c9e987f548ea70c61",
+      "git_blob_sha": "5fa519143e5a9c39f464a4a5753bba06ae663d9a"
+    },
+    {
+      "path": "code/check_ncp_boundary.py",
+      "bytes": 6940,
+      "sha256": "77d63f540fdeb7aba08a51323c95f3e8ff0f4698851016e6cc8fb74981378db7",
+      "git_blob_sha": "81c6866e16b6fbf83497680bf2b81f6bec89481b"
+    },
+    {
+      "path": "code/directed_interval.py",
+      "bytes": 9103,
+      "sha256": "ce4a44b11d1c0a3a5c52861033fa817a587bca9a5b852fab48329213b9a732e5",
+      "git_blob_sha": "35a6a17c50e5a611bd8e3616732f05df7639a806"
+    },
+    {
+      "path": "code/lineage_reduction.py",
+      "bytes": 28050,
+      "sha256": "dd8796ae232d3d72384df14263658d1e48e87a8fad6982f64a6ab811ce2eb985",
+      "git_blob_sha": "e5a56bcbe5d60b0bd5ae81816f7d7ba64732d0ca"
+    },
+    {
+      "path": "code/local_enclosure.py",
+      "bytes": 20261,
+      "sha256": "fade8983b7db8974c479ac4473424b7d572e8f7a0f09c042669fb3c40c32e370",
+      "git_blob_sha": "b63284af5e7e100f33199e54f7ce1e34c38edde5"
+    },
+    {
+      "path": "code/ncp_continue.py",
+      "bytes": 10931,
+      "sha256": "38957cb24f58b5d36dd4823ce7e642c708f0f4cae725ac2377d3f824b2b41626",
+      "git_blob_sha": "25f9dedcfc011544a5ecaffe864e6ad7f6a952cf"
+    },
+    {
+      "path": "code/ncp_execute.py",
+      "bytes": 12445,
+      "sha256": "098e5bf7531e227d407e94cef36dbbfe26bca9cdde9583c8d416836608602bed",
+      "git_blob_sha": "ad0a43c7c94af7f5fdf893b05f64a00f0cb9d857"
+    },
+    {
+      "path": "code/path_enclosure.py",
+      "bytes": 21111,
+      "sha256": "c424c8b980ece05618e427e4373f13a41fe7b4d02a8ddd4a0b3fa7da30109d73",
+      "git_blob_sha": "99a4dcc61af4baebd4a058b85d2dfb1a052b37cc"
+    },
+    {
+      "path": "code/run_recorded.py",
+      "bytes": 2324,
+      "sha256": "1af302354787f5e5e185b9fe66f97d5bb21a9fdb9a1b3c4650d26a8189b17e6b",
+      "git_blob_sha": "e58adb3261e7c5b5983a7fe655ceee540d919365"
+    },
+    {
+      "path": "code/summarize_results.py",
+      "bytes": 9584,
+      "sha256": "06f59f39d19b9ca652483d0267a19d62243317daa4628664510a28d3d0121108",
+      "git_blob_sha": "63eda4b3ea8cfaf23ccbe8d2be138fae8aa1b739"
+    },
+    {
+      "path": "evidence/N128_P60.json",
+      "bytes": 416248,
+      "sha256": "a7215a1a4a7af5c7b53bc9e41da47a4ba108301f06578a4075866310945d9835",
+      "git_blob_sha": "5fcda9d58ac8a5862bd79c5059fc328b17207011"
+    },
+    {
+      "path": "evidence/N128_P60_START.json",
+      "bytes": 1412,
+      "sha256": "8f8c24a60e4841d84c97ddd71538dd349f3b943515331ed0ed0ef8c37e15a058",
+      "git_blob_sha": "d7f0d7b96591b2a25c3e73533ea87964aa490df4"
+    },
+    {
+      "path": "evidence/N32_P60.json",
+      "bytes": 414929,
+      "sha256": "1ed576d35f9b120db3fa342aa30a504d254a76c54d52e0a391bba8ac0876d612",
+      "git_blob_sha": "a157186030c32842bfdda038444dfc9beb0cd0e1"
+    },
+    {
+      "path": "evidence/N32_P60_START.json",
+      "bytes": 1408,
+      "sha256": "f394b7b3c906a6793941a0d784f894b8b8bccf034223a1e16469042ecc32637a",
+      "git_blob_sha": "14522ce353cddb503a923a7905c44c9708c90af2"
+    },
+    {
+      "path": "evidence/N32_P80.json",
+      "bytes": 472249,
+      "sha256": "42a4d82982c3e7f416328259206f8fa5fe8593ff18a0b8fa5cf77cd815adfae0",
+      "git_blob_sha": "00bbcef0c30d9f32b43a1391457602f6d0d4f904"
+    },
+    {
+      "path": "evidence/N32_P80_START.json",
+      "bytes": 1408,
+      "sha256": "169ec99d287b30f37313e883c123aa6db22c8b7aed4e9b5f7d0c4e25bccfc78d",
+      "git_blob_sha": "b4cd4096430f89e9574af10e77781ed8a337572d"
+    },
+    {
+      "path": "evidence/N512_P60.json",
+      "bytes": 417016,
+      "sha256": "5a3b9f17c6d250afed0e4270e4cce71d22d930a482084bc12c3e7dcc66cb68d7",
+      "git_blob_sha": "5afd3e142266db87988f5839b1c48d84982d3ffa"
+    },
+    {
+      "path": "evidence/N512_P60_START.json",
+      "bytes": 1412,
+      "sha256": "90768e47cbcce5a3d5a4298f6c9d70a003e3e78c94cbb8102387733bd698895f",
+      "git_blob_sha": "733b6a0ad9c92daa594fbd2ec2e6197e7988e86c"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/CONTINUATION_IDENTITY.json",
+      "bytes": 3181,
+      "sha256": "e0d3b76ced73b6c697f18d9e3d7562e8d487d2b88101805dce24faaa1b670d4a",
+      "git_blob_sha": "cc1b09b93ec37d585f6bb664556b9dcaa410a661"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/NCP_CONTINUATION_RESULT.json",
+      "bytes": 843,
+      "sha256": "eb8739a02d11468e70f44c1c5aff8d5a8fa13c82f6586c26dd432070a3dd2371",
+      "git_blob_sha": "f35c55144ba8d02e48541845e9c6410dbeccab4a"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/PHYSICS_HOST_RUN.json",
+      "bytes": 756,
+      "sha256": "0baf0418db70a693f77e112ee734d920800bc0717f8e08115bb9dc4aaf9be601",
+      "git_blob_sha": "b3159581846e6eb64f91578e02b78361813a3505"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/PHYSICS_HOST_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/PHYSICS_HOST_stdout.txt",
+      "bytes": 515,
+      "sha256": "24e01e323a217a27bf2d1838049f46903fe2daebccb607877ca4822a021b3d51",
+      "git_blob_sha": "a159f4d2e45d24f792efa826ecbdb61b83bd22dc"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/RETURN_MANIFEST.json",
+      "bytes": 1492,
+      "sha256": "b26ef77449bd5d8d09e429dbf710caeec6a5f98c41c49ade2fd0485777f04d3a",
+      "git_blob_sha": "3801f02f3a12fcbd2d27a613252b5f00998ca87d"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/physics/ARITHMETIC_SMOKE.json",
+      "bytes": 501,
+      "sha256": "fc18c1218a80e641aa57481b87f78b0068155e22e231a4c6eb79181577636700",
+      "git_blob_sha": "740f07bcd052752e5ee62b2703fed533f89468fa"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/physics/HOST.json",
+      "bytes": 4682,
+      "sha256": "3c5ea027c5553da762bfa901a27f7e91f63db540a99e47200ffa3527423ca08a",
+      "git_blob_sha": "7c9f0e8bb13eec5eb9fdc2114472a70f7f8fc388"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/physics/IDENTITY_CHECK.json",
+      "bytes": 1753,
+      "sha256": "251b86184079efec836eec3d492faf2d3c79744f1a8a2568eabb2a50eb899176",
+      "git_blob_sha": "dd6670fdb3e6d115bed48342e609698404c90444"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_GUARD_FIXED/physics/NCP_RESULT.json",
+      "bytes": 547,
+      "sha256": "b66ec531b49540203f0e9df5fa58d9466bc6b6014fa593949d2118c1ef00d202",
+      "git_blob_sha": "810846e8f7ae5c2e7103bc2a8619bf9d3015985f"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/CONTINUATION_IDENTITY.json",
+      "bytes": 3181,
+      "sha256": "a171ef6d61223be6521970d51aa2d26c56a004fd71963c7d57c5b8e22334b960",
+      "git_blob_sha": "2feb2da10fc7c0b09ee72097e9e125c7df6053b7"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/NCP_CONTINUATION_RESULT.json",
+      "bytes": 843,
+      "sha256": "e9effce56d504c5be381dcfb03698ee4f0b19516e6741cd14bdd0842d7525b8f",
+      "git_blob_sha": "9ccf36432311e5b79b8ddae3517c3bcd07dd348a"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/PHYSICS_HOST_RUN.json",
+      "bytes": 748,
+      "sha256": "ecb1f40677b1385ae75edcae66ea8ab5a8edefad1111f59c0a1739bc2a310123",
+      "git_blob_sha": "1f142aaec743c2413070c84970278830ddc4528e"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/PHYSICS_HOST_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/PHYSICS_HOST_stdout.txt",
+      "bytes": 515,
+      "sha256": "a941754a06155181f97956bb09e19e855051bac4b2d0cde8fbc23607157d6fb7",
+      "git_blob_sha": "4d857769ca02d96d9f4b86fa9380698962d6cff1"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/RETURN_MANIFEST.json",
+      "bytes": 1492,
+      "sha256": "6b048f0f49f89e5d303f79ff83850f0e76b3db82ec3e3edbef0c9d6a492ab35a",
+      "git_blob_sha": "cf532da45c022b058e303f037567f97a67d5011c"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/physics/ARITHMETIC_SMOKE.json",
+      "bytes": 501,
+      "sha256": "fc18c1218a80e641aa57481b87f78b0068155e22e231a4c6eb79181577636700",
+      "git_blob_sha": "740f07bcd052752e5ee62b2703fed533f89468fa"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/physics/HOST.json",
+      "bytes": 4682,
+      "sha256": "6ba72ee296cad6470e06f0557df48763917945934196b9d3e0f539b30ce94864",
+      "git_blob_sha": "56541c618247c9d1f3d8acbf8044e5b18cb007e1"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/physics/IDENTITY_CHECK.json",
+      "bytes": 1753,
+      "sha256": "251b86184079efec836eec3d492faf2d3c79744f1a8a2568eabb2a50eb899176",
+      "git_blob_sha": "dd6670fdb3e6d115bed48342e609698404c90444"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_ONLY/physics/NCP_RESULT.json",
+      "bytes": 547,
+      "sha256": "bdcfa38c64a1f2b6c967e9d52749dc28c3b12a10d48df27b7ecb59f6a40ef8f2",
+      "git_blob_sha": "7cd80537add58fba922b1677caa0b04736fd176d"
+    },
+    {
+      "path": "evidence/NCP_CONTINUATION_VERIFY_TRANSPORT_FAILURE.json",
+      "bytes": 761,
+      "sha256": "03c5a8a6103979e825b54243a210d3334dcd991b416ca2af5f749ffcf1f14f35",
+      "git_blob_sha": "9e152bad8c47ca235564b37063bf185b3450a4b9"
+    },
+    {
+      "path": "evidence/NCP_VERIFY_ONLY/ARITHMETIC_SMOKE.json",
+      "bytes": 501,
+      "sha256": "fc18c1218a80e641aa57481b87f78b0068155e22e231a4c6eb79181577636700",
+      "git_blob_sha": "740f07bcd052752e5ee62b2703fed533f89468fa"
+    },
+    {
+      "path": "evidence/NCP_VERIFY_ONLY/HOST.json",
+      "bytes": 4686,
+      "sha256": "297dc002c17d25b2902b722eabb648df3773bd95387c0845697d36cbc1ca14b0",
+      "git_blob_sha": "6bc03dc70fcd8cf6300830699f19ff6242f34fb9"
+    },
+    {
+      "path": "evidence/NCP_VERIFY_ONLY/IDENTITY_CHECK.json",
+      "bytes": 1753,
+      "sha256": "251b86184079efec836eec3d492faf2d3c79744f1a8a2568eabb2a50eb899176",
+      "git_blob_sha": "dd6670fdb3e6d115bed48342e609698404c90444"
+    },
+    {
+      "path": "evidence/NCP_VERIFY_ONLY/NCP_RESULT.json",
+      "bytes": 547,
+      "sha256": "c879a9c9e911e81f2d5a12f2f3a8c1a37f87dc083ef49c1019cd6c8efdb5d569",
+      "git_blob_sha": "f495b21acd4ae6c4a438fb356846f7db58537a98"
+    },
+    {
+      "path": "evidence/OWNER_SAVED_EVIDENCE_CHECK.json",
+      "bytes": 26482,
+      "sha256": "881c0cdad9b87ef525a736ebac87137817c930defa21139ad106b1f64c192325",
+      "git_blob_sha": "00de1d5e0eed93e6d559220a2c820a7eac5ba353"
+    },
+    {
+      "path": "evidence/independent_recurrence/CONTRIBUTION_SUMMARY.json",
+      "bytes": 4521,
+      "sha256": "c02e06e3c104c12c13ca83f1253b0c060241ec2d6e6ec6eb25170465112a9a43",
+      "git_blob_sha": "55ad8e792042924d8612f9de68783f040ba76c0a"
+    },
+    {
+      "path": "evidence/independent_recurrence/CONTROL_CONTRACT.md",
+      "bytes": 1820,
+      "sha256": "6c7a2b4e034867ab59f293fd32656100618aa0e6a9115e973045c4e13a717113",
+      "git_blob_sha": "29f85a0e61541c333692bf7c15cfc0404a587f4f"
+    },
+    {
+      "path": "evidence/independent_recurrence/CONTROL_REPORT_KO.md",
+      "bytes": 8750,
+      "sha256": "59f1e7acfca0ba42e0a54a565ddcb3870cfd63d905743c5f604cc8f655a8838f",
+      "git_blob_sha": "6e462c838b9ec66e69b46f14eb45790ff0af6010"
+    },
+    {
+      "path": "evidence/independent_recurrence/EXACT_TOY_RESULTS_v1.json",
+      "bytes": 15732,
+      "sha256": "f1a42bf3751b2a522f6a465e189e00a8a4a2da8e83c927d10c77e3ad1afdd13e",
+      "git_blob_sha": "b774a6586ad2310dab68aa22a9289318ee08e543"
+    },
+    {
+      "path": "evidence/independent_recurrence/EXACT_TOY_RESULTS_v2.json",
+      "bytes": 15655,
+      "sha256": "8fa46fa65085fc7e46918923df431990ca3ffbb5df09759f63fdf482797a03ab",
+      "git_blob_sha": "5b797697f5d2028b0e50806064dc581917c7959a"
+    },
+    {
+      "path": "evidence/independent_recurrence/FILE_MANIFEST.json",
+      "bytes": 4600,
+      "sha256": "cd875378887e21feacb2054472b97663610f3fdf604d829bb6e3fefa37dd9921",
+      "git_blob_sha": "a184c8d5d8d1f30e82c952c1ab12ebf3d7725a78"
+    },
+    {
+      "path": "evidence/independent_recurrence/FIRST_FAILURE.md",
+      "bytes": 1456,
+      "sha256": "5185bdc9b25ff2e8a194e85964c7f175f61401f3ee78a335422087ac7fb2a80a",
+      "git_blob_sha": "d204f3f5a03011f7fe142cc0cc4870628a71fa2a"
+    },
+    {
+      "path": "evidence/independent_recurrence/SAVED_PATH_AUDIT_v2.json",
+      "bytes": 428229,
+      "sha256": "0c25cda1e5896c4b0e7b5119f747d5ad5002dbcfbfa377893790444ce38b1946",
+      "git_blob_sha": "c83a861c38e77a6715416f0636eaea18cac72b88"
+    },
+    {
+      "path": "evidence/independent_recurrence/audit_saved_path.py",
+      "bytes": 21274,
+      "sha256": "93924165bc95a484ad4a6cd520d6264d180f8ccf86c7c04fec0105ef2c811ca9",
+      "git_blob_sha": "31d55776e7d7e464f669cd6f6d2a8e5dc988493c"
+    },
+    {
+      "path": "evidence/independent_recurrence/exact_recurrence_toys.py",
+      "bytes": 12825,
+      "sha256": "bba710d94b751a78dde186956ca668a95a4219d5ed0ee73bcbe652b4334590ec",
+      "git_blob_sha": "2e32b997f8e7959cdf8b23f565e3a4abe01a64d2"
+    },
+    {
+      "path": "evidence/independent_recurrence/record_control_run.py",
+      "bytes": 2347,
+      "sha256": "f14626902f64145a5fa690ff06766c658b9dfc9fc4e7395798c60135a0b685c0",
+      "git_blob_sha": "f9ceecbd04b5358236e5a29016413587b7267655"
+    },
+    {
+      "path": "evidence/independent_recurrence/saved_audit_run_v1/FINISH.json",
+      "bytes": 1700,
+      "sha256": "692cfca275115ebc013e1491846697225d350c3e010d179586ba270de2457566",
+      "git_blob_sha": "f420c1832e017e29e76d5dbf905a9118a714de63"
+    },
+    {
+      "path": "evidence/independent_recurrence/saved_audit_run_v1/START.json",
+      "bytes": 1514,
+      "sha256": "960cfac67eed0b33cc3b34daa2d86ca7b4669af0a0bb2cb7f312f4cf60cc8e13",
+      "git_blob_sha": "74df5c240714ef6c85854ad3e6dfc47ef8b34149"
+    },
+    {
+      "path": "evidence/independent_recurrence/saved_audit_run_v1/audit_saved_path_failed_source.py",
+      "bytes": 21251,
+      "sha256": "6872b2e1fa3289dcbea5fd8e4c7f8b18216e97e496e78403f41557ee19ec8bcf",
+      "git_blob_sha": "ea2ae8181ea055278bb0a8d3171608223e537a26"
+    },
+    {
+      "path": "evidence/independent_recurrence/saved_audit_run_v1/stderr.txt",
+      "bytes": 915,
+      "sha256": "67b7f6a25f0062332db29d685530d68dfbb399d136fd7e3948069feff7812af1",
+      "git_blob_sha": "d3d024ec94bb60e3f40632a9709f94db6d76115a"
+    },
+    {
+      "path": "evidence/independent_recurrence/saved_audit_run_v1/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/independent_recurrence/saved_audit_run_v2/FINISH.json",
+      "bytes": 1700,
+      "sha256": "2f76b642d4c018f1fdeeeaefd1886e4b60fcc7d876b44c7cb490e3e26ae8ab45",
+      "git_blob_sha": "7e59c6b9dd8ea16c029da0547f13e4be2ae7e001"
+    },
+    {
+      "path": "evidence/independent_recurrence/saved_audit_run_v2/START.json",
+      "bytes": 1514,
+      "sha256": "a7c15c204a85153227790dd026bf26059afd99b4d7a22bb6bc5c3dc60d2ef21d",
+      "git_blob_sha": "b009a93c70dbe4f1462cfea416903bb4937cf5df"
+    },
+    {
+      "path": "evidence/independent_recurrence/saved_audit_run_v2/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/independent_recurrence/saved_audit_run_v2/stdout.txt",
+      "bytes": 181,
+      "sha256": "34997ce8f031f648ea51fca034faa15c6e366d36bd96be399a081644c2e9d1fe",
+      "git_blob_sha": "527bbdad860bfc34e8288b61cbedb51298c22e1e"
+    },
+    {
+      "path": "evidence/independent_recurrence/toy_run_v1/FINISH.json",
+      "bytes": 959,
+      "sha256": "4edc9be7de32a8bb0606a4f1de87d7d3f55773bc29b6ac633c09291bba316f97",
+      "git_blob_sha": "427a338f8f6e85c31fa242685feb37d30311e3e3"
+    },
+    {
+      "path": "evidence/independent_recurrence/toy_run_v1/START.json",
+      "bytes": 773,
+      "sha256": "efc479ef46f2b066e4ecc683d853bf3c5cba191a6782e08e22338d42e76da232",
+      "git_blob_sha": "65ada62cfdf2b26f6d2cb3552e88e71a5a083ed3"
+    },
+    {
+      "path": "evidence/independent_recurrence/toy_run_v1/exact_recurrence_toys_failed_source.py",
+      "bytes": 12664,
+      "sha256": "60f9aec6b1cd27a7b8c9d36d82aa0d3a792f7e88fdc6c23f8cb4dfd159befc9a",
+      "git_blob_sha": "127f395acc6d6e19a90f19bf16fec90e2908bc10"
+    },
+    {
+      "path": "evidence/independent_recurrence/toy_run_v1/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/independent_recurrence/toy_run_v1/stdout.txt",
+      "bytes": 204,
+      "sha256": "5d3bf6ec420e85fc0e45af3b613d53c8f01251d08c300aa0e6a2c1a334b7ea80",
+      "git_blob_sha": "4c5bd988d701f9d05bca432cfd4abc7d1264e022"
+    },
+    {
+      "path": "evidence/independent_recurrence/toy_run_v2/FINISH.json",
+      "bytes": 959,
+      "sha256": "663e4165745d8fe6c42ab4093e3b0af99908e85044cf331b2811ac7317550adc",
+      "git_blob_sha": "3082c9fa81cda1eb8028f50253c55c4dab76e4e2"
+    },
+    {
+      "path": "evidence/independent_recurrence/toy_run_v2/START.json",
+      "bytes": 773,
+      "sha256": "e9aa2f61d1a16b5b7f979898c19fb9f0e8560596adc512dcf0df555c18d36c08",
+      "git_blob_sha": "d10cf7aee650248282ee85182f73c74568adaa73"
+    },
+    {
+      "path": "evidence/independent_recurrence/toy_run_v2/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/independent_recurrence/toy_run_v2/stdout.txt",
+      "bytes": 139,
+      "sha256": "e1f6e8b0efb3e9a078b58a468d0879f62e4ff9999025e684fdaf864a0e6d9017",
+      "git_blob_sha": "2ecaca744905f13aa7b16253694c571b1dbabf7d"
+    },
+    {
+      "path": "evidence/intake/GIT_CURRENT_HEAD.json",
+      "bytes": 811,
+      "sha256": "e09022d1e8ed2ee69deccf80e2a5773a10e37be2057ba9b5724f96a45779058f",
+      "git_blob_sha": "cabca2b38cd60e51cc30f7a8a0371424ef55d6e2"
+    },
+    {
+      "path": "evidence/intake/INPUT_SEAM_INVENTORY.json",
+      "bytes": 108179,
+      "sha256": "e3553f99a82ce0a67289b1052f21456afa04252efa309a7cb6e2eda19e02f32b",
+      "git_blob_sha": "c87ac9978faa21ea3499c01eea810db984d5f3b4"
+    },
+    {
+      "path": "evidence/intake/REMOTE_PREPARED_HANDOFF_EXCERPT.md",
+      "bytes": 1241,
+      "sha256": "0e6c311a656c53e8bb1cccaacbd7ce2bb9e83603d87376279c7f9c857d4bc878",
+      "git_blob_sha": "df831695dbcaae4c8accf5a1adfce83c81e839bc"
+    },
+    {
+      "path": "evidence/intake/RETURN_INVENTORY.json",
+      "bytes": 16563,
+      "sha256": "4c05f41ec0e10fd21dd7fe5d8a897730fcf243966b7f530e6a533b68a0272ed2",
+      "git_blob_sha": "5be554bf4ed5aa96e880a8cd30cd3347873ffca1"
+    },
+    {
+      "path": "evidence/intake/extract_inherited_seams.py",
+      "bytes": 7286,
+      "sha256": "b50b2684ec23297410eceb16a5a20af7ac8fe07fe9277aaa57277a56255100d3",
+      "git_blob_sha": "a60f82a6be9923e0fcef4ae2849ce8059effb843"
+    },
+    {
+      "path": "evidence/lineage_control/CONTRACT.md",
+      "bytes": 3832,
+      "sha256": "f4bab213828716ba8bcff06fd86392a08ec7afb8c684c86ee0a9d293c754777c",
+      "git_blob_sha": "1629a5d19ffd4f3bde1e03e896930e185a88f459"
+    },
+    {
+      "path": "evidence/lineage_control/CONTRIBUTION_SUMMARY.json",
+      "bytes": 4579,
+      "sha256": "844f5ed2fe9a2c19416e864fbb7467e03fbcdabc10ed50cbb692555d6b686176",
+      "git_blob_sha": "c0845b2aa7a761ce49eea95d5a51bbad415d7da6"
+    },
+    {
+      "path": "evidence/lineage_control/FILE_MANIFEST.json",
+      "bytes": 4988,
+      "sha256": "44d0e2ada1c8cfaf124a604251c0f14201726b7ba68d3849a3a3316ce5904247",
+      "git_blob_sha": "24195dfcda5ac60773ea44f3ccddad92f48d6a1c"
+    },
+    {
+      "path": "evidence/lineage_control/MATH_DISPLAY_FIX_RECEIPT.json",
+      "bytes": 947,
+      "sha256": "701efc4817dd25a94d3290482546c91b299ed6265fd80f01dcd820d59dbd49db",
+      "git_blob_sha": "d558b4fb03c6c9d8ea13b6a9d8d55ab17188c489"
+    },
+    {
+      "path": "evidence/lineage_control/PROTOCOL_CHECK.json",
+      "bytes": 465,
+      "sha256": "00a2ffa1d748ddccc8c6b09bd77a75210e7c7607dfe8cbadc14339cc2faa85f1",
+      "git_blob_sha": "9dbe241da42152fd536e03a9410e7c682b93bab7"
+    },
+    {
+      "path": "evidence/lineage_control/REPORT_KO.md",
+      "bytes": 11785,
+      "sha256": "30c75920781b0ebbd683ebdf83387cc0d105624e8e44108f23b3af5e4ce401b4",
+      "git_blob_sha": "8b59efb20a4413862a9d39ecb1c88c6115d4f7c9"
+    },
+    {
+      "path": "evidence/lineage_control/REPORT_KO_pre_math_display_fix.md",
+      "bytes": 11757,
+      "sha256": "89cc61aa8115cdbb3230182d3bf55bd850d0f77465d9ccd0bc52409007f7883d",
+      "git_blob_sha": "93da00727fbf8e6fbb13cb0569737454a70dfb03"
+    },
+    {
+      "path": "evidence/lineage_control/lineage_reduction.py",
+      "bytes": 28050,
+      "sha256": "dd8796ae232d3d72384df14263658d1e48e87a8fad6982f64a6ab811ce2eb985",
+      "git_blob_sha": "e5a56bcbe5d60b0bd5ae81816f7d7ba64732d0ca"
+    },
+    {
+      "path": "evidence/lineage_control/output_v2/NUMERICAL_IDENTITY.json",
+      "bytes": 687,
+      "sha256": "7cec4ba2db9e808fff72ef787dbc8317f8c513a53fae365203402d82d227b65a",
+      "git_blob_sha": "e522593cc27a73864f5786e280ed3074a3a415cf"
+    },
+    {
+      "path": "evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+      "bytes": 419815,
+      "sha256": "f0681b18032e4de92db2a4d4c867d00895cf761bbdb5a57c571fba6e0e01bb69",
+      "git_blob_sha": "263535a37774c08e16a7dbc2a1a9c19937e23a1b"
+    },
+    {
+      "path": "evidence/lineage_control/output_v2/RESULTS.json",
+      "bytes": 870091,
+      "sha256": "2fd04e6c6f300bbe19344fcf7d0e000174241ebd719716f897f8f6c5104d6bd9",
+      "git_blob_sha": "8e425887b8d9431161f869856aab083ee5fe6335"
+    },
+    {
+      "path": "evidence/lineage_control/protocol_no_diagnostic_run/FINISH.json",
+      "bytes": 2663,
+      "sha256": "dc6f49ba463787f0c97342cd5b96130752ca92920dc56dcf510924c12d2659ab",
+      "git_blob_sha": "89d7c97a3ecdbe1cb10e9bae79662dc0318a02ac"
+    },
+    {
+      "path": "evidence/lineage_control/protocol_no_diagnostic_run/START.json",
+      "bytes": 2477,
+      "sha256": "6fbdece967ff5453db4251dc9fd280d30b9c3aa78d54811b6c26b1c268ce2799",
+      "git_blob_sha": "e9c705448662ec0343d3449234d1240ab2956f38"
+    },
+    {
+      "path": "evidence/lineage_control/protocol_no_diagnostic_run/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/lineage_control/protocol_no_diagnostic_run/stdout.txt",
+      "bytes": 230,
+      "sha256": "429e9fc497040642b58fdde6c004808defa52f0bad3e22453c6acbf4951d2e74",
+      "git_blob_sha": "ecbdfa789b3ddf809923056f284d97dc1c74dcfe"
+    },
+    {
+      "path": "evidence/lineage_control/record_control_run.py",
+      "bytes": 2347,
+      "sha256": "f14626902f64145a5fa690ff06766c658b9dfc9fc4e7395798c60135a0b685c0",
+      "git_blob_sha": "f9ceecbd04b5358236e5a29016413587b7267655"
+    },
+    {
+      "path": "evidence/lineage_control/run_v1/FINISH.json",
+      "bytes": 3019,
+      "sha256": "715bd643e8abd489f9616d8adf8826ec282403d88009f645eb68a8d7160a21c6",
+      "git_blob_sha": "3c586c40353b91c40d2b45c7d5badc5556b6c91e"
+    },
+    {
+      "path": "evidence/lineage_control/run_v1/START.json",
+      "bytes": 2834,
+      "sha256": "ca709e9f8d1676902613aae8f217a339ba57750d89edad7396f7e929fbf87c5b",
+      "git_blob_sha": "86aff42dbed42cd44599360f5b8cd47b05c1506f"
+    },
+    {
+      "path": "evidence/lineage_control/run_v1/lineage_reduction_initial_interface.py",
+      "bytes": 27774,
+      "sha256": "487ea005a8a4297f914fa6d0cfc5a03cd0737f81150b776f849991d4c4dc66f6",
+      "git_blob_sha": "14990dcf773f5c5a8f1f430ca6f93efbfb107714"
+    },
+    {
+      "path": "evidence/lineage_control/run_v1/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/lineage_control/run_v1/stdout.txt",
+      "bytes": 231,
+      "sha256": "fbd81b1a5bb7587acc52b30b4c685363e2f1cc133ddc941a452d481e6bbb45de",
+      "git_blob_sha": "f6318e33c756aaa91b21ee7de3fa54efdc0b956a"
+    },
+    {
+      "path": "evidence/lineage_control/run_v2/FINISH.json",
+      "bytes": 3019,
+      "sha256": "64e4597268b1e294d0edab2c5266d72be75215e1b644b5056e0f07e471c46942",
+      "git_blob_sha": "a2ca78876e34be110310d85531504db22753d7f7"
+    },
+    {
+      "path": "evidence/lineage_control/run_v2/START.json",
+      "bytes": 2834,
+      "sha256": "c3ed3e80d1d3430998fee98fa31742812474637ea1e9c919dc70d5b232768c67",
+      "git_blob_sha": "1a6e63bc98d5913cc728525890640d2deb8478e8"
+    },
+    {
+      "path": "evidence/lineage_control/run_v2/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/lineage_control/run_v2/stdout.txt",
+      "bytes": 231,
+      "sha256": "b7286fa1e81aec670184ae43dbce06b3277b1f214147d1992571ef65c4ed6f7e",
+      "git_blob_sha": "2c34b6283d7fe4633f388ab5fe592da30fa4bd6c"
+    },
+    {
+      "path": "evidence/lineage_intake/BASS_HE_E13C5_FIRST2_PUBLICATION_RECEIPT_20261011_e25039b.json",
+      "bytes": 2606,
+      "sha256": "0a0b23cabcd6a5244ca57a5c336605dd8ac1310f87dea137416218ef2fdd80f7",
+      "git_blob_sha": "71cd9356ea51541033fa0251d189639190392bdb"
+    },
+    {
+      "path": "evidence/lineage_intake/BASS_HE_E13C5_OFF700_PILOT_RECOVERY_RECEIPT_20261011.json",
+      "bytes": 1093,
+      "sha256": "78837e55d206b2a18f080cf08815c0f9f8caf5966d8369562ea36888b83050f4",
+      "git_blob_sha": "978fb5a364c7564347b82662fed1b4142c34b71b"
+    },
+    {
+      "path": "evidence/lineage_intake/BASS_HE_E13C5_PUBLICATION_RECEIPT_20261011_48f648cd.json",
+      "bytes": 2843,
+      "sha256": "3aaf119d5a69dad49391a97680c9d952b76080bdc628c4c73dec15e14fea0718",
+      "git_blob_sha": "359f342a8a953fd524fee4591ad43dd0e072467e"
+    },
+    {
+      "path": "evidence/lineage_intake/FETCHED_TEXT_PAYLOAD.json",
+      "bytes": 26309,
+      "sha256": "9ea02d80a936e21da70fc99473af5fac23303d4c76324d81cc09621c2429a0df",
+      "git_blob_sha": "2aae585022b605e4dcc91ee6c25be1ffcfe8e725"
+    },
+    {
+      "path": "evidence/lineage_intake/FETCH_METADATA_AND_IDENTITIES.json",
+      "bytes": 6611,
+      "sha256": "75edfedfcd50dcaa47599f46d5e11fe1873a9212e69d1e1cd128ea6864fe3f84",
+      "git_blob_sha": "5319c33e86cca978363ce0a971191632f3d22156"
+    },
+    {
+      "path": "evidence/lineage_intake/LIVE_PR18_PR19.json",
+      "bytes": 3484,
+      "sha256": "6a6be0f6716721e0be316e4799b10d4ef823fda1561dc8bbcf29c5f03ac7961c",
+      "git_blob_sha": "925e8ab95ec8d53d52111a33cbd653e2d32d9e2e"
+    },
+    {
+      "path": "evidence/lineage_intake/OPEN_PR_INVENTORY.json",
+      "bytes": 7606,
+      "sha256": "13e1369116170d6751ee5963b99190124d86b4e8b5e4a15ebddb9a1abf204c46",
+      "git_blob_sha": "eabf250230503f944e48693b28ef38c0c418699c"
+    },
+    {
+      "path": "evidence/lineage_intake/RECONNAISSANCE.json",
+      "bytes": 9903,
+      "sha256": "1c604c5c2158de91426e33eb54c145c195a5f8e523b73e2f3831d064a08110c7",
+      "git_blob_sha": "6ae570ab3893349a653107f592b931afa468164f"
+    },
+    {
+      "path": "evidence/lineage_review/EXACT_LINEAGE_EXECUTION.json",
+      "bytes": 783,
+      "sha256": "7ccbfe9aab8e35ae0d1d6c4ee66a84cbcecd47eb3767ea4a4ca639008f8cf076",
+      "git_blob_sha": "d9084093675c49bb2b471010fd58560c7258154e"
+    },
+    {
+      "path": "evidence/lineage_review/EXACT_LINEAGE_RESULTS.json",
+      "bytes": 23546,
+      "sha256": "ab437893f2137fe5a62e4ec4597993df3239aa08b2012af86f125cf6fb0b999b",
+      "git_blob_sha": "8d3f0be70e3b639492f22f326a04c1aebd1497ba"
+    },
+    {
+      "path": "evidence/lineage_review/EXACT_LINEAGE_START.json",
+      "bytes": 461,
+      "sha256": "b24fa73e2f76e4e9fd08cec5294f0740e6ddfb3dfaf2601084049c0db7c1bc0d",
+      "git_blob_sha": "d36030f3cef3cf6e634a3d69354858cd919e5324"
+    },
+    {
+      "path": "evidence/lineage_review/READ_FILE_IDENTITIES.json",
+      "bytes": 22253,
+      "sha256": "4667a4fb0da6e131eb343c6d6d20c386a4b200beabb9d6d4f5580164ecb1f85a",
+      "git_blob_sha": "0c496d6d79f240f77f7b1d2eee3b4257ca5c0f31"
+    },
+    {
+      "path": "evidence/lineage_review/REVIEW_SCOPE.md",
+      "bytes": 1739,
+      "sha256": "9ed2bd4e6b78be23bf7797800614132ae5e17123a04021293217de10550010c7",
+      "git_blob_sha": "d302b38888c491729038774a780afb3beeb3ae15"
+    },
+    {
+      "path": "evidence/lineage_review/exact_lineage_audit.py",
+      "bytes": 8792,
+      "sha256": "f9b846fc0e963712f7979040dc6768e237546f9cc3182eba60930f617ebeb53b",
+      "git_blob_sha": "66daca237fb8e3333f68e221d8ecdb1e3a1bdcfd"
+    },
+    {
+      "path": "evidence/lineage_review/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/lineage_review/stdout.txt",
+      "bytes": 143,
+      "sha256": "c1999124e3a9a3c1919b78c8f809048ac2544c02ebb9f72cdbb00c14c8d1c985",
+      "git_blob_sha": "8dad090a7143a2ab59e315947f4464f430714131"
+    },
+    {
+      "path": "evidence/lineage_theory/CONTRIBUTION_MANIFEST.json",
+      "bytes": 590,
+      "sha256": "d8a68fad0bc740add6877747e944cee29294094a6086a28663040da527690faf",
+      "git_blob_sha": "a20ebd04fb5f4657ade92ab51f47a76bb93704f5"
+    },
+    {
+      "path": "evidence/lineage_theory/LINEAGE_REDUCTION_CONTRACT.md",
+      "bytes": 12207,
+      "sha256": "f241fbc859c7c3ea94d30e13388fc0a1eae60691062b7e503b3209128d1b4c40",
+      "git_blob_sha": "961a632605c7c0c00790730b7ad1c76312991015"
+    },
+    {
+      "path": "evidence/lineage_theory/NEXT_DAG_PROPOSAL.json",
+      "bytes": 3138,
+      "sha256": "2d236895d57327c2493b494f318c22155ea2f56414346d6c12604b88afb9a1cf",
+      "git_blob_sha": "c4b32cbf58ea3d2d4f1cda41bba74afd8feee6dd"
+    },
+    {
+      "path": "evidence/lineage_theory/READ_IDENTITIES.json",
+      "bytes": 3366,
+      "sha256": "832f59b735ed017b12440116c9c4529433a3283f0976394efb4620f56b3ebeba",
+      "git_blob_sha": "70728fdada34b61418a4d43fcbee58fb9deec130"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/CONTRACT.json",
+      "bytes": 2194,
+      "sha256": "b45ecff94238e77996291fd1b3b609fcf8f7badd798306b2b5898c615d9e21ba",
+      "git_blob_sha": "8eb24f63a7690ed59a9214f25b6ff44990ce52fd"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/FILE_MANIFEST.json",
+      "bytes": 75475,
+      "sha256": "e425fa9553e5570ac28883e75dd406bb2c65b95308bdb4cd3831f47d5427d8ef",
+      "git_blob_sha": "c2ce2eb05a1bb638454645dcc1f3f7433c176971"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/FINAL_FILE_MANIFEST.json",
+      "bytes": 99512,
+      "sha256": "27493c66273c8e5dffe5b7ef8afc1e738ecfd55e1b800a786fae519e50c4654a",
+      "git_blob_sha": "307db44340bbef302888279a031e0b651d9d3eda"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/FINAL_SUMMARY.json",
+      "bytes": 3226,
+      "sha256": "55eafe87f37c44d0665ee1a4bcf550ad4d1571c9ea5b38c50502bdb417407481",
+      "git_blob_sha": "f5b3ad6fece7229d8110e4c119bd52dba40f266b"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/FIRST_FAILURE.json",
+      "bytes": 881,
+      "sha256": "96de46f6541b93f540ee5c1c6ff096fe708c5addb21b67656a7d47afdec292ea",
+      "git_blob_sha": "ce30705a59eec21cb138295a9d228f0da153369c"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/FIRST_FAILURE_SOURCE_ncp_continue.py",
+      "bytes": 10760,
+      "sha256": "24daad3ca88bbb0d8aa64329376e4ab412cb2cf5a6adbc24feb09b44407db921",
+      "git_blob_sha": "57bb176a4701f62f8f6bf238994a9bcd2b84c9da"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/REPAIR_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/REPAIR_01.stdout.txt",
+      "bytes": 1951,
+      "sha256": "959a724ff7215cd9a1c58f1d765b0e121eeebc71acff19d197def6c1fb1a566f",
+      "git_blob_sha": "5df294515f7a26c1467817f98cbf494c0dc64e2e"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/REPORT_KO.md",
+      "bytes": 3185,
+      "sha256": "ed4fdc6d0d573cef19da18ce9f76977b6d3915217abf17dd81ed387d076fa680",
+      "git_blob_sha": "f66e31223b6a67d89a842a66c1b4cfd68cb128bb"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/RESULTS.json",
+      "bytes": 9248,
+      "sha256": "87798c8a622db90331c48c25849ec36e04dfead9d35a72bfd37f1b213eaf59c2",
+      "git_blob_sha": "240dda135134a81ab5ec5e0597e41668bbbe5016"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/SYNTHETIC.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/SYNTHETIC.stdout.txt",
+      "bytes": 6539,
+      "sha256": "c4927bb947ec97886f90e56171a96980542ab5c824197dccbf473381fce449f4",
+      "git_blob_sha": "aad42fe28985bab76f8fc9143d70086622d14084"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/recheck_lock_guard.py",
+      "bytes": 938,
+      "sha256": "3792f3e194576497d04ab4b24589df249ab1b968fdc4abd3318593ecca10506f",
+      "git_blob_sha": "31dd0b08b3590aa601c9e5be79118082db09839a"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/repair_01/CONTRACT.json",
+      "bytes": 1011,
+      "sha256": "a3158309d6a99afe085754faa448d4ed91b165b9eac4719df588f4db01028713",
+      "git_blob_sha": "fe1ab143113cb89bff4053c41784121f6628bfe5"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/repair_01/FILE_MANIFEST.json",
+      "bytes": 21575,
+      "sha256": "9e1af18cdabc8ff7dfaa5c3697b80384ef14eebfc1e4d530f4fa5972e96fd08a",
+      "git_blob_sha": "b76009423c7a62f050363113cede3b799fc6b26c"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/repair_01/RESULTS.json",
+      "bytes": 2890,
+      "sha256": "ec53a058968ac15b8c3ef39d98392231ae0ba3b5da203ba1d90191f7baec0e1d",
+      "git_blob_sha": "6ae6a2c8b2cdb1a693a7a8cf3d752c01dd8dfd88"
+    },
+    {
+      "path": "evidence/ncp_continuation_boundary/run_synthetic_boundaries.py",
+      "bytes": 10393,
+      "sha256": "5e693a41dcd4a803d0b8dbbb37a87caf626e265c931e29c6f01b1d47340c826c",
+      "git_blob_sha": "a90a088d496275375d7adca42564c9161a8f691c"
+    },
+    {
+      "path": "evidence/ncp_continuation_verify_guard_fixed_run/RUN.json",
+      "bytes": 778,
+      "sha256": "21ba37ffdb83310172bcdb0b403e115612129fff4a1c5f8607b72fe3d9cc9335",
+      "git_blob_sha": "dbafeb976aa460c444c6f4751bfb292ee3472d8f"
+    },
+    {
+      "path": "evidence/ncp_continuation_verify_guard_fixed_run/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/ncp_continuation_verify_guard_fixed_run/stdout.txt",
+      "bytes": 801,
+      "sha256": "2cfadcac3ea41f2c32e3bacc1f2f026806a75c3731021eb5774e775aea74fbb7",
+      "git_blob_sha": "25cce4a87aaace252e50f652c0df237fc9560cd6"
+    },
+    {
+      "path": "evidence/ncp_continuation_verify_run/RUN.json",
+      "bytes": 771,
+      "sha256": "76d0dd5af425867373e018d22ec7e65638ce0a22abc89e0f7031df2f735bca46",
+      "git_blob_sha": "2611d0e443677e54a2b5ce83bba6f128a24561a2"
+    },
+    {
+      "path": "evidence/ncp_continuation_verify_run/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/ncp_continuation_verify_run/stdout.txt",
+      "bytes": 801,
+      "sha256": "2a5691fbf4d81f9ec8301b6757ba398d475d03a3779c98b791930c0c51faee54",
+      "git_blob_sha": "5cf91aa0a05788d5201b65028ff60b206da0bc7a"
+    },
+    {
+      "path": "evidence/pre_reconciliation/NCP_EXECUTION_CONTRACT.json",
+      "bytes": 2825,
+      "sha256": "36230af43061c0bcc77f479cc5dc9c31ed241acd45ef7d6dc9c48954855934eb",
+      "git_blob_sha": "3476d7bf0ff10684559a117d3a76bec35120b818"
+    },
+    {
+      "path": "evidence/pre_reconciliation/NCP_LOCAL_CODEX_HANDOFF_KO.md",
+      "bytes": 10987,
+      "sha256": "e04abe8d7dc7f3c4c6315d384274be97c9c508dde5e50faec2c9567ed7faeb64",
+      "git_blob_sha": "7530fccbfa2185506f729c23aea9b59bf72add32"
+    },
+    {
+      "path": "evidence/pre_reconciliation/NEXT_DAG.json",
+      "bytes": 2319,
+      "sha256": "e1edcee5e5115d39239b3e80c8acbcade8c664b5ecfb4610e3d174970f35db09",
+      "git_blob_sha": "8879479c365d6dc0d998fefaae575a4981806262"
+    },
+    {
+      "path": "evidence/pre_reconciliation/README.md",
+      "bytes": 2046,
+      "sha256": "cf9b9b03abd67a6461b401e330f1d751211df9e87b87b284127556777bb04f93",
+      "git_blob_sha": "c1725be59a48c00de2e4e896cde61629daa2b9f8"
+    },
+    {
+      "path": "evidence/pre_reconciliation/RESEARCH_STATE.json",
+      "bytes": 542,
+      "sha256": "c56daa22ef7f4445357e2323b1cbd31d8ddeff0b375eca68e787c85c8e1f9bd0",
+      "git_blob_sha": "c496e5823511dedf628e3531874b7123b1a152ea"
+    },
+    {
+      "path": "evidence/pre_reconciliation/ncp_continue_pre_lock_guard.py",
+      "bytes": 10760,
+      "sha256": "24daad3ca88bbb0d8aa64329376e4ab412cb2cf5a6adbc24feb09b44407db921",
+      "git_blob_sha": "57bb176a4701f62f8f6bf238994a9bcd2b84c9da"
+    },
+    {
+      "path": "evidence/review/EXACT_NATIVE_ANCHOR_EXECUTION.json",
+      "bytes": 1239,
+      "sha256": "86ba540ea27299a968f2df872b4d4f28178a9efac4bb37fd4181fb17ae5467d2",
+      "git_blob_sha": "8dc097b8265a9cba494e2f50257f563716100736"
+    },
+    {
+      "path": "evidence/review/EXACT_NATIVE_ANCHOR_RESULTS.json",
+      "bytes": 12312,
+      "sha256": "dd45dca6eefb12948d42ca029579198e975538d1058a6586ba3be705fd86e31a",
+      "git_blob_sha": "f05b285d9981c4742457b31501249372a2e20785"
+    },
+    {
+      "path": "evidence/review/EXACT_NATIVE_ANCHOR_START.json",
+      "bytes": 797,
+      "sha256": "83d8a003c264f53cb2fe0eec09af9429b34755332d46e409c8c37468e8b0a854",
+      "git_blob_sha": "22a9f2eda1808cfa128c26dfcdcad7ed85f2d32c"
+    },
+    {
+      "path": "evidence/review/READ_FILE_IDENTITIES.json",
+      "bytes": 24162,
+      "sha256": "27f6977f8386e352b87bf685485fb9a33b76313c22f264bcfc1d00c8a30d9ae2",
+      "git_blob_sha": "ee64d52fc1936baae3bbda86886877d7053daf92"
+    },
+    {
+      "path": "evidence/review/REVIEW_SCOPE.md",
+      "bytes": 2974,
+      "sha256": "91254a0cb8df1bba1980b08d76d0cf99d8bf43259e5bc3a72bdaee967bc18ef4",
+      "git_blob_sha": "53ac2104021bc7a0eaefc670f233aa55165bea4a"
+    },
+    {
+      "path": "evidence/review/exact_native_anchor_audit.py",
+      "bytes": 7425,
+      "sha256": "be26a798d9d9b86332e6a4b83668f207f6a24cb9b0253d9eec7838910a2cdfc2",
+      "git_blob_sha": "042c2b747eb16b0af714509093060f68d5a0f595"
+    },
+    {
+      "path": "evidence/review/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/review/stdout.txt",
+      "bytes": 83,
+      "sha256": "45d6a730cdf8f92e0573e3075f2f5a1e59f72d87ba9dd67dd01bf67bd47056ec",
+      "git_blob_sha": "6480d2d99d51bb9409e70655b9f6ffc3cac8dc5d"
+    },
+    {
+      "path": "evidence/run_N128_P60/RUN.json",
+      "bytes": 823,
+      "sha256": "0169e0f37f93825451c348eee79544db6445a704273a4adc8c39c756e72b4a34",
+      "git_blob_sha": "0112d908ef0aea8e5a15d8768fac67a427bb233d"
+    },
+    {
+      "path": "evidence/run_N128_P60/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/run_N128_P60/stdout.txt",
+      "bytes": 834,
+      "sha256": "8a0ee5f65021d8d5fac65931805e5b3a7b35e714424e10e0934fb2bfef59d2de",
+      "git_blob_sha": "0648ac8749dbfa02fa16708a75ef65ca82aa053f"
+    },
+    {
+      "path": "evidence/run_N32_P60/RUN.json",
+      "bytes": 820,
+      "sha256": "43b568995daf7365ee47cd8822374798a4e3085798a409eda6c87b9249639cff",
+      "git_blob_sha": "1f81e044c1ab1b12ac272b8558c3d9529e90d9c4"
+    },
+    {
+      "path": "evidence/run_N32_P60/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/run_N32_P60/stdout.txt",
+      "bytes": 835,
+      "sha256": "339b08b4833ec76bca7b8c0a03ba81dd444a1d321a12f974fef82a3f78a9a78a",
+      "git_blob_sha": "69fd4cb04264ffbff63a5134e25353875aa86d24"
+    },
+    {
+      "path": "evidence/run_N32_P80/RUN.json",
+      "bytes": 821,
+      "sha256": "59b6ae278b7b505001590b82200df85ccd530dc4d5f2f35b6190b7c4c38333bf",
+      "git_blob_sha": "9fbe7abdb5e70d6a87da61e29f0af2df744c2603"
+    },
+    {
+      "path": "evidence/run_N32_P80/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/run_N32_P80/stdout.txt",
+      "bytes": 993,
+      "sha256": "aeac9f21114087934c5032971095d5ed21745b8f1fbaa52ac1685281ad4201e7",
+      "git_blob_sha": "803aeab505fd3f66c47e41865bb994ceb501a3da"
+    },
+    {
+      "path": "evidence/run_N512_P60/RUN.json",
+      "bytes": 823,
+      "sha256": "6effa455985c9043e5c5406a9675a7ba9b5cbff178ecd143680e0c292600469d",
+      "git_blob_sha": "aea2773ea33ab80cc69660b76b53ab775a073301"
+    },
+    {
+      "path": "evidence/run_N512_P60/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/run_N512_P60/stdout.txt",
+      "bytes": 832,
+      "sha256": "9f5ec875909a4b56f61600ddafc5282e69be6e62563443bfad9b5a2a9f59e63c",
+      "git_blob_sha": "6cf487c942d87b5695fc76131487cd2df2b066e6"
+    },
+    {
+      "path": "evidence/run_ncp_boundary/RUN.json",
+      "bytes": 634,
+      "sha256": "cb7bbde6035c17ddc6ef0ba6311f36691b35a2db04501b8e6feed08281f0f667",
+      "git_blob_sha": "dc6050563a28dae22bffdee3508ecd50ed677a43"
+    },
+    {
+      "path": "evidence/run_ncp_boundary/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/run_ncp_boundary/stdout.txt",
+      "bytes": 88,
+      "sha256": "bbc6da1c4b95d9117bc1068720a87d09e92ad3d7261f679c27864b03fa6ef7e2",
+      "git_blob_sha": "c8ce4e32e7a26c72d6d1f49163ca47d9c5006ec1"
+    },
+    {
+      "path": "evidence/run_summary/RUN.json",
+      "bytes": 633,
+      "sha256": "74e58a1d70641b91159a0fda3ba42dc36478d3c75f90d9018af48bf827f335a6",
+      "git_blob_sha": "cd96ea3869e358caeb7fc992a319908e525770bf"
+    },
+    {
+      "path": "evidence/run_summary/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/run_summary/stdout.txt",
+      "bytes": 107,
+      "sha256": "171df41ad3c0a7d972c9696d35f6046955108a6e073b6f684e88e37c9c9e18ec",
+      "git_blob_sha": "9e7fad386dfe2897b737e154629d1c3103ab7321"
+    },
+    {
+      "path": "evidence/run_summary_v2/RUN.json",
+      "bytes": 633,
+      "sha256": "4ff4c705d8f43188b36721c8b61d703d391ce506ecf44125b9d5b6aacff36519",
+      "git_blob_sha": "6d838aa7c20456087d83550da35a4503b1d631de"
+    },
+    {
+      "path": "evidence/run_summary_v2/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/run_summary_v2/stdout.txt",
+      "bytes": 107,
+      "sha256": "171df41ad3c0a7d972c9696d35f6046955108a6e073b6f684e88e37c9c9e18ec",
+      "git_blob_sha": "9e7fad386dfe2897b737e154629d1c3103ab7321"
+    },
+    {
+      "path": "evidence/run_verify_only/RUN.json",
+      "bytes": 757,
+      "sha256": "6aca51d4b0898394eec68795276e70c22ab0f25cd3ef9e6a0238d76d32cb28e4",
+      "git_blob_sha": "87a4fe65a592729eaef54a64cb1a592609d491ae"
+    },
+    {
+      "path": "evidence/run_verify_only/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/run_verify_only/stdout.txt",
+      "bytes": 515,
+      "sha256": "41548cc90f3d82b40a1945dcd349c2081593d44b10a8144b3ce407d4705ff38d",
+      "git_blob_sha": "aa93496fb76ad328d8d6c0b30a0dde24e94dd735"
+    },
+    {
+      "path": "evidence/summary_revision/summarize_results_v1.py",
+      "bytes": 9545,
+      "sha256": "69b80084e59a304043748b7f882671f90e32f9b0cd424a331bc7baf445c43a06",
+      "git_blob_sha": "9e1ae4d00886838ca65c0b1d1dee9eea38c8ee22"
+    },
+    {
+      "path": "evidence/theory/ADJACENT_CAPTURE_DIAGNOSTICS.json",
+      "bytes": 4200,
+      "sha256": "4ce5ca4463c759e6e6fa89436e63bb2d3e9b954bc830e474e6a8dea4e382db2b",
+      "git_blob_sha": "bb057d7007d8cd2b925c53b1f42c47cd57fa49cf"
+    },
+    {
+      "path": "evidence/theory/CONTRACT.json",
+      "bytes": 1677,
+      "sha256": "df80026123344b1c30cc3fe6b6fdaf708e1f367ab390f5eed4db2c2cc08252b9",
+      "git_blob_sha": "82dff73db18e7bdfe14d1025ec3630e1749ad25d"
+    },
+    {
+      "path": "evidence/theory/CONTRIBUTION_MANIFEST.json",
+      "bytes": 1645,
+      "sha256": "2d94462efeaa1bc1063794633bfe8d2bc527aa3d918ce796bf6d1feafbc69e54",
+      "git_blob_sha": "ad2751c9b0e4362ad7a143a06817a7d3b69c6b55"
+    },
+    {
+      "path": "evidence/theory/EXACT_TOY_RESULTS.json",
+      "bytes": 28691,
+      "sha256": "e42b33c7fb13c6afc978734daa6c699c2f9402fffb3f193bf1e135e94369677a",
+      "git_blob_sha": "aa798fe47cab7e1bc58ef85db78d13374919a792"
+    },
+    {
+      "path": "evidence/theory/EXECUTION.json",
+      "bytes": 1229,
+      "sha256": "54ca4bf4bcd5fa27696d18012812b19b4dc53ec880433cb4beca0f35beec7b4d",
+      "git_blob_sha": "b966f095be80fcbd7c13dcbe4a91c58186b3208d"
+    },
+    {
+      "path": "evidence/theory/EXECUTION_START.json",
+      "bytes": 694,
+      "sha256": "7a453873ae59d01df928dc46281319ca3a527586b116b74435aba9f2d8c5e04f",
+      "git_blob_sha": "7e1999017d59bc860a8469d32c58a1d075d88e10"
+    },
+    {
+      "path": "evidence/theory/READ_IDENTITIES.json",
+      "bytes": 3168,
+      "sha256": "9231a83cdf8817d45ed126d81a9145d0e3ec0a0b2232f8ab9780c5a2d2f2ff20",
+      "git_blob_sha": "de57d5cbba066b74596451f949332e7549149f08"
+    },
+    {
+      "path": "evidence/theory/THEORY_CONTRIBUTION.md",
+      "bytes": 16961,
+      "sha256": "16ef3e4f7ed51c2ace87f7e36570917f3a1074c55dfe7bce5d9c7849d9c069e5",
+      "git_blob_sha": "ab2ebb4a2e6c52b8e61afcd2c3c92c6083465eac"
+    },
+    {
+      "path": "evidence/theory/exact_incoming_anchor_toys.py",
+      "bytes": 15149,
+      "sha256": "797f71c8a532f558972ca3467811f1cd0bf6aa24b556ef0bf9f3a13e942f9e9c",
+      "git_blob_sha": "b3d7e5b4a516625da6a478ab8aa21a74373948b6"
+    },
+    {
+      "path": "evidence/theory/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "evidence/theory/stdout.txt",
+      "bytes": 73,
+      "sha256": "73a69e9e9b7a8e62af49d51cb081278b568935e28aeb1199748773fc49bce19d",
+      "git_blob_sha": "332ad3494297267f2be64b915e6bbf09b06ceaeb"
+    },
+    {
+      "path": "figures/INCOMING_ANCHOR_ENCLOSURE.png",
+      "bytes": 172681,
+      "sha256": "81504ab500cb2c11098e7b14a0ebeec231bd3590a296999ebec4ccb46b823e53",
+      "git_blob_sha": "f18be4ab528ca7c8000ee0ced3a133959c4b14de"
+    },
+    {
+      "path": "figures/INCOMING_ANCHOR_ENCLOSURE.svg",
+      "bytes": 44944,
+      "sha256": "2970a0bcc761548e50d1b674cc4b80c4cb10e1967b504b19691b91430bcf79e3",
+      "git_blob_sha": "516ec7967dd20bcbb562ce77ea1f55bed4498437"
+    },
+    {
+      "path": "figures/PR19_REFINEMENT_WIDTHS.png",
+      "bytes": 98450,
+      "sha256": "53eecd31aeba53d1f3decf371dc4484f7c10dc2d32c0713f755ad523860fad99",
+      "git_blob_sha": "2a0ffb9dfa8b6f7404074a2cd9476feb682e4a27"
+    },
+    {
+      "path": "figures/PR19_REFINEMENT_WIDTHS.svg",
+      "bytes": 56107,
+      "sha256": "ab580feeacb3048fa1e37bc93a5876bbec640b8b05641a0e8d4addbaf90c969b",
+      "git_blob_sha": "7eb4e7723e51e2a3dbba44d9c5f4d1724ff91daa"
+    },
+    {
+      "path": "inputs/INPUT_IDENTITIES.json",
+      "bytes": 2389,
+      "sha256": "5809f26e2ecf488e40c3af2ca36ad2959fba22fe2312fde8d130512894181b9a",
+      "git_blob_sha": "f6bc6a1c640a5696eb3cefbe4a7bfcb9590abc45"
+    },
+    {
+      "path": "inputs/PATH_CONTROLS.json",
+      "bytes": 24911,
+      "sha256": "41891a30f61976d2c19165ee48a077bccbd41b17011939e1ed4dd80eb49cfd63",
+      "git_blob_sha": "e87a49a2c67129e71d38b7b667a88809e8474e52"
+    },
+    {
+      "path": "inputs/captured/OFF_STAGES.csv",
+      "bytes": 2571,
+      "sha256": "d8a363f47781bcea8e33f193f9828e1bb04eb27bbf3821ab487de8238458d661",
+      "git_blob_sha": "c023204b0e2eafd39c4baaa3e1e239eb19bd440c"
+    },
+    {
+      "path": "inputs/e13c4/FILE_MANIFEST.json",
+      "bytes": 55976,
+      "sha256": "ec004b257e721a5f32ae5a3e7c11712318154d02e567035e6be0dca59d9694fa",
+      "git_blob_sha": "05fd149952ab48ae5165f78bb3585af2aa4cf0b8"
+    },
+    {
+      "path": "inputs/e13c4/INDEPENDENT_REVIEW.json",
+      "bytes": 48295,
+      "sha256": "5b9f093bcd5cf21c2ce7a265b0c1a41b84ddfbdae9f49f0f668795d8314a8580",
+      "git_blob_sha": "33675b4082aeea5a8847879ae8fb9310457c9a03"
+    },
+    {
+      "path": "inputs/e13c4/N512_P60.json",
+      "bytes": 393568,
+      "sha256": "e38fa42d3c08d9710ce89f83746a19b2c41ac9c67086d6ce144f96d31b54a93a",
+      "git_blob_sha": "ea08125b34ca0015259ce6c2d834f2bd17bf5681"
+    },
+    {
+      "path": "inputs/e13c4/PLAN.json",
+      "bytes": 5351,
+      "sha256": "b1386d357142b36fa9c3e498e65e6377a5d9a22b5e61fd1ca0338f4e54535a40",
+      "git_blob_sha": "01a0437ba6102408142003ff6539838143638ac4"
+    },
+    {
+      "path": "inputs/e13c4/SIX_CONTROLS.json",
+      "bytes": 87343,
+      "sha256": "2f543b128bdb6efe020868475619765d1a08f47c102cf0b9e5f65cb615c146dd",
+      "git_blob_sha": "5c39b5eb16163f469a361f231c816819efa35fd6"
+    },
+    {
+      "path": "inputs/e13c4/THEORY.md",
+      "bytes": 23374,
+      "sha256": "e94c72b32ff227190866b730e8f0bcfc7c07042f3b07ed83a0255ab859517858",
+      "git_blob_sha": "dc7be1b15186df1e1539330853628a4b368ef25e"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/CONTRACT.md",
+      "bytes": 4202,
+      "sha256": "cbea11086727b06fac350451b433f10f344664bcdee85948901cac14b62b56dd",
+      "git_blob_sha": "413bfa61f34d4238837ac5ca5749527cfa1c7560"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/NEXT_DAG.json",
+      "bytes": 776,
+      "sha256": "e1dfc0fda51136e3a085283b0176ba4c270f684ad5fc3b80dca252cd1c07fd8a",
+      "git_blob_sha": "b3fd70c9d74cd978acfb62ba08fe39a58beeaa5a"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/REPORT.md",
+      "bytes": 3399,
+      "sha256": "bd4c7886e4aa24390752ad86b16d01d6f3b739b192e94e0bbaa4ca46bc1fb1aa",
+      "git_blob_sha": "19ac98ee38266294938fdeebce63c399b6251771"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/RESULTS.json",
+      "bytes": 950019,
+      "sha256": "418dcac9280947abc227c69f9178c0163bbdb00fa34bff1f9e34ab9eea35ece4",
+      "git_blob_sha": "a8d7d43a92a4df418e29a8e56cc5f5c2be8d8373"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/START.json",
+      "bytes": 3563,
+      "sha256": "5f75633b9bd4b55aeaab4ca727972c6b7da4aba0fbaaf050b3d183a45a2ce6d1",
+      "git_blob_sha": "8b1a8d0d66d688c537e0ad99a3b15ebc90943c73"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/cover.py",
+      "bytes": 12327,
+      "sha256": "aaae27a0d053d42ce6727593df676352697dd042486aa448d1e9104b16f979f6",
+      "git_blob_sha": "42fd89cbbb048615bcf00115678c2309eb86b50c"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/independent_review.md",
+      "bytes": 1133,
+      "sha256": "999e841eb3ac55d744946682215d00b1c5dc1db3650b2a81a6c8c228286f237f",
+      "git_blob_sha": "d4f60cf2f911a96f611de92a33cab902062ce8bc"
+    },
+    {
+      "path": "inputs/pr19_lineage/first2/stderr.log",
+      "bytes": 749,
+      "sha256": "1bf1557ba42c4291f2b2ed69ef7ea335781f02dc2e166afaccc684f098a55efe",
+      "git_blob_sha": "6896f7e39989aced4eb40c6d62ac5e8a68cc4f57"
+    },
+    {
+      "path": "inputs/pr19_lineage/pilot/RESULTS.json",
+      "bytes": 77603,
+      "sha256": "75648e29291c3c364c2d8a0c859710d95074f1c12c5d910c61a4856465034b96",
+      "git_blob_sha": "1d6ff5c3679e09e33738b4ab512dcd637eeb0b9e"
+    },
+    {
+      "path": "inputs/pr19_lineage/pilot/pilot.py",
+      "bytes": 8224,
+      "sha256": "104eb217e32266289fbffc5e3349b72390bc36e9392ca016c8e35edbaa157f83",
+      "git_blob_sha": "f4978c1802675964ed6adc5f9d7fef0e58a09b6b"
+    },
+    {
+      "path": "state/CLAIM_LEDGER.json",
+      "bytes": 2842,
+      "sha256": "1f5dd27628eb5ee29b5fdb5c8c64027a895142d74d8cc933b218b4529658408a",
+      "git_blob_sha": "10900fe0132ea5a523ff927516bb36582d03bc2d"
+    },
+    {
+      "path": "state/RESEARCH_STATE.json",
+      "bytes": 1753,
+      "sha256": "b5b3a20bd03a4bd62bd97a54271979fb27ca5df9c4fcc2e9388887907481dfa1",
+      "git_blob_sha": "07ca85c7038bb8e8231da99fb5afb105b7ae5647"
+    }
+  ],
+  "omitted_files": [
+    "evidence/N128_P60_CHECKPOINT.json",
+    "evidence/N32_P60_CHECKPOINT.json",
+    "evidence/N32_P80_CHECKPOINT.json",
+    "evidence/N512_P60_CHECKPOINT.json",
+    "evidence/lineage_control/output_v1/NUMERICAL_IDENTITY.json",
+    "evidence/lineage_control/output_v1/NUMERICAL_PROJECTION.json",
+    "evidence/lineage_control/output_v1/RESULTS.json",
+    "evidence/lineage_control/protocol_no_diagnostic_output/NUMERICAL_IDENTITY.json",
+    "evidence/lineage_control/protocol_no_diagnostic_output/NUMERICAL_PROJECTION.json",
+    "evidence/lineage_control/protocol_no_diagnostic_output/RESULTS.json",
+    "evidence/ncp_boundary_fixtures/SUMMARY.json",
+    "evidence/ncp_boundary_fixtures/collision.stderr.txt",
+    "evidence/ncp_boundary_fixtures/collision.stdout.txt",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/package/EXECUTION_LOCK.json",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/package/PLAN.json",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/package/code/directed_interval.py",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/package/code/local_enclosure.py",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/package/code/ncp_execute.py",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/package/code/path_enclosure.py",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/package/evidence/N512_P60.json",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_boundary_fixtures/lock_mismatch/result/NCP_RESULT.json",
+    "evidence/ncp_boundary_fixtures/lock_mismatch.stderr.txt",
+    "evidence/ncp_boundary_fixtures/lock_mismatch.stdout.txt",
+    "evidence/ncp_boundary_fixtures/mismatch/package/EXECUTION_LOCK.json",
+    "evidence/ncp_boundary_fixtures/mismatch/package/PLAN.json",
+    "evidence/ncp_boundary_fixtures/mismatch/package/code/directed_interval.py",
+    "evidence/ncp_boundary_fixtures/mismatch/package/code/local_enclosure.py",
+    "evidence/ncp_boundary_fixtures/mismatch/package/code/ncp_execute.py",
+    "evidence/ncp_boundary_fixtures/mismatch/package/code/path_enclosure.py",
+    "evidence/ncp_boundary_fixtures/mismatch/package/evidence/N512_P60.json",
+    "evidence/ncp_boundary_fixtures/mismatch/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_boundary_fixtures/mismatch/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_boundary_fixtures/mismatch/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_boundary_fixtures/mismatch/result/ARITHMETIC_SMOKE.json",
+    "evidence/ncp_boundary_fixtures/mismatch/result/HOST.json",
+    "evidence/ncp_boundary_fixtures/mismatch/result/IDENTITY_CHECK.json",
+    "evidence/ncp_boundary_fixtures/mismatch/result/NCP_RESULT.json",
+    "evidence/ncp_boundary_fixtures/mismatch/result/PARITY.json",
+    "evidence/ncp_boundary_fixtures/mismatch/result/RESULTS.json",
+    "evidence/ncp_boundary_fixtures/mismatch/result/stderr.txt",
+    "evidence/ncp_boundary_fixtures/mismatch/result/stdout.txt",
+    "evidence/ncp_boundary_fixtures/mismatch.stderr.txt",
+    "evidence/ncp_boundary_fixtures/mismatch.stdout.txt",
+    "evidence/ncp_boundary_fixtures/pass/package/EXECUTION_LOCK.json",
+    "evidence/ncp_boundary_fixtures/pass/package/PLAN.json",
+    "evidence/ncp_boundary_fixtures/pass/package/code/directed_interval.py",
+    "evidence/ncp_boundary_fixtures/pass/package/code/local_enclosure.py",
+    "evidence/ncp_boundary_fixtures/pass/package/code/ncp_execute.py",
+    "evidence/ncp_boundary_fixtures/pass/package/code/path_enclosure.py",
+    "evidence/ncp_boundary_fixtures/pass/package/evidence/N512_P60.json",
+    "evidence/ncp_boundary_fixtures/pass/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_boundary_fixtures/pass/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_boundary_fixtures/pass/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_boundary_fixtures/pass/result/ARITHMETIC_SMOKE.json",
+    "evidence/ncp_boundary_fixtures/pass/result/HOST.json",
+    "evidence/ncp_boundary_fixtures/pass/result/IDENTITY_CHECK.json",
+    "evidence/ncp_boundary_fixtures/pass/result/NCP_RESULT.json",
+    "evidence/ncp_boundary_fixtures/pass/result/PARITY.json",
+    "evidence/ncp_boundary_fixtures/pass/result/RESULTS.json",
+    "evidence/ncp_boundary_fixtures/pass/result/stderr.txt",
+    "evidence/ncp_boundary_fixtures/pass/result/stdout.txt",
+    "evidence/ncp_boundary_fixtures/pass.stderr.txt",
+    "evidence/ncp_boundary_fixtures/pass.stdout.txt",
+    "evidence/ncp_boundary_fixtures/source_mismatch/package/EXECUTION_LOCK.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/package/PLAN.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/package/code/directed_interval.py",
+    "evidence/ncp_boundary_fixtures/source_mismatch/package/code/local_enclosure.py",
+    "evidence/ncp_boundary_fixtures/source_mismatch/package/code/ncp_execute.py",
+    "evidence/ncp_boundary_fixtures/source_mismatch/package/code/path_enclosure.py",
+    "evidence/ncp_boundary_fixtures/source_mismatch/package/evidence/N512_P60.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/result/ARITHMETIC_SMOKE.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/result/HOST.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/result/IDENTITY_CHECK.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/result/NCP_RESULT.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/result/RESULTS.json",
+    "evidence/ncp_boundary_fixtures/source_mismatch/result/stderr.txt",
+    "evidence/ncp_boundary_fixtures/source_mismatch/result/stdout.txt",
+    "evidence/ncp_boundary_fixtures/source_mismatch.stderr.txt",
+    "evidence/ncp_boundary_fixtures/source_mismatch.stdout.txt",
+    "evidence/ncp_boundary_fixtures/timeout/package/EXECUTION_LOCK.json",
+    "evidence/ncp_boundary_fixtures/timeout/package/PLAN.json",
+    "evidence/ncp_boundary_fixtures/timeout/package/code/directed_interval.py",
+    "evidence/ncp_boundary_fixtures/timeout/package/code/local_enclosure.py",
+    "evidence/ncp_boundary_fixtures/timeout/package/code/ncp_execute.py",
+    "evidence/ncp_boundary_fixtures/timeout/package/code/path_enclosure.py",
+    "evidence/ncp_boundary_fixtures/timeout/package/evidence/N512_P60.json",
+    "evidence/ncp_boundary_fixtures/timeout/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_boundary_fixtures/timeout/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_boundary_fixtures/timeout/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_boundary_fixtures/timeout/result/ARITHMETIC_SMOKE.json",
+    "evidence/ncp_boundary_fixtures/timeout/result/HOST.json",
+    "evidence/ncp_boundary_fixtures/timeout/result/IDENTITY_CHECK.json",
+    "evidence/ncp_boundary_fixtures/timeout/result/NCP_RESULT.json",
+    "evidence/ncp_boundary_fixtures/timeout/result/stderr.txt",
+    "evidence/ncp_boundary_fixtures/timeout/result/stdout.txt",
+    "evidence/ncp_boundary_fixtures/timeout.stderr.txt",
+    "evidence/ncp_boundary_fixtures/timeout.stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/out/PRESERVE_EXISTING.txt",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/existing_out_collision/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/failed_physics/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/out/physics/PARITY.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/out/physics/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/false_fresh_parity/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/EXACT_REDUCTION_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/EXACT_REDUCTION_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/EXACT_REDUCTION_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/physics/PARITY.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/physics/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/reduction/NUMERICAL_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/reduction/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/out/reduction/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/fresh_success/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/EXACT_REDUCTION_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/EXACT_REDUCTION_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/EXACT_REDUCTION_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/physics/PARITY.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/physics/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/reduction/NUMERICAL_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/reduction/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/out/reduction/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/lock_metadata_tamper_during/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_before/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/EXACT_REDUCTION_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/EXACT_REDUCTION_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/EXACT_REDUCTION_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/physics/PARITY.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/physics/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/reduction/NUMERICAL_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/reduction/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/out/reduction/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/locked_payload_tamper_during/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/EXACT_REDUCTION_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/EXACT_REDUCTION_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/EXACT_REDUCTION_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/physics/PARITY.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/physics/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/reduction/NUMERICAL_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/reduction/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/out/reduction/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/stale_current_hash/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/verify_only/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/verify_only/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/verify_only/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/cases/verify_only/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/verify_only/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/verify_only/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/verify_only/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/EXACT_REDUCTION_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/EXACT_REDUCTION_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/EXACT_REDUCTION_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/physics/PARITY.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/physics/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/reduction/NUMERICAL_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/reduction/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/out/reduction/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_producer_hash/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/RUN_START.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/EXACT_REDUCTION_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/EXACT_REDUCTION_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/EXACT_REDUCTION_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/physics/PARITY.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/physics/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/reduction/NUMERICAL_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/reduction/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/out/reduction/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/cases/wrong_projection_bytes/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/RUN_START.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/EXACT_REDUCTION_RUN.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/EXACT_REDUCTION_stderr.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/EXACT_REDUCTION_stdout.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/physics/PARITY.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/physics/RESULTS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/reduction/NUMERICAL_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/reduction/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/out/reduction/RESULTS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/fresh_success/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/RUN_START.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/EXACT_REDUCTION_RUN.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/EXACT_REDUCTION_stderr.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/EXACT_REDUCTION_stdout.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/physics/PARITY.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/physics/RESULTS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/reduction/NUMERICAL_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/reduction/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/out/reduction/RESULTS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/lock_metadata_tamper_during/wrapper_stdout.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/RUN_FINISH.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/RUN_START.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/out/CONTINUATION_IDENTITY.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/out/NCP_CONTINUATION_RESULT.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/out/PHYSICS_HOST_RUN.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/out/PHYSICS_HOST_stderr.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/out/PHYSICS_HOST_stdout.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/out/RETURN_MANIFEST.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/out/SYNTHETIC_CHILD_INVOCATIONS.jsonl",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/out/physics/NCP_RESULT.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/CONTINUATION_LOCK.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/EXECUTION_LOCK.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/LINEAGE_RECONCILIATION_CONTRACT.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/PLAN.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/code/directed_interval.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/code/lineage_reduction.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/code/local_enclosure.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/code/ncp_continue.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/code/ncp_execute.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/code/path_enclosure.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/code/run_recorded.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/evidence/N512_P60.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/evidence/lineage_control/output_v2/NUMERICAL_PROJECTION.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/inputs/PATH_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/inputs/e13c4/N512_P60.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/inputs/e13c4/SIX_CONTROLS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/inputs/pr19_lineage/first2/RESULTS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/inputs/pr19_lineage/first2/START.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/inputs/pr19_lineage/first2/cover.py",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/package/inputs/pr19_lineage/pilot/RESULTS.json",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/wrapper_stderr.txt",
+    "evidence/ncp_continuation_boundary/repair_01/cases/verify_only/wrapper_stdout.txt",
+    "inputs/captured/OFF_SEGMENTS.csv",
+    "inputs/e13c4/N128_P60.json",
+    "inputs/e13c4/N32_P60.json",
+    "inputs/e13c4/N32_P80.json"
+  ],
+  "omission_reason": "fullcaptureCSV, nonNCP refinement caches, duplicatecheckpoints and syntheticfixturetrees remain intact inside complete scientific ZIP; publishedruntimeiscomplete"
+}

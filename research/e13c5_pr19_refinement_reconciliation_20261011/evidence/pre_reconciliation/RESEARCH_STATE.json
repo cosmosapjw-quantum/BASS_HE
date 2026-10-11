@@ -1,0 +1,20 @@
+{
+  "node": "E13C5_FIXED_PATH_INCOMING_AND_ANCHOR_ENCLOSURE",
+  "phase": "design_implement",
+  "status": "IN_PROGRESS",
+  "plan": "PLAN.json",
+  "actualNCP": "NOT_FOUND_IN_SCOPED_SEARCH_PENDING_INVENTORY_RECORD",
+  "protected": {
+    "baseline_RCT": "OFF",
+    "actual_atomic_photon_heat_recoil": null,
+    "physical": "HOLD",
+    "production": "HOLD",
+    "HE_F2_F09": "OPEN",
+    "receiver_adoption": "SEPARATE",
+    "legacy_Gamma_alias": {
+      "value": 3.543295,
+      "status": "FAIL"
+    },
+    "uniform_path_certificate": false
+  }
+}

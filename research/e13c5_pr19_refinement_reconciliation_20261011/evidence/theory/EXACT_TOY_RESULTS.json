@@ -1,0 +1,1150 @@
+{
+  "schema": "bass-he-e13c5-exact-incoming-anchor-toys-v1",
+  "arithmetic": "fractions.Fraction polynomial coefficients; formal T=exp(-1); rational Taylor-tail sign enclosure",
+  "independence": "No candidate imports; no Decimal or binary floating-point transcendental evaluation; inherited physical coefficient model not executed",
+  "scope": "Exact discriminating controls for incoming uncertainty, cumulative moments, representation seams, native ledgers and energy anchors",
+  "T_enclosure": {
+    "lo": "817689600/2222710781",
+    "hi": "95800320/260412269"
+  },
+  "checks": [
+    {
+      "id": "INCOMING_GAIN_NUMBER_LEDGER",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_GAIN_ENERGY_LEDGER",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_P",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_P",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_Z",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_Z",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_QN",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_QN",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_QE",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_QE",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_U",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_U",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_A_0",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_A_0",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "POSITIVE_GAIN_A_0",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "1/3",
+          "-1/3"
+        ]
+      },
+      "enclosure": {
+        "lo": "164611949/781236807",
+        "hi": "1405021181/6668132343"
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_A_1",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_A_1",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "POSITIVE_GAIN_A_1",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "2/3",
+          "-2/3"
+        ]
+      },
+      "enclosure": {
+        "lo": "329223898/781236807",
+        "hi": "2810042362/6668132343"
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_B_0",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_B_0",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "POSITIVE_GAIN_B_0",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "2",
+          "0",
+          "-2"
+        ]
+      },
+      "enclosure": {
+        "lo": "117273697067251922/67814549845728361",
+        "hi": "8543653868050939922/4940443215973629961"
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_B_1",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_B_1",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "POSITIVE_GAIN_B_1",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "4",
+          "0",
+          "-4"
+        ]
+      },
+      "enclosure": {
+        "lo": "234547394134503844/67814549845728361",
+        "hi": "17087307736101879844/4940443215973629961"
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_H_0",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_H_0",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "POSITIVE_GAIN_H_0",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "5/3",
+          "1/3",
+          "-2"
+        ]
+      },
+      "enclosure": {
+        "lo": "308954120058153485/203443649537185083",
+        "hi": "22508005877610767405/14821329647920889883"
+      }
+    },
+    {
+      "id": "INCOMING_CENTER_H_1",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "INCOMING_UNCERTAINTY_H_1",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "POSITIVE_GAIN_H_1",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "8/3",
+          "4/3",
+          "-4"
+        ]
+      },
+      "enclosure": {
+        "lo": "532174297829102408/203443649537185083",
+        "hi": "38770100302137430088/14821329647920889883"
+      }
+    },
+    {
+      "id": "NONZERO_INCOMING_REMAINDER_NUMBER_LEDGER",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NONZERO_INCOMING_REMAINDER_ENERGY_LEDGER",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "CORRECT_TOTAL_COUNT_BOUND_IS_EXACT",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "REJECT_REUSING_PHOTON_BOUND_FOR_TOTAL_COUNT",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "1/8",
+          "-1/4"
+        ]
+      },
+      "enclosure": {
+        "lo": "68811629/2083298152",
+        "hi": "587331581/17781686248"
+      }
+    },
+    {
+      "id": "UNCERTAINTY_PERSISTS_WHEN_BR_AND_DL_ZERO",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "ZERO_REMAINDER_WITH_ZERO_INCOMING_BUT_NONZERO_ETA_IS_WRONG",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0",
+          "1/8"
+        ]
+      },
+      "enclosure": {
+        "lo": "102211200/2222710781",
+        "hi": "11975040/260412269"
+      }
+    },
+    {
+      "id": "REJECT_DAMPING_PREVIOUS_CUMULATIVE_MOMENT_ERROR",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "1/16",
+          "-1/16"
+        ]
+      },
+      "enclosure": {
+        "lo": "164611949/4166596304",
+        "hi": "1405021181/35563372496"
+      }
+    },
+    {
+      "id": "CONTIGUOUS_CARRIED_INCOMING_IDENTITY",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "CONTIGUOUS_CARRIED_RADIUS_NOT_RESET",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "CONTIGUOUS_SECOND_SEGMENT_CONTINUITY",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "CONTIGUOUS_NATIVE_ENDPOINT_CORRECTION",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "CONTIGUOUS_TWO_SEGMENT_INCOMING_UNCERTAINTY",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "CONTIGUOUS_REJECT_OMITTING_REPRESENTATION_SEAM",
+      "passed": true,
+      "relation": "nonzero via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0",
+          "0",
+          "-1/15",
+          "1/6"
+        ]
+      },
+      "enclosure": {
+        "lo": "-109206557611775581224960/150732131050762314792159941",
+        "hi": "-5515482703295545344000/7612733891936982380534861"
+      }
+    },
+    {
+      "id": "CONTIGUOUS_REJECT_RESETTING_INCOMING",
+      "passed": true,
+      "relation": "nonzero via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0",
+          "0",
+          "-1/15",
+          "73/168"
+        ]
+      },
+      "enclosure": {
+        "lo": "138487068011472763355136000/10981176399062898726019309541",
+        "hi": "222712543397644688424960/17659740796539722445661109"
+      }
+    },
+    {
+      "id": "NONZERO_CAPTURE_TRANSFER_CARRIED_INCOMING_IDENTITY",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NONZERO_CAPTURE_TRANSFER_CARRIED_RADIUS_NOT_RESET",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NONZERO_CAPTURE_TRANSFER_SECOND_SEGMENT_CONTINUITY",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NONZERO_CAPTURE_TRANSFER_NATIVE_ENDPOINT_CORRECTION",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NONZERO_CAPTURE_TRANSFER_TWO_SEGMENT_INCOMING_UNCERTAINTY",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NONZERO_CAPTURE_TRANSFER_REJECT_OMITTING_REPRESENTATION_SEAM",
+      "passed": true,
+      "relation": "nonzero via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0",
+          "0",
+          "-1/15",
+          "1/6"
+        ]
+      },
+      "enclosure": {
+        "lo": "-109206557611775581224960/150732131050762314792159941",
+        "hi": "-5515482703295545344000/7612733891936982380534861"
+      }
+    },
+    {
+      "id": "NONZERO_CAPTURE_TRANSFER_REJECT_RESETTING_INCOMING",
+      "passed": true,
+      "relation": "nonzero via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0",
+          "0",
+          "-23/300",
+          "73/168"
+        ]
+      },
+      "enclosure": {
+        "lo": "123625661829089654204006400/10981176399062898726019309541",
+        "hi": "198812683168756056981504/17659740796539722445661109"
+      }
+    },
+    {
+      "id": "NONZERO_CAPTURE_TRANSFER_REJECT_OMITTING_KAPPA",
+      "passed": true,
+      "relation": "nonzero via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0",
+          "0",
+          "-1/100"
+        ]
+      },
+      "enclosure": {
+        "lo": "-91777013121024/67814549845728361",
+        "hi": "-6686162819481600/4940443215973629961"
+      }
+    },
+    {
+      "id": "POSITIVE_GLOBAL_ENERGY_LEDGER_MINUS_ANCHOR",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "POSITIVE_OMITTED_ANCHOR_RESIDUAL",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "POSITIVE_ANCHOR_EXPECTED_SIGN",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "2",
+          "-39/28",
+          "-73/14"
+        ]
+      },
+      "enclosure": {
+        "lo": "53025529657532882/67814549845728361",
+        "hi": "3863029672937871122/4940443215973629961"
+      }
+    },
+    {
+      "id": "POSITIVE_NATIVE_ANCHOR_CORRECTION",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "POSITIVE_REJECT_NATIVE_ANCHOR_USING_EXACT_FROZEN_CORRECTION_ONLY",
+      "passed": true,
+      "relation": "nonzero via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "-2/5",
+          "9/5",
+          "-2"
+        ]
+      },
+      "enclosure": {
+        "lo": "-145348712220962/17124886325768405",
+        "hi": "-24563932243414898/2894105789054860445"
+      }
+    },
+    {
+      "id": "POSITIVE_ANCHOR_CARRIES_INCOMING_UNCERTAINTY",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NEGATIVE_GLOBAL_ENERGY_LEDGER_MINUS_ANCHOR",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NEGATIVE_OMITTED_ANCHOR_RESIDUAL",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NEGATIVE_ANCHOR_EXPECTED_SIGN",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "-1",
+          "151/56",
+          "73/14"
+        ]
+      },
+      "enclosure": {
+        "lo": "3446638306044779639/4940443215973629961",
+        "hi": "47309970996324119/67814549845728361"
+      }
+    },
+    {
+      "id": "NEGATIVE_NATIVE_ANCHOR_CORRECTION",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NEGATIVE_REJECT_NATIVE_ANCHOR_USING_EXACT_FROZEN_CORRECTION_ONLY",
+      "passed": true,
+      "relation": "nonzero via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "-1/5",
+          "13/10",
+          "-2"
+        ]
+      },
+      "enclosure": {
+        "lo": "129681747108719/17124886325768405",
+        "hi": "1685862719187107/222623522234989265"
+      }
+    },
+    {
+      "id": "NEGATIVE_ANCHOR_CARRIES_INCOMING_UNCERTAINTY",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_ENERGY_STOCK_FULL_REPRESENTATION_IDENTITY",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_ENERGY_STOCK_REPRESENTATION_DECOMPOSITION",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "REJECT_ONLY_E_TIMES_PHOTON_REPRESENTATION",
+      "passed": true,
+      "relation": "nonzero via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "-9/5",
+          "24/5"
+        ]
+      },
+      "enclosure": {
+        "lo": "-379846629/11113553905",
+        "hi": "-44502741/1302061345"
+      }
+    },
+    {
+      "id": "NATIVE_LOCAL_NUMBER_CORRECTION_LEDGER_HAS_CAPTURED_RESIDUAL",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_LOCAL_ENERGY_CORRECTION_LEDGER_HAS_CAPTURED_RESIDUAL",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_CAPTURED_NUMBER_RESIDUAL_NOT_FORCED_TO_ZERO",
+      "passed": true,
+      "relation": "nonzero via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "-47/150"
+        ]
+      },
+      "enclosure": {
+        "lo": "-47/150",
+        "hi": "-47/150"
+      }
+    },
+    {
+      "id": "NATIVE_CAPTURED_ENERGY_RESIDUAL_NOT_FORCED_TO_ZERO",
+      "passed": true,
+      "relation": "nonzero via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "-94/15"
+        ]
+      },
+      "enclosure": {
+        "lo": "-94/15",
+        "hi": "-94/15"
+      }
+    },
+    {
+      "id": "DL_ZERO_NONZERO_INCOMING_TOTAL_COUNT_REMAINDER_CANCELS",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "DL_ZERO_NONZERO_INCOMING_TOTAL_ABSORBED_REMAINDER_CANCELS",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "DL_ZERO_NONZERO_INCOMING_TOTAL_HEAT_REMAINDER_SURVIVES",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "REJECT_PHOTON_EXACT_IMPLIES_SPECIES_EXACT",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "1/32",
+          "-1/16"
+        ]
+      },
+      "enclosure": {
+        "lo": "68811629/8333192608",
+        "hi": "587331581/71126744992"
+      }
+    },
+    {
+      "id": "REJECT_PHOTON_EXACT_IMPLIES_TOTAL_HEAT_EXACT",
+      "passed": true,
+      "relation": "strict positivity via rational Taylor enclosure",
+      "expression": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "1/32",
+          "-1/16"
+        ]
+      },
+      "enclosure": {
+        "lo": "68811629/8333192608",
+        "hi": "587331581/71126744992"
+      }
+    },
+    {
+      "id": "FIXED_O1_INCOMING_REMAINDER_LINEAR_IN_VARIATION",
+      "passed": true,
+      "relation": "exact formal polynomial equality",
+      "difference": {
+        "basis": "T^k; T=exp(-1)",
+        "coefficients": [
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "POSITIVE_ANCHOR_PRODUCT_CORNER_0",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "143/1920",
+      "product_enclosure": {
+        "lo": "143/1920",
+        "hi": "133/640"
+      },
+      "bound": "143/1920"
+    },
+    {
+      "id": "POSITIVE_ANCHOR_PRODUCT_CORNER_1",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "91/640",
+      "product_enclosure": {
+        "lo": "143/1920",
+        "hi": "133/640"
+      },
+      "bound": "143/1920"
+    },
+    {
+      "id": "POSITIVE_ANCHOR_PRODUCT_CORNER_2",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "209/1920",
+      "product_enclosure": {
+        "lo": "143/1920",
+        "hi": "133/640"
+      },
+      "bound": "143/1920"
+    },
+    {
+      "id": "POSITIVE_ANCHOR_PRODUCT_CORNER_3",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "133/640",
+      "product_enclosure": {
+        "lo": "143/1920",
+        "hi": "133/640"
+      },
+      "bound": "143/1920"
+    },
+    {
+      "id": "POSITIVE_REJECT_OMITTING_ANCHOR_PRODUCT_CROSS_TERM",
+      "passed": true,
+      "relation": "strict exact rational counterexample",
+      "actual_error": "143/1920",
+      "incomplete_bound": "1/15",
+      "omitted_cross_term": "1/128"
+    },
+    {
+      "id": "NEGATIVE_ANCHOR_PRODUCT_CORNER_0",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "-209/1920",
+      "product_enclosure": {
+        "lo": "-133/640",
+        "hi": "-143/1920"
+      },
+      "bound": "143/1920"
+    },
+    {
+      "id": "NEGATIVE_ANCHOR_PRODUCT_CORNER_1",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "-133/640",
+      "product_enclosure": {
+        "lo": "-133/640",
+        "hi": "-143/1920"
+      },
+      "bound": "143/1920"
+    },
+    {
+      "id": "NEGATIVE_ANCHOR_PRODUCT_CORNER_2",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "-143/1920",
+      "product_enclosure": {
+        "lo": "-133/640",
+        "hi": "-143/1920"
+      },
+      "bound": "143/1920"
+    },
+    {
+      "id": "NEGATIVE_ANCHOR_PRODUCT_CORNER_3",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "-91/640",
+      "product_enclosure": {
+        "lo": "-133/640",
+        "hi": "-143/1920"
+      },
+      "bound": "143/1920"
+    },
+    {
+      "id": "NEGATIVE_REJECT_OMITTING_ANCHOR_PRODUCT_CROSS_TERM",
+      "passed": true,
+      "relation": "strict exact rational counterexample",
+      "actual_error": "143/1920",
+      "incomplete_bound": "1/15",
+      "omitted_cross_term": "1/128"
+    },
+    {
+      "id": "ZERO_CENTER_ANCHOR_PRODUCT_CORNER_0",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "-11/640",
+      "product_enclosure": {
+        "lo": "-21/640",
+        "hi": "21/640"
+      },
+      "bound": "21/640"
+    },
+    {
+      "id": "ZERO_CENTER_ANCHOR_PRODUCT_CORNER_1",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "-21/640",
+      "product_enclosure": {
+        "lo": "-21/640",
+        "hi": "21/640"
+      },
+      "bound": "21/640"
+    },
+    {
+      "id": "ZERO_CENTER_ANCHOR_PRODUCT_CORNER_2",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "11/640",
+      "product_enclosure": {
+        "lo": "-21/640",
+        "hi": "21/640"
+      },
+      "bound": "21/640"
+    },
+    {
+      "id": "ZERO_CENTER_ANCHOR_PRODUCT_CORNER_3",
+      "passed": true,
+      "relation": "exact rational inclusion and complete product error bound",
+      "value": "21/640",
+      "product_enclosure": {
+        "lo": "-21/640",
+        "hi": "21/640"
+      },
+      "bound": "21/640"
+    },
+    {
+      "id": "ZERO_CENTER_REJECT_OMITTING_ANCHOR_PRODUCT_CROSS_TERM",
+      "passed": true,
+      "relation": "strict exact rational counterexample",
+      "actual_error": "21/640",
+      "incomplete_bound": "1/40",
+      "omitted_cross_term": "1/128"
+    }
+  ],
+  "check_count": 92,
+  "failures": [],
+  "status": "PASS_SCOPED_EXACT_TOYS",
+  "physical": "HOLD",
+  "production": "HOLD"
+}

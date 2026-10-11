@@ -1,0 +1,37 @@
+{
+  "schema": "bass-he-e13c5-ncp-ready-manifest-v1",
+  "package_root": "BASS_HE_E13C5_NCP_READY_20261011",
+  "files": [
+    {
+      "path": "00_START_HERE_KO.md",
+      "bytes": 3983,
+      "sha256": "7ae93659fd6346d160b7c68c56063dd306bc9cc7f3c328dd1c770bd4d96e894f"
+    },
+    {
+      "path": "BASS_HE_E13C5_PR19_REFINEMENT_20261011_sha_291b57399184.zip",
+      "bytes": 3843064,
+      "sha256": "291b57399184bb3042ec1b3e0aae4a648b6ba909273d8dbd50752954df639cf3"
+    },
+    {
+      "path": "CORE_PUBLICATION_READBACK.json",
+      "bytes": 2459,
+      "sha256": "29fd3c9dc2fe4381fa2073d85daf03a08cd2ca70229a72ffc523245c291dc91f"
+    },
+    {
+      "path": "DELIVERY_RECEIPT.json",
+      "bytes": 4596,
+      "sha256": "e2ba6044717464b7de7aaf2a9be363f2f880d3b5e1b8317dcdc64ee388db545f"
+    },
+    {
+      "path": "NCP_LOCAL_CODEX_HANDOFF_KO.md",
+      "bytes": 10753,
+      "sha256": "7c5519e0a44892326c43d30a06b42d449dd40665f9bcef8f12d0828217942e4c"
+    }
+  ],
+  "payload_file_count": 5,
+  "excludes": [
+    "NCP_READY_MANIFEST.json"
+  ],
+  "manifest_scope": "Every outer payload; complete scientific archive has a separate root FILE_MANIFEST.json",
+  "claim": "Byte integrity only; not additional physics validation or actual NCP execution"
+}

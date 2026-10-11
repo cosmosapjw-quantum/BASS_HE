@@ -1,0 +1,44 @@
+{
+  "schema": "bass-he-e13c5-backup-upload-evidence-v1",
+  "observed_utc": "2026-10-10 23:12:13 UTC",
+  "google_drive_upload": {
+    "success": true,
+    "id": "1dYsblmWq0BJaGZ4yY4hmGgpXTOURFrG0",
+    "file_name": "BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip",
+    "url": "https://drive.google.com/file/d/1dYsblmWq0BJaGZ4yY4hmGgpXTOURFrG0/view?usp=drivesdk",
+    "parent_id": "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI"
+  },
+  "google_drive_metadata": {
+    "id": "1dYsblmWq0BJaGZ4yY4hmGgpXTOURFrG0",
+    "title": "BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip",
+    "mime_type": "application/zip",
+    "size": "3455297",
+    "url": null,
+    "file_or_folder": "file",
+    "created_time": null,
+    "modified_time": null,
+    "parent_ids": [
+      "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI"
+    ],
+    "drive_id": null,
+    "current_user_can_share": null,
+    "has_augmented_permissions": null,
+    "shared": null,
+    "permissions": null,
+    "source_visibility_status": "access_not_verified"
+  },
+  "dropbox_completed": {
+    "file": {
+      "file": {
+        "size": 3455297
+      },
+      "file_id": "id:BSpOijBcT10AAAAAAD37LA",
+      "modified_time": "2026-10-10T23:11:45Z",
+      "name": "BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip",
+      "object_type": "file",
+      "path": "ns:183516487//BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip",
+      "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_E13C5_NCP_READY_20261011_sha_e2aac517d708.zip"
+    },
+    "status": "completed"
+  }
+}

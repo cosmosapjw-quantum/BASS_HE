@@ -1,0 +1,13 @@
+{
+  "schema": "bass-he-e13c5-theory-contributor-contract-v1",
+  "role": "INDEPENDENT_THEORY_CONTRIBUTOR_NOT_DECISION_REVIEWER",
+  "owner": "/root/e13c5_theory",
+  "objective": "Derive composition of nonzero incoming correction, cumulative moments, exact-frozen/native representation and energy anchors on the inherited fixed gas path; discriminate missing terms by exact small toys.",
+  "harness": "GPT-6 Astra research/coding v4.0.0",
+  "in_scope": ["direct mathematical derivation", "read existing adjacent capture rows", "small exact Fraction/formal-exp toys"],
+  "out_of_scope": ["candidate main implementation", "final admission decision", "new native/gas/continuous solver runs", "full first2 expansion", "external mutation"],
+  "acceptance": ["derive incoming gains for endpoint/count/energy/heat/redshift", "derive changed number and energy remainder ledgers for uncertain incoming", "derive representation seam and anchor ledger signs", "identify real adjacent captured rows", "run exact discriminating controls with retained source/exit/output identities"],
+  "execution_budget": {"processes": 1, "threads": 1, "wall_seconds": 60, "implementation": "Python standard library Fractions; formal exp(-1) with rational enclosing interval"},
+  "claim_ceiling": "Derived composition equations and exact toy checks only; physical/production HOLD; no new candidate numerical enclosure or path certificate from this contribution alone",
+  "protected": {"baseline_RCT": "OFF", "actual_atomic_photon_heat_recoil": null, "physical": "HOLD", "production": "HOLD", "HE_F2_F09": "OPEN", "receiver_adoption": "SEPARATE", "legacy_Gamma_alias": {"value": 3.543295, "status": "FAIL"}}
+}

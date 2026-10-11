@@ -1,0 +1,62 @@
+{
+  "schema": "bass-he-e13c5-dag-v1",
+  "current_node": "E13C5_FIXED_PATH_INCOMING_AND_ANCHOR_ENCLOSURE",
+  "current_status": "OWNER_COMPLETED_INDEPENDENT_REVIEW_FILE_CONTROLS_ADMISSION",
+  "next_science_node": "E13C6_SPECTRAL_WEIGHTED_AGGREGATE_AND_REDUCTION_ENCLOSURE",
+  "nodes": [
+    {
+      "id": "E13C5_FIXED_PATH_INCOMING_AND_ANCHOR_ENCLOSURE",
+      "state": "TWO_TRACK_EXECUTION_COMPLETE",
+      "decision_file": "INDEPENDENT_REVIEW.json",
+      "scope": "OFFnodes0and700_only_two_stages_three_segments_each"
+    },
+    {
+      "id": "NCP_E13C5_TWO_TRACK_HOST_PARITY",
+      "state": "READY_NOT_RUN_ON_NCP",
+      "depends_on": [
+        "E13C5_FIXED_PATH_INCOMING_AND_ANCHOR_ENCLOSURE"
+      ],
+      "purpose": "changedhost_oneN512P60_two_track_freshparity",
+      "runner": "code/ncp_execute.py",
+      "handoff": "NCP_LOCAL_CODEX_HANDOFF_KO.md",
+      "new_research_design": false
+    },
+    {
+      "id": "E13C6_SPECTRAL_WEIGHTED_AGGREGATE_AND_REDUCTION_ENCLOSURE",
+      "state": "CHAT_RESEARCH_PENDING",
+      "depends_on": [
+        "E13C5_FIXED_PATH_INCOMING_AND_ANCHOR_ENCLOSURE"
+      ],
+      "question": "Propagate weighted node-moment enclosures and captured-versus-native reduction residuals, then choose bounded event-complete spectral subset or economical certified all-node strategy before any first2 aggregate claim",
+      "minimum_research": [
+        "derive positive spectralweight error sum and native reduction residual contract",
+        "preserve pernode incoming and every anchor/eventbranch",
+        "design computationalbudget fromactual E13C5 work ratherthanunmeasured fullpath timing",
+        "implementandrun bounded aggregate controls",
+        "independentdecisionbefore anyfullfirst2uniform claim"
+      ],
+      "automatic_fullpath_expansion": false
+    },
+    {
+      "id": "ACTUAL_ATOMIC_RCT_MOMENTS",
+      "state": "OPEN_SEPARATE_INPUT"
+    },
+    {
+      "id": "HE_F2_F09_RECEIVER_ADOPTION",
+      "state": "OPEN_OWNER_GATE"
+    }
+  ],
+  "protected": {
+    "baseline_RCT": "OFF",
+    "actual_atomic_photon_heat_recoil": null,
+    "physical": "HOLD",
+    "production": "HOLD",
+    "HE_F2_F09": "OPEN",
+    "receiver_adoption": "SEPARATE",
+    "legacy_Gamma_alias": {
+      "value": 3.543295,
+      "status": "FAIL"
+    },
+    "uniform_path_certificate": false
+  }
+}

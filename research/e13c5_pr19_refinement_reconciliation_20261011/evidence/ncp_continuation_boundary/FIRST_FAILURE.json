@@ -1,0 +1,20 @@
+{
+  "NO_SCIENCE": true,
+  "classification": "IMPLEMENTATION_CONTROL_METADATA_IDENTITY",
+  "status": "FIRST_FAILURE_PRESERVED",
+  "original_wrapper_sha256": "24daad3ca88bbb0d8aa64329376e4ab412cb2cf5a6adbc24feb09b44407db921",
+  "actual_synthetic_harness_exit": 1,
+  "passed_cases": 10,
+  "total_cases": 11,
+  "unexpected_case": "lock_metadata_tamper_during",
+  "unexpected_exit": 0,
+  "unexpected_wrapper_status": "PASS_SCOPED_HOST_PARITY_AND_REDUCTION",
+  "source_copy": "FIRST_FAILURE_SOURCE_ncp_continue.py",
+  "all_case_evidence": "cases/",
+  "summary": "RESULTS.json",
+  "raw_stdout": "SYNTHETIC.stdout.txt",
+  "raw_stderr": "SYNTHETIC.stderr.txt",
+  "original_harness_sha256": "5e693a41dcd4a803d0b8dbbb37a87caf626e265c931e29c6f01b1d47340c826c",
+  "root_fix_expected_sha256": "38957cb24f58b5d36dd4823ce7e642c708f0f4cae725ac2377d3f824b2b41626",
+  "real_science_invocations": 0
+}

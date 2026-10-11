@@ -1,0 +1,55 @@
+{
+  "schema": "bass-he-e13c5-lineage-next-dag-theory-proposal-v1",
+  "role": "THEORY_CONTRIBUTOR_PROPOSAL_NOT_FINAL_DECISION",
+  "current_novel_result": "Two existing OFF branch-cover tracks refined with new N512/P60 carried enclosures; prior PR19 already contains 12 N128/P60 paths.",
+  "nodes": [
+    {
+      "id": "E13C5_LINEAGE_EXACT_TARGET_RECONCILIATION",
+      "state": "ACTUAL_MATCH_EVIDENCE_REQUIRED",
+      "work": ["match exact row/stage/mask/source/weight definitions for OFF0 and OFF700", "read actual pilot integration/carry method", "prove required OFF700 reused incoming equality or containment", "map continuous-minus-frozen, native correction, absolute and erg/eV targets"],
+      "new_coefficient_evaluations": 0,
+      "new_solver_runs": 0
+    },
+    {
+      "id": "E13C5_SELECTED_SUBSET_TWO_PATH_REPLACEMENT",
+      "depends_on": ["E13C5_LINEAGE_EXACT_TARGET_RECONCILIATION"],
+      "state": "CONDITIONAL_ON_VALID_MATCH_AND_INDEPENDENT_DECISION",
+      "work": ["replace only OFF0/OFF700 perpath interval records", "rebuild OFF four-node positive-weight sum from components", "preserve OFF1620/OFF2344 and all KF/GM path identities", "report compatibility, containment and width change separately"],
+      "mode_pooling": "NOT_A_SINGLE_PHYSICAL_OBSERVABLE_DIFFERENT_GAS_HISTORIES",
+      "new_coefficient_evaluations": 0,
+      "new_solver_runs": 0
+    },
+    {
+      "id": "E13C5_SCOPED_PUBLICATION_AND_SELF_CONTAINED_NCP_PARITY_HANDOFF",
+      "depends_on": ["E13C5_SELECTED_SUBSET_TWO_PATH_REPLACEMENT"],
+      "state": "OWNER_DELIVERY_CONTRACT_CONTROLS",
+      "scope": "publish reviewed additive refinement/reconciliation and package only the newly prepared host-parity job; do not rerun prior 12path cover"
+    },
+    {
+      "id": "E13C5_SELECTED_SUBSET_BUDGET_AND_COMPLEMENT_CONTRACT",
+      "depends_on": ["E13C5_SELECTED_SUBSET_TWO_PATH_REPLACEMENT"],
+      "state": "NEXT_BOUNDED_RESEARCH_QUESTION",
+      "question": "Which remaining interval width is a selected-path numerical budget, and which unselected signed correction contribution must be bounded before a full first2 claim?",
+      "allowed_work": ["exact reduction and weighted-width attribution from sealed outputs", "mark budget pieces absent from saved fields as not identifiable", "derive the missing-node complement requirement", "freeze branch coverage and resource contract before any expanded evaluation"],
+      "new_coefficient_evaluations": 0,
+      "new_solver_runs": 0,
+      "does_not_authorize_E13C6_or_full_first2": true
+    },
+    {
+      "id": "FULL_FIRST2_COMPLEMENT_EVALUATION",
+      "state": "HOLD_RESOURCE_AUTHORIZATION",
+      "depends_on": ["E13C5_SELECTED_SUBSET_BUDGET_AND_COMPLEMENT_CONTRACT"],
+      "scope": "must be separately selected and bounded; no automatic full-grid or new-gas run"
+    }
+  ],
+  "protected": {
+    "baseline_RCT": "OFF",
+    "actual_atomic_photon_heat_recoil": null,
+    "physical": "HOLD",
+    "production": "HOLD",
+    "HE_F2_F09": "OPEN",
+    "receiver_adoption": "SEPARATE",
+    "legacy_Gamma_alias": {"value": 3.543295, "status": "FAIL"},
+    "uniform_full_path_certificate": false
+  }
+}

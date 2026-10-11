@@ -1,0 +1,7 @@
+# Preserved first failure
+
+The first independent exact toy run, `toy_run_v1`, exited 1. Of 76 checks, two negative mutation controls were inconclusive: `REJECT-OMITTED-REPRESENTATION` and `REJECT-REVERSED-REPRESENTATION`. Their candidate formulas were deliberately wrong, but the selected **upper** incoming endpoint still lay inside the shifted interval for the chosen negative representation value. This was a control-fixture selection issue; it identified no production-code failure and changed no physics, criterion, radius, or tolerance.
+
+The repair selects the exact **lower** incoming endpoint for those checks, which makes upward interval shifts from omitted/reversed negative representation decisive. The initial JSON results, stdout/stderr, actual-exit record and original source are retained in `toy_run_v1/` and `EXACT_TOY_RESULTS_v1.json`. A fresh `toy_run_v2` output will record the corrected fixture's actual outcome.
+
+The initial saved-output audit `saved_audit_run_v1` exited 1 with a `KeyError: 'energy_eV'` before producing a final audit JSON. The actual field is `energy_eV_with_anchor_subtracted`. Only this audit schema lookup was corrected; all preceding checks' outcomes in that interrupted attempt remain unreported, and no outcome from it is counted as a completed PASS. Original source and raw stderr/exit record are retained. This was an audit adapter implementation error, with no production source or numerical result change.

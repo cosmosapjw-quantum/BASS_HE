@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/7fd51143e473/e13c5_recurrence_control_work/audit_saved_path.py", line 418, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/scratch/7fd51143e473/e13c5_recurrence_control_work/audit_saved_path.py", line 411, in main
+    result=run(a.results,a.inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/7fd51143e473/e13c5_recurrence_control_work/audit_saved_path.py", line 383, in run
+    audit_track(checks,track,controls,f"track{track['track']['node']}")
+  File "/workspace/scratch/7fd51143e473/e13c5_recurrence_control_work/audit_saved_path.py", line 360, in audit_track
+    checks.enclosing(prefix+'/global_ledger_arithmetic/'+name,track['global_ledger_enclosures'][name],box)
+                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'energy_eV'

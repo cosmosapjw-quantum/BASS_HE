@@ -1,0 +1,18 @@
+{
+  "reviewer": "/root/e13c5_independent_review",
+  "started_utc": "2026-10-10T22:51:23.949986+00:00",
+  "command": [
+    "python3",
+    "/workspace/scratch/7fd51143e473/BASS_HE_E13C5_INCOMING_ANCHOR_ENCLOSURE_20261011_v1/evidence/lineage_review/exact_lineage_audit.py"
+  ],
+  "source_sha256": "f9b846fc0e963712f7979040dc6768e237546f9cc3182eba60930f617ebeb53b",
+  "timeout_seconds": 30,
+  "memory_limit_bytes": 536870912,
+  "scientific_solver_invocations": 0,
+  "finished_utc": "2026-10-10T22:51:24.065879+00:00",
+  "actual_exit_code": 0,
+  "wall_seconds": 0.11565004200383555,
+  "child_max_rss_KiB": 17304,
+  "stdout_sha256": "c1999124e3a9a3c1919b78c8f809048ac2544c02ebb9f72cdbb00c14c8d1c985",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

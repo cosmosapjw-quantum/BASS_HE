@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "receipts": [
+      {
+        "label": "first2_receipt",
+        "id": "id:BSpOijBcT10AAAAAAD32eg",
+        "title": "BASS_HE_E13C5_FIRST2_PUBLICATION_RECEIPT_20261011_e25039b.json",
+        "metadata": {
+          "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_FIRST2_PUBLICATION_RECEIPT_20261011_e25039b.json",
+          "server_modified": "2026-10-10T17:52:20Z"
+        },
+        "url": "https://www.dropbox.com/scl/fi/pek865zhozs7xr5vikvuk"
+      },
+      {
+        "label": "e13c5_publication_receipt",
+        "id": "id:BSpOijBcT10AAAAAAD31hw",
+        "title": "BASS_HE_E13C5_PUBLICATION_RECEIPT_20261011_48f648cd.json",
+        "metadata": {
+          "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_PUBLICATION_RECEIPT_20261011_48f648cd.json",
+          "server_modified": "2026-10-10T17:28:04Z"
+        },
+        "url": "https://www.dropbox.com/scl/fi/wge2g09wxt8j7qcreoj8c"
+      },
+      {
+        "label": "off700_pilot_recovery_receipt",
+        "id": "id:BSpOijBcT10AAAAAAD30wQ",
+        "title": "BASS_HE_E13C5_OFF700_PILOT_RECOVERY_RECEIPT_20261011.json",
+        "metadata": {
+          "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/CR_PHYS03_20261010_RECOVERY/BASS_HE_E13C5_OFF700_PILOT_RECOVERY_RECEIPT_20261011.json",
+          "server_modified": "2026-10-10T17:14:53Z"
+        },
+        "url": "https://www.dropbox.com/scl/fi/je4dsputkog1g8nbc7nmq"
+      }
+    ],
+    "git_files": [
+      {
+        "relative": "first2/NEXT_DAG.json",
+        "path": "research/e13c5_first2_branch_cover_20261011/NEXT_DAG.json",
+        "ref": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+        "git_blob": "b3fd70c9d74cd978acfb62ba08fe39a58beeaa5a",
+        "url": "https://github.com/cosmosapjw-quantum/BASS_HE/blob/e25039b3a53031ce37800cebefb51200aa5a63a2/research/e13c5_first2_branch_cover_20261011/NEXT_DAG.json"
+      },
+      {
+        "relative": "first2/CONTRACT.md",
+        "path": "research/e13c5_first2_branch_cover_20261011/CONTRACT.md",
+        "ref": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+        "git_blob": "413bfa61f34d4238837ac5ca5749527cfa1c7560",
+        "url": "https://github.com/cosmosapjw-quantum/BASS_HE/blob/e25039b3a53031ce37800cebefb51200aa5a63a2/research/e13c5_first2_branch_cover_20261011/CONTRACT.md"
+      },
+      {
+        "relative": "first2/REPORT.md",
+        "path": "research/e13c5_first2_branch_cover_20261011/REPORT.md",
+        "ref": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+        "git_blob": "19ac98ee38266294938fdeebce63c399b6251771",
+        "url": "https://github.com/cosmosapjw-quantum/BASS_HE/blob/e25039b3a53031ce37800cebefb51200aa5a63a2/research/e13c5_first2_branch_cover_20261011/REPORT.md"
+      },
+      {
+        "relative": "first2/START.json",
+        "path": "research/e13c5_first2_branch_cover_20261011/START.json",
+        "ref": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+        "git_blob": "8b1a8d0d66d688c537e0ad99a3b15ebc90943c73",
+        "url": "https://github.com/cosmosapjw-quantum/BASS_HE/blob/e25039b3a53031ce37800cebefb51200aa5a63a2/research/e13c5_first2_branch_cover_20261011/START.json"
+      },
+      {
+        "relative": "first2/independent_review.md",
+        "path": "research/e13c5_first2_branch_cover_20261011/independent_review.md",
+        "ref": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+        "git_blob": "d4f60cf2f911a96f611de92a33cab902062ce8bc",
+        "url": "https://github.com/cosmosapjw-quantum/BASS_HE/blob/e25039b3a53031ce37800cebefb51200aa5a63a2/research/e13c5_first2_branch_cover_20261011/independent_review.md"
+      },
+      {
+        "relative": "first2/stderr.log",
+        "path": "research/e13c5_first2_branch_cover_20261011/stderr.log",
+        "ref": "e25039b3a53031ce37800cebefb51200aa5a63a2",
+        "git_blob": "6896f7e39989aced4eb40c6d62ac5e8a68cc4f57",
+        "url": "https://github.com/cosmosapjw-quantum/BASS_HE/blob/e25039b3a53031ce37800cebefb51200aa5a63a2/research/e13c5_first2_branch_cover_20261011/stderr.log"
+      }
+    ],
+    "source_note": "Exact returned text materialized without executing code. Git file byte identity will be checked against returned Git blob IDs."
+  },
+  "identities": [
+    {
+      "relative": "BASS_HE_E13C5_FIRST2_PUBLICATION_RECEIPT_20261011_e25039b.json",
+      "bytes": 2606,
+      "sha256": "0a0b23cabcd6a5244ca57a5c336605dd8ac1310f87dea137416218ef2fdd80f7",
+      "git_blob": "71cd9356ea51541033fa0251d189639190392bdb"
+    },
+    {
+      "relative": "BASS_HE_E13C5_PUBLICATION_RECEIPT_20261011_48f648cd.json",
+      "bytes": 2843,
+      "sha256": "3aaf119d5a69dad49391a97680c9d952b76080bdc628c4c73dec15e14fea0718",
+      "git_blob": "359f342a8a953fd524fee4591ad43dd0e072467e"
+    },
+    {
+      "relative": "BASS_HE_E13C5_OFF700_PILOT_RECOVERY_RECEIPT_20261011.json",
+      "bytes": 1093,
+      "sha256": "78837e55d206b2a18f080cf08815c0f9f8caf5966d8369562ea36888b83050f4",
+      "git_blob": "978fb5a364c7564347b82662fed1b4142c34b71b"
+    },
+    {
+      "relative": "first2/NEXT_DAG.json",
+      "bytes": 776,
+      "sha256": "e1dfc0fda51136e3a085283b0176ba4c270f684ad5fc3b80dca252cd1c07fd8a",
+      "git_blob": "b3fd70c9d74cd978acfb62ba08fe39a58beeaa5a",
+      "returned_git_blob_matches": true
+    },
+    {
+      "relative": "first2/CONTRACT.md",
+      "bytes": 4202,
+      "sha256": "cbea11086727b06fac350451b433f10f344664bcdee85948901cac14b62b56dd",
+      "git_blob": "413bfa61f34d4238837ac5ca5749527cfa1c7560",
+      "returned_git_blob_matches": true
+    },
+    {
+      "relative": "first2/REPORT.md",
+      "bytes": 3399,
+      "sha256": "bd4c7886e4aa24390752ad86b16d01d6f3b739b192e94e0bbaa4ca46bc1fb1aa",
+      "git_blob": "19ac98ee38266294938fdeebce63c399b6251771",
+      "returned_git_blob_matches": true
+    },
+    {
+      "relative": "first2/START.json",
+      "bytes": 3563,
+      "sha256": "5f75633b9bd4b55aeaab4ca727972c6b7da4aba0fbaaf050b3d183a45a2ce6d1",
+      "git_blob": "8b1a8d0d66d688c537e0ad99a3b15ebc90943c73",
+      "returned_git_blob_matches": true
+    },
+    {
+      "relative": "first2/independent_review.md",
+      "bytes": 1133,
+      "sha256": "999e841eb3ac55d744946682215d00b1c5dc1db3650b2a81a6c8c228286f237f",
+      "git_blob": "d4f60cf2f911a96f611de92a33cab902062ce8bc",
+      "returned_git_blob_matches": true
+    },
+    {
+      "relative": "first2/stderr.log",
+      "bytes": 749,
+      "sha256": "1bf1557ba42c4291f2b2ed69ef7ea335781f02dc2e166afaccc684f098a55efe",
+      "git_blob": "6896f7e39989aced4eb40c6d62ac5e8a68cc4f57",
+      "returned_git_blob_matches": true
+    }
+  ]
+}

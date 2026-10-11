@@ -1,0 +1,16 @@
+{
+  "schema": "bass-he-e13c5-intake-repo-observation-v1",
+  "repository": "cosmosapjw-quantum/BASS_HE",
+  "PR": 17,
+  "head": "research/shared-c64-crossrepo-20260928",
+  "head_sha": "8fc3fb14dd33da10efa86c97c4beb9b0d12eeaad",
+  "state": "open",
+  "draft": true,
+  "merged": false,
+  "base_tree_sha": "f3b22ad550ae18a38948e1fd13bc5dfba0bb564e",
+  "base_tree_identity_source": "Previously completed immutable E13C4 delivery receipt v2, SHA2563bf81ad2dfdf2bd8569d697cec3b8c211944f9dfc9bd0cf610349982202be8bb; HEAD freshly observed unchanged",
+  "messages_sent_to_other_people": false,
+  "recorded_utc": "2026-10-10T22:34:29.315010+00:00",
+  "observation_time_utc": null,
+  "observation_scope": "GitHub PR17 observed twice in current turn; tool response has no observation timestamp; exact HEAD/status preserved"
+}

@@ -1,0 +1,1 @@
+{"pass": 106, "fail": 0, "physics_reexecution": false, "new_scientific_kernel_seconds": 21.01360547398508}

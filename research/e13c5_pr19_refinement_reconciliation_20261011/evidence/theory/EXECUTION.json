@@ -1,0 +1,26 @@
+{
+  "schema": "bass-he-e13c5-theory-execution-v1",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/scratch/7fd51143e473/e13c5_theory_work/exact_incoming_anchor_toys.py",
+    "--output",
+    "/workspace/scratch/7fd51143e473/e13c5_theory_work/EXACT_TOY_RESULTS.json"
+  ],
+  "started_utc": "2026-10-10T22:19:09.774065+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "source_sha256_before": "797f71c8a532f558972ca3467811f1cd0bf6aa24b556ef0bf9f3a13e942f9e9c",
+  "native_runs": 0,
+  "gas_advances": 0,
+  "continuous_solves": 0,
+  "candidate_imports": 0,
+  "actual_exit_code": 0,
+  "finished_utc": "2026-10-10T22:19:09.894518+00:00",
+  "elapsed_seconds": 0.11691090399835957,
+  "child_peak_RSS_KiB": 10880,
+  "source_sha256_after": "797f71c8a532f558972ca3467811f1cd0bf6aa24b556ef0bf9f3a13e942f9e9c",
+  "source_unchanged": true,
+  "stdout_sha256": "73a69e9e9b7a8e62af49d51cb081278b568935e28aeb1199748773fc49bce19d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "results_sha256": "e42b33c7fb13c6afc978734daa6c699c2f9402fffb3f193bf1e135e94369677a"
+}
