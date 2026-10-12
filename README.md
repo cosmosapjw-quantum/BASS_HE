@@ -10,6 +10,7 @@
 - [증거 기반 연구 실행 계약](docs/RESEARCH_HARNESS.md)
 - [발견사항 및 claim gate](evidence/FINDINGS.json)
 - [실행 결과 요약](evidence/RESULT_SUMMARY.json)
+- [공통 Case A 사건과 implicit primary의 이론 연결 — HERE_RUX03_PRIMARY_THEORY_03](research/rux03_primary_theory_20261012/dossier/README_KO.md)
 
 ## 설치
 
