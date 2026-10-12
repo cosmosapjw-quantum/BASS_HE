@@ -1,4 +1,25 @@
-# BASS_HE 개발계획 — B1 완료와 REI Atomic-Reuse 후속 경로
+# BASS_HE 개발계획 — RUX03 He 재결합 supplier 결과
+
+2026-10-12 · B1 이후 다음 연구 루프
+
+## 현재 활성 결과
+
+RUX00의 BASS_HE 입력·owner 기여와 RUX03 He 재결합 사건/광자 응답 유도·screening을 완료했다. 선택 입력은 기존 warm HM12 extended (10–50000 eV, 2904 nodes, 17 epochs, 초기 50000 K)이며 실제 native FT03 Case-A escape 경로에 묶었다. 새 결과는 17개 He III RR/RCT 경쟁비와 6개 frozen monoenergy response다. 독립 판정과 정확한 claim ceiling은 아래 기록을 따른다.
+
+| 활성 문서 | 역할 |
+|---|---|
+| [이번 연구 보고서](research/rux03_helium_transfer_20261012/REPORT_KO.md) | 실제 유도·새 수치·재사용 구분 |
+| [독립 판정](research/rux03_helium_transfer_20261012/review/DECISION.json) | Supplier 범위의 최종 판정과 고정 파일 identity |
+| [물리 입력](research/rux03_helium_transfer_20261012/PHYSICAL_INPUT_ADMISSION.json) | 선택된 기존 warm 입력, 실제 실행 경로, cold/global과 구별 |
+| [원자 owner](research/rux03_helium_transfer_20261012/ATOM_OWNER_MATRIX.json) | 종·열·결합·광자·escape의 실제 담당 |
+| [활성 supplier overlay](research/rux03_helium_transfer_20261012/NEXT_DAG.json) | 원 owner DAG를 보존하는 다음 작업 상태 |
+| [다음 최소 작업](research/rux03_helium_transfer_20261012/HANDOFF_KO.md) | HERE_RUX03_EVENT_BRIDGE_02: 선택된 사건 bundle의 실제 owner RHS 소비 |
+
+Owner RUX03의 runtime provider 주입은 미완료다. B1·PR113·P03A 결과를 재실행하거나 cold/global EoR 승격으로 확장하지 않는다. E13C11은 PARKED_PENDING_OBSERVABLE_NEED, 새 NCP work list는 []다.
+
+## 이전 B1 및 RUX 전체 계획 — 보존된 기준
+
+### BASS_HE 개발계획 — B1 완료와 REI Atomic-Reuse 후속 경로
 
 2026-10-12 KST · 사용자 첨부 RUX00–RUX16 DAG 반영
 
