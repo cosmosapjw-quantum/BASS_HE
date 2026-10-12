@@ -1,3 +1,34 @@
+# BASS_HE 개발계획 — 실제 Case A event bridge 완료
+
+2026-10-12 · `HERE_RUX03_EVENT_BRIDGE_02`
+
+## 현재 활성 결과와 다음 단계
+
+선택된 warm Case A conditional production에서 원시 사건 bundle의 실제
+AXI RHS 소비를 구현·실행했다. 독립 최종 판정은 **PROMOTE_SCOPED_CONDITIONAL_EVENT_BRIDGE**이다.
+원시22성분 비교,79개 probe 검사와257RHS 호출의 새1e11s 구간이 통과했다.
+이번 결과는 기존 production 조합에서 사건 소유권과 소비 횟수를 닫은 기여다.
+
+| 활성 기록 | 역할 |
+|---|---|
+| [연구 보고서](research/rux03_event_bridge_20261012/REPORT_KO.md) | 새 구현·유도·실제 수치와 범위 |
+| [독립 판정](research/rux03_event_bridge_20261012/review/DECISION.json) | 고정된 주장·source·실행 증거에 대한 채택 |
+| [주장과 실행 요약](research/rux03_event_bridge_20261012/CLAIMS.json) | 증거 종류와 정확한 claim ceiling |
+| [receiver 구현 초안 PR114](https://github.com/cosmosapjw-quantum/rei_bianchi/pull/114) | PR97 위에 격리한 실제 native 변경 |
+| [현재 DAG overlay](research/rux03_event_bridge_20261012/NEXT_DAG.json) | 원래17노드와 의존성 보존 |
+| [다음 최소 작업](research/rux03_event_bridge_20261012/HANDOFF_KO.md) | HERE_RUX03_PRIMARY_PROVIDER_03 |
+
+다음에는 같은 provider/event를 기존 implicit primary에 연결하고 영향받는
+point/root/interval 일관성을 확인한다. RUX02/RUX03 병렬 준비와
+`RUX02 + RUX03 → RUX04 → RUX05`의 물리 시나리오 조건을 유지한다.
+전체 RUX03나 물리적 첫 FLRW 완료로 일괄 변경하지 않는다. 기존 runner의
+scientific_admission은 HOLD이며, 새 NCP work list는[]다.
+
+## 보존된 직전 supplier와 B1 계획
+
+아래는 이번 실행 이전의 기록이다. 현재 next action은 위 event-bridge
+handoff를 따른다. 이전 수치·판정과 미완료 범위는 원래 의미로 보존한다.
+
 # BASS_HE 개발계획 — RUX03 He 재결합 supplier 결과
 
 2026-10-12 · B1 이후 다음 연구 루프
