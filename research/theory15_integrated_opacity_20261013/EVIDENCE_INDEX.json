@@ -11,10 +11,12 @@
     "name": "BASS_HE_THEORY15_SOURCE_OPACITY_EVIDENCE_20261013_v1.zip",
     "bytes": 117244,
     "sha256": "3fa3799b4db34332c2ff62cac739e1aded07c1b870297516171370daae25192c",
+    "md5": "e9bdaf1be7f97d9a223b3ad06aa85601",
     "members": 45,
     "manifest_entries": 44,
     "CRC": "PASS",
-    "all_member_hashes": "PASS"
+    "all_member_hashes": "PASS",
+    "original_archive_unchanged": true
   },
   "dropbox": {
     "id": "id:BSpOijBcT10AAAAAAD4jww",
@@ -24,13 +26,34 @@
     "server_modified": "2026-10-13T14:32:29Z",
     "server_size": 117244,
     "status": "CREATE_ONLY_DESKTOP_SYNC_AND_SERVER_METADATA_VERIFIED",
-    "provider_content_hash": "71d232d63fa83d47b287e6e96dda4d0ac243e37e392d83ec23b52afa9d7cd6fd"
+    "provider_content_hash": "71d232d63fa83d47b287e6e96dda4d0ac243e37e392d83ec23b52afa9d7cd6fd",
+    "provider_content_hash_matches_restored_archive": true,
+    "duplicate_upload_performed": false
   },
   "google_drive_theory15": {
-    "status": "PENDING_FILE_REFERENCE_TRANSFER",
-    "observed_error": "upload_file rejected the supplied transfer reference: file_uri must be a connector file reference object returned by a fetch/upload action",
-    "file_created": false,
-    "details": "Current container tools failed before execution. Native Dropbox metadata confirms the saved archive, but a mountable Files reference was not resolved in the attempted partial Library listing. No folder completeness claim and no fabricated container link."
+    "status": "UPLOADED_AND_RESTORE_VERIFIED",
+    "id": "14le_LokWHM4LUVTYmzmd6HYhlsr07Rvk",
+    "url": "https://drive.google.com/file/d/14le_LokWHM4LUVTYmzmd6HYhlsr07Rvk/view",
+    "parent_id": "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI",
+    "bytes": 117244,
+    "created_time": "2026-10-13T14:49:54.148Z",
+    "upload_path": "Existing authorized research-desktop rclone gdrv remote; immutable copyto with exact Drive root-folder ID",
+    "upload_ack": "Copied (new); process exit 0",
+    "rclone_remote_md5": "e9bdaf1be7f97d9a223b3ad06aa85601",
+    "connector_metadata_name_size_parent_match": true,
+    "restore_path": "Native Google Drive fetch streamed the original archive to the active container",
+    "restore_sha256_match": true,
+    "restore_md5_match": true,
+    "restore_zip_crc": "PASS",
+    "file_created": true
+  },
+  "recovery_history": {
+    "prior_state": "PENDING_FILE_REFERENCE_TRANSFER",
+    "prior_error": "upload_file rejected a noncanonical transfer reference; the working container also had runtime/DNS failures",
+    "resolution": "User explicitly approved all tools and permissions needed for backup/publication. Existing configured rclone performed a create-only copy to the exact previously selected Drive folder. Native Drive metadata and a full fetched archive then closed identity and restoration checks.",
+    "secrets_read_or_disclosed": false,
+    "sharing_permissions_changed": false,
+    "scientific_results_recomputed": false
   },
   "theory14_recovery": {
     "bytes": 62362,
@@ -58,6 +81,6 @@
     "failures_preserved": ["xAct X09 rest-frame substitution before contraction", "analytic A02 extra bracket and shell exit0 without output", "transient desktop disconnect before launch"],
     "verification": "Present exact result files, expected registry counts, all literal True conditions, final exit codes and member hashes. Same author with separate CAS/rational paths, no external review."
   },
-  "next": "Use the supplied integrated donor consumer on a refined CR certificate; retain original HE endpoint/residual and global owner tasks. Retry the new Drive copy only with a valid fetched/runtime file reference.",
-  "publication_scope": "Compact complete scientific proof and this evidence index on GitHub; full Korean proof, actual code/JSON/stdout and selected source bytes in Dropbox archive. No production source edits, merge, or sharing-permission changes."
+  "next": "Use the supplied integrated donor consumer on a refined CR certificate; retain original HE endpoint/residual and global owner tasks. Storage recovery is closed; independent scientific review remains pending.",
+  "publication_scope": "Compact complete scientific proof and this evidence index on GitHub. Full Korean proof, actual code/JSON/stdout and selected source bytes are preserved in the identical Dropbox and Drive archives. No production-source edits, merge, or sharing-permission changes."
 }
