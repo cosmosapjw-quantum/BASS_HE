@@ -34,7 +34,7 @@ def stage(c1,r5,r8,destination):
   for folder in ['src','checks','results','evidence','inputs','_c1_private/src','_c1_private/inputs']:(tmp/folder).mkdir(parents=True,exist_ok=True)
   for name in ['warm_interval.py','interval_jet.py','run_evaluations.py','assemble_certificate.py']:
    shutil.copy2(ROOT/'src'/name,tmp/'src'/name)
-  for name in ['verify_c3.py','propagate_endpoint.py']:
+  for name in ['verify_c3.py','propagate_endpoint.py','test_c3.py']:
    shutil.copy2(ROOT/'checks'/name,tmp/'checks'/name)
   with zipfile.ZipFile(c1) as z:
    for name in ('P01_STATE.npz','emissivity.out','ENDPOINT_MEMORY_R7.json'):
