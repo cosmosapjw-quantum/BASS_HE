@@ -54,3 +54,7 @@ Inspect `results/HE21_PHOTO_ONLY_27.csv`, `results/RESULT_STATUS.json`, `results
 HE21 must feed these **birth-age-, direction-, spectrum- and fit-cut-preserving children** to the original source-pinned Rust `igm_point_rhs` (latest shared owner selected explicitly), with genuine photoevent/heat, CI/RR/DR, Compton, gas adiabatic work, emitted/escaped Case-A photon four-momentum, and consistency with `rei_bianchi` PR150's covariant q transport. Establish a matched-time q=0 / ±q energy×time×angular convergence campaign on 64-vCPU NCP before source-calibrated EoR or CMB claims. The full-photo-only surrogate implemented here does not replace that work.
 
 Primary sources: Friedrich et al. (2012), DOI 10.1111/j.1365-2966.2012.20449.x; Verner et al. (1996), ApJ 465, 487, original table and analytical fit; Mellema et al. (2006), DOI 10.1016/j.newast.2005.09.004. Native subagent invocation: NOT_RUN (no native delegation action exposed).
+
+## Byte/semantic reproducibility correction
+
+CSV writer now pins `lineterminator="\n"`; GitHub plain-text storage and the packaged CSV therefore have identical content bytes (rather than comparing only numeric row semantics). The original first archive is retained as a superseded transport representation; this v2 archive is the active delivery. No physics equations, event values or acceptance tolerances were changed for the correction.
