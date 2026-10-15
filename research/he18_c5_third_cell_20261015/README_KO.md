@@ -32,3 +32,7 @@ Three-cell first collision probability [2.39997477911374407097,2.399974779113744
 Third column radius 21728.2654846 m^-2, gain 0.002305074646923<1, original global gas box usage 0.116714947555<1.
 
 This is conditional on existing 70-digit mpmath.iv interval primitives and the pinned exact-real finite source; not native binary64/provider-roundoff verification, all 16 cells, full reionization history, or observer foreground. No simultaneous rei_bianchi Codex worktree was touched.
+
+## Evidence and backup
+
+[Private full evidence archive on Google Drive](https://drive.google.com/file/d/1r0syRJdeYsoudtLhAHVGX8un_XnxyqlT/view), also saved under the established Dropbox private dossier folder. Read `EVIDENCE_INDEX.json` for immutable SHA256, matching sizes and tested Drive restore. Original private source inputs are not tracked in this Git branch.
