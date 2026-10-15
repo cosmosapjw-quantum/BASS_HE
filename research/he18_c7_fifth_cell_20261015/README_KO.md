@@ -35,3 +35,7 @@ Cell five `[25000000000,31250000000]` proper seconds, total 2904 photons and 4 g
 Scientifically: source-scoped interval/Taylor enclosure conditional on the original mpmath.iv backend; exact Fraction Bernstein improvement retains all degree-2 controls and inherited third-derivative remainder. This is NOT formal backend verification, native binary64 end-to-end, all 16 cells, or cosmological observer/EoR abundance plots. Same-owner local Codex was not launched; existing repo worktrees outside this task were not modified.
 
 See `REPORT_KO.md`, `DERIVATION_KO.md`, `results/PUBLIC_SUMMARY.json` and `NEXT_ACTION.json`.
+
+## Evidence and backup
+
+The complete source-private fifth-cell archive is in [Google Drive](https://drive.google.com/file/d/1nbC1uzqnuDUrlC4rOz6JYE4UyZc05DtA/view), and mirrored in the original private Dropbox dossier. The full Google Drive copy was actually downloaded and SHA256/ZIP-CRC matched. Archive SHA256: 9cc4894f116078d71821d25b292f0785f66ac1d2e9a8f171be5ca2d52e5ea977. Detailed IDs and validation scope: EVIDENCE_INDEX.json. No raw P01 NPZ/HM12/2904 error vector is published on GitHub.
