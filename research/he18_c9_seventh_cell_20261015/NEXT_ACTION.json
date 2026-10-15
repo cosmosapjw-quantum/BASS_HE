@@ -23,5 +23,14 @@
     "other 9 source cells",
     "external review"
   ],
-  "status": "SOURCE_SCOPED_INTERVAL_CERTIFICATE_CONDITIONAL_ON_PRIMITIVES"
+  "status": "SOURCE_SCOPED_INTERVAL_CERTIFICATE_CONDITIONAL_ON_PRIMITIVES",
+  "backup_resume": {
+    "current": "DROPBOX_RESTORE_VERIFIED_DRIVE_RATE_LIMITED",
+    "file_sha256": "a5f3d5dfa10d5679481cd137aa5933ced18a6312a78df70487a6aa13078c65bb",
+    "exact_filename": "BASS_HE_HE18_C9_SEVENTH_MEMOIZED_EVIDENCE_20261015_v1.zip",
+    "destination_google_folder_id": "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI",
+    "first_step": "Check source identity and search Drive for same exact filename, to avoid creating a duplicate.",
+    "second_step": "After quota recovers, create-only upload and download/hash/CRC verification.",
+    "no_automatic_retry_task_created": true
+  }
 }

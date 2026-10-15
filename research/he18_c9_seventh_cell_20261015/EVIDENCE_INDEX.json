@@ -25,10 +25,17 @@
     "restored_members": 85
   },
   "google_drive": {
-    "status": "UPLOAD_IN_PROGRESS_UNCONFIRMED",
-    "destination_folder": "BASS_DERIVATION_DOSSIERS_20260912",
-    "actual_restoration_test": false,
-    "provider_verified_id": null
+    "status": "BLOCKED_PROVIDER_RATE_LIMIT_EXCEEDED_UNVERIFIED",
+    "service": "drive.googleapis.com",
+    "reported_reason": "RATE_LIMIT_EXCEEDED",
+    "destination_folder_id": "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI",
+    "attempted_create_only_upload": true,
+    "original_upload_success_unconfirmed": true,
+    "second_known_folder_id_attempt": "FAILED_RATE_LIMIT_EXCEEDED",
+    "provider_file_id": null,
+    "remote_restoration_test": false,
+    "should_retry_only_after_rate_limit_resolves": true,
+    "automatic_retry_scheduled": false
   },
   "scientific_execution": {
     "seventh_cell_actual_run": true,
@@ -61,5 +68,7 @@
     "external independent referee NOT_RUN"
   ],
   "native_subagent": "NOT_RUN",
-  "local_codex": "NOT_INVOKED"
+  "local_codex": "NOT_INVOKED",
+  "backup_status": "GitHub_PR_PUBLISHED_AND_DROPBOX_REMOTE_BYTES_RESTORED; DRIVE_API_BLOCKED",
+  "drive_error_scope": "After original Drive upload stalled, one concrete diagnosed alternate used known folder ID and received RATE_LIMIT_EXCEEDED. No successful Google Drive response; file existence must be checked before any future create-only retry."
 }
