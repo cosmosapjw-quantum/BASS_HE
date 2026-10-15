@@ -43,7 +43,7 @@ def main():
     with (out/'HE21_PHOTO_ONLY_27.csv').open('w',newline='') as f:
         keys=['q','m','steps','temperature_final_K','total_absorbed_fraction','absorbed_HI','absorbed_HeI','absorbed_HeII',
               'heat_ev','work_photon_ev','binding_delta_ev','relative_photon_number_defect','relative_energy_defect','max_support_crossing']
-        writer=csv.DictWriter(f,fieldnames=keys);writer.writeheader()
+        writer=csv.DictWriter(f,fieldnames=keys,lineterminator="\n");writer.writeheader()
         for row in result:
             writer.writerow(dict(q=row['q'],m=row['m'],steps=row['steps'],temperature_final_K=row['temperature_final_K'],
                 total_absorbed_fraction=row['total_absorbed_fraction'],
