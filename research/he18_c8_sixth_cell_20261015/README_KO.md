@@ -42,3 +42,7 @@ The cache only holds shared *exact Fraction* Bernstein panel weights. It cannot 
 Claim: SOURCE_SCOPED_INTERVAL_CERTIFICATE_CONDITIONAL_ON_PRIMITIVES. No external formal mpmath.iv backend review, native binary64/provider-roundoff proof, global 16-cell numerical result, full physical EoR ion histories, or observer/foreground certification is asserted.
 
 Read THEORY_AND_EXECUTION_KO.md, results/PUBLIC_SUMMARY.json and NEXT_ACTION.json for actual results and open actions. Full original source-private evidence and publication receipt are linked separately.
+
+## Durable evidence and independent restoration
+
+The complete source-private 70-member evidence ZIP is [on Google Drive](https://drive.google.com/file/d/1Ug798JnVUxHZ07oNQ2dV28GnilYV26Zo/view) and in the established private Dropbox dossier, SHA256 0fe0022574f467a7a81f1ccbbdd42a0446f3d13f06c7f1df03208091c23fc089. The Drive version was actually downloaded and matched the original bytes and ZIP CRC. See EVIDENCE_INDEX.json for provider IDs, source identity and evidence limitations. This new receipt was written after the evidence ZIP was frozen and is not a member of the earlier evidence archive.
