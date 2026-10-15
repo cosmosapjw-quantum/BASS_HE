@@ -40,3 +40,7 @@ Signature (-,+,+,+), explicit c, ℏ and k_B. Non-tilted LRS Bianchi I warm P01 
 All 2904 photon residuals are evaluated, 784 source nodes are rigorously transparent. Sparse skip activates only if all opacity Jet coefficient intervals are exactly [0,0] and never uses the float64 vector preview. Positive comparison resolvent uses the complete 4-gas+2904 incoming errors.
 
 Physical values and benchmark results are in REPORT_KO.md, machine-readable numbers in results/PUBLIC_SUMMARY.json. Conditional numerical status only: interval backend independently verified? NO; binary64 native provider roundoff certificate? NO; 16-cell history? NO; observer foreground / IGM abundance history? NO.
+
+## Evidence and independent restore
+
+The original P01/HM12 private bundle and execution logs are kept in the [verified Google Drive evidence archive](https://drive.google.com/file/d/1AkD3E9YvIo_WwxAA8K6waFdwfm_qc4LM/view), with a second immutable copy in the original private Dropbox dossier. Archive SHA256: `d3176ee4e503894e04a1b8a6019fd907b0a9b68735c90e7d5bfd5559b57b132e`. Google Drive restored bytes, CRC and archive SHA256 match. The full evidence identity and exact storage locations are in `EVIDENCE_INDEX.json`.
