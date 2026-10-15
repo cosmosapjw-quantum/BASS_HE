@@ -2,7 +2,7 @@
   "X_end_ln_a": 9.52426306732935e-05,
   "cases": 27,
   "cr72_reuse_source": "e91ffe368c4e6db64c4b6c5962566302a33402b6",
-  "elapsed_s": 9.511123688999987,
+  "elapsed_s": 9.864469768999925,
   "he20_source_commit": "ccd9125e6776f3f8d3388d70c6675873464c5f30",
   "helium_number_ratio": 0.08130135170951498,
   "max_absolute_electron_defect": 2.964615315390051e-21,
