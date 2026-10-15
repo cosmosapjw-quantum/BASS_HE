@@ -90,7 +90,7 @@ fn split_source(cell: &SpectralCell, count: f64, cut_birth: &[f64; 3]) -> Vec<Ch
 
 #[derive(Clone, Copy, Default)]
 struct Totals {
-    born_n:f64, born_u:f64, final_u:f64, work:f64,
+    born_n:f64, born_u:f64, expected_n:f64, expected_u:f64, final_u:f64, work:f64,
     below_n:[f64;3], below_u:[f64;3], support_violations:usize,
 }
 /// Actual native MD14 source rate, LRS Bianchi Killing redshift,
@@ -134,6 +134,8 @@ fn run_case(q:f64,m:usize,steps:usize)->Totals {
             let cuts_birth=CUTS.map(|cut|cut/g);
             for cell in &driver.source.spectral_cells {
                 let count=rate*dt*cell.photon_fraction*weight/weight_sum;
+                out.expected_n += count;
+                out.expected_u += count*cell.energy_ev;
                 for child in split_source(cell,count,&cuts_birth) {
                     out.born_n+=child.n;
                     out.born_u+=child.u;
@@ -162,8 +164,8 @@ fn row(q:f64,m:usize,steps:usize,r:Totals)->String{
         r.born_n,r.born_u,r.final_u,r.work,
         r.below_n[0],r.below_n[1],r.below_n[2],
         r.below_u[0],r.below_u[1],r.below_u[2],
-        r.born_n-r.born_n,
-        r.born_u-r.final_u-r.work,
+        r.expected_n-r.born_n,
+        r.expected_u-r.born_u,
         r.support_violations)
 }
 fn main(){
@@ -214,7 +216,7 @@ mod tests {
         let r=run_case(0.,16,8);
         assert!(r.born_n>0. && r.born_u>0.);
         assert!(r.below_n[0]>=0. && r.below_n[0]<0.001*r.born_n);
-        assert!(r.born_u-r.final_u-r.work<1e-10*r.born_u);
+        assert!((r.born_u-r.final_u-r.work).abs()<1e-10*r.born_u);
         assert_eq!(r.support_violations,0);
     }
     #[test] fn signed_bianchi_positive_and_zero_support_violations() {
