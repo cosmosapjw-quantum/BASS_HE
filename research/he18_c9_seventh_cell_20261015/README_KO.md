@@ -37,3 +37,7 @@ Time t=[37500000000,43750000000]s measured from original epoch, no local-time sh
 The exact residual bound memoization caches duplicate rational Taylor inputs but does not identify rays, drop physical source modes, alter positivity, relax intervals or omit outgoing photon errors. The Python digit-cap adjustment is for trusted, byte-pinned exact-rational output only, not model precision. Conditional status: SOURCE_SCOPED_INTERVAL_CERTIFICATE_CONDITIONAL_ON_PRIMITIVES. Native binary64/provider roundoff, independent formal mpmath.iv verification, whole 16-cell history, real EoR species histories and observer foreground remain open.
 
 See THEORY_AND_EXECUTION_KO.md, results/PUBLIC_SUMMARY.json and NEXT_ACTION.json. Full private evidence is backed up separately with SHA/CRC manifest and provider verification.
+
+## Durable source-private evidence
+
+Full 85-member evidence archive SHA256: a5f3d5dfa10d5679481cd137aa5933ced18a6312a78df70487a6aa13078c65bb. It is stored in the established private Dropbox folder under the filename BASS_HE_HE18_C9_SEVENTH_MEMOIZED_EVIDENCE_20261015_v1.zip. Actual independent Dropbox server download matched original SHA256 and CRC. Google Drive create-only copy was still under verification when this first receipt was authored. See EVIDENCE_INDEX.json for confirmed versus pending provider state. The private ZIP is not republished publicly.
