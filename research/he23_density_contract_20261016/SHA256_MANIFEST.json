@@ -1,5 +1,9 @@
 [
   {
+    "path": ".gitattributes",
+    "sha256": "4a68b8c97831eb338a53faf005d30ac205a3c7d21bc642d1ee6e12bb13bed434"
+  },
+  {
     "path": "CODEX_HANDOFF_PUBLIC_KO.md",
     "sha256": "b26a3e3aa9a2185e1086cada6e731a3fa4a1d06278da43cd6b77e5659efe74f0"
   },
