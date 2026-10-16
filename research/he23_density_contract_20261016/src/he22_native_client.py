@@ -16,16 +16,44 @@ HISTORICAL_FROZEN_HI_Z20_CM3=0.0017575700008892194
 OWNER_SOURCE_SHA='f7830e2f55e7a1938bc3c98f61b60651f8dae474'
 
 
+def _atomic_record(path,payload):
+    partial=path.with_suffix(path.suffix+'.partial')
+    with partial.open('x') as f:
+        json.dump(payload,f,indent=2,allow_nan=False)
+        f.flush();os.fsync(f.fileno())
+    os.link(partial,path)  # atomic create-only publication, fails on collision
+    partial.unlink()
+    fd=os.open(path.parent,os.O_RDONLY)
+    try:os.fsync(fd)
+    finally:os.close(fd)
+
+
 def record_evidence(directory, kind, payload):
     if directory is None: return
     directory=Path(directory);directory.mkdir(parents=True,exist_ok=True)
     path=directory/f'{os.getpid()}_{time.monotonic_ns()}_{kind}.json'
-    with path.open('x') as f:
-        json.dump(payload,f,indent=2,allow_nan=False)
-        f.flush();os.fsync(f.fileno())
-    fd=os.open(directory,os.O_RDONLY)
-    try:os.fsync(fd)
-    finally:os.close(fd)
+    try:_atomic_record(path,payload)
+    except Exception as exc:
+        # Retain interrupted/invalid partial bytes separately from canonical JSON.
+        _atomic_record(path.with_suffix('.failure'),dict(exception_type=type(exc).__name__,
+            exception=str(exc),partial_name=path.name+'.partial'))
+        raise
+    return path
+
+
+def native_run(argv,timeout,evidence_dir,kind,**metadata):
+    try:
+        p=subprocess.run(argv,capture_output=True,text=True,timeout=timeout,check=False)
+    except (subprocess.TimeoutExpired,OSError) as exc:
+        def stream(value):
+            return value.decode('utf-8',errors='replace') if isinstance(value,bytes) else (value or '')
+        record_evidence(evidence_dir,kind,dict(argv=argv,exception_type=type(exc).__name__,
+            exception=str(exc),stdout=stream(getattr(exc,'stdout',None)),
+            stderr=stream(getattr(exc,'stderr',None)),**metadata))
+        raise
+    record_evidence(evidence_dir,kind,dict(argv=argv,returncode=p.returncode,
+        stdout=p.stdout,stderr=p.stderr,**metadata))
+    return p
 
 
 @dataclass(frozen=True)
@@ -53,9 +81,8 @@ class NativeDensityProvider:
         if hashlib.sha256(self.binary.read_bytes()).hexdigest()!=self.binary_sha:
             raise ValueError('HE23_BINARY_CHANGED')
         argv=[str(self.binary),'--density',format(a,'.17e')]
-        p=subprocess.run(argv,capture_output=True,text=True,timeout=20,check=False)
-        record_evidence(self.evidence_dir,'density',dict(argv=argv,source_sha=self.source_sha,
-            binary_sha256=self.binary_sha,a_hex=a.hex(),returncode=p.returncode,stdout=p.stdout,stderr=p.stderr))
+        p=native_run(argv,20,self.evidence_dir,'density',source_sha=self.source_sha,
+            binary_sha256=self.binary_sha,a_hex=a.hex())
         if p.returncode:raise RuntimeError('HE23_DENSITY_NATIVE_ERROR: '+p.stderr)
         rows=p.stdout.strip().splitlines()
         if not rows or rows[0]!='HE23_TOTAL_NUCLEI_V1':raise ValueError('HE23_DENSITY_SCHEMA')
@@ -128,10 +155,8 @@ class NativeRustPoint:
             raise ValueError('HE22_NATIVE_CLIENT_INPUT')
         argv=[str(self.exe),*[format(float(v),'.17e')
               for v in (self.a,*g,*gr,*ph)]]
-        p=subprocess.run(argv,capture_output=True,text=True,timeout=self.timeout_s,check=False)
+        p=native_run(argv,self.timeout_s,self.evidence_dir,'rhs',expected_nh=self.nh)
         self.calls+=1
-        record_evidence(self.evidence_dir,'rhs',dict(argv=argv,returncode=p.returncode,
-            stdout=p.stdout,stderr=p.stderr,expected_nh=self.nh))
         if p.returncode:
             raise RuntimeError('HE22_NATIVE_RUST_ERROR: '+p.stderr.strip())
         return parse_native_point(p.stdout,self.nh)

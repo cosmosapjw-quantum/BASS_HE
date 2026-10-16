@@ -9,6 +9,13 @@ WORK="${HE22_WORK_ROOT:-/root/HE23_NCP_DENSITY_20261016}"
 OWNER_SHA='f7830e2f55e7a1938bc3c98f61b60651f8dae474'
 OWNER="${WORK}/source_rei_bianchi_${OWNER_SHA:0:8}"
 BUILD="${WORK}/build"
+# Enforce create-only execution before touching logs, binaries or receipts.
+python3 - "$WORK" <<'VERIFY_EMPTY_WORK'
+import pathlib,sys
+p=pathlib.Path(sys.argv[1])
+if p.exists() and (not p.is_dir() or any(p.iterdir())):
+    raise SystemExit('HE23_WORK_ROOT_NOT_EMPTY: preserve prior evidence; select a new path')
+VERIFY_EMPTY_WORK
 mkdir -p "$WORK" "$BUILD" "$WORK/logs"
 if ! command -v rustc >/dev/null; then echo 'BLOCKED_NO_RUST' >&2; exit 10; fi
 if ! command -v git >/dev/null; then echo 'BLOCKED_NO_GIT' >&2; exit 10; fi

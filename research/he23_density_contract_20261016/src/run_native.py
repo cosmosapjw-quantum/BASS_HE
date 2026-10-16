@@ -70,6 +70,13 @@ def main():
     out=pathlib.Path(a.output);out.mkdir(parents=True,exist_ok=True)
     if any(out.iterdir()):raise FileExistsError('HE23_OUTPUT_NOT_EMPTY')
     if a.source_sha!=OWNER_SOURCE_SHA:raise ValueError('HE23_OWNER_SOURCE_MISMATCH')
+    # Runtime source identity is captured before dispatch, independent of branch movement.
+    source_dir=pathlib.Path(__file__).resolve().parent
+    identity={'owner_source_commit':a.source_sha,'native_binary_sha256':digest(a.binary),
+              'python_version':sys.version,'source_files':{
+                  p.name:digest(p) for p in sorted(source_dir.iterdir())
+                  if p.is_file() and p.suffix in ('.py','.rs')}}
+    atomic_json(out/'EXECUTION_IDENTITY.json',identity)
     cases=([(4,2,0.)] if a.stage=='pilot' else
            list(itertools.product([4,8],[2,4],[-.005,0.,.005])))
     # Limit stage to a finite, isolated number of original Rust evaluations.
@@ -97,6 +104,7 @@ def main():
     final={'schema':'bass_he.he23.native.casea.v1','stage':a.stage,
            'source_commit':a.source_sha,'native_binary_sha256':digest(a.binary),
            'record_count':len(receipts),'requested_cases':len(cases),
+           'execution_identity_sha256':digest(out/'EXECUTION_IDENTITY.json'),
            'all_pass':all(x['status'].startswith('NUMERICALLY') for x in receipts)
                       and len(receipts)==len(cases),
            'runtime_s':time.monotonic()-started,

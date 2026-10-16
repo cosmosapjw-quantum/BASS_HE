@@ -80,3 +80,39 @@ def test_newton_must_satisfy_existing_energy_gate_before_stopping():
     result=solve_midpoint(np.array([1e-5,1e-5,0.,.001]),np.empty(0),np.empty(0),nh,dt,owner)
     assert result.scaled_implicit_residual<3e-12
     assert abs(result.total_energy_residual_ev_per_H)<=2e-15
+
+
+def test_bootstrap_preserves_existing_execution_directory(tmp_path):
+    import subprocess
+    work=tmp_path/'prior_run';work.mkdir()
+    sentinel=work/'SUMMARY.json';sentinel.write_text('FIRST_FAILURE_OR_SUCCESS')
+    script=Path(__file__).resolve().parents[1]/'ncp/NCP_BOOTSTRAP_AND_TEST.sh'
+    env=os.environ.copy();env['HE22_WORK_ROOT']=str(work)
+    p=subprocess.run(['bash',str(script)],env=env,capture_output=True,text=True)
+    assert p.returncode!=0 and 'HE23_WORK_ROOT_NOT_EMPTY' in p.stderr
+    assert sentinel.read_text()=='FIRST_FAILURE_OR_SUCCESS'
+    assert list(work.iterdir())==[sentinel]
+
+
+def test_raw_evidence_publishes_only_complete_json_and_keeps_failure(tmp_path):
+    with pytest.raises(ValueError):client.record_evidence(tmp_path,'invalid',{'value':float('nan')})
+    assert not list(tmp_path.glob('*_invalid.json'))
+    assert list(tmp_path.glob('*.partial'))
+    assert list(tmp_path.glob('*.failure'))
+
+
+def test_native_timeout_retains_exact_command_and_partial_stream(tmp_path):
+    exe=tmp_path/'slow_point'
+    exe.write_text('#!/usr/bin/env python3\nimport time\nprint("before_timeout",flush=True)\ntime.sleep(5)\n')
+    exe.chmod(0o700)
+    owner=client.NativeRustPoint(exe,1/21,.002,timeout_s=.1,evidence_dir=tmp_path/'evidence')
+    import subprocess
+    with pytest.raises(subprocess.TimeoutExpired):
+        owner(np.array([1e-5,1e-5,0.,.001]),np.zeros(3),np.zeros(3))
+    import json
+    files=list((tmp_path/'evidence').glob('*_rhs.json'))
+    assert len(files)==1
+    r=json.loads(files[0].read_text())
+    assert r['exception_type']=='TimeoutExpired'
+    assert r['argv'][0]==str(exe)
+    assert 'before_timeout' in r['stdout']
