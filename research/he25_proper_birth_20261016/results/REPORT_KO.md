@@ -63,3 +63,8 @@ physics SHA6df06662108635b525eea75b1ce2cdbcd91afe64a21ed0076977088c2fe5d63c, tra
 HE24 Drive archive f923bbe1b9b3474c5fd60dfaf47d0dfc4c01160d2c9023fe92b92de4c2168681을 실제 다운로드·복원하여5154 SHA를 확인했다. 미완료였던 Dropbox 사본도 create-only 생성한 뒤 전체 다운로드 SHA가 일치했다. 기존 성공 사본은 덮어쓰지 않았다.
 
 HE25 source/compact results/raw native outputs는 새 Draft PR에, 큰 cohort arrays와 Git bundle/원본 native source+binary는 complete private restoration archive에 보존한다. cloud readback은 실제 완료 후 BACKUP_RECEIPT.json에 기록한다. archive 내용 identity와 moving publication head는 구분한다. 전체 EoR/upstream Grackle/Bianchi observation/CMB forecasts는 HOLD다.
+
+
+## 최종 원격 복원 검증
+
+Drive와 Dropbox 각각 create-only 4블록을 실제 다운로드하여 196,092,442-byte 전체 아카이브 SHA256 `203b0d4f7896722e3ad0065141dd729f509e40b5797e0d8063613026b9c58338` 일치를 확인했다. 각각 독립 복원 후 manifest117개 파일 SHA와 standalone Git bundle을 검증했다. 내용 커밋은 a7cf4a1e59bc11fbbfd4ec28a0896f36583b6700이다. 이 사후 영수증은 아카이브 자기포함을 주장하지 않는다. 원래 196MB Drive 업로드는100MiB 제한으로 실패했고 초기 병렬 Dropbox fragment의 HTTP500 실패를 보존했다. 이후 직렬4블록 복원 검증으로 두 백업을 완료했다. LRS azimuth는 해석적으로 적분하며 Gauss-Legendre 분할은 polar 방향에 적용한다.

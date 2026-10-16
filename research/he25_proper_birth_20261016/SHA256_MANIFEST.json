@@ -20,6 +20,10 @@
     "sha256": "8479a241a1a2e35695cc389d5020c136208960bea72964653567c9f42f94b1d8"
   },
   {
+    "path": "analysis/verify_remote_restoration.py",
+    "sha256": "46b3a4ed55506244dfe8be1ecf91be9191e4389dc0e43be0b9c6ce1d7754f8bd"
+  },
+  {
     "path": "provenance/REFERENCES_READ.json",
     "sha256": "b492839fa2bcdd9d5faba9d83edf038e7d56c7ae8e1c1313d2190e9fb56195fa"
   },
@@ -32,8 +36,20 @@
     "sha256": "6fb0c0bd319fd429221e93d3707b4e5d52352cd918dead1b30a82895513aa583"
   },
   {
+    "path": "results/BACKUP_BLOCKS.json",
+    "sha256": "c2c0fad9fe1b5d800e1ba4dbeb18cf22590a12f8369b087ab1d61bc10fa04a52"
+  },
+  {
+    "path": "results/BACKUP_RECEIPT.json",
+    "sha256": "4d99685e0bb1f754eb3d8423d346fd21551dbf76d36d97847929a5ff3c85d4a3"
+  },
+  {
     "path": "results/CASES.csv",
     "sha256": "006029b882cdaee22814179df0724bc4e270514ea32d38ef1c73ee7d1c2342f2"
+  },
+  {
+    "path": "results/GITHUB_READBACK.json",
+    "sha256": "197e518b5beb5ab58fa54c5e00145bf5a502e80b276d01f0d3cddb8f691cc5f6"
   },
   {
     "path": "results/HE24_BACKUP_COMPLETION.json",
@@ -49,7 +65,11 @@
   },
   {
     "path": "results/REPORT_KO.md",
-    "sha256": "ff50dc2b4292b4325826cf302c2027275568cef62fad6257de4cf524ab01ab08"
+    "sha256": "90b5534113d7dff4e627a7dffadb53db7c80ec78284d678353e59be1f8940561"
+  },
+  {
+    "path": "results/RESTORATION_MANIFEST.json",
+    "sha256": "e954979172cccb9d5a994c36a02a6e3911e371a00b438a97ab82758659b61237"
   },
   {
     "path": "results/SOURCE_BINARY_AND_EXECUTION_BINDING.json",
