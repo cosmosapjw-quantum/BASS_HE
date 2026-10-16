@@ -1,0 +1,11 @@
+{
+  "C5": "IMPLEMENTED_FROZEN_470ab942",
+  "C6": "14_TESTS_PASS",
+  "C7_source": "108_CASES_PASS",
+  "native_pilot": "RUNNING",
+  "C8_dynamic_AB": "PENDING_PILOT",
+  "C8_temporal": "PENDING",
+  "C8_spectral": "PENDING_FINITE_MODEL",
+  "C8_angle": "PENDING",
+  "full_EoR_CMB": "HOLD"
+}
