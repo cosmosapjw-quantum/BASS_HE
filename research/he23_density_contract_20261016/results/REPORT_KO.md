@@ -72,3 +72,5 @@ q0,m=4에서 T 차이는 n2→4에 -4.81626354e-5 K, n4→8에 -1.62329523e-4 K�
 원본 Rust clone은 고정 commit에서 clean이다. native binary SHA256=981ad6dde18be7951c6b0200a49e6482b0e6fae644437197375bdd18ced5eafe. source/rlib/compiler/flags/environment의 다른 identity는 로그에 있다. NCP NAVERCloud Xeon Gold5220,64vCPU,125GiB,1NUMA; Rust1.99.0,opt-level2,edition2021,binary64; OMP/MKL/OpenBLAS=1; Python3.12. no fast-math나 정밀도 축소 없음.
 
 GitHub 게시 후 Git blob을 다시 읽어 SHA를 검증한다. 복원 아카이브에는 source, Git bundle, native raw, 실패 원본, 바이너리, 검증 스크립트와 원본 micro source snapshot을 포함한다. 현재 host에는 rclone/configured remotes가 없어 연결된 인증 Dropbox/Drive connector를 사용한다. create-only 업로드 후 양쪽에서 전체 바이트를 다운로드하여 로컬 SHA와 비교하고 BACKUP_RECEIPT.json을 별도 보존한다. 실제 원격 backup 결과는 그 영수증을 따른다. 최초 HE22 이중백업도 유지한다.
+
+실제 백업 완료: v2 804,505바이트를 Dropbox와 Drive에서 각각 다운로드했고 SHA256 e65a431bfb304f842b05a23463e1680758ff7f24cac8dcc071a11007bd513596이 일치했다. 각 원격 사본을 독립 압축해제하여 package 110개, 원본 owner 156개 파일의 SHA와 raw archive 1,879개 member를 검증했다. v1 Dropbox FETCH_FAILED는 보존했으며, v1 전체 Git bundle/바이너리 아카이브는 Drive에서 별도로 full readback했다. GitHub 원격 blob 110개도 실제 readback 일치했다. 상세 ID와 scope는 BACKUP_RECEIPT.json이다.
