@@ -50,11 +50,11 @@ summary={'schema':'he27.native_ledgers.v1','case_count':len(records),'native_poi
  'max_energy_defect_eV_per_H':max(abs(r['energy_defect_ev']) for r in records),
  'max_species_defect':max(max(abs(x) for x in r['species_defect']) for r in records),
  'max_density_Y_relative_defect':max_density,'max_point_event_relative_defect':max_event,'max_micro_energy_normalized_defect':max_micro}
-if 'sourcecut_reference_dop853' in bycase and 'sourcecut_reference_radau' in bycase:
- ref=bycase['sourcecut_reference_dop853'];old=bycase['baseline_reference_dop853'];rad=bycase['sourcecut_reference_radau']
+if 'v2_reference_dop853' in bycase and 'v2_reference_radau' in bycase:
+ ref=bycase['v2_reference_dop853'];old=bycase['baseline_reference_dop853'];rad=bycase['v2_reference_radau']
  summary['independent_time_reference']={'DOP853_temperature_K':ref['temperature_K'],'Radau_minus_DOP853_K':rad['temperature_K']-ref['temperature_K'],'max_fraction_difference':max(abs(a-b) for a,b in zip(rad['gas_final'][:3],ref['gas_final'][:3]))}
- summary['dynamic_AB']={'cut_minus_baseline_temperature_K':ref['temperature_K']-old['temperature_K'],'cut_minus_baseline_fractions':(np.array(ref['gas_final'][:3])-np.array(old['gas_final'][:3])).tolist(),'same_m_angles_q':[4,4,0],'claim':'finite semi-discrete source A/B, not full continuum cutoff error'}
- temporal=sorted([r for r in records if r['args']['lane']=='sourcecut' and r['args']['method']=='transport' and r['m']==4 and r['angles']==4 and r['q']==0],key=lambda r:r['metadata']['n'])
+ summary['dynamic_AB']={'cut_minus_baseline_temperature_K':ref['temperature_K']-old['temperature_K'],'cut_minus_baseline_fractions':(np.array(ref['gas_final'][:3])-np.array(old['gas_final'][:3])).tolist(),'same_m_angles_q':[4,4,0],'source_table_nodes':512,'claim':'finite semi-discrete source A/B, not full continuum cutoff error'}
+ temporal=sorted([r for r in records if r['args']['lane']=='sourcecut' and r['args'].get('source_module')=='sourcecut_v2' and r['args']['method']=='transport' and r['m']==4 and r['angles']==4 and r['q']==0],key=lambda r:r['metadata']['n'])
  errors=[abs(r['temperature_K']-ref['temperature_K']) for r in temporal]
  summary['temporal']={'n':[r['metadata']['n'] for r in temporal],'temperature_error_K':errors,'ratios':[a/b for a,b in zip(errors[:-1],errors[1:])],'status':'DECREASE_VERIFIED_SCOPED' if len(errors)>=3 and all(a>b for a,b in zip(errors[:-1],errors[1:])) else 'HOLD'}
  for r in records:
