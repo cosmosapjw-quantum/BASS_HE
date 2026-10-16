@@ -15,3 +15,8 @@ Rust igm_point_rhs가 CI/RR/DR/thermal/Case-A escape/CMB를 소유한다. 외부
 ## 재실행
 
 기존 환경 /root/HE25_NCP_BIRTH_20261016/venv와 SHA22d11447 원본 rlib 기반 서버를 사용한다. analysis/run_native.py는 새 디렉터리만 생성한다. source gate는 analysis/source_acceptance.py, 전체 새 테스트는 tests/, 실제 native 원본은 results/에 보존한다. 첫 정체한 reference는 결과가 아닌 first_reference_failure/로 구분한다. source_manifest, commands, backup receipts와 최종 결과를 함께 사용한다.
+
+
+## 완료된 최초 연속시간 A/B (아직 교차 solver 판정 전)
+
+동일 q0,m4,GL4,source512의 native DOP853 계산이571.79초에 완료됐다. T_new=8.239220065041529K, T_HE25=8.239220055614581K, 차이+9.426948111e-9K. HII/HeII/HeIII 차이는 +9.30542e-14,+2.33612e-14,−8.02964e-19이다. 새 number defect2.965e-21/H, energy defect2.819e-18eV/H. Radau는600초 limit에서98.6768%까지만 진행해 미완료 원본으로 보존했다. 물리나 허용치 변경 없이900초 한도의 단1회 실행을 새 디렉터리에서 진행 중이다. 이 데이터는 유한 고정-K source 차이이며 연속 스펙트럼의 참 오차를 뜻하지 않는다.
