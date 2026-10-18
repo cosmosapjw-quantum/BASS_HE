@@ -1,9 +1,11 @@
 """HE28 complete opt-in native runner. Does not claim a native run until executed."""
 from __future__ import annotations
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict
 import json
 import math
+import os
 from pathlib import Path
 import sys
 import time
@@ -18,6 +20,24 @@ from execution import atomic_json,digest,manifest,verify_manifest,run_process
 ROOT=Path(__file__).resolve().parents[1]
 REPO=RESEARCH.parent
 
+THREAD_ENV_NAMES=('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS',
+                  'NUMEXPR_NUM_THREADS','BLIS_NUM_THREADS')
+
+
+def pin_numerical_threads():
+    """Allow only case-level concurrency; avoid nested library pools."""
+    for name in THREAD_ENV_NAMES:
+        os.environ[name]='1'
+    os.environ.update(OMP_DYNAMIC='FALSE',OMP_PLACES='cores',OMP_PROC_BIND='close')
+
+
+def numerical_thread_environment():
+    names=(*THREAD_ENV_NAMES,'OMP_DYNAMIC','OMP_PLACES','OMP_PROC_BIND')
+    env={name:os.environ.get(name) for name in names}
+    if any(env[name]!='1' for name in THREAD_ENV_NAMES):
+        raise ValueError('HE28_NUMERICAL_THREAD_ENVIRONMENT')
+    return env
+
 
 def build_identity(binary,receipt):
     d=json.loads(Path(receipt).read_text())
@@ -28,6 +48,7 @@ def build_identity(binary,receipt):
     return {'parent_sources':expected,'binary_sha256':digest(binary),
             'owner_source':SOURCE_COMMIT,'build_receipt':d,
             'python':sys.version,
+            'numerical_thread_environment':numerical_thread_environment(),
             'he28_sources':manifest(sorted((ROOT/'src').glob('*.py')),ROOT)}
 
 
@@ -102,6 +123,8 @@ def campaign(args):
             or ident.get('owner_source')!=now['owner_source']
             or ident.get('parent_sources')!=now['parent_sources']):
             raise ValueError('HE28_PILOT_SOURCE_CHANGED')
+        if ident.get('numerical_thread_environment')!=now['numerical_thread_environment']:
+            raise ValueError('HE28_PILOT_THREAD_ENVIRONMENT_CHANGED')
         # A table discretization is part of the admitted model, not just a cost knob.
         # Study m/r/n change by design; changing table resolution needs a new pilot.
         if ident.get('source_table_nodes') != args.table_nodes:
@@ -122,8 +145,8 @@ def campaign(args):
             raise ValueError('HE28_PILOT_TABLE_IDENTITY')
     atomic_json(out/'DESIGN.json',{'jobs':jobs,'scope':'finite strip/time comparison; no automatic global PASS',
                  'source_table_nodes':args.table_nodes,'per_case_wall_s':args.case_wall_s})
-    records=[]
-    for m,r,n,reference in jobs:
+    def execute(job):
+        m,r,n,reference=job
         name=f'm{m}_r{r}_n{n}'
         cmd=[sys.executable,str(Path(__file__).resolve()),'case','--binary',str(Path(args.binary).resolve()),
              '--build-receipt',str(Path(args.build_receipt).resolve()),'--out',str(out/name),
@@ -135,9 +158,28 @@ def campaign(args):
         if rec['returncode']==0 and reference:
             complete=json.loads((out/name/'RESULT.json').read_text())
             rec['pilot_accuracy_pass']=complete['results'].get('pilot_accuracy_pass') is True
-        records.append(dict(case=name,**rec))
-        if rec['returncode']!=0 or rec.get('pilot_accuracy_pass') is False:break
+        return dict(case=name,**rec)
+
+    workers=getattr(args,'workers',1)
+    if type(workers) is not int or not 1 <= workers <= len(jobs):
+        raise ValueError('HE28_STUDY_WORKER_DOMAIN')
+    # Cases have independent native-owner processes and immutable output roots.
+    # Keep each case's BLAS/OpenMP policy at one thread; parallelism is only across
+    # the six pre-authorized study cases, never across floating-point reductions.
+    records_by_name={}
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures={pool.submit(execute,job):f'm{job[0]}_r{job[1]}_n{job[2]}' for job in jobs}
+        for future in as_completed(futures):
+            name=futures[future]
+            try:
+                records_by_name[name]=future.result()
+            except BaseException as exc:
+                records_by_name[name]={'case':name,'returncode':-1,'runner_error':repr(exc)}
+    records=[records_by_name.get(f'm{m}_r{r}_n{n}',
+             {'case':f'm{m}_r{r}_n{n}','returncode':-1,'runner_error':'not executed'})
+             for m,r,n,_ in jobs]
     summary={'executed':len(records),'requested':len(jobs),'records':records,
+             'workers':workers,
              'all_processes_pass':len(records)==len(jobs) and all(r['returncode']==0 for r in records),
              'pilot_accuracy_pass':records[0].get('pilot_accuracy_pass') if args.stage=='pilot' else None,
              'stage':args.stage,'continuous_spectral_convergence':'HOLD','full_EoR':'HOLD'}
@@ -147,6 +189,7 @@ def campaign(args):
 
 
 def main():
+    pin_numerical_threads()
     ap=argparse.ArgumentParser();ap.add_argument('mode',choices=['case','campaign','preflight'])
     ap.add_argument('--out',required=True);ap.add_argument('--binary');ap.add_argument('--build-receipt')
     ap.add_argument('--m',type=int,default=4);ap.add_argument('--strips',type=int,default=2)
@@ -156,6 +199,8 @@ def main():
     ap.add_argument('--table-mb',type=int,default=2048);ap.add_argument('--table-wall-s',type=float,default=600.)
     ap.add_argument('--case-wall-s',type=float,default=3600.);ap.add_argument('--stage',choices=['pilot','study'],default='pilot')
     ap.add_argument('--pilot-result')
+    ap.add_argument('--workers',type=int,default=1,
+                    help='bounded process-level concurrency for the six independent study cases')
     args=ap.parse_args()
     if args.mode=='preflight':
         model=RefinedSourceModel(None,GridSpec(args.m,args.angles,args.q,args.strips),tabulate=False,

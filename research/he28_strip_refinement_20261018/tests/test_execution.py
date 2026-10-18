@@ -15,6 +15,13 @@ def test_atomic_create_only(tmp_path):
     assert json.loads(p.read_text())=={'ok':True}
 
 
+def test_atomic_json_converts_numpy_bool_scalar(tmp_path):
+    import numpy as np
+    p=tmp_path/'numpy-bool.json'
+    atomic_json(p,{'ok':np.bool_(True)})
+    assert json.loads(p.read_text())=={'ok':True}
+
+
 def test_nonfinite_refused(tmp_path):
     with pytest.raises(ValueError):atomic_json(tmp_path/'bad.json',{'x':float('nan')})
     assert not (tmp_path/'bad.json').exists()
@@ -24,6 +31,22 @@ def test_process_exit_record(tmp_path):
     r=run_process([sys.executable,'-c','print("done")'],tmp_path/'r',3.)
     assert r['returncode']==0 and not r['timed_out']
     assert (tmp_path/'r'/'stdout.log').read_text().strip()=='done'
+
+
+def test_child_process_pins_numerical_thread_pools(tmp_path,monkeypatch):
+    for name in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS',
+                 'NUMEXPR_NUM_THREADS','BLIS_NUM_THREADS'):
+        monkeypatch.setenv(name,'64')
+    code=('import os,json; print(json.dumps({k:os.environ.get(k) for k in '
+          '"OMP_NUM_THREADS OPENBLAS_NUM_THREADS MKL_NUM_THREADS NUMEXPR_NUM_THREADS '
+          'BLIS_NUM_THREADS OMP_DYNAMIC OMP_PLACES OMP_PROC_BIND".split()}))')
+    r=run_process([sys.executable,'-c',code],tmp_path/'threads',3.)
+    assert r['returncode']==0
+    env=json.loads((tmp_path/'threads'/'stdout.log').read_text())
+    assert all(env[k]=='1' for k in
+               ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS',
+                'NUMEXPR_NUM_THREADS','BLIS_NUM_THREADS'))
+    assert env['OMP_DYNAMIC']=='FALSE' and env['OMP_PLACES']=='cores' and env['OMP_PROC_BIND']=='close'
 
 
 def test_timeout_process_group(tmp_path):
