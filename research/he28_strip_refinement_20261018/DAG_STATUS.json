@@ -11,7 +11,7 @@
     "C6": "35_SANDBOX_TESTS_PASS_27_INHERITED_8_NEW_ADMISSION",
     "C7_C8": "INHERITED_270_FROZEN_KERNEL_CASES_AND_420_TABLE_POINTS_VERIFIED_NOT_RERUN",
     "C9": "SELF_REVIEW_ONLY_NO_INDEPENDENT_AGENT",
-    "C10_RESUME": "SOURCE_TESTS_PUSHED_BACKUP_PENDING",
+    "C10_RESUME": "PUSHED_DRIVE_FULL_RESTORE_DROPBOX_UPLOAD_CONTENT_HASH_MATCH",
     "NEW_GRID_NATIVE_PILOT": "NOT_RUN",
     "NEW_GRID_NATIVE_STUDY": "NOT_RUN_0_OF_6",
     "CONTINUOUS_SPECTRAL_CONVERGENCE": "HOLD_NONMONOTONE",
@@ -35,7 +35,11 @@
     "stage2_dropbox": "id:BSpOijBcT10AAAAAAD-8Tw",
     "stage2_drive_recovered_full_sha": "b50eced554dcdd7a210ef5ec0346e2b5cf9be5c1b8cdb018e200a5e718f527b1",
     "stage2_dropbox_full_readback": "BLOCKED_URL_DOWNLOAD_BOUNDARY",
-    "resume_delivery": "detached results/resume/DELIVERY.json or PR76 receipt"
+    "stage3_drive": "1RW4GLelBXoFbh3MAEoXeOM4Q5bvuNZ8S",
+    "stage3_dropbox": "id:BSpOijBcT10AAAAAAD-9CA",
+    "stage3_archive_sha256": "1b7afdeb4c63b53cf1e77f1183f8c755ef65b202a2dd88dca9ac31b9cca65b41",
+    "stage3_readback_scope": "Drive full bytes and62 files; Dropbox provider content_hash only",
+    "resume_delivery": "results/resume/DELIVERY.json"
   },
   "next": "Execute updated-code fresh q0/m4/r2/n16/GL4/table512 native pilot; admitted pilot enables the six declared q0/m8/r2,4,8/n32,64 cases."
 }
