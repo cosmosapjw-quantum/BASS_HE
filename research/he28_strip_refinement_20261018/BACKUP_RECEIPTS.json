@@ -3,6 +3,7 @@
   "archive": "HE28_NCP_HPC_RETURN_20261018.tar.gz",
   "size_bytes": 148332838,
   "sha256": "2059dba94091cfe1042dceaea992f8c3af7b117b687898a0bdfa7b3bef7d622e",
+  "archive_internal_manifest": {"payload_files": 382, "verified": 382, "mismatches": 0, "missing": 0},
   "dropbox": {
     "path": "/BASS_DERIVATION_DOSSIERS_20260912/HE28_NCP_HPC_RETURN_20261018.tar.gz",
     "file_id": "id:BSpOijBcT10AAAAAAD_JOQ",
