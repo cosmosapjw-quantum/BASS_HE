@@ -1,7 +1,8 @@
 {
-  "schema": "he29.publication_retry.dag.v1",
+  "schema": "he29.publication_retry.dag.v2",
   "date": "2026-10-18",
   "execution_commit": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
+  "code_prompt_snapshot_commit": "961ca736af53f18e6527f876524c67e22aa89fe0",
   "pull_request": 78,
   "stages": {
     "S0_INTAKE": "PRESERVED",
@@ -11,7 +12,8 @@
     "INPUT_RESTORATION_TESTS": "3_PASS",
     "TOTAL_TESTS": "50_PASS",
     "NATIVE_REFERENCES": "NOT_RUN_0_OF_4",
-    "FINAL_BACKUP": "PENDING_FINAL_RECEIPT"
+    "FINAL_BACKUP": "DRIVE_FULL_BYTE_RESTORE_DROPBOX_UPLOAD_CONTENT_HASH_MATCH",
+    "HANDOFFS": "UPDATED_GIT_FIRST_NO_MANUAL_FILE_DELIVERY"
   },
   "native_calls": 0,
   "physical_changes": false,
@@ -19,8 +21,12 @@
   "input_backup": {
     "original_sha256": "a70d320c7ead5f1fd93170c18f1f80ae5eb58a293a6045a0f728bb7ae2743205",
     "drive_id": "1I31wE6A3laYE6nxMcKNmm5rNMeESIsXi",
-    "dropbox_id": "id:BSpOijBcT10AAAAAAD_Ncg",
-    "drive_readback": "FULL_BYTES_MATCH",
-    "dropbox_readback": "PROVIDER_CONTENT_HASH_ONLY"
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_Ncg"
+  },
+  "final_backup": {
+    "archive_sha256": "c47c5efcfcd668203cbd6082d25e128c7ea8a08291f3a039a4a52674f0530a28",
+    "drive_id": "16z5ApkTBP30elscQJy_LYLdRLIYnS8Le",
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_Ntw",
+    "delivery_receipt": "results/publication_retry/DELIVERY.json"
   }
 }
