@@ -94,11 +94,32 @@ def campaign(args):
         if not args.pilot_result:raise ValueError('HE28_PILOT_REQUIRED')
         pr=json.loads(Path(args.pilot_result).read_text())
         ident=json.loads((Path(args.pilot_result).parent/'IDENTITY.json').read_text())
-        if pr.get('status')!='SCOPED_NATIVE_COMPLETED' or not pr['results'].get('pilot_accuracy_pass'):
+        if pr.get('status')!='SCOPED_NATIVE_COMPLETED' or pr['results'].get('pilot_accuracy_pass') is not True:
             raise ValueError('HE28_PILOT_NOT_ADMITTED')
         now=build_identity(args.binary,args.build_receipt)
-        if ident['he28_sources']!=now['he28_sources'] or ident['binary_sha256']!=now['binary_sha256']:
+        if (ident['he28_sources']!=now['he28_sources']
+            or ident['binary_sha256']!=now['binary_sha256']
+            or ident.get('owner_source')!=now['owner_source']
+            or ident.get('parent_sources')!=now['parent_sources']):
             raise ValueError('HE28_PILOT_SOURCE_CHANGED')
+        # A table discretization is part of the admitted model, not just a cost knob.
+        # Study m/r/n change by design; changing table resolution needs a new pilot.
+        if ident.get('source_table_nodes') != args.table_nodes:
+            raise ValueError('HE28_PILOT_TABLE_RESOLUTION_CHANGED')
+        if (ident.get('spec') != {'m':4,'strips':2,'angles':4,'q':0.}
+            or ident.get('n') != 16):
+            raise ValueError('HE28_PILOT_DESIGN_CHANGED')
+        table_path=Path(args.pilot_result).parent/'TABLE.json'
+        if not table_path.is_file():
+            raise ValueError('HE28_PILOT_TABLE_MISSING')
+        table=json.loads(table_path.read_text())
+        table_hash=pr.get('source_table_sha256')
+        diagnostics=table.get('diagnostics',{})
+        if (not isinstance(table_hash,str) or not table_hash
+            or table.get('source_table_sha256')!=table_hash
+            or diagnostics.get('nodes_per_long_interval')!=args.table_nodes
+            or diagnostics.get('spec')!=ident.get('spec')):
+            raise ValueError('HE28_PILOT_TABLE_IDENTITY')
     atomic_json(out/'DESIGN.json',{'jobs':jobs,'scope':'finite strip/time comparison; no automatic global PASS',
                  'source_table_nodes':args.table_nodes,'per_case_wall_s':args.case_wall_s})
     records=[]
