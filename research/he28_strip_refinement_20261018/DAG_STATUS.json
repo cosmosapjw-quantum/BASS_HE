@@ -1,0 +1,32 @@
+{
+  "schema": "bass_he.he28.dag.v1",
+  "date": "2026-10-18",
+  "parent": "2a9e27ade27fb2762bc955882799b736970bb786",
+  "science_commit": "62acea9141324ef176110314226cb5c40a05bf82",
+  "stages": {
+    "BACKUP_FIRST_INTAKE": "VERIFIED_NEW_HE27_ARCHIVE_NO_NATIVE_RERUN",
+    "R5_C3": "DERIVED_CONDITIONAL_LOCAL_REMAINDER",
+    "C5": "IMPLEMENTED_OPT_IN_STRIP_GRID_AND_NATIVE_RUNNER",
+    "C6": "27_SANDBOX_TESTS_PASS",
+    "C7_C8": "270_FROZEN_KERNEL_CASES_AND_420_TABLE_POINTS_VERIFIED",
+    "C9": "SELF_REVIEW_ONLY_NO_INDEPENDENT_AGENT",
+    "C10": "PUBLISHED_SOURCE_READY_FOR_NATIVE_EXECUTION",
+    "NEW_GRID_NATIVE_PILOT": "NOT_RUN",
+    "NEW_GRID_NATIVE_STUDY": "NOT_RUN_0_OF_6",
+    "CONTINUOUS_SPECTRAL_CONVERGENCE": "HOLD_NONMONOTONE",
+    "FULL_EOR_CMB": "HOLD"
+  },
+  "phase_commits": ["b8d180ad75f0a5437f1e33425dcd5eaee7a70104", "55e74da43d77820d3cf09d4b33ca24c524a5b291", "62acea9141324ef176110314226cb5c40a05bf82"],
+  "backup": {
+    "stage0_drive": "14nfmoqQlJlkgABWfctJIL6ZkAAcuHYEV",
+    "stage1_drive": "11_s6xtsnEbZj_-JLtuGSXcBAENwQAXfp",
+    "stage2_drive": "1GWJUJuBO0N0Sq8d6FGzdrsJgJQdUfO6A",
+    "all_three_drive_raw_sha_verified": true,
+    "stage2_internal_hashes_verified": 50,
+    "stage2_restored_tests_pass": 27,
+    "stage2_dropbox_id": "id:BSpOijBcT10AAAAAAD-8Tw",
+    "dropbox_status": "UPLOAD_COMPLETED_PROVIDER_CONTENT_HASH_MATCH_RAW_READBACK_BLOCKED",
+    "dropbox_first_stage_failure": "FETCH_FAILED"
+  },
+  "next": "Compile exact original Rust owner and run provided fresh native pilot; only accepted same-source/table pilot admits bounded six-case study. Do not change physical tolerances."
+}
