@@ -1,0 +1,45 @@
+{
+  "schema": "bass_he.he28.dag.v2",
+  "date": "2026-10-18",
+  "parent": "2a9e27ade27fb2762bc955882799b736970bb786",
+  "science_commit": "62acea9141324ef176110314226cb5c40a05bf82",
+  "resume_source_test_commit": "2e824c21d41c68f728f9630f2b219fa11f0c3b53",
+  "stages": {
+    "BACKUP_FIRST_INTAKE": "VERIFIED_HE27_AND_HE28_ARCHIVES",
+    "R5_C3": "DERIVED_CONDITIONAL_LOCAL_REMAINDER",
+    "C5": "IMPLEMENTED_OPT_IN_STRIP_GRID_AND_NATIVE_RUNNER",
+    "C6": "35_SANDBOX_TESTS_PASS_27_INHERITED_8_NEW_ADMISSION",
+    "C7_C8": "INHERITED_270_FROZEN_KERNEL_CASES_AND_420_TABLE_POINTS_VERIFIED_NOT_RERUN",
+    "C9": "SELF_REVIEW_ONLY_NO_INDEPENDENT_AGENT",
+    "C10_RESUME": "PUSHED_DRIVE_FULL_RESTORE_DROPBOX_UPLOAD_CONTENT_HASH_MATCH",
+    "NEW_GRID_NATIVE_PILOT": "NOT_RUN",
+    "NEW_GRID_NATIVE_STUDY": "NOT_RUN_0_OF_6",
+    "CONTINUOUS_SPECTRAL_CONVERGENCE": "HOLD_NONMONOTONE",
+    "FULL_EOR_CMB": "HOLD"
+  },
+  "resume": {
+    "retrieved_pre_resume_head": "c83858025a28528b35d6f56d13c351273aec6a27",
+    "source_physics_changed": false,
+    "tolerances_changed": false,
+    "first_red": "2 failures before correction",
+    "new_guard_tests": 8,
+    "restored_manifest_files": 50,
+    "unchanged_parent_sources": 17,
+    "native_calls": 0,
+    "fixed": "pilot table resolution and cross-receipt identity before study dispatch"
+  },
+  "backup": {
+    "stage0_drive": "14nfmoqQlJlkgABWfctJIL6ZkAAcuHYEV",
+    "stage1_drive": "11_s6xtsnEbZj_-JLtuGSXcBAENwQAXfp",
+    "stage2_drive": "1GWJUJuBO0N0Sq8d6FGzdrsJgJQdUfO6A",
+    "stage2_dropbox": "id:BSpOijBcT10AAAAAAD-8Tw",
+    "stage2_drive_recovered_full_sha": "b50eced554dcdd7a210ef5ec0346e2b5cf9be5c1b8cdb018e200a5e718f527b1",
+    "stage2_dropbox_full_readback": "BLOCKED_URL_DOWNLOAD_BOUNDARY",
+    "stage3_drive": "1RW4GLelBXoFbh3MAEoXeOM4Q5bvuNZ8S",
+    "stage3_dropbox": "id:BSpOijBcT10AAAAAAD-9CA",
+    "stage3_archive_sha256": "1b7afdeb4c63b53cf1e77f1183f8c755ef65b202a2dd88dca9ac31b9cca65b41",
+    "stage3_readback_scope": "Drive full bytes and62 files; Dropbox provider content_hash only",
+    "resume_delivery": "results/resume/DELIVERY.json"
+  },
+  "next": "Execute updated-code fresh q0/m4/r2/n16/GL4/table512 native pilot; admitted pilot enables the six declared q0/m8/r2,4,8/n32,64 cases."
+}
