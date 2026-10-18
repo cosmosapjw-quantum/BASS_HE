@@ -3,6 +3,8 @@ from pathlib import Path
 from types import SimpleNamespace
 import json
 import sys
+import threading
+import time
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -53,6 +55,32 @@ def test_matched_pilot_dispatches_only_six_declared_cases(tmp_path, monkeypatch)
     assert len(dispatched) == 6
     for command, _, _ in dispatched:
         assert command[command.index('--table-nodes')+1] == '512'
+
+
+def test_study_parallelism_is_bounded_and_runs_only_declared_cases(tmp_path,monkeypatch):
+    args,dispatched,_,_=fixture(tmp_path,monkeypatch)
+    args.workers=3
+    lock=threading.Lock();active=peak=0
+    def dispatch(*call):
+        nonlocal active,peak
+        with lock:
+            active+=1;peak=max(peak,active);dispatched.append(call)
+        time.sleep(.02)
+        with lock:active-=1
+        return {'returncode':0,'timed_out':False}
+    monkeypatch.setattr(he28_run,'run_process',dispatch)
+    he28_run.campaign(args)
+    assert len(dispatched)==6
+    assert 1<peak<=3
+
+
+@pytest.mark.parametrize('workers',[0,7,True])
+def test_study_parallelism_rejects_invalid_worker_count(tmp_path,monkeypatch,workers):
+    args,dispatched,_,_=fixture(tmp_path,monkeypatch)
+    args.workers=workers
+    with pytest.raises(ValueError,match='STUDY_WORKER_DOMAIN'):
+        he28_run.campaign(args)
+    assert not dispatched
 
 
 @pytest.mark.parametrize('mutation,code', [

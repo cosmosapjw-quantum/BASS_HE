@@ -9,9 +9,21 @@ import subprocess
 import time
 
 
+def _json_default(value):
+    """Convert NumPy scalar receipts to built-in JSON scalar types."""
+    try:
+        import numpy as np
+    except ImportError:
+        np = None
+    if np is not None and isinstance(value, np.generic):
+        return value.item()
+    raise TypeError(f'Object of type {type(value).__name__} is not JSON serializable')
+
+
 def atomic_json(path, value):
     path = Path(path)
-    text = json.dumps(value, indent=2, sort_keys=True, allow_nan=False)+'\n'
+    text = json.dumps(value, indent=2, sort_keys=True, allow_nan=False,
+                      default=_json_default)+'\n'
     temp = path.with_name(path.name+'.partial')
     path.parent.mkdir(parents=True, exist_ok=True)
     if path.exists() or path.is_symlink():

@@ -15,6 +15,13 @@ def test_atomic_create_only(tmp_path):
     assert json.loads(p.read_text())=={'ok':True}
 
 
+def test_atomic_json_converts_numpy_bool_scalar(tmp_path):
+    import numpy as np
+    p=tmp_path/'numpy-bool.json'
+    atomic_json(p,{'ok':np.bool_(True)})
+    assert json.loads(p.read_text())=={'ok':True}
+
+
 def test_nonfinite_refused(tmp_path):
     with pytest.raises(ValueError):atomic_json(tmp_path/'bad.json',{'x':float('nan')})
     assert not (tmp_path/'bad.json').exists()
