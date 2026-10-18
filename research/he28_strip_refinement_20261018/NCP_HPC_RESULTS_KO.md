@@ -17,6 +17,8 @@ NCP는 Intel Xeon Gold 5220, 64 CPU, 약 125 GiB RAM이다. 실제 계산 worker
 
 thread 제한 및 신규 identity에 묶인 pilot `q=0, m=4, r=2, n=16, GL4, table=512`은 통과했다. 총 293,906 native 호출이 있었다. `transport`, 독립 adaptive Radau, 독립 adaptive DOP853의 최종 온도는 각각 8.239220060821102 K, 8.239220062970691 K, 8.239220062970656 K였다. transport–Radau 차이는 2.1495889512834765e-9 K로 1e-8 K 한도 이내이고, Radau–DOP853 차이는 3.552713678800501e-14 K로 1e-9 K 안정성 한도 이내였다. 수소·헬륨 최종 gas fraction의 transport–reference 최대 상대차는 3.951006358291365e-14로 1e-11 기준 이내였다.
 
+승인 gates는 완화하지 않았다. source moment와 angle-band 상대 오차는 각각 3e-13 이하, native photon number defect 3e-15 이하, energy defect 3e-12 eV 이하, 각 species defect 3e-12 이하이며 photon/gas 비음수성도 요구한다. Pilot admission은 transport–reference 온도차 1e-8 K, 상대 gas 차이 1e-11, 독립 Radau–DOP853 온도 안정성 1e-9 K 이하를 추가로 요구한다. Study는 pilot `pilot_accuracy_pass=true`, 동일 binary/owner/source/thread/table identity (table512), table build 600 s 및 table memory 2048 MiB 예산, 사례별 3600 s 제한에 묶였다. 실제 study matrix는 `q=0, GL4, m=8, r=2/4/8, n=32/64`의 6개 항목으로 제한했다.
+
 Pilot의 transport 광자 수지는 photon number `3.85117493251536e-08`, energy `9.546044242544628e-07 eV`였고 number defect `1.6940658945086007e-21`, energy defect `-2.2854981795994433e-16 eV`였다. Pilot ledger에는 HI/HeI/HeII photo-absorption, CI, RR, DR, binding, species heating, escaped radiation, CMB, gas work와 photon work가 각각 보존되었다. 이 실행에서 DR는 0이다.
 
 study의 고정 matrix 6/6이 모두 정상 완료되었고 실패 및 timeout은 없다. 표의 wall은 각 사례의 전체 실행 wall이며, study 사례는 transport native solver만 실행했다. 수렴한 광자·원자 반응 수지는 이 제한된 격자에서 다음 범위에 들었다.
