@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict
 import json
 import math
+import os
 from pathlib import Path
 import sys
 import time
@@ -19,6 +20,24 @@ from execution import atomic_json,digest,manifest,verify_manifest,run_process
 ROOT=Path(__file__).resolve().parents[1]
 REPO=RESEARCH.parent
 
+THREAD_ENV_NAMES=('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS',
+                  'NUMEXPR_NUM_THREADS','BLIS_NUM_THREADS')
+
+
+def pin_numerical_threads():
+    """Allow only case-level concurrency; avoid nested library pools."""
+    for name in THREAD_ENV_NAMES:
+        os.environ[name]='1'
+    os.environ.update(OMP_DYNAMIC='FALSE',OMP_PLACES='cores',OMP_PROC_BIND='close')
+
+
+def numerical_thread_environment():
+    names=(*THREAD_ENV_NAMES,'OMP_DYNAMIC','OMP_PLACES','OMP_PROC_BIND')
+    env={name:os.environ.get(name) for name in names}
+    if any(env[name]!='1' for name in THREAD_ENV_NAMES):
+        raise ValueError('HE28_NUMERICAL_THREAD_ENVIRONMENT')
+    return env
+
 
 def build_identity(binary,receipt):
     d=json.loads(Path(receipt).read_text())
@@ -29,6 +48,7 @@ def build_identity(binary,receipt):
     return {'parent_sources':expected,'binary_sha256':digest(binary),
             'owner_source':SOURCE_COMMIT,'build_receipt':d,
             'python':sys.version,
+            'numerical_thread_environment':numerical_thread_environment(),
             'he28_sources':manifest(sorted((ROOT/'src').glob('*.py')),ROOT)}
 
 
@@ -103,6 +123,8 @@ def campaign(args):
             or ident.get('owner_source')!=now['owner_source']
             or ident.get('parent_sources')!=now['parent_sources']):
             raise ValueError('HE28_PILOT_SOURCE_CHANGED')
+        if ident.get('numerical_thread_environment')!=now['numerical_thread_environment']:
+            raise ValueError('HE28_PILOT_THREAD_ENVIRONMENT_CHANGED')
         # A table discretization is part of the admitted model, not just a cost knob.
         # Study m/r/n change by design; changing table resolution needs a new pilot.
         if ident.get('source_table_nodes') != args.table_nodes:
@@ -167,6 +189,7 @@ def campaign(args):
 
 
 def main():
+    pin_numerical_threads()
     ap=argparse.ArgumentParser();ap.add_argument('mode',choices=['case','campaign','preflight'])
     ap.add_argument('--out',required=True);ap.add_argument('--binary');ap.add_argument('--build-receipt')
     ap.add_argument('--m',type=int,default=4);ap.add_argument('--strips',type=int,default=2)

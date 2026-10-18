@@ -16,6 +16,7 @@ def fixture(tmp_path, monkeypatch, *, table_nodes=512, result_hash='table-A', ta
     pilot = tmp_path/'pilot'; pilot.mkdir()
     identity = {'he28_sources': {'core': 'unchanged'}, 'binary_sha256': 'binary-A',
                 'parent_sources': {'owner': 'pinned'}, 'owner_source': 'owner-A',
+                'numerical_thread_environment': {'OPENBLAS_NUM_THREADS':'1'},
                 'source_table_nodes': 512, 'spec': {'m': 4, 'strips': 2, 'angles': 4, 'q': 0.}, 'n': 16}
     result = {'status': 'SCOPED_NATIVE_COMPLETED', 'source_table_sha256': result_hash,
               'results': {'pilot_accuracy_pass': True}}
@@ -88,6 +89,7 @@ def test_study_parallelism_rejects_invalid_worker_count(tmp_path,monkeypatch,wor
     ('bad_table_nodes','PILOT_TABLE_IDENTITY'),
     ('wrong_owner','PILOT_SOURCE_CHANGED'),
     ('wrong_pilot_grid','PILOT_DESIGN_CHANGED'),
+    ('wrong_thread_environment','PILOT_THREAD_ENVIRONMENT_CHANGED'),
     ('nonboolean_admission','PILOT_NOT_ADMITTED'),
 ])
 def test_incomplete_or_mismatched_pilot_is_not_inherited(tmp_path,monkeypatch,mutation,code):
@@ -102,7 +104,8 @@ def test_incomplete_or_mismatched_pilot_is_not_inherited(tmp_path,monkeypatch,mu
     else:
         i=json.loads((pilot/'IDENTITY.json').read_text())
         if mutation=='wrong_owner':i['owner_source']='another-owner'
-        else:i['spec']['strips']=8
+        elif mutation=='wrong_pilot_grid':i['spec']['strips']=8
+        else:i['numerical_thread_environment']={'OPENBLAS_NUM_THREADS':'64'}
         (pilot/'IDENTITY.json').write_text(json.dumps(i))
     with pytest.raises(ValueError,match=code):he28_run.campaign(args)
     assert not dispatched

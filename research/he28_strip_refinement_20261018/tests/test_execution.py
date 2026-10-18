@@ -33,6 +33,22 @@ def test_process_exit_record(tmp_path):
     assert (tmp_path/'r'/'stdout.log').read_text().strip()=='done'
 
 
+def test_child_process_pins_numerical_thread_pools(tmp_path,monkeypatch):
+    for name in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS',
+                 'NUMEXPR_NUM_THREADS','BLIS_NUM_THREADS'):
+        monkeypatch.setenv(name,'64')
+    code=('import os,json; print(json.dumps({k:os.environ.get(k) for k in '
+          '"OMP_NUM_THREADS OPENBLAS_NUM_THREADS MKL_NUM_THREADS NUMEXPR_NUM_THREADS '
+          'BLIS_NUM_THREADS OMP_DYNAMIC OMP_PLACES OMP_PROC_BIND".split()}))')
+    r=run_process([sys.executable,'-c',code],tmp_path/'threads',3.)
+    assert r['returncode']==0
+    env=json.loads((tmp_path/'threads'/'stdout.log').read_text())
+    assert all(env[k]=='1' for k in
+               ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS',
+                'NUMEXPR_NUM_THREADS','BLIS_NUM_THREADS'))
+    assert env['OMP_DYNAMIC']=='FALSE' and env['OMP_PLACES']=='cores' and env['OMP_PROC_BIND']=='close'
+
+
 def test_timeout_process_group(tmp_path):
     code='import time; print("ready",flush=True); time.sleep(8)'
     r=run_process([sys.executable,'-c',code],tmp_path/'t',.7)
