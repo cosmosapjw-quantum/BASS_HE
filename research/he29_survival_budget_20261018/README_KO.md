@@ -1,0 +1,21 @@
+# HE29 게시 복구 완료 및 실행 진입점
+
+2026-10-18. Draft PR78에 미게시였던 S2를 반영했다. 실행 source/test revision은 `1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f`다. 이후 문서·백업 receipt 커밋과 실행 identity를 구별한다. 원본 microphysics·물리 상수·tolerance·HE28 결과는 변경하지 않았다. 이번 작업의 native 호출0.
+
+## 바로 시작
+
+Git checkout에서 `bash research/he29_survival_budget_20261018/ncp/START_REFERENCES.sh`를 사용한다. 기존 archive를 사용자가 내려받을 필요가 없다. 인증된 rclone dbx:/gdrv:에서 원본 입력 archive를 자동 확보하거나 Codex가 직접 받은 경로를 HE29_INPUT_ARCHIVE로 준다. 과거 PUBLISH.sh는 최초 미게시 복구 도구이므로 현재 branch에는 재실행하지 않는다.
+
+전체 코드와 테스트는 Git에 있으며 exact native DATA22개는 별도 cloud archive에서 복원한다. 원본 archive는129635bytes, SHA256 `a70d320c7ead5f1fd93170c18f1f80ae5eb58a293a6045a0f728bb7ae2743205`. 각 입력의 개별SHA는 provenance/INPUT_SHA256.json에 고정했다. 선택필드 PARENT_SCIENCE.json과 실제 원본 바이트를 혼동하지 않는다. RESTORE_VERIFIED_INPUTS.py는 data만 추출하고 충돌 시 overwrite하지 않는다.
+
+Drive original id `1I31wE6A3laYE6nxMcKNmm5rNMeESIsXi`, Dropbox original id `id:BSpOijBcT10AAAAAAD_Ncg`. 원본 Drive 전체 readback 일치. Dropbox 업로드 및 provider content_hash 일치, raw readback은 URL 경계로 미검증. 최신 code/prompt 완전 패키지의 보존은 results/publication_retry/DELIVERY.json을 기준으로 확인한다.
+
+## 검증 및 과학 범위
+
+원본47개+신규 포장3개, 총50/50 tests PASS. 포장 테스트의 실제 failing behavior3개를 확인 후 구현했다. native fake를 과학 증거로 사용하지 않는다. 신규 네 기준해는0/4 NOT_RUN이다. 6개 src 및3개 실행보조 파일의 Git blob SHA가 로컬 실제 파일과 일치했다.
+
+유한 positive donor의 Jensen/chord survival bound는90사례/720nested 구간을 포함하며 최종 최대폭2.2487671447191104e-12다. 이는 엄밀한 continuum quadrature나 nonlinear gas-temperature bound가 아니다. 시간/strip 효과가 섞이는 저장 HE28 결과를 추가 적분 없이 분석했고, 같은-r/table의 새 Radau+DOP853만 준비했다. m8/GL4/q0의 (r2,512),(r4,512),(r8,512),(r4,1024). 기존 transport6개는 반복하지 않는다.
+
+조건부 Jensen 하한 M exp(-t mean), endpoint chord 상한 M[(b-mean)exp(-ta)+(mean-a)exp(-tb)]/(b-a)는 동결 흡수율의 mass/mean/support에 관한 정리다. 참조 격자 정제는 안정성이지 연속 오차 증명이 아니다. 상세 수식과 이전 원시 기록은 stages/S1_THEORY.md와 원본 완전 백업에 보존되어 있다.
+
+실제 실행 범위와 제약은 CODEX_HANDOFF_PROMPT_KO.md, 새 ChatGPT 재개는 NEW_CHAT_HANDOFF_KO.md를 따른다. full EoR·continuous spectrum·upstream Grackle runtime parity·관측 Bianchi/CMB는 독립 검증 전 HOLD다.

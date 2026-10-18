@@ -1,0 +1,26 @@
+{
+  "schema": "he29.publication_retry.dag.v1",
+  "date": "2026-10-18",
+  "execution_commit": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
+  "pull_request": 78,
+  "stages": {
+    "S0_INTAKE": "PRESERVED",
+    "S1_BOUND_SCIENCE": "PREVIOUS_90_CASES_720_BOUNDS_NOT_RERUN",
+    "S2_SOURCE": "PUBLISHED",
+    "CORE_TESTS": "47_PASS_RECHECKED",
+    "INPUT_RESTORATION_TESTS": "3_PASS",
+    "TOTAL_TESTS": "50_PASS",
+    "NATIVE_REFERENCES": "NOT_RUN_0_OF_4",
+    "FINAL_BACKUP": "PENDING_FINAL_RECEIPT"
+  },
+  "native_calls": 0,
+  "physical_changes": false,
+  "next": "Git checkout -> START_REFERENCES.sh -> same-source four reference pairs only",
+  "input_backup": {
+    "original_sha256": "a70d320c7ead5f1fd93170c18f1f80ae5eb58a293a6045a0f728bb7ae2743205",
+    "drive_id": "1I31wE6A3laYE6nxMcKNmm5rNMeESIsXi",
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_Ncg",
+    "drive_readback": "FULL_BYTES_MATCH",
+    "dropbox_readback": "PROVIDER_CONTENT_HASH_ONLY"
+  }
+}
