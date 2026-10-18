@@ -17,5 +17,6 @@
   "research/he28_strip_refinement_20261018/src/execution.py": "876e43d76f0773a8d2c38e262902442c614a68334561f5e2a78024c659edb1c4",
   "research/he28_strip_refinement_20261018/src/he28_run.py": "c0e73eb5be368dde9ad036dcc6e7e113ff1b33eb893fa7569d934aa070c6fb37",
   "research/he28_strip_refinement_20261018/src/refined_source.py": "853b18752f4f46706da139c0036e7c0db83f5d25a5cb239d676223b6ddfde0a7",
-  "research/he28_strip_refinement_20261018/src/run_source_study.py": "0331c6aded19a8c8b5596292b32d46ab59f684dc0adbf67f3eb6b2adcc9d787f"
+  "research/he28_strip_refinement_20261018/src/run_source_study.py": "0331c6aded19a8c8b5596292b32d46ab59f684dc0adbf67f3eb6b2adcc9d787f",
+  "research/he25_proper_birth_20261016/src/owner_server.rs": "be34debaacce0ff84390d98de9a14cb2c2eb34437c9b49e780939f17dbf177a6"
 }
