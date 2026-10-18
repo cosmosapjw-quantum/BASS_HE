@@ -1,24 +1,48 @@
-# HE28 NCP 실행 인계
+# BASS_HE HE28 NCP 실행 인계: 소스 정제 코드는 완성, 실제 native 검증만 수행
 
-사용자에게 추가 다운로드나 명령 입력을 요청하지 말고 GitHub에서 직접 코드를 가져와 실행하라. BASS_HE branch `research/he28-strip-refinement-20261018`, science commit `62acea9141324ef176110314226cb5c40a05bf82`가 기준이다. 이후 delivery-only commit은 허용하되 scientific source diff가 있으면 먼저 확인한다. 본 단계의 새 RefinedSourceModel/native runner는 이미 작성되어 있으므로 재설계하지 말고 컴파일, 작은 환경 수정, 실제 검증에 집중한다.
+사용자에게 파일 다운로드·업로드·명령 입력을 요구하지 말고 허용된 GitHub/NCP/클라우드 연결을 사용하라. 소스 개발을 다시 시작하지 말고 아래 고정 구현을 실행하라. 접근 권한을 우회하지 않는다.
 
-먼저 HE27 PR75와 HE28 README/DAG를 읽어라. HE27 native A/B가 이미 끝났으므로 반복하지 않는다. 원본 owner는 `cosmosapjw-quantum/rei_bianchi@f7830e2f55e7a1938bc3c98f61b60651f8dae474`. 새 runtime과 raw results는 새 브랜치/새 work directory에만 저장하고 원래 dirty checkout/production/PR73-75를 수정하지 않는다.
+## Authority
 
-승인된 Ubuntu/NCP 연결을 사용하라. NCP 내부이면 바로 작업하고 Ubuntu이면 기존 승인된 SSH key/config를 이용한다. 인증자료를 공개 로그에 쓰지 않는다. NCP 접근이 막히면 실제 가능한 작업과 미수행을 분리하고 접속을 우회하지 않는다.
+- 저장소: https://github.com/cosmosapjw-quantum/BASS_HE
+- Draft PR76, branch `research/he28-strip-refinement-20261018`.
+- 실행 코드 및 테스트 revision: `2e824c21d41c68f728f9630f2b219fa11f0c3b53`. 이후 문서·backup receipt 커밋은 읽되 물리 코드 변경이 없음을 확인한다.
+- 폴더: `research/he28_strip_refinement_20261018`.
+- 원본 native microphysics: `rei_bianchi@f7830e2f55e7a1938bc3c98f61b60651f8dae474`.
+- HE27 완료 캠페인과 HE25/26 source/geometry/transport/reference는 재실행하거나 바꾸지 않는다.
 
-D=research/he28_strip_refinement_20261018
-새 고유 HE28_WORK_ROOT를 정하고 다음을 직접 실행한다:
-`HE28_WORK_ROOT="$WORK" bash "$D/ncp/BOOTSTRAP.sh"`
-필요하면 실제 존재/검증한 HE28_OWNER_REPO와 HE28_PYTHON을 제공한다. 기본 스크립트는 original Rust clone 및 unchanged HE25 owner_server.rs를 컴파일하고17개 parent SHA,27개 tests,preflight,native pilot을 실행한다. Python dependencies는 requirements.txt로 고정되어 있다. first failure와 모든 stdout/stderr는 보존한다.
+먼저 README_KO.md, RESUME_REPORT_KO.md(후속 문서 커밋), DAG_STATUS.json, provenance/PARENT_SHA256.json, ncp/BOOTSTRAP.sh, src/he28_run.py를 읽어라. source_table_nodes=512에서 받은 pilot을256 또는1024의 study 승인으로 재사용하지 않는다. 소스·binary·owner·pilot 설계·table 기록의 일치 검사를 그대로 유지한다.
 
-pilot은 q0,m4,r2,n16,GL4,table512에서 transport와 동일 table/RHS의 Radau 및 DOP853를 비교한다. process exit와 `pilot/SUMMARY.json`의 `all_processes_pass`, `pilot_accuracy_pass`를 모두 확인한다. 기존 source3e-13, photon3e-15/H, energy3e-12eV/H, density1e-9 등 불변. pilot T1e-8K,gas fraction1e-11,reference stability1e-9K. 불충족 시 허용치 변경 없이 HOLD.
+## 실행
 
-통과 시 동일 Python으로:
-`"$WORK/venv/bin/python" "$D/src/he28_run.py" campaign --stage study --binary "$WORK/build/he28_owner_server" --build-receipt "$WORK/build/RECEIPT.json" --pilot-result "$WORK/pilot/m4_r2_n16/RESULT.json" --out "$WORK/study"`
-외부 HE28_PYTHON을 썼다면 위 실행파일만 같은 환경의 실제 Python으로 바꾼다. study는 q0,m8,r2/4/8,n32/64의6개이며 자동 전체 Cartesian sweep은 하지 않는다. Table2GiB/wall600s,case3600s가 기본이다. cap 실패는 먼저 실제 자원/원인을 기록한다. 임의 해상도 축소나 scientific gate 완화는 금지한다.
+1. 사용자 승인된 NCP에 직접 접속한다. Rust 경로 `$HOME/.cargo/bin`을 확인한다. 신규 Git checkout과 신규 work root만 사용한다. 기존 dirty tree, production 프로세스, 실패 기록을 지우지 않는다.
+2. GitHub에서 위 브랜치를 직접 fetch하고 revision 및 parent source hash를 검사한다. 원본 owner repo가 이미 있으면 HE28_OWNER_REPO로 지정할 수 있지만 읽기만 한다.
+3. 다음 명령은 Codex가 실행한다. HE28_WORK_ROOT에는 존재하지 않는 새 절대경로를 할당한다.
 
-270개 source-only 결과에서 r8 오차는 r1보다 약26배 작았지만 r16은 비단조적이다. 이는 고정 기체에서 exp(-tau(E))의 미래 kernel 진단이지 coupled temperature/EoR 오차가 아니다. 8개 순간 모멘트 일치와 연속 스펙트럼 수렴을 혼동하지 않는다. 실제 새 native 실행은 현재0회다.
+```sh
+D="$PWD/research/he28_strip_refinement_20261018"
+export HE28_WORK_ROOT="$HOME/HE28_NATIVE_$(date -u +%Y%m%dT%H%M%SZ)"
+bash "$D/ncp/BOOTSTRAP.sh"
+```
 
-각 완료 단계마다 새 raw/source/table/binary SHA 및 DAG를 기록하고 Draft PR로 게시한다. Code/source/model/table가 변한 뒤 과거 pilot을 재사용하지 않는다. 모든 단계와 실패를 복원 아카이브/Git bundle로 묶어 Drive/Dropbox create-only 업로드하고 각각 실제 다운로드 SHA를 검증한다. HE28 source package Drive id `1GWJUJuBO0N0Sq8d6FGzdrsJgJQdUfO6A`,SHA256 `b50eced554dcdd7a210ef5ec0346e2b5cf9be5c1b8cdb018e200a5e718f527b1`; Dropbox id `id:BSpOijBcT10AAAAAAD-8Tw`는 upload/content-hash까지 검증됐으나 raw readback이 미완료다. 기존 파일을 덮어쓰지 말고 이를 가능한 경우 완결한다.
+스크립트는 원본 Rust lib와 unchanged HE25 owner_server를 빌드하고 Python35개 테스트, preflight, q0/m4/r2/n16/GL4/table512 pilot(transport+동일-table Radau+DOP853)을 실행한다. 아직 이 native pilot은 수행되지 않았다. 건설된 fixture 테스트를 native 승인으로 승계하지 않는다.
 
-한국어 최종 보고에는 실제 native run 수와 T/fraction/reference 차이,수지,원인별 실패,commit/PR,두 provider readback을 적는다. Native Grackle-rate Rust port를 upstream Grackle 직접 실행으로 부르지 않는다. 연속 스펙트럼/전체 EoR/관측 Bianchi/CMB는 해당 증거 없으면 HOLD. 소스 재설계나 반복 계획 대신 제공된 구현을 실행해라.
+4. 실제 pilot이 통과한 경우에만:
+
+```sh
+PY="${HE28_PYTHON:-$HE28_WORK_ROOT/venv/bin/python}"
+"$PY" "$D/src/he28_run.py" campaign --stage study \
+  --binary "$HE28_WORK_ROOT/build/he28_owner_server" \
+  --build-receipt "$HE28_WORK_ROOT/build/RECEIPT.json" \
+  --pilot-result "$HE28_WORK_ROOT/pilot/m4_r2_n16/RESULT.json" \
+  --out "$HE28_WORK_ROOT/study" --table-nodes 512 \
+  --table-mb 2048 --table-wall-s 600 --case-wall-s 3600
+```
+
+이 study는 q0/GL4, m8, r2/4/8, n32/64의6개 케이스만 실행한다. 전체 Cartesian sweep이나 자동 정밀도/허용치 변경은 하지 않는다. 같은 source/table에서의 단일 pilot 통과를 전역 spectral/time 수렴으로 부르지 않는다. 상수·원자 반응률·희소 strip 알고리즘은 이미 작성되었다. 허용되는 수정은 재현 가능한 경로/빌드 환경/실행 경계의 작은 수정뿐이며 물리적 재설계가 필요하면 실패 증거를 보존해 연구 스레드에 반환한다.
+
+## Gate와 회수
+
+기존 source moment3e-13, photon3e-15/H,energy3e-12eV/H,gas fractions1e-11,pilot temperature1e-8K,reference stability1e-9K를 유지한다. 첫 실패 원본 argv/stdout/stderr/table identity/gas state를 보존하고 무한 retry하지 않는다. study 완료 후 logs/build receipt/preflight/pilot/study 전체와 실제 소스 manifest를 별도 불변 아카이브로 만든다. BOOTSTRAP의 초기 evidence tar는 study 이전 파일만 포함하므로 study까지 포함한 새 return archive가 필요하다.
+
+NCP는 컴파일/작은 환경 수정/실제 실행 담당이다. 단계마다 실제 DAG 진척, 새 결과 Git commit/Draft PR 및 create-only Dropbox+Drive 백업과 가능한 실제 full SHA readback을 기록한다. provider content_hash만 맞춘 경우 raw-byte readback과 구분한다. 공개 저장소에 SSH 키·토큰·개인 접속정보를 올리지 않는다. 본문 최종 보고에는 실행 case 수, native calls, 별도 residual/accuracy 판정, source/binary/table SHA, source-only와 native 증거 구분, cloud 복원 상태를 명시한다. 연속 스펙트럼·full EoR/upstream Grackle 직접 동등성/CMB 관측은 해당 범위의 검증 전 HOLD다.
