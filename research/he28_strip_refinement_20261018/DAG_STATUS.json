@@ -45,6 +45,7 @@
   "ncp_execution": {
     "result_branch": "results/he28-ncp-hpc6-20261018",
     "draft_pr": 77,
+    "publication_commit_before_backup_receipt": "b878cde56904246d53f6efea46f65a322c49ace8",
     "source_commit": "bcd3ac4c58760bcfb1f03ee30bd82fd3d77ff7a4",
     "owner_source": "f7830e2f55e7a1938bc3c98f61b60651f8dae474",
     "binary_sha256": "c4bf20bbe44f2e8d7016c0943b9cc94f1ae676343a00c9231ed2949af3b04216",
@@ -57,7 +58,33 @@
     "study_summary": "/root/HE28_NATIVE_20261018T_threadbounded/study_results/SUMMARY.json",
     "report": "NCP_HPC_RESULTS_KO.md",
     "continuous_spectral_convergence": "HOLD",
-    "full_EoR_CMB_observations": "HOLD"
+    "full_EoR_CMB_observations": "HOLD",
+    "return_archive_sha256": "2059dba94091cfe1042dceaea992f8c3af7b117b687898a0bdfa7b3bef7d622e",
+    "dropbox_file_id": "id:BSpOijBcT10AAAAAAD_JOQ",
+    "dropbox_path": "/BASS_DERIVATION_DOSSIERS_20260912/HE28_NCP_HPC_RETURN_20261018.tar.gz",
+    "dropbox_raw_byte_readback": "PASS",
+    "google_drive_parent_folder_id": "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI",
+    "google_drive_part_ids": ["1szRHdyxfRFOq8hu1aXxsx4itGjmhE7LE", "1vOXggAWYr9zpGXh42JAeTo-xAm7rS_dK"],
+    "google_drive_reconstructed_raw_byte_readback": "PASS",
+    "backup_size_bytes": 148332838
   },
-  "next": "Create source-restorable immutable post-study return archive; create-only Dropbox and Google Drive backups with byte readback; retain PR77 as draft and all EoR/CMB/continuous-spectrum claims on HOLD."
+  "return_backup": {
+    "return_archive": "HE28_NCP_HPC_RETURN_20261018.tar.gz",
+    "sha256": "2059dba94091cfe1042dceaea992f8c3af7b117b687898a0bdfa7b3bef7d622e",
+    "size_bytes": 148332838,
+    "dropbox": {
+      "full_archive_id": "id:BSpOijBcT10AAAAAAD_JOQ",
+      "full_archive_path": "/BASS_DERIVATION_DOSSIERS_20260912/HE28_NCP_HPC_RETURN_20261018.tar.gz",
+      "part00_id": "id:BSpOijBcT10AAAAAAD_JOg",
+      "part01_id": "id:BSpOijBcT10AAAAAAD_JOw",
+      "raw_byte_readback_sha256": "2059dba94091cfe1042dceaea992f8c3af7b117b687898a0bdfa7b3bef7d622e"
+    },
+    "google_drive": {
+      "parent_folder_id": "1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI",
+      "part00_id": "1szRHdyxfRFOq8hu1aXxsx4itGjmhE7LE",
+      "part01_id": "1vOXggAWYr9zpGXh42JAeTo-xAm7rS_dK",
+      "reconstructed_raw_byte_readback_sha256": "2059dba94091cfe1042dceaea992f8c3af7b117b687898a0bdfa7b3bef7d622e"
+    }
+  },
+  "next": "Keep PR77 in draft; next scientific dependency is a separately specified time/angle/spectral convergence study before any continuous-spectrum, EoR, CMB, observational or upstream-equivalence admission."
 }
