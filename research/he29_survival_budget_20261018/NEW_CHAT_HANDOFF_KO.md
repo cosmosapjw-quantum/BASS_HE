@@ -1,14 +1,44 @@
-# HE29 현재 재개점: VigilODE 확장 게시와 기준해 대기
+# HE29 현재 재개점: VigilODE 확장 게시, 네 기준해 대기
 
-physmath-research-loop1.3.0으로 이어간다. 먼저 현재 PR78와 모든 관련 반환을 확인하고 상위 README/DAG/Codex prompt, `vigilode_20261019/{README_KO.md,DAG_STATUS.json,DELIVERY.json,NCP_HANDOFF_KO.md}` 및 `evidence/{BACKUP_CENSUS.json,HE29_BACKUP_CENSUS_ADDENDUM.json,LATEST_PR71_RETURN.json,BUILD_RECEIPT.json,SMOKE_BRIDGE.json,SOURCE_IDENTITY_ADDENDUM.json}`을 읽는다.
+physmath-research-loop 1.3.0으로 이어간다. 먼저 현재 PR78와 관련 GitHub·백업의 새 반환부터 확인한다. 상위 README/DAG/Codex prompt와 `vigilode_20261019/{README_KO.md,DAG_STATUS.json,DELIVERY.json,NCP_HANDOFF_KO.md}`를 실제로 읽는다. 관련 intake·build·smoke·source addendum은 그 아래 evidence에 있다.
 
-추가 작업은 HE29 안의 선택적 확장이다. VigilODE a21d 고정 RODAS5P/GMRES/faer를 실제 연결했고 Rust1.94.1 bridge compile, 실제 작은 FFI3개, 새 Python96개 검증이 통과했다. callback overflow와 빌드 전후 identity 경계를 수정했다. Schur 대수(Wolfram 잔차8개0)/23합성계 결과는 조건부 선형계 성질이다. 전용 Schur preconditioner나 HE29 성능향상은 아직 실증하지 않았다.
+## 고정 정체성과 게시
 
-HE28 pilot/6case, HE2990case720bounds/50source-onlytests를 반복하지 않는다. 과학1569와 ownerf7830e2, tolerance불변. 관측된 HE29 새native반환0/4. 먼저 (r2,512),(r4,512),(r8,512),(r4,1024), 각Radau+DOP853. 4/4완료·identity·admission후에만 같은r4table512의 선택적VigilODE한건. canary로기준해완료수를올리지않는다.
+- Repository: https://github.com/cosmosapjw-quantum/BASS_HE
+- Draft PR78: https://github.com/cosmosapjw-quantum/BASS_HE/pull/78
+- Branch: research/he29-survival-budget-20261018
+- 기존 과학 코드·테스트: 1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f
+- 원본 Rust owner: rei_bianchi@f7830e2f55e7a1938bc3c98f61b60651f8dae474
+- 새 VigilODE 연결 코드: 57642252991b5c453db66eb5a078e6a62cc6f4ea, 54/54 GitHub readback MATCH
+- 재사용 VigilODE source: a21d573980f66fe02891bd216153443b5352f921
+- 위 source commit 뒤의 closeout은 문서·DAG·백업 영수증이며 새로운 과학 실행 revision이 아니다.
 
-VigilODE 최신별도PR71run39255702592는 build/small native확인후 JSON int32직렬화에서 accuracy/timing BLOCKED. 새로운 HE29 반환이나 완료 비교로 사용하지 않는다. NCP는 이대화에서 월간quota로 미제출·미시작, 원격프로세스미관측. 이전도구의 재시도/재연결금지를 유지한다. 데이터는Git원본코드와기존자동복원기로확보하고사용자에게수동전달을요청하지않는다.
+## 이미 끝난 일과 이번 새 결과
 
-새R2보존묶음78356130은Drive/Dropbox둘다실제rawSHA일치. 새코드archive와후속receipt는DELIVERY에따로있다. 기존c47c5efc/798afac1/a70d320c불변. 연속스펙트럼·전체EoR·전역gasT bound·upstream전체동등성·관측Bianchi/CMB는HOLD다. 아래기록은이전관측시점의보존근거로읽는다.
+HE28 pilot/6개 study, HE29 finite-donor 90사례/720구간과 50개 source-only tests는 반복하지 않았다. 새 Schur 대수는 Wolfram 잔차 8개가 0이며 23개 합성 선형계가 통과했다. 전용 Schur preconditioner를 production에 넣었다고 주장하지 않는다.
+
+VigilODE a21d의 실제 RODAS5P/GMRES/faer를 연결했고, Rust 1.94.1 bridge compile과 작은 실제 FFI 3개, 새 Python 검사 96개가 통과했다. callback overflow와 build 전후 source identity 경계를 수정했다. 새 Rust library SHA256은 8d2f1271726781d2b000f0cd5eaadb0adac8029eb9357f786bfd647cea390460이다. NCP 재빌드의 binary bytes가 같다고 가정하지 않는다.
+
+GitHub와 백업의 관측된 새 HE29 native 기준해는 **0/4**다. 추가로 백업 하위 폴더 40개/직접 항목 881개와 shared scratch 파일명 검색을 끝냈다. 상세 조회 범위·더 깊은 미관측 하위 경로는 두 census에 명시했다. NCP 내부 미게시 실행은 관측하지 못했다.
+
+VigilODE PR71 run39255702592는 별도 source bab3902에서 build/small native 확인 후 JSON int32 직렬화 때문에 accuracy/timing BLOCKED다. 실제 읽은 VODE/Diffsol 비교 ZIP은 11개 member, manifest 10/10 MATCH다. 그 안의 저장 VODE 관측과 과거 Rust 수치는 HE29 source/owner/table identity가 없어 새 HE29 결과로 사용하지 않는다.
+
+## 다음 실행
+
+먼저 네 원래 기준해 (r2,512),(r4,512),(r8,512),(r4,1024), 각 Radau+DOP853을 완료·분석한다. m8/GL4/q0, 물리식·반응률·허용치와 absolute fraction 1e-11 gate를 유지한다. 4/4 identity·admission 통과 후에만 같은 r4/table512의 선택적 VigilODE 한 건이 가능하다. 이 canary로 기준해 완료 수를 늘리지 않는다.
+
+NCP는 이 대화에서 원격 도구의 월간 quota로 미제출·미시작이며 내부 workspace는 미관측이다. 해당 응답의 재시도·재연결 금지를 유지한다. 접근 가능한 실행자는 현재 프로세스와 저장 결과를 먼저 확인한다. Git의 고정 source와 원래 자동 입력복원기로 22개 DATA만 확보한다. 사용자에게 수동 파일 전달을 요구하지 않는다. 옛 PUBLISH.sh를 실행하지 않는다.
+
+## 백업
+
+- 전체 새 보존 묶음: BASS_HE_HE29_VIGILODE_COMPLETE_20261019_7bf7398b.tar.gz
+- 2,958,755 bytes; SHA256 7bf7398b77b2bf04a6917bef4241fc216764c7658ebf25c85e5df7377fb6147a
+- Drive: 1RypR402ikbM_nF42R6NUzExWQfa0Xp6G
+- Dropbox: id:BSpOijBcT10AAAAAAD_Q4A
+- 양쪽 실제 raw bytes와 229개 payload 해시 MATCH. R2 archive78356130도 양쪽 raw SHA MATCH.
+- 기존 c47c5efc/a70d320c 원본 archive를 그대로 함께 보존했고, 798afac1과 이전 242201a1도 불변이다. 외부 Rust toolchain/vendor 전체를 새 archive에 넣었다고 주장하지 않는다.
+
+후속 handoff/closeout 문서는 위 불변 코드 archive와 분리된다. 실제 DAG·게시·백업 receipt를 읽고 재사용 자료와 새 실행을 구분한다. 연속 스펙트럼·전체 EoR·전역 gasT bound·upstream Grackle 전체 동등성·관측 Bianchi/CMB는 HOLD다. 아래는 이전 관측 시점의 보존 기록이다.
 
 ---
 

@@ -12,8 +12,8 @@
     "new_ffi_smoke": "3_OF_3_PASS_SYNTHETIC_ONLY",
     "he29_baseline_references": "0/4_NOT_RUN_OBSERVED",
     "he29_vigilode_canary": "NOT_RUN_REQUIRES_FOUR_BASELINE_PAIRS",
-    "publication": "R2_PUBLISHED_IMPLEMENTATION_PREPARED",
-    "backup": "R2_DUAL_RAW_BYTES_MATCH_IMPLEMENTATION_PENDING"
+    "publication": "IMPLEMENTATION_PUBLISHED_54_OF_54_READBACK_MATCH",
+    "backup": "COMPLETE_ARCHIVE_DUAL_RAW_READBACK_229_OF_229_PAYLOAD_HASHES_MATCH"
   },
   "reused": [
     "HE28 native pilot and 6/6 study",
@@ -50,5 +50,15 @@
     "submitted": false,
     "started": false,
     "remote_workspace": "UNOBSERVED"
-  }
+  },
+  "implementation_publication_commit": "57642252991b5c453db66eb5a078e6a62cc6f4ea",
+  "complete_backup": {
+    "name": "BASS_HE_HE29_VIGILODE_COMPLETE_20261019_7bf7398b.tar.gz",
+    "bytes": 2958755,
+    "sha256": "7bf7398b77b2bf04a6917bef4241fc216764c7658ebf25c85e5df7377fb6147a",
+    "payload_files": 229,
+    "drive_id": "1RypR402ikbM_nF42R6NUzExWQfa0Xp6G",
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_Q4A"
+  },
+  "last_delivery_update_utc": "2026-10-19T13:41:26.787076+00:00"
 }

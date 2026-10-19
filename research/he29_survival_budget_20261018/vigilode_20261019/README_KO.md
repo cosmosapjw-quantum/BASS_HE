@@ -45,6 +45,9 @@ Rust는 적분기만 제공한다. 기존 Python `RefinedSourceModel.rhs/jac`와
 
 ## 게시·백업과 주장 경계
 
+새 구현 코드는 `57642252991b5c453db66eb5a078e6a62cc6f4ea`로 게시됐고 **54/54 실제 GitHub readback이 일치**했다. 완전 보존 묶음은 `BASS_HE_HE29_VIGILODE_COMPLETE_20261019_7bf7398b.tar.gz`, 2,958,755 bytes, SHA256 `7bf7398b77b2bf04a6917bef4241fc216764c7658ebf25c85e5df7377fb6147a`다. Drive `1RypR402ikbM_nF42R6NUzExWQfa0Xp6G` 및 Dropbox `id:BSpOijBcT10AAAAAAD_Q4A`에서 실제 raw bytes와 payload 229개 해시가 모두 일치했다. 이 후속 문서·receipt 변경은 위 코드 archive와 분리한다.
+
+
 R2 체크포인트는 `c0dc26736bea18bcaa8d0a6241daed2b5a1ea7f9`에 7개 파일로 게시됐고 7/7 byte readback이 일치했다. `BASS_HE_HE29_VIGILODE_R2_20261019_78356130.tar.gz`의 SHA256은 `783561303c7d3a47c38b5b4f76ddd93c43d394faf94ee53d6e2de0fc45a88a0c`; Drive와 Dropbox의 실제 raw readback이 모두 일치했다. 새 구현의 실제 게시 commit/백업 receipt는 이 디렉터리의 `DELIVERY.json`을 기준으로 한다. source commit과 후속 receipt commit을 구별한다.
 
 빌드와 smoke 원본 receipt는 변경하지 않았다. 전체 intake 166개 = a21d source 161개 + 별도 fa07 benchmark evidence 5개이며, 그 관계는 `evidence/SOURCE_IDENTITY_ADDENDUM.json`에 기록했다. compile 전에는 필수 coefficient fixture와 integrators/build.rs가 포함되어 있었다. 최초 누락 build failure와 복원 사실도 보존했다.

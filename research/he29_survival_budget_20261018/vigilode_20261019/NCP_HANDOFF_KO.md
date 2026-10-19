@@ -10,9 +10,10 @@
 
 ## 2. publication checkout와 원래 실행 결과 연결
 
-상위 handoff의 초기 shell에서 `HE29_STAGE`, `HE29_PUBLICATION_REV`, `HE29_REL`, `HE29_WORK_ROOT`를 기록한다. 네 쌍의 완료·admission을 먼저 확인한다. 같은 새 isolated checkout에서 baseline 실행을 완료한 경우, 다음은 입력 DATA와 알려진 bootstrap overlay를 유지한 채 기록한 publication으로 돌아오는 절차다. 기존 사용자 작업 폴더에 적용하지 않는다.
+상위 handoff의 초기 shell에서 `HE29_STAGE`, `HE29_PUBLICATION_REV`, `HE29_REL`, `HE29_WORK_ROOT`를 기록한다. 네 쌍의 완료·admission을 먼저 확인한다. 같은 새 isolated checkout에서 baseline 실행을 완료한 경우, 다음은 입력 DATA와 알려진 bootstrap overlay를 유지한 채 고정된 새 구현 commit으로 돌아오는 절차다. 기존 사용자 작업 폴더에 적용하지 않는다.
 
 ```bash
+set -euo pipefail
 cd "$HE29_STAGE/BASS_HE"
 HE29_PY="${HE29_PYTHON:-python3}"
 if [[ -x "$HE29_WORK_ROOT/venv/bin/python" ]]; then
@@ -21,13 +22,16 @@ fi
 "$HE29_PY" "$HE29_REL/src/analyze_references.py" \
   --root "$HE29_WORK_ROOT/references" \
   --out "$HE29_WORK_ROOT/PRE_VIGILODE_ANALYSIS_$(date -u +%Y%m%dT%H%M%SZ).json"
-git checkout --detach "$HE29_PUBLICATION_REV"
+HE29_VIGILODE_CODE_REV=57642252991b5c453db66eb5a078e6a62cc6f4ea
+git checkout --detach "$HE29_VIGILODE_CODE_REV"
 HE29_LANE="$PWD/$HE29_REL/vigilode_20261019"
 [[ -f "$HE29_LANE/ncp/build_bridge.py" ]]
 "$HE29_PY" "$HE29_REL/ncp/RESTORE_VERIFIED_INPUTS.py"
 ```
 
 분석기는 incomplete 결과를 보존하고 exit 1을 반환하므로 `set -euo pipefail` 아래에서는 다음 단계로 가지 않는다. 다른 기존 완료 baseline을 사용하는 경우 그 결과 root와 정확한 Python 환경을 연결한다. 새 checkout에 DATA가 없다면 이미 고정된 `RESTORE_VERIFIED_INPUTS.py --archive <verified original archive>`로 22개 DATA만 복원한다. 이를 위해 baseline `START_REFERENCES.sh`를 다시 호출하지 않는다.
+
+최신 게시·백업 receipt가 기록된 후속 문서 commit과 위 실제 실행 source commit을 구별한다. 추가 source 수정이 필요하면 diff와 수정 commit 및 새 compiler/library 정체성을 보존하고, 기존 scientific source와 gate는 그대로 유지한다.
 
 ## 3. 고정 VigilODE bridge만 컴파일
 

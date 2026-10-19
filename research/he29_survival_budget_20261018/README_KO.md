@@ -1,5 +1,7 @@
 # HE29 추가 진행: VigilODE Rust 연결까지 완료
 
+새 구현 publication은 `57642252991b5c453db66eb5a078e6a62cc6f4ea`이며 54/54 GitHub readback과 완전 archive의 Drive·Dropbox raw bytes/229개 payload 해시 일치를 확인했다. 고정 실행 코드와 후속 문서 commit을 구별한다.
+
 2026-10-19 추가 연구에서 VigilODE a21d의 실제 RODAS5P/GMRES와 faer 의존성을 연결했다. 새 Rust bridge 실제 빌드 및 작은 FFI 3개, 새 Python 연결 96개 검증이 통과했다. 큰 source suite는 반복하지 않았다. HE29 물리 기준해는 여전히 관측된 새 반환 0/4이며, 이를 먼저 끝낸 뒤에만 단일 r4/table512 VigilODE canary를 허용한다. 원래 과학·테스트 revision1569와 native owner f7830e2, 물리·반응률·허용치는 그대로다.
 
 현재 새 코드·이론·실행 지침은 [vigilode_20261019/README_KO.md](vigilode_20261019/README_KO.md), [NCP_HANDOFF_KO.md](vigilode_20261019/NCP_HANDOFF_KO.md)에 있다. 실제 게시·백업 정체성은 해당 [DELIVERY.json](vigilode_20261019/DELIVERY.json)과 두 DAG를 따른다. R2 체크포인트 c0dc267은 GitHub readback7/7 및 Drive/Dropbox raw-byte SHA256 일치까지 확인했다. 새 구현은 별도 commit/백업으로 구별한다.

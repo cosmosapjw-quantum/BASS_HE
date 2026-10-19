@@ -2,7 +2,7 @@
 
 기존 네 기준해의 우선순위와 아래 고정1569 실행 절차는 유지한다. 새 확장은 `vigilode_20261019/`에 있으며 실제 Rust compile·3 smoke·Python96개 검증을 끝냈다. HE29 native 기준해 0/4 및 optional canary NOT_RUN을 이 검사로 바꾸지 않는다. 네 쌍을 모두 분석·admit한 후에만 [vigilode_20261019/NCP_HANDOFF_KO.md](vigilode_20261019/NCP_HANDOFF_KO.md)의 단일 r4/table512 비교를 수행할 수 있다. Schur 소거는 이론·합성 검증이며 production 전용 preconditioner로 구현했다고 주장하지 않는다.
 
-아래 shell의 `HE29_PUBLICATION_REV`를 보존한다. baseline 완료 뒤 동일 isolated checkout에서 그 publication으로 돌아가면 새 코드를 사용할 수 있다. 입력 DATA와 알려진 bootstrap overlay는 보존되고, 코드 identity는 원래1569 manifest로 다시 확인한다. 최신 source commit과 archive/receipt는 `vigilode_20261019/DELIVERY.json`을 읽는다. 새 입력 복원을 위해 기준해 campaign을 다시 실행하지 않는다.
+아래 shell의 `HE29_PUBLICATION_REV`를 보존한다. baseline 완료 뒤 동일 isolated checkout에서 새 구현 고정 commit `57642252991b5c453db66eb5a078e6a62cc6f4ea`로 돌아가면 새 코드를 사용할 수 있다. 입력 DATA와 알려진 bootstrap overlay는 보존되고, 코드 identity는 원래1569 manifest로 다시 확인한다. 실제 코드 publication 54/54 readback 및 완전 archive의 Drive·Dropbox raw bytes/229개 payload hash 일치를 확인했다. 최신 source commit과 archive/receipt는 `vigilode_20261019/DELIVERY.json`을 읽는다. 새 입력 복원을 위해 기준해 campaign을 다시 실행하지 않는다.
 
 NCP 월간 quota에 따른 미제출 상태와 재시도·재연결 금지는 그대로다. 이 인계는 승인된 작업의 실행 준비이며 접수 증거가 아니다.
 
