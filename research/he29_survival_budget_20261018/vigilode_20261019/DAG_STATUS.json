@@ -1,0 +1,38 @@
+{
+  "schema": "he29.vigilode.dag.v1",
+  "baseline_publication": "a2caf95d92399f6ffc096882c0617a0c6b5bd69b",
+  "baseline_code_revision": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
+  "vigilode_source": "a21d573980f66fe02891bd216153443b5352f921",
+  "nodes": {
+    "native_intake": "COMPLETE_IN_OBSERVED_RECENT_SURFACES_HISTORICAL_GAP_CLOSING",
+    "rust_package_research": "COMPLETE",
+    "schur_algebra": "PASS_SCOPED_SYMBOLIC_AND_23_SYNTHETIC_SYSTEMS",
+    "rust_python_bridge": "IMPLEMENTED_VERIFICATION_IN_PROGRESS",
+    "new_rust_build": "IN_PROGRESS",
+    "new_ffi_smoke": "NOT_RUN",
+    "he29_baseline_references": "0/4_NOT_RUN_OBSERVED",
+    "he29_vigilode_canary": "NOT_RUN_REQUIRES_FOUR_BASELINE_PAIRS",
+    "publication": "THEORY_CHECKPOINT_PREPARED_NOT_YET_ACKNOWLEDGED",
+    "backup": "PENDING_NEW_CHECKPOINT"
+  },
+  "reused": [
+    "HE28 native pilot and 6/6 study",
+    "HE29 90-case/720 finite-donor bound study",
+    "HE29 50-test source-only suite",
+    "existing six saved native point evidence"
+  ],
+  "unchanged_gates": {
+    "absolute_fraction_difference": 1e-11,
+    "method_temperature_difference_K": 1e-09,
+    "number_defect_per_H": 3e-15,
+    "energy_defect_ev_per_H": 3e-12,
+    "species_defect": 3e-12
+  },
+  "holds": [
+    "continuous spectrum",
+    "full EoR",
+    "global gas-temperature error bound",
+    "whole upstream Grackle equivalence",
+    "observational Bianchi/CMB"
+  ]
+}
