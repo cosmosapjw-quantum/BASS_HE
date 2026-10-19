@@ -1,3 +1,17 @@
+# HE29 현재 재개점: VigilODE 확장 게시와 기준해 대기
+
+physmath-research-loop1.3.0으로 이어간다. 먼저 현재 PR78와 모든 관련 반환을 확인하고 상위 README/DAG/Codex prompt, `vigilode_20261019/{README_KO.md,DAG_STATUS.json,DELIVERY.json,NCP_HANDOFF_KO.md}` 및 `evidence/{BACKUP_CENSUS.json,HE29_BACKUP_CENSUS_ADDENDUM.json,LATEST_PR71_RETURN.json,BUILD_RECEIPT.json,SMOKE_BRIDGE.json,SOURCE_IDENTITY_ADDENDUM.json}`을 읽는다.
+
+추가 작업은 HE29 안의 선택적 확장이다. VigilODE a21d 고정 RODAS5P/GMRES/faer를 실제 연결했고 Rust1.94.1 bridge compile, 실제 작은 FFI3개, 새 Python96개 검증이 통과했다. callback overflow와 빌드 전후 identity 경계를 수정했다. Schur 대수(Wolfram 잔차8개0)/23합성계 결과는 조건부 선형계 성질이다. 전용 Schur preconditioner나 HE29 성능향상은 아직 실증하지 않았다.
+
+HE28 pilot/6case, HE2990case720bounds/50source-onlytests를 반복하지 않는다. 과학1569와 ownerf7830e2, tolerance불변. 관측된 HE29 새native반환0/4. 먼저 (r2,512),(r4,512),(r8,512),(r4,1024), 각Radau+DOP853. 4/4완료·identity·admission후에만 같은r4table512의 선택적VigilODE한건. canary로기준해완료수를올리지않는다.
+
+VigilODE 최신별도PR71run39255702592는 build/small native확인후 JSON int32직렬화에서 accuracy/timing BLOCKED. 새로운 HE29 반환이나 완료 비교로 사용하지 않는다. NCP는 이대화에서 월간quota로 미제출·미시작, 원격프로세스미관측. 이전도구의 재시도/재연결금지를 유지한다. 데이터는Git원본코드와기존자동복원기로확보하고사용자에게수동전달을요청하지않는다.
+
+새R2보존묶음78356130은Drive/Dropbox둘다실제rawSHA일치. 새코드archive와후속receipt는DELIVERY에따로있다. 기존c47c5efc/798afac1/a70d320c불변. 연속스펙트럼·전체EoR·전역gasT bound·upstream전체동등성·관측Bianchi/CMB는HOLD다. 아래기록은이전관측시점의보존근거로읽는다.
+
+---
+
 # 새 대화 인계: BASS_HE HE29 네 기준해 대기
 
 $physmath-research-loop로 HE29를 이어간다. 현재 게시된 README_KO.md, DAG_STATUS.json, CODEX_HANDOFF_PROMPT_KO.md 및 results/continuation_20261019/의 INTAKE_AND_DISPATCH.json, BACKUP_CENSUS_SUMMARY.json, OVERLAY_CHECKS.json, DELIVERY.json을 읽는다. publication_retry/의 기존 두 receipt는 보존·재사용한다.

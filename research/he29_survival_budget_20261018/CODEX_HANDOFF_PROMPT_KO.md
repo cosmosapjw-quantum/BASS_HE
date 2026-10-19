@@ -1,3 +1,13 @@
+# 2026-10-19 추가 인계: 게시된 VigilODE 확장
+
+기존 네 기준해의 우선순위와 아래 고정1569 실행 절차는 유지한다. 새 확장은 `vigilode_20261019/`에 있으며 실제 Rust compile·3 smoke·Python96개 검증을 끝냈다. HE29 native 기준해 0/4 및 optional canary NOT_RUN을 이 검사로 바꾸지 않는다. 네 쌍을 모두 분석·admit한 후에만 [vigilode_20261019/NCP_HANDOFF_KO.md](vigilode_20261019/NCP_HANDOFF_KO.md)의 단일 r4/table512 비교를 수행할 수 있다. Schur 소거는 이론·합성 검증이며 production 전용 preconditioner로 구현했다고 주장하지 않는다.
+
+아래 shell의 `HE29_PUBLICATION_REV`를 보존한다. baseline 완료 뒤 동일 isolated checkout에서 그 publication으로 돌아가면 새 코드를 사용할 수 있다. 입력 DATA와 알려진 bootstrap overlay는 보존되고, 코드 identity는 원래1569 manifest로 다시 확인한다. 최신 source commit과 archive/receipt는 `vigilode_20261019/DELIVERY.json`을 읽는다. 새 입력 복원을 위해 기준해 campaign을 다시 실행하지 않는다.
+
+NCP 월간 quota에 따른 미제출 상태와 재시도·재연결 금지는 그대로다. 이 인계는 승인된 작업의 실행 준비이며 접수 증거가 아니다.
+
+---
+
 # HE29 Codex/NCP 인계: 고정 과학 소스와 네 기준해 실행
 
 2026-10-19 현재 GitHub와 백업에서 새 HE29 반환을 찾지 못했다. 마지막 관측 상태는 0/4 NOT_RUN이다. 이 대화의 NCP 제출은 Remote Desktop Commander의 월간 사용량 한도로 막혔으며 접수·시작·완료를 기록하지 않는다. 원격 도구가 반환한 재시도/재연결 금지를 유지한다. NCP에 실제 접근할 수 있는 실행자는 현재 프로세스와 저장 결과를 먼저 읽고 중복이 없을 때 아래 작업을 수행한다. 사용자에게 파일 다운로드·업로드·터미널 입력을 요구하지 않는다.

@@ -1,3 +1,13 @@
+# HE29 추가 진행: VigilODE Rust 연결까지 완료
+
+2026-10-19 추가 연구에서 VigilODE a21d의 실제 RODAS5P/GMRES와 faer 의존성을 연결했다. 새 Rust bridge 실제 빌드 및 작은 FFI 3개, 새 Python 연결 96개 검증이 통과했다. 큰 source suite는 반복하지 않았다. HE29 물리 기준해는 여전히 관측된 새 반환 0/4이며, 이를 먼저 끝낸 뒤에만 단일 r4/table512 VigilODE canary를 허용한다. 원래 과학·테스트 revision1569와 native owner f7830e2, 물리·반응률·허용치는 그대로다.
+
+현재 새 코드·이론·실행 지침은 [vigilode_20261019/README_KO.md](vigilode_20261019/README_KO.md), [NCP_HANDOFF_KO.md](vigilode_20261019/NCP_HANDOFF_KO.md)에 있다. 실제 게시·백업 정체성은 해당 [DELIVERY.json](vigilode_20261019/DELIVERY.json)과 두 DAG를 따른다. R2 체크포인트 c0dc267은 GitHub readback7/7 및 Drive/Dropbox raw-byte SHA256 일치까지 확인했다. 새 구현은 별도 commit/백업으로 구별한다.
+
+NCP 제출은 현재 도구의 월간 quota로 BLOCKED다. 접근 가능한 실행자는 최신 반환과 프로세스를 확인한 뒤 기존 네 기준해만 이어간다. 기존 transport6개, source-only50개 검증 및 과거 PUBLISH.sh를 재실행하지 않는다. 아래 기록은 이전 시점의 재사용 근거다.
+
+---
+
 # 2026-10-19 HE29 재개 상태
 
 GitHub PR78/83개 branch 목록/최신20개 PR 및 백업 폴더를 실제로 읽었다. 새 HE29 native 반환은 관측되지 않았으며 마지막 알려진 기준해 상태0/4 NOT_RUN을 유지한다. NCP의 미게시 실행 여부는 원격 접근 한도로 관측하지 못했다.

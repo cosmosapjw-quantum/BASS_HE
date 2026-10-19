@@ -1,0 +1,123 @@
+{
+  "schema": "he29.vigilode.delivery.v1",
+  "recorded_utc": "2026-10-19T13:28:17.880999+00:00",
+  "implementation_publication": {
+    "status": "PREPARED",
+    "expected_parent": "c0dc26736bea18bcaa8d0a6241daed2b5a1ea7f9",
+    "branch": "research/he29-survival-budget-20261018",
+    "draft_pr": 78
+  },
+  "r2_publication": {
+    "schema": "he29.vigilode.r2.publication.v1",
+    "commit": "c0dc26736bea18bcaa8d0a6241daed2b5a1ea7f9",
+    "tree": "6079f932c475e3527848cbd3ea811b18a3d73cab",
+    "parent": "a2caf95d92399f6ffc096882c0617a0c6b5bd69b",
+    "readback": [
+      {
+        "path": "research/he29_survival_budget_20261018/vigilode_20261019/RESEARCH_KO.md",
+        "blob": "b206114c1fadd5088f449b69c031261d221457f6",
+        "exact": true
+      },
+      {
+        "path": "research/he29_survival_budget_20261018/vigilode_20261019/RUST_PACKAGES_AND_SCHUR_KO.md",
+        "blob": "dd068dfe874e6e75d3e0d798b365245c1f34e196",
+        "exact": true
+      },
+      {
+        "path": "research/he29_survival_budget_20261018/vigilode_20261019/DAG_STATUS.json",
+        "blob": "3d61805b311fec39e2f40b78de6b26d3119f36c5",
+        "exact": true
+      },
+      {
+        "path": "research/he29_survival_budget_20261018/vigilode_20261019/theory/check_schur_arrowhead.py",
+        "blob": "4be552689dbd07afa503f0fe9c311a4a5119f298",
+        "exact": true
+      },
+      {
+        "path": "research/he29_survival_budget_20261018/vigilode_20261019/evidence/SCHUR_CHECK_RESULT.json",
+        "blob": "751edcc1a6c9dbb633614e830dc967c4d03069b3",
+        "exact": true
+      },
+      {
+        "path": "research/he29_survival_budget_20261018/vigilode_20261019/evidence/WOLFRAM_SCHUR.json",
+        "blob": "25dbb8e7cc3fb9ee8b9bc2d543ff773e7d8ee1c8",
+        "exact": true
+      },
+      {
+        "path": "research/he29_survival_budget_20261018/vigilode_20261019/evidence/GITHUB_CENSUS.json",
+        "blob": "63558a512f6540a3518c6515faac0e445b6d1e14",
+        "exact": true
+      }
+    ],
+    "native_runs": 0,
+    "baseline_references_observed": "0/4 NOT_RUN",
+    "scope": "theory and source research checkpoint; bridge verification proceeds separately"
+  },
+  "r2_backup": {
+    "schema": "he29.backup.readback.v1",
+    "checked_at": "2026-10-19T13:13:30.131562+00:00",
+    "archive_sha256": "783561303c7d3a47c38b5b4f76ddd93c43d394faf94ee53d6e2de0fc45a88a0c",
+    "archive_bytes": 23079,
+    "providers": [
+      {
+        "provider": "Drive",
+        "id": "1cxQEVHVy_ZXIC7FfALoWOeECsKjutiwW",
+        "bytes": 23079,
+        "sha256": "783561303c7d3a47c38b5b4f76ddd93c43d394faf94ee53d6e2de0fc45a88a0c",
+        "tar_members": 9,
+        "manifest_names": [
+          "MANIFEST.json"
+        ],
+        "status": "RAW_BYTES_MATCH"
+      },
+      {
+        "provider": "Dropbox",
+        "id": "id:BSpOijBcT10AAAAAAD_Q1w",
+        "bytes": 23079,
+        "sha256": "783561303c7d3a47c38b5b4f76ddd93c43d394faf94ee53d6e2de0fc45a88a0c",
+        "tar_members": 9,
+        "manifest_names": [
+          "MANIFEST.json"
+        ],
+        "status": "RAW_BYTES_MATCH",
+        "provider_content_hash": "7123dbc612576946bfa7144a365ab5238e558508144b18e661f73f19a6a21b87"
+      }
+    ]
+  },
+  "new_implementation_backup": {
+    "status": "PENDING_NEW_ARCHIVE_AFTER_COMMIT"
+  },
+  "identities": {
+    "baseline_scientific_code": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
+    "native_owner": "f7830e2f55e7a1938bc3c98f61b60651f8dae474",
+    "vigilode_source": "a21d573980f66fe02891bd216153443b5352f921",
+    "sandbox_library_sha256": "8d2f1271726781d2b000f0cd5eaadb0adac8029eb9357f786bfd647cea390460"
+  },
+  "validation": {
+    "python_new_unique_methods": 96,
+    "rust_new_smokes": 3,
+    "new_synthetic_schur_systems": 23,
+    "old_source_suites_replayed": 0,
+    "he28_transport_replays": 0,
+    "he29_baseline_pairs_created": 0
+  },
+  "ncp": {
+    "submitted": false,
+    "started": false,
+    "status": "BLOCKED_REMOTE_PROVIDER_MONTHLY_QUOTA",
+    "unpublished_workspace": "UNOBSERVED"
+  },
+  "baseline_pairs_observed": {
+    "completed": 0,
+    "expected": 4,
+    "status": "NO_NEW_RETURN_OBSERVED"
+  },
+  "optional_canary": "NOT_RUN_REQUIRES_FOUR_ADMITTED_BASELINE_PAIRS",
+  "holds": [
+    "continuous spectrum",
+    "full EoR",
+    "global gas-temperature error bound",
+    "whole upstream Grackle equivalence",
+    "observational Bianchi/CMB"
+  ]
+}

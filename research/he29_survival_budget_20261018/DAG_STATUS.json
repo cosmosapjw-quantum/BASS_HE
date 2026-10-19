@@ -1,5 +1,5 @@
 {
-  "schema": "he29.continuation.dag.v3",
+  "schema": "he29.continuation.dag.v4",
   "date": "2026-10-19",
   "execution_commit": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
   "code_prompt_snapshot_commit": "961ca736af53f18e6527f876524c67e22aa89fe0",
@@ -17,7 +17,10 @@
     "EXECUTION_REUSE_OVERLAY": "PREPARED_BOUNDARY_CHECKS_COMPLETE",
     "NCP_DISPATCH": "BLOCKED_REMOTE_PROVIDER_MONTHLY_QUOTA",
     "CONTINUATION_PUBLICATION": "PUBLISHED_2f17a031_9_FILE_READBACK_MATCH",
-    "CONTINUATION_BACKUP": "DRIVE_UPLOAD_METADATA_CONFIRMED_DROPBOX_UPLOAD_CONTENT_HASH_MATCH_RAW_READBACK_NOT_VERIFIED"
+    "CONTINUATION_BACKUP": "DRIVE_UPLOAD_METADATA_CONFIRMED_DROPBOX_UPLOAD_CONTENT_HASH_MATCH_RAW_READBACK_NOT_VERIFIED",
+    "VIGILODE_R2": "PUBLISHED_7_OF_7_READBACK_DUAL_RAW_BACKUP_MATCH",
+    "VIGILODE_C6": "NEW_PYTHON_96_PASS_RUST_SMOKE_3_PASS",
+    "VIGILODE_CANARY": "NOT_RUN_BASELINE_4_OF_4_REQUIRED"
   },
   "native_calls": 0,
   "physical_changes": false,
@@ -42,7 +45,11 @@
     "new_native_returns_observed": 0,
     "expected_reference_pairs": 4,
     "new_scientific_results": 0,
-    "new_boundary_patch_checks": "results/continuation_20261019/OVERLAY_CHECKS.json"
+    "new_boundary_patch_checks": "results/continuation_20261019/OVERLAY_CHECKS.json",
+    "new_rust_bridge_compile": true,
+    "new_rust_synthetic_smokes": 3,
+    "new_python_extension_tests": 96,
+    "he29_native_calls": 0
   },
   "execution_visibility": {
     "ncp_workspace": "UNOBSERVED",
@@ -66,5 +73,17 @@
     "drive_id": "1bi5SSnupj1aKrXq_VRzLpRe2zfX6nbwj",
     "dropbox_id": "id:BSpOijBcT10AAAAAAD_Q0Q",
     "delivery_receipt": "results/continuation_20261019/DELIVERY.json"
+  },
+  "vigilode_extension": {
+    "path": "vigilode_20261019",
+    "source_revision": "a21d573980f66fe02891bd216153443b5352f921",
+    "implementation": "COMPILED_AND_SCOPED_CHECKS_PASS",
+    "new_python_test_methods": 96,
+    "new_rust_smokes": 3,
+    "baseline_pairs_created": 0,
+    "canary": "NOT_RUN_REQUIRES_FOUR_ADMITTED_BASELINE_PAIRS",
+    "r2_publication_commit": "c0dc26736bea18bcaa8d0a6241daed2b5a1ea7f9",
+    "implementation_publication": "PREPARED",
+    "backup_receipt": "vigilode_20261019/DELIVERY.json"
   }
 }
