@@ -16,8 +16,8 @@
     "HANDOFFS": "UPDATED_FOUR_CASES_GIT_FIRST_WITH_PINNED_REUSE_OVERLAY",
     "EXECUTION_REUSE_OVERLAY": "PREPARED_BOUNDARY_CHECKS_COMPLETE",
     "NCP_DISPATCH": "BLOCKED_REMOTE_PROVIDER_MONTHLY_QUOTA",
-    "CONTINUATION_PUBLICATION": "PREPARED_PENDING_PROVIDER_ACK",
-    "CONTINUATION_BACKUP": "PREPARED_PENDING_PROVIDER_ACK"
+    "CONTINUATION_PUBLICATION": "PUBLISHED_2f17a031_9_FILE_READBACK_MATCH",
+    "CONTINUATION_BACKUP": "DRIVE_UPLOAD_METADATA_CONFIRMED_DROPBOX_UPLOAD_CONTENT_HASH_MATCH_RAW_READBACK_NOT_VERIFIED"
   },
   "native_calls": 0,
   "physical_changes": false,
@@ -59,5 +59,12 @@
     "patched_bootstrap_sha256": "11d0ad0125f40a2890dac82e5103f13d17e6066f41440eabb06c7a8b1f319bc2",
     "scientific_and_test_source_files_changed": 0
   },
-  "continuation_receipt": "results/continuation_20261019/DELIVERY.json"
+  "continuation_receipt": "results/continuation_20261019/DELIVERY.json",
+  "continuation_publication_commit": "2f17a0313fea3fd4d109b0e1f8b88a8d812af447",
+  "continuation_backup": {
+    "archive_sha256": "242201a11e93f1df71deb20324c7af8ff5ec1df49172fdfb1efd256e8e724664",
+    "drive_id": "1bi5SSnupj1aKrXq_VRzLpRe2zfX6nbwj",
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_Q0Q",
+    "delivery_receipt": "results/continuation_20261019/DELIVERY.json"
+  }
 }
