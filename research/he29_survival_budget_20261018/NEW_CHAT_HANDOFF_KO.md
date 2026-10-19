@@ -1,34 +1,25 @@
-# 새 대화 인계: BASS_HE HE29 게시 완료 상태에서 재개
+# 새 대화 인계: BASS_HE HE29 네 기준해 대기
 
-$physmath-research-loop를 사용하되 먼저 최신 GitHub와 백업에서 새 native 결과를 확인하고 완료된 HE28 연구를 반복하지 마.
+$physmath-research-loop로 HE29를 이어간다. 현재 게시된 README_KO.md, DAG_STATUS.json, CODEX_HANDOFF_PROMPT_KO.md 및 results/continuation_20261019/의 INTAKE_AND_DISPATCH.json, BACKUP_CENSUS_SUMMARY.json, OVERLAY_CHECKS.json, DELIVERY.json을 읽는다. publication_retry/의 기존 두 receipt는 보존·재사용한다.
 
-Repository: https://github.com/cosmosapjw-quantum/BASS_HE
-Draft PR78: https://github.com/cosmosapjw-quantum/BASS_HE/pull/78
-Branch: research/he29-survival-budget-20261018
-고정 실행 revision: 1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f
-이번 closeout 시작 때 확인한 publication HEAD: 068bdccc6f991a046300cc0634c9092d72e953d3
-Parent HE28 PR77: a41dd37124e34cb22bb9782aaf687a0da91640b7
-원본 owner: rei_bianchi@f7830e2f55e7a1938bc3c98f61b60651f8dae474
+Repository https://github.com/cosmosapjw-quantum/BASS_HE
+Draft PR78 https://github.com/cosmosapjw-quantum/BASS_HE/pull/78
+Branch research/he29-survival-budget-20261018
+intake HEAD 3f16fe525d726aaebbe9262e0e869540321209eb
+과학·테스트 revision 1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f
+Parent HE28 a41dd37124e34cb22bb9782aaf687a0da91640b7
+원본 Rust owner rei_bianchi@f7830e2f55e7a1938bc3c98f61b60651f8dae474
 
-이전 'S2 미게시' 상태는 해소됐다. src와 native bootstrap, 자동 입력 복원기, 테스트가 실제 게시돼 있다. 최신 README_KO.md, DAG_STATUS.json, 두 handoff와 results/publication_retry/DELIVERY.json 및 후속 CLOSEOUT_RECEIPT.json을 읽는다. 오래된 387976f branch 상태로 되돌리거나 ncp/PUBLISH.sh를 재실행하지 않는다. 이후 작성된 문서 commit과 실행 코드 revision을 구별한다.
+2026-10-19 실제 조회: PR78 HEAD 동일,83개 branch 이름/최신20개 PR/6897개 비절단 tree, Drive 최신1000개(게시 이후 구간 포함), Dropbox 원본 폴더3237개(6페이지 완료). 새 기준해 반환은0/4 관측이다. 미게시 NCP 작업은 원격 도구의 월간 사용량 한도로 확인하지 못했다. 실제 제출·시작은 하지 않았다. quota 응답이 재시도/재연결을 금지하므로 동일 원격 도구를 재시도하지 않는다. 접근 가능한 실행자가 있으면 프로세스/결과부터 확인하고 중복 없이 이어간다.
 
-전체 공개 코드+원본 데이터 보존 패키지:
-BASS_HE_HE29_PUBLISHED_20261018_v2_c47c5efc.tar.gz
-132445bytes; SHA256 c47c5efcfcd668203cbd6082d25e128c7ea8a08291f3a039a4a52674f0530a28
-Drive id16z5ApkTBP30elscQJy_LYLdRLIYnS8Le
-Dropbox id:BSpOijBcT10AAAAAAD_Ntw
-Drive에서 다시 받아94개 내부 hash와50테스트를 확인했다. Dropbox 업로드와 provider hash는 확인됐지만 raw-byte readback은 URL 처리 제한으로 미검증이다. 새 프롬프트·closeout 영수증은 이 불변 패키지와 분리된 후속 문서다.
+S2 게시 복구는 완료돼 있다. 387976f로 돌아가거나 PUBLISH.sh를 재실행하지 않는다. HE28 pilot/6case, HE29 finite-donor90case/720bounds,50개 source-only tests를 반복하지 않는다. source와 test revision은 그대로다.
 
-원본 실행 입력22개는 아래 별도 불변 archive에서 ncp/START_REFERENCES.sh가 자동 복원한다.
-SHA256 a70d320c7ead5f1fd93170c18f1f80ae5eb58a293a6045a0f728bb7ae2743205
-Drive id1I31wE6A3laYE6nxMcKNmm5rNMeESIsXi
-Dropbox /BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_HE29_RESUME_COMPLETE_20261018_a70d320c.tar.gz
-사용자에게 수동 파일 전달을 요구하지 않는다. source는 Git의 고정 revision, archive에서는 DATA만 가져온다.
+원본 bootstrap의 pytest 전체 실행 한 줄만 대체하는 ncp/REUSE_SOURCE_VALIDATION_20261019.patch를 새로 준비했다. SHA256 cd0b7ab40688b3c60ab689876690b2edd71aea5268b4e7ff285a637ca094a33e. 원본 bootstrap Git blob ed227e2937f554bd5ecda4bf24dd5597b73a77a4. 갱신된 Codex handoff의 명령으로 원본1569를 clean checkout한 뒤 patch를 적용한다. source-only 근거 REUSED/새 tests0과 실제 adapter SHA·diff·HEAD를 기록하며 compiler/native점 qualification/4case/실패보존은 유지한다. 이 패치에 대한 적용·중복·target변경 거절과 Bash 구문만 새로 확인했다.
 
-HE28은 native pilot+6/6 study 완료. HE29는 양의 유한 donor의 Jensen/chord survival bounds를 구현했고90사례/720중첩 구간이 donor survival을 포함했다. 최대 최종 폭2.2487671447191104e-12는 finite-donor 조건부 결과다. GL256/512 차이2.7755575615628914e-16은 엄밀한 연속적분 오차가 아니다. r8→16 오차가 증가해 연속 스펙트럼 수렴은 HOLD.
+새 반환이 있으면 source/binary/table identity 및 완료된 쌍부터 분석한다. 없으면 NCP에는 m8/GL4/q0의 (r2,512),(r4,512),(r8,512),(r4,1024),각 Radau+DOP853 네 쌍만 전달한다. 첫 실패 STOP,case3600s,table600s/예상2GiB,단일 수치thread 및 기존 물리·반응률·허용치를 유지한다. 절대 fraction gate1e-11과 기존 pilot3.951006358291365e-14의 절대차 의미도 유지한다. bootstrap 실패 후 저장된 partial 분석을 생략하지 않는다.
 
-HE28 r2→4 온도차는 n32에서+2.5017143912009487e-10K, n64에서-6.697344900885582e-10K. 다음에는 같은 model/table 기준해로 시간오차와 strip/table 차이를 분리한다. 기존 pilot3.951006358291365e-14는 절대 fraction 차이이며 절대1e-11 gate는 유지한다.
+입력22개는 START_REFERENCES.sh가 a70d320c7ead5f1fd93170c18f1f80ae5eb58a293a6045a0f728bb7ae2743205 archive에서 DATA만 자동 복원한다. Drive1I31wE6A3laYE6nxMcKNmm5rNMeESIsXi; Dropbox /BASS_DERIVATION_DOSSIERS_20260912/BASS_HE_HE29_RESUME_COMPLETE_20261018_a70d320c.tar.gz. 사용자에게 수동 파일 전달을 요구하지 않는다.
 
-새 native 결과가 없다면 NCP에는 완성된 코드의 컴파일/작은 환경 수정/실행만 맡긴다. m8/GL4/q0의 (r2,512),(r4,512),(r8,512),(r4,1024), 각 Radau+DOP853 네 쌍이 대상이며 현재0/4 NOT_RUN이다. 기존 transport를 재실행하지 않는다. 50로컬tests는 기존47+입력복원3이며 native 검증이 아니다. 물리·반응률·허용치는 변경하지 않았다.
+기존 완전 코드·입력 package: c47c5efcfcd668203cbd6082d25e128c7ea8a08291f3a039a4a52674f0530a28,132445bytes,Drive16z5ApkTBP30elscQJy_LYLdRLIYnS8Le,Dropbox id:BSpOijBcT10AAAAAAD_Ntw. 기존 handoff overlay:798afac15d04bf53f5a95ecb3a41782973ff023dce2ca5d371a501ff57fcfa38,4929bytes,Drive1_dqACrV1XnvGGRUmCOhe0b2IrKXUY4mH,Dropbox id:BSpOijBcT10AAAAAAD_N6Q. Drive 원시 readback·manifest 검증과 Dropbox upload/provider hash 근거를 재사용했다. 기존 Dropbox raw readback 상태는 미검증 그대로다. 이번 후속 묶음의 실제 게시·보존은 continuation_20261019/DELIVERY.json에 별도로 기록한다.
 
-실제 결과가 있으면 source/binary/table identity부터 확인하고 분석한다. 각 단계 DAG·게시·백업 보증을 구분하고 새 결과와 재사용을 따로 기록한다. full EoR,upstream Grackle 전체 동등성,관측 Bianchi/CMB는 해당 범위의 검증 전 HOLD다. 이 스레드의 backup-closeout 자체는 새 과학실행을 허가하거나 수행한 기록이 아니다.
+유한 donor survival 결과의 범위를 유지한다. n32에서 r2→4 +2.5017143912009487e-10K,n64에서 -6.697344900885582e-10K이므로 같은 model/table 기준해로 시간오차를 분리한다. 연속 스펙트럼·전체 EoR·nonlinear gas-temperature 상한·upstream Grackle 전체 동등성·관측 Bianchi/CMB는 해당 검증 전 HOLD다. 단계별 실제 DAG/게시/백업과 재사용/새 결과를 구별한다.
