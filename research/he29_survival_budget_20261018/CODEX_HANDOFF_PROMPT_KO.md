@@ -1,5 +1,26 @@
 # HE29 Codex/NCP 현재 인계 — 2026-10-20
 
+## 최신 게시·백업 상태
+
+최종 ABI2 실행 코드는 `a5d4711460c09b310b78c9692aa62534b7a843d3`이며 tree는 `681aa556cfffd9cf0ec678b8bf67de66ed6d36d9`다. 실제 Git readback **82/82 파일 일치, PASS**를 확인했다. 원래 과학 source·tests는 `1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f`로 유지한다. 아래의 `329f…`와 `8cb0…`는 시작점·중간 checkpoint 이력이다.
+
+후속 문서 closeout의 실제 commit과 readback은 PR78 및 별도 closeout 영수증을 따른다. 후속 문서 HEAD와 실행 code pin을 구분한다. `optimization_20261020/DELIVERY.json`의 `implementation_publication.code_commit`과 `PUBLISHED_EXACT_READBACK_PASS` 상태를 읽으며, 실행 pin은 위 `a5d4711…`을 사용한다.
+
+이번 완전 보존 패키지는 다음과 같다.
+
+- 파일명: `BASS_HE_HE29_OPTIMIZATION_COMPLETE_20261020_77f1c73e.tar.gz`
+- 크기: **4,719,121 bytes**
+- SHA256: `77f1c73e8b4239cabcf03983ec9f0852fe334ac732544e410947935c7f4d7ab6`
+- Drive ID: `1NBjWqsghFxbujCP6FELTfn7VPU-J8zfz`
+- Dropbox ID: `id:BSpOijBcT10AAAAAAD_SLA`
+- 검증: **양쪽 provider의 실제 raw-byte readback 및 검증 대상 91개 내부 파일 SHA 확인 PASS**
+
+이전 `7bf7398b` 완전 archive도 이번에 Drive에서 다시 읽어 내부 229개 파일을 재검증했고 PASS했다. 실제 확인된 완전 백업을 현재 보존 근거로 사용한다. 기존 archive는 불변으로 유지하고, 후속 문서 closeout은 코드 게시·백업 snapshot과 분리한다.
+
+게시된 builder는 별도의 clean Git worktree에서 실제 Cargo compile **146.650초, PASS**였다. 새 라이브러리 SHA는 `802190605e7b5e175f36d1d986e2a203c1835fbd6a39571895481b8efe9a92b4`이고, 측정에 사용한 `8299915d8490e958fbebe54d253d98c98b1b932a50e8640398ad4ec274abf434`와 구분한다. source·compiler·flags 일치와 경로·ELF layout 차이는 `optimization_20261020/evidence/PUBLISHED_BUILD_VALIDATION.json`에 기록했다. 이 빌드는 로컬 검증이며 HE29 native 실행이나 NCP 제출이 아니다.
+
+최신 관측 상태는 **기준해 0/4, packed canary NOT_RUN, 이번 NCP 제출·시작 0건**이다. 미반환 NCP 프로세스는 미관측이며 Remote Desktop Commander 월간 quota의 재시도·재연결 금지를 유지한다. 다음 실행자는 새 반환을 먼저 분석하고 아래 실행 순서를 따른다. 기존 Bash 실행 블록은 이번 문서 정리에서 변경하지 않았다.
+
 ## 현재 실행 순서
 
 먼저 최신 GitHub·백업·접근 가능한 NCP 저장 결과와 프로세스를 읽는다. 이 턴의 전체 intake에서 새 HE29 native 반환은0건, 네 기준해는관측상0/4다. 다른 REI/VigilODE native 결과는 source/binary/table 계약이 달라 HE29 완료로 계산하지 않는다. Remote Desktop Commander 월간 quota에 따른 재시도·재연결 금지를 유지하며 이 턴은 NCP 작업을 제출하거나 시작하지 않았다.

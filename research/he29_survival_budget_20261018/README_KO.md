@@ -1,3 +1,23 @@
+## 2026-10-20 최적화 closeout — 현재 게시 상태
+
+최종 ABI2 실행 코드는 `a5d4711460c09b310b78c9692aa62534b7a843d3`이며, 실제 Git 재조회에서 82/82 파일의 바이트와 SHA256이 일치했다. 이 뒤의 문서·영수증 commit은 실행 code pin을 바꾸지 않는다. 새 경로는 원래 VigilODE RODAS5P–GMRES를 재사용하며, canonical CSR 조립과 정확한 상태를 기준으로 한 Rust packed JVP cache를 추가했다.
+
+새 경량 측정에서 조립은 8.35–8.78배, 합성 비자율 IVP는 1.38–1.53배 빨랐다. 두 측정은 범위가 다르므로 배율을 곱하지 않는다. 1/2/4 thread의 endpoint bits와 attempt 수는 같았으나, 현재 크기에서는 2/4 thread가 느려 NCP 기본값은 1이다. 실제 HE29 native 속도는 아직 측정하지 않았다.
+
+게시 코드의 별도 clean checkout에서 NCP 빌더가 실제 컴파일에 성공했다. 재빌드 library와 성능 측정 library의 SHA는 서로 다르며, 각 identity를 따로 기록했다. 전체 물리 상태와 ledger 19개, 원래 반응률·허용치·누산 순서는 유지한다. 고정1569 입력 manifest 한 개의 누락된 SHA 문자 `4b`를 수정하는 별도 patch가 필요하며, 22개 DATA의 실제 복원과 preflight는 통과했다.
+
+완전 보존 묶음 `BASS_HE_HE29_OPTIMIZATION_COMPLETE_20261020_77f1c73e.tar.gz`는 4,719,121 bytes이고 SHA256은 `77f1c73e8b4239cabcf03983ec9f0852fe334ac732544e410947935c7f4d7ab6`이다. Drive `1NBjWqsghFxbujCP6FELTfn7VPU-J8zfz`와 Dropbox `id:BSpOijBcT10AAAAAAD_SLA`에서 실제 다운로드 및 내부 91개 payload 해시 검증이 모두 통과했다. 최신 문서와 재빌드 영수증은 별도 closeout 묶음으로 보존한다.
+
+**HE29 기준해 관측 반환은 0/4, 선택적 canary는 NOT_RUN이다.** 이번 턴에서 NCP 작업을 제출하지 않았다. 기존 HE28·HE29·VigilODE 완료 검증은 재사용했다. 전체 단계, 측정 범위와 실제 게시·백업 상태는 다음 문서를 따른다.
+
+- [DELIVERY](optimization_20261020/DELIVERY.json) · [최적화 DAG](optimization_20261020/DAG_STATUS.json)
+- [연구 보고서](optimization_20261020/RESEARCH_KO.md) · [성능 보고서](optimization_20261020/PERFORMANCE_KO.md)
+- [원래 네 기준해 인계](CODEX_HANDOFF_PROMPT_KO.md) · [그 뒤 단일 packed canary](optimization_20261020/NCP_HANDOFF_KO.md)
+
+아래 내용은 앞선 게시 과정의 보존 기록이다. 현재 실행 pin과 상태는 위 DELIVERY가 우선한다.
+
+---
+
 # 2026-10-20 현재: HE29 최적화 및 입력복원 보정
 
 새 최적화 코드·유도·실측·NCP 연결은 [optimization_20261020/README_KO.md](optimization_20261020/README_KO.md)에 있다. 첫 checkpoint8cb0ebb9는19파일 actual Git readback이 맞았다. 최종 실행 pin/게시/이중백업은 새DELIVERY를읽는다. 새native0/4,기존연구재실행0이며 원래네baseline쌍우선이다.

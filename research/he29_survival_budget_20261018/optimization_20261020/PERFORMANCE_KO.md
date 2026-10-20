@@ -56,4 +56,8 @@
 
 ## 5. 게시·백업과 검증 경계
 
-첫 게시 `8cb0ebb91a78d2f1b751caa1c3ffc5d170ddfe41`는19파일 actual Git readback MATCH다. 이 성능 보고서와 ABI2 전체 코드는 후속 code publication 대상이며 정확한 commit/backup readback은 `DELIVERY.json`과 `evidence/` 영수증을 읽는다. 기존 HE28 pilot6/6, HE29 90/720 및50개 tests, 기존 VigilODE96/3/Schur23은 재실행하지 않았다.
+첫 게시 `8cb0ebb91a78d2f1b751caa1c3ffc5d170ddfe41`는 19개 파일의 실제 Git readback이 일치했다. 최종 ABI2 코드는 `a5d4711460c09b310b78c9692aa62534b7a843d3`로 게시했고, 82개 파일을 Git에서 다시 읽어 바이트와 SHA256 일치를 확인했다. 완전 보존 묶음 `77f1c73e`는 Drive와 Dropbox 양쪽의 raw-byte 다운로드 및 내부 91개 payload 해시 검증을 통과했다. 정확한 identity와 후속 문서 closeout은 `DELIVERY.json`과 `evidence/` 영수증을 따른다.
+
+별도의 clean Git checkout에서 게시된 NCP 빌더도 실제 실행했다. Cargo 컴파일은 146.650초에 성공했고, 과학·solver·test 실행은 없었다. 새 library SHA `802190605e7b5e175f36d1d986e2a203c1835fbd6a39571895481b8efe9a92b4`는 이 보고서에서 측정한 library SHA `8299915d8490e958fbebe54d253d98c98b1b932a50e8640398ad4ec274abf434`와 다르다. 소스 5개·toolchain·flags는 같지만, 서로 다른 rebuild artifact로 보존했다. 정적 경로·ELF layout 차이를 기록했으며, 모든 기계어 차이의 원인이나 새 바이너리의 수치 동등성을 별도로 주장하지 않는다. NCP는 자신의 build receipt와 library를 사용한다.
+
+기존 HE28 pilot 및 6/6 study, HE29 90/720 및 50개 tests, 기존 VigilODE 96/3/Schur23은 재실행하지 않았다.

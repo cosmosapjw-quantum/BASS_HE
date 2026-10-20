@@ -22,7 +22,12 @@
     "VIGILODE_C6": "NEW_PYTHON_96_PASS_RUST_SMOKE_3_PASS",
     "VIGILODE_CANARY": "NOT_RUN_BASELINE_4_OF_4_REQUIRED",
     "VIGILODE_PUBLICATION": "PUBLISHED_5764225_54_FILE_READBACK_MATCH",
-    "VIGILODE_BACKUP": "DUAL_RAW_READBACK_229_OF_229_PAYLOAD_HASHES_MATCH"
+    "VIGILODE_BACKUP": "DUAL_RAW_READBACK_229_OF_229_PAYLOAD_HASHES_MATCH",
+    "OPTIMIZATION_IMPLEMENTATION": "PUBLISHED_A5D4711_82_OF_82_READBACK_MATCH",
+    "OPTIMIZATION_SCOPED_VALIDATION": "NEW_MODEL_RUST_FFI_PAIRED_BENCHMARK_PASS",
+    "OPTIMIZATION_PUBLISHED_BUILD": "ACTUAL_CLEAN_CHECKOUT_COMPILE_PASS",
+    "OPTIMIZATION_BACKUP": "COMPLETE_77F1C73E_DUAL_RAW_91_OF_91_MATCH",
+    "OPTIMIZATION_NATIVE": "NOT_RUN_BASELINE_4_OF_4_REQUIRED"
   },
   "native_calls": 0,
   "physical_changes": false,
@@ -40,19 +45,6 @@
   },
   "intake_publication_commit": "3f16fe525d726aaebbe9262e0e869540321209eb",
   "observation_utc": "2026-10-20T02:43:24+00:00",
-  "new_activity": {
-    "native_calls": 0,
-    "inherited_tests_run": 0,
-    "he28_transport_runs": 0,
-    "new_native_returns_observed": 0,
-    "expected_reference_pairs": 4,
-    "new_scientific_results": 0,
-    "new_boundary_patch_checks": "results/continuation_20261019/OVERLAY_CHECKS.json",
-    "new_rust_bridge_compile": true,
-    "new_rust_synthetic_smokes": 3,
-    "new_python_extension_tests": 96,
-    "he29_native_calls": 0
-  },
   "execution_visibility": {
     "ncp_workspace": "UNOBSERVED",
     "reason": "Remote Desktop Commander monthly usage limit; no retry/reconnect",
@@ -91,14 +83,59 @@
     "complete_backup_sha256": "7bf7398b77b2bf04a6917bef4241fc216764c7658ebf25c85e5df7377fb6147a",
     "complete_backup_status": "BOTH_PROVIDERS_RAW_AND_229_PAYLOAD_HASHES_MATCH"
   },
-  "last_delivery_update_utc": "2026-10-19T13:41:26.787076+00:00",
+  "last_delivery_update_utc": "2026-10-20T05:26:47.376542+00:00",
   "optimization_extension": {
     "path": "optimization_20261020",
-    "status": "IMPLEMENTED_AND_SCOPED_MEASUREMENTS_PASS_CODE_PUBLICATION_PENDING",
+    "status": "PUBLISHED_EXACT_READBACK_AND_DUAL_RAW_BACKUP_PASS_NATIVE_PENDING",
     "native_pairs": 0,
     "input_manifest": "REPAIRED_AND_22_DATA_PREFLIGHT_PASS",
     "dag": "optimization_20261020/DAG_STATUS.json",
     "canary": "NOT_RUN_REQUIRES_4_ADMITTED_BASELINE_PAIRS",
-    "threads": 1
+    "threads": 1,
+    "code_publication_commit": "a5d4711460c09b310b78c9692aa62534b7a843d3",
+    "code_readback_files": 82,
+    "delivery": "optimization_20261020/DELIVERY.json",
+    "complete_backup_sha256": "77f1c73e8b4239cabcf03983ec9f0852fe334ac732544e410947935c7f4d7ab6",
+    "complete_backup_status": "BOTH_PROVIDERS_RAW_AND_91_PAYLOAD_HASHES_MATCH",
+    "published_builder": "PASS_ACTUAL_CLEAN_PUBLISHED_CHECKOUT"
+  },
+  "historical_activity_20261019": {
+    "native_calls": 0,
+    "inherited_tests_run": 0,
+    "he28_transport_runs": 0,
+    "new_native_returns_observed": 0,
+    "expected_reference_pairs": 4,
+    "new_scientific_results": 0,
+    "new_boundary_patch_checks": "results/continuation_20261019/OVERLAY_CHECKS.json",
+    "new_rust_bridge_compile": true,
+    "new_rust_synthetic_smokes": 3,
+    "new_python_extension_tests": 96,
+    "he29_native_calls": 0
+  },
+  "new_activity": {
+    "date": "2026-10-20",
+    "new_native_returns_observed": 0,
+    "native_owner_calls": 0,
+    "inherited_tests_run": 0,
+    "he28_transport_runs": 0,
+    "new_HE29_physical_reference_results": 0,
+    "optimization_checks": {
+      "model_unique_methods": 9,
+      "model_invocations": 10,
+      "rust_kernel_tests": 7,
+      "rust_serialization_format_test": 1,
+      "new_direct_ffi_cases": 4,
+      "new_wrapper_analytic_cases": 1,
+      "build_boundary_simulated_cases": 3,
+      "paired_ffi_sizes": 3,
+      "paired_ffi_modes_per_size": 4,
+      "timing_rounds": 7,
+      "callback_reuse_checks": 3,
+      "old_scientific_suites_rerun": 0,
+      "new_runner_entrypoint_methods": 5,
+      "actual_published_builder": "PASS_COMPILE_ONLY_NO_TEST_OR_SOLVER"
+    },
+    "optimization_performance": "optimization_20261020/PERFORMANCE_KO.md",
+    "actual_published_builder": "PASS_COMPILE_ONLY"
   }
 }
