@@ -1,5 +1,7 @@
 # HE29 현재 인계: 공유 기준해 budget·부분 반환 분석 — 2026-10-20
 
+현재 최종 통합 보존본은 `BASS_HE_HE29_REFERENCE_BUDGET_COMPLETE_20261020_7a86d5bb.tar.gz`(6,621,294 bytes, SHA256 `7a86d5bbe27da9da52584edb27145b626c6954455729c9af3365147fc4802c08`)다. Dropbox `id:BSpOijBcT10AAAAAAD_SUQ`의 실제 raw GET과 outer70/70·manifest 포함71/71 검증이 PASS다. 문서 snapshot은 `a143b08eeeb37e7f8cdbc78d84f750c321a220be`, 실행 분석 pin은09929b0이다. Drive 단일 업로드는43초 동안 접수 ID/완료 응답이 없어 UNKNOWN이고, 한 번의 조회에서 exact name을 찾지 못했으며 재시도·우회는0이다. 기존 f6·567의 standalone UNKNOWN도 바꾸지 않는다. 최신 인계 metadata는 후속 작은 handoff 묶음/PR78의 실제 영수증에 따로 보존한다. 상세 실제 상태는 `continuation_20261020T0557Z/evidence/FINAL_BACKUP_RECEIPT.json`과 DELIVERY를 읽는다.
+
 ## 현재 실행 출처와 완료 범위
 
 현재 후속 단위는 `continuation_20261020T0557Z`다. 새 분석 코드의 고정 commit은 `09929b0a06a833f0c2497e72f074ec8694a264df`이며, 실제 게시·readback 상태는 [continuation_20261020T0557Z/DELIVERY.json](continuation_20261020T0557Z/DELIVERY.json)의 `implementation_publication`과 연결된 PR78 영수증을 읽는다. 실행 전에 `status=PUBLISHED_EXACT_GIT_READBACK_PASS`와 전체 40자리 `code_commit`을 확인한다. 이후 문서 closeout HEAD, 새 분석 code pin, 기존 baseline 과학 pin과 ABI2 실행 pin을 각각 보존한다.

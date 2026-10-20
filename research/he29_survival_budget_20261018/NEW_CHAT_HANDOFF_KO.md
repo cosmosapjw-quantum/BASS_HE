@@ -1,5 +1,7 @@
 # 다음 채팅 인계: BASS_HE HE29 공유 기준해·부분 반환 분석
 
+현재 최종 통합 보존본은 `BASS_HE_HE29_REFERENCE_BUDGET_COMPLETE_20261020_7a86d5bb.tar.gz`(6,621,294 bytes, SHA256 `7a86d5bbe27da9da52584edb27145b626c6954455729c9af3365147fc4802c08`)다. Dropbox `id:BSpOijBcT10AAAAAAD_SUQ`의 실제 raw GET과 outer70/70·manifest 포함71/71 검증이 PASS다. 문서 snapshot은 `a143b08eeeb37e7f8cdbc78d84f750c321a220be`, 실행 분석 pin은09929b0이다. Drive 단일 업로드는43초 동안 접수 ID/완료 응답이 없어 UNKNOWN이고, 한 번의 조회에서 exact name을 찾지 못했으며 재시도·우회는0이다. 기존 f6·567의 standalone UNKNOWN도 바꾸지 않는다. 최신 인계 metadata는 후속 작은 handoff 묶음/PR78의 실제 영수증에 따로 보존한다. 상세 실제 상태는 `continuation_20261020T0557Z/evidence/FINAL_BACKUP_RECEIPT.json`과 DELIVERY를 읽는다.
+
 `$physmath-research-loop`를 사용해 BASS_HE HE29 작업을 이어서 진행해 줘. **먼저 최신 GitHub, 관련 branch와 반환 artifact, 관련 저장소, Drive·Dropbox 변경분에서 새 HE29 native 반환이 있는지 확인해 줘.** 기존 intake와 완료 근거를 읽고 그 이후 변경분만 확인해. 새 결과가 있으면 source·binary·table identity를 읽고 저장된 반환부터 분석해. 완료된 HE28 연구, HE29 source 검증, VigilODE 최적화, 이번 budget 검증을 반복하지 마.
 
 ## 1. 현재 실제 상태와 다음 판단

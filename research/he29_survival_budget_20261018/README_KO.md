@@ -12,6 +12,8 @@
 
 원래 science/test pin1569와 ABI2 최적화 pin a5d471은 유지한다. 아래 최적화 성능·실제 빌드는 이전 완료 근거이며 이번에 새 측정하지 않았다. intake3b125fc의 Dropbox raw/내부 검증은PASS, Drive 단일 업로드는UNKNOWN이다. 최종 보존은 현재 DELIVERY와 실제 후속 receipt를 따른다. 이전 COMPLETE77f1/문서CLOSEOUT3380의 dual raw PASS를 그대로 재사용한다.
 
+현재 새 통합 보존본 `7a86d5bb…`(6,621,294 B)는 Dropbox `id:BSpOijBcT10AAAAAAD_SUQ`에서 전체 raw SHA·content_hash, payload70/70·member71/71 PASS다. Drive는 단일43초 업로드의 접수 응답을 받지 못해 UNKNOWN이며 재시도하지 않았다. [실제 백업 영수증](continuation_20261020T0557Z/evidence/FINAL_BACKUP_RECEIPT.json)을 따른다. 이 분석 단위의 R/C 단계는 범위 내 완료이며 native0/4와 과학적 HOLD는 유지한다.
+
 ---
 
 ## 2026-10-20 최적화 closeout — 현재 게시 상태

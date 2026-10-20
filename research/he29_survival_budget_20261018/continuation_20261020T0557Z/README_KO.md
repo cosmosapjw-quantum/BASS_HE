@@ -6,12 +6,22 @@
 
 | 축 | 상태와 근거 |
 |---|---|
-| DAG | R1–R9 및 새 분석기의 C1–C9 완료. R10/C10 게시·보존·인계 진행. 조건부 산술 검증과 실제 native 미완료를 분리한 `DAG_STATUS.json` 참고 |
+| DAG | 이번 분석 단위의 R1–R10 및 C1–C10 완료. native와 Drive의 외부 HOLD 유지. 조건부 산술 검증과 실제 native 미완료를 분리한 `DAG_STATUS.json` 참고 |
 | 게시 | intake `3b125fc3cf80ce715353be17f640f2d9a5fb9f4a`, 실제 12/12 Git readback PASS. 새 구현 및 후속 인계의 실제 commit은 `DELIVERY.json`과 publication receipt에 기록 |
-| 백업 | intake `f6efa95f…`: Dropbox raw bytes·내부 검증 PASS, Drive 단일 업로드 UNKNOWN·재시도 없음. 기존 COMPLETE `77f1c73e…`와 CLOSEOUT `3380c7c4…`의 dual raw PASS 재사용. 최종 새 묶음은 실제 provider receipt로 판정 |
+| 백업 | intake `f6efa95f…`: Dropbox raw bytes·내부 검증 PASS, Drive 단일 업로드 UNKNOWN·재시도 없음. 기존 COMPLETE `77f1c73e…`와 CLOSEOUT `3380c7c4…`의 dual raw PASS 재사용. 새 통합7a86d5bb는 Dropbox full raw·70 payload PASS, Drive UNKNOWN |
 | 새 실행 | HE29 native 0, NCP 제출/시작 0, HE28 transport 0, 기존 science·source·최적화 검사 재실행 0 |
 
 Remote Desktop Commander의 기존 월간 quota 및 재시도·재연결 금지 상태를 유지한다. 미게시 NCP 프로세스는 관측하지 못했다. 로컬 경로가 없다는 사실을 원격 프로세스 부재로 확대하지 않는다.
+
+## 최종 보존과 인계 상태
+
+이번 분석 단위의 구현·경량 검증·독립 검토·Git 게시·Dropbox 보존을 마쳤다. 실제 HE29 기준해는 0/4·HOLD이고 Drive 업로드 결과는 UNKNOWN이다. 이 두 외부 상태를 분석 구현의 실패나 새 과학 계산 완료로 바꾸지 않는다.
+
+현재 통합 보존본은 `BASS_HE_HE29_REFERENCE_BUDGET_COMPLETE_20261020_7a86d5bb.tar.gz`, **6,621,294 bytes**, SHA256 `7a86d5bbe27da9da52584edb27145b626c6954455729c9af3365147fc4802c08`다. Dropbox **`id:BSpOijBcT10AAAAAAD_SUQ`**의 실제 단일 GET에서 전체 SHA와 content_hash `014e6096765e924b44a28ac25a6469ff1718be83c306cd37e72df68ff91bfdb2`, outer payload **70/70** 및 manifest 포함 member **71/71**이 일치했다. 보존 범위는 문서 commit `a143b08eeeb37e7f8cdbc78d84f750c321a220be`의 현재 분석·canonical 문서62개, publication metadata, 이전77f·3380·f6 archive 세 개다. 기존 archive의 내부 검사나 과학 계산은 반복하지 않았다.
+
+Drive 첫 업로드는43초 안에 접수 ID나 완료 응답을 주지 않았다. canonical parent의 한 번의 제한된 조회에서 해당 이름은 관측되지 않았으며, 이는 불완전한 업로드 결과의 확정 실패 증명이 아니다. 상태를 **UNKNOWN**으로 유지하고 재시도·우회 업로드는0이다. 앞선 intake f6의 Drive UNKNOWN도 그대로 유지한다. NCP의 기존 월간 quota/no-retry와는 다른 제공자 상태다.
+
+실제 영수증은 `evidence/FINAL_BACKUP_RECEIPT.json`과 `evidence/DROPBOX_RAW_READBACK.json`에 있다. 이 통합 archive 뒤에 작성한 최종 metadata·두 인계 문서는 별도의 작은 handoff 보존본과 PR78 closeout 영수증으로 연결한다. 실제 최종 commit·archive identity는 Git/PR 및 detached 영수증을 읽으며, 자기 자신을 포함하는 SHA나 미관측 provider 완료를 만들지 않는다.
 
 ## 새 구현
 
