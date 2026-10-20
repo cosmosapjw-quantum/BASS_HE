@@ -1,7 +1,7 @@
 {
   "schema": "he29.hpc64.delivery.v1",
-  "updated_utc": "2026-10-20T20:54:23.479764+00:00",
-  "status": "INTAKE_COMPLETE_IMPLEMENTATION_IN_PROGRESS",
+  "updated_utc": "2026-10-20T21:36:17.756318+00:00",
+  "status": "CODE_AND_RESEARCH_VERIFIED_PUBLICATION_PENDING",
   "anchor_publication": "a02ae998570d5a0a4fffdf46299ee77b1c738759",
   "code_commit": null,
   "packed_core_pin": "a5d4711460c09b310b78c9692aa62534b7a843d3",
@@ -13,5 +13,64 @@
   "NCP_submitted": 0,
   "NCP_started": 0,
   "remote_process_visibility": "UNOBSERVED",
-  "PR78": "RETAIN_DRAFT_OPEN_UNMERGED"
+  "PR78": "RETAIN_DRAFT_OPEN_UNMERGED",
+  "code_readback_status": "PENDING",
+  "new_distinct_test_methods": 62,
+  "old_tests_replayed": 0,
+  "stage1_publication": "cbbed9c3da6b41914527e322d2cb9bea9dc7b1f3",
+  "stage1_actual_readbacks": 8,
+  "validation": {
+    "new_distinct_test_methods": 62,
+    "first_groups": {
+      "table": 11,
+      "native_trace": 11,
+      "canary_worker": 10,
+      "host_initial": 12,
+      "batch_build": 12
+    },
+    "targeted_new_methods": {
+      "host_relative_cwd": 2,
+      "C9_actual_cgroup_root": 4
+    },
+    "prior_test_methods_replayed": 0,
+    "full_source_table_on_same_NCP_cohort": "NOT_RUN",
+    "actual_source_row_subset": "PASS_256x640_TWO_WORKER_BYTE_IDENTITY",
+    "trace_benchmark": "PASS_4096_POINTS_9_MANUFACTURED_SAMPLES",
+    "Bash_syntax_blocks": 2,
+    "manufactured_archive_payload_readback": "PASS_2_OF_2_MEMBER3"
+  },
+  "independent_review": {
+    "status": "PASS_SCOPED_AFTER_ONE_CLOSED_FINDING",
+    "findings_total": 1,
+    "open_blockers": 0,
+    "receipt": "evidence/C9_REVIEW.json"
+  },
+  "NCP_execution": "BLOCKED_NO_ACCESSIBLE_EXECUTOR_OBSERVED_RDC_NOT_CALLED",
+  "HPC_limits": {
+    "table_workers_max": 48,
+    "build_jobs_max": 8,
+    "solver_threads": 1,
+    "sync_every_default": 256,
+    "successful_point_records_not_yet_durable_max": 255,
+    "canary_wall_s": 900
+  },
+  "gates": "UNCHANGED_ORIGINAL_FULL_STATE_19_LEDGERS",
+  "native_speedup": "NOT_MEASURED",
+  "pending_scientific_jobs": [
+    "HE29_PACKED_R4_TABLE512"
+  ],
+  "stage1_backup": {
+    "name": "BASS_HE_HE29_HPC64_INTAKE_20261021_4e3a8030.tar.gz",
+    "bytes": 15195,
+    "sha256": "4e3a8030d7d7d6e0e3f1e4767cf282750252f75090502f380f9612dd017a8d87",
+    "dropbox_content_hash": "e4d161099ecd2d0ba4fa2a815460a602a2f3bc68d53acefaea1e4a7962b8ecaf",
+    "manifest_sha256": "e336a6b08cb4ab0e4512e1158e3e66f5efe99210ab80e706959bc72812c43f31",
+    "payload_verified": 9,
+    "payload_expected": 9,
+    "regular_members": 10,
+    "expected_regular_members": 10,
+    "local_archive_verification": "PASS"
+  },
+  "stage1_dropbox_id": "id:BSpOijBcT10AAAAAAD_aGA",
+  "stage1_Drive": "UNKNOWN_NO_RETRY"
 }
