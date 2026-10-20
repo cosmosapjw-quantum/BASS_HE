@@ -1,0 +1,61 @@
+{
+  "schema": "he29.hpc64.dag.v1",
+  "updated_utc": "2026-10-20T20:54:23.479764+00:00",
+  "anchor_publication": "a02ae998570d5a0a4fffdf46299ee77b1c738759",
+  "lane": "hpc64_20261021",
+  "stages": {
+    "R1": "COMPLETE_SCOPED_DELTA_INTAKE",
+    "R2": "COMPLETE_PRIMARY_SOURCE_INTAKE",
+    "R3": "COMPLETE_ROW_INDEPENDENCE_AND_SERIAL_DEPENDENCIES",
+    "R4": "COMPLETE_CONDITIONAL_COST_AND_DURABILITY_DERIVATION",
+    "R5": "IN_PROGRESS_ACTUAL_CAS_AND_LOCAL_CHANGED_PATH_PROBES",
+    "R6": "PENDING",
+    "R7": "PENDING",
+    "R8": "PENDING",
+    "R9": "PENDING",
+    "R10": "PENDING",
+    "C1": "COMPLETE_PENDING_RUN_DEDUPLICATION",
+    "C2": "COMPLETE_PROFILE_FROM_SAVED_NATIVE_RECEIPTS",
+    "C3": "IN_PROGRESS_NEW_ADAPTER_AND_HOST_CONTROLLER",
+    "C4": "PENDING",
+    "C5": "PENDING",
+    "C6": "PENDING",
+    "C7": "PENDING",
+    "C8": "PENDING",
+    "C9": "PENDING",
+    "C10": "PENDING"
+  },
+  "reused": {
+    "native_reference_pairs": "4/4_ONE_COHORT_ADMITTED",
+    "saved_analysis": "09929_EXIT0",
+    "old_completed_tests_replayed": 0
+  },
+  "ready_pending_jobs": [
+    {
+      "id": "HE29_PACKED_R4_TABLE512",
+      "count": 1,
+      "status": "NOT_RUN",
+      "solver_threads": 1
+    }
+  ],
+  "activity": {
+    "NCP_submitted": 0,
+    "NCP_started": 0,
+    "RDC_calls": 0,
+    "remote_process_visibility": "UNOBSERVED"
+  },
+  "publication": {
+    "stage1": "PREPARING_SCOPED_INTAKE_COMMIT",
+    "code": "NOT_YET_PUBLISHED"
+  },
+  "backup": {
+    "stage1": "PENDING",
+    "old_unknowns": "PRESERVED_NO_RETRY"
+  },
+  "limits": [
+    "Other conversations returned an actual service error; no exhaustive absence claim.",
+    "Remote processes have not been observed.",
+    "Only bounded backup/related-repo deltas were read.",
+    "Small source-row parity and manufactured trace timing are not an actual HE29 canary or NCP speed measurement."
+  ]
+}
