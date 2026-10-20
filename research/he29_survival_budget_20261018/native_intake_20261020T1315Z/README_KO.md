@@ -35,3 +35,7 @@ GitHub의 종전 83개 refs 이후 추가된 두 branch, 관련 7개 repo의 한
 외부 반환 campaign의 native 호출은 1,161,446회다. **현재 intake 대화의 native/solver/analyzer 실행, NCP 제출·시작은 모두 0**이다. 기준해 pair를 다시 제출할 필요가 없다. 단일 packed canary는 아직 실행되지 않았다.
 
 이 lane의 새 보존 archive는 선택된 반환 JSON과 분석, 현재 문서 및 실행 연결을 보존한다. 276,206,340-byte 원본 trace/binary archive 전체는 원래 dual-provider 보존 identity로 연결한다. 선택된 68개 증거 복사본의 exact bytes는 `evidence/INTAKE_COPY_MANIFEST.json`에 기록한다. 원본 producer snapshot의 오래된 0/4·PENDING 필드는 수정하지 않았다.
+
+## 이번 게시·보존
+
+Intake `25f4aea4…`는 실제73/73 Git readback, wrapper code `dd844bc7…`는 실제18/18 readback PASS다. 서로 겹치는 파일수가 있어 고유 개수로 합산하지 않는다. Stage1 admission archive `8350e3b5…`(129324 bytes)는 Dropbox raw SHA/content_hash와74/74payload·75regular member PASS다. Drive 첫 새 upload는 ACK/ID 없이581.9초 후 parent-agent가 장기대기를 중단했고 한 번의 exact-name 관측은NOT_FOUND였다. 상태는UNKNOWN이며 재시도0이다. 새 최종보존에는Drive를 추가 호출하지 않는다. 후속 문서/최종영수증은 DELIVERY에 연결하며 codepin은dd844bc7에 고정한다.

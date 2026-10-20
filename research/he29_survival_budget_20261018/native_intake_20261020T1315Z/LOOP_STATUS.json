@@ -1,6 +1,6 @@
 {
   "schema": "he29.scoped_research_coding_loops.v1",
-  "updated_utc": "2026-10-20T17:20:05.143867+00:00",
+  "updated_utc": "2026-10-20T17:27:33.084022+00:00",
   "scope": "New native-return admission/interpretation and additive packed watchdog binding. Existing science, solvers, derived formulas and completed tests are reused.",
   "skill": {
     "applied": "standalone1.0.0",
@@ -97,7 +97,7 @@
     {
       "id": "C5",
       "name": "구현",
-      "status": "IMPLEMENTED_EXACT_SOURCE_RECOVERED",
+      "status": "PUBLISHED_DD844BC7_EXACT_READBACK_PASS",
       "evidence": "packed_entry.py wrapper alias only; a5/ed5 tracked source untouched"
     },
     {
@@ -121,13 +121,13 @@
     {
       "id": "C9",
       "name": "독립 검토",
-      "status": "IN_PROGRESS",
-      "evidence": "independent reviewer reading recovered exact source; no completed suite replay"
+      "status": "PASS_SCOPED",
+      "evidence": "evidence/PACKED_ENTRY_INDEPENDENT_REVIEW.json; blocking0/nonblocking0; new tests0"
     },
     {
       "id": "C10",
       "name": "판정·인계",
-      "status": "IN_PROGRESS",
+      "status": "CODE_PUBLICATION_PASS_DOCUMENTATION_BACKUP_IN_PROGRESS",
       "evidence": "Git publication + create-only backups + concrete NCP handoff"
     }
   ],

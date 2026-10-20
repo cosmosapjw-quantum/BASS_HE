@@ -1,7 +1,7 @@
 {
   "schema": "he29.native_intake.delivery.v1",
-  "updated_utc": "2026-10-20T17:24:36.147407+00:00",
-  "status": "INTAKE_AND_SAVED_ANALYSIS_ACCEPTED_WRAPPER_IN_PROGRESS",
+  "updated_utc": "2026-10-20T17:31:32.143564+00:00",
+  "status": "NATIVE_4_OF_4_WRAPPER_PUBLISHED_C9_PASS_FINAL_DOCUMENTATION_IN_PROGRESS",
   "lane": "native_intake_20261020T1315Z",
   "pins": {
     "science": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
@@ -73,15 +73,102 @@
     "intake_receipt": "evidence/INTAKE_PUBLICATION_READBACK.json"
   },
   "stage_backup": {
-    "status": "NOT_YET_UPLOADED"
+    "status": "DROPBOX_RAW_VERIFIED_DRIVE_UPLOAD_UNKNOWN",
+    "archive": {
+      "name": "BASS_HE_HE29_NATIVE_ADMISSION_20261020_8350e3b5.tar.gz",
+      "bytes": 129324,
+      "sha256": "8350e3b541669cb5ffb115bbc08196e7eb58ec352bb29182fc134bbea454935e",
+      "manifest_sha256": "70a73a9ef54ec9bf56749e940a15209ab50bbdcc04aa4c03288aabb4b559c2e2",
+      "dropbox_content_hash": "b9c5e05a6c552ac08df2eb024fd3061022af68820650d9342ba957ac180abf12",
+      "payloads": 74,
+      "members": 75,
+      "local_payload_check": "74/74_PASS",
+      "scope": "Fixed stage1 Git admission metadata and saved results plus publication receipt; original 276206340-byte native archive is linked by SHA/provider identity only."
+    },
+    "dropbox": {
+      "upload_calls": 1,
+      "upload_started_utc": "2026-10-20T17:19:02.310Z",
+      "initial_ack": "in_progress",
+      "status_poll_calls": 1,
+      "final_ack": "completed",
+      "file_id": "id:BSpOijBcT10AAAAAAD_Z_A",
+      "provider_modified_utc": "2026-10-20T17:19:07Z",
+      "provider_bytes": 129324,
+      "raw_get_calls": 1,
+      "raw_readback": {
+        "schema": "he29.native-admission.raw-readback.v1",
+        "provider": "Dropbox",
+        "file_id": "id:BSpOijBcT10AAAAAAD_Z_A",
+        "started_utc": "2026-10-20T17:30:22.981120+00:00",
+        "raw_get_calls": 1,
+        "request_kind": "single full GET; no HEAD/range",
+        "archived_code_execution": false,
+        "http_status": 200,
+        "bytes": 129324,
+        "sha256": "8350e3b541669cb5ffb115bbc08196e7eb58ec352bb29182fc134bbea454935e",
+        "dropbox_content_hash": "b9c5e05a6c552ac08df2eb024fd3061022af68820650d9342ba957ac180abf12",
+        "bytes_match": true,
+        "sha_match": true,
+        "provider_content_hash_match": true,
+        "payloads_checked": 74,
+        "payload_mismatches": [],
+        "regular_members": 75,
+        "manifest_sha256": "70a73a9ef54ec9bf56749e940a15209ab50bbdcc04aa4c03288aabb4b559c2e2",
+        "manifest_sha_matches": true,
+        "status": "PASS_FULL_BYTES_AND_ALL74_PAYLOADS",
+        "finished_utc": "2026-10-20T17:30:23.326321+00:00"
+      },
+      "retries": 0
+    },
+    "drive": {
+      "upload_invocations": 1,
+      "request_ack_received": false,
+      "operation_id_received": false,
+      "file_id": null,
+      "status": "UNKNOWN_AFTER_PARENT_AGENT_INTERRUPTION",
+      "tool_reported_elapsed_s": 581.9,
+      "upload_started_utc": null,
+      "start_timestamp_status": "Not retained: aborted functions execution did not commit native_intake_drive_started store entry. Invocation followed Dropbox completed ACK; exact server request start is unobserved.",
+      "start_lower_bound_utc": "2026-10-20T17:19:07Z",
+      "aborted_observed_by_utc": "2026-10-20T17:29:48.286Z",
+      "raw_get_calls": 0,
+      "raw_readback": "NOT_STARTED_NO_OBSERVED_OBJECT",
+      "retries": 0,
+      "alternate_routes": 0,
+      "interruption_provenance": {
+        "tool_label": "aborted by user",
+        "actual_actor": "parent agent interrupted the long child-agent tool wait",
+        "human_user_cancellation": false,
+        "reported_elapsed_s": 581.9
+      },
+      "bounded_post_upload_observation": {
+        "started_utc": "2026-10-20T17:30:36.656Z",
+        "observed_utc": "2026-10-20T17:30:37.726Z",
+        "calls": 1,
+        "scope": "Canonical parent direct listing, top_k100, exact filename",
+        "returned_items": 100,
+        "watchdog_timeout": false,
+        "matches": [],
+        "result": "NOT_FOUND_OBSERVED",
+        "limitation": "One capped direct listing cannot resolve an upload with no ACK when no exact item is seen."
+      }
+    },
+    "receipt": "evidence/INTAKE_BACKUP_RECEIPT.json"
   },
   "new_canary_connection": {
     "finding": "HE29-PACKED-WATCHDOG-REUSE-01",
-    "status": "IMPLEMENTED_NEW_9_FIRST_PASS_C9_IN_PROGRESS",
+    "status": "IMPLEMENTED_FIRST_9_PASS_INDEPENDENT_REVIEW_PASS_SCOPED",
     "science_code_changed": false,
     "old_controller_tests_replayed": 0,
     "wrapper_sha256": "befd6740a09811ae2f2c61cb7bd0ee54fc96740d17d21f83282f7453c143ccfe",
-    "first_validation": "evidence/PACKED_ENTRY_TESTS_FIRST.json"
+    "first_validation": "evidence/PACKED_ENTRY_TESTS_FIRST.json",
+    "independent_review": {
+      "receipt": "evidence/PACKED_ENTRY_INDEPENDENT_REVIEW.json",
+      "status": "PASS_SCOPED",
+      "blocking_findings": 0,
+      "nonblocking_findings": 0,
+      "new_test_replays": 0
+    }
   },
   "prior_unknown_backups": {
     "7a86_Drive": "UNKNOWN_AFTER_43S_NO_ACK; ONE_EXACT_NAME_NOT_FOUND_OBSERVED; NO_RETRY",
@@ -96,7 +183,18 @@
   },
   "copy_manifest": "evidence/INTAKE_COPY_MANIFEST.json",
   "implementation_publication": {
-    "status": "NOT_YET_PUBLISHED",
-    "code_commit": null
-  }
+    "status": "PUBLISHED_EXACT_READBACK_PASS",
+    "code_commit": "dd844bc7a1103127198ee2e0343b130f73faa9a4",
+    "tree": "02fd29d3c2a9e428fb4ff28307b45f0e23da471e",
+    "parent": "25f4aea4f03d5b52147b26e4beff809fb3d29f0c",
+    "actual_changed_file_readbacks": 18,
+    "receipt": "evidence/IMPLEMENTATION_PUBLICATION_READBACK.json",
+    "code_pin_is_distinct_from_later_documentation_head": true
+  },
+  "final_backup": {
+    "status": "PREPARED_NOT_UPLOADED",
+    "scope": "Current Git lane and four canonical docs, new wrapper and review, intake archive and readback receipts; native276MB archive linked by immutable SHA and IDs",
+    "Drive": "NO_FURTHER_UPLOAD_AFTER_CURRENT_UNKNOWN"
+  },
+  "documentation_integration_note": "An initial parent metadata check expected the word PASS in the top-level backup status, but the actual schema uses VERIFIED. It stopped before writes; corrected to check raw byte/SHA/content/payload fields. No scientific result or test was rerun."
 }

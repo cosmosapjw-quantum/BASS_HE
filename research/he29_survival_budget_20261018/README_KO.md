@@ -1,3 +1,20 @@
+# HE29 현재 상태 — native 기준해 4/4 수용
+
+2026-10-20 새 PR80 반환의 실제 archive/binary와 저장된 분석을 읽어 **m8/GL4/q0의 네 Radau+DOP853 pair를 모두 수용**했다. 기존 0/4는 이전 관측 이력이다. 현재의 실행·게시·보존 상태는 아래 새 lane을 기준으로 읽는다.
+
+- [새 native intake와 수치 해석](native_intake_20261020T1315Z/RESEARCH_KO.md)
+- [현재 DAG](DAG_STATUS.json), [현재 DELIVERY](native_intake_20261020T1315Z/DELIVERY.json)
+- [다음 대화 인계](NEW_CHAT_HANDOFF_KO.md), [준비된 단일 canary 인계](native_intake_20261020T1315Z/NCP_HANDOFF_KO.md)
+- [독립 native 수용 심사](native_intake_20261020T1315Z/evidence/INDEPENDENT_NATIVE_RETURN_REVIEW_KO.md)
+
+저장된 09929 분석의 4 pair/1 cohort, residual6행·대비3행·정확한 closure0인 분해4행을 재사용했다. Solver·transport·전체 analyzer 및 완료 tests 재실행은 0이다. 새 변경은 a5 packed 실행에 PR79의 검증된 process-group 종료 함수를 연결하는 외부 wrapper다. 고정 science1569 / analyzer09929 / packeda5 / watchdoged5 / VigilODEa21과 후속 publication HEAD는 별개다.
+
+Packed canary는 **NOT_RUN**, 이번 NCP 제출·시작은 0이다. 현지 프로세스·저장 결과는 접근 가능한 실행자가 확인해야 한다. Remote Desktop Commander의 기존 quota 재시도·재연결 금지를 유지한다. Pair 네 개를 다시 제출하지 않는다. 두 solver의 일치는 참 ODE 오차반경이 아니며, 연속 스펙트럼·전역 온도 상한·전체 EoR·전체 Grackle 동등성·관측 Bianchi/CMB는 HOLD다.
+
+## 기존 연구 설명과 당시 closeout 기록
+
+아래는 `d631358…`까지의 원래 README를 보존한 **날짜가 있는 이력**이다. 아래의 0/4·NATIVE_HOLD·당시 current 표기는 위의 새 current 상태로 대체된다. 물리 설명과 기존 증거는 해당 범위에서 재사용한다.
+
 # 2026-10-20 05:57 UTC 후속 연구 — 현재 분석 실행 pin
 
 새 공유 기준해·부분 반환 분석 코드는 `09929b0a06a833f0c2497e72f074ec8694a264df`에 게시됐고 실제 Git 재조회에서 45/45 파일의 바이트와 SHA가 일치했다. 새 test method 28개(코어10·분류기12·CLI6)가 첫 실행에서 통과했다. 독립 제조 이론20개, Wolfram의 두 소거 항등식, 한 번의 분담 C9 검토와 실제 로컬 no-return CLI도 기록했다. 기존 과학·source·Rust 최적화 검사는 반복하지 않았다.

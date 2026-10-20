@@ -7,7 +7,7 @@
     "tree": "736c1ff4116af894fdae56ed7f5a4bd78a814aa2",
     "fresh_git_readback": "73/73 PASS; selected exact-copy manifest68/68 PASS"
   },
-  "wrapper_recovery": "AUTHOR_RECOVERING_ORIGINAL_TOOL_STORE_BYTES_AND_HASHES; NO_TEST_REPLAY",
+  "wrapper_recovery": "EXACT3_SOURCE_HANDOFF_SHA_MATCH; FIRST9_TESTS_AND_BASH4_SYNTAX_REUSED; EXA_DERIVED_SUMMARY_TIMESTAMP_RECONSTRUCTED_DECLARED",
   "post_reset_pr79_pr80": [
     {
       "pr": 79,
@@ -96,5 +96,7 @@
   "RDC_calls": 0,
   "native_calls": 0,
   "scientific_reruns": 0,
-  "recorded_utc": "2026-10-20T17:20:05.143867+00:00"
+  "recorded_utc": "2026-10-20T17:20:05.143867+00:00",
+  "recovery_receipt": "PACKED_ENTRY_RECOVERY.json",
+  "new_scientific_or_test_runs_after_reset": 0
 }

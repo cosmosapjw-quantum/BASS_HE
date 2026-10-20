@@ -110,3 +110,5 @@ Controller 전체 wall은 `5672.090418861015 s`, serial concurrency 1, case cap 
 작업 중 runtime 전환에서 scratch의 파일이 사라진 것을 root와 reviewer가 실제 ENOENT로 관측했다. 게시된 intake는 Git25f4aea4에서 새 checkout으로73/73 bytes를 복원했고, 원래 선택 증거68/68 SHA도 일치했다. Wrapper/tests/handoff는 보존된 tool 원문으로 복원해 유실 전 SHA가3/3 일치했으므로 첫9PASS와syntax를 재사용했다. 파생 Exa 요약의 유실된 원래 생성시각만 복구하지 못해 새 재구성 표지를 달았고 원bytes 복원이라고 주장하지 않았다. 그 과정에서 수치·검사·Exa 반복실행은0이다. `RUNTIME_RECOVERY.json`, `PACKED_ENTRY_RECOVERY.json`에 상세 범위를 보존한다.
 
 실제 clock가13시대에서17시대로 바뀐 시간공백 뒤 PR79/80과 최근 PR 목록 및 한정된 backup delta를 새로 관측했다. 두 결과/controller HEAD는 그대로였고, 관측된13:10이후 backup 범위에서는 추가HE29 반환0이었다. 이 관측은 미게시 remote process의 부재를 뜻하지 않는다.
+
+새 wrapper의 독립 C9는 중대/경미 finding **0/0, PASS_SCOPED**로 마감했다. a5 target2·ed5 watchdog·legacy execution의 실제 Git source SHA4/4가 wrapper 상수와 일치했다. 그 심사는 첫9검사와Bash4syntax를 재사용했고 추가test·solver·build를 실행하지 않았다. 새 wrapper 실행 pin은 `dd844bc7a1103127198ee2e0343b130f73faa9a4`, tree `02fd29d3c2a9e428fb4ff28307b45f0e23da471e`이며 변경18파일을 실제 Git에서 다시 읽어 모두 일치했다. 후속문서는 이 code pin을 바꾸지 않는다.
