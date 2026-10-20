@@ -49,3 +49,12 @@ Native 원본 archive는 `BASS_HE_HE29_NATIVE_RETURN_20261020_c1c4c061.tar.gz`, 
 새 실행 결과가 생기면 성공·실패·timeout·partial을 모두 보존하고 source/owner binary/bridge library/table/input/parent/runtime/thread/wall/trace identity를 포함해 Git 결과 요약과 immutable backups로 반환한다. 원래 분석 출력의 상태와 새 canary admission을 별도로 기록한다. 전체 EoR·연속 스펙트럼·전역 gas-temperature 오차상한·whole Grackle 동등성·관측 Bianchi/CMB는 HOLD다. 실제 HE29 packed speedup은 아직 미측정이며 이전 조립/제조IVP 가속을 곱하지 않는다.
 
 PR78은 branch `research/he29-survival-budget-20261018`에서 Draft/open/unmerged를 유지한다. PR79/80을 병합하지 않고 고정 source와 실제 evidence를 재사용한다. 모든 완료 연구·검증 재실행은 금지한다.
+
+
+## 최종 보존과 publication 구분
+
+새 wrapper 실행 code pin은 **`dd844bc7a1103127198ee2e0343b130f73faa9a4`**다. 문서 snapshot은 `16cd646a1943a9f33051ec300b7bb856b6ac994f`, tree는 `0814c8e518840c0eab0ed0fc8c30448dcc0c7a83`이며 실제 16/16 readback이 PASS다. 앞선 intake25f4의 73/73, code dd844의 18/18은 서로 겹치는 단계별 검사 수이므로 고유 파일 수로 합산하지 않는다. 이 최신 프롬프트와 metadata를 포함하는 실제 최종 HEAD/tree/readback은 별도 closeout 영수증과 PR78 최종 본문에서 읽는다. 후속 문서 HEAD를 실행 pin으로 바꾸지 않는다.
+
+현재 통합 문서 보존본은 `BASS_HE_HE29_NATIVE_ADMISSION_AND_PACKED_HANDOFF_20261020_77324b4c.tar.gz`, **401265 bytes**, SHA256 `77324b4c62d6d1c07a866c3275b92a14954da9e33f7002a70d837fa32b56cfb0`, Dropbox `id:BSpOijBcT10AAAAAAD_Z_w`다. 2026-10-20T17:34:00Z의 실제 raw GET에서 SHA/content_hash, 100/100 payload, 101 regular member를 확인했다. Git 98개 파일, 문서 readback 1개, 이전 intake archive 원 bytes 1개를 보존한다. 원래 276 MB native archive는 identity로 연결한다. 이 문단을 추가한 이후의 최종 metadata와 두 프롬프트는 별도의 작은 closeout에 보존한다.
+
+Stage1 archive `8350e3b5…`는 129324 bytes, Dropbox `id:BSpOijBcT10AAAAAAD_Z_A`이며, 74/74 payload와 75 regular member의 raw readback도 PASS다. 새 Drive upload 1회는 ACK/ID 없이 581.9초 대기한 후 parent agent가 중단했고, 한 번의 exact-name 관측은 NOT_FOUND였다. **UNKNOWN**을 유지하며 재시도와 우회는 0이다. 최종77324와 후속 closeout에는 Drive를 추가 호출하지 않는다. 사람 사용자가 취소한 것으로 기록하지 않는다. 이전7a86/f6/567의 Drive UNKNOWN과77f/3380의 dual raw PASS도 당시 범위를 유지한다.

@@ -1,6 +1,6 @@
 {
   "schema": "he29.native_intake.dag.v1",
-  "updated_utc": "2026-10-20T17:31:32.143918+00:00",
+  "updated_utc": "2026-10-20T17:35:37.703250+00:00",
   "current": true,
   "pins": {
     "science": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
@@ -26,11 +26,13 @@
     "PACKED_WRAPPER": "PUBLISHED_DD844BC7_18_OF_18_ACTUAL_READBACK_9_FIRST_PASS",
     "PACKED_CANARY": "NOT_RUN",
     "NCP_PROCESS_VISIBILITY": "UNOBSERVED",
-    "PUBLICATION": "INTAKE73_OF_73_AND_CODE18_OF_18_PASS_DOCUMENTATION_IN_PROGRESS",
-    "BACKUP": "INTAKE_CREATE_ONLY_UPLOAD_IN_PROGRESS",
+    "PUBLICATION": "INTAKE73_CODE18_DOC16_ACTUAL_READBACK_PASS_FINAL_METADATA_RECEIPT_DETACHED",
+    "BACKUP": "DOC_SNAPSHOT_DROPBOX_RAW_100_OF_100_PASS_DRIVE_STAGE1_UNKNOWN",
     "PACKED_WRAPPER_C9": "PASS_SCOPED_FINDINGS_0",
     "INTAKE_BACKUP": "DROPBOX_RAW_74_OF_74_PASS_DRIVE_UNKNOWN_ONE_NOT_FOUND_OBSERVATION",
-    "CURRENT_BACKUP": "FINAL_DOC_SNAPSHOT_PREPARING_DROPBOX_CREATE_ONLY_DRIVE_NO_FURTHER_UPLOAD"
+    "CURRENT_BACKUP": "DOC16CD_SNAPSHOT_VERIFIED_FINAL_METADATA_AND_PROMPTS_SEPARATE_CLOSEOUT",
+    "HANDOFF": "CURRENT_SINGLE_CANARY_WRAPPER_PINNED_NO_BASELINE_RESUBMISSION",
+    "CURRENT_UNIT": "SCOPED_COMPLETE_WITH_DECLARED_PACKED_CANARY_AND_DRIVE_LIMITS"
   },
   "activity": {
     "this_intake_native_calls": 0,
@@ -47,7 +49,7 @@
     "new_packed_wrapper_test_methods": 9,
     "replayed_packed_wrapper_test_methods": 0
   },
-  "next": "Finish and publish only the packed execution alias wrapper, new boundary tests and NCP handoff. No reference or analysis rerun. Same-runtime executor must observe existing processes and saved canary before one fresh canary.",
+  "next": "Read any newer return first. Reuse completed four native pairs and saved09929 budget. Only an accessible executor with actual process/artifact visibility may run the one existing a5 r4/table512 canary through fixeddd844/ed5, same runtime/binary/table/thread1.",
   "physical_changes": false,
   "runtime_matching_required": {
     "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
@@ -69,5 +71,21 @@
     "actual_HE29_packed_speedup",
     "unpublished_remote_process_absence"
   ],
-  "backup_limit": "New stage1 Drive upload had no ACK/ID for581.9s before parent-agent interruption; tool labels aborted_by_user do not mean an actual human user cancellation. One exact-name observed NOT_FOUND; UNKNOWN retained; no retry."
+  "backup_limit": "New stage1 Drive upload had no ACK/ID for581.9s before parent-agent interruption; tool labels aborted_by_user do not mean an actual human user cancellation. One exact-name observed NOT_FOUND; UNKNOWN retained; no retry.",
+  "final_backup": {
+    "status": "DROPBOX_RAW_VERIFIED_DRIVE_NOT_CALLED_AFTER_STAGE1_UNKNOWN",
+    "file_name": "BASS_HE_HE29_NATIVE_ADMISSION_AND_PACKED_HANDOFF_20261020_77324b4c.tar.gz",
+    "bytes": 401265,
+    "sha256": "77324b4c62d6d1c07a866c3275b92a14954da9e33f7002a70d837fa32b56cfb0",
+    "content_hash": "92447eed887160a29cb7c51750ad0571c27843ac783d6b9b062a1121e7c93f11",
+    "payloads": 100,
+    "regular_members": 101,
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_Z_w",
+    "dropbox_raw": "PASS_FULL_BYTES_100_OF_100_PAYLOADS_101_REGULAR_MEMBERS",
+    "Drive": "NOT_CALLED_AFTER_STAGE1_UNKNOWN",
+    "documentation_snapshot_commit": "16cd646a1943a9f33051ec300b7bb856b6ac994f",
+    "fixed_wrapper_code_pin": "dd844bc7a1103127198ee2e0343b130f73faa9a4",
+    "receipt": "evidence/FINAL_BACKUP_RECEIPT.json",
+    "scope": "98 Git files + documentation readback1 + exact prior intake archive1; native276MB original linked by SHA/provider IDs, not included; subsequent metadata/prompt closeout is separate"
+  }
 }

@@ -112,3 +112,9 @@ Controller 전체 wall은 `5672.090418861015 s`, serial concurrency 1, case cap 
 실제 clock가13시대에서17시대로 바뀐 시간공백 뒤 PR79/80과 최근 PR 목록 및 한정된 backup delta를 새로 관측했다. 두 결과/controller HEAD는 그대로였고, 관측된13:10이후 backup 범위에서는 추가HE29 반환0이었다. 이 관측은 미게시 remote process의 부재를 뜻하지 않는다.
 
 새 wrapper의 독립 C9는 중대/경미 finding **0/0, PASS_SCOPED**로 마감했다. a5 target2·ed5 watchdog·legacy execution의 실제 Git source SHA4/4가 wrapper 상수와 일치했다. 그 심사는 첫9검사와Bash4syntax를 재사용했고 추가test·solver·build를 실행하지 않았다. 새 wrapper 실행 pin은 `dd844bc7a1103127198ee2e0343b130f73faa9a4`, tree `02fd29d3c2a9e428fb4ff28307b45f0e23da471e`이며 변경18파일을 실제 Git에서 다시 읽어 모두 일치했다. 후속문서는 이 code pin을 바꾸지 않는다.
+
+## 9. 종료와 재개
+
+새 반환 수용, 저장 분석 해석, wrapper 연결에 해당하는 R1–R10/C1–C10 범위를 마감한다. 단계별 재사용과 새 수행은 `LOOP_STATUS.json`에 있다. Native 기준해 4/4는 수용됐고 packed canary는 NOT_RUN이다. 문서16cd646a를 보존한 401265-byte 통합 archive77324b4c는 Dropbox의 실제 raw readback에서 100/100 payload가 PASS다. 후속 최종 metadata와 두 canonical prompt는 별도 closeout에 보존한다.
+
+Stage1 Drive는 581.9초 동안 ACK 없이 대기한 호출을 parent agent가 중단한 UNKNOWN이며, 추가 쓰기는 0이다. 이 보존 한계를 과학 실패나 완료된 native 결과의 부재로 해석하지 않는다. 다음 단계는 현재 host의 프로세스와 저장 결과를 관측할 수 있는 실행자에게 준비된 단일 canary를 연결하는 것이다.

@@ -39,3 +39,5 @@ GitHub의 종전 83개 refs 이후 추가된 두 branch, 관련 7개 repo의 한
 ## 이번 게시·보존
 
 Intake `25f4aea4…`는 실제73/73 Git readback, wrapper code `dd844bc7…`는 실제18/18 readback PASS다. 서로 겹치는 파일수가 있어 고유 개수로 합산하지 않는다. Stage1 admission archive `8350e3b5…`(129324 bytes)는 Dropbox raw SHA/content_hash와74/74payload·75regular member PASS다. Drive 첫 새 upload는 ACK/ID 없이581.9초 후 parent-agent가 장기대기를 중단했고 한 번의 exact-name 관측은NOT_FOUND였다. 상태는UNKNOWN이며 재시도0이다. 새 최종보존에는Drive를 추가 호출하지 않는다. 후속 문서/최종영수증은 DELIVERY에 연결하며 codepin은dd844bc7에 고정한다.
+
+최종문서snapshot16cd646a의 통합보존 `77324b4c…`는401265bytes,Dropbox `id:BSpOijBcT10AAAAAAD_Z_w`,raw100/100payload·101regular member PASS다. 후속최종metadata와최신두프롬프트는실제Gitreadback과함께별도closeout으로보존한다. R/C현재범위는마감했으며 실제packed canary 및Drive UNKNOWN은별도남은상태다.

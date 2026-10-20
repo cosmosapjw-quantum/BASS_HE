@@ -1,7 +1,7 @@
 {
   "schema": "he29.native_intake.delivery.v1",
-  "updated_utc": "2026-10-20T17:31:32.143564+00:00",
-  "status": "NATIVE_4_OF_4_WRAPPER_PUBLISHED_C9_PASS_FINAL_DOCUMENTATION_IN_PROGRESS",
+  "updated_utc": "2026-10-20T17:35:37.703250+00:00",
+  "status": "SCOPED_COMPLETE_NATIVE_REFERENCES_4_OF_4_PACKED_CANARY_NOT_RUN_DRIVE_UNKNOWN_DECLARED",
   "lane": "native_intake_20261020T1315Z",
   "pins": {
     "science": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
@@ -11,7 +11,8 @@
     "vigilode": "a21d573980f66fe02891bd216153443b5352f921",
     "owner": "f7830e2f55e7a1938bc3c98f61b60651f8dae474",
     "return_publication": "089d6afba06bb35f303fc704163d75f5761ec9df",
-    "prior_publication": "d63135807c80dc2ada7f85214b5087b9e3dff375"
+    "prior_publication": "d63135807c80dc2ada7f85214b5087b9e3dff375",
+    "packed_wrapper": "dd844bc7a1103127198ee2e0343b130f73faa9a4"
   },
   "source_execution": "Git only; returned archive supplies DATA/provenance",
   "native_admission": {
@@ -65,12 +66,18 @@
     "pr": 78,
     "branch": "research/he29-survival-budget-20261018",
     "required_state": "DRAFT_OPEN_UNMERGED",
-    "status": "INTAKE_PUBLISHED_EXACT_READBACK_PASS",
+    "status": "INTAKE_CODE_DOCUMENTATION_PUBLISHED_EXACT_READBACK_PASS",
     "observed_initial_head": "d63135807c80dc2ada7f85214b5087b9e3dff375",
     "intake_commit": "25f4aea4f03d5b52147b26e4beff809fb3d29f0c",
     "intake_tree": "736c1ff4116af894fdae56ed7f5a4bd78a814aa2",
     "intake_actual_file_readbacks": 73,
-    "intake_receipt": "evidence/INTAKE_PUBLICATION_READBACK.json"
+    "intake_receipt": "evidence/INTAKE_PUBLICATION_READBACK.json",
+    "documentation_commit": "16cd646a1943a9f33051ec300b7bb856b6ac994f",
+    "documentation_tree": "0814c8e518840c0eab0ed0fc8c30448dcc0c7a83",
+    "documentation_actual_changed_file_readbacks": 16,
+    "documentation_receipt": "evidence/DOCUMENTATION_PUBLICATION_READBACK.json",
+    "final_metadata_identity": "Actual final HEAD/tree/readback are in a detached closeout receipt and final PR78 body, avoiding self-referential commit hashes.",
+    "counts_note": "73/18/16 are separate stage changed-file checks with overlap, not additive unique-file counts."
   },
   "stage_backup": {
     "status": "DROPBOX_RAW_VERIFIED_DRIVE_UPLOAD_UNKNOWN",
@@ -192,9 +199,33 @@
     "code_pin_is_distinct_from_later_documentation_head": true
   },
   "final_backup": {
-    "status": "PREPARED_NOT_UPLOADED",
-    "scope": "Current Git lane and four canonical docs, new wrapper and review, intake archive and readback receipts; native276MB archive linked by immutable SHA and IDs",
-    "Drive": "NO_FURTHER_UPLOAD_AFTER_CURRENT_UNKNOWN"
+    "status": "DROPBOX_RAW_VERIFIED_DRIVE_NOT_CALLED_AFTER_STAGE1_UNKNOWN",
+    "file_name": "BASS_HE_HE29_NATIVE_ADMISSION_AND_PACKED_HANDOFF_20261020_77324b4c.tar.gz",
+    "bytes": 401265,
+    "sha256": "77324b4c62d6d1c07a866c3275b92a14954da9e33f7002a70d837fa32b56cfb0",
+    "content_hash": "92447eed887160a29cb7c51750ad0571c27843ac783d6b9b062a1121e7c93f11",
+    "payloads": 100,
+    "regular_members": 101,
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_Z_w",
+    "dropbox_raw": "PASS_FULL_BYTES_100_OF_100_PAYLOADS_101_REGULAR_MEMBERS",
+    "Drive": "NOT_CALLED_AFTER_STAGE1_UNKNOWN",
+    "documentation_snapshot_commit": "16cd646a1943a9f33051ec300b7bb856b6ac994f",
+    "fixed_wrapper_code_pin": "dd844bc7a1103127198ee2e0343b130f73faa9a4",
+    "receipt": "evidence/FINAL_BACKUP_RECEIPT.json",
+    "scope": "98 Git files + documentation readback1 + exact prior intake archive1; native276MB original linked by SHA/provider IDs, not included; subsequent metadata/prompt closeout is separate"
   },
-  "documentation_integration_note": "An initial parent metadata check expected the word PASS in the top-level backup status, but the actual schema uses VERIFIED. It stopped before writes; corrected to check raw byte/SHA/content/payload fields. No scientific result or test was rerun."
+  "documentation_integration_note": "An initial parent metadata check expected the word PASS in the top-level backup status, but the actual schema uses VERIFIED. It stopped before writes; corrected to check raw byte/SHA/content/payload fields. No scientific result or test was rerun.",
+  "closeout_contract": {
+    "scope": "Final metadata plus latest canonical prompts and actual Git readback receipt",
+    "source": "Exact final Git bytes after this content is published",
+    "archive": "Separate HE29_NATIVE_ADMISSION_HANDOFF_CLOSEOUT_20261020_<sha8>.tar.gz",
+    "receipt_location": "Detached from the self-referential final Git commit; object identity recorded in final PR78 body",
+    "Drive_new_calls": 0
+  },
+  "next": "Accessible NCP executor observes actual processes and saved canary/build; if no prior canary, runs only prepared a5 single r4/table512 canary through dd844 wrapper and ed5 watchdog. No reference/transport/analyzer replay.",
+  "tool_calls_science_scope": {
+    "Exa": "New official3.12 API read only for wrapper; raw evidence preserved",
+    "SciSpace": "Reused previous scientific research, no new scientific question",
+    "Wolfram": "Reused previous exact cancellation checks, no duplicate CAS"
+  }
 }
