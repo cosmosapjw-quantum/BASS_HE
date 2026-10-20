@@ -1,6 +1,6 @@
 {
   "schema": "he29.hpc64.dag.v1",
-  "updated_utc": "2026-10-20T21:43:03.151142+00:00",
+  "updated_utc": "2026-10-20 22:35:30 UTC",
   "anchor_publication": "a02ae998570d5a0a4fffdf46299ee77b1c738759",
   "lane": "hpc64_20261021",
   "stages": {
@@ -82,7 +82,8 @@
     },
     "C10": {
       "name": "배포 판정·실행 인계",
-      "status": "SCOPED_COMPLETE_PUBLISHED_EXECUTION_HANDOFF_NATIVE_NOT_RUN_EXECUTOR_ACCESS_HOLD"
+      "status": "SCOPED_HANDOFF_COMPLETE_NATIVE_PENDING_REPORTED_SSH_AUTH_HOLD",
+      "latest_return_evidence": "USER_NARRATIVE_NO_RAW_SSH_LOGS; NO_NEW_SCIENCE_RESULT"
     }
   },
   "reused": {
@@ -95,7 +96,8 @@
       "id": "HE29_PACKED_R4_TABLE512",
       "count": 1,
       "status": "NOT_RUN",
-      "solver_threads": 1
+      "solver_threads": 1,
+      "execution_blocker": "REMOTE_PROCESS_AND_ARTIFACT_VISIBILITY_UNOBSERVED_AFTER_REPORTED_SSH_AUTH_FAILURE"
     }
   ],
   "activity": {
@@ -116,7 +118,8 @@
     "code_actual_readbacks": 63,
     "documentation": "99ad3286c61a9e86ecf11a844260bf9ed36b5f01",
     "documentation_actual_readbacks": 11,
-    "final_metadata": "THIS_COMMIT_ID_RECORDED_IN_DETACHED_FINAL_GIT_READBACK"
+    "final_metadata": "4977b6ddc1d905454482fd6cac1b3768bbe2d32f",
+    "auth_hold_metadata": "THIS_COMMIT_ID_RECORDED_IN_DETACHED_PUBLICATION_READBACK_AND_PR78"
   },
   "backup": {
     "stage1_Dropbox": "ACTUAL_RAW_PASS_PAYLOAD9_MEMBER10",
@@ -148,7 +151,17 @@
       "fixed_code_pin": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
       "Drive": "NOT_CALLED"
     },
-    "final_metadata_closeout": "DETACHED_ARCHIVE_AFTER_THIS_PUBLICATION_READBACK; READ_LATEST_PR78_RECEIPT"
+    "final_metadata_closeout": {
+      "name": "HE29_HPC64_HANDOFF_CLOSEOUT_20261021_bef6a93a.tar.gz",
+      "bytes": 31556,
+      "sha256": "bef6a93adc05f4bc20a8c710f2b635fcf7c26e03976cd883a0c3e060bf43c82c",
+      "payload_verified": 15,
+      "regular_members": 16,
+      "canonical_prompts_verified": 2,
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_aIQ",
+      "publication": "4977b6ddc1d905454482fd6cac1b3768bbe2d32f",
+      "status": "REUSED_PRIOR_ACTUAL_RAW_PASS_NOT_REVERIFIED"
+    }
   },
   "limits": [
     "Other conversations returned an actual service error; no exhaustive absence claim.",
@@ -177,5 +190,23 @@
     "manufactured_archive_payload_readback": "PASS_2_OF_2_MEMBER3"
   },
   "current_unit": "SCOPED_R_C_COMPLETE_WITH_DECLARED_NCP_CANARY_AND_DRIVE_HOLDS",
-  "next_execution": "One existing r4/table512 packed canary through fixed802a adapters after actual host/process/artifact gates; no baseline resubmission."
+  "next_execution": "Restore usable authorized executor access, then observe actual processes and stored results; if no existing canary return or active process is found in the observed scope, use fixed802a for the single r4/table512 canary. This intake does not verify remote absence.",
+  "latest_executor_return": {
+    "status": "PRE_EXECUTION_HOLD_REMOTE_AUTH_BLOCKED",
+    "evidence_status": "USER_PROVIDED_EXECUTOR_NARRATIVE",
+    "receipt": "evidence/EXECUTOR_AUTH_HOLD_20261021.json",
+    "received_utc": "2026-10-20 22:35:30 UTC",
+    "raw_ssh_logs": "NOT_PROVIDED",
+    "reported_designated_key": "MISSING_IN_EXECUTOR_ENVIRONMENT",
+    "reported_available_key": "PUBLIC_KEY_AUTHENTICATION_REJECTED",
+    "remote_process_visibility": "UNOBSERVED",
+    "remote_saved_artifacts_visibility": "UNOBSERVED",
+    "reported_RUN_READY_calls": 0,
+    "reported_NCP_submitted": 0,
+    "reported_NCP_started": 0,
+    "reported_native_calls": 0,
+    "scientific_failure_evidence": false,
+    "minimal_next_step": "An authorized executor with authenticated NCP access must observe actual processes and stored HE29 artifacts before considering the one prepared canary.",
+    "publication_and_backup_receipt": "DETACHED_ACTUAL_READBACK_AND_ARCHIVE_IDENTITY_IN_PR78; FIXED_CODE_UNCHANGED"
+  }
 }

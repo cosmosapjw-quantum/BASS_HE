@@ -9,3 +9,7 @@
 이전현재상태는[native_intake_20261020T1315Z](native_intake_20261020T1315Z/README_KO.md)에그대로보존된다. 그이전0/4스냅샷은현재4/4를덮어쓰지않는다. 모든기존science/transport/tests/analysis는완료영수증을재사용한다. 이전원문README는[publicationa02](https://github.com/cosmosapjw-quantum/BASS_HE/blob/a02ae998570d5a0a4fffdf46299ee77b1c738759/research/he29_survival_budget_20261018/README_KO.md)에있다.
 
 PR78 Draft/open/unmerged유지. RDC호출0/no-retry. 실제새반환이있으면identity와부분결과분석부터한다. 물리식/허용치/19ledgerfullstate/gate유지. continuum/globaltemperature/EoR/wholeGrackle/Bianchi-CMB HOLD.
+
+## 최신 실행자 반환
+
+2026-10-21 수령한 실행자 보고는 **SSH 인증 단계의 실행 전 HOLD**다. 지정 키 부재와 사용 가능한 local key의 공개키 인증 거부로 `/proc`·기존 `HE29_*`를 관측하지 못했고, `RUN_READY.sh` 미호출 및 제출·시작·native 호출0을 보고했다. 원문 SSH 로그는 제공되지 않았으므로 사용자 narrative와 이번 직접 읽은 Git 증거를 구분한다. Canary는 NOT_RUN, 원격 상태는 UNOBSERVED, 기준해4/4는 재사용한다. [반환 기록](hpc64_20261021/evidence/EXECUTOR_AUTH_HOLD_20261021.json)을 읽고, 다음 실행 전에 실제 원격 프로세스와 저장 결과를 확인한다.

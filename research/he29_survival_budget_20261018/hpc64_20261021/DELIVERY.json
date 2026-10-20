@@ -1,7 +1,7 @@
 {
   "schema": "he29.hpc64.delivery.v1",
-  "updated_utc": "2026-10-20T21:43:03.151142+00:00",
-  "status": "SCOPED_RESEARCH_CODE_COMPLETE_EXECUTION_HANDOFF_READY_NCP_NOT_RUN",
+  "updated_utc": "2026-10-20 22:35:30 UTC",
+  "status": "SCOPED_RESEARCH_CODE_COMPLETE_NATIVE_PENDING_REPORTED_EXECUTOR_AUTH_HOLD",
   "anchor_publication": "a02ae998570d5a0a4fffdf46299ee77b1c738759",
   "code_commit": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
   "packed_core_pin": "a5d4711460c09b310b78c9692aa62534b7a843d3",
@@ -45,7 +45,7 @@
     "open_blockers": 0,
     "receipt": "evidence/C9_REVIEW.json"
   },
-  "NCP_execution": "NOT_SUBMITTED_NOT_STARTED_NO_ACCESSIBLE_EXECUTOR_OBSERVED_RDC_NOT_CALLED",
+  "NCP_execution": "NOT_RUN_REPORTED_PRE_EXECUTION_SSH_AUTH_HOLD_REMOTE_STATE_UNOBSERVED",
   "HPC_limits": {
     "table_workers_max": 48,
     "build_jobs_max": 8,
@@ -104,8 +104,37 @@
     "fixed_code_pin": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
     "Drive": "NOT_CALLED"
   },
-  "final_metadata_publication": "ACTUAL_HEAD_IN_DETACHED_FINAL_GIT_READBACK_AND_PR78",
-  "final_metadata_closeout": "NEXT_DETACHED_SMALL_ARCHIVE_FROM_THIS_HEAD_CANONICAL_PROMPTS_AND_FINAL_GIT_RECEIPT",
+  "final_metadata_publication": "4977b6ddc1d905454482fd6cac1b3768bbe2d32f",
+  "final_metadata_closeout": {
+    "name": "HE29_HPC64_HANDOFF_CLOSEOUT_20261021_bef6a93a.tar.gz",
+    "bytes": 31556,
+    "sha256": "bef6a93adc05f4bc20a8c710f2b635fcf7c26e03976cd883a0c3e060bf43c82c",
+    "payload_verified": 15,
+    "regular_members": 16,
+    "canonical_prompts_verified": 2,
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_aIQ",
+    "publication": "4977b6ddc1d905454482fd6cac1b3768bbe2d32f",
+    "status": "REUSED_PRIOR_ACTUAL_RAW_PASS_NOT_REVERIFIED"
+  },
   "current_unit_R_C": "SCOPED_COMPLETE_WITH_NATIVE_CANARY_PENDING",
-  "source_authority": "FIXED_GIT_CODE_PIN; ARCHIVES_SUPPLY_DATA_AND_EVIDENCE_ONLY"
+  "source_authority": "FIXED_GIT_CODE_PIN; ARCHIVES_SUPPLY_DATA_AND_EVIDENCE_ONLY",
+  "latest_executor_return": {
+    "status": "PRE_EXECUTION_HOLD_REMOTE_AUTH_BLOCKED",
+    "evidence_status": "USER_PROVIDED_EXECUTOR_NARRATIVE",
+    "receipt": "evidence/EXECUTOR_AUTH_HOLD_20261021.json",
+    "received_utc": "2026-10-20 22:35:30 UTC",
+    "raw_ssh_logs": "NOT_PROVIDED",
+    "reported_designated_key": "MISSING_IN_EXECUTOR_ENVIRONMENT",
+    "reported_available_key": "PUBLIC_KEY_AUTHENTICATION_REJECTED",
+    "remote_process_visibility": "UNOBSERVED",
+    "remote_saved_artifacts_visibility": "UNOBSERVED",
+    "reported_RUN_READY_calls": 0,
+    "reported_NCP_submitted": 0,
+    "reported_NCP_started": 0,
+    "reported_native_calls": 0,
+    "scientific_failure_evidence": false,
+    "minimal_next_step": "An authorized executor with authenticated NCP access must observe actual processes and stored HE29 artifacts before considering the one prepared canary.",
+    "publication_and_backup_receipt": "DETACHED_ACTUAL_READBACK_AND_ARCHIVE_IDENTITY_IN_PR78; FIXED_CODE_UNCHANGED"
+  },
+  "latest_metadata_publication": "AUTH_HOLD_RECEIPT_AND_HANDOFF_UPDATE; ACTUAL_COMMIT_IN_DETACHED_READBACK_AND_PR78"
 }

@@ -16,6 +16,22 @@ code tree bf52fcabc3b03e00df140d2fdf913f05b3699d08, 실제 changed63/63 Git read
 후속 문서 HEAD는 별도다. 시작할 때 실제 최신HEAD/PR본문과 DELIVERY를 읽어.
 이전 publication a02ae998570d5a0a4fffdf46299ee77b1c738759, 이번 intake cbbed9c3da6b41914527e322d2cb9bea9dc7b1f3 실제8/8 readback. 단계마다중복파일이있으므로고유파일수로합산하지마.
 
+[최신 실행자 반환: 2026-10-21 수령]
+사용자가 전달한 실행자 narrative에 따르면 고정802a 격리 checkout은 준비했지만,
+지정 SSH 키가 없고 사용 가능한 local key도 공개키 인증이 거부되어
+NCP /proc와 기존HE29_* 경로를 관측하지 못했다.
+RUN_READY 미호출, 제출0/시작0/native0, canary NOT_RUN, 원격 상태 UNOBSERVED다.
+SSH 원문 로그·원격 process snapshot은 제공되지 않았다. 이번 intake에서 SSH 실패를 재현하지 않았다.
+이 보고를 수치 실행 실패나 원격 실행 부재로 승격하지 마.
+현재lane evidence/EXECUTOR_AUTH_HOLD_20261021.json과 AUTH_HOLD_GITHUB_DELTA_20261021.json을 읽어.
+승인된 접근이 실제로 동작하는 실행자가 먼저 프로세스·저장 결과를 관측한 뒤에만 진행해.
+이 접근 blocker 때문에 원래4/4 기준해·62 tests·완료 연구를 다시 실행하거나 수치 코드를 바꾸지 마.
+보고된 Drive HE29 HPC64 빈 검색은 이전 upload UNKNOWN을 해소하지 않는다. Drive/RDC 재시도 금지를 유지해.
+이전 최종4977 closeout은 HE29_HPC64_HANDOFF_CLOSEOUT_20261021_bef6a93a.tar.gz,
+31556bytes, SHAbef6a93adc05f4bc20a8c710f2b635fcf7c26e03976cd883a0c3e060bf43c82c,
+Dropboxid:BSpOijBcT10AAAAAAD_aIQ, 실제payload15/15/member16/16/prompts2/2 PASS를 재사용해.
+이번 추가 metadata 게시·보존의 실제 identity는 PR78의 최신 실행자 반환 항목에서 읽어.
+
 [먼저 읽기]
 research/he29_survival_budget_20261018/의 README_KO.md,DAG_STATUS.json,CODEX_HANDOFF_PROMPT_KO.md,NEW_CHAT_HANDOFF_KO.md.
 현재 lane hpc64_20261021의 README_KO.md,RESEARCH_KO.md,DAG_STATUS.json,DELIVERY.json,NCP_HANDOFF_KO.md.

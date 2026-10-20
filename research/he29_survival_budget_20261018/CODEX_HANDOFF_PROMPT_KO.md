@@ -6,6 +6,16 @@
 
 이 문서는 NCP에 접근 가능한 실행자를 위한 것이다. 사용자에게 다운로드·업로드·터미널 작업을 요구하지 않는다. ChatGPT 측의 이번 NCP 제출/시작은0이며 원격 process는 UNOBSERVED다. Remote Desktop Commander는 월간 quota/no-retry 금지에 따라 호출하지 않는다. 별도 실행 경로가 실제로 접근 가능할 때만 아래를 수행한다.
 
+## 2026-10-21 실행자 반환: 인증 단계 HOLD
+
+후속 실행자는 고정 `802a32361288bf5aa0e0d1f63c912768f1a1d407` checkout을 준비했지만, 지정 SSH 키가 해당 환경에 없고 사용 가능한 local key도 공개키 인증이 거부되어 NCP의 `/proc`와 기존 `HE29_*` 경로를 관측하지 못했다고 보고했다. **`RUN_READY.sh` 미호출, 제출·시작·native 호출 각각0, packed canary NOT_RUN**이다.
+
+이 내용은 **사용자가 전달한 실행자 narrative**로 수령했다. SSH 원문 로그·원격 process snapshot·원격 파일 목록은 제공되지 않았고, 이번 intake에서 SSH 실패를 재현하지 않았다. 원격 상태는 **UNOBSERVED**이며 실행 부재를 뜻하지 않는다. Dropbox의 기존 백업 검색과 Drive의 빈 `HE29 HPC64` 검색도 보고된 범위로만 기록한다. 이전 Drive upload UNKNOWN은 바뀌지 않는다.
+
+다음 실행자는 동작하는 승인된 NCP 접근 경로에서 실제 프로세스와 저장 결과를 먼저 관측한다. 기존 반환이 있으면 identity와 부분 결과 분석부터 하고, 그 관측 범위에 중복 실행이 없을 때만 준비된 단일 canary를 진행한다. 현재 authentication blocker 때문에 수치 코드를 수정하거나 완료된62 methods·기준해4/4를 다시 실행할 근거는 없다. RDC 금지와 기존 Drive 무재시도 상태를 유지한다.
+
+기록: `evidence/EXECUTOR_AUTH_HOLD_20261021.json`, `evidence/AUTH_HOLD_GITHUB_DELTA_20261021.json` (현재 HPC64 lane 기준).
+
 ## 실행 범위와 고정 identity
 
 실행할 수 있는 미완료 HE29 과학 case는 **m8/GL4/q0,r4/table512 packed canary 한 개**다. 과거 ABI1 canary는 동일 과학 case의 옛 경로다. 네 native Radau+DOP853 pair는 이미4/4 admitted이므로 다시 제출하지 않는다. 저장된09929 budget 분석, transport, 기존 tests/benchmark/clean build를 재실행하지 않는다. 다른 모델의 NOT_RUN을 이 queue에 추가하지 않는다.

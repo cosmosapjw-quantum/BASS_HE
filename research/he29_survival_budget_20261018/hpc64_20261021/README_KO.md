@@ -2,6 +2,16 @@
 
 이번 단위는 **고정 solver를 유지한 source-table 병렬 구성/cache, native 기록 묶음 쓰기, 자원·중복 실행 제어**를 구현한다. 기준 publication `a02ae998570d5a0a4fffdf46299ee77b1c738759`에서 완료된 네 기준해4/4와 저장된09929 분석을 재사용했다. 준비된 미완료 HE29 과학 실행은 **r4/table512 packed canary 한 개**다. 아직 NCP 제출/시작0, native/physical solver0, 실제 HE29 속도 미측정이다.
 
+## 2026-10-21 실행자 반환: 인증 단계 HOLD
+
+후속 실행자는 고정 `802a32361288bf5aa0e0d1f63c912768f1a1d407` checkout을 준비했지만, 지정 SSH 키가 해당 환경에 없고 사용 가능한 local key도 공개키 인증이 거부되어 NCP의 `/proc`와 기존 `HE29_*` 경로를 관측하지 못했다고 보고했다. **`RUN_READY.sh` 미호출, 제출·시작·native 호출 각각0, packed canary NOT_RUN**이다.
+
+이 내용은 **사용자가 전달한 실행자 narrative**로 수령했다. SSH 원문 로그·원격 process snapshot·원격 파일 목록은 제공되지 않았고, 이번 intake에서 SSH 실패를 재현하지 않았다. 원격 상태는 **UNOBSERVED**이며 실행 부재를 뜻하지 않는다. Dropbox의 기존 백업 검색과 Drive의 빈 `HE29 HPC64` 검색도 보고된 범위로만 기록한다. 이전 Drive upload UNKNOWN은 바뀌지 않는다.
+
+다음 실행자는 동작하는 승인된 NCP 접근 경로에서 실제 프로세스와 저장 결과를 먼저 관측한다. 기존 반환이 있으면 identity와 부분 결과 분석부터 하고, 그 관측 범위에 중복 실행이 없을 때만 준비된 단일 canary를 진행한다. 현재 authentication blocker 때문에 수치 코드를 수정하거나 완료된62 methods·기준해4/4를 다시 실행할 근거는 없다. RDC 금지와 기존 Drive 무재시도 상태를 유지한다.
+
+기록: `evidence/EXECUTOR_AUTH_HOLD_20261021.json`, `evidence/AUTH_HOLD_GITHUB_DELTA_20261021.json` (현재 HPC64 lane 기준).
+
 ## 최신 intake
 
 연구 전에 BASS_HE85 branch와 PR78/79/80, 관련 저장소의 정해진 branch/PR/Actions 범위, 백업 변경분, 다른 대화를 확인했다. 새 HE29 반환은 관측 범위에서 없었다. 다른 대화는 실제 서비스 오류, Dropbox의 대규모 folder 조회는 partial pagination이다. 모든 대화나 미게시 원격 실행의 부재를 주장하지 않는다. `evidence/*DELTA*`, `PENDING_INVENTORY.json`, `PERSONAL_CONTEXT_RAW.json`에 범위·실패·후속 판단을 보존한다.
