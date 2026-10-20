@@ -1,3 +1,13 @@
+# 2026-10-20 현재: HE29 최적화 및 입력복원 보정
+
+새 최적화 코드·유도·실측·NCP 연결은 [optimization_20261020/README_KO.md](optimization_20261020/README_KO.md)에 있다. 첫 checkpoint8cb0ebb9는19파일 actual Git readback이 맞았다. 최종 실행 pin/게시/이중백업은 새DELIVERY를읽는다. 새native0/4,기존연구재실행0이며 원래네baseline쌍우선이다.
+
+고정1569입력manifest의62자리SHA한항목을실제archive로보정했다. 원래1569실행자는상위Codexhandoff의**두overlay**를적용한다. 실제22DATA복원/preflight는PASS다. 이번의합성속도측정을native전체가속으로해석하지않는다.
+
+아래는이전연구·게시의보존기록이다. 현재실행지침은[CODEX_HANDOFF_PROMPT_KO.md](CODEX_HANDOFF_PROMPT_KO.md)와새optimization인계를우선한다.
+
+---
+
 # HE29 추가 진행: VigilODE Rust 연결까지 완료
 
 새 구현 publication은 `57642252991b5c453db66eb5a078e6a62cc6f4ea`이며 54/54 GitHub readback과 완전 archive의 Drive·Dropbox raw bytes/229개 payload 해시 일치를 확인했다. 고정 실행 코드와 후속 문서 commit을 구별한다.

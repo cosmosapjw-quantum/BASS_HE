@@ -26,7 +26,7 @@
   },
   "native_calls": 0,
   "physical_changes": false,
-  "next": "Inspect new native returns/processes using an available authorized NCP executor. Finish only the four original Radau+DOP853 pairs. After all four are admitted, the optional pinned VigilODE r4/table512 canary is available; no duplicate transport or old source suite.",
+  "next": "Read any new native returns first; run only missing original four Radau+DOP853 pairs at1569 with both overlays. After all four admitted, use published ABI2 code_commit from optimization DELIVERY for the single optional r4/table512 canary.",
   "input_backup": {
     "original_sha256": "a70d320c7ead5f1fd93170c18f1f80ae5eb58a293a6045a0f728bb7ae2743205",
     "drive_id": "1I31wE6A3laYE6nxMcKNmm5rNMeESIsXi",
@@ -39,7 +39,7 @@
     "delivery_receipt": "results/publication_retry/DELIVERY.json"
   },
   "intake_publication_commit": "3f16fe525d726aaebbe9262e0e869540321209eb",
-  "observation_utc": "2026-10-19T11:54:39.788649+00:00",
+  "observation_utc": "2026-10-20T02:43:24+00:00",
   "new_activity": {
     "native_calls": 0,
     "inherited_tests_run": 0,
@@ -94,9 +94,11 @@
   "last_delivery_update_utc": "2026-10-19T13:41:26.787076+00:00",
   "optimization_extension": {
     "path": "optimization_20261020",
-    "status": "LOCAL_R1_R5_C5_CHECKPOINT",
+    "status": "IMPLEMENTED_AND_SCOPED_MEASUREMENTS_PASS_CODE_PUBLICATION_PENDING",
     "native_pairs": 0,
     "input_manifest": "REPAIRED_AND_22_DATA_PREFLIGHT_PASS",
-    "dag": "optimization_20261020/DAG_STATUS.json"
+    "dag": "optimization_20261020/DAG_STATUS.json",
+    "canary": "NOT_RUN_REQUIRES_4_ADMITTED_BASELINE_PAIRS",
+    "threads": 1
   }
 }

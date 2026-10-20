@@ -1,25 +1,27 @@
 # HE29 최적화 루프 — 2026-10-20
 
-현재 단계: **R1–R5 완료, C5–C8 구현·검증 중. 새 HE29 native 기준해0/4.**
+**구현·경량 검증·합성 성능 측정을 완료했다. 기본값은 순차 packed Rust JVP다.**
+새 HE29 native 기준해는 관측상0/4이며 NCP 제출/시작은0이다. 네 원래 기준해 쌍을 먼저 확보한 뒤 optional r4/table512 한 건에서만 새 경로를 비교한다.
 
-standalone `physmath-research-loop` 1.0.0의 새 최적화 루프다. 2026-10-19의 1.3 연구·코드와 HE28/HE29 완료 근거는 재사용하며, 같은 연구와 source-only suite를 반복하지 않는다.
+## 결과와 실행 가능한 코드
 
-## 실제 완료한 일
+| 변경 | 근거 | 상태 |
+|---|---|---|
+| 입력 manifest의62자리 SHA 한 항목 보정 | 원본 a70 archive 전체/내부 SHA, 실제22 DATA 복원/preflight, 독립 검토 | 완료; baseline1569에는 별도 patch 적용 |
+| 원래 LIL Jacobian 대입 → canonical CSR 배열 조립 | 세 실제 photon geometry의 data/indices/indptr 동일, 제조 RHS로 조립 시간 분리 | 최초 paired8.35–8.78배; 전체 native 속도는 미측정 |
+| exact time/interval geometry·sigma 캐시 | 부모 생성 경로와 원래 RHS 일치, endpoint mask 무효화 검증 | opt-in 모델에 구현 |
+| 정확한 state/time의 physical Jacobian 저장 및 Rust JVP | 원래 행 누산 순서, 전체4+K+19 state/error norm | ABI2 실제 compile·새 검사 PASS |
+| Rayon1.12.0 독립 photon 출력 행1/2/4 workers | 같은 solver/입력/허용치의 합성 IVP, endpoint 비트·attempt 동일 | packed1이1.38–1.53배 빠름;2/4는느려 기본값1 |
+| NCP build/canary controller | Git/source/binary/table/4개 baseline admission, bounded process와 실패 기록 | 준비된 코드; native 실행은 별도 |
 
-- 최신 BASS_HE PR78 HEAD329f, 원본 rei_bianchi 및 관련 BASS/bass_cr/WU/rec 백업과 VigilODE의 새 실행·source identity를 읽었다. 새 VigilODE/REI 결과는 다른 모델의 결과이고 HE29의 네 기준해를 대체하지 않는다. 백업 관측 범위·실제 raw read·한계는 evidence/BACKUP_INTAKE.json에 있다.
-- Git1569 입력 manifest의62자리 SHA 한 항목을 원본 archive SHA와 내부 manifest로 보정했다.22개 DATA 복원/preflight/독립 검토가 PASS다. Archive는 DATA 공급원이며 실행 소스는 Git이다.
-- 원래 Jacobian은 gas 유한차분4열과 photon12개 구조 행으로 저장할 수 있다. gas4 + photon K + passive ledger19를 모두 유지한다. 계수는 `16K+92`개, storage는 `8(16K+92)` bytes다. gas 열 뒤 photon 열의 원래 누적 순서를 지킨다.
-- 원래 `Model.jac`의 LIL 대입을 canonical CSR 배열 조립으로 바꿨다. explicit zero 제거와 정렬을 유지했고 K512/640/896의 indices/indptr/data가 정확히 같다.
-- 조립의 최초 paired 측정(9회, 회당3호출) median ratio는8.3455/8.7024/8.7804다. 이는 원래 photon geometry와 제조된 affine gas RHS로 조립 비용을 분리한 실험이다. HE29 native chemistry·전체 solver 가속률을 뜻하지 않는다.
-- exact-time geometry/sigma 캐시는 interval 변경 전후 무효화한다. 기존 HE27 source 캐시는 그대로 재사용하며 새 성과로 세지 않는다.
-- 새 모델 검증8개 최초 PASS, trial domain 보정 뒤 관련2개 PASS(현재9개 고유 test methods). 원래 물리/native owner와 허용치, 전체19 ledger error norm은 그대로다.
+[연구 유도·외부 재사용](RESEARCH_KO.md), [실제 성능과 한계](PERFORMANCE_KO.md), [NCP 실행 지침](NCP_HANDOFF_KO.md), [DAG](DAG_STATUS.json), [게시·백업 영수증](DELIVERY.json)을 읽는다.
 
-## 진행 중
+`src/optimized_model.py`는 원래 gas 유한차분 RHS5회와 photon 계수를 보존한다. `rust_bridge/src/packed.rs`는 계수16K+92개와 재사용 workspace를 보관한다. `src/packed_reference.py`는 원래 RHS/partial-time callback을 재사용하며 준비 계수만 전송한다. `ncp/build_bridge.py`는 clean publication Git과 고정 VigilODE a21을 사용하고, `src/run_packed.py`는 네 원래 기준해 admission 뒤 단일 canary만 허용한다. Archive의 source나 binary는 실행 시작점이 아니다.
 
-`a21d573980f66fe02891bd216153443b5352f921` VigilODE solver를 재사용하는 ABI2 packed JVP와 선택적1/2/4 row workers를 검증 중이다. 최신 upstream의 autonomous identity-mass 단일-step 가속은 이 비자율 adaptive 경로와 직접 같은 계약이 아니므로 native 검증 없이 바꾸지 않는다. Schur/4×4 faer 경로는 분석 대상으로 유지하며 현재 driver의 외부 preconditioner hook이 없어 새 solver를 개발하지 않는다.
+## 과학적 우선순위
 
-## 게시·백업·DAG
+m8/GL4/q0에서 `(r2,512),(r4,512),(r8,512),(r4,1024)` 각각 Radau+DOP853. 원래 여섯 transport와 HE28 pilot/study, HE29 90-case/720-bound/50-test와 기존 VigilODE96/3/Schur23 근거는 재사용하고 반복하지 않았다. 절대 fraction1e-11과 gas-temperature1e-9 K 비교 gate를 포함한 모든 기존 물리·보존 gate를 유지한다.
 
-이 문서는 R1–R5/C5 체크포인트다. 게시 commit과 새 이중 백업 영수증은 이후 DELIVERY.json에서 기록한다. 현재 패키지/byte readback을 과거 백업 영수증으로 대신 주장하지 않는다. 기존7bf7398b/88285fa4 묶음은 보존한다.
+첫 intake는329f, 첫 checkpoint publication은8cb0ebb91a78d2f1b751caa1c3ffc5d170ddfe41(19파일 actual readback MATCH)다. 현재 코드 publication과 백업은 DELIVERY의 정확한 SHA/provider receipt를 따른다. 과거7bf7398b/88285fa4와 c47/798 묶음은 불변이다.
 
-Native 우선순위는 m8/GL4/q0의 `(r2,512),(r4,512),(r8,512),(r4,1024)`, 각 Radau+DOP853뿐이다. 네 쌍이 모두 admit된 뒤 optional r4/table512 VigilODE canary 한 개에 새 kernel을 사용할 수 있다. continuous spectrum/full EoR/global gas-temperature error/upstream Grackle whole runtime/Bianchi/CMB 관측은 HOLD다.
+연속 spectrum·전역 gas-temperature 오차상한·전체 EoR·whole upstream Grackle·관측 Bianchi/CMB는 HOLD다. 합성 Rust JVP 실행 수를 원본 native chemistry 실행 수로 세지 않는다. `physmath-research-loop` standalone1.0.0의 이번 연구 단위와 과거1.3.0 근거 재사용을 구분한다.
