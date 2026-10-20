@@ -1,3 +1,13 @@
+# 2026-10-20 최적화·입력복원 보정
+
+실제 최신 intake HEAD는 `329f838399f24d3952f780d469ad657d8630c4e2`다. GitHub/연관 백업에서 새 HE29 native 반환은 발견되지 않았고 기준해는 관측상 0/4다. NCP 미반환 프로세스 상태는 미관측이며 월간 quota 도구의 재시도·재연결 금지를 유지한다.
+
+고정1569의 INPUT_SHA256.json에 22개 중 한 SHA가 62자리로 게시된 결함을 실제 자동 복원 중 발견했다. 원본 a70 archive 전체 SHA는 맞았고 해당 TABLE.json의 내부 manifest는 올바른64자리였다. `ncp/REPAIR_INPUT_MANIFEST_20261020.patch`는 누락된 `4b` 두 문자만 복원한다. 실제22 DATA 복원, preflight, 독립 SHA 검토가 통과했다. 이 보정은 원본 DATA·물리식·허용치 변경이 아니다.
+
+아래 baseline shell에는 기존 pytest 재사용 overlay와 **새 입력 manifest patch를 모두 적용**한다. 이전 VigilODE 인계의 `5764225`는 역사적 source pin이다. 현재 opt-in 최적화는 `optimization_20261020/`에서 준비 중이고, 새 native 실행으로 계산하지 않는다. 첫 우선순위는 기존 네 Radau+DOP853 쌍이며 추가 transport 실행은 없다.
+
+---
+
 # 2026-10-19 추가 인계: 게시된 VigilODE 확장
 
 기존 네 기준해의 우선순위와 아래 고정1569 실행 절차는 유지한다. 새 확장은 `vigilode_20261019/`에 있으며 실제 Rust compile·3 smoke·Python96개 검증을 끝냈다. HE29 native 기준해 0/4 및 optional canary NOT_RUN을 이 검사로 바꾸지 않는다. 네 쌍을 모두 분석·admit한 후에만 [vigilode_20261019/NCP_HANDOFF_KO.md](vigilode_20261019/NCP_HANDOFF_KO.md)의 단일 r4/table512 비교를 수행할 수 있다. Schur 소거는 이론·합성 검증이며 production 전용 preconditioner로 구현했다고 주장하지 않는다.
@@ -41,12 +51,17 @@ HE29_REL=research/he29_survival_budget_20261018
 HE29_PATCH="$HE29_STAGE/REUSE_SOURCE_VALIDATION_20261019.patch"
 git show "$HE29_PUBLICATION_REV:$HE29_REL/ncp/REUSE_SOURCE_VALIDATION_20261019.patch" > "$HE29_PATCH"
 printf '%s  %s\n' cd0b7ab40688b3c60ab689876690b2edd71aea5268b4e7ff285a637ca094a33e "$HE29_PATCH" | sha256sum -c -
+HE29_INPUT_PATCH="$HE29_STAGE/REPAIR_INPUT_MANIFEST_20261020.patch"
+git show "$HE29_PUBLICATION_REV:$HE29_REL/ncp/REPAIR_INPUT_MANIFEST_20261020.patch" > "$HE29_INPUT_PATCH"
+printf '%s  %s\n' 71f16bc8bc946bdd9107c476662fb83b9812cb4078045b933066fca300eb1e85 "$HE29_INPUT_PATCH" | sha256sum -c -
 git checkout --detach 1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f
 [[ "$(git rev-parse HEAD)" == 1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f ]]
 [[ -z "$(git status --porcelain)" ]]
 [[ "$(git hash-object "$HE29_REL/ncp/BOOTSTRAP_REFERENCES.sh")" == ed227e2937f554bd5ecda4bf24dd5597b73a77a4 ]]
 git apply --check "$HE29_PATCH"
 git apply "$HE29_PATCH"
+git apply --check "$HE29_INPUT_PATCH"
+git apply "$HE29_INPUT_PATCH"
 export HE29_WORK_ROOT="$HOME/HE29_REFERENCE_$(date -u +%Y%m%dT%H%M%SZ)"
 bash "$HE29_REL/ncp/START_REFERENCES.sh"
 

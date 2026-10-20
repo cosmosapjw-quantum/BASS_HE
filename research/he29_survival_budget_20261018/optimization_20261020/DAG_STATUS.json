@@ -1,0 +1,49 @@
+{
+  "schema": "he29.optimization.dag.v1",
+  "date": "2026-10-20",
+  "parent_publication": "329f838399f24d3952f780d469ad657d8630c4e2",
+  "baseline_science_revision": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
+  "vigilode_revision": "a21d573980f66fe02891bd216153443b5352f921",
+  "workflow": "standalone physmath-research-loop 1.0.0",
+  "stages": {
+    "R1_INTAKE": "COMPLETE_NO_HE29_RETURN",
+    "R2_REUSE": "PRIMARY_SOURCES_AND_NEW_UPSTREAM_READ",
+    "R3_SCOPE": "SAME_PHYSICS_TOLERANCES_FULL_STATE",
+    "R4_DERIVATION": "PACKED_ACTION_AND_LEDGER_NORM",
+    "R5_CONSTRUCTIVE_CHECK": "WOLFRAM_ZERO_RESIDUALS",
+    "R6_MEASUREMENT": "ASSEMBLY_COMPLETE_FFI_PENDING",
+    "R7_CRITIQUE": "IN_PROGRESS",
+    "R8_THEORY_REPORT": "IN_PROGRESS",
+    "R9_PUBLICATION": "CHECKPOINT_PENDING",
+    "R10_BACKUP": "CHECKPOINT_PENDING",
+    "C1_IDENTITY": "COMPLETE",
+    "C2_PROFILE": "ASSEMBLY_FIRST_COMPLETE",
+    "C3_REUSE": "PINNED_VIGILODE_AND_RAYON_ROW_SCOPE",
+    "C4_DESIGN": "EXACT_CSR_ORDER_EXACT_STATE_CACHE",
+    "C5_IMPLEMENTATION": "MODEL_COMPLETE_RUST_FFI_IN_REVIEW",
+    "C6_CHECKS": "MODEL_PASS_SCOPED_RUST_IN_PROGRESS",
+    "C7_BENCHMARK": "ASSEMBLY_DONE_FFI_PENDING",
+    "C8_REVIEW": "IN_PROGRESS",
+    "C9_NCP_READY": "BASELINE_MANIFEST_REPAIR_READY_OPTIMIZED_CANARY_PENDING",
+    "C10_DELIVERY": "CHECKPOINT_PENDING"
+  },
+  "native": {
+    "reference_pairs_observed": 0,
+    "expected": 4,
+    "submitted": false,
+    "ncp_processes": "UNOBSERVED_PROVIDER_QUOTA_NO_RETRY",
+    "he28_replays": 0,
+    "he29_source_suites_replayed": 0,
+    "optional_canary": "NOT_RUN_REQUIRES_4_ADMITTED_PAIRS"
+  },
+  "physics_changed": false,
+  "input_data_changed": false,
+  "input_manifest_repaired": true,
+  "hold": [
+    "continuous_spectrum",
+    "full_EoR",
+    "global_temperature_error_bound",
+    "whole_upstream_Grackle",
+    "observational_Bianchi_CMB"
+  ]
+}

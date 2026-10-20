@@ -1,3 +1,13 @@
+# 2026-10-20 최적화·입력복원 보정
+
+실제 최신 intake HEAD는 `329f838399f24d3952f780d469ad657d8630c4e2`다. GitHub/연관 백업에서 새 HE29 native 반환은 발견되지 않았고 기준해는 관측상 0/4다. NCP 미반환 프로세스 상태는 미관측이며 월간 quota 도구의 재시도·재연결 금지를 유지한다.
+
+고정1569의 INPUT_SHA256.json에 22개 중 한 SHA가 62자리로 게시된 결함을 실제 자동 복원 중 발견했다. 원본 a70 archive 전체 SHA는 맞았고 해당 TABLE.json의 내부 manifest는 올바른64자리였다. `ncp/REPAIR_INPUT_MANIFEST_20261020.patch`는 누락된 `4b` 두 문자만 복원한다. 실제22 DATA 복원, preflight, 독립 SHA 검토가 통과했다. 이 보정은 원본 DATA·물리식·허용치 변경이 아니다.
+
+아래 baseline shell에는 기존 pytest 재사용 overlay와 **새 입력 manifest patch를 모두 적용**한다. 이전 VigilODE 인계의 `5764225`는 역사적 source pin이다. 현재 opt-in 최적화는 `optimization_20261020/`에서 준비 중이고, 새 native 실행으로 계산하지 않는다. 첫 우선순위는 기존 네 Radau+DOP853 쌍이며 추가 transport 실행은 없다.
+
+---
+
 # HE29 현재 재개점: VigilODE 확장 게시, 네 기준해 대기
 
 physmath-research-loop 1.3.0으로 이어간다. 먼저 현재 PR78와 관련 GitHub·백업의 새 반환부터 확인한다. 상위 README/DAG/Codex prompt와 `vigilode_20261019/{README_KO.md,DAG_STATUS.json,DELIVERY.json,NCP_HANDOFF_KO.md}`를 실제로 읽는다. 관련 intake·build·smoke·source addendum은 그 아래 evidence에 있다.

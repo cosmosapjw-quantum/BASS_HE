@@ -1,6 +1,6 @@
 {
   "schema": "he29.continuation.dag.v4",
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "execution_commit": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
   "code_prompt_snapshot_commit": "961ca736af53f18e6527f876524c67e22aa89fe0",
   "pull_request": 78,
@@ -91,5 +91,12 @@
     "complete_backup_sha256": "7bf7398b77b2bf04a6917bef4241fc216764c7658ebf25c85e5df7377fb6147a",
     "complete_backup_status": "BOTH_PROVIDERS_RAW_AND_229_PAYLOAD_HASHES_MATCH"
   },
-  "last_delivery_update_utc": "2026-10-19T13:41:26.787076+00:00"
+  "last_delivery_update_utc": "2026-10-19T13:41:26.787076+00:00",
+  "optimization_extension": {
+    "path": "optimization_20261020",
+    "status": "LOCAL_R1_R5_C5_CHECKPOINT",
+    "native_pairs": 0,
+    "input_manifest": "REPAIRED_AND_22_DATA_PREFLIGHT_PASS",
+    "dag": "optimization_20261020/DAG_STATUS.json"
+  }
 }
