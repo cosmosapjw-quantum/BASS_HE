@@ -1,3 +1,54 @@
+# HE29 현재 인계: 공유 기준해 budget·부분 반환 분석 — 2026-10-20
+
+## 현재 실행 출처와 완료 범위
+
+현재 후속 단위는 `continuation_20261020T0557Z`다. 새 분석 코드의 고정 commit은 `09929b0a06a833f0c2497e72f074ec8694a264df`이며, 실제 게시·readback 상태는 [continuation_20261020T0557Z/DELIVERY.json](continuation_20261020T0557Z/DELIVERY.json)의 `implementation_publication`과 연결된 PR78 영수증을 읽는다. 실행 전에 `status=PUBLISHED_EXACT_GIT_READBACK_PASS`와 전체 40자리 `code_commit`을 확인한다. 이후 문서 closeout HEAD, 새 분석 code pin, 기존 baseline 과학 pin과 ABI2 실행 pin을 각각 보존한다.
+
+이 분석 commit의 tree는 `f35be906ea4a201849516ee58825b6fa03597a5a`다. 2026-10-20 07:02:52 UTC의 실제 Git fetch/show에서 새·변경 파일 **45/45 bytes 및 SHA 일치, PASS**를 확인했다. 이 이후 문서 commit은 분석 실행 pin을 바꾸지 않는다.
+
+현재 반환 분석의 실행 절차는 [continuation_20261020T0557Z/NCP_HANDOFF_KO.md](continuation_20261020T0557Z/NCP_HANDOFF_KO.md)에 있다. 아래 기존 문서의 **1569 baseline 실행 Bash와 두 overlay는 원문 그대로 유지**했다. 새 분석 checkout은 최신 DELIVERY에서 확인한 분석 code pin을 사용하고, 이미 복원된 baseline DATA를 `--data-root <baseline checkout의 HE29 디렉터리>`로 읽는다. `--study-root`를 생략하면 그 DATA root 아래 `inputs/study`를 사용한다. source·manifest는 분석 Git에서 읽고 원래 DATA SHA를 대조한다. 입력만 복원하려고 `START_REFERENCES.sh`를 다시 호출하지 않는다.
+
+| 역할 | 고정 정체성 |
+|---|---|
+| 새 read-only budget·부분 반환 분석 | `09929b0a06a833f0c2497e72f074ec8694a264df`; 최종 DELIVERY와 실제 Git readback을 확인 |
+| 원래 HE29 science·tests | `1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f` |
+| HE28 parent | `a41dd37124e34cb22bb9782aaf687a0da91640b7` |
+| 원본 native owner | `f7830e2f55e7a1938bc3c98f61b60651f8dae474` |
+| 기존 ABI2 packed 실행 코드 | `a5d4711460c09b310b78c9692aa62534b7a843d3` |
+| VigilODE dependency | `a21d573980f66fe02891bd216153443b5352f921` |
+| 직전 optimization 문서 closeout | `1765522318438e966e61d8a72f12084550da399d` |
+| 이번 intake checkpoint | `3b125fc3cf80ce715353be17f640f2d9a5fb9f4a`, 실제 Git 12/12 byte readback PASS |
+
+새 코어 10개, 부분 반환 분류 12개, CLI 통합 6개로 **28개 새 test method가 각각 첫 실행 PASS**다. 독립 제조계 20개와 CAS의 signed closure·공유 기준해 상쇄 0도 보존했다. 실제 로컬의 반환 부재 경로에 새 CLI를 연결한 결과는 **exit 1 / HOLD**, 채택 pair 0/4, reference-dependent 행 0, 기존 DATA 18/18 SHA 일치였다. 이 결과는 로컬 분석 경로의 확인이며 NCP 프로세스 관측이 아니다. 근거는 새 lane의 `evidence/{LINEAR_BUDGET_CHECKS,PARTIAL_RETURN_CHECKS,ANALYZE_BUDGET_CHECKS,LOCAL_NO_RETURN_CHECK}/`와 `THEORY_REVIEW.json`, `WOLFRAM_BUDGET.json`, 독립 코드 검토 영수증에 있다.
+
+이번 분석 연결에서 기존 연구·검사·native·solver·기존 audit 계산의 재실행은 모두 0이다. 초기 intake에 적용한 standalone 1.0.0 이력과 이후 사용자가 명시한 plugin 1.3.0 적용을 구분하며, 버전 전환을 이유로 완료 단계를 다시 실행하지 않는다.
+
+## 다음 실행자의 우선순위
+
+먼저 최신 GitHub의 PR78·관련 branch·반환 artifact, 관련 저장소의 새 source/binary/result identity, Drive·Dropbox의 변경분과 접근 가능한 NCP 저장 결과를 확인한다. 이전 intake 영수증을 재사용하고 이후 변경분을 기록한다. 새 반환이 있으면 저장된 IDENTITY·TABLE·binary/owner·source/input/parent manifest·6점 qualification·thread/runtime을 읽고 분석한다. 다른 REI/VigilODE 모형의 결과는 해당 정체성으로 보존한다.
+
+최종 관측은 **native 기준해 0/4, 선택적 canary NOT_RUN, NCP 제출 0건·시작 0건, 미반환 프로세스 미관측**이다. Remote Desktop Commander의 월간 quota에 따른 재시도·재연결 금지는 유지한다. 접근 가능한 실행자가 실제 프로세스를 확인하기 전에는 중복 실행이 없다고 가정하지 않는다. 사용자에게 파일 다운로드·업로드·터미널 입력을 요구하지 않는다.
+
+새 반환이 없고 실행자가 중복 작업 부재를 확인했다면, 준비된 m8/GL4/q0의 `(r2,512), (r4,512), (r8,512), (r4,1024)` 네 case에 각각 Radau+DOP853만 전달한다. 완료 case를 다시 실행하지 않는다. 네 pair가 모두 원래 admission을 통과한 뒤에만 단일 r4/table512 ABI2 packed canary를 연결한다. canary는 기존 a5 코드, VigilODE a21, 1 thread와 원래 ledger 포함 error norm을 사용한다. NCP의 범위는 컴파일·작은 환경 수정·실제 실행이다.
+
+## 분석의 정확한 의미
+
+`partial_returns.py`는 부분 진행과 완료 admission을 분리한다. method-only·두 method 완료 후 RESULT 미작성·실패·timeout을 기록하고, 다른 유효 case를 보존한다. 원래 `check_result`·`admit_pair`의 물리 gate를 재사용하며 반환 파일 일관성 검사는 별도 필드다. 다른 binary/source/parent/input/thread/Python/NumPy/SciPy cohort를 섞은 대비는 HOLD다. 실제 binary bytes를 제공하지 않았으면 `binary_bytes_readback=NOT_PROVIDED`를 유지한다.
+
+`analyze_budget.py`는 저장 transport `T`와 선택한 기준 후보 `θ`에 대해 signed residual `T−θ`, strip·table 대비와 조립 closure를 출력한다. 공유 θ의 계수를 먼저 합쳐 상쇄한 뒤 `product_hull` 또는 `coherent_hull`을 계산한다. 이 hull은 유한 수치 후보 집합의 범위이며 참 ODE 해의 오차반경이 아니다. method별 시간과 case 전체 시간도 별도로 보존한다.
+
+기존 time/mixed 차이는 SHA `2bcd94edde08854599597ea8b962683a86cb5ca4af1ad0e1c3bec09b9e3c20cc`의 `evidence/reused/NATIVE_RETURN_AUDIT.json` 원문을 재사용한다. 반환 의존 행은 실제 pair가 없으면 HOLD다. 연속 스펙트럼·전역 기체온도 오차상한·전체 EoR·upstream Grackle 전체 동등성·관측 Bianchi/CMB는 해당 범위 검증 전까지 HOLD다.
+
+## 게시와 백업을 읽는 순서
+
+이번 intake 백업은 `BASS_HE_HE29_INTAKE_CHECKPOINT_20261020T0557Z_f6efa95f.tar.gz`, 53,483 bytes, SHA256 `f6efa95f75100e9b8b50cf532e2ca9101725dc99b305e211fe3c70c74d057760`다. Dropbox `id:BSpOijBcT10AAAAAAD_SRw`에서 raw 14/14 파일과 manifest payload 12/12를 검증했다. Drive는 업로드 결과 **UNKNOWN**, 실제 object ID·raw readback 미확인이다. 재시도하지 않으며 dual-provider 완료로 표시하지 않는다. 이 archive의 범위는 intake checkpoint다. [evidence/INTAKE_BACKUP.json](continuation_20261020T0557Z/evidence/INTAKE_BACKUP.json)을 읽는다.
+
+기존 optimization 전체 `77f1c73e…`와 문서 closeout `3380c7c4…`의 양쪽 provider raw PASS는 불변 근거로 재사용한다. **새 구현·최종 문서의 백업 완료 여부는 새 DELIVERY 및 실제 PR/백업 영수증의 archive SHA·size·provider ID·content_hash·raw readback을 읽어 판단한다.** intake 백업이나 이전 archive의 PASS를 새 구현 전체 백업으로 대신 기록하지 않는다.
+
+아래 내용은 직전 optimization 인계 원문이다. 현재 분석 lane 연결과 최신 게시·백업 판정은 이 절 및 새 lane의 DELIVERY/NCP_HANDOFF를 따른다.
+
+---
+
 # HE29 Codex/NCP 현재 인계 — 2026-10-20
 
 ## 최신 게시·백업 상태

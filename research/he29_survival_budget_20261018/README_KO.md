@@ -1,3 +1,19 @@
+# 2026-10-20 05:57 UTC 후속 연구 — 현재 분석 실행 pin
+
+새 공유 기준해·부분 반환 분석 코드는 `09929b0a06a833f0c2497e72f074ec8694a264df`에 게시됐고 실제 Git 재조회에서 45/45 파일의 바이트와 SHA가 일치했다. 새 test method 28개(코어10·분류기12·CLI6)가 첫 실행에서 통과했다. 독립 제조 이론20개, Wolfram의 두 소거 항등식, 한 번의 분담 C9 검토와 실제 로컬 no-return CLI도 기록했다. 기존 과학·source·Rust 최적화 검사는 반복하지 않았다.
+
+새 분석은 공유 reference의 계수를 먼저 합쳐 정확히 소거하고 signed temperature residual과 strip/table 대비를 구성한다. 두 수치 후보가 만드는 finite hull과 동일 method를 선택하는 coherent hull을 구분한다. 입력 DATA18개를 SHA와 원래 model/table/source에 연결하고, method-only·timeout·invalid 등 부분 반환을 판독한다. 원래 audit는 보존한 bytes 그대로 재사용한다. 이 finite-candidate 결과를 참 ODE 해 또는 기체온도 오차상한으로 해석하지 않는다.
+
+이번 intake에서 확인된 새 HE29 기준해는 **0/4**다. 관련 저장소의 다른 모델 실행 결과는 HE29 반환으로 사용하지 않았다. 다른 대화 검색은 실제 오류를 반환했으며 미게시 NCP 프로세스는 관측하지 못했다. Remote Desktop Commander의 기존 quota/no-retry 상태를 유지했고 새 제출·시작은0이다.
+
+- [현재 DELIVERY](continuation_20261020T0557Z/DELIVERY.json) · [현재 DAG](continuation_20261020T0557Z/DAG_STATUS.json)
+- [새 연구·증명](continuation_20261020T0557Z/RESEARCH_KO.md) · [새 분석 README](continuation_20261020T0557Z/README_KO.md)
+- [원래 네 pair 실행 인계](CODEX_HANDOFF_PROMPT_KO.md) · [새 read-only 분석 명령](continuation_20261020T0557Z/NCP_HANDOFF_KO.md) · [새 대화 재개](NEW_CHAT_HANDOFF_KO.md)
+
+원래 science/test pin1569와 ABI2 최적화 pin a5d471은 유지한다. 아래 최적화 성능·실제 빌드는 이전 완료 근거이며 이번에 새 측정하지 않았다. intake3b125fc의 Dropbox raw/내부 검증은PASS, Drive 단일 업로드는UNKNOWN이다. 최종 보존은 현재 DELIVERY와 실제 후속 receipt를 따른다. 이전 COMPLETE77f1/문서CLOSEOUT3380의 dual raw PASS를 그대로 재사용한다.
+
+---
+
 ## 2026-10-20 최적화 closeout — 현재 게시 상태
 
 최종 ABI2 실행 코드는 `a5d4711460c09b310b78c9692aa62534b7a843d3`이며, 실제 Git 재조회에서 82/82 파일의 바이트와 SHA256이 일치했다. 이 뒤의 문서·영수증 commit은 실행 code pin을 바꾸지 않는다. 새 경로는 원래 VigilODE RODAS5P–GMRES를 재사용하며, canonical CSR 조립과 정확한 상태를 기준으로 한 Rust packed JVP cache를 추가했다.
