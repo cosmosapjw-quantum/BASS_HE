@@ -1,6 +1,6 @@
 {
   "schema": "he29.native_intake.dag.v1",
-  "updated_utc": "2026-10-20T13:24:23.103545+00:00",
+  "updated_utc": "2026-10-20T17:24:36.147006+00:00",
   "current": true,
   "pins": {
     "science": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
@@ -22,11 +22,11 @@
     "STORED_BUDGET": "REUSED_BYTES_SHA_MATCH_EXIT_0_NO_ANALYZER_RERUN",
     "INDEPENDENT_NATIVE_REVIEW": "PASS_SCOPED_SEVERE_0_LOW_REPORTING_1",
     "PACKED_BASELINE_GATE": "SATISFIED_4_OF_4",
-    "PACKED_WRAPPER": "IN_PROGRESS_REUSE_PR79_GROUP_CLEANUP",
+    "PACKED_WRAPPER": "IMPLEMENTED_NEW_9_FIRST_PASS_C9_IN_PROGRESS",
     "PACKED_CANARY": "NOT_RUN",
     "NCP_PROCESS_VISIBILITY": "UNOBSERVED",
-    "PUBLICATION": "PREPARED_NOT_YET_PUSHED",
-    "BACKUP": "PREPARED_NOT_YET_UPLOADED"
+    "PUBLICATION": "INTAKE25F4AEA4_ACTUAL_73_OF_73_PASS",
+    "BACKUP": "INTAKE_CREATE_ONLY_UPLOAD_IN_PROGRESS"
   },
   "activity": {
     "this_intake_native_calls": 0,
@@ -39,7 +39,9 @@
     "adopted_external_native_calls": 1161446,
     "adopted_external_pairs": 4,
     "adopted_external_campaign_timeouts": 0,
-    "packed_canary_runs": 0
+    "packed_canary_runs": 0,
+    "new_packed_wrapper_test_methods": 9,
+    "replayed_packed_wrapper_test_methods": 0
   },
   "next": "Finish and publish only the packed execution alias wrapper, new boundary tests and NCP handoff. No reference or analysis rerun. Same-runtime executor must observe existing processes and saved canary before one fresh canary.",
   "physical_changes": false,

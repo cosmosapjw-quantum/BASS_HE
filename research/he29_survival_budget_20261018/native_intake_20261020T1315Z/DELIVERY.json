@@ -1,6 +1,6 @@
 {
   "schema": "he29.native_intake.delivery.v1",
-  "updated_utc": "2026-10-20T13:24:23.103816+00:00",
+  "updated_utc": "2026-10-20T17:24:36.147407+00:00",
   "status": "INTAKE_AND_SAVED_ANALYSIS_ACCEPTED_WRAPPER_IN_PROGRESS",
   "lane": "native_intake_20261020T1315Z",
   "pins": {
@@ -57,23 +57,31 @@
     "adopted_external_native_calls": 1161446,
     "adopted_external_pairs": 4,
     "adopted_external_campaign_timeouts": 0,
-    "packed_canary_runs": 0
+    "packed_canary_runs": 0,
+    "new_packed_wrapper_test_methods": 9,
+    "replayed_packed_wrapper_test_methods": 0
   },
   "publication": {
     "pr": 78,
     "branch": "research/he29-survival-budget-20261018",
     "required_state": "DRAFT_OPEN_UNMERGED",
-    "status": "NOT_YET_PUSHED",
-    "observed_initial_head": "d63135807c80dc2ada7f85214b5087b9e3dff375"
+    "status": "INTAKE_PUBLISHED_EXACT_READBACK_PASS",
+    "observed_initial_head": "d63135807c80dc2ada7f85214b5087b9e3dff375",
+    "intake_commit": "25f4aea4f03d5b52147b26e4beff809fb3d29f0c",
+    "intake_tree": "736c1ff4116af894fdae56ed7f5a4bd78a814aa2",
+    "intake_actual_file_readbacks": 73,
+    "intake_receipt": "evidence/INTAKE_PUBLICATION_READBACK.json"
   },
   "stage_backup": {
     "status": "NOT_YET_UPLOADED"
   },
   "new_canary_connection": {
     "finding": "HE29-PACKED-WATCHDOG-REUSE-01",
-    "status": "IN_PROGRESS",
+    "status": "IMPLEMENTED_NEW_9_FIRST_PASS_C9_IN_PROGRESS",
     "science_code_changed": false,
-    "old_controller_tests_replayed": 0
+    "old_controller_tests_replayed": 0,
+    "wrapper_sha256": "befd6740a09811ae2f2c61cb7bd0ee54fc96740d17d21f83282f7453c143ccfe",
+    "first_validation": "evidence/PACKED_ENTRY_TESTS_FIRST.json"
   },
   "prior_unknown_backups": {
     "7a86_Drive": "UNKNOWN_AFTER_43S_NO_ACK; ONE_EXACT_NAME_NOT_FOUND_OBSERVED; NO_RETRY",
@@ -86,5 +94,9 @@
     "remote_processes": "UNOBSERVED",
     "RDC": "USER_PROHIBITED_NO_CALLS"
   },
-  "copy_manifest": "evidence/INTAKE_COPY_MANIFEST.json"
+  "copy_manifest": "evidence/INTAKE_COPY_MANIFEST.json",
+  "implementation_publication": {
+    "status": "NOT_YET_PUBLISHED",
+    "code_commit": null
+  }
 }

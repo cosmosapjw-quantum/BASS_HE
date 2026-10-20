@@ -97,3 +97,16 @@ Controller 전체 wall은 `5672.090418861015 s`, serial concurrency 1, case cap 
 다른 대화 검색은 실제 서비스 오류다. GitHub/백업의 구체적 delta 범위와 이전 실패는 `evidence/GITHUB_DELTA_INTAKE.json`, `BACKUP_DELTA_20261020T1305Z.json`, `CONTEXT_EXECUTOR_DELTA.json`에 있다. 미게시 실행의 전체 부재는 주장하지 않는다. 현재 NCP 프로세스는 UNOBSERVED다. Remote Desktop Commander는 기존 월간 quota 정책에 따라 호출·재시도·재접속하지 않았다.
 
 연속 스펙트럼, 전역 gas-temperature 오차상한, 전체 EoR, upstream Grackle 전체 동등성, 관측 Bianchi/CMB는 HOLD다. finite-donor survival 및 GL256/512 안정성의 이전 근거도 그 범위에서만 재사용한다. 백업 성공은 새로운 과학적 동등성이나 수치 결과가 아니다.
+
+
+## 8. 새 wrapper 연결 검증과 실행 작업공간 복구
+
+새 `ncp/packed_entry.py`는 고정 a5 target와 ed5 controller, 원래 execution module의 실제 Git root/HEAD/tracked-clean/SHA를 검사한다. Build/preflight/canary만 노출하며 원래 인자와 worker argv를 유지한다. 출력은 checkout 밖의 서로 분리된 새 경로이고 기존 partial/실패를 보존한다. 원래 a5 scientific code bytes는 수정하지 않았다.
+
+새 연결 범위의 **9 test method가 2026-10-20 13:26 UTC 첫 실행에서 PASS**했다. Fake target/watchdog/Git 응답으로 source 거절, target/worker 인자 전달, binding, 기존 결과 보호, 실패 전파를 확인했다. 기존14 watchdog tests, scientific import, solver/native/build 실행은 모두0이다. 새 NCP handoff의 Bash4블록 syntax도 PASS이며 명령은 실행하지 않았다. 증거는 `evidence/PACKED_ENTRY_TESTS_FIRST.json`, `NCP_HANDOFF_SYNTAX.json`이다.
+
+이 연결에 필요한 API 근거는 Exa로 Python3.12 공식 subprocess/os 문서의 `start_new_session`, `wait`, `killpg` section을 실제 읽어 확인했다. 첫 fetch의 section 이전 truncation과 검색된 최신3.15 문서 제외를 기록했다. 기존 watchdog 알고리즘과14 tests를 다시 검증하는 작업으로 확대하지 않았다. 새로운 과학 질문이나 소거식이 없어 SciSpace/Wolfram은 이전 근거를 재사용했다. `EXA_PACKED_ENTRY_API.json`과 exact raw 반환 두 파일이 근거다.
+
+작업 중 runtime 전환에서 scratch의 파일이 사라진 것을 root와 reviewer가 실제 ENOENT로 관측했다. 게시된 intake는 Git25f4aea4에서 새 checkout으로73/73 bytes를 복원했고, 원래 선택 증거68/68 SHA도 일치했다. Wrapper/tests/handoff는 보존된 tool 원문으로 복원해 유실 전 SHA가3/3 일치했으므로 첫9PASS와syntax를 재사용했다. 파생 Exa 요약의 유실된 원래 생성시각만 복구하지 못해 새 재구성 표지를 달았고 원bytes 복원이라고 주장하지 않았다. 그 과정에서 수치·검사·Exa 반복실행은0이다. `RUNTIME_RECOVERY.json`, `PACKED_ENTRY_RECOVERY.json`에 상세 범위를 보존한다.
+
+실제 clock가13시대에서17시대로 바뀐 시간공백 뒤 PR79/80과 최근 PR 목록 및 한정된 backup delta를 새로 관측했다. 두 결과/controller HEAD는 그대로였고, 관측된13:10이후 backup 범위에서는 추가HE29 반환0이었다. 이 관측은 미게시 remote process의 부재를 뜻하지 않는다.
