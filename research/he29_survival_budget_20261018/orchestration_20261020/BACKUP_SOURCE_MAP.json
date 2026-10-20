@@ -1,0 +1,33 @@
+{
+  "input": {
+    "filename": "BASS_HE_HE29_RESUME_COMPLETE_20261018_a70d320c.tar.gz",
+    "bytes": 129635,
+    "sha256": "a70d320c7ead5f1fd93170c18f1f80ae5eb58a293a6045a0f728bb7ae2743205",
+    "drive_id": "1I31wE6A3laYE6nxMcKNmm5rNMeESIsXi",
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_Ncg",
+    "this_lane": "metadata plus actual Drive download fullSHA and22DATAhashes PASS"
+  },
+  "budget_complete": {
+    "filename": "BASS_HE_HE29_REFERENCE_BUDGET_COMPLETE_20261020_7a86d5bb.tar.gz",
+    "bytes": 6621294,
+    "sha256": "7a86d5bbe27da9da52584edb27145b626c6954455729c9af3365147fc4802c08",
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_SUQ",
+    "this_lane": "direct metadata only; prior raw receipt reused",
+    "drive": "UNKNOWN"
+  },
+  "budget_closeout": {
+    "filename": "HE29_REFERENCE_BUDGET_HANDOFF_CLOSEOUT_20261020_d0a76860.tar.gz",
+    "bytes": 41313,
+    "sha256": "d0a768606dfe208152aa6015daa094361095dafefd0710e8b24eadf85d88b749",
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_SVQ",
+    "this_lane": "direct metadata only; prior raw receipt reused"
+  },
+  "optimization_complete": {
+    "filename": "BASS_HE_HE29_OPTIMIZATION_COMPLETE_20261020_77f1c73e.tar.gz",
+    "bytes": 4719121,
+    "sha256": "77f1c73e8b4239cabcf03983ec9f0852fe334ac732544e410947935c7f4d7ab6",
+    "drive_id": "1NBjWqsghFxbujCP6FELTfn7VPU-J8zfz",
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_SLA",
+    "this_lane": "direct Drive metadata only; prior both-provider91payloadPASS reused"
+  }
+}

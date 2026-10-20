@@ -1,0 +1,27 @@
+{
+  "new_tests": {
+    "initial_methods": 11,
+    "initial_result": "PASS",
+    "after_review_defect_fix_methods": 12,
+    "result": "PASS",
+    "wall_s_unittest_report": 0.37,
+    "command": "python -m unittest discover -s publication/tests -p test_continue_missing_references.py -v",
+    "evidence": "controller_tests_after_watchdog.stderr",
+    "fresh_launcher_methods": 2,
+    "unique_methods_total": 14,
+    "fresh_result": "PASS",
+    "fresh_evidence": "fresh_tests.stderr"
+  },
+  "actual_review_defect": "leader exited on TERM while resistant descendant survived inherited watchdog; fixed additive wrapper tested",
+  "production_import_plan": {
+    "result": "PASS",
+    "evidence": "PRODUCTION_PLAN_TEST.json",
+    "native_calls": 0,
+    "binary": "manufactured non-executable fixture",
+    "scope": "pre-watchdog-fix controller plan/import path; wrapper added afterward is covered by focused fake-child tests"
+  },
+  "scientific_runs": 0,
+  "remote_ncp_calls": 0,
+  "unchanged_owner_test_suites_rerun": 0,
+  "bootstrap_overlay": "FRESH_BOOTSTRAP_OVERLAY.json"
+}

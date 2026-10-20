@@ -1,0 +1,16 @@
+test_any_occupied_path_is_preserved (test_continue_missing_references.ControllerTests.test_any_occupied_path_is_preserved) ... ok
+test_cohort_mismatch_blocks_dispatch (test_continue_missing_references.ControllerTests.test_cohort_mismatch_blocks_dispatch) ... ok
+test_completed_and_partial_cases_never_dispatched (test_continue_missing_references.ControllerTests.test_completed_and_partial_cases_never_dispatched) ... ok
+test_fake_child_failure_stops_at_first (test_continue_missing_references.ControllerTests.test_fake_child_failure_stops_at_first) ... ok
+test_new_occupancy_between_plan_and_dispatch_stops (test_continue_missing_references.ControllerTests.test_new_occupancy_between_plan_and_dispatch_stops) ... ok
+test_original_shorter_budget_cannot_be_reset (test_continue_missing_references.ControllerTests.test_original_shorter_budget_cannot_be_reset) ... ok
+test_original_watchdog_pin (test_continue_missing_references.ControllerTests.test_original_watchdog_pin) ... ok
+test_original_watchdog_times_out_fake_child (test_continue_missing_references.ControllerTests.test_original_watchdog_times_out_fake_child) ... ok
+test_same_campaign_lock_excludes_second_controller (test_continue_missing_references.ControllerTests.test_same_campaign_lock_excludes_second_controller) ... ok
+test_source_drift_rejected_before_import (test_continue_missing_references.ControllerTests.test_source_drift_rejected_before_import) ... ok
+test_visible_original_campaign_found_without_killing (test_continue_missing_references.ControllerTests.test_visible_original_campaign_found_without_killing) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.114s
+
+OK

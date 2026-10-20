@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/37bc4acea758/orchestration_20261020/repos/BASS_HE/publication/src/continue_missing_references.py",
+    "--baseline-root",
+    "/workspace/scratch/37bc4acea758/orchestration_20261020/repos/BASS_HE/production_fixture/research/he29_survival_budget_20261018",
+    "--analysis-root",
+    "/workspace/scratch/37bc4acea758/orchestration_20261020/repos/BASS_HE/production_fixture/research/he29_survival_budget_20261018",
+    "--root",
+    "/workspace/scratch/37bc4acea758/orchestration_20261020/repos/BASS_HE/production_fixture/manufactured_plan/references",
+    "--binary",
+    "/workspace/scratch/37bc4acea758/orchestration_20261020/repos/BASS_HE/production_fixture/manufactured_plan/NON_EXECUTABLE_BINARY",
+    "--receipt",
+    "/workspace/scratch/37bc4acea758/orchestration_20261020/repos/BASS_HE/production_fixture/manufactured_plan/BUILD_RECEIPT.json",
+    "--out",
+    "/workspace/scratch/37bc4acea758/orchestration_20261020/repos/BASS_HE/production_fixture/manufactured_plan/controller_plan"
+  ],
+  "returncode": 0,
+  "wall_s": 1.0248016109981108,
+  "native_calls": 0,
+  "binary": "manufactured_non_executable_fixture",
+  "input_archive_sha256": "a70d320c7ead5f1fd93170c18f1f80ae5eb58a293a6045a0f728bb7ae2743205",
+  "input_files_verified": 22,
+  "parent_sources_verified": 20,
+  "source_root": "d63135807c80dc2ada7f85214b5087b9e3dff375",
+  "scope": "real production source imports and dry planning only; no native build or physical execution"
+}
