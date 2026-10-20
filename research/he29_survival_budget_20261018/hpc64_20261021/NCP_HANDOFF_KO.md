@@ -8,7 +8,7 @@
 
 | 역할 | 고정값 |
 |---|---|
-| 새 host/table/trace/canary 실행 code | 이 lane 최신 `DELIVERY.json`의 `code_commit`; 문서 HEAD와 구분 |
+| 새 host/table/trace/canary 실행 code | `802a32361288bf5aa0e0d1f63c912768f1a1d407`; 최신 DELIVERY에서 readback PASS 확인, 문서 HEAD와 구분 |
 | 원래 ABI2 core/bridge/solver | `a5d4711460c09b310b78c9692aa62534b7a843d3` |
 | watchdog | `ed5adca43f474553a9bce7f5de45d464be5905cb` |
 | VigilODE | `a21d573980f66fe02891bd216153443b5352f921` |

@@ -29,3 +29,5 @@ Intake는 `cbbed9c3da6b41914527e322d2cb9bea9dc7b1f3`로 게시, 실제8/8 Git re
 실행자는 `NCP_HANDOFF_KO.md`를 따라 Git pin을 읽고 `ncp/RUN_READY.sh`를 한 번 사용한다. 실제 host·process·저장 결과를 관측한 뒤 기존 bridge를 재사용하고 필요한 구간만 계산한다. 사용자에게 파일 전송/터미널 작업을 넘기지 않는다. RDC 호출0이며 별도 접근 가능한 NCP 실행자는 현재 발견되지 않았다.
 
 원래 physics·반응률·적분 허용치·gate와 full-state19ledger norm을 유지한다. 연속 스펙트럼, 전역온도상한, 전체EoR, wholeGrackle 동등성, 관측Bianchi/CMB는 HOLD다. 초기 standalone skill1.0.0과 이번 통합 plugin1.3.0 이력을 구분하며 버전 때문에 완료 단계를 반복하지 않는다.
+
+현재 고정 실행 code는 `802a32361288bf5aa0e0d1f63c912768f1a1d407`, 실제 changed63/63 Git readback PASS다. Code/research archive `aa274776…`의 Dropbox actual raw payload70/70·regular member71/71 PASS를 확인했다. Stage1 Drive는 ACK 없이640.2초 후 parent interruption, 단일 exact-name NOT_FOUND 관측으로 UNKNOWN이며 이후 Drive 호출0이다.

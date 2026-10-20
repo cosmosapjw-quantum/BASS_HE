@@ -1,9 +1,9 @@
 {
   "schema": "he29.hpc64.delivery.v1",
-  "updated_utc": "2026-10-20T21:36:17.756318+00:00",
-  "status": "CODE_AND_RESEARCH_VERIFIED_PUBLICATION_PENDING",
+  "updated_utc": "2026-10-20T21:39:46.071584+00:00",
+  "status": "CODE_PUBLISHED_READBACK_PASS_HANDOFF_READY_NATIVE_PENDING",
   "anchor_publication": "a02ae998570d5a0a4fffdf46299ee77b1c738759",
-  "code_commit": null,
+  "code_commit": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
   "packed_core_pin": "a5d4711460c09b310b78c9692aa62534b7a843d3",
   "watchdog_pin": "ed5adca43f474553a9bce7f5de45d464be5905cb",
   "analysis_pin": "09929b0a06a833f0c2497e72f074ec8694a264df",
@@ -14,7 +14,7 @@
   "NCP_started": 0,
   "remote_process_visibility": "UNOBSERVED",
   "PR78": "RETAIN_DRAFT_OPEN_UNMERGED",
-  "code_readback_status": "PENDING",
+  "code_readback_status": "PASS",
   "new_distinct_test_methods": 62,
   "old_tests_replayed": 0,
   "stage1_publication": "cbbed9c3da6b41914527e322d2cb9bea9dc7b1f3",
@@ -72,5 +72,20 @@
     "local_archive_verification": "PASS"
   },
   "stage1_dropbox_id": "id:BSpOijBcT10AAAAAAD_aGA",
-  "stage1_Drive": "UNKNOWN_NO_RETRY"
+  "stage1_Drive": "UNKNOWN_NO_RETRY",
+  "code_tree": "bf52fcabc3b03e00df140d2fdf913f05b3699d08",
+  "code_actual_readbacks": 63,
+  "execution_entry": "hpc64_20261021/ncp/RUN_READY.sh",
+  "code_backup": {
+    "name": "BASS_HE_HE29_HPC64_CODE_RESEARCH_20261021_aa274776.tar.gz",
+    "bytes": 135774,
+    "sha256": "aa27477614c4b4670901d5d891aa1835d0e928030368eb59ff7b449432131ae0",
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_aHQ",
+    "content_hash": "d768738a933ae4e8016275044d5768ffe4365d1f8365a66a6b416e6981ef31ad",
+    "payloads_verified": 70,
+    "regular_members": 71,
+    "status": "ACTUAL_RAW_PASS",
+    "Drive": "NOT_CALLED_AFTER_STAGE1_UNKNOWN"
+  },
+  "documentation_status": "PREPARING_PUBLISHED_HANDOFF_SNAPSHOT"
 }
