@@ -1,6 +1,6 @@
 {
   "schema": "he29.current.dag.v7",
-  "updated_utc": "2026-10-20T21:39:46.071584+00:00",
+  "updated_utc": "2026-10-20T21:43:03.151142+00:00",
   "current_lane": "hpc64_20261021",
   "current_delivery": "hpc64_20261021/DELIVERY.json",
   "current_research": "hpc64_20261021/RESEARCH_KO.md",
@@ -55,7 +55,7 @@
     },
     "R10": {
       "name": "연구 정리·체크포인트",
-      "status": "CODE_RESEARCH_CHECKPOINT_PUBLISHED_AND_RAW_BACKED_UP_DOC_FINALIZATION"
+      "status": "SCOPED_COMPLETE_RESEARCH_CODE_AND_DOC_CHECKPOINTS_RAW_VERIFIED"
     },
     "C1": {
       "name": "목표·기준 결과 설정",
@@ -95,7 +95,7 @@
     },
     "C10": {
       "name": "배포 판정·실행 인계",
-      "status": "READY_CODE_AND_HANDOFF_NATIVE_BLOCKED_BY_EXECUTOR_ACCESS"
+      "status": "SCOPED_COMPLETE_PUBLISHED_EXECUTION_HANDOFF_NATIVE_NOT_RUN_EXECUTOR_ACCESS_HOLD"
     }
   },
   "reused": {
@@ -147,7 +147,9 @@
     "code": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
     "code_tree": "bf52fcabc3b03e00df140d2fdf913f05b3699d08",
     "code_actual_readbacks": 63,
-    "documentation": "PREPARING_CURRENT_HANDOFF_SNAPSHOT"
+    "documentation": "99ad3286c61a9e86ecf11a844260bf9ed36b5f01",
+    "documentation_actual_readbacks": 11,
+    "final_metadata": "THIS_COMMIT_ID_RECORDED_IN_DETACHED_FINAL_GIT_READBACK"
   },
   "backup": {
     "stage1_Dropbox": "ACTUAL_RAW_PASS_PAYLOAD9_MEMBER10",
@@ -164,7 +166,22 @@
       "Drive": "NOT_CALLED_AFTER_STAGE1_UNKNOWN"
     },
     "old_unknowns": "PRESERVED_NO_RETRY",
-    "stage1_receipt": "evidence/INTAKE_BACKUP_RECEIPT.json"
+    "stage1_receipt": "evidence/INTAKE_BACKUP_RECEIPT.json",
+    "documentation": {
+      "name": "BASS_HE_HE29_HPC64_HANDOFF_COMPLETE_20261021_30a7717f.tar.gz",
+      "bytes": 162543,
+      "sha256": "30a7717f0a83315c9f27ee7660d31dfa12f73dc128a99eb7f452c2eb7aed6ac4",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_aHw",
+      "content_hash": "b6d725b57457d1167522c7ce4d1e6b101878031c47b056e828066e9517fcec62",
+      "payloads_verified": 13,
+      "regular_members": 14,
+      "canonical_prompts_verified": 2,
+      "status": "ACTUAL_RAW_PASS",
+      "documentation_commit": "99ad3286c61a9e86ecf11a844260bf9ed36b5f01",
+      "fixed_code_pin": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
+      "Drive": "NOT_CALLED"
+    },
+    "final_metadata_closeout": "DETACHED_ARCHIVE_AFTER_THIS_PUBLICATION_READBACK; READ_LATEST_PR78_RECEIPT"
   },
   "pr_required_state": "DRAFT_OPEN_UNMERGED",
   "scientific_scope_holds": [
@@ -180,5 +197,7 @@
     "prior_lane": "native_intake_20261020T1315Z",
     "prior_current_DAG_commit": "a02ae998570d5a0a4fffdf46299ee77b1c738759"
   },
-  "next": "Intake newer returns first. Then only an accessible executor with actual host/process/artifact observation may use fixed802a HPC64 entry to run the single existing a5/a21 canary. Reuse four admitted pairs. No completed campaign replay."
+  "next": "Intake newer returns first. Then only an accessible executor with actual host/process/artifact observation may use fixed802a HPC64 entry to run the single existing a5/a21 canary. Reuse four admitted pairs. No completed campaign replay.",
+  "current_unit": "SCOPED_R_C_COMPLETE_WITH_DECLARED_NCP_CANARY_AND_DRIVE_HOLDS",
+  "next_execution": "One existing r4/table512 packed canary through fixed802a adapters after actual host/process/artifact gates; no baseline resubmission."
 }

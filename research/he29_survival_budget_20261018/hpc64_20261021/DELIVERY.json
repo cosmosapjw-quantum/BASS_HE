@@ -1,7 +1,7 @@
 {
   "schema": "he29.hpc64.delivery.v1",
-  "updated_utc": "2026-10-20T21:39:46.071584+00:00",
-  "status": "CODE_PUBLISHED_READBACK_PASS_HANDOFF_READY_NATIVE_PENDING",
+  "updated_utc": "2026-10-20T21:43:03.151142+00:00",
+  "status": "SCOPED_RESEARCH_CODE_COMPLETE_EXECUTION_HANDOFF_READY_NCP_NOT_RUN",
   "anchor_publication": "a02ae998570d5a0a4fffdf46299ee77b1c738759",
   "code_commit": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
   "packed_core_pin": "a5d4711460c09b310b78c9692aa62534b7a843d3",
@@ -45,7 +45,7 @@
     "open_blockers": 0,
     "receipt": "evidence/C9_REVIEW.json"
   },
-  "NCP_execution": "BLOCKED_NO_ACCESSIBLE_EXECUTOR_OBSERVED_RDC_NOT_CALLED",
+  "NCP_execution": "NOT_SUBMITTED_NOT_STARTED_NO_ACCESSIBLE_EXECUTOR_OBSERVED_RDC_NOT_CALLED",
   "HPC_limits": {
     "table_workers_max": 48,
     "build_jobs_max": 8,
@@ -87,5 +87,25 @@
     "status": "ACTUAL_RAW_PASS",
     "Drive": "NOT_CALLED_AFTER_STAGE1_UNKNOWN"
   },
-  "documentation_status": "PREPARING_PUBLISHED_HANDOFF_SNAPSHOT"
+  "documentation_status": "PUBLISHED_ACTUAL11_OF11_READBACK_PASS",
+  "documentation_commit": "99ad3286c61a9e86ecf11a844260bf9ed36b5f01",
+  "documentation_tree": "511a7b80d594fc8e5f21ba06d21c098151dac48f",
+  "documentation_backup": {
+    "name": "BASS_HE_HE29_HPC64_HANDOFF_COMPLETE_20261021_30a7717f.tar.gz",
+    "bytes": 162543,
+    "sha256": "30a7717f0a83315c9f27ee7660d31dfa12f73dc128a99eb7f452c2eb7aed6ac4",
+    "dropbox_id": "id:BSpOijBcT10AAAAAAD_aHw",
+    "content_hash": "b6d725b57457d1167522c7ce4d1e6b101878031c47b056e828066e9517fcec62",
+    "payloads_verified": 13,
+    "regular_members": 14,
+    "canonical_prompts_verified": 2,
+    "status": "ACTUAL_RAW_PASS",
+    "documentation_commit": "99ad3286c61a9e86ecf11a844260bf9ed36b5f01",
+    "fixed_code_pin": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
+    "Drive": "NOT_CALLED"
+  },
+  "final_metadata_publication": "ACTUAL_HEAD_IN_DETACHED_FINAL_GIT_READBACK_AND_PR78",
+  "final_metadata_closeout": "NEXT_DETACHED_SMALL_ARCHIVE_FROM_THIS_HEAD_CANONICAL_PROMPTS_AND_FINAL_GIT_RECEIPT",
+  "current_unit_R_C": "SCOPED_COMPLETE_WITH_NATIVE_CANARY_PENDING",
+  "source_authority": "FIXED_GIT_CODE_PIN; ARCHIVES_SUPPLY_DATA_AND_EVIDENCE_ONLY"
 }
