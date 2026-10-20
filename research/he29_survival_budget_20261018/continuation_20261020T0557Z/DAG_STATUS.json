@@ -1,0 +1,176 @@
+{
+  "schema": "he29.reference_budget.dag.v1",
+  "workflow": "physmath-research-loop 1.0.0",
+  "unit": "continuation_20261020T0557Z",
+  "updated_utc": "2026-10-20T06:14:19.836822+00:00",
+  "parent_publication": "1765522318438e966e61d8a72f12084550da399d",
+  "baseline_science_revision": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
+  "optimization_revision": "a5d4711460c09b310b78c9692aa62534b7a843d3",
+  "status": "INTAKE_COMPLETE_IMPLEMENTATION_IN_PROGRESS",
+  "native": {
+    "admitted_new_pairs": 0,
+    "expected_pairs": 4,
+    "owner_calls": 0,
+    "remote_submissions": 0,
+    "remote_starts": 0,
+    "ncp_processes": "UNOBSERVED_PROVIDER_QUOTA_NO_RETRY",
+    "he28_replays": 0,
+    "inherited_suites_replayed": 0
+  },
+  "intake": {
+    "GitHub": "COMPLETE_SCOPED",
+    "backups": "COMPLETE_SCOPED",
+    "other_conversations": "SEARCH_ERROR_PRESERVED",
+    "local": "COMPLETE_SCOPED",
+    "evidence": [
+      "evidence/BASS_GITHUB_DELTA.json",
+      "evidence/RELATED_GITHUB_DELTA.json",
+      "evidence/BACKUP_DELTA_INTAKE.json",
+      "evidence/PERSONAL_CONTEXT_INTAKE.json",
+      "evidence/LOCAL_INTAKE_AND_GAPS.json"
+    ]
+  },
+  "publication": {
+    "status": "PREPARED_NOT_YET_PUSHED",
+    "receipt": "evidence/INTAKE_PUBLICATION.json"
+  },
+  "backup": {
+    "new_checkpoint": "NOT_YET_UPLOADED",
+    "previous_complete": "77f1c73e8b4239cabcf03983ec9f0852fe334ac732544e410947935c7f4d7ab6",
+    "previous_closeout": "3380c7c432d6c05840b215b5ff129e8209e7ce5908221ed75d9a3e4a6f6e19aa",
+    "previous_status": "DUAL_RAW_PASS_REUSED_NO_REDOWLOAD"
+  },
+  "physics_rates_tolerances_changed": false,
+  "new_solver_development": false,
+  "hold": [
+    "continuous_spectrum",
+    "global_temperature_error_bound",
+    "full_EoR",
+    "whole_upstream_Grackle",
+    "observational_Bianchi_CMB"
+  ],
+  "theory_loop": [
+    {
+      "id": "R1",
+      "name": "연구 위치·계약",
+      "status": "complete",
+      "evidence": "README_KO.md"
+    },
+    {
+      "id": "R2",
+      "name": "근거·재사용",
+      "status": "complete",
+      "evidence": "README_KO.md"
+    },
+    {
+      "id": "R3",
+      "name": "주장·전제 정렬",
+      "status": "in_progress",
+      "evidence": "README_KO.md"
+    },
+    {
+      "id": "R4",
+      "name": "가설·표현 탐색",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "R5",
+      "name": "구성적 유도",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "R6",
+      "name": "독립 검증",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "R7",
+      "name": "판별 검증",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "R8",
+      "name": "결과 판정",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "R9",
+      "name": "정식 결과·코딩 연결",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "R10",
+      "name": "종료·재개",
+      "status": "pending",
+      "evidence": null
+    }
+  ],
+  "coding_loop": [
+    {
+      "id": "C1",
+      "name": "목표·baseline",
+      "status": "complete",
+      "evidence": "evidence/LOCAL_INTAKE_AND_GAPS.json"
+    },
+    {
+      "id": "C2",
+      "name": "식–데이터–코드",
+      "status": "in_progress",
+      "evidence": "evidence/LOCAL_INTAKE_AND_GAPS.json"
+    },
+    {
+      "id": "C3",
+      "name": "수치 설계",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "C4",
+      "name": "실행 DAG·자원",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "C5",
+      "name": "구현",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "C6",
+      "name": "구현 검증",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "C7",
+      "name": "과학 검증",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "C8",
+      "name": "수치·재현성",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "C9",
+      "name": "독립 검토",
+      "status": "pending",
+      "evidence": null
+    },
+    {
+      "id": "C10",
+      "name": "판정·인계",
+      "status": "pending",
+      "evidence": null
+    }
+  ]
+}
