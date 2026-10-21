@@ -36,7 +36,7 @@ STAGES = tuple(
     + [f"P.R{i}" for i in range(1, 11)]
     + [f"F.C{i}" for i in range(1, 11)]
 )
-DEFAULT_DIRS = ("src", "configs", "tests", "tools", "vendor", "inputs", "evidence")
+DEFAULT_DIRS = ("src", "configs", "data", "tests", "tools", "vendor", "inputs", "evidence")
 TOP_SUFFIXES = {".md", ".json", ".toml", ".txt", ".sh", ".py", ".yaml", ".yml"}
 EXCLUDED_PARTS = {
     ".git", ".ssh", ".aws", ".codex", ".agents", ".venv", "venv",

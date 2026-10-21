@@ -7,7 +7,11 @@
       "id": "O.C1",
       "status": "complete",
       "backup": "local_create_only_snapshot_complete",
-      "publication": "pending_phase_P1",
+      "publication": {
+        "commit": "e8bb035d31f59e34734947b9082bdbd60128b799",
+        "PR": 85,
+        "verified_blob_count": 48
+      },
       "next": "O.C2",
       "evidence": [
         "OPTIMIZATION_KO.md",
@@ -19,7 +23,11 @@
       "id": "O.C2",
       "status": "complete",
       "backup": "local_create_only_snapshot_complete",
-      "publication": "pending_phase_P1",
+      "publication": {
+        "commit": "e8bb035d31f59e34734947b9082bdbd60128b799",
+        "PR": 85,
+        "verified_blob_count": 48
+      },
       "next": "O.C3",
       "evidence": [
         "OPTIMIZATION_KO.md",
@@ -31,7 +39,11 @@
       "id": "O.C3",
       "status": "complete",
       "backup": "local_create_only_snapshot_complete",
-      "publication": "pending_phase_P1",
+      "publication": {
+        "commit": "e8bb035d31f59e34734947b9082bdbd60128b799",
+        "PR": 85,
+        "verified_blob_count": 48
+      },
       "next": "O.C4",
       "evidence": [
         "OPTIMIZATION_KO.md",
@@ -43,7 +55,11 @@
       "id": "O.C4",
       "status": "complete",
       "backup": "local_create_only_snapshot_complete",
-      "publication": "pending_phase_P1",
+      "publication": {
+        "commit": "e8bb035d31f59e34734947b9082bdbd60128b799",
+        "PR": 85,
+        "verified_blob_count": 48
+      },
       "next": "O.C5",
       "evidence": [
         "OPTIMIZATION_KO.md",
@@ -55,7 +71,11 @@
       "id": "O.C5",
       "status": "complete",
       "backup": "local_create_only_snapshot_complete",
-      "publication": "pending_phase_P1",
+      "publication": {
+        "commit": "e8bb035d31f59e34734947b9082bdbd60128b799",
+        "PR": 85,
+        "verified_blob_count": 48
+      },
       "next": "O.C6",
       "evidence": [
         "OPTIMIZATION_KO.md",
@@ -67,7 +87,11 @@
       "id": "O.C6",
       "status": "complete",
       "backup": "local_create_only_snapshot_complete",
-      "publication": "pending_phase_P1",
+      "publication": {
+        "commit": "e8bb035d31f59e34734947b9082bdbd60128b799",
+        "PR": 85,
+        "verified_blob_count": 48
+      },
       "next": "O.C7",
       "evidence": [
         "evidence/optimization/independent_v2/INDEPENDENT_REVIEW.json",
@@ -79,7 +103,11 @@
       "id": "O.C7",
       "status": "complete",
       "backup": "local_create_only_snapshot_complete",
-      "publication": "pending_phase_P1",
+      "publication": {
+        "commit": "e8bb035d31f59e34734947b9082bdbd60128b799",
+        "PR": 85,
+        "verified_blob_count": 48
+      },
       "next": "O.C8",
       "evidence": [
         "evidence/optimization/independent_v2/INDEPENDENT_REVIEW.json",
@@ -91,7 +119,11 @@
       "id": "O.C8",
       "status": "complete",
       "backup": "local_create_only_snapshot_complete",
-      "publication": "pending_phase_P1",
+      "publication": {
+        "commit": "e8bb035d31f59e34734947b9082bdbd60128b799",
+        "PR": 85,
+        "verified_blob_count": 48
+      },
       "next": "O.C9",
       "evidence": [
         "evidence/optimization/independent_v2/INDEPENDENT_REVIEW.json",
@@ -103,7 +135,11 @@
       "id": "O.C9",
       "status": "complete",
       "backup": "local_create_only_snapshot_complete",
-      "publication": "pending_phase_P1",
+      "publication": {
+        "commit": "e8bb035d31f59e34734947b9082bdbd60128b799",
+        "PR": 85,
+        "verified_blob_count": 48
+      },
       "next": "O.C10",
       "evidence": [
         "evidence/optimization/independent_v2/INDEPENDENT_REVIEW.json",
@@ -115,7 +151,11 @@
       "id": "O.C10",
       "status": "complete",
       "backup": "local_create_only_snapshot_complete",
-      "publication": "pending_phase_P1",
+      "publication": {
+        "commit": "e8bb035d31f59e34734947b9082bdbd60128b799",
+        "PR": 85,
+        "verified_blob_count": 48
+      },
       "next": "P.R1",
       "evidence": [
         "evidence/optimization/independent_v2/INDEPENDENT_REVIEW.json",
@@ -125,115 +165,209 @@
     },
     {
       "id": "P.R1",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "P.R2"
+      "status": "complete_scoped",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "P.R2",
+      "evidence": [
+        "HE32_THEORY_KO.md",
+        "evidence/physics/PHYSICS_CONTRACT.json",
+        "evidence/physics/THEORY_STAGE_STATUS.json",
+        "evidence/physics/INDEPENDENT_ATOMIC_REVIEW.json"
+      ]
     },
     {
       "id": "P.R2",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "P.R3"
+      "status": "complete_scoped",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "P.R3",
+      "evidence": [
+        "HE32_THEORY_KO.md",
+        "evidence/physics/PHYSICS_CONTRACT.json",
+        "evidence/physics/THEORY_STAGE_STATUS.json",
+        "evidence/physics/INDEPENDENT_ATOMIC_REVIEW.json"
+      ]
     },
     {
       "id": "P.R3",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "P.R4"
+      "status": "complete_scoped",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "P.R4",
+      "evidence": [
+        "HE32_THEORY_KO.md",
+        "evidence/physics/PHYSICS_CONTRACT.json",
+        "evidence/physics/THEORY_STAGE_STATUS.json",
+        "evidence/physics/INDEPENDENT_ATOMIC_REVIEW.json"
+      ]
     },
     {
       "id": "P.R4",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "P.R5"
+      "status": "complete_scoped",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "P.R5",
+      "evidence": [
+        "HE32_THEORY_KO.md",
+        "evidence/physics/PHYSICS_CONTRACT.json",
+        "evidence/physics/THEORY_STAGE_STATUS.json",
+        "evidence/physics/INDEPENDENT_ATOMIC_REVIEW.json"
+      ]
     },
     {
       "id": "P.R5",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "P.R6"
+      "status": "complete_scoped",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "P.R6",
+      "evidence": [
+        "HE32_THEORY_KO.md",
+        "evidence/physics/PHYSICS_CONTRACT.json",
+        "evidence/physics/THEORY_STAGE_STATUS.json",
+        "evidence/physics/INDEPENDENT_ATOMIC_REVIEW.json"
+      ]
     },
     {
       "id": "P.R6",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "P.R7"
+      "status": "complete_scoped",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "P.R7",
+      "evidence": [
+        "HE32_THEORY_KO.md",
+        "evidence/physics/PHYSICS_CONTRACT.json",
+        "evidence/physics/THEORY_STAGE_STATUS.json",
+        "evidence/physics/INDEPENDENT_ATOMIC_REVIEW.json"
+      ]
     },
     {
       "id": "P.R7",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "P.R8"
+      "status": "complete_scoped",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "P.R8",
+      "evidence": [
+        "HE32_THEORY_KO.md",
+        "evidence/physics/PHYSICS_CONTRACT.json",
+        "evidence/physics/THEORY_STAGE_STATUS.json",
+        "evidence/physics/INDEPENDENT_ATOMIC_REVIEW.json"
+      ]
     },
     {
       "id": "P.R8",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "P.R9"
+      "status": "complete_scoped",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "P.R9",
+      "evidence": [
+        "HE32_THEORY_KO.md",
+        "evidence/physics/PHYSICS_CONTRACT.json",
+        "evidence/physics/THEORY_STAGE_STATUS.json",
+        "evidence/physics/INDEPENDENT_ATOMIC_REVIEW.json"
+      ]
     },
     {
       "id": "P.R9",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "P.R10"
+      "status": "complete_scoped",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "P.R10",
+      "evidence": [
+        "HE32_THEORY_KO.md",
+        "evidence/physics/PHYSICS_CONTRACT.json",
+        "evidence/physics/THEORY_STAGE_STATUS.json",
+        "evidence/physics/INDEPENDENT_ATOMIC_REVIEW.json"
+      ]
     },
     {
       "id": "P.R10",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "F.C1"
+      "status": "complete_scoped",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "F.C1",
+      "evidence": [
+        "HE32_THEORY_KO.md",
+        "evidence/physics/PHYSICS_CONTRACT.json",
+        "evidence/physics/THEORY_STAGE_STATUS.json",
+        "evidence/physics/INDEPENDENT_ATOMIC_REVIEW.json"
+      ]
     },
     {
       "id": "F.C1",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "F.C2"
+      "status": "complete",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "F.C2",
+      "evidence": [
+        "CODING_PLAN_KO.md",
+        "src/coupled_pilot.py",
+        "src/primordial_network.py",
+        "src/campaign.py"
+      ]
     },
     {
       "id": "F.C2",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "F.C3"
+      "status": "complete",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "F.C3",
+      "evidence": [
+        "CODING_PLAN_KO.md",
+        "src/coupled_pilot.py",
+        "src/primordial_network.py",
+        "src/campaign.py"
+      ]
     },
     {
       "id": "F.C3",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "F.C4"
+      "status": "complete",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "F.C4",
+      "evidence": [
+        "CODING_PLAN_KO.md",
+        "src/coupled_pilot.py",
+        "src/primordial_network.py",
+        "src/campaign.py"
+      ]
     },
     {
       "id": "F.C4",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "F.C5"
+      "status": "complete",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "F.C5",
+      "evidence": [
+        "CODING_PLAN_KO.md",
+        "src/coupled_pilot.py",
+        "src/primordial_network.py",
+        "src/campaign.py"
+      ]
     },
     {
       "id": "F.C5",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "F.C6"
+      "status": "complete",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "F.C6",
+      "evidence": [
+        "CODING_PLAN_KO.md",
+        "src/coupled_pilot.py",
+        "src/primordial_network.py",
+        "src/campaign.py"
+      ]
     },
     {
       "id": "F.C6",
-      "status": "pending",
-      "backup": "pending",
-      "publication": "pending",
-      "next": "F.C7"
+      "status": "complete",
+      "backup": "local_create_only_snapshot_complete",
+      "publication": "P2_pending",
+      "next": "F.C7",
+      "evidence": [
+        "evidence/primordial_checks_repaired/PRIMORDIAL_CHECKS.json",
+        "evidence/coupled/independent_v2/INDEPENDENT_COUPLED_REPAIR.json"
+      ]
     },
     {
       "id": "F.C7",
