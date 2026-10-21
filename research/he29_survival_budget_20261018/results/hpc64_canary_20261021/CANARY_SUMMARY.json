@@ -1,0 +1,172 @@
+{
+  "schema": "he29.hpc64.canary_result.v1",
+  "status": "CANARY_COMPLETED_SCOPED",
+  "scientific_scope": "single finite m8/GL4/q0,r4/table512 packed canary; not continuum/EoR approval",
+  "case": {
+    "angles": 4,
+    "m": 8,
+    "q": 0.0,
+    "r": 4,
+    "table_nodes": 512
+  },
+  "source_commit": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
+  "latest_documentation_head": "4977b6ddc1d905454482fd6cac1b3768bbe2d32f",
+  "packed_core": "a5d4711460c09b310b78c9692aa62534b7a843d3",
+  "watchdog": "ed5adca43f474553a9bce7f5de45d464be5905cb",
+  "owner": "f7830e2f55e7a1938bc3c98f61b60651f8dae474",
+  "binary_sha256": "a82e540797322027deaab6e6bcb2bde746de737adeedbf144313598c65f5b7e9",
+  "bridge_sha256": "28d637a9011ad0e23c087659cd07574cfb0ddc55511380c4c807165aee3123eb",
+  "table_sha256": "919ca6f42028bffc37cb208916ee5a9927356eb99344fe467f9b98e30e9fddcd",
+  "native_gzip_sha256": "2e917706b6a17c928ed6df1eb2271897d68f8de6070d839313c4a98a01c9acc8",
+  "native_gzip_bytes": 30722603,
+  "native_calls": 182280,
+  "native_point_records": 182280,
+  "raw_record_counts": {
+    "records_written": 182281,
+    "records_durable": 182281,
+    "verified_records": 182281,
+    "point_records_written": 182280,
+    "point_records_durable": 182280,
+    "verified_point_records": 182280,
+    "checkpoint_flush_calls": 84,
+    "fsync_attempts": 771,
+    "fsync_successes": 771
+  },
+  "result": {
+    "photon_number": 3.851175483221473e-08,
+    "photon_energy_ev": 9.546047635593837e-07,
+    "binding_delta_ev": 4.9254066561421644e-05,
+    "number_defect": 1.3129010682441655e-20,
+    "energy_defect_ev": 1.0625181290357943e-17,
+    "species_defect": [
+      1.8634724839594607e-20,
+      -7.030373462210693e-20,
+      -2.524354896707238e-29
+    ],
+    "gas_final": [
+      1.3172302643474728e-05,
+      1.305940585188866e-05,
+      1.6597404946600333e-13,
+      0.0011516028032971305
+    ],
+    "gas_positive": true,
+    "min_photon": 5.566682144744897e-20,
+    "temperature_K": 8.239220060997875,
+    "ledger": {
+      "a_hei": 2.487345006595552e-07,
+      "a_heii": 1.349394777591606e-14,
+      "a_hi": 3.1723107661164086e-06,
+      "birth_e": 7.014803824638048e-05,
+      "birth_n": 3.4595570351021394e-06,
+      "ci_hei": 1.438141910491769e-17,
+      "ci_heii": 1.6634397450059635e-22,
+      "ci_hi": 1.7689026916938254e-16,
+      "cmb": 3.365506989768092e-10,
+      "dr": 0.0,
+      "escape": 1.265930444045588e-10,
+      "heat_hei": 1.561536180562674e-06,
+      "heat_heii": 6.472305883905653e-14,
+      "heat_hi": 1.837761528300248e-05,
+      "rr_hei": 6.559934681726212e-13,
+      "rr_heii": 3.3371972057412265e-20,
+      "rr_hi": 8.122818590519244e-12,
+      "work_g": 2.1745240691409318e-07,
+      "work_p": 8.880908459922737e-11
+    }
+  },
+  "solver": {
+    "name": "VigilODE-RODAS5P-packed",
+    "threads": 1,
+    "rtol": 1e-10,
+    "scaled_atol": 1e-12,
+    "internal_accepted_steps": 7889,
+    "internal_attempts": 12565
+  },
+  "saved_reference_comparison": {
+    "DOP853": {
+      "absolute_fraction_difference": 3.5575383784680614e-20,
+      "error_radius_certified": false,
+      "method_temperature_difference_K": 8.881784197001252e-14,
+      "reference_stable": true
+    },
+    "Radau": {
+      "absolute_fraction_difference": 7.962109704190423e-20,
+      "error_radius_certified": false,
+      "method_temperature_difference_K": 1.1191048088221578e-13,
+      "reference_stable": true
+    }
+  },
+  "gate_values": {
+    "max_absolute_fraction_difference": 7.962109704190423e-20,
+    "max_method_temperature_difference_K": 1.1191048088221578e-13,
+    "max_number_defect_per_H": 1.3129010682441655e-20,
+    "max_energy_defect_eV_per_H": 1.0625181290357943e-17,
+    "max_species_defect": 7.030373462210693e-20
+  },
+  "gates": {
+    "absolute_fraction_le_1e-11": true,
+    "method_temperature_delta_le_1e-9K": true,
+    "photon_number_defect_per_H_le_3e-15": true,
+    "energy_defect_eV_per_H_le_3e-12": true,
+    "species_defect_le_3e-12": true,
+    "gas_positive": true,
+    "photon_positivity": true,
+    "rtol_1e-10": true,
+    "scaled_atol_1e-12": true,
+    "table_sha_matches_frozen_r4_512": true,
+    "binary_sha_matches_frozen_owner": true,
+    "gzip_complete_and_all_records_readback": true,
+    "saved_radau_and_dop853_stable": true
+  },
+  "timing_s": {
+    "bridge_build": 104.11885627001175,
+    "table": 2.7907165980141144,
+    "canary_total": 717.331125118013,
+    "bridge_load_s": 0.021512107021408156,
+    "owner_close_and_gzip_readback_s": 2.196970363991568,
+    "packed_solve_and_checkpoints_s": 710.211014733999,
+    "preflight_s": 0.7570587800000794,
+    "source_model_and_cache_s": 3.8086058599874377
+  },
+  "resources": {
+    "host": "s1a0e5abed09",
+    "affinity_cpus": 64,
+    "eligible_after_cpu55": 63,
+    "reserved_cpus": 8,
+    "cpu55_protected": true,
+    "table_workers_requested": 48,
+    "table_workers_started_limit": 48,
+    "build_jobs": 8,
+    "solver_threads": 1,
+    "memory_available_bytes_at_plan": 131378446336,
+    "memory_reserved_bytes": 27010105344
+  },
+  "process_gate": "Five exact PID/start-tick/cmdline-hash Codex/Codex-session candidates were retained running and excluded only via the one-run user-approved exact identity shim. Any nonlisted or changed process remains a blocker. Original host_plan.py bytes and published execution commit remained unchanged.",
+  "reused_evidence": {
+    "admitted_reference_pairs": 4,
+    "analysis": "09929 saved baseline comparison reused; no replay",
+    "new_baseline_pairs": 0,
+    "transport_replays": 0,
+    "old_tests_or_benchmarks_replayed": 0
+  },
+  "limits": {
+    "continuous_spectrum": "HOLD",
+    "global_gas_temperature_bound": "HOLD",
+    "full_eor": "HOLD",
+    "whole_runtime_grackle_equivalence": "HOLD",
+    "observational_bianchi_cmb": "HOLD",
+    "error_radius_certified": false
+  },
+  "source_input_identity": {
+    "source_manifest_sha256": "28917c4c292988a72dd4154443555437ed1de06158ff91a2104c0b189aacaca7",
+    "parent_manifest_sha256": "7c3262d58a28d4d272a9bb90e0a018be9d35306312f45787a5569698654e9f82",
+    "data_files_verified": 22,
+    "runtime": {
+      "numpy": "2.3.5",
+      "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+      "scipy": "1.17.0"
+    },
+    "owner_source": "f7830e2f55e7a1938bc3c98f61b60651f8dae474"
+  }
+}

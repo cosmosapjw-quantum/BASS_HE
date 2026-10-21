@@ -1,0 +1,17 @@
+{
+  "schema": "he29.hpc64.public_host_resource_summary.v1",
+  "observed_utc": "2026-10-21T00:41:48.270194+00:00",
+  "hostname": "s1a0e5abed09",
+  "affinity_cpu_count": 64,
+  "eligible_cpus_after_cpu55_protection": 63,
+  "reserved_cpus": 8,
+  "protected_cpu_ids": [
+    55
+  ],
+  "table_workers": 48,
+  "build_jobs": 8,
+  "solver_threads": 1,
+  "effective_memory_available_bytes": 131378446336,
+  "reserved_memory_bytes": 27010105344,
+  "process_gate": "User explicitly confirmed the five observed Codex/Codex-session candidates idle; they remained running. Exact one-run PID/start-tick/cmdline-hash allowlist; unmatched or changed candidates still block. Raw identities are in the private return archive."
+}

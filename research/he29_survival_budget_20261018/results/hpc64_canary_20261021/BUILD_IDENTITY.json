@@ -1,0 +1,52 @@
+{
+  "abi_version": 2,
+  "baseline_code_revision": "1569f3718cd4b17a16936ad3d72bc7d5ed9b0f4f",
+  "bass_publication_head": "a5d4711460c09b310b78c9692aa62534b7a843d3",
+  "bass_publication_tree": "681aa556cfffd9cf0ec678b8bf67de66ed6d36d9",
+  "bridge_sources": {
+    "rust_bridge/Cargo.lock": "2cb2487d924d0c02e6756bc6346338f0abae628832ceeab11be7c5da6b31c97d",
+    "rust_bridge/Cargo.toml": "c45f97e3fcb1377eabda78d93e30365804c4776000ba3836f97d2bfb2770d47d",
+    "rust_bridge/include/he29_optimized_bridge.h": "61f1c2afb6636e8ac51b7cb14cfb2edf61ceb1f677bae65f8d60910447062c46",
+    "rust_bridge/src/lib.rs": "e5856b838e0e9701f8bbdaf39a509806e0494ee78ceddd7d3bf61891f293281e",
+    "rust_bridge/src/packed.rs": "dc4280e3ffdf095fc3d79a79934759b8f8982517c40e86130671c216788fdea1"
+  },
+  "build_jobs": 8,
+  "build_receipt": {
+    "cleanup_scope": "created POSIX process group; descendants escaping the group are outside this mechanism",
+    "returncode": 0,
+    "stderr_sha256": "33a37ad8e6297ec285d7ff746412b8c127f4d8e7245ad4cb3e3c3672e3d7934c",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false,
+    "timeout_residual_group_sigkill_sent": false,
+    "wall_s": 104.11885627001175,
+    "watchdog": "he29.missing_controller.group_cleanup.v1"
+  },
+  "canary_runs": 0,
+  "cargo_encoded_rustflags": "-C\u001ftarget-cpu=x86-64",
+  "cargo_sha256": "b7561ebe947acf816451536f19871ea4810f6be3f82fd252feab6ca7be8396f5",
+  "cargo_version": "cargo 1.94.1 (29ea6fb6a 2026-03-24)\nrelease: 1.94.1\ncommit-hash: 29ea6fb6a5db279426f4cc4e17aa385f05a0cfbc\ncommit-date: 2026-03-24\nhost: x86_64-unknown-linux-gnu\nlibgit2: 1.9.2 (sys:0.20.3 vendored)\nlibcurl: 8.15.0-DEV (sys:0.4.83+curl-8.15.0 vendored ssl:OpenSSL/3.5.4)\nssl: OpenSSL 3.5.4 30 Sep 2025\nos: Ubuntu 24.4.0 (noble) [64-bit]",
+  "compiler_binary_identity_before_after_match": true,
+  "compiler_wrappers": "EXPLICIT_EMPTY_OVERRIDE",
+  "fast_math_enabled": false,
+  "library_path": "/root/HE29_HPC64_STAGE_LJwu47Fb/run/build/target/release/libhe29_optimized_bridge.so",
+  "library_sha256": "28d637a9011ad0e23c087659cd07574cfb0ddc55511380c4c807165aee3123eb",
+  "physical_runs": 0,
+  "resource_adapter": {
+    "effective_build_jobs": 8,
+    "numeric_flags_or_bridge_source_modified": false,
+    "original_build_jobs": 2,
+    "source_revision": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
+    "source_sha256": "d875c0ad752444dac7fc9f8512f59619b1acb134ca69b8ccaa2f465efe53e46c",
+    "watchdog_revision": "ed5adca43f474553a9bce7f5de45d464be5905cb"
+  },
+  "rustc_sha256": "ef6d716e5d1c6c93def277c0afa037c21e7a74f7de3aed4ee0700646c3301b1d",
+  "rustc_verbose": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "schema": "he29.optimized.build.v1",
+  "source_identity_before_after_match": true,
+  "source_revision_argument": "a5d4711460c09b310b78c9692aa62534b7a843d3",
+  "source_suites_replayed": 0,
+  "status": "COMPILED",
+  "upstream_cargo_lock_sha256": "04c7d6c147bf19ebb1a627463705d9dcf27337a3ff228dd1169f19eb73c71400",
+  "vigilode_source": "a21d573980f66fe02891bd216153443b5352f921",
+  "vigilode_tree": "3eb56734d3dbde83298f6c96e33663b0ad0177b6"
+}

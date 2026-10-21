@@ -1,0 +1,26 @@
+{
+  "activity": {
+    "baseline_pairs_started": 0,
+    "canary_workers_started": 1,
+    "completed_suites_replayed": 0,
+    "new_builds_started": 1
+  },
+  "actual_HE29_speedup": "REQUIRES_ANALYSIS_OF_RETURNED_PHASE_TIMINGS",
+  "bridge_build": "/root/HE29_HPC64_STAGE_LJwu47Fb/run/build",
+  "build_jobs": 8,
+  "native_reference_pairs_reused": 4,
+  "process_receipt": {
+    "cleanup_scope": "created POSIX process group; descendants escaping the group are outside this mechanism",
+    "returncode": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false,
+    "timeout_residual_group_sigkill_sent": false,
+    "wall_s": 717.331125118013,
+    "watchdog": "he29.missing_controller.group_cleanup.v1"
+  },
+  "schema": "he29.hpc64.batch_summary.v1",
+  "solver_threads": 1,
+  "status": "CANARY_COMPLETED_SCOPED",
+  "table_workers": 48
+}
