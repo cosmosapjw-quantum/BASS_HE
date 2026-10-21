@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "workflow_version": "1.0.0",
+  "task": "both",
+  "unit_id": "HE31_ELECTRON_DONOR_20261021",
+  "objective": "strict HHe donor, photon-only receiver, prepared FV moments and ready NCP driver",
+  "status": "in_progress",
+  "base_commit": "e173f373cd481864d0395e3a7a76520615a80e1a",
+  "stages": [
+    {
+      "id": "R1",
+      "status": "complete",
+      "evidence_refs": [
+        "CONTRACT_KO.md",
+        "DERIVATION_KO.md",
+        "evidence/BASELINE_MANIFEST.json"
+      ],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "R2",
+      "status": "in_progress",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "R3",
+      "status": "complete",
+      "evidence_refs": [
+        "CONTRACT_KO.md",
+        "DERIVATION_KO.md",
+        "evidence/BASELINE_MANIFEST.json"
+      ],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "R4",
+      "status": "complete",
+      "evidence_refs": [
+        "CONTRACT_KO.md",
+        "DERIVATION_KO.md",
+        "evidence/BASELINE_MANIFEST.json"
+      ],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "R5",
+      "status": "complete",
+      "evidence_refs": [
+        "CONTRACT_KO.md",
+        "DERIVATION_KO.md",
+        "evidence/BASELINE_MANIFEST.json"
+      ],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "R6",
+      "status": "in_progress",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "R7",
+      "status": "pending",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "R8",
+      "status": "pending",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "R9",
+      "status": "pending",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "R10",
+      "status": "pending",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "C1",
+      "status": "complete",
+      "evidence_refs": [
+        "CONTRACT_KO.md",
+        "DERIVATION_KO.md",
+        "evidence/BASELINE_MANIFEST.json"
+      ],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "C2",
+      "status": "complete",
+      "evidence_refs": [
+        "CONTRACT_KO.md",
+        "DERIVATION_KO.md",
+        "evidence/BASELINE_MANIFEST.json"
+      ],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "C3",
+      "status": "complete",
+      "evidence_refs": [
+        "CONTRACT_KO.md",
+        "DERIVATION_KO.md",
+        "evidence/BASELINE_MANIFEST.json"
+      ],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "C4",
+      "status": "complete",
+      "evidence_refs": [
+        "CONTRACT_KO.md",
+        "DERIVATION_KO.md",
+        "evidence/BASELINE_MANIFEST.json"
+      ],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "C5",
+      "status": "in_progress",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "C6",
+      "status": "pending",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "C7",
+      "status": "pending",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "C8",
+      "status": "pending",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "C9",
+      "status": "pending",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    },
+    {
+      "id": "C10",
+      "status": "pending",
+      "evidence_refs": [],
+      "backup": "P1_PENDING",
+      "publication": "P1_PENDING"
+    }
+  ],
+  "execution_nodes": {
+    "HE30_D3_237": "reused_complete",
+    "source_delta": "in_progress",
+    "donor_adapter": "in_progress",
+    "prepared_moments": "in_progress",
+    "light_checks": "pending",
+    "actual_donor_control": "pending",
+    "publication": "pending",
+    "NCP_full_campaign": "not_run",
+    "physical_z2_HHe_donor": "missing_input"
+  }
+}
