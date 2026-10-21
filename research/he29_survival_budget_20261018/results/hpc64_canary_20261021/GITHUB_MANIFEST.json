@@ -1,0 +1,50 @@
+{
+  "ARCHIVE_SHA256.txt": {
+    "bytes": 124,
+    "sha256": "8ae17d83e2de87ef166b2e87435d57e9956da256c176f6c360dbea29cbef4451"
+  },
+  "BUILD_IDENTITY.json": {
+    "bytes": 3300,
+    "sha256": "fdd16e47856e77f289138605d591be05718231e733151b4c1d69b80b779f7634"
+  },
+  "CANARY_SUMMARY.json": {
+    "bytes": 6320,
+    "sha256": "a1753ed429dc1163ba67e096efd2377b65ec981e7fd58010bb631e7047802e08"
+  },
+  "DAG_STATUS.json": {
+    "bytes": 2886,
+    "sha256": "a940da721266bb78b59531f8037e376cd7655a41edf9c6a8e550026557079f55"
+  },
+  "DELIVERY.json": {
+    "bytes": 4552,
+    "sha256": "a1377d69791b820bf7fd2634448945f024d899053cd54e22118590fdaeca91f5"
+  },
+  "EXECUTION_SUMMARY.json": {
+    "bytes": 977,
+    "sha256": "26de5a6f671d710aa0bb6617f380b3d57cba9af42fedc89f67a9c09b2619c691"
+  },
+  "FINAL_RETURN_RECEIPT.json": {
+    "bytes": 3536,
+    "sha256": "6b24e49473f5e1178cd8a4c52750b443a0ee44db1da7ee8484c5a3d75aaa5b9d"
+  },
+  "HOST_RESOURCE_PLAN.json": {
+    "bytes": 708,
+    "sha256": "f0828fce351895898be18168f1aba664a0d613793600b930375e142c1115c183"
+  },
+  "NATIVE_EVIDENCE.json": {
+    "bytes": 991,
+    "sha256": "d7a8089953b897f96b2e014d7b4e575aeac19a3af674b48385cd9913182b6a97"
+  },
+  "README_KO.md": {
+    "bytes": 1790,
+    "sha256": "1f6dc930a74cde9b5af5bc3303e194d67061b8a3c020d57d36136cab23c2a024"
+  },
+  "RESULT.json": {
+    "bytes": 490342,
+    "sha256": "833c0b124c89b5aa0c47d9b4be00bb531b79084bf36fa603cfbb5c6df7257f14"
+  },
+  "TABLE.json": {
+    "bytes": 1516,
+    "sha256": "005c021e0840ac5e1fbf1712c0ba9fe101d2fc0d0a021eb0210085f25ddb169d"
+  }
+}

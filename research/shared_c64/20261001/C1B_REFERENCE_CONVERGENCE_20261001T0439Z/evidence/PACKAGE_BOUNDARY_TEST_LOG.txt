@@ -1,2 +1,0 @@
-PASS standalone snapshot resolved without eigensolve
-PASS delivered prolate driver rejects existing result before solve; original marker unchanged

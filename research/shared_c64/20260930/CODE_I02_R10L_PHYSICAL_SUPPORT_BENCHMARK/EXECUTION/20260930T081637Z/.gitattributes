@@ -1,3 +1,0 @@
-# Preserve published evidence byte identities, including the frozen CSV CRLF.
-* -text
-*.csv whitespace=cr-at-eol

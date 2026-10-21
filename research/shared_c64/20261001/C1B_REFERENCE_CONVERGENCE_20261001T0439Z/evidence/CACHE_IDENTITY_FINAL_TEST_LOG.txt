@@ -1,1 +1,0 @@
-PASS: trusted cache loaded; same-length modified bytes rejected before np.load; no physics run

@@ -1,0 +1,42 @@
+{
+  "cache": {
+    "array_storage": "read-only npy mmap; allow_pickle=False",
+    "directory": "/root/HE29_HPC64_TABLE_CACHE/ccac01147b253380736d3fa655a4208265ce459444a6e38d942addb4d4a33eac",
+    "estimated_table_allocation_bytes": 47351952,
+    "key": "ccac01147b253380736d3fa655a4208265ce459444a6e38d942addb4d4a33eac",
+    "manifest_sha256": "2b173ae718e0772e019a11e160d8ea72b12e74f58554de9169f5f7aa3f528b52",
+    "status": "BUILT_AND_VERIFIED",
+    "table_sha256": "919ca6f42028bffc37cb208916ee5a9927356eb99344fe467f9b98e30e9fddcd",
+    "whole_process_rss_bound": false
+  },
+  "diagnostics": {
+    "build_wall_s": 3.7531314299849328,
+    "direct_crossing_intervals": 66,
+    "estimated_bytes": 47351952,
+    "nodes_per_long_interval": 512,
+    "original_breakpoints": 82,
+    "scope": "new semi-discrete model, native validation separate",
+    "spec": {
+      "angles": 4,
+      "m": 8,
+      "q": 0.0,
+      "strips": 4
+    },
+    "tabulated_intervals": 17
+  },
+  "execution": {
+    "build_wall_s": 2.7907165980141144,
+    "chunk_rows": 64,
+    "chunks": 153,
+    "geometry_clock": "unchanged per-worker construction",
+    "native_calls": 0,
+    "physical_solver_runs": 0,
+    "rows": 8721,
+    "start_method": "spawn",
+    "workers_requested": 48,
+    "workers_started_limit": 48,
+    "worker_pids_observed_count": 48
+  },
+  "execution_scope": "For HIT_VERIFIED, execution describes the saved original cache build.",
+  "source_table_sha256": "919ca6f42028bffc37cb208916ee5a9927356eb99344fe467f9b98e30e9fddcd"
+}

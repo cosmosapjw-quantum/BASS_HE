@@ -1,3 +1,0 @@
-results/logs/** -text -whitespace
-results/*.tar.gz -text
-results/*.csv -text

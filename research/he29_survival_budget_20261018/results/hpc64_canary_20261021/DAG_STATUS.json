@@ -1,0 +1,76 @@
+{
+  "schema": "he29.hpc64.dag.v1",
+  "updated_utc": "2026-10-21T00:58:09.915045+00:00",
+  "lane": "hpc64_20261021",
+  "source_commit": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
+  "latest_documentation_head": "4977b6ddc1d905454482fd6cac1b3768bbe2d32f",
+  "stages": {
+    "preflight": "PASS_WITH_USER_AUTHORIZED_EXACT_IDLE_CODEX_PROCESS_ALLOWLIST",
+    "baseline_and_data_identity": "PASS_22_DATA_AND_FOUR_SAVED_PAIRS_REUSED",
+    "bridge_compile": "PASS_CARGO_RUSTC_1_94_1_NO_FAST_MATH",
+    "source_table": "PASS_48_WORKERS_EXACT_FROZEN_SHA",
+    "packed_canary": "PASS_SCOPED_RESULT_AND_ALL_NUMERICAL_GATES",
+    "return_archive": "PASS_LOCAL_20_OF_20_PAYLOADS_AND_21_MEMBERS",
+    "backup": "PASS_DROPBOX_AND_DRIVE_RAW_READBACK_SHA256"
+  },
+  "activity": {
+    "native_reference_pairs_replayed": 0,
+    "new_baseline_pairs": 0,
+    "canary_runs": 1,
+    "native_calls": 182280,
+    "transport_replays": 0,
+    "old_tests_replayed": 0,
+    "bridge_builds": 1,
+    "table_workers_started": 48,
+    "build_jobs": 8,
+    "solver_threads": 1
+  },
+  "case": {
+    "angles": 4,
+    "m": 8,
+    "q": 0.0,
+    "r": 4,
+    "table_nodes": 512
+  },
+  "table_sha256": "919ca6f42028bffc37cb208916ee5a9927356eb99344fe467f9b98e30e9fddcd",
+  "binary_sha256": "a82e540797322027deaab6e6bcb2bde746de737adeedbf144313598c65f5b7e9",
+  "bridge_sha256": "28d637a9011ad0e23c087659cd07574cfb0ddc55511380c4c807165aee3123eb",
+  "native_gzip_sha256": "2e917706b6a17c928ed6df1eb2271897d68f8de6070d839313c4a98a01c9acc8",
+  "gates": {
+    "absolute_fraction_le_1e-11": true,
+    "method_temperature_delta_le_1e-9K": true,
+    "photon_number_defect_per_H_le_3e-15": true,
+    "energy_defect_eV_per_H_le_3e-12": true,
+    "species_defect_le_3e-12": true,
+    "gas_positive": true,
+    "photon_positivity": true,
+    "rtol_1e-10": true,
+    "scaled_atol_1e-12": true,
+    "table_sha_matches_frozen_r4_512": true,
+    "binary_sha_matches_frozen_owner": true,
+    "gzip_complete_and_all_records_readback": true,
+    "saved_radau_and_dop853_stable": true
+  },
+  "limits": [
+    "single finite canary only",
+    "continuous-spectrum convergence HOLD",
+    "global gas-temperature bound HOLD",
+    "full EoR HOLD",
+    "upstream whole-runtime equivalence HOLD",
+    "observational Bianchi/CMB HOLD"
+  ],
+  "process_observation": {
+    "user_approved_candidates": 5,
+    "scope": "exact PID+start_ticks+cmdline SHA from immediate preflight only",
+    "were_signalled_or_terminated": false,
+    "shim_hash": "1c2d17acac8538969766c53c75396a69b6faaa029822a5370a472b2f63702466",
+    "allowlist_sha256": "48e171e31754e8a3ce6e43137fdd1eff1c3bc0b3cac56318a8d1cf3d08317c2f"
+  },
+  "publication": {
+    "branch": "results/he29-hpc64-packed-canary-20261021",
+    "base_sha": "4977b6ddc1d905454482fd6cac1b3768bbe2d32f",
+    "draft_pr": "TO_BE_CREATED",
+    "merge": "NOT_ALLOWED"
+  },
+  "backup_receipt": "FINAL_RETURN_RECEIPT.json"
+}

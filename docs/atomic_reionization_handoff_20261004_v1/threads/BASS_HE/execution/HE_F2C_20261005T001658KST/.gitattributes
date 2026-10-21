@@ -1,4 +1,0 @@
-# Preserve original unittest failure output, including its subtest whitespace.
-RED.log -whitespace
-FORMATTING_FAILURE.log -whitespace
-FORMATTING_FAILURE_WITH_LOGS.log -whitespace
