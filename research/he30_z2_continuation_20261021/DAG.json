@@ -1,0 +1,233 @@
+{
+  "schema": "HE30_DAG_V2",
+  "updated_utc": "2026-10-21T11:15:41.657766+00:00",
+  "scope": "D3 immutable consumption and independently reviewed preliminary plots",
+  "superseded_plan": "C21M27 tail before any science execution",
+  "science_runs_this_turn": 0,
+  "pending_science_cases": 0,
+  "stages": {
+    "R1": {
+      "title": "연구 목표·계약",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-A",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "R2": {
+      "title": "문헌·기존 성과 재사용",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-A",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "R3": {
+      "title": "전제 정합성",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-A",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "R4": {
+      "title": "가설·모델 탐색",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-A",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "R5": {
+      "title": "구성적 수학 유도",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-A",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "R6": {
+      "title": "독립 과학 심사",
+      "state": "IN_PROGRESS",
+      "checkpoint": "CP-C",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "R7": {
+      "title": "판별 경량 계산",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-B",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "R8": {
+      "title": "과학 결과 판정",
+      "state": "IN_PROGRESS",
+      "checkpoint": "CP-C",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "R9": {
+      "title": "이론·계산 연결",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-B",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "R10": {
+      "title": "연구 정리·인계",
+      "state": "IN_PROGRESS",
+      "checkpoint": "CP-C",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "C1": {
+      "title": "목표·기준 결과",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-A",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "C2": {
+      "title": "코드·식·데이터 조사",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-A",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "C3": {
+      "title": "알고리즘·수치 설계",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-A",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "C4": {
+      "title": "구현·병렬 설계",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-B",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "C5": {
+      "title": "코드 구현",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-B",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "C6": {
+      "title": "소프트웨어 검증",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-B",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "C7": {
+      "title": "과학적 검증",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-B",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "C8": {
+      "title": "정확도·성능 범위",
+      "state": "COMPLETE_SCOPED",
+      "checkpoint": "CP-B",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "C9": {
+      "title": "독립 코드 심사",
+      "state": "IN_PROGRESS",
+      "checkpoint": "CP-C",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    },
+    "C10": {
+      "title": "배포·실행 인계",
+      "state": "IN_PROGRESS",
+      "checkpoint": "CP-C",
+      "backup": "PENDING_ACK",
+      "publication": "PENDING_ACK"
+    }
+  },
+  "edges": [
+    [
+      "R1",
+      "R2"
+    ],
+    [
+      "R2",
+      "R3"
+    ],
+    [
+      "R3",
+      "R4"
+    ],
+    [
+      "R4",
+      "R5"
+    ],
+    [
+      "R5",
+      "C3"
+    ],
+    [
+      "C1",
+      "C2"
+    ],
+    [
+      "C2",
+      "C3"
+    ],
+    [
+      "C3",
+      "C4"
+    ],
+    [
+      "C4",
+      "C5"
+    ],
+    [
+      "C5",
+      "C6"
+    ],
+    [
+      "C6",
+      "C7"
+    ],
+    [
+      "C7",
+      "R6"
+    ],
+    [
+      "R6",
+      "R7"
+    ],
+    [
+      "R7",
+      "R8"
+    ],
+    [
+      "R8",
+      "R9"
+    ],
+    [
+      "R9",
+      "C8"
+    ],
+    [
+      "C8",
+      "C9"
+    ],
+    [
+      "C9",
+      "R10"
+    ],
+    [
+      "R10",
+      "C10"
+    ]
+  ],
+  "result_validity": "DATA_REVIEW_PASS_PLOT_REVIEW_PENDING",
+  "provenance_validity": "237_HASH_PREFIX_JOIN_PASS",
+  "packaging_validity": "IN_PROGRESS",
+  "performance": "NOT_RUN_USER_EXCLUDED_BENCHMARKS",
+  "ncp_execution_this_turn": false
+}
