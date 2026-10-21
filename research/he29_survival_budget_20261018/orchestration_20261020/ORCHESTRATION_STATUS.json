@@ -1,0 +1,177 @@
+{
+  "schema": "he29.orchestration_20261020.v1",
+  "intake_since": "2026-10-17T09:55:50Z",
+  "observed_head": "d63135807c80dc2ada7f85214b5087b9e3dff375",
+  "coverage": {
+    "branches": 83,
+    "unique_tips_metadata": 82,
+    "unique_tip_metadata_errors": 0,
+    "tip_dates_in_window": 4,
+    "private_conversations_complete": false,
+    "ncp_process_observed": false,
+    "dropbox_HE29_search_results": 12,
+    "dropbox_has_more": false,
+    "drive_title_search_complete": false
+  },
+  "recent_tip_shas": [
+    "2a9e27ade27fb2762bc955882799b736970bb786",
+    "d496e0e8b7c9d5a708bf07c4c6eaa4900c6d489c",
+    "a41dd37124e34cb22bb9782aaf687a0da91640b7",
+    "d63135807c80dc2ada7f85214b5087b9e3dff375"
+  ],
+  "actual_prior_results": {
+    "HE28_transport_completed": 6,
+    "HE28_transport_requested": 6,
+    "HE29_admitted_references_observed": 0,
+    "HE29_requested_references": 4,
+    "ABI2_native_canary": "NOT_RUN_OBSERVED",
+    "current_lane_native_calls": 0,
+    "current_lane_remote_submissions": 0
+  },
+  "new_work": {
+    "controller": "IMPLEMENTED",
+    "initial_focused_tests": 11,
+    "after_actual_watchdog_fix_focused_tests": 12,
+    "production_dry_plan": "PASS_SOURCE_IMPORTS_ONLY",
+    "independent_review": "PASS_SCOPED",
+    "publication": "ROOT_TO_PUBLISH",
+    "backup": "ROOT_TO_BACKUP",
+    "fresh_launcher_tests": 2,
+    "unique_new_test_methods": 14,
+    "fresh_bootstrap_overlay": "ZERO_FUZZ_APPLY_AND_BASH_N_PASS"
+  },
+  "DAG": [
+    {
+      "node": "recent_intake",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "node": "HE28_saved_transport",
+      "status": "REUSED_ACTUAL_6_OF_6"
+    },
+    {
+      "node": "HE29_exact_budget",
+      "status": "REUSED_IMPLEMENTED"
+    },
+    {
+      "node": "absent_only_controller",
+      "status": "LOCAL_TEST_PASS"
+    },
+    {
+      "node": "independent_review",
+      "status": "PASS_SCOPED"
+    },
+    {
+      "node": "publication_backup",
+      "status": "ROOT_TO_COMPLETE"
+    },
+    {
+      "node": "four_native_pairs",
+      "status": "NOT_OBSERVED_COMPLETE"
+    },
+    {
+      "node": "native_exact_budget",
+      "status": "WAITING_ACTUAL_PAIRS"
+    },
+    {
+      "node": "optional_ABI2_canary",
+      "status": "WAITING_FOUR_ADMITTED_PAIRS"
+    }
+  ],
+  "HOLD": [
+    "continuous spectrum",
+    "global temperature error certificate",
+    "whole EoR",
+    "whole upstream Grackle equivalence"
+  ],
+  "export_contract": {
+    "to_rei_bianchi": "finite-model reference endpoint/ledger/method/model/table/owner/binary/source/runtime provenance; no fabricated physical rate export",
+    "data": "original archive a70 verified22inputs",
+    "cohort_mixing": false
+  },
+  "loop_scope": "BASS_HE latest-evidence integration and absent-only execution boundary; physical HE29 native pairs remain external pending",
+  "theory_stages": {
+    "R1": {
+      "status": "complete",
+      "evidence": "SOURCE_PINS.json; RESEARCH_KO.md latest intake"
+    },
+    "R2": {
+      "status": "reused",
+      "evidence": "HE28 actual return a41dd; HE29 analysis09929; BACKUP_SOURCE_MAP.json"
+    },
+    "R3": {
+      "status": "complete",
+      "evidence": "RESEARCH_KO.md finite key/cohort and signed endpoint definitions"
+    },
+    "R4": {
+      "status": "complete",
+      "evidence": "absent-case set replaces fresh all-four replay on partial campaign"
+    },
+    "R5": {
+      "status": "reused",
+      "evidence": "09929 signed decomposition exact budget; no new physical law"
+    },
+    "R6": {
+      "status": "reused",
+      "evidence": "09929 prior theory review/Wolfram closure0; new independent execution-boundary review separate"
+    },
+    "R7": {
+      "status": "reused",
+      "evidence": "HE28 actual finite transport diagnostics; four native reference pairs remain not_run_observed"
+    },
+    "R8": {
+      "status": "complete_scoped",
+      "evidence": "HE28 strip/time sign change requires same-model references; no new strong no-go claim"
+    },
+    "R9": {
+      "status": "complete",
+      "evidence": "RESEARCH_KO.md and NCP_HANDOFF_KO.md"
+    },
+    "R10": {
+      "status": "pending_publication",
+      "evidence": "local package prepared; root owns actual Git/backup receipt"
+    }
+  },
+  "coding_stages": {
+    "C1": {
+      "status": "complete",
+      "evidence": "SOURCE_PINS.json"
+    },
+    "C2": {
+      "status": "complete",
+      "evidence": "START->BOOTSTRAP all-four gap and inherited watchdog reproduction"
+    },
+    "C3": {
+      "status": "complete",
+      "evidence": "absent-set, original per-case budget and cohort contract"
+    },
+    "C4": {
+      "status": "complete",
+      "evidence": "DAG and exact NCP contracts"
+    },
+    "C5": {
+      "status": "complete",
+      "evidence": "src/continue_missing_references.py; src/launch_fresh_references.py; ncp/USE_BOUNDED_CONTROLLER_20261020.patch"
+    },
+    "C6": {
+      "status": "complete",
+      "evidence": "evidence/TEST_RECEIPT.json;14 unique test methods; production import/plan"
+    },
+    "C7": {
+      "status": "reused",
+      "evidence": "unchanged original physical runner and admission; pinned20parent+22DATA; no new physical integration"
+    },
+    "C8": {
+      "status": "complete_scoped",
+      "evidence": "evidence/FRESH_BOOTSTRAP_OVERLAY.json; pinned code/input/byte checks; no performance claim"
+    },
+    "C9": {
+      "status": "complete",
+      "evidence": "REVIEW_HE_CONTROLLER.json; HE29-WATCHDOG-01 closed by focused correction"
+    },
+    "C10": {
+      "status": "pending_publication",
+      "evidence": "NCP_HANDOFF_KO.md; root Git/backup obligation"
+    }
+  }
+}

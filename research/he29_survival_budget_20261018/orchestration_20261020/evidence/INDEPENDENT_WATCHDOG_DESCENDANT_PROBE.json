@@ -1,0 +1,14 @@
+{
+  "scope": "NONPHYSICAL watchdog review probe; no HE29/native computation",
+  "watchdog_sha": "876e43d76f0773a8d2c38e262902442c614a68334561f5e2a78024c659edb1c4",
+  "receipt": {
+    "returncode": -15,
+    "timed_out": true,
+    "wall_s": 0.302764505999221,
+    "stdout_sha256": "10159baf262b43a92d95db59dae1f72c645127301661e0a3ce4e38b295a97c58",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "descendant_alive_after_watchdog_return": true,
+  "descendant_pid": 7,
+  "cleanup": "SIGKILL only to probe descendant if alive"
+}

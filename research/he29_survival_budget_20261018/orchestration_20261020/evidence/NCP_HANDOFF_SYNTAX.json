@@ -1,0 +1,11 @@
+{
+  "command": [
+    "bash",
+    "-n",
+    "evidence/NCP_HANDOFF_EXTRACTED.sh"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "execution_of_handoff": false
+}

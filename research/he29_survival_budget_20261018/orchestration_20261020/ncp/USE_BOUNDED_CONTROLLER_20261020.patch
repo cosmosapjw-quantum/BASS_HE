@@ -1,0 +1,24 @@
+--- a/research/he29_survival_budget_20261018/ncp/BOOTSTRAP_REFERENCES.sh
++++ b/research/he29_survival_budget_20261018/ncp/BOOTSTRAP_REFERENCES.sh
+@@ -1,6 +1,8 @@
+ #!/usr/bin/env bash
+ # New references only. Existing HE28 transport/chemistry histories are not rerun.
+ set -euo pipefail
++: "${HE29_CTRL_ROOT:?published orchestration directory required}"
++: "${HE29_ANALYSIS_ROOT:?pinned analysis HE29 directory required}"
+ export PATH="$HOME/.cargo/bin:$PATH"
+ export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
+ export BLIS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 OMP_DYNAMIC=FALSE
+@@ -68,7 +70,10 @@
+ h=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+ with Path(out).open('x') as f:json.dump(dict(owner_source=owner,rlib_sha256=h(lib),binary_sha256=h(binary),server_source_sha256=h(server),flags='edition2021 opt-level2 no-fast-math',native_run=False),f,indent=2)
+ PY
+-"$PY" "$HERE/src/reference_runner.py" campaign --binary "$BIN" --receipt "$WORK/build/RECEIPT.json" \
+-  --out "$WORK/references" --case-wall-s "${HE29_CASE_WALL_S:-3600}" > "$WORK/logs/CAMPAIGN.log" 2>&1
++"$PY" "$HE29_CTRL_ROOT/src/launch_fresh_references.py" \
++  --baseline-root "$HERE" --analysis-root "$HE29_ANALYSIS_ROOT" \
++  --root "$WORK/references" --out "$WORK/controller" \
++  --binary "$BIN" --receipt "$WORK/build/RECEIPT.json" \
++  --case-wall-s "${HE29_CASE_WALL_S:-3600}" > "$WORK/logs/CAMPAIGN.log" 2>&1
+ "$PY" "$HERE/src/analyze_references.py" --root "$WORK/references" --out "$WORK/REFERENCE_ANALYSIS.json" > "$WORK/logs/ANALYSIS.log" 2>&1
+ # No source-only success above is a full EoR/cosmic-spectrum admission.

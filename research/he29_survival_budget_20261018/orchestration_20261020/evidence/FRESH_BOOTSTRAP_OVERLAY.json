@@ -1,0 +1,10 @@
+{
+  "overlay_sha256": "a93632cfaa2ce2f81b5dfe49694862e7b6d48bd81cbf9aa4ceedf5e2d8607f4f",
+  "required_after_two_old_overlays_bootstrap_sha256": "11d0ad0125f40a2890dac82e5103f13d17e6066f41440eabb06c7a8b1f319bc2",
+  "result_bootstrap_sha256": "90d36ef7098caa0d6dfa5453ab306a2fc3143be4658a486b434a227dba895234",
+  "apply_fuzz": 0,
+  "patch_apply": "PASS",
+  "bash_n": "PASS",
+  "fresh_execution": false,
+  "baseline_science_changed": false
+}

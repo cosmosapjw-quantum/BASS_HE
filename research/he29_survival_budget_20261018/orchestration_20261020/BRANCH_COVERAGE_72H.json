@@ -1,0 +1,550 @@
+{
+  "observed_utc": "2026-10-20T10:00:47.071Z",
+  "since": "2026-10-17T09:55:50Z",
+  "branch_count": 83,
+  "unique_head_count": 82,
+  "commit_metadata_errors": 0,
+  "recent_head_count": 4,
+  "criterion": "committer date on observed branch tip, not branch ref-update history",
+  "all_branch_tips": [
+    {
+      "branch": "audit2/adaptive-eq54",
+      "sha": "b8f53a013090f355c76902b2429a23883034866e",
+      "committer": "2026-09-26T16:19:53Z",
+      "tree": "5920cb6317a434beb01e2018779f8bf048b3d2d2"
+    },
+    {
+      "branch": "audit3/model-gates",
+      "sha": "3d30f628367f18b964304d56f46961ef6c194217",
+      "committer": "2026-09-26T17:25:49Z",
+      "tree": "5683b6b5ee9faa05f24d9a20d82071f1d1fba171"
+    },
+    {
+      "branch": "audit4/coherence",
+      "sha": "a61057f7e88291e1ee96851342848c021c6c2d65",
+      "committer": "2026-09-26T17:47:22Z",
+      "tree": "9a33d1295945390f7e90dafe6f5809af94a84782"
+    },
+    {
+      "branch": "audit5/phase-authority",
+      "sha": "6f2a5eb313a203ef721e9e7e964707e5a2608383",
+      "committer": "2026-09-26T17:57:09Z",
+      "tree": "0702d38c4106cac7a2a08916aaccbb2822efffaf"
+    },
+    {
+      "branch": "audit6/coherent-topology",
+      "sha": "15c945005dd2c97fe75b93072424c1075a93bdc2",
+      "committer": "2026-09-26T23:00:52Z",
+      "tree": "2401d4edf1ce978d99879edfb954f0c350105619"
+    },
+    {
+      "branch": "audit6/source-topology",
+      "sha": "22c3f949f8b18406db699eb461242251fbb881fb",
+      "committer": "2026-09-26T22:31:50Z",
+      "tree": "f5e86480f0bf701dd8512bd20000fe3bfba322d6"
+    },
+    {
+      "branch": "audit7/absorbing-semantics",
+      "sha": "6dee41e37edae719225ec0fd60d36d39399522ed",
+      "committer": "2026-09-26T23:05:19Z",
+      "tree": "60c35f84904660dd096b0813b3bd978f05d00887"
+    },
+    {
+      "branch": "audit7/channel-semantics",
+      "sha": "8999a8092f75911a13a8db0e8c49a5887fd8873a",
+      "committer": "2026-09-26T22:35:56Z",
+      "tree": "4148755ee0c6c8601a7ea1b824cac810e838dce5"
+    },
+    {
+      "branch": "audit8/dr11-nmax-dealiasing",
+      "sha": "d763f2706769802e16d9227eeb0304c85701fcf2",
+      "committer": "2026-09-27T00:10:46Z",
+      "tree": "05c68692a7ebfa3d06f872416bf65c0c0a7a048c"
+    },
+    {
+      "branch": "audit9/dr11e-sturm-anchors",
+      "sha": "85fcd7507bc9db0cdc06bf917b702d998abb43b3",
+      "committer": "2026-09-27T11:10:05Z",
+      "tree": "cb46d696b4187576171208f75af8cd80a0b91b42"
+    },
+    {
+      "branch": "audit10/dr11g-pair-membership",
+      "sha": "ac09160bae74f051e5e2e17d8a1cde4084576c16",
+      "committer": "2026-09-27T19:44:13Z",
+      "tree": "43e6fb8a7bb88234031542de835fd1e2615974d5"
+    },
+    {
+      "branch": "audit11/dr11h-certificate-binding",
+      "sha": "b8b2fe47a367459f6faf6796eb2f251feacbbd7c",
+      "committer": "2026-09-29T02:11:52Z",
+      "tree": "f5777ecf0b648cd5b4124bc170e9b5a5f3b38db8"
+    },
+    {
+      "branch": "impl/ncp-c64g3-runner-20260928",
+      "sha": "ad12eec6023c41b7791eb3958fc00b0adcd5bc14",
+      "committer": "2026-09-28T04:53:56Z",
+      "tree": "bdf79f93d54baac022e776f124033a623bad3a52"
+    },
+    {
+      "branch": "main",
+      "sha": "6ef63136d14dbe68a1c9eff4a43fece78cd87b35",
+      "committer": "2026-09-26T11:59:08Z",
+      "tree": "1d6bcd2ef0d57849826650a3c02de4789668292c"
+    },
+    {
+      "branch": "plan/ncp-c64g3-codex-20260928",
+      "sha": "4e775fdb61e72fd75f956fe0a83064e37e0522da",
+      "committer": "2026-09-28T03:02:22Z",
+      "tree": "6cd022714a4c3579ce1b2b68ac27f69968c0782d"
+    },
+    {
+      "branch": "research/b1-prescribed-thomson-20261012",
+      "sha": "354ff664c5910d2a17ab3bf0c07ad6ea7e0d4287",
+      "committer": "2026-10-12T08:01:08Z",
+      "tree": "697c4ee72963ffe395926b109195c32ccb072d40"
+    },
+    {
+      "branch": "research/cr-phys01-sync-20261010",
+      "sha": "291df022a217717e499846740d1cacbfae584ade",
+      "committer": "2026-10-10T10:45:30Z",
+      "tree": "0c2e7c5ac0a934a7223171c8d29df8920d95cd72"
+    },
+    {
+      "branch": "research/e13c5-first2-branch-cover-20261011",
+      "sha": "2085aee95970d95f9b91610bd28e0dc5d0948aab",
+      "committer": "2026-10-11T00:47:35Z",
+      "tree": "3d4bc0a8c85f543a4032424d3adf06bb06b87907"
+    },
+    {
+      "branch": "research/e13c5-full-finite-budget-20261011",
+      "sha": "d06b8066aafab930add24be971b494b591d87257",
+      "committer": "2026-10-11T04:53:14Z",
+      "tree": "fc768ca0866c37ee2377171ef79fd20efd6aa159"
+    },
+    {
+      "branch": "research/e13c5-full-first2-reviewed-20261011",
+      "sha": "0633ec2c9aed37593b9f1c05abc7156727408583",
+      "committer": "2026-10-10T23:02:24Z",
+      "tree": "49d1a38d4243ea94190a6ad6cf607ed822d8c9c0"
+    },
+    {
+      "branch": "research/e13c6-dominant-complement-20261011",
+      "sha": "019dc4f6451b3076eb6c21f8836a6040b232e945",
+      "committer": "2026-10-11T07:03:00Z",
+      "tree": "5340d442027b0b5787c66aa59c331ed3fa8a192d"
+    },
+    {
+      "branch": "research/e13c7-parallel-finite-refinement-20261011",
+      "sha": "26e5a30fa74d48c3f94e3b47fd685aa6a6d8d8a6",
+      "committer": "2026-10-11T09:29:14Z",
+      "tree": "2e28713586998b44f4d684ba61a478154c537bda"
+    },
+    {
+      "branch": "research/e13c8-full-finite-reduction-20261011",
+      "sha": "be029ab21fe1ef324c71d0de8783c9118a1079ac",
+      "committer": "2026-10-11T11:04:05Z",
+      "tree": "2af1f7d14c86d65d84fbe966c3673c342516ba49"
+    },
+    {
+      "branch": "research/e13c9-signed-volterra-local-20261012",
+      "sha": "b35891fc2063f6621a91d52968e67c768fecf563",
+      "committer": "2026-10-11T20:24:22Z",
+      "tree": "2621403951625bd7b819901a5248fcc8f39a1343"
+    },
+    {
+      "branch": "research/e13c10-first-midpoint-bound-20261012",
+      "sha": "3c20b6e9dcd099a4f5ac23208445225f959fd1e5",
+      "committer": "2026-10-12T01:07:07Z",
+      "tree": "1396ae938f1df2f12f5ee74793edd53ccfe8c07a"
+    },
+    {
+      "branch": "research/he17-r1-native-receiver-contract-20261014",
+      "sha": "d9a60904225f90d0e139c9b220dbd583413ccb51",
+      "committer": "2026-10-14T02:54:50Z",
+      "tree": "7496c6ed757c836274a0d70d7441001e07cb5023"
+    },
+    {
+      "branch": "research/he17-r2-forced-residual-evidence-20261014",
+      "sha": "dff95caa7fabb2a38acf73ba0946a1d88a125f3d",
+      "committer": "2026-10-14T04:24:49Z",
+      "tree": "0b045bc2125017fb4ae8c5bf491e2b979ff8d987"
+    },
+    {
+      "branch": "research/he17-r3-claim-alignment-20261014",
+      "sha": "8acae2b459d23140e0436e07f277c68d11f4424b",
+      "committer": "2026-10-14T04:52:40Z",
+      "tree": "cba7f0935335da05f444407deb918fa9c582be63"
+    },
+    {
+      "branch": "research/he17-r4-reference-selection-20261014",
+      "sha": "40659a752b9348fb7919cf5afcf42f310e05d064",
+      "committer": "2026-10-14T05:31:40Z",
+      "tree": "66d4417e14710a86670e0be67b86f4a7cb4c4148"
+    },
+    {
+      "branch": "research/he17-r5-first-cell-certificate-20261014",
+      "sha": "ec00072474d3668ba62cf99ddacbf8b04d8af4e9",
+      "committer": "2026-10-14T07:22:15Z",
+      "tree": "8bd32f6ccf44ab3346ea5c33a191de44d46eb816"
+    },
+    {
+      "branch": "research/he17-r6-review-rei-supplier-20261014",
+      "sha": "16a990556ea72f87246b3bb0ae5a14fbbb650497",
+      "committer": "2026-10-14T11:15:06Z",
+      "tree": "8b28bcf926ada72d4e08ed21c2a545bcbba4c306"
+    },
+    {
+      "branch": "research/he17-r7-carry-supplier-20261014-1124",
+      "sha": "f5d9d334a814d03a8808bba564d9c634dac35499",
+      "committer": "2026-10-14T11:50:29Z",
+      "tree": "af8217b6e03ab45c6a7a01dc15ab173c8a299959"
+    },
+    {
+      "branch": "research/he17-r8-adoption-reducer-20261014",
+      "sha": "a9220de96339fa08ece6251aeb4ac2c47f0f13c5",
+      "committer": "2026-10-14T12:39:35Z",
+      "tree": "7f73059b04318529963eb5702bd6e4cb944569cf"
+    },
+    {
+      "branch": "research/he17-r9-current-return-20261014",
+      "sha": "34303765770fb8d35d9ddef92dc9e8949e147dca",
+      "committer": "2026-10-14T13:33:05Z",
+      "tree": "a217b1d092bde55e36a20839ea924fef46d4828a"
+    },
+    {
+      "branch": "research/he17-r10-closeout-short-clock-20261014",
+      "sha": "cdc3b2a3b717d62451b4a41a11ef499a2cd8e874",
+      "committer": "2026-10-14T14:19:25Z",
+      "tree": "91f70e81bf34dc74edccab318be263a987833437"
+    },
+    {
+      "branch": "research/he18-c1-second-cell-local-20261015",
+      "sha": "429c288e6951c75b4bc9f28f49ddcc2c96b57a11",
+      "committer": "2026-10-14T15:20:10Z",
+      "tree": "33d104d89c96a03e9ce48b58e967fa269e9fe66c"
+    },
+    {
+      "branch": "research/he18-c2-source-jacobian-20261015",
+      "sha": "49a3f747aead23ac412922a45c9c1f4ef2a54157",
+      "committer": "2026-10-14T15:53:21Z",
+      "tree": "33993fe20c699311fb563968c4fff7d4ac9fe18f"
+    },
+    {
+      "branch": "research/he18-c3-two-cell-20261015",
+      "sha": "4c422f192f8415803f40e230a5a89d320096dd67",
+      "committer": "2026-10-14T16:31:19Z",
+      "tree": "50d54465af112b142bbd6c85d7683bb53deacca7"
+    },
+    {
+      "branch": "research/he18-c5-third-cell-20261015",
+      "sha": "9a4a554bfffd5aea81dbf0ea018f092f55e3efa9",
+      "committer": "2026-10-15T00:08:40Z",
+      "tree": "f93d6d97d939974e0e318d60c593167184fce18f"
+    },
+    {
+      "branch": "research/he18-c6-fourth-cell-optimized-20261015",
+      "sha": "e08a3695db89a817675778dcff11b801f53e904d",
+      "committer": "2026-10-15T00:33:28Z",
+      "tree": "6eabc36bb37f679db8c47a3b1ff36f4a903cf89a"
+    },
+    {
+      "branch": "research/he18-c7-fifth-cell-20261015",
+      "sha": "b3a56b360f3d913002dd63f8097b1457cf170e6a",
+      "committer": "2026-10-15T01:14:18Z",
+      "tree": "ca2184d281006fe79130a93c2f3090c136a0fefb"
+    },
+    {
+      "branch": "research/he18-c8-sixth-cell-20261015",
+      "sha": "490ac4a980b582d983f15975dc813ef5457efa02",
+      "committer": "2026-10-15T01:43:56Z",
+      "tree": "1a2c8826a2ffc925ac43fd0303a94210efb13368"
+    },
+    {
+      "branch": "research/he18-c9-seventh-cell-20261015",
+      "sha": "a3eeff91eb9d0c2ba42d553cfda7eab7ecbc53ef",
+      "committer": "2026-10-15T04:06:56Z",
+      "tree": "6e3377a22f4621a6b9d325962e00e5382ade3d4d"
+    },
+    {
+      "branch": "research/he18-p01-remaining-cells-20261015",
+      "sha": "b0af50b052862320896085fac70250f51c077944",
+      "committer": "2026-10-15T04:35:08Z",
+      "tree": "17cdabe44f1651a231237676cc30b4d73c46bd69"
+    },
+    {
+      "branch": "research/he18-rei-cold-tau-bridge-20261015",
+      "sha": "0ac62432d6950482ec6f8387dbeae8e2ef41a8d0",
+      "committer": "2026-10-15T11:43:30Z",
+      "tree": "29a1e2c9a1383f5ccfbe13f4ee01e70ec3b304cc"
+    },
+    {
+      "branch": "research/he19-continuum-uv-source-split-20261015",
+      "sha": "8e759508317f5ffbc891c5876ff10771ad79297b",
+      "committer": "2026-10-15T14:26:33Z",
+      "tree": "0ab2c71356bfa771829d709bc353405fa3d66656"
+    },
+    {
+      "branch": "research/he20-native-md14-spectral-cut-20261015",
+      "sha": "ccd9125e6776f3f8d3388d70c6675873464c5f30",
+      "committer": "2026-10-15T14:57:15Z",
+      "tree": "4f0a7cbf62f5970f9b3b585f12ea8ae23189a266"
+    },
+    {
+      "branch": "research/he21-positive-source-age-photoonly-20261016",
+      "sha": "579ffbce28f988aadb51c377b15f348e4c0359af",
+      "committer": "2026-10-15T15:45:05Z",
+      "tree": "b673616ec154a9d8081d9f5f08171786ba8f0fa3"
+    },
+    {
+      "branch": "research/he22-casea-native-handoff-20261016",
+      "sha": "0514b6bbb97902b29abe939b270394397354ba00",
+      "committer": "2026-10-15T18:42:16Z",
+      "tree": "132dc2b5af157f352957623be458b24afa508444"
+    },
+    {
+      "branch": "research/he22-native-first-failure-20261016",
+      "sha": "f103fdc48b8c6c3f032fdbe3face6c6fd078768d",
+      "committer": "2026-10-15T23:11:27Z",
+      "tree": "4ed4e43e4dc61c99d7ac3ba01c34ba72b27e271f"
+    },
+    {
+      "branch": "research/he23-total-hydrogen-density-20261016",
+      "sha": "45b940f1d190713eb4c15bd5560112b6c542c9e4",
+      "committer": "2026-10-16T00:08:17Z",
+      "tree": "563c8ac91c40ec14cdc6590dc332a19660a259f4"
+    },
+    {
+      "branch": "research/he24-source-time-cohort-20261016",
+      "sha": "f3227484c6f349915c18edba8a041c3311928417",
+      "committer": "2026-10-16T00:43:51Z",
+      "tree": "361ccc6eed4a91d8e7cf61d9036f04d63a9c9258"
+    },
+    {
+      "branch": "research/he25-proper-birth-duhamel-20261016",
+      "sha": "eb4952af1f3d9ca99aad300ddf6db6f2b2fe1233",
+      "committer": "2026-10-16T01:53:10Z",
+      "tree": "8085d2ed63700477fd492176dbf94f190d779823"
+    },
+    {
+      "branch": "research/he26-moving-cutoff-positive-source-20261016",
+      "sha": "98b31fbd779ed1ade8848580c2836f32259e3ef3",
+      "committer": "2026-10-16T02:43:37Z",
+      "tree": "108e0e493d1d41503cedfe0123b450a1a3e1ceed"
+    },
+    {
+      "branch": "research/he27-native-ab-20261018",
+      "sha": "2a9e27ade27fb2762bc955882799b736970bb786",
+      "committer": "2026-10-18T03:14:28Z",
+      "tree": "1a2b3f27e6244afb6afec6b54dbc6106513bb097"
+    },
+    {
+      "branch": "research/he27-sourcecut-native-20261016",
+      "sha": "311d9c173bc0e9bffa48fda8771aba80f1fb4b37",
+      "committer": "2026-10-16T04:34:54Z",
+      "tree": "cb4bf7cf3b01d83e8ed58e7a7fe6343c36f138b7"
+    },
+    {
+      "branch": "research/he28-strip-refinement-20261018",
+      "sha": "d496e0e8b7c9d5a708bf07c4c6eaa4900c6d489c",
+      "committer": "2026-10-18T07:04:54Z",
+      "tree": "f9d6b41f13537e634a208e88e4c65a36e966d960"
+    },
+    {
+      "branch": "research/he29-survival-budget-20261018",
+      "sha": "d63135807c80dc2ada7f85214b5087b9e3dff375",
+      "committer": "2026-10-20T07:16:24Z",
+      "tree": "84bc8c06ec25a502803fbc28dfb9976bff999c62"
+    },
+    {
+      "branch": "research/he-e13c5-off700-publication-20261011",
+      "sha": "48f648cd905cd8c232ae43abe97745ac6a96dec2",
+      "committer": "2026-10-10T17:27:02Z",
+      "tree": "b9a0ba328c8b6534849a601318574bd862f6aefe"
+    },
+    {
+      "branch": "research/rei-accel01-sync-20261010",
+      "sha": "7619603659a71bc5e89044afcc34c10376966aa5",
+      "committer": "2026-10-10T13:49:03Z",
+      "tree": "1df6b64a7cc34509402605155f428529624ef035"
+    },
+    {
+      "branch": "research/rux03-continuation-certificate-20261013",
+      "sha": "3932669f7904f7f68f2f07dced4cf1da9d472480",
+      "committer": "2026-10-13T00:37:04Z",
+      "tree": "e8a0113bbca1bc2e92761d8397b8f24ef0a39ec1"
+    },
+    {
+      "branch": "research/rux03-covariant-exchange-20261013",
+      "sha": "ca85cfc7353da190613f7fb37a6e0ffed9b51913",
+      "committer": "2026-10-12T21:38:40Z",
+      "tree": "92945aa1d8f6d56cc1c05dc322100fb6c435e054"
+    },
+    {
+      "branch": "research/rux03-event-bridge-02-20261012",
+      "sha": "6b337be443d0fbe8f07d99e7b3ff1cc210294bcb",
+      "committer": "2026-10-12T13:14:45Z",
+      "tree": "fabe2c9106da5691c0f8490b0125d301a9844ca5"
+    },
+    {
+      "branch": "research/rux03-helium-transfer-20261012",
+      "sha": "1d9794b4de07eaa165631b984b4a7c1030671ae6",
+      "committer": "2026-10-12T11:41:28Z",
+      "tree": "f1c3f9fe1f767511c8118cde2670d061fcc4dd94"
+    },
+    {
+      "branch": "research/rux03-moving-gas-source-20261013",
+      "sha": "94a34d09ad5810a675b556561e5593b279d30448",
+      "committer": "2026-10-12T23:24:54Z",
+      "tree": "41cde8f58348abc894d3689c4e2d7de1c8d64678"
+    },
+    {
+      "branch": "research/rux03-predictor-tube-20261013",
+      "sha": "670496dbbee5c19f3eb6c5759018cf284e4a3bae",
+      "committer": "2026-10-13T01:46:28Z",
+      "tree": "336800b4bd4ff621a2e27c0978447a988241435a"
+    },
+    {
+      "branch": "research/rux03-primary-theory-03-20261012",
+      "sha": "be96b0011772b47af4bd3c8e420f73153a745508",
+      "committer": "2026-10-12T15:19:17Z",
+      "tree": "a6f219225a05c8ac73604d5219a82e128860ab04"
+    },
+    {
+      "branch": "research/scientific-priority-reset-20261012",
+      "sha": "c3e797e0998cececc7cb7d0a502fc4e66f33fafc",
+      "committer": "2026-10-12T06:51:06Z",
+      "tree": "8161253a82d43682fd75f1953edb56a8999824b4"
+    },
+    {
+      "branch": "research/shared-c64-crossrepo-20260928",
+      "sha": "8fc3fb14dd33da10efa86c97c4beb9b0d12eeaad",
+      "committer": "2026-10-10T13:50:40Z",
+      "tree": "f3b22ad550ae18a38948e1fd13bc5dfba0bb564e"
+    },
+    {
+      "branch": "research/theory08-10-recovery-quadrature-20261013",
+      "sha": "5330be9ffdbc8dd093928a6585f6e426a20d8429",
+      "committer": "2026-10-13T11:05:12Z",
+      "tree": "9e02ffad6e86c2f0740fd9f420bc96adcedad581"
+    },
+    {
+      "branch": "research/theory11-electron-residual-20261013",
+      "sha": "a0a3ba4ecb17c779a713705a45ee3fa3a9638c94",
+      "committer": "2026-10-13T11:37:41Z",
+      "tree": "91419c233d2609a481b286a3d58756f66bca731a"
+    },
+    {
+      "branch": "research/theory12-kinetic-opacity-20261013",
+      "sha": "53cc1bfce3a9c0a386e1f9e10d516973c78dd499",
+      "committer": "2026-10-13T12:16:05Z",
+      "tree": "a8f4c3fb1eab9b6bbbf57a3fa2fd8a541ec874ce"
+    },
+    {
+      "branch": "research/theory13-kinetic-error-bridge-20261013",
+      "sha": "d9cb8c3ec3524ebd7d5c8418f2fda5fd329ef62f",
+      "committer": "2026-10-13T12:58:32Z",
+      "tree": "38fdbe7005e993cc7869a7a879c689a55ee64b58"
+    },
+    {
+      "branch": "research/theory14-15-recovery-observable-20261013",
+      "sha": "1b4ed28d82a90a810e159801bb95b4f19f9f22d0",
+      "committer": "2026-10-13T14:52:43Z",
+      "tree": "1dd178aa08f1c816e2ecb0762852c35c6d43fecc"
+    },
+    {
+      "branch": "research/theory16-charge-goal-20261014",
+      "sha": "1b4ed28d82a90a810e159801bb95b4f19f9f22d0",
+      "committer": "2026-10-13T14:52:43Z",
+      "tree": "1dd178aa08f1c816e2ecb0762852c35c6d43fecc"
+    },
+    {
+      "branch": "research/theory16-r5-donor-erratum-20261014",
+      "sha": "1a34c42504502bb3b30898f640b00ddb14e2a323",
+      "committer": "2026-10-13T20:40:21Z",
+      "tree": "481a19ac026f9f5363b0f30b35d5d2ff2b1132b6"
+    },
+    {
+      "branch": "research/theory16-r6-r7-current-clock-20261014",
+      "sha": "a4874b6483e66c310b76d645b2326f3b71721b49",
+      "committer": "2026-10-13T23:23:31Z",
+      "tree": "387a23228bb7609a0f2936eef0289e2c9ac3312a"
+    },
+    {
+      "branch": "research/theory16-r8-adoption-20261014",
+      "sha": "efacaa1c7a17416debac18101cc6558e44e825cf",
+      "committer": "2026-10-13T23:53:34Z",
+      "tree": "f810570e823f2f0ecb6122047a11073ab16168c3"
+    },
+    {
+      "branch": "research/theory16-r9-current-bin-20261014",
+      "sha": "db92d431453a93913ba63e47d7ea92934ad11e20",
+      "committer": "2026-10-14T01:16:38Z",
+      "tree": "1d8cf2025bc24e2bde5a812e5da405fd81f2556f"
+    },
+    {
+      "branch": "research/theory16-r10-closeout-20261014",
+      "sha": "b1f2ef158e0066a4b2d24cc8abf47a1c169742a6",
+      "committer": "2026-10-14T01:59:19Z",
+      "tree": "6da28591fe068c78c303a42c21fe759e35ece881"
+    },
+    {
+      "branch": "results/he28-ncp-hpc6-20261018",
+      "sha": "a41dd37124e34cb22bb9782aaf687a0da91640b7",
+      "committer": "2026-10-18T10:46:23Z",
+      "tree": "16d3331f8cc0fa0d7dd0a1a04cd4e27f556702aa"
+    },
+    {
+      "branch": "validation/ncp-c64g3-cloud-20260928",
+      "sha": "ff3035e0d240da53293cb2e15b97050cd5a25c47",
+      "committer": "2026-09-28T06:46:46Z",
+      "tree": "918c5101445720fe7d9b8e39031c2ca5dc51102f"
+    },
+    {
+      "branch": "validation/ncp-c64g3-dr11h-20260928",
+      "sha": "2c3812e390b91b89da1de30988b3933646b79f30",
+      "committer": "2026-09-28T10:40:32Z",
+      "tree": "e96885f705dcaa43861107672fbf6d597051da6d"
+    }
+  ],
+  "recent_heads": [
+    {
+      "branch": "research/he27-native-ab-20261018",
+      "sha": "2a9e27ade27fb2762bc955882799b736970bb786",
+      "committer": "2026-10-18T03:14:28Z",
+      "tree": "1a2b3f27e6244afb6afec6b54dbc6106513bb097"
+    },
+    {
+      "branch": "research/he28-strip-refinement-20261018",
+      "sha": "d496e0e8b7c9d5a708bf07c4c6eaa4900c6d489c",
+      "committer": "2026-10-18T07:04:54Z",
+      "tree": "f9d6b41f13537e634a208e88e4c65a36e966d960"
+    },
+    {
+      "branch": "research/he29-survival-budget-20261018",
+      "sha": "d63135807c80dc2ada7f85214b5087b9e3dff375",
+      "committer": "2026-10-20T07:16:24Z",
+      "tree": "84bc8c06ec25a502803fbc28dfb9976bff999c62"
+    },
+    {
+      "branch": "results/he28-ncp-hpc6-20261018",
+      "sha": "a41dd37124e34cb22bb9782aaf687a0da91640b7",
+      "committer": "2026-10-18T10:46:23Z",
+      "tree": "16d3331f8cc0fa0d7dd0a1a04cd4e27f556702aa"
+    }
+  ],
+  "PR78": {
+    "url": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/78",
+    "number": 78,
+    "state": "open",
+    "merged": false,
+    "draft": true,
+    "title": "HE29: pinned references, packed Rust JVP and exact return budgets",
+    "base": "results/he28-ncp-hpc6-20261018",
+    "base_sha": "a41dd37124e34cb22bb9782aaf687a0da91640b7",
+    "head": "research/he29-survival-budget-20261018",
+    "head_sha": "d63135807c80dc2ada7f85214b5087b9e3dff375",
+    "created_at": "2026-10-18T14:20:55Z",
+    "updated_at": "2026-10-20T07:22:23Z"
+  },
+  "excluded": "raw provider user/account/sharing metadata and private conversation bodies"
+}
