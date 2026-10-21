@@ -1,0 +1,14 @@
+{
+  "schema": "he31.publication.v1",
+  "repository": "cosmosapjw-quantum/BASS_HE",
+  "branch": "research/he31-electron-donor-thomson-20261021",
+  "pull_request": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/84",
+  "draft": true,
+  "merged": false,
+  "base_commit": "e173f373cd481864d0395e3a7a76520615a80e1a",
+  "intake_commit": "c7dde7753722339a268ee0bb02d6543be88466f9",
+  "intake_tree": "0e5a87c18c6cee231034e27bb983a07392ed34c3",
+  "intake_files": 15,
+  "implementation_commit": null,
+  "status": "P1_INTAKE_PUSHED_P2_PENDING"
+}
