@@ -1,7 +1,7 @@
 # Codex handoff — HE31 실행만 수행
 
-아래 블록은 NCP Codex에 복사한다. 최종 delivery commit에 실행 pin을 기록한다.
-현재 draft publication 중의 placeholder는 최종 게시 전에 치환된다.
+아래 블록은 NCP Codex에 복사한다. 실제 게시된 구현 commit을 실행 pin으로 고정했다.
+후속 delivery metadata commit은 과학 코드나 입력을 변경하지 않는다.
 
 ```text
 목표: BASS_HE HE31의 이미 구현·검토한 실제 R15 donor pilot18을 NCP에서 실행하고
@@ -10,7 +10,7 @@
 Repository: https://github.com/cosmosapjw-quantum/BASS_HE
 Draft PR: https://github.com/cosmosapjw-quantum/BASS_HE/pull/84
 Branch: research/he31-electron-donor-thomson-20261021
-실행 source pin: @HE31_EXECUTION_COMMIT@
+실행 source pin: 1c8a56aac89d0e40ede8770009f80ebca40a4d2c
 Unit: research/he31_electron_donor_20261021
 Donor identity: 96661134c04f69c67188863e585d831f61e090ac0fdc05dda7e977f1810d9eaa
 
@@ -59,7 +59,7 @@ Donor identity: 96661134c04f69c67188863e585d831f61e090ac0fdc05dda7e977f1810d9eaa
 ```bash
 git fetch origin research/he31-electron-donor-thomson-20261021
 HE31_NCP_WORKTREE=/absolute/new/path/BASS_HE_HE31_NCP
-git worktree add --detach "$HE31_NCP_WORKTREE" @HE31_EXECUTION_COMMIT@
+git worktree add --detach "$HE31_NCP_WORKTREE" 1c8a56aac89d0e40ede8770009f80ebca40a4d2c
 cd "$HE31_NCP_WORKTREE"
 python3 -m pip install -r research/he31_electron_donor_20261021/requirements.txt
 bash research/he31_electron_donor_20261021/run_ncp.sh pilot18_on

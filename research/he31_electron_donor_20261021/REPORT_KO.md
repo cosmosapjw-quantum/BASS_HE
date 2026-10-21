@@ -285,3 +285,12 @@ HE30 재실행으로 그 의존성을 대체하지 않는다.
 - 독립 donor·prepared·receiver·paired review: `evidence/*REVIEW*`.
 - 과학 결과 content authority: `evidence/EXECUTED_SOURCE_MANIFEST.json`.
 - 단계별 완료·운송 권위: `DAG.json`, `RESEARCH_LOOP_LEDGER_KO.md`, `delivery/`.
+
+### 최종 전달 확인
+
+구현 commit `1c8a56aac89d0e40ede8770009f80ebca40a4d2c`가 실제 push되었고
+119/119 Git blob이 원시 byte 기준 SHA와 일치했다. 최종 P2 archive는
+2,832,001bytes, SHA256 `e7a01a46b95ae30820bde7a46a6e94f920474a6e05574b188bb084051b51e577`다.
+Dropbox `id:BSpOijBcT10AAAAAAD_hjw`와 Drive `1-3utJjmUyFlzhXymeCcgOurJ02ruzoxC`의
+실제 저장 완료를 확인했다. P1 Drive는 응답 미확정 이력을 그대로 보존했다.
+전체20stage는 scoped 완료, HE31 NCP 실행과 실제 z2 H/He source는 후속 의존성이다.

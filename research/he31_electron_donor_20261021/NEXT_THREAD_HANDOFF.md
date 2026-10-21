@@ -10,8 +10,12 @@ $physmath-research-loop, $exa, $scispace, $wolfram을 사용해 BASS_HE→rei_bi
 Repo https://github.com/cosmosapjw-quantum/BASS_HE
 PR84 https://github.com/cosmosapjw-quantum/BASS_HE/pull/84 (draft, PR83 위 stacked)
 Branch research/he31-electron-donor-thomson-20261021
-과학 구현 pin @HE31_EXECUTION_COMMIT@
+과학 구현 pin 1c8a56aac89d0e40ede8770009f80ebca40a4d2c
 Unit research/he31_electron_donor_20261021
+R1–R10/C1–C10은20/20 scoped 완료, pending stage0.
+최종 P2 archive SHA e7a01a46b95ae30820bde7a46a6e94f920474a6e05574b188bb084051b51e577,
+2,832,001bytes; Dropbox id:BSpOijBcT10AAAAAAD_hjw, Drive 1-3utJjmUyFlzhXymeCcgOurJ02ruzoxC 양쪽completed.
+P1 Drive UNKNOWN은 이력으로 보존; 새 원격 전체 GET/hash 검증은 수행하지 않았음.
 최종 delivery metadata는 이 branch의 delivery/PUBLICATION.json, P1/P2_ACK.json,
 DAG.json, RESEARCH_LOOP_LEDGER_KO.md를 읽어.
 

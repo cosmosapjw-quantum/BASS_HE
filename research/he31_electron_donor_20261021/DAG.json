@@ -5,7 +5,7 @@
   "task": "both",
   "unit_id": "HE31_ELECTRON_DONOR_20261021",
   "objective": "strict HHe donor, photon-only receiver, prepared canonical moments, actual light control, ready NCP pilot",
-  "status": "science_complete_delivery_in_progress",
+  "status": "complete_scoped_with_dual_provider_delivery",
   "base_commit": "e173f373cd481864d0395e3a7a76520615a80e1a",
   "stages": [
     {
@@ -17,7 +17,7 @@
         "CONTRACT_KO.md"
       ],
       "checkpoint": "P1",
-      "backup": "P1_DROPBOX_COMPLETE_DRIVE_UNKNOWN: delivery/P1_ACK.json",
+      "backup": "P1_DROPBOX_COMPLETE_DRIVE_UNKNOWN; finalP2_BOTH_COMPLETE",
       "publication": "P1_c7dde7753722339a268ee0bb02d6543be88466f9",
       "new_benchmark_runs": 0
     },
@@ -34,8 +34,8 @@
         "evidence/physics/SOURCE_MAP.json"
       ],
       "checkpoint": "P1_P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P1_c7dde7753722339a268ee0bb02d6543be88466f9; P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -51,7 +51,7 @@
         "evidence/context/DONOR_RECOVERY.json"
       ],
       "checkpoint": "P1",
-      "backup": "P1_DROPBOX_COMPLETE_DRIVE_UNKNOWN: delivery/P1_ACK.json",
+      "backup": "P1_DROPBOX_COMPLETE_DRIVE_UNKNOWN; finalP2_BOTH_COMPLETE",
       "publication": "P1_c7dde7753722339a268ee0bb02d6543be88466f9",
       "new_benchmark_runs": 0
     },
@@ -67,8 +67,8 @@
         "REPORT_KO.md"
       ],
       "checkpoint": "P1_P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P1_c7dde7753722339a268ee0bb02d6543be88466f9; P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -84,8 +84,8 @@
         "evidence/physics/THEORY_ALGEBRA_CHECK.json"
       ],
       "checkpoint": "P1_P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P1_c7dde7753722339a268ee0bb02d6543be88466f9; P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -101,8 +101,8 @@
         "evidence/PAIRED_RESULT_REVIEW.json"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -118,8 +118,8 @@
         "evidence/REFERENCE_RECEIVER_PARITY.json"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -135,8 +135,8 @@
         "plots/ANALYSIS_SUMMARY.json"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -153,8 +153,8 @@
         "plots/endpoints.csv"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -164,15 +164,16 @@
         "R9",
         "C9"
       ],
-      "status": "delivery_in_progress",
+      "status": "complete_scoped",
       "evidence_refs": [
         "REPORT_KO.md",
         "RESEARCH_LOOP_LEDGER_KO.md",
-        "NEXT_THREAD_HANDOFF.md"
+        "NEXT_THREAD_HANDOFF.md",
+        "delivery/P2_ACK.json"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -187,7 +188,7 @@
         "evidence/BASELINE_MANIFEST.json"
       ],
       "checkpoint": "P1",
-      "backup": "P1_DROPBOX_COMPLETE_DRIVE_UNKNOWN: delivery/P1_ACK.json",
+      "backup": "P1_DROPBOX_COMPLETE_DRIVE_UNKNOWN; finalP2_BOTH_COMPLETE",
       "publication": "P1_c7dde7753722339a268ee0bb02d6543be88466f9",
       "new_benchmark_runs": 0
     },
@@ -204,7 +205,7 @@
         "CONTRACT_KO.md"
       ],
       "checkpoint": "P1",
-      "backup": "P1_DROPBOX_COMPLETE_DRIVE_UNKNOWN: delivery/P1_ACK.json",
+      "backup": "P1_DROPBOX_COMPLETE_DRIVE_UNKNOWN; finalP2_BOTH_COMPLETE",
       "publication": "P1_c7dde7753722339a268ee0bb02d6543be88466f9",
       "new_benchmark_runs": 0
     },
@@ -222,8 +223,8 @@
         "src/prepared_moments.py"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -240,8 +241,8 @@
         "REPORT_KO.md"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -258,8 +259,8 @@
         "run_ncp.sh"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -276,8 +277,8 @@
         "results/reuse_readback/RUNNER_REPORT.json"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -294,8 +295,8 @@
         "evidence/PLOT_REVIEW.json"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -311,8 +312,8 @@
         "evidence/PREPARED_INDEPENDENT_REVIEW.json"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -327,8 +328,8 @@
         "evidence/PREPARED_INDEPENDENT_REVIEW.json"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     },
     {
@@ -338,15 +339,16 @@
         "C9",
         "R10"
       ],
-      "status": "delivery_in_progress",
+      "status": "complete_scoped",
       "evidence_refs": [
         "CODEX_HANDOFF.md",
         "delivery/PUBLICATION.json",
-        "DAG.json"
+        "DAG.json",
+        "delivery/P2_ACK.json"
       ],
       "checkpoint": "P2",
-      "backup": "P2_PENDING",
-      "publication": "P2_PENDING",
+      "backup": "P2_FINAL_BOTH_PROVIDERS_COMPLETE: delivery/P2_ACK.json",
+      "publication": "P2_1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
       "new_benchmark_runs": 0
     }
   ],
@@ -358,11 +360,16 @@
     "light_checks": "complete_scoped",
     "actual_donor_control": "complete_2cases_plus1reference",
     "saved_figures": "complete_4figures",
-    "publication": "P1_complete_P2_pending",
-    "backup": "P1_Dropbox_observed_Drive_pending_P2_pending",
+    "publication": "P1_and_P2_pushed;119of119P2blobs_matched;delivery_metadata_recorded_in_enclosing_commit",
+    "backup": "P2_FINAL_completed_Dropbox_and_Drive;P1_Drive_unknown_preserved",
     "NCP_full_campaign": "prepared_not_run",
     "physical_z2_HHe_donor": "next_research_dependency_missing_input"
   },
   "next_unit": "adopt/generate supported z20-to-2 HHe source without extending current source guard silently",
-  "scientific_verification": "evidence/VERIFICATION_SUMMARY.json"
+  "scientific_verification": "evidence/VERIFICATION_SUMMARY.json",
+  "implementation_commit": "1c8a56aac89d0e40ede8770009f80ebca40a4d2c",
+  "completed_stages": 20,
+  "pending_stages": 0,
+  "updated_utc": "2026-10-21T13:59:49.892297+00:00",
+  "final_archive_sha256": "e7a01a46b95ae30820bde7a46a6e94f920474a6e05574b188bb084051b51e577"
 }
