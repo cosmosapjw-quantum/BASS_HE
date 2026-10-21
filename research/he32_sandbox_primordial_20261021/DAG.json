@@ -574,7 +574,12 @@
         "archive_sha256": "27cb0eb0a779815dfaa226849f706df2fed6f0ae6b792383cbc9a0f90635806a",
         "full_get_readback_verified": true
       },
-      "publication": "P3_Git_pending",
+      "publication": {
+        "commit": "8d32c9944acffbeed5dc98325d283bf0c3b506f0",
+        "PR": 85,
+        "receipt": "delivery/P3_GIT_READBACK.json",
+        "scope": "code/SVG/summary/evidence; full raw data via verified archive"
+      },
       "next": "F.C8",
       "evidence": [
         "results/SUMMARY.json",
@@ -593,7 +598,12 @@
         "archive_sha256": "27cb0eb0a779815dfaa226849f706df2fed6f0ae6b792383cbc9a0f90635806a",
         "full_get_readback_verified": true
       },
-      "publication": "P3_Git_pending",
+      "publication": {
+        "commit": "8d32c9944acffbeed5dc98325d283bf0c3b506f0",
+        "PR": 85,
+        "receipt": "delivery/P3_GIT_READBACK.json",
+        "scope": "code/SVG/summary/evidence; full raw data via verified archive"
+      },
       "next": "F.C9",
       "evidence": [
         "results/ANGULAR_GUARDS.json",
@@ -612,7 +622,12 @@
         "archive_sha256": "27cb0eb0a779815dfaa226849f706df2fed6f0ae6b792383cbc9a0f90635806a",
         "full_get_readback_verified": true
       },
-      "publication": "P3_Git_pending",
+      "publication": {
+        "commit": "8d32c9944acffbeed5dc98325d283bf0c3b506f0",
+        "PR": 85,
+        "receipt": "delivery/P3_GIT_READBACK.json",
+        "scope": "code/SVG/summary/evidence; full raw data via verified archive"
+      },
       "next": "F.C10",
       "evidence": [
         "evidence/physics/COUPLED_PHYSICS_REPORT_KO.md",
@@ -622,7 +637,7 @@
     },
     {
       "id": "F.C10",
-      "status": "deliverable_complete_publication_pending",
+      "status": "complete_scoped",
       "backup": {
         "stage_snapshot": "checkpoints/F-C10.tar.gz",
         "scope": "Stage snapshot plus complete raw payload in final verified full archive.",
@@ -631,8 +646,13 @@
         "archive_sha256": "27cb0eb0a779815dfaa226849f706df2fed6f0ae6b792383cbc9a0f90635806a",
         "full_get_readback_verified": true
       },
-      "publication": "P3_Git_pending",
-      "next": "P3 Git commit and readback -> final metadata receipt; science complete",
+      "publication": {
+        "commit": "8d32c9944acffbeed5dc98325d283bf0c3b506f0",
+        "PR": 85,
+        "receipt": "delivery/P3_GIT_READBACK.json",
+        "scope": "code/SVG/summary/evidence; full raw data via verified archive"
+      },
+      "next": "completed; subsequent physical extensions start a new DAG",
       "evidence": [
         "README.md",
         "RESULTS_KO.md",
@@ -644,9 +664,13 @@
   ],
   "recovery_event": "evidence/recovery/RECOVERY_EVENT.json",
   "recovery_completed": "evidence/recovery/RECOVERY_COMPLETED.json",
-  "remaining": "final Git commit/readback and metadata receipt only; full Dropbox archive and all science/figures complete",
+  "remaining": "none for the scoped HE32 preliminary pilot",
   "science_complete": true,
   "new_science_runs_required": 0,
   "full_backup_receipt": "delivery/FINAL_BACKUP_ACK.json",
-  "data_delivery": "delivery/DATA_DELIVERY.json"
+  "data_delivery": "delivery/DATA_DELIVERY.json",
+  "completed_stages": 30,
+  "total_stages": 30,
+  "final_publication_receipt": "delivery/FINAL_PUBLICATION.json",
+  "completion_utc": "2026-10-21T22:26:12.722955+00:00"
 }

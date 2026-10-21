@@ -1,7 +1,7 @@
 {
   "schema": "he32.data_delivery.v1",
   "created_utc": "2026-10-21T22:22:17.145042+00:00",
-  "status": "COMPLETE_ARCHIVE_VERIFIED_GIT_CODE_EVIDENCE_PUBLICATION_PENDING",
+  "status": "COMPLETE_ARCHIVE_AND_GIT_CODE_EVIDENCE_VERIFIED",
   "git_scope": [
     "all portable executable code and pinned inputs",
     "six SVG figures, endpoint CSV, CATALOG, SUMMARY, angular guards",
@@ -41,5 +41,9 @@
   "backup_receipt": "delivery/FINAL_BACKUP_ACK.json",
   "archive_time_relation": "Frozen before final Git publication; restore results only beside final checkout; publication ACKs and later documentation are Git sidecars.",
   "detached_binary_objects": "Partial optional blob uploads are content-addressed objects only and are not attached to the final branch tree. All raw data are delivered together in the complete archive.",
-  "science_runs_for_delivery_change": 0
+  "science_runs_for_delivery_change": 0,
+  "git_commit": "8d32c9944acffbeed5dc98325d283bf0c3b506f0",
+  "git_unit_files": 574,
+  "git_tree": "30b5506bd38a30d86d06ae91e55acbf82b038841",
+  "git_verification_receipt": "delivery/P3_GIT_READBACK.json"
 }
