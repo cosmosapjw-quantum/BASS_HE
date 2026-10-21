@@ -8,7 +8,11 @@
 branch: research/he32-sandbox-primordial-pilot-20261021
 PR: https://github.com/cosmosapjw-quantum/BASS_HE/pull/85 (draft, stacked on HE31)
 unit: research/he32_sandbox_primordial_20261021
-고정된 최종 코드·증거 commit: 8d32c9944acffbeed5dc98325d283bf0c3b506f0
+과학 코드·결과 증거 기준 commit (P3): 8d32c9944acffbeed5dc98325d283bf0c3b506f0
+게시 영수증·완료 DAG가 포함된 복원 기준 commit (P4): 9179848428510efcc88c2b5da72efc9a71ef2182
+자료 열람용 checkout은 P4 또는 그 이후의 문서 보완 commit을 사용한다.
+P3_GIT_READBACK.json / FINAL_PUBLICATION.json은 P4에서 추가되었으므로
+과학 기준 P3만 checkout한 뒤 그 게시 영수증 파일을 찾지 않는다.
 과학 코드 baseline P2: 0c016a11966547d81dbc61117ab45e8f0ab81790
 최종 코드·SVG·요약·증거 게시: delivery/P3_GIT_READBACK.json의 commit을 먼저 확인한다.
 원자료394NPZ+case receipt+PNG: 검증된 전체 archive로 전달한다.

@@ -30,7 +30,10 @@ Archive SHA-256:
 ```
 
 The executed reference environment is Python 3.12.14 with NumPy 2.3.5,
-SciPy 1.17.0 and Matplotlib 3.10.8. From a checkout of the final published code:
+SciPy 1.17.0 and Matplotlib 3.10.8. Use the publication metadata revision
+`9179848428510efcc88c2b5da72efc9a71ef2182` (P4) or a later documentation-only
+revision when reading delivery ACKs. The P3 code/evidence revision is their
+subject and predates those ACK files. From that final publication checkout:
 
 ```bash
 python3 -m pip install -r research/he32_sandbox_primordial_20261021/requirements.txt
