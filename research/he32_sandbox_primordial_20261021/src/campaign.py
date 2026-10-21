@@ -48,7 +48,7 @@ def run_group(cases, group, out, args):
     print(json.dumps(dict(stage=group, requested=len(cases), status="RUNNING")), flush=True)
     report = shared_run(out / "cases", max_workers=args.max_workers, seconds=args.seconds,
                         reserve_cpus=args.reserve_cpus, reserve_gib=args.reserve_gib,
-                        api_module="coupled_pilot")
+                        api_module="coupled_pilot", recovery_manifest=args.recover_missing_artifacts)
     atomic_json(out / ("RUNNER_" + group.upper() + ".json"), report)
     unsuccessful = {k: r for k, r in report["statuses"].items()
                     if r["status"] not in {"COMPLETE", "REUSED_COMPLETE"}}
@@ -168,6 +168,8 @@ def main():
     parser.add_argument("--reserve-cpus", type=int, default=2)
     parser.add_argument("--reserve-gib", type=float, default=16.)
     parser.add_argument("--preflight-only", action="store_true")
+    parser.add_argument("--recover-missing-artifacts", type=Path,
+                        help="explicit manifest for successful prior runs whose JSON and NPZ were lost")
     args = parser.parse_args()
     out = args.out.resolve()
     grid, preflight, guards = configurations()

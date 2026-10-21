@@ -193,14 +193,37 @@ def reusable(config, path, api):
         return False
 
 
-def classify(config, out, lease_dir, api):
+def recovery_registry(lease_dir, identity, recovery=None):
+    """Keep original success evidence immutable when lost bytes are regenerated.
+
+    The opt-in manifest names exact COMPLETE receipts whose JSON and NPZ bytes
+    are both missing. CPU and identity locks remain in the shared namespace.
+    A failed or partial recovery is preserved by the normal classifier.
+    """
+    token = identity_token(identity)
+    original = Path(lease_dir) / ("rei_" + token + ".receipt.json")
+    if not recovery or identity not in recovery["receipts"]:
+        return original
+    evidence = recovery["receipts"][identity]
+    raw = original.read_bytes()
+    old = json.loads(raw)
+    path = Path(old["path"])
+    if (hashlib.sha256(raw).hexdigest() != evidence["sha256"]
+            or old.get("identity") != identity or old.get("status") != "COMPLETE"
+            or old.get("exitcode") != 0 or old.get("result_valid") is not True
+            or path.exists() or path.with_suffix(".npz").exists()):
+        raise ValueError("artifact recovery requires unchanged successful receipt and missing JSON/NPZ")
+    return original.with_name("rei_" + token + ".recovery_" + recovery["recovery_id"] + ".receipt.json")
+
+
+def classify(config, out, lease_dir, api, recovery=None):
     """Read exact science result first; never overwrite partial/failed attempts."""
     identity = api.case_identity(config)
     token = identity_token(identity)
     local = Path(out) / (config["case_id"] + ".json")
     if reusable(config, local, api):
         return {"status": "REUSED_COMPLETE", "path": str(local), "identity": identity}
-    registry = Path(lease_dir) / ("rei_" + token + ".receipt.json")
+    registry = recovery_registry(lease_dir, identity, recovery)
     if registry.exists():
         try:
             record = json.loads(registry.read_text())
@@ -235,11 +258,18 @@ def _worker(config_path, out, cpu, module):
 
 
 def run(out, max_workers=64, seconds=60., dry_plan=False, lease_dir=LEASES,
-        reserve_cpus=2, reserve_gib=16., *, api_module="continuation"):
+        reserve_cpus=2, reserve_gib=16., *, api_module="continuation", recovery_manifest=None):
     if not math.isfinite(seconds) or not 0 < seconds <= 3600:
         raise ValueError("bounded time budget (0,3600] required")
     os.environ.update(THREAD_ENV)
     api = _api(api_module)
+    recovery = None
+    if recovery_manifest is not None:
+        recovery = json.loads(Path(recovery_manifest).read_text())
+        if (recovery.get("schema") != "he32.missing_artifact_recovery.v1"
+                or not SAFE_ID.fullmatch(recovery.get("recovery_id", ""))
+                or not isinstance(recovery.get("receipts"), dict)):
+            raise ValueError("invalid opt-in missing-artifact recovery manifest")
     cases = api.case_grid()
     ids = [c["case_id"] for c in cases]
     if (any(not isinstance(k, str) or not SAFE_ID.fullmatch(k) for k in ids)
@@ -248,7 +278,7 @@ def run(out, max_workers=64, seconds=60., dry_plan=False, lease_dir=LEASES,
     out, lease_dir = Path(out).resolve(), Path(lease_dir).resolve()
     statuses, pending = {}, []
     for config in cases:
-        record = classify(config, out, lease_dir, api)
+        record = classify(config, out, lease_dir, api, recovery)
         if record is not None:
             statuses[config["case_id"]] = record
         else:
@@ -275,6 +305,7 @@ def run(out, max_workers=64, seconds=60., dry_plan=False, lease_dir=LEASES,
                   "snapshot": snapshot, "capacity": plan, "worker_starts": launched,
                   "elapsed_seconds": time.monotonic() - started,
                   "time_budget_seconds": seconds, "other_jobs_signalled": 0,
+                  "artifact_recovery_id": recovery["recovery_id"] if recovery else None,
                   "semantics": "cooperative leases plus observed load; only owned direct children signalled"}
         atomic_json(report_path, report)
         atomic_json(out / "RUNNER_REPORT.json", report)
@@ -318,7 +349,7 @@ def run(out, max_workers=64, seconds=60., dry_plan=False, lease_dir=LEASES,
                     # A busy case is skipped, not a stop for the remaining grid.
                     statuses[key] = {"status": "DEFERRED", "reason": "same_identity_running"}
                     continue
-                record = classify(config, out, lease_dir, api)
+                record = classify(config, out, lease_dir, api, recovery)
                 if record is not None:
                     statuses[key] = record
                     pending.remove(config)
@@ -335,7 +366,7 @@ def run(out, max_workers=64, seconds=60., dry_plan=False, lease_dir=LEASES,
                 cpu, cpu_lock = selected
                 token = identity_token(identity)
                 attempt = out / ".runner_attempts" / token
-                registry = lease_dir / ("rei_" + token + ".receipt.json")
+                registry = recovery_registry(lease_dir, identity, recovery)
                 stdout = stderr = None
                 try:
                     attempt.mkdir(parents=True, exist_ok=False)
