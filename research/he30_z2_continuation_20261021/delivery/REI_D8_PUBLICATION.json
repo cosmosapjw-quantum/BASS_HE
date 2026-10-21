@@ -37,5 +37,6 @@
       "success": true
     }
   ],
-  "all_exact_utf8_content_match": true
+  "all_utf8_text_matches_after_universal_newline_normalization": true,
+  "csv_transport_note": "GitHub text publication of late_reversal_brackets.csv uses LF; locally generated and archived CSV uses CRLF. The four numerical rows and all fields are identical. This receipt asserts normalized UTF8 text equality, not raw CSV byte equality."
 }
