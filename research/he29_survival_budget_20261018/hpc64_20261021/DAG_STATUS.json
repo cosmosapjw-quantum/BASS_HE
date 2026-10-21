@@ -1,0 +1,212 @@
+{
+  "schema": "he29.hpc64.dag.v1",
+  "updated_utc": "2026-10-20 22:35:30 UTC",
+  "anchor_publication": "a02ae998570d5a0a4fffdf46299ee77b1c738759",
+  "lane": "hpc64_20261021",
+  "stages": {
+    "R1": {
+      "name": "연구 목표·계약",
+      "status": "COMPLETE_FIXED_NUMERICS_HPC64_OPTIMIZATION"
+    },
+    "R2": {
+      "name": "문헌조사·기존 성과 재사용",
+      "status": "COMPLETE_BOUNDED_DELTA_SCISPACE_EXA_REUSE"
+    },
+    "R3": {
+      "name": "주장·전제 정합성 검토",
+      "status": "COMPLETE_COHORT_FINITE_MODEL_PERFORMANCE_SCOPE"
+    },
+    "R4": {
+      "name": "발산적 가설·모델 탐색",
+      "status": "COMPLETE_TABLE_CACHE_TRACE_RESOURCE_ALTERNATIVES"
+    },
+    "R5": {
+      "name": "구성적 수학 유도·증명",
+      "status": "COMPLETE_ROW_ASSEMBLY_AMDAHL_DURABILITY"
+    },
+    "R6": {
+      "name": "독립 검증·적대적 심사",
+      "status": "PASS_SCOPED_SAME_INDEPENDENT_REVIEW_FINDING_FIXED"
+    },
+    "R7": {
+      "name": "판별 검증·경량 계산",
+      "status": "PASS_ACTUAL_WOLFRAM_SOURCE_ROW_MANUFACTURED_IO"
+    },
+    "R8": {
+      "name": "과학적 결과 판정",
+      "status": "COMPLETE_SCOPED_PRESERVATION_NATIVE_CANARY_PENDING"
+    },
+    "R9": {
+      "name": "이론 정식화·계산 연결",
+      "status": "COMPLETE_FORMULAS_TO_SIX_ADAPTERS"
+    },
+    "R10": {
+      "name": "연구 정리·체크포인트",
+      "status": "SCOPED_COMPLETE_RESEARCH_CODE_AND_DOC_CHECKPOINTS_RAW_VERIFIED"
+    },
+    "C1": {
+      "name": "목표·기준 결과 설정",
+      "status": "COMPLETE_ONE_PENDING_JOB_FOUR_PAIRS_REUSED"
+    },
+    "C2": {
+      "name": "코드·수식·데이터 조사",
+      "status": "COMPLETE_PINNED_SOURCE_PROFILE_DATA_IDENTITY"
+    },
+    "C3": {
+      "name": "알고리즘·수치기법 설계",
+      "status": "COMPLETE_UNCHANGED_NUMERICS_NEW_SCHEDULING_IO"
+    },
+    "C4": {
+      "name": "구현 계획·병렬화 설계",
+      "status": "COMPLETE_DAG_HOST_BUDGET_LEASE"
+    },
+    "C5": {
+      "name": "코드 구현",
+      "status": "COMPLETE_SIX_ADAPTERS_AND_NCP_ENTRY"
+    },
+    "C6": {
+      "name": "소프트웨어 검증·디버깅",
+      "status": "PASS_62_DISTINCT_FIRST_METHODS"
+    },
+    "C7": {
+      "name": "물리적·과학적 검증",
+      "status": "PASS_SCOPED_CONTRACT_PRESERVATION_NATIVE_PENDING"
+    },
+    "C8": {
+      "name": "수치 정확도·성능 검증",
+      "status": "PASS_SCOPED_ROW_PARITY_IO_PROBE_FULL_TABLE_AND_NATIVE_PENDING"
+    },
+    "C9": {
+      "name": "독립 코드 심사·개선",
+      "status": "PASS_ONE_CLOSED_FINDING_OPEN_BLOCKERS_0"
+    },
+    "C10": {
+      "name": "배포 판정·실행 인계",
+      "status": "SCOPED_HANDOFF_COMPLETE_NATIVE_PENDING_REPORTED_SSH_AUTH_HOLD",
+      "latest_return_evidence": "USER_NARRATIVE_NO_RAW_SSH_LOGS; NO_NEW_SCIENCE_RESULT"
+    }
+  },
+  "reused": {
+    "native_reference_pairs": "4/4_ONE_COHORT_ADMITTED",
+    "saved_analysis": "09929_EXIT0",
+    "old_completed_tests_replayed": 0
+  },
+  "ready_pending_jobs": [
+    {
+      "id": "HE29_PACKED_R4_TABLE512",
+      "count": 1,
+      "status": "NOT_RUN",
+      "solver_threads": 1,
+      "execution_blocker": "REMOTE_PROCESS_AND_ARTIFACT_VISIBILITY_UNOBSERVED_AFTER_REPORTED_SSH_AUTH_FAILURE"
+    }
+  ],
+  "activity": {
+    "NCP_submitted": 0,
+    "NCP_started": 0,
+    "RDC_calls": 0,
+    "remote_process_visibility": "UNOBSERVED",
+    "new_native_calls": 0,
+    "new_physical_solver_runs": 0,
+    "new_bridge_compiles": 0,
+    "new_canary_runs": 0
+  },
+  "publication": {
+    "stage1": "cbbed9c3da6b41914527e322d2cb9bea9dc7b1f3",
+    "stage1_actual_readbacks": 8,
+    "code": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
+    "code_tree": "bf52fcabc3b03e00df140d2fdf913f05b3699d08",
+    "code_actual_readbacks": 63,
+    "documentation": "99ad3286c61a9e86ecf11a844260bf9ed36b5f01",
+    "documentation_actual_readbacks": 11,
+    "final_metadata": "4977b6ddc1d905454482fd6cac1b3768bbe2d32f",
+    "auth_hold_metadata": "THIS_COMMIT_ID_RECORDED_IN_DETACHED_PUBLICATION_READBACK_AND_PR78"
+  },
+  "backup": {
+    "stage1_Dropbox": "ACTUAL_RAW_PASS_PAYLOAD9_MEMBER10",
+    "stage1_Drive": "UNKNOWN_NO_ACK_640_2S_PARENT_INTERRUPT_ONE_NOT_FOUND_OBSERVATION_NO_RETRY",
+    "code": {
+      "name": "BASS_HE_HE29_HPC64_CODE_RESEARCH_20261021_aa274776.tar.gz",
+      "bytes": 135774,
+      "sha256": "aa27477614c4b4670901d5d891aa1835d0e928030368eb59ff7b449432131ae0",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_aHQ",
+      "content_hash": "d768738a933ae4e8016275044d5768ffe4365d1f8365a66a6b416e6981ef31ad",
+      "payloads_verified": 70,
+      "regular_members": 71,
+      "status": "ACTUAL_RAW_PASS",
+      "Drive": "NOT_CALLED_AFTER_STAGE1_UNKNOWN"
+    },
+    "old_unknowns": "PRESERVED_NO_RETRY",
+    "stage1_receipt": "evidence/INTAKE_BACKUP_RECEIPT.json",
+    "documentation": {
+      "name": "BASS_HE_HE29_HPC64_HANDOFF_COMPLETE_20261021_30a7717f.tar.gz",
+      "bytes": 162543,
+      "sha256": "30a7717f0a83315c9f27ee7660d31dfa12f73dc128a99eb7f452c2eb7aed6ac4",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_aHw",
+      "content_hash": "b6d725b57457d1167522c7ce4d1e6b101878031c47b056e828066e9517fcec62",
+      "payloads_verified": 13,
+      "regular_members": 14,
+      "canonical_prompts_verified": 2,
+      "status": "ACTUAL_RAW_PASS",
+      "documentation_commit": "99ad3286c61a9e86ecf11a844260bf9ed36b5f01",
+      "fixed_code_pin": "802a32361288bf5aa0e0d1f63c912768f1a1d407",
+      "Drive": "NOT_CALLED"
+    },
+    "final_metadata_closeout": {
+      "name": "HE29_HPC64_HANDOFF_CLOSEOUT_20261021_bef6a93a.tar.gz",
+      "bytes": 31556,
+      "sha256": "bef6a93adc05f4bc20a8c710f2b635fcf7c26e03976cd883a0c3e060bf43c82c",
+      "payload_verified": 15,
+      "regular_members": 16,
+      "canonical_prompts_verified": 2,
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_aIQ",
+      "publication": "4977b6ddc1d905454482fd6cac1b3768bbe2d32f",
+      "status": "REUSED_PRIOR_ACTUAL_RAW_PASS_NOT_REVERIFIED"
+    }
+  },
+  "limits": [
+    "Other conversations returned an actual service error; no exhaustive absence claim.",
+    "Remote processes have not been observed.",
+    "Only bounded backup/related-repo deltas were read.",
+    "Small source-row parity and manufactured trace timing are not an actual HE29 canary or NCP speed measurement."
+  ],
+  "validation": {
+    "new_distinct_test_methods": 62,
+    "first_groups": {
+      "table": 11,
+      "native_trace": 11,
+      "canary_worker": 10,
+      "host_initial": 12,
+      "batch_build": 12
+    },
+    "targeted_new_methods": {
+      "host_relative_cwd": 2,
+      "C9_actual_cgroup_root": 4
+    },
+    "prior_test_methods_replayed": 0,
+    "full_source_table_on_same_NCP_cohort": "NOT_RUN",
+    "actual_source_row_subset": "PASS_256x640_TWO_WORKER_BYTE_IDENTITY",
+    "trace_benchmark": "PASS_4096_POINTS_9_MANUFACTURED_SAMPLES",
+    "Bash_syntax_blocks": 2,
+    "manufactured_archive_payload_readback": "PASS_2_OF_2_MEMBER3"
+  },
+  "current_unit": "SCOPED_R_C_COMPLETE_WITH_DECLARED_NCP_CANARY_AND_DRIVE_HOLDS",
+  "next_execution": "Restore usable authorized executor access, then observe actual processes and stored results; if no existing canary return or active process is found in the observed scope, use fixed802a for the single r4/table512 canary. This intake does not verify remote absence.",
+  "latest_executor_return": {
+    "status": "PRE_EXECUTION_HOLD_REMOTE_AUTH_BLOCKED",
+    "evidence_status": "USER_PROVIDED_EXECUTOR_NARRATIVE",
+    "receipt": "evidence/EXECUTOR_AUTH_HOLD_20261021.json",
+    "received_utc": "2026-10-20 22:35:30 UTC",
+    "raw_ssh_logs": "NOT_PROVIDED",
+    "reported_designated_key": "MISSING_IN_EXECUTOR_ENVIRONMENT",
+    "reported_available_key": "PUBLIC_KEY_AUTHENTICATION_REJECTED",
+    "remote_process_visibility": "UNOBSERVED",
+    "remote_saved_artifacts_visibility": "UNOBSERVED",
+    "reported_RUN_READY_calls": 0,
+    "reported_NCP_submitted": 0,
+    "reported_NCP_started": 0,
+    "reported_native_calls": 0,
+    "scientific_failure_evidence": false,
+    "minimal_next_step": "An authorized executor with authenticated NCP access must observe actual processes and stored HE29 artifacts before considering the one prepared canary.",
+    "publication_and_backup_receipt": "DETACHED_ACTUAL_READBACK_AND_ARCHIVE_IDENTITY_IN_PR78; FIXED_CODE_UNCHANGED"
+  }
+}
