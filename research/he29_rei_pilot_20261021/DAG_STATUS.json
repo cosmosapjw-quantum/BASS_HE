@@ -1,0 +1,60 @@
+{
+  "schema": "he29.rei.pilot.dag.v1",
+  "updated_utc": "2026-10-21T05:57:42.428530+00:00",
+  "user_date_zone": "Asia/Seoul",
+  "base": "38493edccd9344c11fd66e63e1d938f77c2b093f",
+  "stage": "INTAKE_AND_FROZEN_CONTRACT",
+  "R": {
+    "R1": "COMPLETE",
+    "R2": "COMPLETE_BOUNDED_INTAKE",
+    "R3": "COMPLETE_NORM_UNITS_SOURCE_CONVENTIONS",
+    "R4": "COMPLETE_SCOPED_OPTIONS_SELECTED",
+    "R5": "COMPLETE_DERIVATION",
+    "R6": "PENDING_INDEPENDENT_REVIEW",
+    "R7": "WOLFRAM_8_ZERO_RESIDUALS_NEW",
+    "R8": "PENDING_PILOT_REVIEW",
+    "R9": "IMPLEMENTATION_IN_PROGRESS",
+    "R10": "CHECKPOINT_IN_PROGRESS"
+  },
+  "C": {
+    "C1": "COMPLETE",
+    "C2": "COMPLETE",
+    "C3": "COMPLETE_SOURCE_FROZEN_DESIGN",
+    "C4": "COMPLETE_SHARED_RESOURCE_DESIGN",
+    "C5": "IN_PROGRESS",
+    "C6": "TARGETED_CHECKS_IN_PROGRESS",
+    "C7": "PENDING",
+    "C8": "DETAILED_BENCHMARK_EXCLUDED_BY_USER",
+    "C9": "PENDING_ONE_PASS_REVIEW",
+    "C10": "PENDING"
+  },
+  "reused": {
+    "HE29_reference_pairs": 4,
+    "HE29_packed_canary": 1,
+    "C15_stored_rows": 512,
+    "previous_validation_reruns": 0
+  },
+  "publication": {
+    "phase": "INITIAL_CHECKPOINT_PREPARED",
+    "new_branch": "research/he29-rei-sigma-pi-pilot-20261021",
+    "PR78_PR81": "PRESERVE_DRAFT_OPEN_UNMERGED"
+  },
+  "backup": {
+    "phase": "INTAKE_ARCHIVE_IN_PROGRESS",
+    "claim": "NO_NEW_REMOTE_ACK_YET"
+  },
+  "NCP": {
+    "submissions_this_unit": 0,
+    "starts_this_unit": 0,
+    "process_visibility": "NOT_OBSERVED",
+    "other_process_policy": "SHARED_CAPACITY_NOT_BLANKET_HOLD"
+  },
+  "claims_hold": [
+    "general_triaxial_BianchiI",
+    "continuous_spectrum_convergence",
+    "full_EoR",
+    "Grackle_equivalence",
+    "observational_CMB_Bianchi",
+    "NCP64_speedup"
+  ]
+}
