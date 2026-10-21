@@ -1,6 +1,6 @@
 {
   "schema": "HE30_DAG_V2",
-  "updated_utc": "2026-10-21T11:15:41.657766+00:00",
+  "updated_utc": "2026-10-21T11:57:19.373638+00:00",
   "scope": "D3 immutable consumption and independently reviewed preliminary plots",
   "superseded_plan": "C21M27 tail before any science execution",
   "science_runs_this_turn": 0,
@@ -44,37 +44,37 @@
     "R6": {
       "title": "독립 과학 심사",
       "state": "COMPLETE_SCOPED",
-      "checkpoint": "CP-C",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "checkpoint": "CP-B",
+      "backup": "COMPLETED_DUAL_PROVIDER_ACK",
+      "publication": "65cc2af0caeaa4d5ce6aff37d72cf352cf24aaa7"
     },
     "R7": {
       "title": "판별 경량 계산",
       "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-B",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_PROVIDER_ACK",
+      "publication": "65cc2af0caeaa4d5ce6aff37d72cf352cf24aaa7"
     },
     "R8": {
       "title": "과학 결과 판정",
       "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-C",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_FULL_GET_SHA_PAYLOAD_PASS",
+      "publication": "FINAL_METADATA_COMMIT_CONTAINING_THIS_DAG; source/data fb3146b94093776cad88e68cffb89b6559a405b3"
     },
     "R9": {
       "title": "이론·계산 연결",
       "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-B",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_PROVIDER_ACK",
+      "publication": "65cc2af0caeaa4d5ce6aff37d72cf352cf24aaa7"
     },
     "R10": {
       "title": "연구 정리·인계",
-      "state": "IN_PROGRESS",
+      "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-C",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_FULL_GET_SHA_PAYLOAD_PASS",
+      "publication": "FINAL_METADATA_COMMIT_CONTAINING_THIS_DAG; source/data fb3146b94093776cad88e68cffb89b6559a405b3"
     },
     "C1": {
       "title": "목표·기준 결과",
@@ -101,50 +101,50 @@
       "title": "구현·병렬 설계",
       "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-B",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_PROVIDER_ACK",
+      "publication": "65cc2af0caeaa4d5ce6aff37d72cf352cf24aaa7"
     },
     "C5": {
       "title": "코드 구현",
       "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-B",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_PROVIDER_ACK",
+      "publication": "65cc2af0caeaa4d5ce6aff37d72cf352cf24aaa7"
     },
     "C6": {
       "title": "소프트웨어 검증",
       "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-B",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_PROVIDER_ACK",
+      "publication": "65cc2af0caeaa4d5ce6aff37d72cf352cf24aaa7"
     },
     "C7": {
       "title": "과학적 검증",
       "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-B",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_PROVIDER_ACK",
+      "publication": "65cc2af0caeaa4d5ce6aff37d72cf352cf24aaa7"
     },
     "C8": {
       "title": "정확도·성능 범위",
       "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-B",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_PROVIDER_ACK",
+      "publication": "65cc2af0caeaa4d5ce6aff37d72cf352cf24aaa7"
     },
     "C9": {
       "title": "독립 코드 심사",
       "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-C",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_FULL_GET_SHA_PAYLOAD_PASS",
+      "publication": "FINAL_METADATA_COMMIT_CONTAINING_THIS_DAG; source/data fb3146b94093776cad88e68cffb89b6559a405b3"
     },
     "C10": {
       "title": "배포·실행 인계",
-      "state": "IN_PROGRESS",
+      "state": "COMPLETE_SCOPED",
       "checkpoint": "CP-C",
-      "backup": "PENDING_ACK",
-      "publication": "PENDING_ACK"
+      "backup": "COMPLETED_DUAL_FULL_GET_SHA_PAYLOAD_PASS",
+      "publication": "FINAL_METADATA_COMMIT_CONTAINING_THIS_DAG; source/data fb3146b94093776cad88e68cffb89b6559a405b3"
     }
   },
   "edges": [
@@ -227,9 +227,29 @@
   ],
   "result_validity": "PASS_SCOPED_PRELIMINARY",
   "provenance_validity": "237_HASH_PREFIX_JOIN_PASS",
-  "packaging_validity": "IN_PROGRESS",
+  "packaging_validity": "COMPLETE_DUAL_BACKUP_FULL_GET_SHA_PAYLOAD_PASS",
   "performance": "NOT_RUN_USER_EXCLUDED_BENCHMARKS",
   "ncp_execution_this_turn": false,
   "changed_code_review": "PASS_SCOPED_CHANGED_CODE_REVIEW",
-  "compact_catalog": "237_REUSED_COMPLETE"
+  "compact_catalog": "237_REUSED_COMPLETE",
+  "source_results_commit": "fb3146b94093776cad88e68cffb89b6559a405b3",
+  "pr": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/83",
+  "rei_contribution": {
+    "pr": "https://github.com/cosmosapjw-quantum/rei_bianchi/pull/216",
+    "commit": "1f32cc442ebde284bbb944455ba96066c9e0e055",
+    "readback": "7/7 exact UTF8",
+    "draft": true,
+    "merged": false
+  },
+  "D8": {
+    "state": "PASS_SCOPED_PRELIMINARY",
+    "source": "results/LATE_REVERSAL_BRACKETS.json",
+    "review": "evidence/D8_INDEPENDENT_REVIEW.json",
+    "science_calls": 0,
+    "root_solver_calls": 0,
+    "interpolation": false
+  },
+  "metadata_publication": "The commit containing this DAG. External final delivery receipt records its resolved SHA and actual Git readback.",
+  "backup_readback": "delivery/CP_C_READBACK.json: both providers HTTP200, 5902164 bytes, identical archive SHA256, 310/310 payload hashes match each",
+  "archive_checkpoint_note": "Immutable CP-C archive predates provider ACK; its DAG is a historical pre-transport snapshot. This published DAG closes those transport states without repacking the archive."
 }

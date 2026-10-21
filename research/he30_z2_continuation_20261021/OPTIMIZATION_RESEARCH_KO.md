@@ -42,7 +42,7 @@
 - 실행 runner `components/unified_pilot.py`: 원 실행 `49d4464ecb4682846ace0d07411d3a9f9e49bc494fa8d641b567306725374d97`, 직렬화 보완 후 `a7bf1a82140778a37a957e4dea4b42a2dbf227c8175c68804439305c70b51b64`.
 - compact `histories.npz` SHA256: `d4258bc58948b318df2b9d5ea7ceca6258eac62147aececc6ec10068987b6c6c`.
 
-D3 결과 전체가 어느 Git commit에 게시되었는지는 원 archive 조사만으로 확인되지 않았다. 따라서 D0 commit을 D3 실행 commit처럼 쓰지 않는다. 원료 archive, kernel commit, 실제 실행 파일 SHA, 파생 compact SHA를 각각 보존한다. 최신 branch 이름 하나가 이 네 identity를 대신하지 않는다. [정확한 authority와 provider 정보](evidence/D3_SOURCE_AUTHORITY.json).
+D3 결과 전체의 Git 게시 위치는 초기 archive 조사만으로 확인되지 않았다. 게시 직전 최신 상태를 다시 읽어 다른 세션의 REI source/results `3a525e3e16f1ba9393818a800327cc58597fd7b5`와 closure `744438f4512c7df1646aad0136ddc435b27200b0`를 확인했다. [그 시점의 실제 원문](evidence/UPSTREAM_FINAL_STATUS_OBSERVED.md)을 별도로 보존한다. D0 commit을 D3 실행 commit처럼 쓰지 않고, 원료 archive, kernel commit, 실제 실행 파일 SHA, 파생 compact SHA를 각각 보존한다. [정확한 초기 authority와 provider 정보](evidence/D3_SOURCE_AUTHORITY.json).
 
 HE PR82의 완료40 보고와 현재 회수 가능한 raw27은 구별한다. 업로드되지 않은 missing13을 D3로 복구했다고 하지 않는다. D3는 별도로 완료된 데이터이며, 이번 목표에는 그 완전한 결과가 직접 적합하다. 기존 C21M27 continuation 계획도 새 과학 실행 전에 이 발견으로 대체했다. [백업 조사](evidence/BACKUP_CONTEXT_FINDINGS_KO.md), [대체된 계약](evidence/CONTRACT_SUPERSEDED_BEFORE_EXECUTION_KO.md).
 
