@@ -24,3 +24,25 @@ Read CONTRACT.json, DELTA_INTAKE_KO.md and DAG.json. Source and validation
 artifacts are added at their actual completion checkpoints. HE32's 394 saved
 trajectories and six figure pairs remain reusable through its verified archive;
 no fresh IVP, render or benchmark is required to use them.
+
+## Implemented API and actual validation
+
+The dependency-free source is `src/lrs_baryon_moments.js`. It exports
+`invariants, rhs, step, advance, thermalLedger`. Units are SI. The source-free
+step solves the frozen 2x2 moment system; advance uses midpoint coefficient
+samples. See THEORY_KO.md and COMPUTATIONAL_CONTRACT.md.
+
+The exact core and check source strings were executed in current V8; 17 check
+groups passed. The independent Wolfram source/oracles and original failed edge
+cases are stored in checks/ and evidence/. The unrun Node module/CLI smoke is a
+separate compatibility gate:
+
+```bash
+node research/he33_baryon_moment_foundation_20261022/checks/check_core.cjs
+```
+
+Expected: `groups=17, passed=17, failed=0`, exit0 on a compatible Node host.
+This command performs only the finite mechanical checks and never imports or
+runs the HE32 cosmological solver. Current shell service was unavailable, so
+Node CLI execution is not claimed. Read REPORT_KO.md and NEXT_DAG.json before
+physical coupling. No package installation, compiler or rate service is needed.

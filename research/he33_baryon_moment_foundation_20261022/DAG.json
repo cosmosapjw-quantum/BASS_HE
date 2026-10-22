@@ -219,63 +219,82 @@
     {
       "id": "C6",
       "name": "contract execution",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "C5"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "evidence/VALIDATION.json",
+        "evidence/INDEPENDENT_REVIEW.json",
+        "checks/check_core.cjs"
+      ],
+      "checkpoint": "S2",
       "next": "C7"
     },
     {
       "id": "C7",
       "name": "physics checks",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "C6"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "evidence/VALIDATION.json",
+        "evidence/INDEPENDENT_REVIEW.json",
+        "checks/check_core.cjs"
+      ],
+      "checkpoint": "S2",
       "next": "C8"
     },
     {
       "id": "C8",
       "name": "convergence/stiff stability",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "C7"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "evidence/VALIDATION.json",
+        "evidence/INDEPENDENT_REVIEW.json",
+        "checks/check_core.cjs"
+      ],
+      "checkpoint": "S2",
       "next": "C9"
     },
     {
       "id": "C9",
       "name": "independent code audit",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "C8"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "evidence/VALIDATION.json",
+        "evidence/INDEPENDENT_REVIEW.json",
+        "checks/check_core.cjs"
+      ],
+      "checkpoint": "S2",
       "next": "C10"
     },
     {
       "id": "C10",
       "name": "delivery and handoffs",
-      "status": "pending",
+      "status": "delivery_pending",
       "depends_on": [
         "C9"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "REPORT_KO.md",
+        "NEXT_DAG.json"
+      ],
+      "checkpoint": "S3",
       "next": "HE34 physical-rate/source dependencies"
     }
   ],
   "progress": {
-    "complete": 15,
+    "complete": 19,
     "total": 20
   },
-  "next": "C6",
-  "publication": "see delivery ACKs"
+  "next": "C10 delivery/handoffs",
+  "science_core_complete": true
 }
