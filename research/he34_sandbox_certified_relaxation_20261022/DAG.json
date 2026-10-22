@@ -181,15 +181,21 @@
     {
       "id": "R10",
       "title": "종료·재개",
-      "status": "pending",
+      "status": "in_progress",
       "depends_on": [
         "R9"
       ],
-      "evidence_refs": [],
-      "checkpoint": null,
-      "backup_record": null,
+      "evidence_refs": [
+        "RESULTS_KO.md",
+        "CODEX_HANDOFF.md",
+        "NEXT_THREAD_HANDOFF.md",
+        "NEXT_DAG.json"
+      ],
+      "checkpoint": "S2",
+      "backup_record": "delivery/S2_ACK.json",
       "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
-      "next_stage_ids": []
+      "next_stage_ids": [],
+      "reason": "Deliverables prepared; close only after final payload publication/archive acknowledgement"
     },
     {
       "id": "C1",
@@ -344,13 +350,18 @@
     {
       "id": "C9",
       "title": "독립 검토",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "C8"
       ],
-      "evidence_refs": [],
-      "checkpoint": null,
-      "backup_record": null,
+      "evidence_refs": [
+        "evidence/review/INDEPENDENT_REVIEW.json",
+        "evidence/review/PHYSICS_AND_CODE_REVIEW.md",
+        "evidence/review/VISUAL_REVIEW.json",
+        "evidence/PACKAGE_VERIFICATION.json"
+      ],
+      "checkpoint": "S2",
+      "backup_record": "delivery/S2_ACK.json",
       "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
       "next_stage_ids": [
         "C10"
@@ -359,18 +370,24 @@
     {
       "id": "C10",
       "title": "판정·인계",
-      "status": "pending",
+      "status": "in_progress",
       "depends_on": [
         "C9"
       ],
-      "evidence_refs": [],
-      "checkpoint": null,
-      "backup_record": null,
+      "evidence_refs": [
+        "RESULTS_KO.md",
+        "CODEX_HANDOFF.md",
+        "NEXT_THREAD_HANDOFF.md",
+        "NEXT_DAG.json"
+      ],
+      "checkpoint": "S2",
+      "backup_record": "delivery/S2_ACK.json",
       "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
-      "next_stage_ids": []
+      "next_stage_ids": [],
+      "reason": "Deliverables prepared; close only after final payload publication/archive acknowledgement"
     }
   ],
-  "next": "C9 independent output/figure review; R10/C10 scoped closeout, backups and both handoffs",
+  "next": "S2 publication/archive acknowledgement, then close R10/C10 with exact storage evidence",
   "checkpoints": [
     {
       "id": "S0",
@@ -379,7 +396,7 @@
     },
     {
       "id": "S1",
-      "status": "local_payload_ready",
+      "status": "published_and_backed_up",
       "stages": [
         "R5",
         "R6",
@@ -395,13 +412,25 @@
         "C7",
         "C8"
       ],
-      "next": "C9,R10,C10"
+      "next": "C9,R10,C10",
+      "ack": "delivery/S1_ACK.json"
+    },
+    {
+      "id": "S2",
+      "status": "local_payload_ready",
+      "stages": [
+        "C9",
+        "R10",
+        "C10"
+      ],
+      "next": "acknowledge storage, close current unit, then NEXT_DAG B1/B2"
     }
   ],
   "task": "both",
   "status": "in_progress",
   "objective": "Derive and implement a certified stiff LRS gas-moment reduction with an exact neutral-H/He viscosity reduction; execute only new bounded diagnostics in the sandbox.",
   "scope": "Q=j=0 prescribed-constant-chi mechanics; separate neutral-H1/He4 common-T viscosity diagnostic",
-  "completed_stages": 17,
-  "total_stages": 20
+  "completed_stages": 18,
+  "total_stages": 20,
+  "delivery_state": "final_payload_prepared"
 }

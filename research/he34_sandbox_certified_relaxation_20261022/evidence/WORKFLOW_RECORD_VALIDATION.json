@@ -1,0 +1,17 @@
+{
+  "attempts": [
+    {
+      "command": "python /root/.codex/skills/remote-skills/skill-6aa0657100b08191b7d67482d1f97c1d/scripts/run_record.py check research/he34_sandbox_certified_relaxation_20261022/RUN_RECORD.json",
+      "exit_code": 0,
+      "execution_tool_chunk": "ff4f2b",
+      "run_record_sha256": "8bb1f875f4314ecf54ad8a1c66f3c6813f37cfdb38ec561eac545c28343306bb",
+      "result": {
+        "status": "valid",
+        "validation_scope": "structure_and_references",
+        "scientific_validity": "not_assessed",
+        "errors": []
+      },
+      "stage_snapshot": "18complete,2in_progress pending final archive acknowledgement"
+    }
+  ]
+}
