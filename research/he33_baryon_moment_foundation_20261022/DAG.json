@@ -1,0 +1,249 @@
+{
+  "unit": "HE33",
+  "workflow_version": "1.0.0",
+  "approval_version": "0.2",
+  "parent_HE32_DAG": "unchanged 30/30",
+  "completion_scope": "mechanical pressure moment foundation",
+  "stages": [
+    {
+      "id": "R1",
+      "name": "research contract",
+      "status": "complete_scoped",
+      "depends_on": [],
+      "evidence": [
+        "CONTRACT.json",
+        "DELTA_INTAKE_KO.md",
+        "SOURCES.json"
+      ],
+      "checkpoint": "S0",
+      "next": "R2"
+    },
+    {
+      "id": "R2",
+      "name": "evidence reuse",
+      "status": "complete_scoped",
+      "depends_on": [
+        "R1"
+      ],
+      "evidence": [
+        "CONTRACT.json",
+        "DELTA_INTAKE_KO.md",
+        "SOURCES.json"
+      ],
+      "checkpoint": "S0",
+      "next": "R3"
+    },
+    {
+      "id": "R3",
+      "name": "claim and assumption alignment",
+      "status": "complete_scoped",
+      "depends_on": [
+        "R2"
+      ],
+      "evidence": [
+        "CONTRACT.json",
+        "DELTA_INTAKE_KO.md",
+        "SOURCES.json"
+      ],
+      "checkpoint": "S0",
+      "next": "R4"
+    },
+    {
+      "id": "R4",
+      "name": "candidate closure and variables",
+      "status": "complete_scoped",
+      "depends_on": [
+        "R3"
+      ],
+      "evidence": [
+        "CONTRACT.json",
+        "DELTA_INTAKE_KO.md",
+        "SOURCES.json"
+      ],
+      "checkpoint": "S0",
+      "next": "R5"
+    },
+    {
+      "id": "R5",
+      "name": "constructive derivation",
+      "status": "pending",
+      "depends_on": [
+        "R4"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "R6"
+    },
+    {
+      "id": "R6",
+      "name": "independent physics audit",
+      "status": "pending",
+      "depends_on": [
+        "R5"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "R7"
+    },
+    {
+      "id": "R7",
+      "name": "symbolic/finite checks",
+      "status": "pending",
+      "depends_on": [
+        "R6"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "R8"
+    },
+    {
+      "id": "R8",
+      "name": "scoped adoption",
+      "status": "pending",
+      "depends_on": [
+        "R7"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "R9"
+    },
+    {
+      "id": "R9",
+      "name": "math-to-code contract",
+      "status": "pending",
+      "depends_on": [
+        "R8"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "R10"
+    },
+    {
+      "id": "R10",
+      "name": "theory checkpoint",
+      "status": "pending",
+      "depends_on": [
+        "R9"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "C1"
+    },
+    {
+      "id": "C1",
+      "name": "baseline and gates",
+      "status": "pending",
+      "depends_on": [
+        "R10"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "C2"
+    },
+    {
+      "id": "C2",
+      "name": "equation-code mapping",
+      "status": "pending",
+      "depends_on": [
+        "C1"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "C3"
+    },
+    {
+      "id": "C3",
+      "name": "stable numerical design",
+      "status": "pending",
+      "depends_on": [
+        "C2"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "C4"
+    },
+    {
+      "id": "C4",
+      "name": "execution DAG",
+      "status": "pending",
+      "depends_on": [
+        "C3"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "C5"
+    },
+    {
+      "id": "C5",
+      "name": "implementation",
+      "status": "pending",
+      "depends_on": [
+        "C4"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "C6"
+    },
+    {
+      "id": "C6",
+      "name": "contract execution",
+      "status": "pending",
+      "depends_on": [
+        "C5"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "C7"
+    },
+    {
+      "id": "C7",
+      "name": "physics checks",
+      "status": "pending",
+      "depends_on": [
+        "C6"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "C8"
+    },
+    {
+      "id": "C8",
+      "name": "convergence/stiff stability",
+      "status": "pending",
+      "depends_on": [
+        "C7"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "C9"
+    },
+    {
+      "id": "C9",
+      "name": "independent code audit",
+      "status": "pending",
+      "depends_on": [
+        "C8"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "C10"
+    },
+    {
+      "id": "C10",
+      "name": "delivery and handoffs",
+      "status": "pending",
+      "depends_on": [
+        "C9"
+      ],
+      "evidence": [],
+      "checkpoint": null,
+      "next": "HE34 physical-rate/source dependencies"
+    }
+  ],
+  "progress": {
+    "complete": 4,
+    "total": 20
+  },
+  "next": "R5",
+  "publication": "actual ACK in delivery; no speculative completion"
+}
