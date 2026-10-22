@@ -2,6 +2,8 @@
 
 **workflow1.0.0 / approval0.2.** [PR88](https://github.com/cosmosapjw-quantum/BASS_HE/pull/88). HE32의 30/30 완료 결과와 HE33의 기초를 재사용한다. 병렬 Lorentz PR87과 구분되는 연구 단원이다.
 
+**현재 단원 20/20 완료.** 최종 science pin은 `24b134545822cff6c2bf2ee9623d330e7efd1176`이다. 전체 79개 payload의 archive 내부 SHA256와 실제 원격 Git blob이 모두 일치하고, 최종 archive 저장 acknowledgement를 확인했다. [저장·게시 영수증](delivery/S2_ACK.json)과 [원격 readback](delivery/S2_REMOTE_READBACK.json)을 보존한다. 후속 B1–B5는 이 완료 수에 포함하지 않는다.
+
 ## 실제 결과
 
 - 저장된 HE32 한 배경의 201 nodes에서 prescribed-chi mechanics를 계산했다. 고정 1e-6 r/log-pressure 기준으로 chi=10,100은 거절하고 1000,10000은 수용했다. chi=1000의 r 오차는 6.84089e-7, 연속계 상한은 6.86890e-7이다. 별도 구적 gate도 통과했다.
@@ -27,4 +29,4 @@ HE32는 8핵종 21상태의 prescribed-UV photo+caseA RR pilot이다. 기존 mat
 
 기존 HE32 IVP/render/benchmark 재실행은 0/0/0이고, 새 coupled cosmological IVP는 0이다. 저장 배경의 새 mechanical reference는 11 histories/2200 short interval solves다. 별도 synthetic/reviewer 검산은 각 receipt에 분리했다.
 
-최종 science payload는 준비되어 독립 검토를 통과했다. 정확한 단계 완료 수와 게시·백업 acknowledgement는 DAG/delivery 기록을 따른다.
+최종 science payload의 독립 검토·게시·백업·두 인계를 완료했다. 단계별 근거와 checkpoint, 다음 DAG는 DAG/delivery 기록을 따른다.

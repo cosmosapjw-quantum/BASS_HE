@@ -6,7 +6,7 @@
   "unit_id": "HE34-SCR",
   "objective": "Derive and implement a certified stiff LRS gas-moment reduction with an exact neutral-H/He viscosity reduction; execute only new bounded diagnostics in the sandbox.",
   "scope": "Q=j=0 prescribed-constant-chi mechanics; separate neutral-H1/He4 common-T viscosity diagnostic",
-  "status": "in_progress",
+  "status": "complete",
   "dependencies": [
     {
       "id": "HE32",
@@ -151,6 +151,26 @@
         "contract"
       ],
       "sha256": "ab7544cca0097d0499d579136bdd178850e0286bc21d090d7d5132c61f9ed238"
+    },
+    {
+      "id": "E_5b63a8cd3311",
+      "kind": "storage",
+      "locator": "delivery/S2_ACK.json",
+      "scope": "Scoped evidence as defined in the referenced artifact; not an all-physics completion claim",
+      "dependency_ids": [
+        "contract"
+      ],
+      "sha256": "229158165c839aa0e62a767fcea60693d70ff320c0f79da2b8c347339809a080"
+    },
+    {
+      "id": "E_39eab4b8fa9c",
+      "kind": "storage",
+      "locator": "delivery/S2_REMOTE_READBACK.json",
+      "scope": "Scoped evidence as defined in the referenced artifact; not an all-physics completion claim",
+      "dependency_ids": [
+        "contract"
+      ],
+      "sha256": "58067af8ff13b5e6701ae8908739168f2958259c65fd2e42887f073ec0b99120"
     },
     {
       "id": "E_13537b0ef08a",
@@ -708,17 +728,19 @@
     },
     {
       "id": "R10",
-      "status": "in_progress",
+      "status": "complete",
       "evidence_refs": [
         "E_e15b4a47957f",
         "E_59d6b34a584e",
         "E_e96115c09946",
-        "E_cd7fac9a9f54"
+        "E_cd7fac9a9f54",
+        "E_5b63a8cd3311",
+        "E_39eab4b8fa9c"
       ],
       "dependency_ids": [
         "contract"
       ],
-      "reason": "Deliverables prepared; close only after final payload publication/archive acknowledgement",
+      "reason": "Scientific payload and both handoffs published at S2; full79-payload archive and remote blob identities verified; provider acknowledgement completed.",
       "reuse": null,
       "checkpoint": "S2",
       "backup_record": "delivery/S2_ACK.json",
@@ -909,17 +931,19 @@
     },
     {
       "id": "C10",
-      "status": "in_progress",
+      "status": "complete",
       "evidence_refs": [
         "E_e15b4a47957f",
         "E_59d6b34a584e",
         "E_e96115c09946",
-        "E_cd7fac9a9f54"
+        "E_cd7fac9a9f54",
+        "E_5b63a8cd3311",
+        "E_39eab4b8fa9c"
       ],
       "dependency_ids": [
         "contract"
       ],
-      "reason": "Deliverables prepared; close only after final payload publication/archive acknowledgement",
+      "reason": "Scientific payload and both handoffs published at S2; full79-payload archive and remote blob identities verified; provider acknowledgement completed.",
       "reuse": null,
       "checkpoint": "S2",
       "backup_record": "delivery/S2_ACK.json",
@@ -1077,7 +1101,7 @@
       "domain": "storage",
       "result": "pass_scoped",
       "evidence_refs": [
-        "E_3a5abe31761c"
+        "E_5b63a8cd3311"
       ],
       "reason": "Provider completed acknowledgement and Git commit/tree identities; archive payload hashes locally verified",
       "execution_ref": null

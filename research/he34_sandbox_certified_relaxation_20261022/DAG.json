@@ -181,7 +181,7 @@
     {
       "id": "R10",
       "title": "종료·재개",
-      "status": "in_progress",
+      "status": "complete",
       "depends_on": [
         "R9"
       ],
@@ -189,13 +189,15 @@
         "RESULTS_KO.md",
         "CODEX_HANDOFF.md",
         "NEXT_THREAD_HANDOFF.md",
-        "NEXT_DAG.json"
+        "NEXT_DAG.json",
+        "delivery/S2_ACK.json",
+        "delivery/S2_REMOTE_READBACK.json"
       ],
       "checkpoint": "S2",
       "backup_record": "delivery/S2_ACK.json",
       "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
       "next_stage_ids": [],
-      "reason": "Deliverables prepared; close only after final payload publication/archive acknowledgement"
+      "reason": "Scientific payload and both handoffs published at S2; full79-payload archive and remote blob identities verified; provider acknowledgement completed."
     },
     {
       "id": "C1",
@@ -370,7 +372,7 @@
     {
       "id": "C10",
       "title": "판정·인계",
-      "status": "in_progress",
+      "status": "complete",
       "depends_on": [
         "C9"
       ],
@@ -378,16 +380,18 @@
         "RESULTS_KO.md",
         "CODEX_HANDOFF.md",
         "NEXT_THREAD_HANDOFF.md",
-        "NEXT_DAG.json"
+        "NEXT_DAG.json",
+        "delivery/S2_ACK.json",
+        "delivery/S2_REMOTE_READBACK.json"
       ],
       "checkpoint": "S2",
       "backup_record": "delivery/S2_ACK.json",
       "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
       "next_stage_ids": [],
-      "reason": "Deliverables prepared; close only after final payload publication/archive acknowledgement"
+      "reason": "Scientific payload and both handoffs published at S2; full79-payload archive and remote blob identities verified; provider acknowledgement completed."
     }
   ],
-  "next": "S2 publication/archive acknowledgement, then close R10/C10 with exact storage evidence",
+  "next": "Separate NEXT_DAG: B1 pair/domain/moment inventory and B2 SI/normalization/energy-owner adapter in parallel; B3-B5 remain gated",
   "checkpoints": [
     {
       "id": "S0",
@@ -417,20 +421,25 @@
     },
     {
       "id": "S2",
-      "status": "local_payload_ready",
+      "status": "published_and_backed_up",
       "stages": [
         "C9",
         "R10",
         "C10"
       ],
-      "next": "acknowledge storage, close current unit, then NEXT_DAG B1/B2"
+      "next": "acknowledge storage, close current unit, then NEXT_DAG B1/B2",
+      "ack": "delivery/S2_ACK.json",
+      "readback": "delivery/S2_REMOTE_READBACK.json"
     }
   ],
   "task": "both",
-  "status": "in_progress",
+  "status": "complete",
   "objective": "Derive and implement a certified stiff LRS gas-moment reduction with an exact neutral-H/He viscosity reduction; execute only new bounded diagnostics in the sandbox.",
   "scope": "Q=j=0 prescribed-constant-chi mechanics; separate neutral-H1/He4 common-T viscosity diagnostic",
-  "completed_stages": 18,
+  "completed_stages": 20,
   "total_stages": 20,
-  "delivery_state": "final_payload_prepared"
+  "delivery_state": "published_and_backed_up",
+  "science_commit": "24b134545822cff6c2bf2ee9623d330e7efd1176",
+  "workflow_record": "RUN_RECORD.json",
+  "workflow_record_validation": "evidence/WORKFLOW_RECORD_VALIDATION.json"
 }
