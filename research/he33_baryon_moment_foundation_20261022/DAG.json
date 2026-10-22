@@ -2,7 +2,7 @@
   "unit": "HE33",
   "workflow_version": "1.0.0",
   "approval_version": "0.2",
-  "parent_HE32_DAG": "unchanged 30/30",
+  "parent_HE32_DAG": "unchanged30/30",
   "completion_scope": "mechanical pressure moment foundation",
   "stages": [
     {
@@ -66,122 +66,154 @@
     {
       "id": "R5",
       "name": "constructive derivation",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "R4"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "THEORY_KO.md",
+        "evidence/SYMBOLIC_CHECKS.json"
+      ],
+      "checkpoint": "S1",
       "next": "R6"
     },
     {
       "id": "R6",
       "name": "independent physics audit",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "R5"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "THEORY_KO.md",
+        "evidence/SYMBOLIC_CHECKS.json"
+      ],
+      "checkpoint": "S1",
       "next": "R7"
     },
     {
       "id": "R7",
       "name": "symbolic/finite checks",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "R6"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "THEORY_KO.md",
+        "evidence/SYMBOLIC_CHECKS.json"
+      ],
+      "checkpoint": "S1",
       "next": "R8"
     },
     {
       "id": "R8",
       "name": "scoped adoption",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "R7"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "THEORY_KO.md",
+        "evidence/SYMBOLIC_CHECKS.json"
+      ],
+      "checkpoint": "S1",
       "next": "R9"
     },
     {
       "id": "R9",
       "name": "math-to-code contract",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "R8"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "THEORY_KO.md",
+        "evidence/SYMBOLIC_CHECKS.json"
+      ],
+      "checkpoint": "S1",
       "next": "R10"
     },
     {
       "id": "R10",
       "name": "theory checkpoint",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "R9"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "THEORY_KO.md",
+        "evidence/SYMBOLIC_CHECKS.json"
+      ],
+      "checkpoint": "S1",
       "next": "C1"
     },
     {
       "id": "C1",
       "name": "baseline and gates",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "R10"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "COMPUTATIONAL_CONTRACT.md",
+        "CONTRACT.json"
+      ],
+      "checkpoint": "S1",
       "next": "C2"
     },
     {
       "id": "C2",
       "name": "equation-code mapping",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "C1"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "COMPUTATIONAL_CONTRACT.md",
+        "CONTRACT.json"
+      ],
+      "checkpoint": "S1",
       "next": "C3"
     },
     {
       "id": "C3",
       "name": "stable numerical design",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "C2"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "COMPUTATIONAL_CONTRACT.md",
+        "CONTRACT.json"
+      ],
+      "checkpoint": "S1",
       "next": "C4"
     },
     {
       "id": "C4",
       "name": "execution DAG",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "C3"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "COMPUTATIONAL_CONTRACT.md",
+        "CONTRACT.json"
+      ],
+      "checkpoint": "S1",
       "next": "C5"
     },
     {
       "id": "C5",
       "name": "implementation",
-      "status": "pending",
+      "status": "complete_scoped",
       "depends_on": [
         "C4"
       ],
-      "evidence": [],
-      "checkpoint": null,
+      "evidence": [
+        "src/lrs_baryon_moments.js"
+      ],
+      "checkpoint": "S1",
       "next": "C6"
     },
     {
@@ -241,9 +273,9 @@
     }
   ],
   "progress": {
-    "complete": 4,
+    "complete": 15,
     "total": 20
   },
-  "next": "R5",
-  "publication": "actual ACK in delivery; no speculative completion"
+  "next": "C6",
+  "publication": "see delivery ACKs"
 }
