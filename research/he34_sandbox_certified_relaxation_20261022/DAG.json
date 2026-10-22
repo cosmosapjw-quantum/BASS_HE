@@ -2,7 +2,7 @@
   "schema_version": 1,
   "workflow_version": "1.0.0",
   "approval_version": "0.2",
-  "unit_id": "HE34",
+  "unit_id": "HE34-SCR",
   "parent_completed": {
     "HE32": "30/30 reused",
     "HE33": "20/20 reused"
@@ -18,7 +18,12 @@
         "evidence/DELTA_INTAKE.json",
         "evidence/HE33_NODE_SMOKE.json"
       ],
-      "checkpoint": "S0"
+      "checkpoint": "S0",
+      "backup_record": "delivery/S0_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "R2"
+      ]
     },
     {
       "id": "R2",
@@ -32,7 +37,12 @@
         "evidence/DELTA_INTAKE.json",
         "evidence/HE33_NODE_SMOKE.json"
       ],
-      "checkpoint": "S0"
+      "checkpoint": "S0",
+      "backup_record": "delivery/S0_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "R3"
+      ]
     },
     {
       "id": "R3",
@@ -46,7 +56,12 @@
         "evidence/DELTA_INTAKE.json",
         "evidence/HE33_NODE_SMOKE.json"
       ],
-      "checkpoint": "S0"
+      "checkpoint": "S0",
+      "backup_record": "delivery/S0_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "R4"
+      ]
     },
     {
       "id": "R4",
@@ -60,57 +75,108 @@
         "evidence/DELTA_INTAKE.json",
         "evidence/HE33_NODE_SMOKE.json"
       ],
-      "checkpoint": "S0"
+      "checkpoint": "S0",
+      "backup_record": "delivery/S0_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "R5"
+      ]
     },
     {
       "id": "R5",
       "title": "구성적 유도",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "R4"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "theory/CERTIFIED_REDUCTION.md",
+        "theory/NEUTRAL_TRANSPORT_KO.md",
+        "evidence/prototypes/REDUCTION_WOLFRAM.json",
+        "evidence/prototypes/TRANSPORT_WOLFRAM.json"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "R6"
+      ]
     },
     {
       "id": "R6",
       "title": "독립 검증",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "R5"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "evidence/review/INDEPENDENT_CHECKS.json",
+        "evidence/review/PHYSICS_AND_CODE_REVIEW_PRE_OUTPUT.md"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "R7"
+      ]
     },
     {
       "id": "R7",
       "title": "판별 검증",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "R6"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "evidence/prototypes/REDUCTION_CONTROLS.json",
+        "evidence/prototypes/TRANSPORT_EXECUTION.json",
+        "results/MECHANICAL_CONTROLS.json"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "R8"
+      ]
     },
     {
       "id": "R8",
       "title": "결과 판정",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "R7"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "results/MECHANICAL_CONTROLS.json",
+        "results/NEUTRAL_TRANSPORT.json",
+        "CONTRACT.json"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "R9"
+      ]
     },
     {
       "id": "R9",
       "title": "정식 결과·코딩 연결",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "R8"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "theory/EQUATION_CODE_MAP.md",
+        "src/certified_relaxation.py",
+        "src/neutral_transport.py"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "R10",
+        "C1"
+      ]
     },
     {
       "id": "R10",
@@ -120,87 +186,160 @@
         "R9"
       ],
       "evidence_refs": [],
-      "checkpoint": null
+      "checkpoint": null,
+      "backup_record": null,
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": []
     },
     {
       "id": "C1",
       "title": "목표·baseline",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "R9"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "CONTRACT.json",
+        "evidence/BACKGROUND_INPUT.json"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "C2"
+      ]
     },
     {
       "id": "C2",
       "title": "식–데이터–코드",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "C1"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "theory/EQUATION_CODE_MAP.md",
+        "data/NEUTRAL_H_HE_TRANSPORT_SUBSET.json",
+        "data/SAVED_BACKGROUND.csv"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "C3"
+      ]
     },
     {
       "id": "C3",
       "title": "수치 설계",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "C2"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "theory/CERTIFIED_REDUCTION.md",
+        "src/certified_relaxation.py",
+        "evidence/CONTROL_NUMERICAL_GUARD.json"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "C4"
+      ]
     },
     {
       "id": "C4",
       "title": "실행 DAG·자원",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "C3"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "CONTRACT.json",
+        "results/NEUTRAL_TRANSPORT.json",
+        "evidence/MECHANICAL_EXECUTION.json"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "C5"
+      ]
     },
     {
       "id": "C5",
       "title": "구현",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "C4"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "src/certified_relaxation.py",
+        "src/neutral_transport.py",
+        "run_control.py"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "C6"
+      ]
     },
     {
       "id": "C6",
       "title": "구현 검증",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "C5"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "evidence/REDUCTION_UNIT_CHECKS.json",
+        "evidence/TRANSPORT_VALIDATION.json",
+        "evidence/CONTROL_NUMERICAL_GUARD.json"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "C7"
+      ]
     },
     {
       "id": "C7",
       "title": "과학 검증",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "C6"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "results/MECHANICAL_CONTROLS.json",
+        "results/NEUTRAL_TRANSPORT.json"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "C8"
+      ]
     },
     {
       "id": "C8",
       "title": "수치·재현성",
-      "status": "pending",
+      "status": "complete",
       "depends_on": [
         "C7"
       ],
-      "evidence_refs": [],
-      "checkpoint": null
+      "evidence_refs": [
+        "results/MECHANICAL_RECEIPT.json",
+        "evidence/MECHANICAL_EXECUTION.json",
+        "evidence/TRANSPORT_VALIDATION.json"
+      ],
+      "checkpoint": "S1",
+      "backup_record": "delivery/S1_ACK.json",
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "C9"
+      ]
     },
     {
       "id": "C9",
@@ -210,7 +349,12 @@
         "C8"
       ],
       "evidence_refs": [],
-      "checkpoint": null
+      "checkpoint": null,
+      "backup_record": null,
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": [
+        "C10"
+      ]
     },
     {
       "id": "C10",
@@ -220,9 +364,44 @@
         "C9"
       ],
       "evidence_refs": [],
-      "checkpoint": null
+      "checkpoint": null,
+      "backup_record": null,
+      "publication_PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/88",
+      "next_stage_ids": []
     }
   ],
-  "next": "R5 contraction/residual derivation and neutral-H/He collision-integral reduction",
-  "checkpoints": []
+  "next": "C9 independent output/figure review; R10/C10 scoped closeout, backups and both handoffs",
+  "checkpoints": [
+    {
+      "id": "S0",
+      "status": "published_and_backed_up",
+      "ack": "delivery/S0_ACK.json"
+    },
+    {
+      "id": "S1",
+      "status": "local_payload_ready",
+      "stages": [
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "next": "C9,R10,C10"
+    }
+  ],
+  "task": "both",
+  "status": "in_progress",
+  "objective": "Derive and implement a certified stiff LRS gas-moment reduction with an exact neutral-H/He viscosity reduction; execute only new bounded diagnostics in the sandbox.",
+  "scope": "Q=j=0 prescribed-constant-chi mechanics; separate neutral-H1/He4 common-T viscosity diagnostic",
+  "completed_stages": 17,
+  "total_stages": 20
 }
