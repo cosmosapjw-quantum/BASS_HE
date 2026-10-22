@@ -11,5 +11,6 @@
     "/tmp/he32_resume_20261022/repos/BASS_HE/research/he36_reactive_moment_bridge_20261023/RUN_RECORD.json"
   ],
   "exit_code": 0,
-  "stderr": ""
+  "stderr": "",
+  "checked_file_sha256": "b12e5c81eff5bc6cb14ca232da4a2e2c74ed7a305e78cb78bc817dffaf4952f2"
 }

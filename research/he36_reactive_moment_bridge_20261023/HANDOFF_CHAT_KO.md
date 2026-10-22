@@ -44,3 +44,14 @@ daughter/charge/spectrum/stopping,열·UV진화,B1수송,closure는 각각의
 ```
 
 과거 HE32 전체 archive: `BASS_HE_HE32_FINAL_SANDBOX_PILOT_20261021T220535Z.tar.gz`; SHA256 `27cb0eb0a779815dfaa226849f706df2fed6f0ae6b792383cbc9a0f90635806a`; Dropbox `id:BSpOijBcT10AAAAAAD_hsw`. 이번 단원 archive의 실제 ACK는 아래 최종 delivery 식별자 절에 결합된다.
+
+## Final delivery identifiers
+
+- Immutable science commit: `b2336709b9a07dd1db0a7cc9da381c59c8dd6470`
+- Science tree: `6444bbec7a96cbc3496f46655ff72610a7fbceae`
+- Final HE36 archive: `BASS_HE_HE36_RMB_FINAL_20261022T225602Z.tar.gz`
+- Archive SHA256: `b754afd41dffe916f4b7b13f080089a7021a3ad1fae0ca6f7a3dbd4c7dab3874`
+- Dropbox ID: `id:BSpOijBcT10AAAAAAD_swQ`
+- Archive bytes: 842860; 186 payloads plus the payload manifest;116 immutable scientific files.
+- All20 stage commits and separate archive ACKs are complete. The latest publication pin is the Git commit containing delivery/FINAL_ACK.json; it adds post-upload metadata to the science commit. The final chat handoff also supplies that exact publication pin.
+- Local tar member hashes and all116 published scientific Git blob identities were checked. The provider acknowledged the same archive byte count; no remote re-download restore is claimed.

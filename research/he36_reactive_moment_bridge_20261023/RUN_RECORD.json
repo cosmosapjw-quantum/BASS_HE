@@ -5,7 +5,7 @@
   "unit_id": "HE36-RMB",
   "objective": "Derive and implement incoming binary reactive loss moments, common-bulk/common-T linear Grad STF; finite-domain source moments; conservative resolved event/source interface.",
   "scope": "Common-bulk common-T infinitesimal incoming loss; finite-table partial moments; supplied net event tensor and local source-lift interfaces. No new IVP or completed donor replay.",
-  "status": "in_progress",
+  "status": "complete",
   "dependencies": [
     {
       "id": "contract",
@@ -310,7 +310,7 @@
       "locator": "HANDOFF_CHAT_KO.md",
       "scope": "Copyable research-thread handoff",
       "dependency_ids": [],
-      "sha256": "06577e76038e52ea249d493d4002e9d02534ed7ee67a4da2cd24c071f177692f"
+      "sha256": "ae22275e99d9b87a57bd3b9f7928d9dfc56b12b35c379896911aad3646c00d68"
     },
     {
       "id": "codex_handoff",
@@ -318,7 +318,7 @@
       "locator": "HANDOFF_CODEX.md",
       "scope": "Read-only resume and changed-dependency executor contract",
       "dependency_ids": [],
-      "sha256": "845be10edc2c00b79f53f1050bea17f7f6cc61dd21f5191c1234828cfdbe3b69"
+      "sha256": "f67af50ac44c89dc7132bb8d1ba12bf7923ce1235cee69454fe5f8b84ea7054a"
     },
     {
       "id": "stage_R1",
@@ -674,7 +674,7 @@
     },
     {
       "id": "C10",
-      "status": "pending",
+      "status": "complete",
       "evidence_refs": [
         "stage_C10"
       ],
@@ -1555,9 +1555,9 @@
     "new_location_import_checks": 1
   },
   "delivery_axes": {
-    "stage_completed": 19,
-    "stage_published": 19,
-    "stage_backed_up": 19,
+    "stage_completed": 20,
+    "stage_published": 20,
+    "stage_backed_up": 20,
     "final_archive_locator": "delivery/FINAL_ACK.json",
     "overall_goal_complete": false
   }

@@ -23,6 +23,6 @@
 | C7 | 과학 검증 | complete / ACK | [04c4a74c80c6](https://github.com/cosmosapjw-quantum/BASS_HE/commit/04c4a74c80c604c5352b6a92d473dc13a7edf8f5) | `cec50b9cd30a449dd627cac9365a24425db1bb10f542218730fe7f135014ddc8` | `id:BSpOijBcT10AAAAAAD_svA` |
 | C8 | 수치·재현성 | complete / ACK | [21e4e53ec981](https://github.com/cosmosapjw-quantum/BASS_HE/commit/21e4e53ec9811b2ab93ceed8abc4b051db797904) | `8c734600f1ff864b7c7a3c013959475d76741229fb34e1000470d3341c42f530` | `id:BSpOijBcT10AAAAAAD_svQ` |
 | C9 | 독립 검토 | complete / ACK | [0f67cb8b34d8](https://github.com/cosmosapjw-quantum/BASS_HE/commit/0f67cb8b34d84c56d993841e2b57392a040f097e) | `cc88211c00a9fccbe49561a816dc58809407558e1a6e5ddfbbcf7c2fde33800a` | `id:BSpOijBcT10AAAAAAD_svg` |
-| C10 | 판정·인계 | pending | pending | pending | pending |
+| C10 | 판정·인계 | complete / ACK | [b2336709b9a0](https://github.com/cosmosapjw-quantum/BASS_HE/commit/b2336709b9a07dd1db0a7cc9da381c59c8dd6470) | `e772bb792c2b3067bca77e6c5173f0fb755ad00788d567062df634980d2d6e57` | `id:BSpOijBcT10AAAAAAD_svw` |
 
 각 archive 파일명·byte 수·payload 수·전체 commit/tree와 provider 응답은 delivery/<stage>_ACK.json에 있다. R1–R10→C1–C10 순서로 각각 별도의 Git commit과 Dropbox archive를 만들었다. 이후 최종 전체 archive와 metadata commit은 delivery/FINAL_ACK.json에 추가된다.

@@ -626,9 +626,12 @@
           "sha256": "dfe8144af9ab17304a4f6af495c23d9c1a51407dbefd2bfc444798048fadfa96"
         }
       ],
-      "publication": "prepared",
-      "backup": "prepared",
-      "completed_utc": "2026-10-22T22:53:58.470487+00:00"
+      "publication": "published",
+      "backup": "acknowledged",
+      "completed_utc": "2026-10-22T22:53:58.470487+00:00",
+      "commit": "b2336709b9a07dd1db0a7cc9da381c59c8dd6470",
+      "archive_sha256": "e772bb792c2b3067bca77e6c5173f0fb755ad00788d567062df634980d2d6e57",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_svw"
     }
   ],
   "next_node": null,

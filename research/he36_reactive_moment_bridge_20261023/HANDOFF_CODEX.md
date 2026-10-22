@@ -47,3 +47,14 @@ Current diagnostic/render runners reuse complete identity-matched outputs, but s
 Return a fresh receipt containing source/input hashes, command, environment/thread settings, UTC start/end, wall/CPU/RSS where measured, stdout/stderr, exit code, outputs/hash manifest, fixed acceptance gates and actual new execution counts. Preserve failures and classify theory/numerics/implementation/environment/input dependency. A passing structure/hash check is packaging evidence, not new scientific validation.
 
 Next science is `NEXT_DAG.json`: N0 delta intake and N1 qualified differential H1 gain source. Nuclear daughters/stopping, thermal/UV evolution, physical pair transport and finite-anisotropy closure are explicit other dependencies. New gas IVP N8 requires those selected-domain dependencies first. HE32–HE35 and donor completed IVPs/tests are evidence to reuse, including the394 HE32 trajectories; they are not scheduled work.
+
+## Final delivery identifiers
+
+- Immutable science commit: `b2336709b9a07dd1db0a7cc9da381c59c8dd6470`
+- Science tree: `6444bbec7a96cbc3496f46655ff72610a7fbceae`
+- Final HE36 archive: `BASS_HE_HE36_RMB_FINAL_20261022T225602Z.tar.gz`
+- Archive SHA256: `b754afd41dffe916f4b7b13f080089a7021a3ad1fae0ca6f7a3dbd4c7dab3874`
+- Dropbox ID: `id:BSpOijBcT10AAAAAAD_swQ`
+- Archive bytes: 842860; 186 payloads plus the payload manifest;116 immutable scientific files.
+- All20 stage commits and separate archive ACKs are complete. The latest publication pin is the Git commit containing delivery/FINAL_ACK.json; it adds post-upload metadata to the science commit. The final chat handoff also supplies that exact publication pin.
+- Local tar member hashes and all116 published scientific Git blob identities were checked. The provider acknowledged the same archive byte count; no remote re-download restore is claimed.
