@@ -1,0 +1,24 @@
+{
+  "observed_utc": "2026-10-22T06:48:07.173950+00:00",
+  "he33": {
+    "provider": "Google Drive native document JSON envelope",
+    "id": "1sk4-YvVoRYQ8lKDKOS-b7ppgKX0UuCE6GycXvclNWgM",
+    "revision": "AHj4eMTdUS2ct0JYXe6ql9-knuhQHvVrRoe8VOjkUJPfYdIWClhEEqHXFCNxVXFfDVU4rH0avr4uSa0B-wuiYuQa2mnT3DcVIzzoL-lTsz4",
+    "text_sha256": "e101b9281518c83f32b25b80f4cac3247cfe72c92e62038d9efac9e275f11e52",
+    "expected_sha256": "e101b9281518c83f32b25b80f4cac3247cfe72c92e62038d9efac9e275f11e52",
+    "exact_text_sha_match": true,
+    "embedded_files": 46,
+    "payload_hash_failures": [],
+    "verification": "actual current text readback and all embedded payload hashes"
+  },
+  "he32": {
+    "provider": "Dropbox",
+    "id": "id:BSpOijBcT10AAAAAAD_hsw",
+    "name": "BASS_HE_HE32_FINAL_SANDBOX_PILOT_20261021T220535Z.tar.gz",
+    "size": 74510381,
+    "rev": "65e60f6443d950af03d47",
+    "modified_utc": "2026-10-21T22:06:41Z",
+    "verification": "actual current exact-ID metadata/size; producer full-body hash readback reused, not downloaded or rehashed this intake",
+    "producer_sha256": "27cb0eb0a779815dfaa226849f706df2fed6f0ae6b792383cbc9a0f90635806a"
+  }
+}

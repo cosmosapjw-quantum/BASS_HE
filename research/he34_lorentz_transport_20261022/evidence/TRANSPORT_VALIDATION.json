@@ -1,0 +1,119 @@
+{
+  "schema": "he34.lorentz_grad.controls.v1",
+  "status": "PASS_SCOPED",
+  "observed_utc": "2026-10-22T06:53:20.935916+00:00",
+  "python": "3.12.14",
+  "groups": 11,
+  "passed": 11,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "isotropic_angular_l2",
+      "status": "PASS",
+      "sigma2_m2": 2.3000000000000002e-20,
+      "quadrature_error_m2": 2.55351295663786e-34
+    },
+    {
+      "name": "same_total_cross_section_different_l2",
+      "status": "PASS",
+      "sigma2_over_total": 0.9000000000000001
+    },
+    {
+      "name": "speed_integrals_vs_gamma_family",
+      "status": "PASS",
+      "rows": [
+        {
+          "exponent": -2.0,
+          "rate_s_inv": 4.5264533886606474e-08,
+          "relative_difference": 2.4424906541753444e-15,
+          "callback_evaluations": 165
+        },
+        {
+          "exponent": -1.0,
+          "rate_s_inv": 7.521496630946174e-08,
+          "relative_difference": 2.1649348980190553e-14,
+          "callback_evaluations": 255
+        },
+        {
+          "exponent": 0.0,
+          "rate_s_inv": 1.3579360165982055e-07,
+          "relative_difference": 5.995204332975845e-15,
+          "callback_evaluations": 255
+        },
+        {
+          "exponent": 2.0,
+          "rate_s_inv": 5.431744066392862e-07,
+          "relative_difference": 1.3655743202889425e-14,
+          "callback_evaluations": 225
+        },
+        {
+          "exponent": 4.0,
+          "rate_s_inv": 2.7158720331964483e-06,
+          "relative_difference": 1.965094753586527e-14,
+          "callback_evaluations": 285
+        }
+      ]
+    },
+    {
+      "name": "event_rate_is_not_pressure_rate",
+      "status": "PASS",
+      "ratio": 1.6000000000000096
+    },
+    {
+      "name": "inverse_speed_exact_constant_frequency_and_density_scaling",
+      "status": "PASS"
+    },
+    {
+      "name": "finite_source_domain_and_explicit_tail_bound",
+      "status": "PARTIAL_DOMAIN",
+      "partial_rate_s_inv": 1.3289306988896948e-07,
+      "full_rate_s_inv": null,
+      "quadrature_error_s_inv": 1.6010565120298214e-18,
+      "outside_rate_upper_bound_s_inv": 2.9005317708502465e-09,
+      "bound_status": "ASSUMED_GLOBAL_SIGMA2_BOUND",
+      "callback_evaluations": 21,
+      "thermal_speed_m_s": 778622.8396424596,
+      "sampled_min": 403834.3040289204,
+      "sampled_max": 2333401.5887130713
+    },
+    {
+      "name": "missing_tail_is_unknown_without_assumed_bound",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid_inputs_rejected",
+      "status": "PASS",
+      "count": 6
+    },
+    {
+      "name": "zero_density_and_zero_cross_section",
+      "status": "PASS"
+    },
+    {
+      "name": "projected_initial_rate_is_not_exact_finite_time_closure",
+      "status": "PASS",
+      "normalized_time": 1,
+      "exact_lorentz_q_ratio": 0.18437048354567437,
+      "frozen_grad_exponential_q_ratio": 0.16440758378370465,
+      "difference": 0.019962899761969716
+    },
+    {
+      "name": "C99_libm_analytic_kernel",
+      "status": "PASS",
+      "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "max_python_relative_difference": 1.887379141862766e-15,
+      "build_exit": 0,
+      "stderr": "",
+      "cases": 7
+    }
+  ],
+  "source_hashes": {
+    "src/lorentz_l2.py": "90fdc4019ec8fe9552371ece1ff4f6d68bc57efb053103b07fb014f5c091a50b",
+    "src/lorentz_power.c": "9388e90e02484a45f6c014825aebc7206a12ed5a087710035496f8f2af13d02e",
+    "checks/check_transport.py": "a81c4f4712a6c4959a462f7db4f827db3e40f51e886f2f6d5b4f1512ceb159a1"
+  },
+  "wall_seconds": 0.18077635599911446,
+  "physical_rate_table_rows_adopted": 0,
+  "new_cosmological_ivps": 0,
+  "scope": "manufactured Lorentz/Grad transport controls and analytic C kernel"
+}
