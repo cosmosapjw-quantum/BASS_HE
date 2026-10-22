@@ -6,7 +6,9 @@
 
 Reviewer: `/root/he_latest_synthesis`. The bridge, diagnostic, benchmark and plot were authored by other agents. This reviewer read their actual source and saved receipts and inspected the actual final PNG. The reviewer independently derived the earlier incoming-loss formulas relative to the parent's provisional equations and authored the earlier Cartesian oracle. Accordingly, this report is an independent review of the other agents' implementations and artifacts; it is **not** a fresh non-author review of this reviewer's own `DERIVATION.md`.
 
-The previous `INDEPENDENT_REVIEW.json`, `CARTESIAN_LOSS_RESULT.json`, `KERNEL_REVIEW.md`, and `MOMENT_SOURCE_REVIEW.md` remain unchanged. Their completed controls were reused. This follow-up made no new model evaluations, IVPs, numerical test runs, benchmarks or renders. It read and hashed saved files and recomputed summary ratios from already saved timing numbers. `FINAL_DIAGNOSTIC_READBACK.json` records the diagnostic readback; `FINAL_BRIDGE_PLOT_REVIEW.json` pins this review's source and receipt hashes.
+The previous `INDEPENDENT_REVIEW.json`, `CARTESIAN_LOSS_RESULT.json`, `KERNEL_REVIEW.md`, and `MOMENT_SOURCE_REVIEW.md` remain unchanged. Their completed controls were reused. This follow-up made no new model evaluations, IVPs, numerical test runs, benchmarks or renders. It read and hashed saved files and recomputed summary ratios from already saved timing numbers. `FINAL_DIAGNOSTIC_READBACK.json` and `FINAL_BRIDGE_READBACK.json` record these readbacks; `FINAL_BRIDGE_PLOT_REVIEW.json` pins this review's source and receipt hashes.
+
+The final bridge README had two literal carriage returns in its tensor-definition line. The author corrected that line to plain `C_event [J/event]` and regenerated only the manifest. The previous README/manifest are preserved at `/tmp/he36_event_bridge_docfix/before/`. Executable sources and their successful test receipt did not change. The final README contains no carriage returns and all 13 final package payloads match its regenerated manifest.
 
 ## Event tensor and scalar ledger
 

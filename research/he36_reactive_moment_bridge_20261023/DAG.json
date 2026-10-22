@@ -5,7 +5,7 @@
   "unit_id": "HE36-RMB",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 18,
+  "completed": 19,
   "nodes": [
     {
       "id": "R1",
@@ -542,9 +542,12 @@
           "sha256": "ec7e7edd1970dfada1612d0bb5725bd244d19fdab1dd5e66c2fe602caf3ee6ee"
         }
       ],
-      "publication": "prepared",
-      "backup": "prepared",
-      "completed_utc": "2026-10-22T22:44:58.202816+00:00"
+      "publication": "published",
+      "backup": "acknowledged",
+      "completed_utc": "2026-10-22T22:44:58.202816+00:00",
+      "commit": "21e4e53ec9811b2ab93ceed8abc4b051db797904",
+      "archive_sha256": "8c734600f1ff864b7c7a3c013959475d76741229fb34e1000470d3341c42f530",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_svQ"
     },
     {
       "id": "C9",
@@ -552,10 +555,32 @@
       "depends_on": [
         "C8"
       ],
-      "status": "pending",
-      "evidence": [],
-      "publication": "pending",
-      "backup": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "stages/C9.md",
+          "sha256": "c61ef73aab4527e2107c6aeb864d41f55ee83672b876f9ed89a29b4db78f3951"
+        },
+        {
+          "path": "evidence/review/FINAL_BRIDGE_PLOT_REVIEW.json",
+          "sha256": "9ae6e53b543f3d8e5d3d8449ce3acf44737f6086c351f61fd3b0e0df96c4cb63"
+        },
+        {
+          "path": "evidence/review/FINAL_BRIDGE_PLOT_REVIEW.md",
+          "sha256": "90cfc89acf80d2a04efc4cfbdc2b731f0d03aa3158d11eb79d1912b73c97da97"
+        },
+        {
+          "path": "evidence/theory_review/nonauthor_THEORY_REVIEW.json",
+          "sha256": "9a08478dc1931a3d24a220f4b0980c7dd8eccead76c497a0b84251990b80ba16"
+        },
+        {
+          "path": "evidence/FINAL_REVIEW_COPY.json",
+          "sha256": "e08b7b598aa951f040b88aa7fc2e61d9d874a2ed2d4670d204b3f3406794f52f"
+        }
+      ],
+      "publication": "prepared",
+      "backup": "prepared",
+      "completed_utc": "2026-10-22T22:46:29.442852+00:00"
     },
     {
       "id": "C10",
@@ -569,6 +594,6 @@
       "backup": "pending"
     }
   ],
-  "next_node": "C9",
+  "next_node": "C10",
   "global_progress_file": "GLOBAL_GOAL_DAG.json"
 }
