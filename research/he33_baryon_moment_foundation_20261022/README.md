@@ -46,3 +46,12 @@ This command performs only the finite mechanical checks and never imports or
 runs the HE32 cosmological solver. Current shell service was unavailable, so
 Node CLI execution is not claimed. Read REPORT_KO.md and NEXT_DAG.json before
 physical coupling. No package installation, compiler or rate service is needed.
+
+## Final delivery
+
+R1–R10 and C1–C10 are complete for this prescribed-rate mechanical model.
+Source/evidence pin: `1d7dab57becc5829f0282b88a7516360ccad718a`. Final metadata and two handoffs are in the
+later documentation revision. Each stage links its S0/S1/S2/S3 publication and
+backup group. Google Drive backups are exact JSON path/content/SHA256 envelopes,
+read back before acceptance; Git contains the reviewable files. The old HE32
+binary archive is preserved separately and is not duplicated by this unit.

@@ -14,5 +14,5 @@
   "next": "C7",
   "backup_group": "S2",
   "publication_group": "S2",
-  "actual_receipt": "delivery/S2_ACK.json (added after success)"
+  "actual_receipt": "delivery/S2_ACK.json"
 }

@@ -3,7 +3,7 @@
   "workflow_version": "1.0.0",
   "approval_version": "0.2",
   "parent_HE32_DAG": "unchanged30/30",
-  "completion_scope": "mechanical pressure moment foundation",
+  "completion_scope": "mechanical pressure moment foundation; prescribed nu_pi; source-free kernel; V8 target",
   "stages": [
     {
       "id": "R1",
@@ -279,22 +279,29 @@
     {
       "id": "C10",
       "name": "delivery and handoffs",
-      "status": "delivery_pending",
+      "status": "complete_scoped",
       "depends_on": [
         "C9"
       ],
       "evidence": [
-        "REPORT_KO.md",
-        "NEXT_DAG.json"
+        "CODEX_HANDOFF.md",
+        "NEXT_THREAD_HANDOFF.md",
+        "NEXT_DAG.json",
+        "delivery/S2_ACK.json"
       ],
       "checkpoint": "S3",
       "next": "HE34 physical-rate/source dependencies"
     }
   ],
   "progress": {
-    "complete": 19,
+    "complete": 20,
     "total": 20
   },
-  "next": "C10 delivery/handoffs",
-  "science_core_complete": true
+  "science_core_complete": true,
+  "completed_HE32_replays": 0,
+  "source_pin": "1d7dab57becc5829f0282b88a7516360ccad718a",
+  "next": "E0 new-host Node compatibility and B1/B2 physical contracts, separate NEXT_DAG",
+  "unrun_gate": "Node CLI smoke NOT_RUN after actual SERVICE_ERROR; no calibrated baryon prediction",
+  "final_backup": "delivery/S3_ACK.json",
+  "publication": "final HEAD and external final ACK recorded after commit creation"
 }

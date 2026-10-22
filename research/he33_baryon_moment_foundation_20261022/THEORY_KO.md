@@ -174,7 +174,7 @@ r_*=-\frac{4s}{\nu_\pi+2s+
 \sqrt{\nu_\pi^2+4\nu_\pi s+36s^2}},
 \]
 
-이며 s=0,nu_pi>0에서는 r*=0이다. nu_pi=0의 cone 경계는
+이며 s=0,nu_pi>0에서는 r*=0이다. s=nu_pi=0이면 r는 초기값으로 일정하다. nu_pi=0의 cone 경계는
 초기 압력이 정확히0인 방향에 따라 invariant일 수 있어 interior attraction과
 구별한다. nu_pi>>|s|에서 r*=-2s/nu_pi+O((s/nu_pi)^2)다.
 

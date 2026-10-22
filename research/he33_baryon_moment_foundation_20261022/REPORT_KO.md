@@ -4,8 +4,8 @@
 
 HE32의 완료된394case·그림6쌍·30단계는 재사용했다. 새 HE33은 별도 DAG의
 이론 R1–R10과 코딩 C1–C10으로 기체 압력텐서의 mechanical foundation을
-진행한다. 이 보고서의 과학 구현·검산은 완료했고, C10의 게시/백업/handoff는
-최종 delivery ACK가 기록된 revision에서 완료로 판정한다.
+완료했다. 과학 구현·검산 및 C10의 게시/백업/handoff는
+최종 delivery ACK에 연결된다. 현재 단원의 완료는 mechanical model의20/20이다.
 
 새 cosmological IVP0, HE32 IVP 재실행0, render0, benchmark0, NCP0이다.
 finite mechanical operator controls 및 독립 CAS 계산은 실제 새로 수행했다.

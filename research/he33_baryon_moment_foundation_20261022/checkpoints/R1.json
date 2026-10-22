@@ -13,5 +13,5 @@
   "scope": "HE33 separate unit",
   "backup_group": "S0",
   "publication_group": "S0",
-  "actual_receipt": "delivery/S0_ACK.json (added after success)"
+  "actual_receipt": "delivery/S0_ACK.json"
 }
