@@ -1,0 +1,37 @@
+{
+  "prior_science": {
+    "repository": "cosmosapjw-quantum/BASS_HE",
+    "head": "bb1259b21c7b83b0376a5f7fcbb0c6321918ec90",
+    "science_pin": "1d7dab57becc5829f0282b88a7516360ccad718a",
+    "unit": "research/he33_baryon_moment_foundation_20261022",
+    "reuse": "pressure convention, source-free propagator, Node compatibility dependency"
+  },
+  "external": [
+    {
+      "title": "Physics210A Chapter8: The Boltzmann Equation",
+      "url": "https://courses.physics.ucsd.edu/2010/Spring/physics210a/LECTURES/CH08.pdf",
+      "type": "university course notes",
+      "read_scope": "cross-section collision integral8.58; Lorentz isotropization8.139; linearization8.157–8.159",
+      "use": "kinetic operator and perturbative moment context; present l2/Gamma formula is direct derivation"
+    },
+    {
+      "title": "Legendre-Polynom-Entwicklung und allgemeine Kugelflaechenfunktionsentwicklung in der Boltzmann-Gleichung des Lorentz-Plasmas",
+      "authors": "R. Winkler, J. Wilhelm, V. Schueller",
+      "year": 1970,
+      "doi": "10.1002/CTPP.19700100105",
+      "discovery": "SciSpace",
+      "read_scope": "metadata and abstract only",
+      "use": "follow-up candidate; no unseen coefficient adopted"
+    },
+    {
+      "title": "Anisotropic angular scattering models of elastic electron-neutral collisions for Monte Carlo plasma simulations",
+      "year": 2022,
+      "doi": "10.1088/1361-6595/ac781f",
+      "discovery": "SciSpace",
+      "read_scope": "metadata and abstract only",
+      "use": "candidate hydrogen/helium differential scattering source for later calibration, no numerical data adopted"
+    }
+  ],
+  "empirical_transport_rows_adopted": 0,
+  "mathematical_source_status": "angular harmonic projection and moment formula directly derived in THEORY.md; Gamma identity separately checked by root Wolfram call"
+}

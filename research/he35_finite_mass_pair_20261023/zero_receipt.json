@@ -1,0 +1,11 @@
+{
+  "status": "pass_scoped",
+  "command": "python3 zero_probe.py",
+  "wall_seconds": 0.22128677368164062,
+  "scope": "early zero-kappa branch; previous nonzero scientific suite unchanged",
+  "source_sha256": {
+    "pair.py": "85636ad5379db292ee55b730fcd4d771a15a591bfb7490d4bc99205ed9eda169",
+    "pair.c": "b887cdbcf2878f2f53b20b3066b4744627f46861ffbb3c90b55235fd1d35d4f9",
+    "zero_probe.py": "45ea5de670e2df157a5e89b52d31abf70e6127ee6106e67768c7d80005fd7e7f"
+  }
+}

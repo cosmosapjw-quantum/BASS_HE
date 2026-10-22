@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "massfix_probe.py"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 27.43704056739807,
+  "scope": "stable b mass fraction and nonfinite-source guard only",
+  "source_sha256": {
+    "pair.py": "6b75cadcd5ca8d678fe2b259efcc069183a25b00fdf7c06f3eb18e7d225575cc",
+    "pair.c": "b887cdbcf2878f2f53b20b3066b4744627f46861ffbb3c90b55235fd1d35d4f9",
+    "pair.h": "6135005f3e5a3dd1a09950344e76f35c2ad7de4862317e5af01e4362daee9eec",
+    "massfix_probe.py": "f5b761388116d5523b53158d9aca2a35ec71680e263809459e01c75cbf224c3f",
+    "pair_pre_massfix.py": "85636ad5379db292ee55b730fcd4d771a15a591bfb7490d4bc99205ed9eda169"
+  }
+}

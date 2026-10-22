@@ -1,0 +1,94 @@
+{
+  "schema": "he35.fresh_independent_review.v1",
+  "reviewer_agent": "/root/adaptive_authority",
+  "requested_role": "Astra independent scientific review",
+  "observed_runtime_model": "not independently exposed; role label is not backend attestation",
+  "decision": "PASS_SCOPED_AFTER_CONCRETE_REPAIR",
+  "scope": "Exact first/second moments of caller-supplied isotropic pseudo-Maxwell binary cross-collision model; portable C common-bulk matrices and Python arbitrary-drift sources",
+  "method": [
+    "Independent expansion of outgoing v'=V+b|g|omega and w'=V-a|g|omega; angular first/second means reproduce equations1and2",
+    "Re-derived common-bulk tensor gains and STF matrix; determinant=2ab nA nB, W=diag(1/nA,1/nB) symmetrizes negative generator",
+    "Checked momentum cancellation, raw total trace conservation, central drift heating, equal-mass rates and heavy-target limit",
+    "Read source and saved100-check oracle results, C fixtures, zero-kappa targeted receipt",
+    "Executed one independent targeted mass-asymmetry counterexample; inspected repair and targeted regression stdout/source-hash receipt"
+  ],
+  "source_hashes": {
+    "pair.py": "6b75cadcd5ca8d678fe2b259efcc069183a25b00fdf7c06f3eb18e7d225575cc",
+    "pair.c": "b887cdbcf2878f2f53b20b3066b4744627f46861ffbb3c90b55235fd1d35d4f9",
+    "pair.h": "6135005f3e5a3dd1a09950344e76f35c2ad7de4862317e5af01e4362daee9eec"
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "blocking_before_repair",
+      "target": "pair.py sources: b=1-a",
+      "input": "ma1e20 mb1 na=nb=kappa1 PA=PB=I uA=(1,0,0) uB=0",
+      "observed_before": {
+        "forceA": [
+          0,
+          0,
+          0
+        ],
+        "raw_total_trace": 1.9999999999999998
+      },
+      "expected": {
+        "forceA_x": -1,
+        "raw_total_trace": 0
+      },
+      "impact": "Cancellation erases lighter-species mass fraction and violates momentum transfer/energy on admitted finite inputs.",
+      "correction": "Compute b independently as (mB/scale)/(mA/scale+mB/scale).",
+      "evidence": [
+        "pair_pre_massfix.py",
+        "massfix_probe.py",
+        "massfix_stdout.txt",
+        "massfix_receipt.json"
+      ],
+      "observed_after": {
+        "forceA": [
+          -1,
+          0,
+          0
+        ],
+        "raw_total_trace": -2.220446049250313e-16,
+        "normalized_energy_residual": 1.1102230246251565e-16
+      },
+      "status": "closed"
+    },
+    {
+      "id": "F2",
+      "target": "pair.py sources output domain",
+      "impact": "Finite inputs could overflow and return nonfinite source arrays without typed rejection.",
+      "correction": "Validate all output arrays and raise ValueError for nonrepresentable sources.",
+      "evidence": [
+        "massfix_probe.py",
+        "massfix_stdout.txt"
+      ],
+      "status": "closed"
+    },
+    {
+      "id": "F3",
+      "target": "CONTRACT and source date",
+      "correction": "Document64epsPSD roundoff admission without clipping and correct retrieval UTC date to actual current2026-10-22.",
+      "status": "closed_metadata"
+    }
+  ],
+  "reused_results": {
+    "checks": 100,
+    "max_normalized_error": 1.8670464648487782e-15,
+    "limit": 5e-13,
+    "old_cohort_reruns": 0,
+    "new_cosmological_IVPs": 0
+  },
+  "remaining": [
+    "Source-qualified finite-mass differential transport for physical mixture calibration",
+    "ReactiveB2 and physicalB3 closure and feedback",
+    "Model result does not identify empirical scattering data"
+  ],
+  "nonclaims": [
+    "No new impossibility/novelty theorem",
+    "No arbitrary-timestep PSD guarantee",
+    "No empirical collision coefficient admission",
+    "No full-domain correctly rounded arithmetic guarantee"
+  ],
+  "bibliography_review": "Scientific equations independently derived from supplied model; external papers were not independently re-fetched by this reviewer."
+}

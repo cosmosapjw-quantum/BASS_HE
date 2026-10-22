@@ -1,0 +1,1535 @@
+{
+  "BACKUP": {
+    "Drive": {
+      "C22C_file_id": null,
+      "C22C_server_size_bytes": null,
+      "C22C_upload_calls": 0,
+      "byte_readback": "NOT_RUN",
+      "old_C22B_retry_receipt": "/workspace/scratch/30d955d9ea43/resume_c22c_20261022/drive_retry/FINAL_RETRY_RECEIPT.json",
+      "old_C22B_retry_status": "UNKNOWN_NO_ACK",
+      "original_C21O_Drive_preservation": "OPEN_SEPARATE_UNCHANGED",
+      "prior_C22A_Drive": "UNKNOWN_NO_ACK_SEPARATE_UNCHANGED",
+      "provider": "Google Drive",
+      "reason": "Prior old-C22B single retry lacked ACK and was locally interrupted; no further blind Drive call in the current unit.",
+      "remote_cancellation_of_old_request": "UNPROVEN",
+      "status": "NOT_ATTEMPTED_CURRENT_CONNECTOR_BLOCK"
+    },
+    "Dropbox": {
+      "file_id": "id:BSpOijBcT10AAAAAAD_h6Q",
+      "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/bass_cr/BASS_CR_C22C_EXCITATION_20261022T165321KST.zip",
+      "server_size_bytes": 114019304,
+      "status": "COMPLETED_ACK_ID_SIZE_AND_R3_ACTUAL_DOWNLOADED_BYTES_PASS",
+      "verified_utc": "2026-10-22T08:04:50.343246+00:00"
+    },
+    "Library": {
+      "file_id": "file_0000000051d881fd9c509da36d6c3f81",
+      "library_file_id": "libfile_263cc9053f8c8191b815e4e860034a57",
+      "status": "R3_ACTUAL_DOWNLOADED_BYTES_PASS",
+      "verified_utc": "2026-10-22T07:57:55.238522+00:00",
+      "version": 0
+    },
+    "cross_provider_actual_bytes": {
+      "comparison": "Both independently downloaded archives satisfy the same expected exact size and SHA256; manifest SHA256/source identity/counts also agree",
+      "manifest_sha256": "fb2caba233e920c0f4b6d823b589a98ebcd5af37bccd0cedd914ea1c7c1bd3f8",
+      "payload_files": 657,
+      "sha256": "b8e3448a8cdba0f0b8512dc241098a1829400c37064917048d8438788655c3fb",
+      "size_bytes": 114019304,
+      "source_identity_sha256": "e27e8506473833c6265343406b378bb2e8e260c2e8df6b5ab8537c5d7dfa904d",
+      "status": "PASS",
+      "three_provider_complete": false
+    },
+    "status": "C22C_ZIP_TWO_PROVIDERS_ACTUAL_BYTES_R3_PASS_DRIVE_OPEN",
+    "this_authority_and_sidecar_transport": "SEPARATE_C22C_AUTHORITY_TRANSPORT_RECEIPT_20261022.json; no self-upload success is claimed by this pre-upload file",
+    "triple_backup_claim": false
+  },
+  "DAG": {
+    "C10_C21O_recovery_publication": "COMPLETE_SCOPED_AS_USER_AUTHORITY",
+    "C22C_ZIP_Dropbox_R3": "COMPLETE",
+    "C22C_ZIP_Library_R3": "COMPLETE",
+    "C22C_authority_transport": "EXTERNAL_RECEIPT_RECORDS_ACTUAL_POST_CREATION_STATE",
+    "C22C_local_commit_and_bundle": "COMPLETE",
+    "C22C_science_R1_R10_C1_C10": "COMPLETE_SCOPED",
+    "Drive_preservation": "OPEN; original C21O and old C22B separately retained",
+    "GitHub_remote_publication": "OPEN_UNKNOWN_NO_ACK",
+    "HOLD": [
+      "Full nuclear high-energy",
+      "General triaxial/tilted/polarized CMB"
+    ],
+    "full_thermochemical_radiative_energy_closure": "OPEN",
+    "next": "C22D_COLD_CI_ENERGY_AND_LINE_COVERAGE_CONTRACT_PREPARED_NO_C22D_ODE_LAUNCHED"
+  },
+  "EXECUTION": {
+    "C22C_accepted_points": 7048,
+    "C22C_saved_points": 804,
+    "NCP_existing_51_reruns": 0,
+    "analysis_recovery_ODE": 0,
+    "analysis_recovery_RHS": 0,
+    "analysis_recovery_render": 0,
+    "analysis_recovery_summarize": 0,
+    "completed_v1_artifacts_reused_or_byte_identical": 18,
+    "endpoint_branch_predicates": 6048,
+    "new_C22C_ODE_trajectories": 4,
+    "new_C22C_methods": {
+      "BDF_success": 3,
+      "Radau_success": 1
+    },
+    "new_NCP_dispatches": 0,
+    "old_ODE_reruns_for_recovery": 0,
+    "segments": 72,
+    "successful_C22C_trajectories": 4,
+    "this_closeout_ODE": 0,
+    "this_closeout_RHS": 0,
+    "this_closeout_plot_rendering": 0,
+    "this_closeout_scientific_summary_recomputation": 0
+  },
+  "PUBLICATION": {
+    "PR_url": "https://github.com/cosmosapjw-quantum/bass_cr/pull/96",
+    "bundle": {
+      "heads": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5 refs/heads/research/cr-c22c-h1exc-local-20261022",
+      "path": "C22ABC_PUBLICATION_20261022.bundle",
+      "prerequisite": "a5e12c5f3e6d323e211d65fefad34060ec07eff0",
+      "scope": "Unpublished C22A/B/C history from R to new C22C tip; requires R Git object for bundle fetch",
+      "sha256": "cbccac84b68d1c58261eef931ae01bce7543ec15892dc1203d2d5da5135a1f79",
+      "size_bytes": 41491791,
+      "verification": "GIT_BUNDLE_VERIFY_PASS"
+    },
+    "draft_PR": 96,
+    "last_remote_read_utc": "2026-10-22T07:41:34.636Z",
+    "local_branch": "research/cr-c22c-h1exc-local-20261022",
+    "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+    "local_parent": "f03fdf71fb2ea995ce16b68d81ef4f47ecb00685",
+    "local_tree": "10d2b4d63ddf3642beb9ac80e2515a7677829545",
+    "merge_performed": false,
+    "new_C22C_files_committed": 236,
+    "only_new_C22C_prefix_staged": true,
+    "preexisting_partial_checkout_deletions_staged": false,
+    "remote_PR_head_last_observed": "a5e12c5f3e6d323e211d65fefad34060ec07eff0",
+    "remote_PR_state": "OPEN_DRAFT_UNMERGED",
+    "remote_branch_head_last_observed": "a5e12c5f3e6d323e211d65fefad34060ec07eff0",
+    "remote_publication_complete": false,
+    "repository": "https://github.com/cosmosapjw-quantum/bass_cr",
+    "status": "LOCAL_COMMIT_AND_VERIFIED_BUNDLE_COMPLETE_REMOTE_OPEN_UNKNOWN_NO_ACK",
+    "target_branch": "research/cr-c21o-hheli-z2-sandbox-20261021",
+    "write_probe": {
+      "action": "One 109-byte existing requirements.txt create_blob probe",
+      "actual_wait_ms": 45002,
+      "blind_write_retries": 0,
+      "receipt": "repository/research/cr_c22c_h1_excitation_20261022/evidence/transport_retry/GITHUB_BLOB_PROBE_RECEIPT.json",
+      "remote_new_tree_commit_ref_PR_writes": 0,
+      "status": "UNKNOWN_NO_ACK",
+      "write_permission": "UNDETERMINED_NO_DENIAL_OBSERVED"
+    }
+  },
+  "authoritative_chain": {
+    "C21O_execution_identity": "c60d734b0ed8cc7d1a147e181da27c282e3f47be90f8b0eb1d65c030faabea0f",
+    "C21O_historical_document_D": "f7ca6905729f7d8d36ca0605f7b1dd7ad5595819",
+    "C21O_recovery_document_R": "a5e12c5f3e6d323e211d65fefad34060ec07eff0",
+    "C21O_science_C": "6b6db06e8148e6826a2d5bf7dbc53d362126ca62",
+    "C22A_local_handoff_commit": "005d30b71fd551c97aa368943c113828e639acf1",
+    "C22A_local_science_commit": "7c796130af14616ab367e734842e941df5dd55f5",
+    "C22A_source_identity_28_files": "f5f0f30b1358d79a361045823ec68daeca72c10da3675e7882ccb5775c3053cd",
+    "C22B_local_commit_and_C22C_parent": "f03fdf71fb2ea995ce16b68d81ef4f47ecb00685",
+    "C22B_source_identity_31_files": "e4e5ce42693d473939e72ac3cd2ade32cd4a342993524df94ccf121eb6afbd52",
+    "C22C_execution_source_identity_37_files": "e27e8506473833c6265343406b378bb2e8e260c2e8df6b5ab8537c5d7dfa904d",
+    "C22C_final_runtime_freeze": "evidence/SOURCE_FREEZE_FINAL.json",
+    "C22C_local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+    "C22C_local_tree": "10d2b4d63ddf3642beb9ac80e2515a7677829545",
+    "freeze_resolution": "FINAL freeze e27e8506 is the exact snapshot copied into both actual runs; older c19e8d26 runner snapshots are preserved, unexecuted and not current authority.",
+    "obsolete_freezes": [
+      "evidence/SOURCE_FREEZE.json",
+      "evidence/SOURCE_FREEZE_PRERESOURCE_V1.json"
+    ]
+  },
+  "authority_rule": "Current user's C/D/R identities remain historical/remote authority. This sidecar records new local C22C science and independently verified delivery; it does not imply a remote Git commit or PR update.",
+  "conversations": "UNAVAILABLE except current explicit user instructions and actually recovered files",
+  "created_kst": "2026-10-22T17:11:30.075921+09:00",
+  "created_utc": "2026-10-22T08:11:30.075921+00:00",
+  "energy_sign_rule": "B_CMB positive is energy received by the external CMB thermostat, not energy received by the gas or resident CMB energy density. Escaped excitation photon energy is an export ledger, not a resident radiation field.",
+  "evidence_pins": [
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/SCIENCE_ACCEPTANCE.json",
+      "sha256": "789e1f9beb1ae11c42b581b97b206b62be090cf732df5404a15006ba551edfb2",
+      "size_bytes": 19117
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/STAGE_RECORDS.json",
+      "sha256": "b679e9f4e710333dff910b885295624b5ed6225d96a00e94f2250dbe36dbd269",
+      "size_bytes": 52732
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/DAG.json",
+      "sha256": "870d106ea2219139ecb1a9029c66a17ae537771de32290ff1ded3f456dcbea39",
+      "size_bytes": 5266
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/REPORT_KO.md",
+      "sha256": "28c16d60ff2839ca209b1adb30f14a73975b60674e1a986d6e4eb9cfb10be681",
+      "size_bytes": 19064
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/THEORY_SCOPE_AND_NEXT_CONTRACT_KO.md",
+      "sha256": "137011657421009fa648f4613d8aba7d6e02fb223ca9def78520696dfcfa5699",
+      "size_bytes": 35654
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/FAILURES_AND_SCOPE_ADDENDA.json",
+      "sha256": "bbb75f917ec1a6f5c04ef26811e87eb15b78979106f5499712c4f12fba272a2f",
+      "size_bytes": 5564
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/NEXT_THREAD_HANDOFF_KO.md",
+      "sha256": "88e20bab520e7b19a88164b335fa3c6dce4adbaef4e68c1a0dc4d74863d37910",
+      "size_bytes": 3825
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/PR96_UPDATE_DRAFT.md",
+      "sha256": "fa8fbd7d8f33cc2b2c0f4dc883c1d61fb5972b0f5a8ba2b02d7ccada907fcb7d",
+      "size_bytes": 1638
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/restore_c22c.py",
+      "sha256": "3406c41aa295538996963f48f336e6852eebfb83fa7442f4f70af599f25bc55a",
+      "size_bytes": 4240
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/analysis_v2/SUMMARY.json",
+      "sha256": "f188471090287325c960c57fef3d39b063f573a0a86263d08a060054c835ef39",
+      "size_bytes": 60264
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/analysis_v2/ARTIFACTS.json",
+      "sha256": "29d9375488308d2366904aa682c0d7726b23bd2830a4a4160c58ca70222dcb48",
+      "size_bytes": 3360
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/evidence/SOURCE_FREEZE_FINAL.json",
+      "sha256": "65b9ac49f2cafeeb2ac10f4c4103bcbd3fea1fa5ace2658c747017ba5c35e066",
+      "size_bytes": 8148
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/evidence/INDEPENDENT_FINAL_REVIEW.json",
+      "sha256": "31d54f98018aa8de5254b8e3b8e9ca509fd710ce104a328fc552c91c0c45c4e9",
+      "size_bytes": 13653
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/evidence/CLOSEOUT_CONSISTENCY_REVIEW.json",
+      "sha256": "f750f3dbd5c4d7c78db21750839d382aa041619010f2016a42b0151c5f3c33d1",
+      "size_bytes": 6547
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/evidence/RESTORE_HELPER_CHECKS.json",
+      "sha256": "e7f92b91f678d8da6e062c77e4c4ebac544ce488a922ffdd59e0e1e4f3f4b4d9",
+      "size_bytes": 716
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/evidence/FINAL_PUBLICATION_READ.json",
+      "sha256": "30376ae96002de6a94d87c5d8f747092c8c2770e5312bcd7bc33b85188620547",
+      "size_bytes": 1146
+    },
+    {
+      "path": "repository/research/cr_c22c_h1_excitation_20261022/evidence/latest_intake/INTAKE_RECEIPT.json",
+      "sha256": "d2cf5e10925c3e4923b31b22976cb05eca32a28ecb5a6edba1a86edaf2f5deb0",
+      "size_bytes": 17369
+    },
+    {
+      "path": "publication/C22C_LOCAL_PUBLICATION_RECEIPT.json",
+      "sha256": "dd70a73b8c0abb588ebefe9c9877ef9713107632075f26d57c05170a9256d163",
+      "size_bytes": 56112
+    },
+    {
+      "path": "release/C22C_RELEASE_LOCAL_VERIFICATION.json",
+      "sha256": "38b704941448a158d90d5eb04e1c7e5ad1e55528002aff3a16d611faec1a5dc2",
+      "size_bytes": 1929
+    },
+    {
+      "path": "final_backup/PUBLIC_RECEIPT_MANIFEST.json",
+      "sha256": "17b05b196d5f56e4490f698bc09f71526975108a34a05575c3eb55a65989c112",
+      "size_bytes": 2605
+    },
+    {
+      "path": "final_backup/INPUT_IDENTITY.json",
+      "sha256": "c8f452d196d338e0270d071053ff4edecf5e847bc6e8e4dc1a23ddce9bb93d90",
+      "size_bytes": 1415
+    },
+    {
+      "path": "final_backup/LIBRARY_UPLOAD_ACK.json",
+      "sha256": "67de845ddc092063c5f0c42b4946636942325f6cc3c84b7457319dd6b05bfd34",
+      "size_bytes": 895
+    },
+    {
+      "path": "final_backup/LIBRARY_MATERIALIZE_ACK.json",
+      "sha256": "2a0154d930b8a7219400c7dadd0d5a9fe72811773a1fcdc6b25cb9300d640cde",
+      "size_bytes": 477
+    },
+    {
+      "path": "final_backup/LIBRARY_R3_READBACK_RECEIPT.json",
+      "sha256": "62fc2edb0d4f9b70439162874977e48471a2d1c429e1357b366b4eb298f972ea",
+      "size_bytes": 1776
+    },
+    {
+      "path": "final_backup/DROPBOX_UPLOAD_ACK.json",
+      "sha256": "b9660a1e8051f8ae1e959f5604554046734ff637261c645b73a3ef88ca905f17",
+      "size_bytes": 1182
+    },
+    {
+      "path": "final_backup/DROPBOX_DOWNLOAD_LINK_ACK.json",
+      "sha256": "038882cdb728227df99409b8da05fbf754a3b632284e95ad54574b6b9e1e5e62",
+      "size_bytes": 692
+    },
+    {
+      "path": "final_backup/DROPBOX_R3_READBACK_RECEIPT.json",
+      "sha256": "a4def45f522e5bbc78c58b0cc6e95d89cf0abe45f9bb545c902d2ec352e08630",
+      "size_bytes": 1929
+    },
+    {
+      "path": "final_backup/DRIVE_NOT_ATTEMPTED.json",
+      "sha256": "4e191eb94827c1cd575c6bfe82a1782d539e00dcb50a27f70a36622546d85edf",
+      "size_bytes": 674
+    },
+    {
+      "path": "final_backup/FINAL_BACKUP_SUMMARY.json",
+      "sha256": "42e551b11cacab8f9977940481ff303112071b83de0aee8123823ab9e41479c6",
+      "size_bytes": 12487
+    }
+  ],
+  "final_stage_transport_overlay": [
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "R1"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "CONTRACT.json",
+          "evidence/recovery/RECOVERY_RECEIPT.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "연구 위치·계약",
+      "scope": "C22B의 조건부 thermal/bath 모델을 이어 H1 n2 finite-source 새 단위를 등록.",
+      "stage": "R1",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "R2"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "evidence/latest_intake/INTAKE_RECEIPT.json",
+          "evidence/theory/SOURCE_EVIDENCE.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "근거·재사용",
+      "scope": "7repo 최신 refs/선택10text와 원전, C22B raw를 읽고 exact identities 재사용.",
+      "stage": "R2",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "R3"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "CONTRACT.json",
+          "THEORY_SCOPE_AND_NEXT_CONTRACT_KO.md"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "주장·전제 정렬",
+      "scope": "finite source/core, imposed escape, 미입증 continuum/tail을 분리한 계약.",
+      "stage": "R3",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "R4"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "evidence/theory/RATE_COVERAGE_DELTA.json",
+          "evidence/theory/THEORY_CONTRACT_DRAFT.md"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "가설·표현 탐색",
+      "scope": "SW91 유효범위와 near-threshold 실제 CCC tables를 비교하고 양의 endpoint 표현 채택.",
+      "stage": "R4",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "R5"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "THEORY_SCOPE_AND_NEXT_CONTRACT_KO.md",
+          "evidence/theory/WOLFRAM_ALGEBRA_RECEIPT.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "구성적 유도",
+      "scope": "Maxwellian positive moments, event extent, paired energy export 및 조건부 tail 식 유도.",
+      "stage": "R5",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "R6"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "evidence/INDEPENDENT_PROVIDER_CHECKS.json",
+          "evidence/theory/INDEPENDENT_C22C_CONTRACT_REVIEW.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "독립 검증",
+      "scope": "원전 Table3 별도 시각 전사, Decimal/SI quadrature/고정밀 moments와 독립 계약 검토.",
+      "stage": "R6",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "R7"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "runs/c22c_h1_excitation_bdf_20261022_v1/SUMMARY.json",
+          "runs/c22c_h1_excitation_radau_20261022_v1/SUMMARY.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "판별 검증",
+      "scope": "정확한 새 입력/새runID로 BDF3+Radau1 실제 수행; 기존 궤적 재실행0.",
+      "stage": "R7",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "R8"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "SCIENCE_ACCEPTANCE.json",
+          "evidence/INDEPENDENT_FINAL_REVIEW.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "결과 판정",
+      "scope": "원래 mesh/reference 기준 PASS_SCOPED, 조건부 pilot 채택; 신규 no-go 없음.",
+      "stage": "R8",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "R9"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "model.py",
+          "excitation.py",
+          "REPORT_KO.md",
+          "THEORY_SCOPE_AND_NEXT_CONTRACT_KO.md"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "정식 결과·코딩 연결",
+      "scope": "수식–provider–77/74 상태–관측량 및 physics scope를 보고.",
+      "stage": "R9",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "R10"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "DAG.json",
+          "NEXT_THREAD_HANDOFF_KO.md"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "종료·재개",
+      "scope": "과학 scoped 완료, 게시/백업 별도 authority, 다음 C22D 계약 의무.",
+      "stage": "R10",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "C1"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "CONTRACT.json",
+          "evidence/ANALYSIS_V1_BASELINE_BINDING.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "목표·baseline",
+      "scope": "e4e5 C22B source/raw를 exact baseline으로 결속하고 새로운 효과만 비교.",
+      "stage": "C1",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "C2"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "excitation.py",
+          "model.py",
+          "sources/CCC_TABLE_METADATA.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "식–데이터–코드",
+      "scope": "CCC final.initial/a0², H1 ground, 두 event counters와 escape bookkeeping.",
+      "stage": "C2",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "C3"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "excitation.py",
+          "run_pilot.py",
+          "CONTRACT.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "수치 설계",
+      "scope": "positive interval moments/log-rate/underflow mask, threshold-segmented BDF/Radau.",
+      "stage": "C3",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "C4"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "evidence/PRE_RUN_RESOURCES.json",
+          "evidence/RESOURCE_DISCOVERY_DELTA.json",
+          "runs/c22c_h1_excitation_bdf_20261022_v1/RESOURCE.json",
+          "runs/c22c_h1_excitation_radau_20261022_v1/RESOURCE.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "실행 DAG·자원",
+      "scope": "실제 affinity0..8/quota8/RAM8GiB, lease 발견·읽기, CPU55보호/coordinator분리/worker1thread.",
+      "stage": "C4",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "C5"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "excitation.py",
+          "model.py",
+          "run_pilot.py",
+          "analyze.py",
+          "evidence/SOURCE_FREEZE_FINAL.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "구현",
+      "scope": "새 provider/model/runner/analyzer 구현; immutable parent sources 유지.",
+      "stage": "C5",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "C6"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "evidence/INDEPENDENT_PROVIDER_CHECKS.json",
+          "evidence/MODEL_LIGHT_CHECKS_FINAL_V3.json",
+          "evidence/ANALYSIS_V1_FAILURE_RECEIPT.json",
+          "evidence/theory/INDEPENDENT_C22C_ANALYZER_RECOVERY_REVIEW.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "구현 검증",
+      "scope": "독립 provider12/12, 모델46/46, stride parity 및 JSON 자료형 오류 최소 수정.",
+      "stage": "C6",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "C7"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "analysis_v2/SUMMARY.json",
+          "SCIENCE_ACCEPTANCE.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "과학 검증",
+      "scope": "saved804/accepted7048의 보존·부호·정의역·nT0 및 source masks 검증.",
+      "stage": "C7",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "C8"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "analysis_v2/SUMMARY.json",
+          "evidence/INDEPENDENT_SAVED_DATA_REVIEW.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "수치·재현성",
+      "scope": "동일 LRS 입력 tighter reference8fields PASS, 37source/raw pins, v1 completed18bytes 재사용.",
+      "stage": "C8",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "C9"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "evidence/INDEPENDENT_FINAL_REVIEW.json",
+          "evidence/theory/INDEPENDENT_C22C_REVIEW_ERRATUM_1.json"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "독립 검토",
+      "scope": "별도 source/math/code/analyzer/raw scalar와 actual PNG6 시각 검토 및 정정문 보존.",
+      "stage": "C9",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "BACKUP": {
+        "Drive": "OPEN",
+        "authority_self_transport": "SEPARATE_TRANSPORT_RECEIPT",
+        "details": "/BACKUP",
+        "release_ZIP_Dropbox": "R3_PASS",
+        "release_ZIP_Library": "R3_PASS"
+      },
+      "DAG": {
+        "details": "/DAG",
+        "science": "COMPLETE_SCOPED",
+        "stage": "C10"
+      },
+      "EXECUTION": {
+        "evidence": [
+          "SCIENCE_ACCEPTANCE.json",
+          "NEXT_THREAD_HANDOFF_KO.md",
+          "restore_c22c.py"
+        ],
+        "new_C22C_trajectories_total": 4,
+        "old_ODE_reruns": 0,
+        "status": "COMPLETE_SCOPED"
+      },
+      "PUBLICATION": {
+        "details": "/PUBLICATION",
+        "local_bundle": "VERIFIED_PASS",
+        "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+        "remote": "OPEN_UNKNOWN_NO_ACK"
+      },
+      "global_error_bound": null,
+      "name": "판정·인계",
+      "scope": "scoped scientific deliverable 준비; local commit/bundle/backup actual 상태는 최종 authority 결속.",
+      "stage": "C10",
+      "status": "COMPLETE_SCOPED"
+    }
+  ],
+  "global_error_bound": null,
+  "historical_backup_status_not_upgraded_by_current_ZIP": {
+    "C21O": {
+      "Drive": {
+        "original_document": "NOT_RUN",
+        "original_main": "UNKNOWN_NO_ACK",
+        "recovery_ZIP": "NOT_ATTEMPTED"
+      },
+      "Dropbox": {
+        "byte_readback": "NOT_RUN",
+        "id": "id:BSpOijBcT10AAAAAAD_hsA",
+        "status": "COMPLETED_ACK_ID_SIZE"
+      },
+      "Library": {
+        "id": "libfile_72f4ac3decf48191922544865674516f",
+        "status": "ACTUAL_BYTES_SIZE_SHA_CRC_PASS_AS_USER_AUTHORITY"
+      },
+      "ZIP_file_name": "BASS_CR_C21O_RECOVERY_20261022T065344KST.zip",
+      "authority_Dropbox": "id:BSpOijBcT10AAAAAAD_hsQ",
+      "authority_Library": "libfile_5cb39cd6d9b081919e7c07b2aab52257",
+      "completed_science_recovery": "Original45stress+6controls,z20->2,201savedtimes;327researchfiles restored,15analysis artifacts byte-identical;newODE0",
+      "final_authority_file": "C21O_RECOVERY_FINAL_AUTHORITY_20261022.json",
+      "sha256": "06bc8b02dd38f729005abb52608346715479f8cc8f88e63ce7586e4ed25696ef",
+      "size_bytes": 29568718
+    },
+    "C22B": {
+      "Drive": "UNKNOWN_NO_ACK_SINGLE_RETRY_INTERRUPTED_AFTER1549.3s_REMOTE_CANCELLATION_UNPROVEN",
+      "Dropbox": {
+        "byte_readback": "NOT_RUN",
+        "id": "id:BSpOijBcT10AAAAAAD_h3g",
+        "status": "COMPLETED_ACK_ID_SIZE"
+      },
+      "Library": {
+        "id": "libfile_cb882db86828819185c4385ab1681af3",
+        "status": "ACTUAL_BYTES_SIZE_SHA_CRC_ALL411_PAYLOAD_PASS"
+      },
+      "ZIP_file_name": "BASS_CR_C22B_COMPTON_20261022T124113KST.zip",
+      "sha256": "e35325402897a8f993120f7f5c37738170eb7ea343115dab4f0669e3045ce6f9",
+      "size_bytes": 69915429
+    }
+  },
+  "latest_external_intake": {
+    "external_ODE_executed": 0,
+    "external_findings_are_owner_reported_scoped": true,
+    "external_raw_downloads_this_intake": 0,
+    "inventory": {
+      "added": 0,
+      "changed": 6,
+      "current_heads": 1259,
+      "previous_heads": 1259,
+      "removed": 0
+    },
+    "method": "GitHub REST GET /git/matching-refs/heads/; all returned refs/heads names, not git wire advertisement. CLI ls-remote failed through unavailable proxy.",
+    "mirrored_compact33_scope": "REI220/BASS180 are mirrors of125grid+2cancel+2full62oracle. Prior representative two pairs/raw4 PASS_SCOPED is not an all127raw audit. Initial127 JSON failure/reintegration history retained. Different RR/DR, UV/T and tolerance mean no merged ensemble/source and no measured speedup claim for62->33 algebra.",
+    "observed_refs_interval_utc": [
+      "2026-10-22T06:34:13.225Z",
+      "2026-10-22T06:34:14.375Z"
+    ],
+    "old_history": "User prior1255 was +9 from1246. Immediate recovered baseline1259 differs; this1259 snapshot is +0/6changed/0removed from that immediate baseline. Preserve both timestamps/denominators.",
+    "preserved_open_history": [
+      "VigilODE P02 C6FAIL",
+      "HE85 incomplete campaign",
+      "REI219 incomplete campaign"
+    ],
+    "receipt": "repository/research/cr_c22c_h1_excitation_20261022/evidence/latest_intake/INTAKE_RECEIPT.json",
+    "selected_unique_texts_actual_blob_verified": 10
+  },
+  "next_C22D_contract": {
+    "evidence": "repository/research/cr_c22c_h1_excitation_20261022/THEORY_SCOPE_AND_NEXT_CONTRACT_KO.md",
+    "full_closure": "OPEN",
+    "global_error_bound": null,
+    "obligations": [
+      "Bind actual CCC H1 total-ionization87points: threshold13.6058eV, firstnonzero13.64eV, finite maximum968.61eV; resolve the near-threshold interpolation sensitivity against actual primary evidence.",
+      "Resolve inherited13.6eV binding/PI, SW91 Rydberg and CCC13.6058eV consistently in a declared energy registry; no hidden shift or compensating reservoir.",
+      "Track charge, each nucleus and particle-number thermal derivative including -T N_part'/N_part for CI; bind reverse process and admissible temperature/density.",
+      "Contract energy moments and physical continuum/tail errors; numerical integrability alone is insufficient.",
+      "Resolve or quantify dominant omitted line trapping, reabsorption,2s mixing,higher-n/cascades,CI/CX/DR/free-free and isotope-emissivity conditions before expanded physical claims.",
+      "After the contract: implement, perform light independent checks, freeze new input/source/run ID, recheck actual resource/leases and one-thread workers, execute only new work, analyze, publish and back up."
+    ],
+    "status": "PREPARED_NO_NEW_C22D_ODE"
+  },
+  "numerical_scope": "232 saved/accepted-mesh gates, eight tighter-reference saved-grid fields and a finite provider/light-check set pass their registered thresholds. One tighter LRS reference is not a universal convergence or physical-omission bound.",
+  "original_nuclear_network_PNG": "NOT_RECOVERED_NOT_READ",
+  "preserved_failure_history": [
+    {
+      "class": "INPUT_DEPENDENCY",
+      "evidence": "evidence/DEPENDENCY_RESTORE.json",
+      "finding": "Strict vendor manifest named an absent AGENTS.md before model RHS/ODE; exact R Git blob restored.",
+      "state": "RESOLVED_NO_ODE"
+    },
+    {
+      "class": "IMPLEMENTATION_REPORT_IO",
+      "evidence": "evidence/MODEL_LIGHT_CHECKS.json",
+      "finding": "Light-check v1 numpy.bool JSON serialization; partial original retained.",
+      "state": "RESOLVED_V3_REUSES_COMPLETED_CHECKS"
+    },
+    {
+      "class": "NUMERICAL_TEST_LAYOUT",
+      "evidence": "evidence/OFF_PARITY_LAYOUT_DIAGNOSIS.json",
+      "finding": "OFF bitwise comparison mismatched NumPy stride/layout; max4.440892098500626e-16 at index70 UV redshift-work ledger. Same values/same layout exact parity established without changing equations.",
+      "state": "RESOLVED_SCOPED"
+    },
+    {
+      "class": "IMPLEMENTATION_REPORT_IO",
+      "evidence": "evidence/ANALYSIS_V1_FAILURE_RECEIPT.json",
+      "finding": "analysis_v1 failed only writing final JSON after completed NPZ4/PNG6/PDF6/CSV2. Partial SUMMARY UNTRUSTED.",
+      "state": "RESOLVED_BY_VERIFIED_REUSE_V2_NO_ODE_RHS_SUMMARY_OR_RENDER"
+    },
+    {
+      "class": "ENVIRONMENT_TRANSPORT",
+      "evidence": "evidence/transport_retry/GITHUB_BLOB_PROBE_RECEIPT.json",
+      "finding": "GitHub create_blob probe lacks ACK; no permission denial inferred.",
+      "state": "OPEN_UNKNOWN_NO_ACK"
+    },
+    {
+      "class": "ENVIRONMENT_TRANSPORT",
+      "evidence": "evidence/drive_retry/FINAL_RETRY_RECEIPT.json",
+      "finding": "One oldB Drive upload call interrupted after1549.3seconds with no ACK; remote dispatch/cancellation unproven.",
+      "state": "OPEN_UNKNOWN_NO_ACK"
+    }
+  ],
+  "preserved_prior_history": [
+    "C22A initial failed Radau and rejected analyses",
+    "C22B rejected analysis_v1 plot",
+    "external initial127 JSON failures and reintegration",
+    "VigilODE P02 C6FAIL",
+    "HE85/REI219 incomplete campaigns"
+  ],
+  "private_signed_URLs_tokens_owner_emails_included": false,
+  "project_policy_resolution": {
+    "change": "Use preserved C/D/R and actual recovered C22A/B source for this new scoped continuation; do not restart archived unrelated work.",
+    "current": "User Oct22 authoritative C21O/BASS_CR branch/PR and next thermochemical/radiative coverage instruction",
+    "machine_readback_policy": "Git HEAD lacks .codex/readback-policy.json; actual tracked docs/READBACK_POLICY.md and root AGENTS describe R3 release/recovery triggers. No instructions rewritten.",
+    "prior": "AGENTS.md archived Oct13 theory entrypoints"
+  },
+  "release_identity": {
+    "ZIP_members": 658,
+    "file_name": "BASS_CR_C22C_EXCITATION_20261022T165321KST.zip",
+    "local_commit": "286d459f101eaeea0bebfda28bb0a8cfb4ceccf5",
+    "manifest_sha256": "fb2caba233e920c0f4b6d823b589a98ebcd5af37bccd0cedd914ea1c7c1bd3f8",
+    "original_local_path": "/workspace/scratch/30d955d9ea43/resume_c22c_20261022/release/BASS_CR_C22C_EXCITATION_20261022T165321KST.zip",
+    "payload_files": 657,
+    "sha256": "b8e3448a8cdba0f0b8512dc241098a1829400c37064917048d8438788655c3fb",
+    "size_bytes": 114019304,
+    "source_identity_sha256": "e27e8506473833c6265343406b378bb2e8e260c2e8df6b5ab8537c5d7dfa904d"
+  },
+  "release_verification": {
+    "Dropbox_actual_readback": {
+      "CRC": "ALL_MEMBERS_FULL_READ_PASS",
+      "GET_calls": 1,
+      "HEAD_calls": 0,
+      "RHS": 0,
+      "ZIP_members": 658,
+      "actual_HTTP_status": 200,
+      "automatic_redirects": false,
+      "download_elapsed_seconds": 3.0396519669993722,
+      "download_finished_utc": "2026-10-22T08:04:46.078697+00:00",
+      "downloaded_path": "/workspace/scratch/30d955d9ea43/resume_c22c_20261022/final_backup/dropbox_readback/BASS_CR_C22C_EXCITATION_20261022T165321KST.zip",
+      "file_id": "id:BSpOijBcT10AAAAAAD_h6Q",
+      "file_name": "BASS_CR_C22C_EXCITATION_20261022T165321KST.zip",
+      "finished_utc": "2026-10-22T08:04:50.343246+00:00",
+      "global_error_bound": null,
+      "manifest_sha256": "fb2caba233e920c0f4b6d823b589a98ebcd5af37bccd0cedd914ea1c7c1bd3f8",
+      "new_ODE": 0,
+      "old_ODE_reruns": 0,
+      "path_display": "/BASS_DERIVATION_DOSSIERS_20260912/bass_cr/BASS_CR_C22C_EXCITATION_20261022T165321KST.zip",
+      "payload_files": 657,
+      "payload_size_SHA256": "PASS",
+      "preflight_calls": 0,
+      "provider": "Dropbox",
+      "provider_content_hash": "fae3b30d464c4d643f5c11cad989c89e7bb3ed32dece3a0aa9e30b3c5523ab01",
+      "provider_hash_interpretation": "Recorded separately; ordinary SHA256 verified from actual downloaded bytes",
+      "science_imports": 0,
+      "sha256": "b8e3448a8cdba0f0b8512dc241098a1829400c37064917048d8438788655c3fb",
+      "size_bytes": 114019304,
+      "source_identity_sha256": "e27e8506473833c6265343406b378bb2e8e260c2e8df6b5ab8537c5d7dfa904d",
+      "started_utc": "2026-10-22T08:04:43.039033+00:00",
+      "status": "PASS",
+      "temporary_URL_in_receipt": false,
+      "verification_elapsed_seconds": 3.9230074339975545,
+      "verification_level": "R3_ACTUAL_DOWNLOADED_BYTES",
+      "verified_memory_bytes_used_for_ZIP": true,
+      "verifier_path": "/workspace/scratch/30d955d9ea43/resume_c22c_20261022/recovery/restored_c22b/repository/research/cr_c22c_h1_excitation_20261022/restore_c22c.py",
+      "verifier_sha256": "3406c41aa295538996963f48f336e6852eebfb83fa7442f4f70af599f25bc55a"
+    },
+    "Library_actual_readback": {
+      "CRC": "ALL_MEMBERS_FULL_READ_PASS",
+      "RHS": 0,
+      "ZIP_members": 658,
+      "download_calls": 1,
+      "download_elapsed_seconds": 3.051845272002538,
+      "download_finished_utc": "2026-10-22T07:57:51.404087+00:00",
+      "download_started_utc": "2026-10-22T07:57:48.352301+00:00",
+      "downloaded_path": "/workspace/scratch/30d955d9ea43/resume_c22c_20261022/final_backup/library_readback/BASS_CR_C22C_EXCITATION_20261022T165321KST.zip",
+      "file_id": "file_0000000051d881fd9c509da36d6c3f81",
+      "file_name": "BASS_CR_C22C_EXCITATION_20261022T165321KST.zip",
+      "finished_utc": "2026-10-22T07:57:55.238522+00:00",
+      "global_error_bound": null,
+      "library_file_id": "libfile_263cc9053f8c8191b815e4e860034a57",
+      "manifest_sha256": "fb2caba233e920c0f4b6d823b589a98ebcd5af37bccd0cedd914ea1c7c1bd3f8",
+      "new_ODE": 0,
+      "old_ODE_reruns": 0,
+      "payload_files": 657,
+      "payload_size_SHA256": "PASS",
+      "provider": "Library",
+      "restore": "NOT_REQUESTED",
+      "sha256": "b8e3448a8cdba0f0b8512dc241098a1829400c37064917048d8438788655c3fb",
+      "size_bytes": 114019304,
+      "source_identity_manifest_paths": [
+        "/execution_source_identity"
+      ],
+      "source_identity_sha256": "e27e8506473833c6265343406b378bb2e8e260c2e8df6b5ab8537c5d7dfa904d",
+      "started_utc": "2026-10-22T07:57:48.352301+00:00",
+      "status": "PASS",
+      "verification_elapsed_seconds": 3.781480437999562,
+      "verification_level": "R3_ACTUAL_DOWNLOADED_BYTES",
+      "verification_started_utc": "2026-10-22T07:57:51.457128+00:00",
+      "verified_memory_bytes_used_for_ZIP": true,
+      "verifier_path": "/workspace/scratch/30d955d9ea43/resume_c22c_20261022/recovery/restored_c22b/repository/research/cr_c22c_h1_excitation_20261022/restore_c22c.py",
+      "verifier_sha256": "3406c41aa295538996963f48f336e6852eebfb83fa7442f4f70af599f25bc55a",
+      "version": 0
+    },
+    "all_37_runtime_sources_present": "PASS",
+    "all_new_C22C_payload_matches_local_commit": "PASS",
+    "bundle_prerequisite": "a5e12c5f3e6d323e211d65fefad34060ec07eff0",
+    "bundle_scope": "C22A/B/C unpublished history from R; prerequisite R Git objects required. Not a standalone complete Git base.",
+    "local": "ALL657_PAYLOAD_SIZE_SHA_AND658_MEMBER_CRC_PASS",
+    "old_C22B_repository_payload_files_reused_exact": 407,
+    "original_C21O_recovery_ZIP_is_separate": true,
+    "primary_source_packaging": "Selected CCC tables, coefficients, source metadata/hashes and reviews included. Full journal PDF and full author CCC archive excluded. Runtime source is self-contained.",
+    "provider_hash_rule": "SHA256 is computed from actual downloaded file bytes. Dropbox content_hash is separately recorded, never substituted for ordinary SHA256.",
+    "same_verified_memory_bytes_ZIP_parser": true
+  },
+  "resource_scope": {
+    "BDF_worker_CPUs": [
+      1,
+      2
+    ],
+    "CPU55_used": false,
+    "Radau_worker_CPU": 1,
+    "actual_CPU_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "actual_CPU_quota": 8,
+    "coordinator_CPU": 0,
+    "memory_limit_GiB": 8,
+    "numerical_thread_environment_variables": "six configured to1",
+    "observations": "Actual resources and known cooperative leases checked before runs; create-only run outputs. Not an exclusive CPU reservation or a native-worker-thread census.",
+    "worker_thread_policy": "one thread per worker"
+  },
+  "schema": "BASS_CR_C22C_FINAL_AUTHORITY_V1",
+  "scientific_acceptance": {
+    "LRS_endpoint": {
+      "H1_ionized_fraction": 0.027894222064186375,
+      "Pi_r_F": 0.0001367231362338168,
+      "Sigma_F": 0.015632199101806205,
+      "accepted_excitation_2p_endpoint": 0.002480629703560779,
+      "accepted_excitation_2s_endpoint": 0.0014589780079030821,
+      "accepted_excitation_energy_endpoint_eV_per_H": 0.04020113595047625,
+      "accepted_excitation_photon_endpoint_per_H": 0.005398585719366944,
+      "accepted_maximum_log10_tail_coefficient_per_hypothetical_a0sq": -498.0614373480136,
+      "accepted_minimum_temperature_K": 29.910319105097738,
+      "accepted_source_underflow_samples_2p": 184,
+      "accepted_source_underflow_samples_2s": 184,
+      "accepted_temperature_peak_K": 9914.714253987668,
+      "accepted_temperature_peak_elapsed_Myr": 0.012022771076019782,
+      "accepted_temperature_peak_eta": 4.524258841119415e-05,
+      "accepted_temperature_peak_z": 19.999049927135406,
+      "bath_energy_received_eV_per_H": 1.1251352183910326,
+      "elapsed_Myr": 3091.339227003613,
+      "excitation_2p_events_per_H": 0.002480629703560779,
+      "excitation_2s_events_per_H": 0.0014589780079030821,
+      "excitation_energy_over_initial_thermal": 0.9579246406388323,
+      "excitation_escaped_energy_eV_per_H": 0.04020113595047625,
+      "excitation_escaped_photon_count_per_H": 0.005398585719366944,
+      "n_e_cm3": 1.446008519933139e-07,
+      "name": "finite_uv_excitation_lrs",
+      "role": "nominal",
+      "saved_minimum_temperature_K": 29.910319105097745,
+      "saved_temperature_peak_K": 9914.64022038613,
+      "tau_T": 0.022344268390218715,
+      "temperature_K": 29.910319105097745,
+      "z": 2.000000000000001
+    },
+    "LRS_excitation_export_fraction_of_initial_total_accounted_energy": 0.007080361076981692,
+    "LRS_matched_baseline_change": {
+      "H1_ionized_fraction": {
+        "endpoint_relative_change": -0.00985972883541153,
+        "max_absolute_matched_eta_change": 0.0009653542178644503,
+        "max_absolute_relative_change_on_nonzero_baseline": 0.009885462553186342,
+        "new_endpoint": 0.027894222064186375,
+        "old_endpoint": 0.028171990248793334,
+        "zero_baseline_samples": 0
+      },
+      "Pi_r_F": {
+        "endpoint_relative_change": 7.140585634557439e-06,
+        "max_absolute_matched_eta_change": 5.97324464184383e-09,
+        "max_absolute_relative_change_on_nonzero_baseline": 0.0015586633816125905,
+        "new_endpoint": 0.0001367231362338168,
+        "old_endpoint": 0.00013672215995752548,
+        "zero_baseline_samples": 0
+      },
+      "Sigma_F": {
+        "endpoint_relative_change": -1.9087654234972717e-08,
+        "max_absolute_matched_eta_change": 1.6598823704416787e-09,
+        "max_absolute_relative_change_on_nonzero_baseline": 1.9087654234972717e-08,
+        "new_endpoint": 0.015632199101806205,
+        "old_endpoint": 0.015632199400188222,
+        "zero_baseline_samples": 0
+      },
+      "bath_energy_received_eV_per_H": {
+        "endpoint_relative_change": -0.024633565397220614,
+        "max_absolute_matched_eta_change": 0.028416081382008018,
+        "max_absolute_relative_change_on_nonzero_baseline": 0.024633565397220614,
+        "new_endpoint": 1.1251352183910326,
+        "old_endpoint": 1.1535512997730406,
+        "zero_baseline_samples": 1
+      },
+      "n_e_cm3": {
+        "endpoint_relative_change": -0.009855415279459323,
+        "max_absolute_matched_eta_change": 8.996679862777071e-07,
+        "max_absolute_relative_change_on_nonzero_baseline": 0.009881232088822522,
+        "new_endpoint": 1.446008519933139e-07,
+        "old_endpoint": 1.4604013820277185e-07,
+        "zero_baseline_samples": 0
+      },
+      "tau_T": {
+        "endpoint_relative_change": -0.0053866277507705895,
+        "max_absolute_matched_eta_change": 0.00012101210333542375,
+        "max_absolute_relative_change_on_nonzero_baseline": 0.0053866277507705895,
+        "new_endpoint": 0.022344268390218715,
+        "old_endpoint": 0.02246528049355414,
+        "zero_baseline_samples": 1
+      },
+      "temperature_K": {
+        "endpoint_relative_change": -0.015972686997596575,
+        "max_absolute_matched_eta_change": 191.6685007953838,
+        "max_absolute_relative_change_on_nonzero_baseline": 0.02491680106446703,
+        "new_endpoint": 29.910319105097745,
+        "old_endpoint": 30.395822056846395,
+        "zero_baseline_samples": 0
+      }
+    },
+    "decision": "ADOPT_CONDITIONAL_FINITE_SOURCE_H1_N2_EXCITATION_PILOT",
+    "mesh_extrema": {
+      "charge_photon_relative_residual": 7.406998191877845e-16,
+      "energy_relative_residual": 1.437379247535859e-11,
+      "maximum_temperature_K": 9914.721085955502,
+      "minimum_UV_count_per_H": -1.4396548401115405e-14,
+      "minimum_excitation_2p_increment": -1.3010426069826053e-18,
+      "minimum_excitation_2s_increment": -4.336808689942018e-19,
+      "minimum_scaled_population": -1.6764278884636803e-28,
+      "minimum_temperature_K": 6.108580524022741,
+      "nucleus_max_relative_residual": 2.220446049250313e-14,
+      "photon_number_relative_residual": 9.43689570931383e-16
+    },
+    "mesh_gate_count": 232,
+    "metadata_addendum": "Frozen MODEL generic collisional_excitation_cooling omitted label is inherited; explicit H1 finite n2 event/escape metadata is active. Remaining levels/species/processes retain OPEN.",
+    "new_strong_no_go_claims": "NONE; NG1–NG7 NOT_APPLICABLE_WITH_REASON in theory report",
+    "physics_contract": {
+      "CMB": "Prescribed isotropic external thermostat; self-consistent spectrum OPEN",
+      "HOLD": [
+        "full nuclear high-energy",
+        "general triaxial/tilted/polarized CMB"
+      ],
+      "active_source": "H1 1s->2s/2p only, CCC finite-energy piecewise-linear Maxwellian core; sigma a0^2, no pi or extra degeneracy",
+      "atomic_stress": "Isotropic gas closure; separate nonbaryonic Vlasov carries matter anisotropic stress",
+      "energy": "Trace gas/atomic/UV energy plus escaped/work/external bath ledgers; thermal/radiative Einstein feedback OPEN",
+      "full_thermochemical_radiative_stellar_nuclear_network": "OPEN",
+      "geometry": "Non-tilted LRS; full Frobenius norm; signed P_r=Pgamma+Pnu and Ptot=Pm+Pr before scalar abs",
+      "global_error_bound": null,
+      "inventory": "21 explicit charge populations: n; H1(0,+1), D(0,+1), T(0,+1), He3(0,+1,+2), He4(0,+1,+2), Li6(0,+1,+2,+3), Li7(0,+1,+2,+3). n and both T states exactly zero by declared inventory.",
+      "isotopes": "No D/T excitation rate quotient or silently absent rate; conditional shared PI/RR charge quotient does not establish emissivity equality",
+      "physical_high_energy_cap": null,
+      "radiative_boundary": "Instantaneous ground return and perfect escape, 2 photons/2s and 1 photon/2p; no line transport or resident spectral field",
+      "rate_domain": "Numerical core provider1..1e8K; admitted pilot1..2e4K; physical continuum interpolation error and unbounded high-energy tail OPEN"
+    },
+    "preregistered_gates": {
+      "charge_and_photon_absolute_normalized": 1e-10,
+      "comparison_normalization": "max(abs(reference),1e-8*peak,1e-30); cumulative bath/excitation energy use uniform max(peak,1e-30) scale",
+      "declared_n_T_exact_zero": true,
+      "energy_relative_saved_and_accepted_max_abs": 1e-08,
+      "maximum_excitation_temperature_K": 20000.0,
+      "minimum_UV_count_per_H": -2e-11,
+      "minimum_excitation_count": -2e-11,
+      "minimum_scaled_population": -2e-09,
+      "nonrelativistic_selector_max": 0.01,
+      "nucleus_max_relative_residual": 1e-10,
+      "reference_fields": [
+        "temperature_K",
+        "n_e_cm3",
+        "tau_T",
+        "Sigma_F",
+        "Pi_r_F",
+        "H1_ionized_fraction",
+        "bath_energy_received_eV_per_H",
+        "excitation_escaped_energy_eV_per_H"
+      ],
+      "reference_scaled_max_difference": 2e-07
+    },
+    "run_receipts": [
+      {
+        "accepted_mesh_points": 611,
+        "atol": 3e-13,
+        "case": "dark_excitation",
+        "current_scientific_acceptance": "SCIENCE_ACCEPTANCE.json",
+        "history_bytes": 460654,
+        "history_sha256": "1c7703db00699bdedf6a10aa09a151ba88c3d103722071f57e018629f4bb2690",
+        "input_sha256": "4bc1ef084bf12ca829973c72c4fd0c83513de5e1a75576e2b032b1cecec5e90c",
+        "method": "BDF",
+        "nfev": 1256,
+        "raw_scientific_acceptance_marker": "PENDING_SCOPE_MATCHED_REVIEW_UNCHANGED",
+        "rtol": 3e-11,
+        "run_id": "c22c_h1_excitation_bdf_20261022_v1",
+        "saved_times": 201,
+        "segments": 18,
+        "wall_seconds": 24.532154881999304
+      },
+      {
+        "accepted_mesh_points": 1617,
+        "atol": 3e-13,
+        "case": "finite_uv_excitation_flrw",
+        "current_scientific_acceptance": "SCIENCE_ACCEPTANCE.json",
+        "history_bytes": 993436,
+        "history_sha256": "f5248bc363cc95672edcdfc86b9b67e62db7121696a3fcea4faa30c7ca3f5abb",
+        "input_sha256": "4bc1ef084bf12ca829973c72c4fd0c83513de5e1a75576e2b032b1cecec5e90c",
+        "method": "BDF",
+        "nfev": 3609,
+        "raw_scientific_acceptance_marker": "PENDING_SCOPE_MATCHED_REVIEW_UNCHANGED",
+        "rtol": 3e-11,
+        "run_id": "c22c_h1_excitation_bdf_20261022_v1",
+        "saved_times": 201,
+        "segments": 18,
+        "wall_seconds": 43.1940722870022
+      },
+      {
+        "accepted_mesh_points": 1620,
+        "atol": 3e-13,
+        "case": "finite_uv_excitation_lrs",
+        "current_scientific_acceptance": "SCIENCE_ACCEPTANCE.json",
+        "history_bytes": 1081652,
+        "history_sha256": "c1dc2f050a925467073749d7b874df1dc7d61139019e758a520e38e2775f74c9",
+        "input_sha256": "4bc1ef084bf12ca829973c72c4fd0c83513de5e1a75576e2b032b1cecec5e90c",
+        "method": "BDF",
+        "nfev": 3617,
+        "raw_scientific_acceptance_marker": "PENDING_SCOPE_MATCHED_REVIEW_UNCHANGED",
+        "rtol": 3e-11,
+        "run_id": "c22c_h1_excitation_bdf_20261022_v1",
+        "saved_times": 201,
+        "segments": 18,
+        "wall_seconds": 32.73425948699878
+      },
+      {
+        "accepted_mesh_points": 3200,
+        "atol": 3e-14,
+        "case": "finite_uv_excitation_lrs",
+        "current_scientific_acceptance": "SCIENCE_ACCEPTANCE.json",
+        "history_bytes": 1922733,
+        "history_sha256": "261b5408c2c0c9f0bf33393fb220cb81049ea70832e0fd6fb860527e791cf8c5",
+        "input_sha256": "95cdeca516c1c02f21dc91337d85461d23723fbe7fb0b29f0c6ed4365fac6d0c",
+        "method": "Radau",
+        "nfev": 22587,
+        "raw_scientific_acceptance_marker": "PENDING_SCOPE_MATCHED_REVIEW_UNCHANGED",
+        "rtol": 3e-12,
+        "run_id": "c22c_h1_excitation_radau_20261022_v1",
+        "saved_times": 201,
+        "segments": 18,
+        "wall_seconds": 159.3011731709994
+      }
+    ],
+    "tighter_reference": {
+      "H1_ionized_fraction": {
+        "max_absolute_difference": 1.5634477046333473e-10,
+        "max_scaled_difference": 6.106666342775347e-09,
+        "normalization": "max(abs(reference),1e-8*peak,1e-30)",
+        "pass": true,
+        "reference_peak_scale": 0.25171786123375534
+      },
+      "Pi_r_F": {
+        "max_absolute_difference": 5.609347621809979e-14,
+        "max_scaled_difference": 3.3284609257200568e-09,
+        "normalization": "max(abs(reference),1e-8*peak,1e-30)",
+        "pass": true,
+        "reference_peak_scale": 0.0007999999999999999
+      },
+      "Sigma_F": {
+        "max_absolute_difference": 1.6459484122877122e-10,
+        "max_scaled_difference": 8.747980642031314e-09,
+        "normalization": "max(abs(reference),1e-8*peak,1e-30)",
+        "pass": true,
+        "reference_peak_scale": 0.29999999999999993
+      },
+      "bath_energy_received_eV_per_H": {
+        "max_absolute_difference": 4.4630876772089323e-10,
+        "max_scaled_difference": 3.966712271081667e-10,
+        "normalization": "uniform max(peak,1e-30)",
+        "pass": true,
+        "reference_peak_scale": 1.1251352183383623
+      },
+      "excitation_escaped_energy_eV_per_H": {
+        "max_absolute_difference": 1.1583897174816116e-09,
+        "max_scaled_difference": 2.8814849548774086e-08,
+        "normalization": "uniform max(peak,1e-30)",
+        "pass": true,
+        "reference_peak_scale": 0.04020113710886596
+      },
+      "n_e_cm3": {
+        "max_absolute_difference": 2.762517319933322e-13,
+        "max_scaled_difference": 6.107519696845794e-09,
+        "normalization": "max(abs(reference),1e-8*peak,1e-30)",
+        "pass": true,
+        "reference_peak_scale": 0.0004476419364566974
+      },
+      "tau_T": {
+        "max_absolute_difference": 1.4638866507876713e-11,
+        "max_scaled_difference": 1.7786876021959383e-09,
+        "normalization": "max(abs(reference),1e-8*peak,1e-30)",
+        "pass": true,
+        "reference_peak_scale": 0.02234426837557985
+      },
+      "temperature_K": {
+        "max_absolute_difference": 6.79348204357666e-06,
+        "max_scaled_difference": 9.394526739297666e-09,
+        "normalization": "max(abs(reference),1e-8*peak,1e-30)",
+        "pass": true,
+        "reference_peak_scale": 9914.640220590689
+      }
+    }
+  },
+  "scientific_acceptance_pin": {
+    "path": "repository/research/cr_c22c_h1_excitation_20261022/SCIENCE_ACCEPTANCE.json",
+    "sha256": "789e1f9beb1ae11c42b581b97b206b62be090cf732df5404a15006ba551edfb2",
+    "size_bytes": 19117
+  },
+  "self_transport_receipt": "C22C_AUTHORITY_TRANSPORT_RECEIPT_20261022.json",
+  "snapshot_rule": "Frozen committed C22C science files retain their creation-time PENDING transport/visual markers. Independent scientific review supersedes review markers; this authority supersedes transport state for the ZIP and local commit only. This authority's own transport is recorded in the separate named receipt without rewriting this hashed file.",
+  "status": "COMPLETE_SCOPED_SCIENCE_LOCAL_PUBLICATION_AND_TWO_ZIP_BACKUPS; REMOTE_PUBLICATION_AND_DRIVE_OPEN",
+  "workflow": "physmath-research-loop1.0.0/approval0.2"
+}

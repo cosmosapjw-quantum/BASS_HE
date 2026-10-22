@@ -1,0 +1,35 @@
+{
+  "observed_utc": "2026-10-22T06:50:17.463Z",
+  "records": [
+    {
+      "source": "GitHub PR86",
+      "head": "bb1259b21c7b83b0376a5f7fcbb0c6321918ec90",
+      "branch": "research/he33-baryon-moment-foundation-20261022",
+      "updated": "2026-10-22T03:17:14Z"
+    },
+    {
+      "source": "Dropbox HE33 postintake delta",
+      "has_more": false,
+      "results": [],
+      "total_results": 0
+    },
+    {
+      "source": "Drive HE33 S3",
+      "id": "1sk4-YvVoRYQ8lKDKOS-b7ppgKX0UuCE6GycXvclNWgM",
+      "title": "BASS_HE_HE33_S3_FINAL_HANDOFF_20261022",
+      "mime_type": "application/vnd.google-apps.document",
+      "size": "37616",
+      "url": null,
+      "file_or_folder": "file",
+      "created_time": null,
+      "modified_time": "2026-10-22T03:15:12.307Z",
+      "parent_ids": null,
+      "drive_id": null,
+      "current_user_can_share": null,
+      "has_augmented_permissions": null,
+      "shared": null,
+      "permissions": null,
+      "source_visibility_status": "access_not_verified"
+    }
+  ]
+}

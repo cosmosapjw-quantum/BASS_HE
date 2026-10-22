@@ -1,0 +1,171 @@
+{
+  "BACKUP": {
+    "final_transport_authority": "C22C_FINAL_AUTHORITY_20261022.json + C22C_AUTHORITY_TRANSPORT_RECEIPT_20261022.json",
+    "new_C22C_Drive": "NOT_ATTEMPTED_CURRENT_CONNECTOR_BLOCK",
+    "new_C22C_Dropbox": "PENDING_RELEASE_R3_OR_EXPLICIT_LESSER_TIER",
+    "new_C22C_Library": "PENDING_RELEASE_R3",
+    "old_C21O_Drive": "OPEN; original main UNKNOWN_NO_ACK, document NOT_RUN, recovery NOT_ATTEMPTED",
+    "old_C22B_Drive_retry": "UNKNOWN_NO_ACK; interrupted call does not prove cancellation",
+    "old_C22B_recovery": "Library actual SHA/size/CRC/all411payload PASS; old ODE0",
+    "status": "PRE_TRANSPORT_SCIENCE_SNAPSHOT_FINAL_AUTHORITY_TO_FOLLOW",
+    "triple_backup_claim": false
+  },
+  "DAG": {
+    "C22C_scoped_science": "COMPLETE_SCOPED",
+    "HOLD": [
+      "full nuclear high-energy",
+      "general triaxial/tilted/polarized CMB"
+    ],
+    "full_closure": "OPEN",
+    "next": "C22D actual low-temperature CI/energy-moment and higher-level/line-escape coverage contract"
+  },
+  "EXECUTION": {
+    "C22C_accepted_points": 7048,
+    "C22C_saved_points": 804,
+    "analysis_recovery_ODE": 0,
+    "analysis_recovery_RHS": 0,
+    "analysis_recovery_render": 0,
+    "analysis_recovery_summarize": 0,
+    "completed_v1_artifacts_reused_or_byte_identical": 18,
+    "endpoint_branch_predicates": 6048,
+    "new_C22C_ODE_trajectories": 4,
+    "old_ODE_reruns_for_recovery": 0,
+    "segments": 72,
+    "successful_C22C_trajectories": 4
+  },
+  "PUBLICATION": {
+    "PR_state_last_observed": "OPEN_DRAFT_UNMERGED",
+    "draft_PR": 96,
+    "final_local_commit_and_bundle": "FINAL_AUTHORITY_SIDECAR_AND_PUBLICATION_RECEIPT",
+    "final_read_receipt": "evidence/FINAL_PUBLICATION_READ.json",
+    "publication_complete": false,
+    "read_snapshot_utc": "2026-10-22T07:41:34.636Z",
+    "remote_head_last_observed": "a5e12c5f3e6d323e211d65fefad34060ec07eff0",
+    "remote_new_tree_commit_ref_PR_writes": 0,
+    "status": "OPEN_UNKNOWN_NO_ACK_LOCAL_COMMIT_AND_BUNDLE_TO_FOLLOW",
+    "target_branch": "research/cr-c21o-hheli-z2-sandbox-20261021",
+    "target_repository": "https://github.com/cosmosapjw-quantum/bass_cr",
+    "write_permission": "UNDETERMINED; no denial observed",
+    "write_probe": "evidence/transport_retry/GITHUB_BLOB_PROBE_RECEIPT.json"
+  },
+  "created_utc": "2026-10-22T07:43:02.345434+00:00",
+  "edges": [
+    [
+      "C22B_RECOVERY",
+      "C22C_SOURCE_CONTRACT"
+    ],
+    [
+      "CURRENT_REFS_EXTERNAL",
+      "C22C_SOURCE_CONTRACT"
+    ],
+    [
+      "C22C_SOURCE_CONTRACT",
+      "C22C_IMPLEMENTATION_LIGHT"
+    ],
+    [
+      "C22C_IMPLEMENTATION_LIGHT",
+      "C22C_NEW_RUNS"
+    ],
+    [
+      "C22C_NEW_RUNS",
+      "C22C_ANALYSIS_RECOVERY"
+    ],
+    [
+      "C22C_ANALYSIS_RECOVERY",
+      "C22C_INDEPENDENT_ACCEPTANCE"
+    ],
+    [
+      "C22C_INDEPENDENT_ACCEPTANCE",
+      "GITHUB_PUBLICATION"
+    ],
+    [
+      "C22C_INDEPENDENT_ACCEPTANCE",
+      "C22C_FINAL_BACKUP"
+    ],
+    [
+      "C22C_INDEPENDENT_ACCEPTANCE",
+      "C22D_COLD_CI_ENERGY_COVERAGE"
+    ],
+    [
+      "C22D_COLD_CI_ENERGY_COVERAGE",
+      "FULL_THERMOCHEMICAL_RADIATIVE_CLOSURE"
+    ]
+  ],
+  "global_error_bound": null,
+  "nodes": [
+    {
+      "evidence": "User C/D/R and inherited C22B records; old ODE0",
+      "id": "C10_C21O_RECOVERY",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "evidence": "evidence/recovery/RECOVERY_RECEIPT.json",
+      "id": "C22B_RECOVERY",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "evidence": "evidence/latest_intake/INTAKE_RECEIPT.json",
+      "id": "CURRENT_REFS_EXTERNAL",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "evidence": "CONTRACT.json",
+      "id": "C22C_SOURCE_CONTRACT",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "evidence": "evidence/MODEL_LIGHT_CHECKS_FINAL_V3.json",
+      "id": "C22C_IMPLEMENTATION_LIGHT",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "evidence": "SCIENCE_ACCEPTANCE.json",
+      "id": "C22C_NEW_RUNS",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "evidence": "analysis_v2/SUMMARY.json",
+      "id": "C22C_ANALYSIS_RECOVERY",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "evidence": "evidence/INDEPENDENT_FINAL_REVIEW.json",
+      "id": "C22C_INDEPENDENT_ACCEPTANCE",
+      "status": "COMPLETE_SCOPED"
+    },
+    {
+      "evidence": "evidence/transport_retry/GITHUB_BLOB_PROBE_RECEIPT.json",
+      "id": "GITHUB_PUBLICATION",
+      "status": "OPEN_UNKNOWN_NO_ACK"
+    },
+    {
+      "evidence": "C22C_FINAL_AUTHORITY_20261022.json + C22C_AUTHORITY_TRANSPORT_RECEIPT_20261022.json",
+      "id": "C22C_FINAL_BACKUP",
+      "status": "PENDING_AUTHORITY_SIDECAR"
+    },
+    {
+      "evidence": "evidence/drive_retry/FINAL_RETRY_RECEIPT.json",
+      "id": "DRIVE_PRESERVATION",
+      "status": "OPEN_UNKNOWN_NO_ACK"
+    },
+    {
+      "evidence": "THEORY_SCOPE_AND_NEXT_CONTRACT_KO.md",
+      "id": "C22D_COLD_CI_ENERGY_COVERAGE",
+      "status": "NEXT_CONTRACT_PREPARED"
+    },
+    {
+      "evidence": "THEORY_SCOPE_AND_NEXT_CONTRACT_KO.md",
+      "id": "FULL_THERMOCHEMICAL_RADIATIVE_CLOSURE",
+      "status": "OPEN"
+    },
+    {
+      "id": "FULL_NUCLEAR_HIGH_ENERGY",
+      "status": "HOLD"
+    },
+    {
+      "id": "GENERAL_TRIAXIAL_TILTED_POLARIZED_CMB",
+      "status": "HOLD"
+    }
+  ],
+  "schema": "C22C_DAG_V1"
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "c22c_ccc_table_metadata_v1",
+  "source_index": "https://atom.curtin.edu.au/CCC-WWW/index.html",
+  "source_archive_url": "https://atom.curtin.edu.au/CCC-DB/H/I/ELECTRON_IMPACT/e-H_XSEC_LS.zip",
+  "source_advertised_epoch": "August 2026 (author website)",
+  "archive": {
+    "path": "CCC_H_202608_primary.zip",
+    "size_bytes": 7010887,
+    "sha256": "57730e72656639e92c47c1b8457db0edac5a69ae93db6c357471a93759af1fc9"
+  },
+  "archive_member_count": 3162,
+  "crc_scope": "Selected extracted members read by zipfile from verified bytes; not a full archive CRC audit",
+  "source_orientation": "filename FINAL.INITIAL; 2S.1S is excitation 1S->2S",
+  "sigma_unit": "a0^2, not pi*a0^2",
+  "energy_unit": "eV, incident electron kinetic energy",
+  "tables": [
+    {
+      "path": "CCC_2S_1S.txt",
+      "size_bytes": 29393,
+      "sha256": "e8e0092e7be97abe4a90ce100e3101d1f6f225eee2d4ad1ba740f57de819997b",
+      "transition": "H1 1S->2S",
+      "rows": 452,
+      "threshold_row": [
+        10.20435,
+        0.0
+      ],
+      "first_positive_sigma_row": [
+        10.2043885,
+        0.3071
+      ],
+      "last_row": [
+        968.6058,
+        0.01863
+      ],
+      "strictly_increasing_energy": true,
+      "minimum_sigma": 0.0,
+      "maximum_tabulated_sigma": 1.52,
+      "tail_sigma_cap_from_table": "NOT_ESTABLISHED",
+      "candidate_role": "ACTIVE_CANDIDATE_FINITE_CORE"
+    },
+    {
+      "path": "CCC_2P_1S.txt",
+      "size_bytes": 29393,
+      "sha256": "12cf46fa0904a5b227092a0a6a3ae6d8a20c041cf11c2981d3bb8bd1f6ac313d",
+      "transition": "H1 1S->2P",
+      "rows": 452,
+      "threshold_row": [
+        10.20435,
+        0.0
+      ],
+      "first_positive_sigma_row": [
+        10.2043885,
+        0.3696
+      ],
+      "last_row": [
+        968.6058,
+        0.4613
+      ],
+      "strictly_increasing_energy": true,
+      "minimum_sigma": 0.0,
+      "maximum_tabulated_sigma": 3.391,
+      "tail_sigma_cap_from_table": "NOT_ESTABLISHED",
+      "candidate_role": "ACTIVE_CANDIDATE_FINITE_CORE"
+    },
+    {
+      "path": "CCC_TICS_1S.txt",
+      "size_bytes": 5754,
+      "sha256": "7a87a2c9f2116ee36c0786b379dac08e1f4d92a49504fe542e6aa71cbb279bae",
+      "transition": "H1 ground total ionization",
+      "rows": 87,
+      "threshold_row": [
+        13.6058,
+        0.0
+      ],
+      "first_positive_sigma_row": [
+        13.64,
+        0.00242
+      ],
+      "last_row": [
+        968.61,
+        0.4017
+      ],
+      "strictly_increasing_energy": true,
+      "minimum_sigma": 0.0,
+      "maximum_tabulated_sigma": 2.167,
+      "tail_sigma_cap_from_table": "NOT_ESTABLISHED",
+      "candidate_role": "SOURCE_INTAKE_ONLY_NOT_ACTIVE"
+    }
+  ],
+  "metadata": [
+    {
+      "path": "CCC_README.txt",
+      "size_bytes": 676,
+      "sha256": "f48aa3eee41e3dd78c887218b64e097490fb50c17b5b15840a701cc9ef984ece"
+    },
+    {
+      "path": "CCC_e-H_README.txt",
+      "size_bytes": 580,
+      "sha256": "1d4a324a12f43c0d800cffeb5c4d7500d94e08a85f7bad66e4f80afaacb1f2eb"
+    }
+  ],
+  "temperature_domain": "Source provides cross sections, not a published whole-temperature Maxwellian fit validity interval; derived finite-table convolution defined for T>0 under explicit interpolation.",
+  "unused_column": "asym is not used; no interpretation required for integral",
+  "unavailable": "E above table maximum; continuum interpolation error; isotope variants; global physical accuracy",
+  "global_error_bound": null
+}

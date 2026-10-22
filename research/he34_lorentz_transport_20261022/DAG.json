@@ -1,0 +1,47 @@
+{
+  "id": "HE1",
+  "selected_stages": [
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8"
+  ],
+  "status": "PASS_SCOPED",
+  "dependencies": [
+    "global_I0",
+    "HE33_immutable_science"
+  ],
+  "completed": {
+    "E0_NODE_SMOKE": "PASS17/17 actualNode newhost",
+    "B1A_LORENTZ_GRAD_FUNCTIONAL": "derived +11verificationgroups, C99andPython executed"
+  },
+  "remaining": {
+    "B1_TRANSPORT_MATRIX": "PARTIAL: angular source calibration and finite-mass/species exchange missing",
+    "B2_REACTIVE_SOURCE_MOMENTS": "PENDING",
+    "B3_CLOSURE_SELECTION": "PENDING afterB1/B2",
+    "B4_NEW_SAVED_BACKGROUND_CONTROL": "PENDING afterB3",
+    "B5_METRIC_FEEDBACK": "PENDING afterB4"
+  },
+  "preserved_completed_work": {
+    "HE29_reference_pairs": 4,
+    "HE29_packed_canary": "admitted",
+    "HE29_prepared_queue": "EMPTY",
+    "HE32_saved_histories": 394,
+    "HE32_IVPs_repeated_this_node": 0
+  },
+  "next_action": "source l2 angular cross sections or sigma2 table and finite-mass relaxation moments; rootcoordinatesB2 ledger; chooseclosure beforeB4",
+  "publication_status": "PENDING_PARENT",
+  "backup_status": "PENDING_PARENT",
+  "independent_review": {
+    "status": "PASS_SCOPED",
+    "reviewer": "root parent source review plus independent Wolfram Gamma check",
+    "path": "review/HE1_HH1_PARENT_CHECK.md",
+    "test_repetition": "none after sufficient verification"
+  }
+}

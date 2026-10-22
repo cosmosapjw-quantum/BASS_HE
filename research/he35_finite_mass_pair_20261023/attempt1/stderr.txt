@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/d855c1e0c0ed/orchestration_resume_20261023/lanes/BASS_HE/he35_finite_mass_pair_20261023/test_pair.py", line 27, in <module>
+    check(f'heat_{i}',np.trace(s['centralA']+s['centralB']),ma*mb/(ma+mb)*na*nb*k*np.dot(ua-ub,ua-ub))
+  File "/workspace/scratch/d855c1e0c0ed/orchestration_resume_20261023/lanes/BASS_HE/he35_finite_mass_pair_20261023/test_pair.py", line 7, in check
+    x=np.asarray(x);y=np.asarray(y);e=float(np.max(np.abs(x-y))/(scale or max(np.max(np.abs(x)),np.max(np.abs(y)),1e-290)));checks[name]=e;assert e<=5e-13,(name,e)
+                                                                                                                                                  ^^^^^^^^
+AssertionError: ('heat_0', 0.5)
