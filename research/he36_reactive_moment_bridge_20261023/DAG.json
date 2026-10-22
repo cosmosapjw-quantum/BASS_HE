@@ -5,7 +5,7 @@
   "unit_id": "HE36-RMB",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 11,
+  "completed": 12,
   "nodes": [
     {
       "id": "R1",
@@ -314,9 +314,12 @@
           "sha256": "2c089b41b2bd200b5d3ea5dd852271f4c2124c8d17bb0d36a40ff72c8812e2de"
         }
       ],
-      "publication": "prepared",
-      "backup": "prepared",
-      "completed_utc": "2026-10-22T22:40:14.671129+00:00"
+      "publication": "published",
+      "backup": "acknowledged",
+      "completed_utc": "2026-10-22T22:40:14.671129+00:00",
+      "commit": "b99bbcfe0f9426d387c893f2a4def7dce8ae7e2e",
+      "archive_sha256": "c5a8a2bfd450972fc4b7e7e03d1ca2cb787fb148893c198a09473b659e11b094",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_stQ"
     },
     {
       "id": "C2",
@@ -324,10 +327,24 @@
       "depends_on": [
         "C1"
       ],
-      "status": "pending",
-      "evidence": [],
-      "publication": "pending",
-      "backup": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "stages/C2.md",
+          "sha256": "2365b72005eb543c484d65ed39ae3a0d89f591db6cf376c875a7e522bf9fbc40"
+        },
+        {
+          "path": "EQUATION_CODE_MAP.md",
+          "sha256": "b858cea6ba868cce7f1ebe90ee76c1bf4ba05e1c9374bd3b548d9b297f69e97f"
+        },
+        {
+          "path": "evidence/INTEGRATION_COPY.json",
+          "sha256": "ae01bc9c7b5dd95c8bbb76c99ffe605177c5917db20803d365b7e4f23c565247"
+        }
+      ],
+      "publication": "prepared",
+      "backup": "prepared",
+      "completed_utc": "2026-10-22T22:40:40.162988+00:00"
     },
     {
       "id": "C3",
@@ -418,6 +435,6 @@
       "backup": "pending"
     }
   ],
-  "next_node": "C2",
+  "next_node": "C3",
   "global_progress_file": "GLOBAL_GOAL_DAG.json"
 }
