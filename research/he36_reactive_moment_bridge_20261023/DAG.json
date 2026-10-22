@@ -5,7 +5,7 @@
   "unit_id": "HE36-RMB",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 1,
+  "completed": 2,
   "nodes": [
     {
       "id": "R1",
@@ -26,9 +26,12 @@
           "sha256": "346bf0458fca8c2e8420c351e56553263f8c49587b116404045a9cb1917405e2"
         }
       ],
-      "publication": "prepared",
-      "backup": "prepared",
-      "completed_utc": "2026-10-22T22:22:08.331136+00:00"
+      "publication": "published",
+      "backup": "acknowledged",
+      "completed_utc": "2026-10-22T22:22:08.331136+00:00",
+      "commit": "76f4a8d03d2eb1a9c8e6ae4522f3b5c9614fff5b",
+      "archive_sha256": "e327791592c41eec5adeea2a9caaf1356c820a42a1814e1c006d72dde5922833",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_spw"
     },
     {
       "id": "R2",
@@ -36,10 +39,32 @@
       "depends_on": [
         "R1"
       ],
-      "status": "pending",
-      "evidence": [],
-      "publication": "pending",
-      "backup": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "stages/R2.md",
+          "sha256": "eee58364c6ed8f88f495bb695ca895c729586511783e36b614ff1364128d0f48"
+        },
+        {
+          "path": "evidence/intake/INTAKE_SUMMARY.json",
+          "sha256": "caf2d6bf566d1bfa3a3efc9f716a4a387566eb5ccf8109d7cf20112aca73924e"
+        },
+        {
+          "path": "evidence/intake/INTAKE_KO.md",
+          "sha256": "9072a626c9a49249921523cc0e5afe2546709a1068d251d0a4c3b7d9cacb34a6"
+        },
+        {
+          "path": "SOURCES.md",
+          "sha256": "aa1434cbefe8b22fda34f545a3cc42930980d69eef42bdf2907b395d925c9e0d"
+        },
+        {
+          "path": "evidence/intake/RAW_ARCHIVE_ACK.json",
+          "sha256": "65b005401526c7411df5de12a2f4d37f4f916caa15276ca7dfd5e06179de413c"
+        }
+      ],
+      "publication": "prepared",
+      "backup": "prepared",
+      "completed_utc": "2026-10-22T22:28:21.338333+00:00"
     },
     {
       "id": "R3",
@@ -240,6 +265,6 @@
       "backup": "pending"
     }
   ],
-  "next_node": "R2",
+  "next_node": "R3",
   "global_progress_file": "GLOBAL_GOAL_DAG.json"
 }
