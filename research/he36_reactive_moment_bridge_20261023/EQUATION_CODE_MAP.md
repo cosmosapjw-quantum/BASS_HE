@@ -13,8 +13,8 @@ The equation numbers refer to theory/THEORY_KO.md. Units and source scope are in
 | Reactive centralization eq(8) | centralize_reactive_source | Includes+m R_n uu^T; one-step identity, boost and omitted-number mutant |
 | Resolved event number/charge/energy ownership | components/event_bridge/vendor/rei_resolved_local.py | Byte-identical donor; per-baryon event rates, explicit products and all nine reservoirs |
 | Supplied net central tensor per event | components/event_bridge/event_bridge.py: attach_event_tensor | Explicit J/event and trace/2=dEth; volumetric n_b multiplication; no default J=0; thermal/charge inventory declarations |
-| Finite source admission | event bridge: from_finite_evaluation | Requires partial-source acknowledgment, binds T/mass/mapping/identity; underflow and CCC finite-mass reinterpretation rejected |
-| Isotope/source reduction | event bridge: validate_source_lift | Tests RHS_full(Lz)-L RHS_reduced(z) in supplied domain; no universal isotope-equivalence claim |
+| Finite source admission | components/event_bridge/finite_bridge.py: from_finite_evaluation | Requires partial-source acknowledgment, binds T/mass/mapping/identity; underflow and CCC finite-mass reinterpretation rejected |
+| Isotope/source reduction | components/event_bridge/source_lift.py: validate_source_lift | Tests RHS_full(Lz)-L RHS_reduced(z) in supplied domain; no universal isotope-equivalence claim |
 | Whole-goal B1–B5 dependencies | GLOBAL_GOAL_DAG.json; NEXT_DAG.json | B2 incoming projection progresses; gain, transport, closure, full gas and metric still have explicit dependencies |
 
 ## Error owners
