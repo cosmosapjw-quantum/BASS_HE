@@ -5,7 +5,7 @@
   "unit_id": "HE36-RMB",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 7,
+  "completed": 8,
   "nodes": [
     {
       "id": "R1",
@@ -202,9 +202,12 @@
           "sha256": "d8e8f128e2fb281901a81d70acc861cef1f3f213bd64ad1deb66ba09970bc92e"
         }
       ],
-      "publication": "prepared",
-      "backup": "prepared",
-      "completed_utc": "2026-10-22T22:36:53.768789+00:00"
+      "publication": "published",
+      "backup": "acknowledged",
+      "completed_utc": "2026-10-22T22:36:53.768789+00:00",
+      "commit": "19f7747ce2c2418bfad88581bef357047db00692",
+      "archive_sha256": "09c964a32be8b06a7303474a2080538300d8ba2fe03cd889e74cb308c5346c64",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_srw"
     },
     {
       "id": "R8",
@@ -212,10 +215,24 @@
       "depends_on": [
         "R7"
       ],
-      "status": "pending",
-      "evidence": [],
-      "publication": "pending",
-      "backup": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "stages/R8.md",
+          "sha256": "f39527abc2282cbf295b4e35b4ea11f1ca20dbc7c97779717a02967174051e58"
+        },
+        {
+          "path": "CONTRACT.json",
+          "sha256": "e415fc5ad11f400f86353ad340fceb00dc1083adbf0ed878e028e7dccf4a61bd"
+        },
+        {
+          "path": "GLOBAL_GOAL_DAG.json",
+          "sha256": "513aee6fe6112d3bbe6dd94adf3c21aedb3333a67e77ec98a871bfe8a141b7e1"
+        }
+      ],
+      "publication": "prepared",
+      "backup": "prepared",
+      "completed_utc": "2026-10-22T22:37:03.623302+00:00"
     },
     {
       "id": "R9",
@@ -350,6 +367,6 @@
       "backup": "pending"
     }
   ],
-  "next_node": "R8",
+  "next_node": "R9",
   "global_progress_file": "GLOBAL_GOAL_DAG.json"
 }
