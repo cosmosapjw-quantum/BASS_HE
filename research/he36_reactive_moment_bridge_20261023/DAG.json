@@ -5,7 +5,7 @@
   "unit_id": "HE36-RMB",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 6,
+  "completed": 7,
   "nodes": [
     {
       "id": "R1",
@@ -174,9 +174,12 @@
           "sha256": "d0e3cc62b10568dbfd3d182027271bed407f806c4590d0f248dbff6e11760101"
         }
       ],
-      "publication": "prepared",
-      "backup": "prepared",
-      "completed_utc": "2026-10-22T22:36:14.700726+00:00"
+      "publication": "published",
+      "backup": "acknowledged",
+      "completed_utc": "2026-10-22T22:36:14.700726+00:00",
+      "commit": "d034c6429518d1a141ac777ad364927c46929b51",
+      "archive_sha256": "5324f2c2ba6fcaa686d554522808808c24fa054fbd9f0b1a965655c0b67f0ceb",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_srg"
     },
     {
       "id": "R7",
@@ -184,10 +187,24 @@
       "depends_on": [
         "R6"
       ],
-      "status": "pending",
-      "evidence": [],
-      "publication": "pending",
-      "backup": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "stages/R7.md",
+          "sha256": "1a6f8de0d3bec1c5352fd72c0cafb20776047bdc807e48a7609ae296152b3713"
+        },
+        {
+          "path": "theory/THEORY_KO.md",
+          "sha256": "072d6c7083ad07b03ee1aa8dca1547ced4fcfc9b563acf395e77b6591416f1fa"
+        },
+        {
+          "path": "theory/independent_CHECKS.json",
+          "sha256": "d8e8f128e2fb281901a81d70acc861cef1f3f213bd64ad1deb66ba09970bc92e"
+        }
+      ],
+      "publication": "prepared",
+      "backup": "prepared",
+      "completed_utc": "2026-10-22T22:36:53.768789+00:00"
     },
     {
       "id": "R8",
@@ -333,6 +350,6 @@
       "backup": "pending"
     }
   ],
-  "next_node": "R7",
+  "next_node": "R8",
   "global_progress_file": "GLOBAL_GOAL_DAG.json"
 }

@@ -28,7 +28,9 @@ d\mathcal M_T(E)=\frac{2\sqrt E}{\sqrt\pi\,\theta^{3/2}}e^{-E/\theta}\,dE.
 
 K≥0이면 α,β,γ≥0 및 Cauchy–Schwarz로 αγ≥β²다. 유한 support[L,U]에서는 Lα≤β≤Uα이고 γ≤(L+U)β−LUα도 성립한다. 이는 채택된 양의 유한모형 내부의 moment consistency다. 미측정 tail의 상한은 아니다. Empirical α(T)를 두 번 미분해 얻은 γ는 fit-derivative construction이며 independent microscopic γ 정확도 자료를 대신하지 않는다. Mao RR loss factor와 별도 number-rate fit을 결합한 hybrid에 식(1)을 자동 적용하지 않는다.
 
-## 3. 고정 bath의 STF loss
+## 3. 정지한 무한질량 표적 bath의 STF loss
+
+이 절은 표적의 thermal velocity를 무시하는 heavy fixed-target 극한이다. E=m_s c²/2이며 μ→m_s다. 유한질량의 Maxwellian bath에는 §4의 CM 에너지와 질량 분율을 포함한 식을 사용한다.
 
 한 종의 작은 Grad 방향을
 
@@ -98,7 +100,7 @@ AB-C^2=(a+b)^2\{(a-b)^2\alpha\kappa_2+
 \tag{6}
 \]
 
-물리적으로 양의 α,β,γ와 유한 양의 질량에서 양의 determinant이므로 weighted quadratic STF norm은 소산된다. 퇴화한0kernel/0density에서는 해당 준정부호 한계만 적용한다. 이는 각 종의 signed π성분이 개별적으로 단조 감소한다는 뜻이 아니다.
+물리적으로 양의 α,β,γ와 유한 양의 질량에서 양의 determinant이므로, 밀도와 계수를 고정한 loss subproblem의 weighted quadratic STF norm은 소산된다. 반응으로 밀도가 변하는 전체 문제에서는 W의 시간 미분도 따로 포함해야 한다. 퇴화한0kernel/0density에서는 해당 준정부호 한계만 적용한다. 이는 각 종의 signed π성분이 개별적으로 단조 감소한다는 뜻이 아니다.
 
 K∝E^s,s>−3/2에서 κ1/α=(2/3)(s+3/2), κ2/α=(4/15)(s+3/2)(s+5/2), C/(abα)=4s(s−1)/15다. 상수 단면적(s=1/2)은 C<0이다. 동일 질량·밀도에서는 A=B=79α/60,C=−α/60이고 loss eigenvalue는13nα/10,4nα/3이다. 음의 C를 clipping하면 원래 angular/energy projection을 바꾼다. 구현은 모든 STF 성분에 같은2×2block을 사용하며 거대한 velocity 또는 reaction Jacobian을 구성하지 않는다.
 
