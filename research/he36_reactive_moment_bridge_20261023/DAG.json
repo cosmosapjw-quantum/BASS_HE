@@ -5,7 +5,7 @@
   "unit_id": "HE36-RMB",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 12,
+  "completed": 13,
   "nodes": [
     {
       "id": "R1",
@@ -342,9 +342,12 @@
           "sha256": "ae01bc9c7b5dd95c8bbb76c99ffe605177c5917db20803d365b7e4f23c565247"
         }
       ],
-      "publication": "prepared",
-      "backup": "prepared",
-      "completed_utc": "2026-10-22T22:40:40.162988+00:00"
+      "publication": "published",
+      "backup": "acknowledged",
+      "completed_utc": "2026-10-22T22:40:40.162988+00:00",
+      "commit": "c61916a5878a33a1771726fdb374090160f0683f",
+      "archive_sha256": "c2d77af4d9e70984c2ccf3c55b009b0687a87584c50f6151b5d08527c34ce618",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_stg"
     },
     {
       "id": "C3",
@@ -352,10 +355,24 @@
       "depends_on": [
         "C2"
       ],
-      "status": "pending",
-      "evidence": [],
-      "publication": "pending",
-      "backup": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "stages/C3.md",
+          "sha256": "21f21c4c52a7678ca350cfd695fc7034fe30abd5e76973298cfd70a228e4d590"
+        },
+        {
+          "path": "CODING_CONTRACT.md",
+          "sha256": "52cecc4c35a76cbae226e69bdd9b5643988d2ada6a5f2576bde837ef523a2aa6"
+        },
+        {
+          "path": "components/moments/CHECK_CONTRACT.json",
+          "sha256": "d54d8f299c6588e026464d6407788ae43d295985f0d44a07f2b633d01603425c"
+        }
+      ],
+      "publication": "prepared",
+      "backup": "prepared",
+      "completed_utc": "2026-10-22T22:41:20.887002+00:00"
     },
     {
       "id": "C4",
@@ -435,6 +452,6 @@
       "backup": "pending"
     }
   ],
-  "next_node": "C3",
+  "next_node": "C4",
   "global_progress_file": "GLOBAL_GOAL_DAG.json"
 }
