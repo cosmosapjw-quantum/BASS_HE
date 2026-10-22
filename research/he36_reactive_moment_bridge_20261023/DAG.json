@@ -1,0 +1,245 @@
+{
+  "schema": "he36.stage_dag.v1",
+  "workflow_version": "1.0.0",
+  "approval_version": "0.2",
+  "unit_id": "HE36-RMB",
+  "status": "in_progress",
+  "total_nodes": 20,
+  "completed": 1,
+  "nodes": [
+    {
+      "id": "R1",
+      "name": "연구 위치·계약",
+      "depends_on": [],
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "CONTRACT.json",
+          "sha256": "e415fc5ad11f400f86353ad340fceb00dc1083adbf0ed878e028e7dccf4a61bd"
+        },
+        {
+          "path": "GLOBAL_GOAL_DAG.json",
+          "sha256": "513aee6fe6112d3bbe6dd94adf3c21aedb3333a67e77ec98a871bfe8a141b7e1"
+        },
+        {
+          "path": "stages/R1.md",
+          "sha256": "346bf0458fca8c2e8420c351e56553263f8c49587b116404045a9cb1917405e2"
+        }
+      ],
+      "publication": "prepared",
+      "backup": "prepared",
+      "completed_utc": "2026-10-22T22:22:08.331136+00:00"
+    },
+    {
+      "id": "R2",
+      "name": "근거·재사용",
+      "depends_on": [
+        "R1"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "R3",
+      "name": "주장·전제 정렬",
+      "depends_on": [
+        "R2"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "R4",
+      "name": "가설·표현 탐색",
+      "depends_on": [
+        "R3"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "R5",
+      "name": "구성적 유도",
+      "depends_on": [
+        "R4"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "R6",
+      "name": "독립 검증",
+      "depends_on": [
+        "R5"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "R7",
+      "name": "판별 검증",
+      "depends_on": [
+        "R6"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "R8",
+      "name": "결과 판정",
+      "depends_on": [
+        "R7"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "R9",
+      "name": "정식 결과·코딩 연결",
+      "depends_on": [
+        "R8"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "R10",
+      "name": "종료·재개",
+      "depends_on": [
+        "R9"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "C1",
+      "name": "목표·baseline",
+      "depends_on": [
+        "R10"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "C2",
+      "name": "식–데이터–코드",
+      "depends_on": [
+        "C1"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "C3",
+      "name": "수치 설계",
+      "depends_on": [
+        "C2"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "C4",
+      "name": "실행 DAG·자원",
+      "depends_on": [
+        "C3"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "C5",
+      "name": "구현",
+      "depends_on": [
+        "C4"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "C6",
+      "name": "구현 검증",
+      "depends_on": [
+        "C5"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "C7",
+      "name": "과학 검증",
+      "depends_on": [
+        "C6"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "C8",
+      "name": "수치·재현성",
+      "depends_on": [
+        "C7"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "C9",
+      "name": "독립 검토",
+      "depends_on": [
+        "C8"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    },
+    {
+      "id": "C10",
+      "name": "판정·인계",
+      "depends_on": [
+        "C9"
+      ],
+      "status": "pending",
+      "evidence": [],
+      "publication": "pending",
+      "backup": "pending"
+    }
+  ],
+  "next_node": "R2",
+  "global_progress_file": "GLOBAL_GOAL_DAG.json"
+}
