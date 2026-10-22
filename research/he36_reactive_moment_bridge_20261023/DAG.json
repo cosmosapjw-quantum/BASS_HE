@@ -5,7 +5,7 @@
   "unit_id": "HE36-RMB",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 5,
+  "completed": 6,
   "nodes": [
     {
       "id": "R1",
@@ -142,9 +142,12 @@
           "sha256": "2414bc3be894970c81db5b7064efe9d72a06214433afa9134932a13e9165aaaf"
         }
       ],
-      "publication": "prepared",
-      "backup": "prepared",
-      "completed_utc": "2026-10-22T22:36:02.246469+00:00"
+      "publication": "published",
+      "backup": "acknowledged",
+      "completed_utc": "2026-10-22T22:36:02.246469+00:00",
+      "commit": "f8d7c17936ae6e1ff1acb849f68a838a5451b237",
+      "archive_sha256": "c2780f64e03268a4ea1d3c98146404001d1c83f8012cfe5a38b30eff15112e01",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_srQ"
     },
     {
       "id": "R6",
@@ -152,10 +155,28 @@
       "depends_on": [
         "R5"
       ],
-      "status": "pending",
-      "evidence": [],
-      "publication": "pending",
-      "backup": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "stages/R6.md",
+          "sha256": "7911342ad8c570fa909e405816d819241342080978d8abce3c918b5ec04a6e4e"
+        },
+        {
+          "path": "theory/independent_CHECKS.json",
+          "sha256": "d8e8f128e2fb281901a81d70acc861cef1f3f213bd64ad1deb66ba09970bc92e"
+        },
+        {
+          "path": "evidence/WOLFRAM_CORRECTED.json",
+          "sha256": "db77993977f2db6545b9e3e99323967feb5a9a430995a15f1c9379e7122f8c84"
+        },
+        {
+          "path": "theory/independent_OPTIONAL_SYMPY_FAILURE.json",
+          "sha256": "d0e3cc62b10568dbfd3d182027271bed407f806c4590d0f248dbff6e11760101"
+        }
+      ],
+      "publication": "prepared",
+      "backup": "prepared",
+      "completed_utc": "2026-10-22T22:36:14.700726+00:00"
     },
     {
       "id": "R7",
@@ -312,6 +333,6 @@
       "backup": "pending"
     }
   ],
-  "next_node": "R6",
+  "next_node": "R7",
   "global_progress_file": "GLOBAL_GOAL_DAG.json"
 }
