@@ -39,8 +39,8 @@
       "id": "B2",
       "depends_on": [],
       "status": "partial",
-      "active_subunit": "HE36-RMB incomingloss and resolvedsource interface",
-      "remaining": "reaction gain moments, qualified isotope consistency, nuclear daughter/charge/stopping; further species/process coverage"
+      "remaining": "reaction gain moments, qualified isotope consistency, nuclear daughter/charge/stopping; further species/process coverage",
+      "completed_subunit": "HE36-RMB scoped incoming-loss moment projection, finite-table adapter and supplied net-event/source-lift interface"
     },
     {
       "id": "B3",
@@ -67,5 +67,6 @@
       "status": "pending",
       "remaining": "consistent baryon energy/pressure/STF and source-reservoir metric feedback"
     }
-  ]
+  ],
+  "next_science_dag": "NEXT_DAG.json"
 }

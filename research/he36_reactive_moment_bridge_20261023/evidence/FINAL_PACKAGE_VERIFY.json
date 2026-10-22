@@ -1,0 +1,22 @@
+{
+  "schema": "he36.saved_payload_verification.v1",
+  "status": "PAYLOAD_VERIFIED_DELIVERY_PENDING",
+  "files_verified": 116,
+  "science_manifest_sha256": "efe8f72817deedd910bd30cdbd49d7d477e818e7927940c4b580bb2844e48fc5",
+  "stage_completed": 19,
+  "stage_delivered": 19,
+  "stage_ACKs_checked": 19,
+  "saved_CCC_rows": 129,
+  "new_IVP": 0,
+  "new_render": 0,
+  "new_benchmark": 0,
+  "new_moment_evaluation": 0,
+  "new_scientific_test": 0,
+  "errors": [],
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/tmp/he32_resume_20261022/repos/BASS_HE/research/he36_reactive_moment_bridge_20261023/verify_saved.py"
+  ],
+  "exit_code": 0,
+  "stderr": ""
+}

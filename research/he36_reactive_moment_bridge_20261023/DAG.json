@@ -3,9 +3,9 @@
   "workflow_version": "1.0.0",
   "approval_version": "0.2",
   "unit_id": "HE36-RMB",
-  "status": "in_progress",
+  "status": "complete",
   "total_nodes": 20,
-  "completed": 19,
+  "completed": 20,
   "nodes": [
     {
       "id": "R1",
@@ -578,9 +578,12 @@
           "sha256": "e08b7b598aa951f040b88aa7fc2e61d9d874a2ed2d4670d204b3f3406794f52f"
         }
       ],
-      "publication": "prepared",
-      "backup": "prepared",
-      "completed_utc": "2026-10-22T22:46:29.442852+00:00"
+      "publication": "published",
+      "backup": "acknowledged",
+      "completed_utc": "2026-10-22T22:46:29.442852+00:00",
+      "commit": "0f67cb8b34d84c56d993841e2b57392a040f097e",
+      "archive_sha256": "cc88211c00a9fccbe49561a816dc58809407558e1a6e5ddfbbcf7c2fde33800a",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_svg"
     },
     {
       "id": "C10",
@@ -588,12 +591,46 @@
       "depends_on": [
         "C9"
       ],
-      "status": "pending",
-      "evidence": [],
-      "publication": "pending",
-      "backup": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "stages/C10.md",
+          "sha256": "05d7f692cef384227a35a2daf0e93c3b6f76d1d5ded8441500cbe4c434a72cfc"
+        },
+        {
+          "path": "RESULTS_KO.md",
+          "sha256": "12596f14a0a735166c95b0a1e9ea8532334cf6079a23895b39de8f2a93434d62"
+        },
+        {
+          "path": "SCIENCE_MANIFEST.json",
+          "sha256": "efe8f72817deedd910bd30cdbd49d7d477e818e7927940c4b580bb2844e48fc5"
+        },
+        {
+          "path": "evidence/FINAL_PACKAGE_VERIFY.json",
+          "sha256": "ea1230a728c0b29fdb140292ef408034607d37dc4dec8478ca83bc388cc5a673"
+        },
+        {
+          "path": "evidence/STRUCTURE_VERIFY.json",
+          "sha256": "954d608ccdb47a7eee1cad199d5f9830d9b62b519e323c28fe679700d203e144"
+        },
+        {
+          "path": "HANDOFF_CHAT_KO.md",
+          "sha256": "06577e76038e52ea249d493d4002e9d02534ed7ee67a4da2cd24c071f177692f"
+        },
+        {
+          "path": "HANDOFF_CODEX.md",
+          "sha256": "845be10edc2c00b79f53f1050bea17f7f6cc61dd21f5191c1234828cfdbe3b69"
+        },
+        {
+          "path": "NEXT_DAG.json",
+          "sha256": "dfe8144af9ab17304a4f6af495c23d9c1a51407dbefd2bfc444798048fadfa96"
+        }
+      ],
+      "publication": "prepared",
+      "backup": "prepared",
+      "completed_utc": "2026-10-22T22:53:58.470487+00:00"
     }
   ],
-  "next_node": "C10",
+  "next_node": null,
   "global_progress_file": "GLOBAL_GOAL_DAG.json"
 }
