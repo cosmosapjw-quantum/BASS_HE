@@ -132,7 +132,7 @@ M_j=\sqrt{\frac{8\,\mathrm{eV_J}}{\pi m_e}}\theta_{\rm eV}^{-3/2}
 
 ## 8. 핵수 변화, 생성물 tensor, 열 장부
 
-REI pin9620e1의 resolved event 코드는 baryon당 Y와 event rate r를 사용한다. Heavy-species stoichiometry ν, ionic charge q에서 electron source=q·ν r,nucleus source=1·ν r,thermal-particle source=(1+q)·ν r다. 따라서 바리온 밀도 n_b를 곱해 SI volumetric R_part를 얻는다. 원자과정에서 핵수가 보존될 때만 R_part=R_e가 된다.
+REI pin9620e1의 resolved event 코드는 baryon당 Y와 event rate r를 사용한다. 여기서 사용하는 21상태 inventory는 전하중성인 heavy species와 자유전자이며 positron·음이온을 포함하지 않는다. Heavy-species stoichiometry ν, ionic charge q에서 electron source=q·ν r,nucleus source=1·ν r다. 모든 retained 입자가 같은 thermal pool에 있을 때 thermal-particle source=(1+q)·ν r이며, 바리온 밀도 n_b를 곱해 SI volumetric R_part를 얻는다. 별도의 fast-electron population을 유지하면 그 수 source를 thermal count에서 빼야 한다. dEfast 에너지 장부만으로 fast-electron 수 source를 정할 수 없으므로 추가 수 입력을 요구한다. 원자과정에서 핵수가 보존되고 별도 fast population이 없을 때만 thermal R_part=R_e가 된다.
 
 기존 event energy registry Q0+W=dI+dEth+dEfast+dEexc+dEgamma_ret+Egamma_esc+Enu를 그대로 재사용한다. 새 tensor attachment는 **사용자가 공급한** J/event 단위의 net central kinetic second moment를 event당 자료로 받으며 tr(tensor)/2=dEth를 확인한다. 이 tensor가 없으면 unknown이다. Parent-only loss와 net scalar heat를 같은 사건 자료로 붙이지 않는다. Ground CI에서 outgoing electrons가 같은 thermal pool에 남으면 net pool loss는 threshold defect이며 incoming β 전체가 아니다. Nuclear Q를 모두 heat로 넣는 가정도 자동 도입하지 않는다.
 

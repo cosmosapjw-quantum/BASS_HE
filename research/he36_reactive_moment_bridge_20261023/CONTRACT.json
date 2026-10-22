@@ -27,7 +27,7 @@
     "grad_warning": "finite Grad polynomial is not globally positive; derivatives are infinitesimal, not a realizability-certified finite-anisotropy trajectory",
     "source_output": "R_n [m^-3 s^-1], Q=tr(S)/2 [W/m^3], J=STF(S) [Pa/s]",
     "stress_ownership": "existing matter is nonbaryonic; HE32 gas pi_b=0 unchanged",
-    "nuclear_source": "R_part includes changes in nuclei count and free-electron count; all energy reservoirs supplied explicitly"
+    "nuclear_source": "Charge-neutral heavy-species/free-electron 21-state inventory, no positrons or negative ions. R_part includes nuclei count plus retained thermal-electron count. All-retained-thermal fixtures use (1+q).nu; a separate fast population requires its number-source subtraction, which dEfast alone does not determine. All energy reservoirs supplied explicitly"
   },
   "source_scope": {
     "CCC": "87-row H1 electron-impact total ionization table, incident lab energy13.6058..968.61eV, sigma in a0^2, positive piecewise-linear interpolation. Actual-data diagnostic uses heavy stationary target (energy mass electron).",
