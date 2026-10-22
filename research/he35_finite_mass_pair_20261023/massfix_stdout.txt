@@ -1,0 +1,1 @@
+{'forceA': [-1.0, -0.0, -0.0], 'raw_energy_trace': -2.220446049250313e-16, 'normalized_energy_residual': np.float64(1.1102230246251565e-16), 'nonfinite_rejected': True}

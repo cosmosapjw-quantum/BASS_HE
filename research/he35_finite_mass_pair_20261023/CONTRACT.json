@@ -1,0 +1,16 @@
+{
+  "unit": "HE35_FINITE_MASS_PAIR_20261023",
+  "authority": "Astra theory contract, lower-tier implementation, fresh independent Astra review",
+  "publication_parent": "BASS_HE PR87 0868889acebeb4d9b70d38313a9a694d12bf8766",
+  "sibling_preserved": "BASS_HE PR88 f1ddb8ab61322bd82467ab831f2d05effad230b8",
+  "model": "elastic isotropic pseudo-Maxwell binary cross collisions with caller-supplied kappa",
+  "equations": "THEORY.md equations (1)-(5)",
+  "units": {"mass":"kg","density":"m^-3","pressure":"Pa","time":"proper seconds","kappa":"m^3/s"},
+  "runtime_inputs": "m_A,m_B,n_A,n_B>0 finite; kappa>=0 finite; symmetric PSD pressure tensors admitted within 64 binary64-epsilon times maximum-entry roundoff tolerance, without clipping; optional finite bulk velocities; nonfinite or nonrepresentable outputs rejected",
+  "acceptance": {"normalized_oracle_error_max":5e-13,"normalized_conservation_residual_max":5e-13,"c_python_parity_max":5e-13,"equilibrium":"common T isotropic","dissipation":"W L symmetric negative definite for positive kappa","heavy_limit":"Lorentz n_B kappa","invalid":"explicit rejection without clipping"},
+  "execution": {"initial_probe_wall_cap_s":30,"new_cosmological_IVPs":0,"old_cohort_replays":0,"NCP_jobs":0},
+  "empirical_transport_admission":false,
+  "remaining": ["source-qualified finite-mass differential transport","reactive moments B2","physical closure B3","background/Einstein feedback"],
+  "review_status":"PASS_SCOPED_AFTER_CONCRETE_REPAIR",
+  "review_receipt":"FRESH_INDEPENDENT_REVIEW.json"
+}

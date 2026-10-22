@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "test_pair.py"
+  ],
+  "cwd": "/workspace/scratch/d855c1e0c0ed/orchestration_resume_20261023/lanes/BASS_HE/he35_finite_mass_pair_20261023",
+  "exit_code": 0,
+  "wall_seconds": 1.89625883102417,
+  "timeout_seconds": 30,
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "source_sha256": {
+    "pair.py": "f5eb2982f92a518dcfd33f5a794b3d4b36b2bf7c21772510666aefa8cbd8a911",
+    "pair.c": "85e2e26ba477cda080d69f418fcd95634c5950061b162050747a2035c8f7b65c",
+    "pair.h": "6135005f3e5a3dd1a09950344e76f35c2ad7de4862317e5af01e4362daee9eec",
+    "test_pair.py": "d49d13f12d77833dc32af84cd7ccfe6bc88c0f17340e9adbf697b50ee3aaa3b4",
+    "run_once.py": "35b0be8a849cd169c4634fb76d18dce1b652b93e1bd2ebb81cc9e88cc655f3d5"
+  }
+}
