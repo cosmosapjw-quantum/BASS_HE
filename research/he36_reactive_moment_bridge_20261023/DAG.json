@@ -5,7 +5,7 @@
   "unit_id": "HE36-RMB",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 15,
+  "completed": 16,
   "nodes": [
     {
       "id": "R1",
@@ -430,9 +430,12 @@
           "sha256": "7d69c77d4c2d8eece211376aff14edbdde6f31a4168b38c205e845715c9d4118"
         }
       ],
-      "publication": "prepared",
-      "backup": "prepared",
-      "completed_utc": "2026-10-22T22:43:03.089316+00:00"
+      "publication": "published",
+      "backup": "acknowledged",
+      "completed_utc": "2026-10-22T22:43:03.089316+00:00",
+      "commit": "31202ac14dba7aa5f779dd371c4259ae41495b3f",
+      "archive_sha256": "02fb691da9c7584b354594b72495d79fe095964a34439ede8de473069398b925",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_suQ"
     },
     {
       "id": "C6",
@@ -440,10 +443,32 @@
       "depends_on": [
         "C5"
       ],
-      "status": "pending",
-      "evidence": [],
-      "publication": "pending",
-      "backup": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "stages/C6.md",
+          "sha256": "9e3ba1296704be0d6612d9c6ff768d2e6f827407c31063431cebf32f1fa8ffc8"
+        },
+        {
+          "path": "evidence/PACKAGE_IMPORT.json",
+          "sha256": "74ac932e64e6143c38a66f6aaca2e222ccfabf965d8ab12d594b1287d4cc89b1"
+        },
+        {
+          "path": "components/event_bridge/attempts/attempt_001/RESULT.json",
+          "sha256": "9d022bc16bb6fe822513c5ede27dc9df56a93a5a1ff6234900feccd300668370"
+        },
+        {
+          "path": "components/pair/attempts/attempt_20261022T222801Z/RESULT.json",
+          "sha256": "7c7b22ca2bf174306f57075e7bb1f69049c0793bfc4a505d39c590fe4f784663"
+        },
+        {
+          "path": "components/moments/FINAL_VERIFICATION.json",
+          "sha256": "7d69c77d4c2d8eece211376aff14edbdde6f31a4168b38c205e845715c9d4118"
+        }
+      ],
+      "publication": "prepared",
+      "backup": "prepared",
+      "completed_utc": "2026-10-22T22:43:14.542777+00:00"
     },
     {
       "id": "C7",
@@ -490,6 +515,6 @@
       "backup": "pending"
     }
   ],
-  "next_node": "C6",
+  "next_node": "C7",
   "global_progress_file": "GLOBAL_GOAL_DAG.json"
 }
