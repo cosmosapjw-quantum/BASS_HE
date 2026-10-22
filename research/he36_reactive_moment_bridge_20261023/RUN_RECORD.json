@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "workflow_version": "1.0.0",
+  "task": "both",
+  "unit_id": "HE36-RMB",
+  "objective": "",
+  "scope": "",
+  "status": "pending",
+  "dependencies": [],
+  "evidence": [],
+  "stages": [
+    {
+      "id": "R1",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "R2",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "R3",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "R4",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "R5",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "R6",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "R7",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "R8",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "R9",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "R10",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "C1",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "C2",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "C3",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "C4",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "C5",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "C6",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "C7",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "C8",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "C9",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    },
+    {
+      "id": "C10",
+      "status": "pending",
+      "evidence_refs": [],
+      "dependency_ids": [],
+      "reason": "",
+      "reuse": null
+    }
+  ],
+  "claims": [],
+  "checks": [],
+  "executions": [],
+  "decisions": [],
+  "overrides": [],
+  "failures": [],
+  "next_actions": []
+}

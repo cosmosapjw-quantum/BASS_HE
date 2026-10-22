@@ -1,6 +1,6 @@
 {
   "schema": "he36.event_bridge.final_manifest.v1",
-  "created_utc": "2026-10-22T22:42:10.351475+00:00",
+  "created_utc": "2026-10-22T22:44:15.505469+00:00",
   "workflow": "workflow1.0.0",
   "approval": "approval0.2",
   "files": [
@@ -11,8 +11,8 @@
     },
     {
       "path": "README_KO.md",
-      "bytes": 9554,
-      "sha256": "74fd1158921dafb2ea6cf10a1bd419ef4ca7a5220fcbe4d7d1287043ba0f0efe"
+      "bytes": 9544,
+      "sha256": "39d4c6d86cb54d5cc8de7de2bf50025ae645f4c57de0fcfa9e68ffe865775cd6"
     },
     {
       "path": "__init__.py",
@@ -71,7 +71,7 @@
     }
   ],
   "file_count": 13,
-  "total_bytes": 125365,
+  "total_bytes": 125355,
   "tests": "attempts/attempt_001/RESULT.json; 7/7 groups PASS first attempt; no replay",
   "exclusions": [
     "this manifest itself",
