@@ -32,13 +32,13 @@
     },
     {
       "path": "HANDOFF_PROTOCOL.md",
-      "size": 1366,
-      "sha256": "5d2925755aaad659e42249741b1e94fa053553b9fe8ba4497905f355119f2e0b"
+      "size": 1636,
+      "sha256": "a85abe6a7e407c10fa364fa43b8b430f0a9e33241f2bb85dd9ff5dda09f0a96b"
     },
     {
       "path": "NEXT_DAG.json",
-      "size": 13555,
-      "sha256": "0887fc271fc03b3dee946adab3376ca059115ce0e08acaf8d7a91ca0fd596dba"
+      "size": 13809,
+      "sha256": "6884360ac28c48ee4f6c7a9263841adfa6f56c8f6d132f560cecae0afaf0d782"
     },
     {
       "path": "NUMERICAL_DESIGN.md",

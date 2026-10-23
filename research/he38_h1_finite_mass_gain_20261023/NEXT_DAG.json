@@ -61,7 +61,7 @@
       ],
       "status": "open_calibrated_provider",
       "activation": "separate future angular-calibration track",
-      "acceptance": "같은 사건 단면적의 inclusive outgoing measure가 count2,energyE-I 및 D(E)=integral epsilon*P2(coschi)를 함께 공급해야 한다. DDCS의 labels/exchange/slow-electron support와 lab/relative-energy convention을 대조한다.",
+      "acceptance": "같은 사건 단면적과 frame의 inclusive electron measure가 count2를 공급해야 한다. Heavy-target track은 electron energy 합 E-I와 D(E)=integral epsilon*P2(coschi)를 검증한다. Finite-mass track은 count2 electron measure와 ion momentum/energy/STF를 함께 공급하여 total outgoing COM kinetic energy E-I를 검증하고, electron D(E)도 같은 frame에서 정의한다. DDCS의 labels/exchange/slow-electron support와 lab/relative-energy convention을 대조한다.",
       "insufficient_inputs": [
         "total sigma only",
         "energy-only SDCS without outgoing angular data",
