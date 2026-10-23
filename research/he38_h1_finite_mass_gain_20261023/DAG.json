@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 6,
+  "completed": 7,
   "status": "in_progress",
-  "next_node": "R7",
+  "next_node": "R8",
   "nodes": [
     {
       "id": "R1",
@@ -183,9 +183,12 @@
           "sha256": "81a3875486b58b3965ad6da7ad10bfe6ef3eb062e194ca86d9a1c81b7272a713"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:14:17.455597+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:14:17.455597+00:00",
+      "commit": "6eafd7d0ee9a479bc0d449d25af8715e76c0e5c1",
+      "archive_sha256": "20bec30b63a151574c323ffc71109930aa344e2e36232f9e17cbf4cbc75f5f15",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xdA"
     },
     {
       "id": "R7",
@@ -193,10 +196,24 @@
       "depends_on": [
         "R6"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "theory/CHECKS.json",
+          "sha256": "3bc2307ab798e20bde90aadd16465d7b4ee81a750b6d71b63102169262fed17b"
+        },
+        {
+          "path": "theory/check_derivation.py",
+          "sha256": "935d71405e9879e6723f1aa491fc654bba4cbc1686d0fc85f27697d1ddeb5beb"
+        },
+        {
+          "path": "stages/R7.md",
+          "sha256": "0079d9001e05a0328a6a50b627e8e4aa2cf2ca1dae363c0eca2b96ed2b9fd236"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:14:29.837306+00:00"
     },
     {
       "id": "R8",
