@@ -149,8 +149,8 @@ the interval. If D(E)=b(E)(E-I), a constant b gives
 
 ## 5. Source-qualified isotropic model
 
-H. P. Le and J.-L. Cambier, *Modeling of ionization/recombination processes
-using a multifluid framework*, Physics of Plasmas 23, 063505 (2016),
+H. P. Le and J.-L. Cambier, *Modeling of Inelastic Collisions in a Multifluid Plasma:
+Ionization and Recombination*, Physics of Plasmas 23, 063505 (2016),
 doi:10.1063/1.4953050, https://arxiv.org/abs/1605.06545, supplies the selected
 published approximation. The author manuscript was inspected directly in
 `/tmp/he37_sources/raw/le_cambier_2016.txt`:
