@@ -6,8 +6,8 @@
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 6,
-  "next_node": "R7",
+  "completed": 7,
+  "next_node": "R8",
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -177,9 +177,12 @@
           "sha256": "4b02fd545a6d3fe340bb0251440bcd745cdeea17f5594d1604caed16e32ad9f7"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:22:59.433352+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:22:59.433352+00:00",
+      "commit": "d618344413193950ec3e4e499be526d1ed636d98",
+      "archive_sha256": "83131c3499e9f8d0fea3d1d5359dc9a2ad1e314ea6eaf05d5fcfdb8139962a3b",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_vxw"
     },
     {
       "id": "R7",
@@ -187,10 +190,32 @@
       "depends_on": [
         "R6"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "theory/CHECKS.json",
+          "sha256": "6f51e6337171ace7e18b58a708d9bf5c186a90b274be2dba0995ec2c73648033"
+        },
+        {
+          "path": "theory/CHECK_SUMMARY.json",
+          "sha256": "147998b0f9d8e42411e64699dcb50f0b9697c9ffc95b63caa0af7c57036e611e"
+        },
+        {
+          "path": "components/lc_provider/attempts/attempt_20261023T020616442395Z/RESULT.json",
+          "sha256": "b5e171015434afc04334ec547bb31032cf7e7fbed59a497b93f8b8a391587faf"
+        },
+        {
+          "path": "evidence/WOLFRAM_GAIN_ALGEBRA.json",
+          "sha256": "6ae1e887194169f9986ccc447e3ffc9021e075b40e2e048b8b436485cab3c1ea"
+        },
+        {
+          "path": "stages/R7.md",
+          "sha256": "3392477d1029c086fafd545a29513ca5d3dd9077a60893f8eb2e5ad56c74da85"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:23:51.579143+00:00"
     },
     {
       "id": "R8",
