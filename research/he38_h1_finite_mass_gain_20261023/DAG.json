@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 2,
+  "completed": 3,
   "status": "in_progress",
-  "next_node": "R3",
+  "next_node": "R4",
   "nodes": [
     {
       "id": "R1",
@@ -75,9 +75,12 @@
           "sha256": "886db6532de512a6ea6311a5c55b2e0266ce8762215a9a1109b733ba0af39fca"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:13:16.933314+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:13:16.933314+00:00",
+      "commit": "fa9fc3651abc4cd061dccc508063b0bcce3dedcf",
+      "archive_sha256": "2b5a3d2ea9b09254db16159e4f27f949dbc492993361074e21f495bec85a172d",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xcA"
     },
     {
       "id": "R3",
@@ -85,10 +88,20 @@
       "depends_on": [
         "R2"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "CLAIMS_AND_ASSUMPTIONS.md",
+          "sha256": "77c217fe7b66f9836644584aeba24e571a305fa4864321f00b07a76709377fdb"
+        },
+        {
+          "path": "stages/R3.md",
+          "sha256": "880924318169908123568a3b0816a9306dc3681e401ed67330ad1d74534f76e0"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:13:33.193501+00:00"
     },
     {
       "id": "R4",
