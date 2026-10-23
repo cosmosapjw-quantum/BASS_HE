@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 19,
-  "status": "in_progress",
-  "next_node": "C10",
+  "completed": 20,
+  "status": "complete",
+  "next_node": null,
   "nodes": [
     {
       "id": "R1",
@@ -563,9 +563,12 @@
           "sha256": "fda66524f44c00e63a37c26ae875ae0f0d304ec32809713ba6186dec5becd940"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:28:36.776455+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:28:36.776455+00:00",
+      "commit": "ccbfa8d2cf80f9619aed663242ab456dba02ef72",
+      "archive_sha256": "1357d802d9836431820305678994109d66afdaa00851c88c6cd82bae32234a5f",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_yAQ"
     },
     {
       "id": "C10",
@@ -573,10 +576,36 @@
       "depends_on": [
         "C9"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "RESULTS_KO.md",
+          "sha256": "e8b056a29102a0f55a088a9e89fc81d7e4732626862b9868113e04ed1e389df7"
+        },
+        {
+          "path": "SCIENCE_MANIFEST.json",
+          "sha256": "e4f252771f259ba069ea3aa0ea9c17a2e06114418d09033c9b0f1f14aed94b97"
+        },
+        {
+          "path": "NEXT_DAG.json",
+          "sha256": "0887fc271fc03b3dee946adab3376ca059115ce0e08acaf8d7a91ca0fd596dba"
+        },
+        {
+          "path": "RUN_RECORD.json",
+          "sha256": "f2e86682c1ed0e2d4518feba8d7c0a14fbd3702de6314ff0fbf7e0327ea2a41f"
+        },
+        {
+          "path": "HANDOFF_PROTOCOL.md",
+          "sha256": "5d2925755aaad659e42249741b1e94fa053553b9fe8ba4497905f355119f2e0b"
+        },
+        {
+          "path": "stages/C10.md",
+          "sha256": "0f36ddc3144d03c95df5e23632b9e1dae2491020257e02c7691808b909615a2a"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:31:26.787372+00:00"
     }
   ]
 }
