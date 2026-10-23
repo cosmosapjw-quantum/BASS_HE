@@ -6,8 +6,8 @@
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 1,
-  "next_node": "R2",
+  "completed": 2,
+  "next_node": "R3",
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -33,9 +33,12 @@
           "sha256": "9af6bc5da9b5bcecee6785dfa2ed8b6d34788ca7c39e5239f490d0caf5b58ee5"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:04:26.402315+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:04:26.402315+00:00",
+      "commit": "ea25a8818a26c3801da2d04f5269c1ed567eddc0",
+      "archive_sha256": "e804ac85f7a342101153e72efe958b620ac542066c3df9c9ca3faf13d1ac3539",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_vYQ"
     },
     {
       "id": "R2",
@@ -43,10 +46,32 @@
       "depends_on": [
         "R1"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "SOURCES.md",
+          "sha256": "58d74071d81683399051ece1bc231216f5cec55eea1f593f6ca45aedee440932"
+        },
+        {
+          "path": "evidence/intake/SOURCE_ADMISSION.json",
+          "sha256": "fa743975c64b317fd23e1e7f7408144d2b9fda3a8853a969370a12c6a8b08e85"
+        },
+        {
+          "path": "evidence/intake/INTAKE.json",
+          "sha256": "7875018b90e08319f3e48009173d54b11cd9a0d4550a562d90348d54995114a3"
+        },
+        {
+          "path": "evidence/intake/RAW_BACKUP_ACK.json",
+          "sha256": "004acc45d525f036cd106f1aae9309844887d7e438fc45435196e0a22c62ca06"
+        },
+        {
+          "path": "stages/R2.md",
+          "sha256": "add1c32937ef52889d6ae338c24a971e2abae34cdbbcc1af5eb995cb8ed3df5a"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:15:02.200690+00:00"
     },
     {
       "id": "R3",
