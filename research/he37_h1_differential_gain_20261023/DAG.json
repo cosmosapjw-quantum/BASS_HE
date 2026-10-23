@@ -6,8 +6,8 @@
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 15,
-  "next_node": "C6",
+  "completed": 16,
+  "next_node": "C7",
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -473,9 +473,12 @@
           "sha256": "ab7d281490ac53197c55f1407933a8aac1542b6d49959e2075ba95a43c02b49b"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:31:38.354926+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:31:38.354926+00:00",
+      "commit": "0b5adc40fa96108390500ba545e0568ecdafa9b5",
+      "archive_sha256": "f33a11d19bb0aa0a0e37e200bae5c92326950415fcde253f4dc27925e4358264",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_v0Q"
     },
     {
       "id": "C6",
@@ -483,10 +486,28 @@
       "depends_on": [
         "C5"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "components/lc_provider/attempts/attempt_20261023T020616442395Z/RESULT.json",
+          "sha256": "b5e171015434afc04334ec547bb31032cf7e7fbed59a497b93f8b8a391587faf"
+        },
+        {
+          "path": "components/net_bridge/attempts/attempt_20261023T022026748127Z/RESULT.json",
+          "sha256": "35530b3ef188253c2863cc5fa0b3889c0c260625c436a21bf4603767aeccf92d"
+        },
+        {
+          "path": "evidence/COMPONENT_COPY_IDENTITY.json",
+          "sha256": "d67f0a119e63e3c49b5d00025fd98af75f07750fffd568425328504024a0585f"
+        },
+        {
+          "path": "stages/C6.md",
+          "sha256": "bff13aaf07bce961237a2fd33975462eb711a8b7c95e4fc149524beef91e696e"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:31:57.001874+00:00"
     },
     {
       "id": "C7",
