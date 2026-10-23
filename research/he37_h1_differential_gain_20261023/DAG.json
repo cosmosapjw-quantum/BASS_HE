@@ -6,8 +6,8 @@
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 12,
-  "next_node": "C3",
+  "completed": 13,
+  "next_node": "C4",
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -377,9 +377,12 @@
           "sha256": "e3ca0d1ec2db71e21d8d9da86d183ea9ca7da9df8982388c9504022d52fb05e0"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:27:47.166094+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:27:47.166094+00:00",
+      "commit": "fce02501444d04e06d554eb9841a54e2d7dd56e8",
+      "archive_sha256": "c8add92f1eb18d6de7288ea8377ea2c82279b375c027b8dc235da270162f0f13",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_vzg"
     },
     {
       "id": "C3",
@@ -387,10 +390,28 @@
       "depends_on": [
         "C2"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "CODING_CONTRACT.md",
+          "sha256": "c9221f2949c96fc39fda48607a511b8dabd122734c23e8a37ff8362fb1ee0473"
+        },
+        {
+          "path": "components/diagnostic/README_KO.md",
+          "sha256": "20ecf06ce1b8901e5b06d3ce6ad81f1475966afd88095a6340cda47b592c3ad0"
+        },
+        {
+          "path": "components/diagnostic/outputs/DIAGNOSTIC.json",
+          "sha256": "038aaebf6c67a51244b6057f4c36abfa75bcdb341346fc5125ade23bc8fe66a3"
+        },
+        {
+          "path": "stages/C3.md",
+          "sha256": "02b14df264c76a9938e6c01f4d2817e2212f1f510a2726fb7446aaad28ea1cfd"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:28:47.509337+00:00"
     },
     {
       "id": "C4",
