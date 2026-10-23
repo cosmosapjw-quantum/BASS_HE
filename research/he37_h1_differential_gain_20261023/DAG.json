@@ -6,8 +6,8 @@
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 18,
-  "next_node": "C9",
+  "completed": 19,
+  "next_node": "C10",
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -573,9 +573,12 @@
           "sha256": "6c7795b1056aea2764a8e36509833ef4885d4aaa40810d6459f8057c97d664d3"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:34:00.359077+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:34:00.359077+00:00",
+      "commit": "11b01c0f6d6c01a35ec96f4962dc17fb4f28c801",
+      "archive_sha256": "60a7f5dfc85c8d4818ea7fe12416537b041cf95f471f4122c6da819a05049d38",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_v1A"
     },
     {
       "id": "C9",
@@ -583,10 +586,28 @@
       "depends_on": [
         "C8"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "evidence/review/final/REVIEW.json",
+          "sha256": "8e50c1d7ddb0ec7f056aaf4c8f6cba1b73cd1010c9f39701b6d0ce88ba4d2977"
+        },
+        {
+          "path": "evidence/review/final/FINAL_HASH_READBACK.json",
+          "sha256": "95e24982e11144ffb9513026e7e2cd7af25defb21d30ede595b52e9714ff2469"
+        },
+        {
+          "path": "evidence/docfix/CORRECTION.json",
+          "sha256": "7cd75b007c050b104b81f756186e32f964860d6f23a3618c0f2674b6d3bb1324"
+        },
+        {
+          "path": "stages/C9.md",
+          "sha256": "51b4f169d97a34bcb6e89eb39c619c15744ee2d2aa09b0ecc4c94229cd539d73"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:36:19.870502+00:00"
     },
     {
       "id": "C10",
