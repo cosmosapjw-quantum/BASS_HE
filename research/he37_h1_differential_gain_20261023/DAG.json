@@ -6,8 +6,8 @@
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 17,
-  "next_node": "C8",
+  "completed": 18,
+  "next_node": "C9",
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -537,9 +537,12 @@
           "sha256": "ef0e3cce013801c2d9bf863bcbf78e85ae98829c12c10f49cf3632f7d8a79ac3"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:33:21.191002+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:33:21.191002+00:00",
+      "commit": "84cca827f3a81dd66d7860c62a11b5009cbd41fa",
+      "archive_sha256": "c339ea13061a14b5e6f6a99aaab65ad7c5fe1ed12fa25dba3cc2dc9e91390a75",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_v0w"
     },
     {
       "id": "C8",
@@ -547,10 +550,32 @@
       "depends_on": [
         "C7"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "components/diagnostic/outputs/DIAGNOSTIC.json",
+          "sha256": "038aaebf6c67a51244b6057f4c36abfa75bcdb341346fc5125ade23bc8fe66a3"
+        },
+        {
+          "path": "components/diagnostic/outputs/BENCHMARK.json",
+          "sha256": "3579271d7f1d9d66b0ed3585c78f340ca5cf8ef32b44d7e626a53e06616b7341"
+        },
+        {
+          "path": "components/diagnostic/plots/RENDER_RECEIPT.json",
+          "sha256": "96307ccc2ec4c4ad43904990e542054118d5d03ac88a491263921b6a69f08389"
+        },
+        {
+          "path": "evidence/review/final/REVIEW.json",
+          "sha256": "8e50c1d7ddb0ec7f056aaf4c8f6cba1b73cd1010c9f39701b6d0ce88ba4d2977"
+        },
+        {
+          "path": "stages/C8.md",
+          "sha256": "6c7795b1056aea2764a8e36509833ef4885d4aaa40810d6459f8057c97d664d3"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:34:00.359077+00:00"
     },
     {
       "id": "C9",
