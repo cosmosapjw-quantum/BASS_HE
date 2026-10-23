@@ -24,3 +24,12 @@ workflow1.0.0 / approval0.2. 모든 행은 해당 단계의 실제 Git 게시와
 | C8 | 18/20 | `cfc04fb2bcbc23d7a03554272be535a6ac11a711` | `BASS_HE_HE38_FMG_C8_20261023T042231Z.tar.gz` | `d542612f79b3bb6f4a6b0a4ebda534b6ebf7c482e8a9e8130caff14d74a011ef` | `id:BSpOijBcT10AAAAAAD_xwA` | C9 |
 | C9 | 19/20 | `ccbfa8d2cf80f9619aed663242ab456dba02ef72` | `BASS_HE_HE38_FMG_C9_20261023T042836Z.tar.gz` | `1357d802d9836431820305678994109d66afdaa00851c88c6cd82bae32234a5f` | `id:BSpOijBcT10AAAAAAD_yAQ` | C10 |
 | C10 | 20/20 | `6790005d5a0b7b0dceedeedd4f3687b94202ed54` | `BASS_HE_HE38_FMG_C10_20261023T043126Z.tar.gz` | `5922cc6e548a926cbb590b244f8a172aa08b27654eba55f663a96c809e1c5515` | `id:BSpOijBcT10AAAAAAD_yAg` | NEXT_DAG.json / 새 단원 source gate |
+
+## C10 이후 handoff 조건 교정
+
+N1A의 heavy-target electron energy 조건과 finite-mass total COM energy 조건을 구분했다. 현재 HE38 모델·계산 결과 변경 및 과학 재실행은 0이다.
+
+- 교정 및 최종 science commit: `2ce8afd80b7baf430c85ce5ace81a5bd4e9465c0`
+- 교정 archive SHA256: `8ff8f1beebb143f9e6c16265a74427866e1823cc37f20a90186b6b07c207d438`
+- Dropbox ID: `id:BSpOijBcT10AAAAAAD_yEw`
+- 작업공간 정리 후 실제 provider metadata·archive hash·Git blob 대조로 복구 ACK를 구성했다. 원래 업로드 응답의 복사본과 구분한다.
