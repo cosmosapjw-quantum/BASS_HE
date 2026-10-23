@@ -61,7 +61,7 @@ class Verifier:
         for r in accepted['payloads']:self.identity(r['path'],r['sha256'],r['size'])
         if len(accepted['payloads'])!=2 or accepted['model_evaluations']!=0:self.error('accepted plot pair/scope')
         qa=self.read('evidence/review/FINAL_REVIEW.json')
-        if qa.get('blocking_findings',0)!=0 or qa.get('open_findings',0)!=0:self.error('independent review findings remain')
+        if qa.get('status')!='PASS_SCOPED' or qa.get('blocking_findings')!=0 or qa.get('open_findings')!=0:self.error('independent review findings remain')
         self.counts.update(affected_controls=imp['controls'],independent_interface_probes=probe['probe_count'],saved_diagnostic_rows=len(rows),accepted_figure_pairs=1,new_science_executed_by_verifier=0)
         self.notes.append('Recorded outcomes and file identities are checked; their scientific calculations are not re-executed.')
     def ack(self,record,label,node=None):
@@ -106,11 +106,14 @@ class Verifier:
             if n['depends_on']!=([] if i==0 else [STAGES[i-1]]):self.error('DAG dependency '+n['id'])
             if n.get('publication')!='published':continue
             a=self.read('delivery/'+n['id']+'_ACK.json');self.ack(a,n['id'],n);count+=1
-            for e in n.get('evidence',[]):self.identity(e['path'],e['sha256'])
+            snapshot={r['path']:r['sha256'] for r in self.read(a['manifest'])['files']}
+            for e in n.get('evidence',[]):
+                if snapshot.get(e['path'])!=e['sha256']:self.error('stage snapshot evidence '+n['id']+': '+e['path'])
             if archives:payload_count+=self.archive(a,archive_root)
         self.counts.update(stages_completed=completed,stages_delivered=delivered,stage_ACKs_checked=count)
         if require and (completed!=20 or delivered!=20 or count!=20):self.error('20 completed/delivered/ACK required')
         if archives:self.counts['new_stage_archive_payload_hashes_checked']=payload_count
+        self.notes.append('Stage evidence hashes refer to their immutable archived snapshots; current science files are checked by SCIENCE_MANIFEST, so later README/delivery updates are not mistaken for scientific corruption.')
         final=self.path('delivery/FINAL_ACK.json')
         if final.is_file():
             a=self.read('delivery/FINAL_ACK.json');self.ack(a,'FINAL_ACK')
