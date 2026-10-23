@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 10,
+  "completed": 11,
   "status": "in_progress",
-  "next_node": "C1",
+  "next_node": "C2",
   "nodes": [
     {
       "id": "R1",
@@ -291,9 +291,12 @@
           "sha256": "6392b5267316e03b96ee466a78f65519818f64865f09e1d98caec42c6d60a361"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:15:15.271726+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:15:15.271726+00:00",
+      "commit": "815522288e17daf5dbb29f395b127ea43237f14f",
+      "archive_sha256": "d3c29e769ec727962c2af84fffa1f88d0fd8f2eb2d3598db2debaca8def1f30e",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xiA"
     },
     {
       "id": "C1",
@@ -301,10 +304,24 @@
       "depends_on": [
         "R10"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "CODING_CONTRACT.md",
+          "sha256": "235d4e852df8254c1193f156ef0f8a080ea5f75935c8d5b23953555f891176ce"
+        },
+        {
+          "path": "components/finite_mass/DONOR_PROVENANCE.json",
+          "sha256": "813ae60755bb239a82be8e330a72bacf012d4a25e4bdb90f5f18693e9e3c3d5b"
+        },
+        {
+          "path": "stages/C1.md",
+          "sha256": "472a511680429fa76f933244403fd88a160c8fbb4d9af73eac7f9b1b7f07c18e"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:15:28.212512+00:00"
     },
     {
       "id": "C2",
