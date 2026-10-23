@@ -6,8 +6,8 @@
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 10,
-  "next_node": "C1",
+  "completed": 11,
+  "next_node": "C2",
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -313,9 +313,12 @@
           "sha256": "e9e5986fc2a4ca0de3eab305a664c15dbd5c4518b16646296554c0da85592099"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:26:08.963096+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:26:08.963096+00:00",
+      "commit": "d6be2fbcb5d63aa4bfae09fb3469e149f1ee7b44",
+      "archive_sha256": "5a7dc98d6b46801e06e7c7634dcc392ca8d2b8510e09d0ef332ae06dc4b222e8",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_vzA"
     },
     {
       "id": "C1",
@@ -323,10 +326,28 @@
       "depends_on": [
         "R10"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "CODING_CONTRACT.md",
+          "sha256": "c9221f2949c96fc39fda48607a511b8dabd122734c23e8a37ff8362fb1ee0473"
+        },
+        {
+          "path": "components/lc_provider/FILE_MANIFEST.json",
+          "sha256": "a73aaeaba5104c061d00fe8bc9f8e05f12dc47a1710f064985763d0704ef4b2a"
+        },
+        {
+          "path": "components/net_bridge/DONOR_PROVENANCE.json",
+          "sha256": "710d15a19c3c359c7d79682c853c82194e943acc763682bba27d47d438268d52"
+        },
+        {
+          "path": "stages/C1.md",
+          "sha256": "13a65f46133e8910b08da08238b3d6ca81d80d535e89cc6a2f22f03db58f611d"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:27:30.271305+00:00"
     },
     {
       "id": "C2",
