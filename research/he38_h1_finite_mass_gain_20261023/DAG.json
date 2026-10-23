@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 17,
+  "completed": 18,
   "status": "in_progress",
-  "next_node": "C8",
+  "next_node": "C9",
   "nodes": [
     {
       "id": "R1",
@@ -495,9 +495,12 @@
           "sha256": "210615724e4ac459ec84212c6be7892006ce0680652acc7a3fb91c6d30df2b81"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:22:16.465624+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:22:16.465624+00:00",
+      "commit": "f5302814f7da7d5e013593910e34b695ce20ebef",
+      "archive_sha256": "4a5a0e989cc8c332c422fa150cf23cc81c7aca8d53e7638a6fad88c55ff3b827",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xvw"
     },
     {
       "id": "C8",
@@ -505,10 +508,32 @@
       "depends_on": [
         "C7"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "components/diagnostic/outputs/BENCHMARK.json",
+          "sha256": "f9a80c9c9643f19448586d55e1d0958d4bc091342e00eb67eb8220a7666a1234"
+        },
+        {
+          "path": "components/diagnostic/EXECUTION_SUMMARY.json",
+          "sha256": "9f8ddccf94306382b4d8c2cfd00e4a854764f082cb05b612ca4fd1ccd4fba585"
+        },
+        {
+          "path": "figures/ACCEPTED_FIGURE.json",
+          "sha256": "6a1c4b6045e788e8057229ad460e89901fd286b1afc1bc2d3304ec5ac629725c"
+        },
+        {
+          "path": "PLOT_QA.md",
+          "sha256": "5c5d1e5c89b318488cf583e48677a3f43b73199838f6028b3c7ff25893435054"
+        },
+        {
+          "path": "stages/C8.md",
+          "sha256": "09ef790e05383cbd682b29b1efe3ba7fdcbd734a2a4db6a6f00f20916bb811f2"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:22:31.934331+00:00"
     },
     {
       "id": "C9",
