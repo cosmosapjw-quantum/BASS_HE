@@ -4,10 +4,10 @@
   "approval_version": "0.2",
   "unit_id": "HE37-H1DG",
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
-  "status": "in_progress",
+  "status": "complete",
   "total_nodes": 20,
-  "completed": 19,
-  "next_node": "C10",
+  "completed": 20,
+  "next_node": null,
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -605,9 +605,12 @@
           "sha256": "51b4f169d97a34bcb6e89eb39c619c15744ee2d2aa09b0ecc4c94229cd539d73"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:36:19.870502+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:36:19.870502+00:00",
+      "commit": "9932e420535f5ad11c1aa7653f58683eb07f14cf",
+      "archive_sha256": "7b58acecb967ba83318989f78066a435276572148562dc825faa6ccc3c48e6e5",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_v1Q"
     },
     {
       "id": "C10",
@@ -615,10 +618,40 @@
       "depends_on": [
         "C9"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "RESULTS_KO.md",
+          "sha256": "01cc382ad3fd4bfb374a2c8c38a93beb857f49fc08cffaba60faa9b193197f76"
+        },
+        {
+          "path": "RUN_RECORD.json",
+          "sha256": "1bc1d4c125c5a8b5bffeda50f38456ef5441e43b27f2b081aaef350146e684e2"
+        },
+        {
+          "path": "SCIENCE_MANIFEST.json",
+          "sha256": "e5902f8604479ff79d9973e62ab41fca88eba7bc7be41ab8256e5630ffac45e7"
+        },
+        {
+          "path": "verify_saved.py",
+          "sha256": "1125644e938a1a2d740721ead0d2ef52aff86ac9dfa7df4d76ec797e694f127c"
+        },
+        {
+          "path": "evidence/review/delivery_docs/REVIEW.json",
+          "sha256": "c7be7bc5baee5dff723ed9bcdaa5dde1022be5b7068936132030afa658e967f8"
+        },
+        {
+          "path": "delivery/C10_PRESEAL_VERIFY.json",
+          "sha256": "6d6e6efaa598b34dec34ce8f9b9f51696fd43d2e142498bb03687910e2653e89"
+        },
+        {
+          "path": "stages/C10.md",
+          "sha256": "e676a913d906f7920efed5e555682e3f8a26cabdac7efa096c50907f903ebc4d"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:47:07.495065+00:00"
     }
   ]
 }
