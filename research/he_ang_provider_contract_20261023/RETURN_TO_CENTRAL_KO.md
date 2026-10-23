@@ -1,5 +1,7 @@
 # 중앙 orchestration에 반환할 상태
 
+과학 pin: `896e5427100ad48d017deff2697b6f992ba029cd` · [Draft PR92](https://github.com/cosmosapjw-quantum/BASS_HE/pull/92) · science manifest SHA256 `ea7a49e97515195317972b5897ba6511527093484aa8ed5025a5cd01e96bfc3f`. 최종 delivery pin은 이 문서를 읽는 고정 commit 및 capsule publication.json에 귀속한다.
+
 Authority: `rei_bianchi@0f9d9df825be1dac9ca9bdf73cdc2e8908bcba17`의 고정 BASS_HE 인계. 중앙 저장소와 ANGTHERM02 owner branch는 이번 단위에서 수정하지 않았다. 이 문서는 중앙 owner가 선택적으로 반영할 출처 연결이다.
 
 - HE-X1: COMPLETE_SCOPED_REUSED; science pin eb03981d15ad291375dd6d574a9c28809f85fc02; 과학 재실행0.

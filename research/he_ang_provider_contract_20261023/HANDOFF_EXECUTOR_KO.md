@@ -1,5 +1,7 @@
 # 실행자 인계 — 저장 증거 검증이 기본 행동
 
+과학 pin: `896e5427100ad48d017deff2697b6f992ba029cd` · [Draft PR92](https://github.com/cosmosapjw-quantum/BASS_HE/pull/92) · science manifest SHA256 `ea7a49e97515195317972b5897ba6511527093484aa8ed5025a5cd01e96bfc3f`. 최종 delivery pin은 이 문서를 읽는 고정 commit 및 capsule publication.json에 귀속한다.
+
 대상은 `cosmosapjw-quantum/BASS_HE`, branch `research/he-ang-provider-contract-20261023`, unit `research/he_ang_provider_contract_20261023`이다. `delivery/PUBLISHED_PINS.json`의 과학 pin과 이후 delivery pin을 구별한다. 실제 branch HEAD가 expected와 다르면 차이를 먼저 읽고 lease를 갱신한다. 기존 source/suite를 재작성하거나 반복 실행하는 지시가 아니다.
 
 ```text
@@ -24,3 +26,11 @@
 ```
 
 호스트 문제가 있으면 해당 환경 경계만 최소 수정한다. 물리 전제·오차·허용 판정·substantive 설계 변경은 연구 대화로 돌려 근거와 새 DAG를 정한다. 이 실행자 handoff의 목표는 실제 source/frame/event 증거를 이어 쓰는 것이며 기존 연구를 재시작하는 것이 아니다.
+
+## 검증된 전체 archive
+
+- 파일: `BASS_HE_HEANG_FINAL_20261023T153510649612Z_420de16f.tar.gz`
+- SHA256: `c707bb56e2e5f30f3ba8de1e1a35dbacb5361cb99be31b9786cfffe53a8eb77d`
+- Dropbox: `id:BSpOijBcT10AAAAAAD_6lQ`
+- Drive: [1o0lKxjCFUckLLoaHTjb6FtHYVr1wB5LA](https://drive.google.com/file/d/1o0lKxjCFUckLLoaHTjb6FtHYVr1wB5LA/view?usp=drivesdk)
+- 내용: unit snapshot,20 stage archives, operation scripts 및 science publication receipt. 전체224payload의 local SHA/size 검증 완료, 양쪽 upload ACK+metadata 확인. 즉시 원격 bytes 재다운로드 검증을 수행했다는 뜻은 아니다.

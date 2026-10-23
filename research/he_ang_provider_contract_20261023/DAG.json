@@ -5,7 +5,7 @@
   "unit_id": "HE-ANG-CONTRACT",
   "parent_node": "HE-ANG",
   "scope": "source/frame/event provider contract and bounded executable admission checks",
-  "status": "complete_scoped_pending_delivery",
+  "status": "complete_scoped",
   "completed": 20,
   "total": 20,
   "next_node": null,
@@ -41,10 +41,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T14:53:39.558745+00:00",
       "preflight": "evidence/preflight/R1.json",
-      "backup_evidence": "delivery/R1_ACK.json"
+      "backup_evidence": "delivery/R1_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "R2",
@@ -76,10 +77,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T14:59:19.397514+00:00",
       "preflight": "evidence/preflight/R2.json",
-      "backup_evidence": "delivery/R2_ACK.json"
+      "backup_evidence": "delivery/R2_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "R3",
@@ -103,10 +105,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:00:20.812243+00:00",
       "preflight": "evidence/preflight/R3.json",
-      "backup_evidence": "delivery/R3_ACK.json"
+      "backup_evidence": "delivery/R3_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "R4",
@@ -126,10 +129,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:01:06.983258+00:00",
       "preflight": "evidence/preflight/R4.json",
-      "backup_evidence": "delivery/R4_ACK.json"
+      "backup_evidence": "delivery/R4_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "R5",
@@ -161,10 +165,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:01:52.958544+00:00",
       "preflight": "evidence/preflight/R5.json",
-      "backup_evidence": "delivery/R5_ACK.json"
+      "backup_evidence": "delivery/R5_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "R6",
@@ -192,10 +197,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:03:35.951192+00:00",
       "preflight": "evidence/preflight/R6.json",
-      "backup_evidence": "delivery/R6_ACK.json"
+      "backup_evidence": "delivery/R6_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "R7",
@@ -227,10 +233,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:09:12.911825+00:00",
       "preflight": "evidence/preflight/R7.json",
-      "backup_evidence": "delivery/R7_ACK.json"
+      "backup_evidence": "delivery/R7_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "R8",
@@ -258,10 +265,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:11:15.080550+00:00",
       "preflight": "evidence/preflight/R8.json",
-      "backup_evidence": "delivery/R8_ACK.json"
+      "backup_evidence": "delivery/R8_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "R9",
@@ -285,10 +293,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:12:52.358548+00:00",
       "preflight": "evidence/preflight/R9.json",
-      "backup_evidence": "delivery/R9_ACK.json"
+      "backup_evidence": "delivery/R9_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "R10",
@@ -312,10 +321,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:13:53.689923+00:00",
       "preflight": "evidence/preflight/R10.json",
-      "backup_evidence": "delivery/R10_ACK.json"
+      "backup_evidence": "delivery/R10_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "C1",
@@ -343,10 +353,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:18:01.444717+00:00",
       "preflight": "evidence/preflight/C1.json",
-      "backup_evidence": "delivery/C1_ACK.json"
+      "backup_evidence": "delivery/C1_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "C2",
@@ -374,10 +385,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:18:38.180126+00:00",
       "preflight": "evidence/preflight/C2.json",
-      "backup_evidence": "delivery/C2_ACK.json"
+      "backup_evidence": "delivery/C2_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "C3",
@@ -405,10 +417,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:19:13.292418+00:00",
       "preflight": "evidence/preflight/C3.json",
-      "backup_evidence": "delivery/C3_ACK.json"
+      "backup_evidence": "delivery/C3_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "C4",
@@ -436,10 +449,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:19:58.406220+00:00",
       "preflight": "evidence/preflight/C4.json",
-      "backup_evidence": "delivery/C4_ACK.json"
+      "backup_evidence": "delivery/C4_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "C5",
@@ -471,10 +485,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:20:36.085700+00:00",
       "preflight": "evidence/preflight/C5.json",
-      "backup_evidence": "delivery/C5_ACK.json"
+      "backup_evidence": "delivery/C5_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "C6",
@@ -502,10 +517,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:21:11.350448+00:00",
       "preflight": "evidence/preflight/C6.json",
-      "backup_evidence": "delivery/C6_ACK.json"
+      "backup_evidence": "delivery/C6_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "C7",
@@ -541,10 +557,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:22:26.759939+00:00",
       "preflight": "evidence/preflight/C7.json",
-      "backup_evidence": "delivery/C7_ACK.json"
+      "backup_evidence": "delivery/C7_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "C8",
@@ -580,10 +597,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:23:53.731278+00:00",
       "preflight": "evidence/preflight/C8.json",
-      "backup_evidence": "delivery/C8_ACK.json"
+      "backup_evidence": "delivery/C8_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "C9",
@@ -615,10 +633,11 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:27:53.531503+00:00",
       "preflight": "evidence/preflight/C9.json",
-      "backup_evidence": "delivery/C9_ACK.json"
+      "backup_evidence": "delivery/C9_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     },
     {
       "id": "C10",
@@ -666,10 +685,20 @@
         }
       ],
       "backup": "dual_acknowledged",
-      "publication": "pending_independent_review",
+      "publication": "published_in_reviewed_science_commit",
       "completed_utc": "2026-10-23T15:32:43.396849+00:00",
       "preflight": "evidence/preflight/C10.json",
-      "backup_evidence": "delivery/C10_ACK.json"
+      "backup_evidence": "delivery/C10_ACK.json",
+      "publication_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
     }
-  ]
+  ],
+  "science_publication": "896e5427100ad48d017deff2697b6f992ba029cd",
+  "science_manifest_sha256": "ea7a49e97515195317972b5897ba6511527093484aa8ed5025a5cd01e96bfc3f",
+  "physical_source_status": "SOURCE_INPUT_PENDING",
+  "delivery": {
+    "final_archive_sha256": "c707bb56e2e5f30f3ba8de1e1a35dbacb5361cb99be31b9786cfffe53a8eb77d",
+    "final_archive_ACK": "delivery/FINAL_ARCHIVE_ACK.json",
+    "stage_dual_ACKs": 20,
+    "publication": "science commit verified; containing delivery commit adds final metadata only"
+  }
 }

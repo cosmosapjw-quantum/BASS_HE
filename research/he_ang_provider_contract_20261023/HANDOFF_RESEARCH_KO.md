@@ -1,5 +1,7 @@
 # 연구 대화 인계 — HE-ANG-CONTRACT
 
+과학 pin: `896e5427100ad48d017deff2697b6f992ba029cd` · [Draft PR92](https://github.com/cosmosapjw-quantum/BASS_HE/pull/92) · science manifest SHA256 `ea7a49e97515195317972b5897ba6511527093484aa8ed5025a5cd01e96bfc3f`. 최종 delivery pin은 이 문서를 읽는 고정 commit 및 capsule publication.json에 귀속한다.
+
 이 인계의 publication identity는 `delivery/PUBLISHED_PINS.json`과 그 파일을 포함하는 고정 Git commit에서 읽는다. 과학 source identity는 `SCIENCE_MANIFEST.json`으로 별도 고정한다. 마지막 업로드의 자신의 ACK는 해당 archive 바깥 delivery/capsule에 기록한다.
 
 ```text
@@ -32,3 +34,11 @@ HE-EXCHANGE/HE-RESERVOIR→HE-CLOSURE→HE-FEEDBACK 의존성을 유지한다.
 HE32의 pi_b=0와 nonbaryonic matter stress를 구별하라. no_merge/no_activation.
 전체 repo/대화를 새로 전수 조사했다고 쓰지 마라. 이번 intake는 선택된 pin/delta다.
 ```
+
+## 검증된 전체 archive
+
+- 파일: `BASS_HE_HEANG_FINAL_20261023T153510649612Z_420de16f.tar.gz`
+- SHA256: `c707bb56e2e5f30f3ba8de1e1a35dbacb5361cb99be31b9786cfffe53a8eb77d`
+- Dropbox: `id:BSpOijBcT10AAAAAAD_6lQ`
+- Drive: [1o0lKxjCFUckLLoaHTjb6FtHYVr1wB5LA](https://drive.google.com/file/d/1o0lKxjCFUckLLoaHTjb6FtHYVr1wB5LA/view?usp=drivesdk)
+- 내용: unit snapshot,20 stage archives, operation scripts 및 science publication receipt. 전체224payload의 local SHA/size 검증 완료, 양쪽 upload ACK+metadata 확인. 즉시 원격 bytes 재다운로드 검증을 수행했다는 뜻은 아니다.

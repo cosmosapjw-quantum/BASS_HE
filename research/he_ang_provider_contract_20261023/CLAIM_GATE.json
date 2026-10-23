@@ -37,6 +37,7 @@
     "own bounded source-admission contract before provider scan or new evolution"
   ],
   "current_allowed_action": "Reuse completed contract; prepare separate HE-ANG-SOURCE intake and frozen budget. Saved evidence verification is the default resume action.",
-  "publication_status": "reviewed_ready_for_expected_SHA_push",
-  "delivery_status": "C10_stage_and_final_delivery_in_progress"
+  "publication_status": "reviewed_expected_SHA_push_verified",
+  "delivery_status": "20_stage_ACK_and_complete_final_archive_dual_ACK",
+  "science_pin": "896e5427100ad48d017deff2697b6f992ba029cd"
 }
