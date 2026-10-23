@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 13,
+  "completed": 14,
   "status": "in_progress",
-  "next_node": "C4",
+  "next_node": "C5",
   "nodes": [
     {
       "id": "R1",
@@ -367,9 +367,12 @@
           "sha256": "09cf3f744e5809cb91b525df152c53892a2ab8126aa38996b3da836dee92b89e"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:16:37.177860+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:16:37.177860+00:00",
+      "commit": "3a2658aabd7d44f651c112cbbcb87ddac059a688",
+      "archive_sha256": "10667a57e4266a526c6dc7176705b1845249e6918cf116643e7b0d6b5e3b0a69",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xmw"
     },
     {
       "id": "C4",
@@ -377,10 +380,24 @@
       "depends_on": [
         "C3"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "NUMERICAL_DESIGN.md",
+          "sha256": "bf9c6dfe32f1de8c95ce2b566d112a2beafba159ce736f992d2435ac5dbfde24"
+        },
+        {
+          "path": "CONTRACT.json",
+          "sha256": "16be5fafea99428adb765c84538e47c827d719615e6346e82e75c8d9ee6d17f8"
+        },
+        {
+          "path": "stages/C4.md",
+          "sha256": "a8f6cfbcb2d71e2e5b2ac94e8259e655076ae4783d82c6d6e184bedeb97ab4a7"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:16:51.857779+00:00"
     },
     {
       "id": "C5",
