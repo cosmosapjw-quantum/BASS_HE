@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 12,
+  "completed": 13,
   "status": "in_progress",
-  "next_node": "C3",
+  "next_node": "C4",
   "nodes": [
     {
       "id": "R1",
@@ -343,9 +343,12 @@
           "sha256": "d96d0fdc2217c2f577e28991d9b34b61c12f8a3109019f31c3617f183fcf3618"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:16:23.293657+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:16:23.293657+00:00",
+      "commit": "da6210e800b40a6bdc904c7bd2c7cb9db434e463",
+      "archive_sha256": "9dc4ed024c4f1e6fa79768bd5909e79a0e40970b8b5ead56b77efba32029db48",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xmg"
     },
     {
       "id": "C3",
@@ -353,10 +356,20 @@
       "depends_on": [
         "C2"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "NUMERICAL_DESIGN.md",
+          "sha256": "bf9c6dfe32f1de8c95ce2b566d112a2beafba159ce736f992d2435ac5dbfde24"
+        },
+        {
+          "path": "stages/C3.md",
+          "sha256": "09cf3f744e5809cb91b525df152c53892a2ab8126aa38996b3da836dee92b89e"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:16:37.177860+00:00"
     },
     {
       "id": "C4",
