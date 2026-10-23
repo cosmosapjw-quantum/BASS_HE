@@ -6,8 +6,8 @@
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 11,
-  "next_node": "C2",
+  "completed": 12,
+  "next_node": "C3",
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -345,9 +345,12 @@
           "sha256": "13a65f46133e8910b08da08238b3d6ca81d80d535e89cc6a2f22f03db58f611d"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:27:30.271305+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:27:30.271305+00:00",
+      "commit": "348fbd0e804cdf357d884ee07bd284b1d69b9e54",
+      "archive_sha256": "8a0d1f3b4d6832701cc925b2ee260ec5e8b1c0fb80c0fc8ed69f373a91aa3e13",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_vzQ"
     },
     {
       "id": "C2",
@@ -355,10 +358,28 @@
       "depends_on": [
         "C1"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "EQUATION_CODE_MAP.md",
+          "sha256": "e6aaa1cf4a89f84dd78e2fa119c3bc1e8961cc2110b42df925c159d54520e086"
+        },
+        {
+          "path": "components/net_bridge/h1_net/net_source.py",
+          "sha256": "34147e2a6b7644b5509189037e26d6f9f469bd618588fb2266c7225027d8e379"
+        },
+        {
+          "path": "components/net_bridge/README_KO.md",
+          "sha256": "94a0b2450a20d062067b888141c8b0f3543278894dca5fc8a0101bc2e85a7f4b"
+        },
+        {
+          "path": "stages/C2.md",
+          "sha256": "e3ca0d1ec2db71e21d8d9da86d183ea9ca7da9df8982388c9504022d52fb05e0"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:27:47.166094+00:00"
     },
     {
       "id": "C3",
