@@ -1,6 +1,6 @@
 # HE37 단계별 진척·백업·게시 장부
 
-workflow1.0.0 / approval0.2. 과학 단계 완료 **19/20**; backup ACK와 Git 게시 확인 **19/20**.
+workflow1.0.0 / approval0.2. 과학 단계 완료 **20/20**; backup ACK와 Git 게시 확인 **20/20**.
 이 분모는 HE37의 한정된 연구 단원이다. 원래 calibrated atomic/nuclear·열/UV·바리온 응력·metric 목표의 완료율은 정의하지 않는다.
 순서는 R1→R10→C1→C10이다. 병렬 component의 실제 실행 시각은 원본 receipt에 있고, 아래 시각/순서는 논리적 stage acceptance다.
 
@@ -25,7 +25,7 @@ workflow1.0.0 / approval0.2. 과학 단계 완료 **19/20**; backup ACK와 Git �
 |17|C7 과학 검증|17/20 (85%)|[84cca827f3a8](https://github.com/cosmosapjw-quantum/BASS_HE/commit/84cca827f3a81dd66d7860c62a11b5009cbd41fa)|ACK · [C7_ACK.json](delivery/C7_ACK.json) · `id:BSpOijBcT10AAAAAAD_v0w`|C8|
 |18|C8 수치·재현성|18/20 (90%)|[11b01c0f6d6c](https://github.com/cosmosapjw-quantum/BASS_HE/commit/11b01c0f6d6c01a35ec96f4962dc17fb4f28c801)|ACK · [C8_ACK.json](delivery/C8_ACK.json) · `id:BSpOijBcT10AAAAAAD_v1A`|C9|
 |19|C9 독립 검토|19/20 (95%)|[9932e420535f](https://github.com/cosmosapjw-quantum/BASS_HE/commit/9932e420535f5ad11c1aa7653f58683eb07f14cf)|ACK · [C9_ACK.json](delivery/C9_ACK.json) · `id:BSpOijBcT10AAAAAAD_v1Q`|C10|
-|20|C10 판정·인계|pending|pending|pending|NEXT_DAG N0→N1 (별도 과학 단원)|
+|20|C10 판정·인계|20/20 (100%)|[a5a670968cb1](https://github.com/cosmosapjw-quantum/BASS_HE/commit/a5a670968cb1326375f394faa867c6b260c5840d)|ACK · [C10_ACK.json](delivery/C10_ACK.json) · `id:BSpOijBcT10AAAAAAD_v2Q`|NEXT_DAG N0→N1 (별도 과학 단원)|
 
 각 ACK에는 archive 파일명·byte 수·SHA256·provider ID·commit/tree·정확한 다음 단계가 있다. Stage 자체의 ACK는 그 commit이 생긴 뒤 생성되므로 다음 게시 commit 또는 최종 delivery commit이 보존한다. Science와 publication identity를 혼동하지 않는다.
 

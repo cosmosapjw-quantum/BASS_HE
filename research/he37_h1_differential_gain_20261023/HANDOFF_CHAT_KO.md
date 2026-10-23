@@ -7,9 +7,9 @@ repo: cosmosapjw-quantum/BASS_HE
 branch: research/he37-h1-differential-gain-20261023
 unit: research/he37_h1_differential_gain_20261023
 PR: https://github.com/cosmosapjw-quantum/BASS_HE/pull/90
-immutable science pin: delivery/FINAL_ACK.json의 science_commit (C10 science basis)
+immutable science pin: a5a670968cb1326375f394faa867c6b260c5840d
 latest publication pin: 이 파일을 포함한 PR90 head; 최종 chat/readback의 publication pin으로 고정
-final archive/Dropbox/SHA256: delivery/FINAL_ACK.json의 archive_name, archive_sha256, dropbox.file.file_id
+final archive/Dropbox/SHA256: BASS_HE_HE37_H1DG_FINAL_20261023T024743Z.tar.gz / SHA256 cf386010413b17169b3fab5fe63ca829138f0d0cdbc61b2c70fed1eee88e0797 / id:BSpOijBcT10AAAAAAD_v2g
 
 먼저 README.md, RESULTS_KO.md, DAG.json, NEXT_DAG.json,
 GLOBAL_GOAL_DAG.json, delivery/FINAL_ACK.json과 verify_saved.py를 읽어라.
@@ -49,3 +49,7 @@ metricfeedback이다.B1/B2partial,B3→B4→B5pending이고 전체%는미정이�
 준비된provider범위가 확정된 후에만 저장배경하나의 새boundedIVP를 고려한다.
 매단계 실제backupACK/Gitpin/진척/다음DAG와 두handoff를 제공하라.
 ```
+
+## Identity note
+
+C10 science basis: `a5a670968cb1326375f394faa867c6b260c5840d`. The final publication adds only delivery metadata. Pin its exact head from PR90 or the accompanying final publication receipt; a commit cannot embed its own SHA.

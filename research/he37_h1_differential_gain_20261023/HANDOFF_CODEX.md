@@ -4,9 +4,9 @@
 Project: cosmosapjw-quantum/BASS_HE
 Unit: research/he37_h1_differential_gain_20261023
 Branch: research/he37-h1-differential-gain-20261023
-Immutable science revision: delivery/FINAL_ACK.json의 science_commit (C10 science basis)
+Immutable science revision: a5a670968cb1326375f394faa867c6b260c5840d
 Publication revision / PR: 이 파일을 포함한 PR90 head; 최종 chat/readback의 publication pin으로 고정 / https://github.com/cosmosapjw-quantum/BASS_HE/pull/90
-Archive authority: delivery/FINAL_ACK.json의 archive_name, archive_sha256, dropbox.file.file_id
+Archive authority: BASS_HE_HE37_H1DG_FINAL_20261023T024743Z.tar.gz / SHA256 cf386010413b17169b3fab5fe63ca829138f0d0cdbc61b2c70fed1eee88e0797 / id:BSpOijBcT10AAAAAAD_v2g
 Workflow1.0.0 / approval0.2 remains authoritative.
 
 Read AGENTS.md, README.md, RESULTS_KO.md, CONTRACT.json,
@@ -36,3 +36,7 @@ command,input/domain/resourcebudget,newattemptpath and acceptancegate.
 Reuse unaffectedpriorreceipts. Recordexecutions separately from stageacceptance.
 Publishactualsuccess/failedattempt,archiveACK,Gitidentity andtwohandoffs.
 ```
+
+## Identity note
+
+C10 science basis: `a5a670968cb1326375f394faa867c6b260c5840d`. The final publication adds only delivery metadata. Pin its exact head from PR90 or the accompanying final publication receipt; a commit cannot embed its own SHA.
