@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 5,
+  "completed": 6,
   "status": "in_progress",
-  "next_node": "R6",
+  "next_node": "R7",
   "nodes": [
     {
       "id": "R1",
@@ -155,9 +155,12 @@
           "sha256": "2c153485f0577e7e387581b75805b8cb984193e44f242b8221b4b6dcc55e90f3"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:14:04.183361+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:14:04.183361+00:00",
+      "commit": "2f26456d229e2889c1d8017f1df67014a8a18eb1",
+      "archive_sha256": "596aa6574f793a437c047613470eaf545d7472ce2848bb55369dd2f5e7f796e0",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xcw"
     },
     {
       "id": "R6",
@@ -165,10 +168,24 @@
       "depends_on": [
         "R5"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "evidence/review/THEORY_REVIEW.md",
+          "sha256": "ec944c4cbc551651611ca83b22559bbc4c55b83a03ea7a68568232e6deed5c18"
+        },
+        {
+          "path": "evidence/review/REVIEW.json",
+          "sha256": "025823b655c58fb1c881e281f28ee28704d2e31c1694ec0ddd2d93895aee6c64"
+        },
+        {
+          "path": "stages/R6.md",
+          "sha256": "81a3875486b58b3965ad6da7ad10bfe6ef3eb062e194ca86d9a1c81b7272a713"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:14:17.455597+00:00"
     },
     {
       "id": "R7",
