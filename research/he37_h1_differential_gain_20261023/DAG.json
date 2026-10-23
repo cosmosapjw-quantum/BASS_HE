@@ -6,8 +6,8 @@
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 8,
-  "next_node": "R9",
+  "completed": 9,
+  "next_node": "R10",
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -245,9 +245,12 @@
           "sha256": "a701533e0b2a7af2640ea9b45a954cf58d84b386b5fc0721f36dee0b5401222d"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:24:05.320728+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:24:05.320728+00:00",
+      "commit": "ee93622c4546b3c96aaa5fa666feebd2f82b3054",
+      "archive_sha256": "1373e239ae40c6ea37c2690657a288d7e04b06ac9fc7ad7f10fc651600559a1e",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_vyQ"
     },
     {
       "id": "R9",
@@ -255,10 +258,28 @@
       "depends_on": [
         "R8"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "CODING_CONTRACT.md",
+          "sha256": "c9221f2949c96fc39fda48607a511b8dabd122734c23e8a37ff8362fb1ee0473"
+        },
+        {
+          "path": "EQUATION_CODE_MAP.md",
+          "sha256": "e6aaa1cf4a89f84dd78e2fa119c3bc1e8961cc2110b42df925c159d54520e086"
+        },
+        {
+          "path": "theory/DERIVATION.md",
+          "sha256": "40935086d1682e7eec94df391f4bfc2edbbbfc73d85a77f68453dbd59c9d7372"
+        },
+        {
+          "path": "stages/R9.md",
+          "sha256": "5a58b1cc67f1d521c87a0bbe670c76eb2f5822b5658fe437b0e13cd9099429ac"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:25:52.913645+00:00"
     },
     {
       "id": "R10",
