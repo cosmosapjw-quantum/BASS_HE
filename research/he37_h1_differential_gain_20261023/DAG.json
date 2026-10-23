@@ -6,8 +6,8 @@
   "created_utc": "2026-10-23T02:03:43.581918+00:00",
   "status": "in_progress",
   "total_nodes": 20,
-  "completed": 3,
-  "next_node": "R4",
+  "completed": 4,
+  "next_node": "R5",
   "overall_goal_percentage": null,
   "nodes": [
     {
@@ -97,9 +97,12 @@
           "sha256": "48f1581731962cef47bd6a7a5540d14a4f1326ee850095e06390012326e4b203"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T02:15:14.995412+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T02:15:14.995412+00:00",
+      "commit": "479cd618785d27e3607fe8ae1cbecae48da91af2",
+      "archive_sha256": "6e202685a151c85a27ad091e7e0ab1f4c0af7c4b76b97b53a9d9944038324c5b",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_vdA"
     },
     {
       "id": "R4",
@@ -107,10 +110,20 @@
       "depends_on": [
         "R3"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "theory/DERIVATION.md",
+          "sha256": "6930fb76b645144e8baef87cb927554a3dbc75495590f843c607c5715f8eba21"
+        },
+        {
+          "path": "stages/R4.md",
+          "sha256": "0e2af200b640cb659960f34b97dd6c7f64dafb02b8cc44ef71c25492a8e15de3"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T02:15:27.830575+00:00"
     },
     {
       "id": "R5",
