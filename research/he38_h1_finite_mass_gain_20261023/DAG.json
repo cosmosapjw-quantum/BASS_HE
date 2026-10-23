@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 11,
+  "completed": 12,
   "status": "in_progress",
-  "next_node": "C2",
+  "next_node": "C3",
   "nodes": [
     {
       "id": "R1",
@@ -319,9 +319,12 @@
           "sha256": "472a511680429fa76f933244403fd88a160c8fbb4d9af73eac7f9b1b7f07c18e"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:15:28.212512+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:15:28.212512+00:00",
+      "commit": "d6500e0655de2956e871c606af109d79d4f883c6",
+      "archive_sha256": "9737e532ab5a1e04f223bf999edd1f0577d6b707efbd27bbe8579890372a7338",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xiQ"
     },
     {
       "id": "C2",
@@ -329,10 +332,20 @@
       "depends_on": [
         "C1"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "EQUATION_CODE_MAP.md",
+          "sha256": "f0a8b35465b141746040fda56a220b1e5f8c7e4ff10403fcc6a06aaeb9c40593"
+        },
+        {
+          "path": "stages/C2.md",
+          "sha256": "d96d0fdc2217c2f577e28991d9b34b61c12f8a3109019f31c3617f183fcf3618"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:16:23.293657+00:00"
     },
     {
       "id": "C3",
