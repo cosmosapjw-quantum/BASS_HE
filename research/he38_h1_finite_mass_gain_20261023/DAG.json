@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 16,
+  "completed": 17,
   "status": "in_progress",
-  "next_node": "C7",
+  "next_node": "C8",
   "nodes": [
     {
       "id": "R1",
@@ -459,9 +459,12 @@
           "sha256": "f005eb7fbcf0ecc592da587069e2331bba53a43ee6a693195e0d43079ef325ab"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:21:39.487443+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:21:39.487443+00:00",
+      "commit": "cd1e27aa0efd774963552b6dd72b9e48f42d6e0c",
+      "archive_sha256": "f331510e184d8b2cffbad3fc1ca083d90531fde0a219eaaa5cf347864baa3dea",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xvg"
     },
     {
       "id": "C7",
@@ -469,10 +472,32 @@
       "depends_on": [
         "C6"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "evidence/raw_controls/ORACLE_REPORT_KO.md",
+          "sha256": "8963e74888e6784736149a7c83fb3de2b14f4c39f1244e4b08c9a3549cf590b7"
+        },
+        {
+          "path": "evidence/raw_controls/attempts/attempt_001/RESULT.json",
+          "sha256": "0add6a3bb8293a0c2c2a397a322596fe5a8b013b821771dcd2ed2bab403fd85c"
+        },
+        {
+          "path": "evidence/raw_controls/LAUNCH_RECEIPT.json",
+          "sha256": "e3fdf03fc3f770003688343f0738efa3d2b07363d57d0d852af61d9386850c45"
+        },
+        {
+          "path": "components/diagnostic/outputs/METRICS.json",
+          "sha256": "fb6daeb444057fdc2dbac9d5ea3fff35c6f168ec49c5c3a6b9f46d004b13c662"
+        },
+        {
+          "path": "stages/C7.md",
+          "sha256": "210615724e4ac459ec84212c6be7892006ce0680652acc7a3fb91c6d30df2b81"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:22:16.465624+00:00"
     },
     {
       "id": "C8",
