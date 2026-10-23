@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 4,
+  "completed": 5,
   "status": "in_progress",
-  "next_node": "R5",
+  "next_node": "R6",
   "nodes": [
     {
       "id": "R1",
@@ -123,9 +123,12 @@
           "sha256": "1f61291d60c0893ccfc5fd75f1521c880d0bf904de5a29ab91ffc3fb734190cf"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:13:49.023648+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:13:49.023648+00:00",
+      "commit": "99570e233322fbe7483a99f6631c70485b1519f6",
+      "archive_sha256": "5ccd750439f7077d06a36d26ea8f0c64f0bbf2e2b3417619dcebd539b9da06ea",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xcg"
     },
     {
       "id": "R5",
@@ -133,10 +136,28 @@
       "depends_on": [
         "R4"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "theory/DERIVATION.md",
+          "sha256": "eebf5d8c1398d66b226966af9a24a5cab11eeb98eabeba90b2862cba967f67c1"
+        },
+        {
+          "path": "theory/PROVENANCE.json",
+          "sha256": "c370ef0b2439ff99dfcaeda9fb375cccd6abd4b91951d4293399ac884a6cdc77"
+        },
+        {
+          "path": "theory/WOLFRAM_IDENTITIES.json",
+          "sha256": "4d1075e02d2e036e2e4c954fa3f813bfcd47771e3acd1562bdab8822fbe9ba13"
+        },
+        {
+          "path": "stages/R5.md",
+          "sha256": "2c153485f0577e7e387581b75805b8cb984193e44f242b8221b4b6dcc55e90f3"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:14:04.183361+00:00"
     },
     {
       "id": "R6",
