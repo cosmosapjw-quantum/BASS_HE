@@ -4,9 +4,9 @@
   "approval_version": "0.2",
   "unit_id": "HE38-FMG",
   "total_nodes": 20,
-  "completed": 1,
+  "completed": 2,
   "status": "in_progress",
-  "next_node": "R2",
+  "next_node": "R3",
   "nodes": [
     {
       "id": "R1",
@@ -39,9 +39,12 @@
           "sha256": "0259ad6a257fd0727153f17aed48b0bf72f7baab318283f798dbf07d7b6d62cf"
         }
       ],
-      "backup": "prepared",
-      "publication": "prepared",
-      "completed_utc": "2026-10-23T04:07:06.266085+00:00"
+      "backup": "acknowledged",
+      "publication": "published",
+      "completed_utc": "2026-10-23T04:07:06.266085+00:00",
+      "commit": "485e753038f600540a6a5586c41dfb9f1cf8d46b",
+      "archive_sha256": "3e02863d04ff04ad1fc92820ae8faf50a43f8a0ecbfa6bb590cc5192ce81ea8c",
+      "dropbox_id": "id:BSpOijBcT10AAAAAAD_xPQ"
     },
     {
       "id": "R2",
@@ -49,10 +52,32 @@
       "depends_on": [
         "R1"
       ],
-      "status": "pending",
-      "evidence": [],
-      "backup": "pending",
-      "publication": "pending"
+      "status": "complete",
+      "evidence": [
+        {
+          "path": "evidence/intake/INTAKE_REPORT_KO.md",
+          "sha256": "fb508aede688c967857f443b0c5a50a8c14d7d41920a53d4f20e75b2a53781a7"
+        },
+        {
+          "path": "evidence/intake/INTAKE.json",
+          "sha256": "6db1b253f1cac13a337f66fce917657b2d7203366fa4a8a44729ea6c0c1a1653"
+        },
+        {
+          "path": "evidence/intake/SOURCE_QUALIFICATION.json",
+          "sha256": "e63fdb83c54e3b11240ec845b8295dc3e66f36991bd5f4c83ba98fef96090ba8"
+        },
+        {
+          "path": "evidence/intake/RAW_ARCHIVE_ACK.json",
+          "sha256": "47fba6c9035f13b699870c52cebcde4969ba08f8f5dca37065b4573121dcf690"
+        },
+        {
+          "path": "stages/R2.md",
+          "sha256": "886db6532de512a6ea6311a5c55b2e0266ce8762215a9a1109b733ba0af39fca"
+        }
+      ],
+      "backup": "prepared",
+      "publication": "prepared",
+      "completed_utc": "2026-10-23T04:13:16.933314+00:00"
     },
     {
       "id": "R3",
