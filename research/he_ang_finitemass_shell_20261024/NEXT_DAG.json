@@ -1,0 +1,37 @@
+{
+  "unit": "HE-ANG-FINITEMASS-SHELL",
+  "ordered_dependencies": [
+    "latestauthority_HEAD_AGENTS_parallel_backupACK",
+    "reused HE-X1_32fixtures_HE-ANG-CONTRACT_HE38_Hex_DDCS20_CCC_TDCS54_PWBE_TDCS413",
+    "primaryfiniteM_Jacobi_source",
+    "R1-R5_Astra_derivation",
+    "R6_separateAstra_PASS",
+    "R7_Wolfram21_TRUE",
+    "C1-C5_lower_tier_preparation",
+    "B1_dual_ACK",
+    "C6-C8_new_bounded_children",
+    "C9_separateAstra",
+    "scienceS_centralC_B2",
+    "deliveryD_centralE_B3",
+    "nextsourceconsistent_joint_amplitude_or_payload_binding"
+  ],
+  "completed_units_reused": [
+    "HE-X1",
+    "HE-ANG-CONTRACT",
+    "HE38",
+    "Hex intake",
+    "HE-ANG-DDCS20-WINDOW",
+    "HE-ANG-CCC-SHELL",
+    "HE-ANG-TDCS54-ANCHORS",
+    "HE-ANG-PWBE-SPIN-AZIMUTH",
+    "HE-ANG-TDCS413-DIAGONAL"
+  ],
+  "first_global_open_input": "HE-ANG-SOURCE-PAYLOAD",
+  "new_substrate_target": "finite-mass support/frame/recoil kinematics",
+  "full_provider": "SOURCE_INPUT_PENDING",
+  "next_candidate": "Attaourti NRCBA direct Nordsieck overlap derivation withEq18discrepancy/normalization/exchangebounds; doesnotbyitselfsatisfyfullprovider",
+  "central_node_count_observed": 40,
+  "other_nodes_preserved": 39,
+  "parallelowner_observations": "evidence/survey/SURVEY_REPORT_KO.md",
+  "no_budget_reset": true
+}
