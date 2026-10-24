@@ -1,0 +1,760 @@
+{
+  "unit_id": "HE-ANG-DDCS20-WINDOW",
+  "status": "SCIENCE_PASS_SCOPED_DELIVERY_IN_PROGRESS",
+  "rows": [
+    {
+      "stage": "R1",
+      "DAG_predecessors": [],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "evidence/survey/PREPARATION_RECEIPT.json",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "evidence/preflight/PREFLIGHT.json",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "theory only per root decision",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "R2",
+      "DAG_predecessors": [
+        "R1"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "SURVEY_AND_SELECTION_KO.md",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "source/SOURCE_SEARCH_KO.md",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "theory only per root decision",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "R3",
+      "DAG_predecessors": [
+        "R2"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "source/Childers2004_TableIV_source_transcript.json",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "source/TABLE_IV_CONVENTION_AUDIT_KO.md",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "theory only per root decision",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "R4",
+      "DAG_predecessors": [
+        "R3"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "THEORY_KO.md",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "CONTRACT.json",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "theory only per root decision",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "R5",
+      "DAG_predecessors": [
+        "R4"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "THEORY_KO.md",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "theory only per root decision",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "R6",
+      "DAG_predecessors": [
+        "R5"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "evidence/review/R6_REVIEW.json",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "evidence/review/R6_REVIEW_KO.md",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "theory only per root decision",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "R7",
+      "DAG_predecessors": [
+        "R6"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "evidence/wolfram/R7_RAW.json",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "theory only per root decision",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "R8",
+      "DAG_predecessors": [
+        "R7"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "THEORY_DECISION_KO.md",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "theory only per root decision",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "R9",
+      "DAG_predecessors": [
+        "R8"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "THEORY_DECISION_KO.md",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "theory only per root decision",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "R10",
+      "DAG_predecessors": [
+        "R9"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "THEORY_DECISION_KO.md",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "CONTRACT.json",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "theory only per root decision",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "C1",
+      "DAG_predecessors": [
+        "R10"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "CONTRACT.json",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "code/README_KO.md",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "C2",
+      "DAG_predecessors": [
+        "C1"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "code/ddcs_window.py",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "C3",
+      "DAG_predecessors": [
+        "C2"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "code/test_ddcs_window.py",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "C4",
+      "DAG_predecessors": [
+        "C3"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "code/run_bounded.py",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "C5",
+      "DAG_predecessors": [
+        "C4"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "code/run_analysis.py",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "code/plot_results.py",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "code/README_KO.md",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
+      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        },
+        "Drive": {
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
+          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
+          "metadata_readback_bytes": 106123,
+          "independent_remote_sha256": null
+        }
+      }
+    },
+    {
+      "stage": "C6",
+      "DAG_predecessors": [
+        "C5",
+        "R6"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "results/tests.json",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "evidence/execution/01_tests.FINISH.json",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
+      "checkpoint": "PENDING_NEXT_CLOSED_CHECKPOINT",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "PENDING_PROVIDER",
+          "ack": null
+        },
+        "Drive": {
+          "status": "PENDING_PROVIDER",
+          "ack": null
+        }
+      }
+    },
+    {
+      "stage": "C7",
+      "DAG_predecessors": [
+        "C6"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "results/moments.json",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "results/validation.json",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
+      "checkpoint": "PENDING_NEXT_CLOSED_CHECKPOINT",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "PENDING_PROVIDER",
+          "ack": null
+        },
+        "Drive": {
+          "status": "PENDING_PROVIDER",
+          "ack": null
+        }
+      }
+    },
+    {
+      "stage": "C8",
+      "DAG_predecessors": [
+        "C7"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "figures/ddcs20_window.png",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "figures/ddcs20_window.svg",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "evidence/execution/RESOURCE_LEDGER.json",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
+      "checkpoint": "PENDING_NEXT_CLOSED_CHECKPOINT",
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "PENDING_PROVIDER",
+          "ack": null
+        },
+        "Drive": {
+          "status": "PENDING_PROVIDER",
+          "ack": null
+        }
+      }
+    },
+    {
+      "stage": "C9",
+      "DAG_predecessors": [
+        "C8"
+      ],
+      "status": "COMPLETE_SCOPED",
+      "evidence": [
+        {
+          "path": "evidence/review/C9_REVIEW.json",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "evidence/review/C9_REVIEW_KO.md",
+          "exists_at_checkpoint": true
+        }
+      ],
+      "completion": true,
+      "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
+      "checkpoint": null,
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "PENDING_PROVIDER",
+          "ack": null
+        },
+        "Drive": {
+          "status": "PENDING_PROVIDER",
+          "ack": null
+        }
+      }
+    },
+    {
+      "stage": "C10",
+      "DAG_predecessors": [
+        "C9"
+      ],
+      "status": "DELIVERY_IN_PROGRESS",
+      "evidence": [
+        {
+          "path": "RESULTS_KO.md",
+          "exists_at_checkpoint": false
+        },
+        {
+          "path": "HANDOFF_RESEARCH_KO.md",
+          "exists_at_checkpoint": false
+        }
+      ],
+      "completion": false,
+      "completion_scope": "science accepted; publication and final provider delivery pending",
+      "checkpoint": null,
+      "publication": {
+        "status": "PENDING_C9",
+        "commit": null
+      },
+      "backup": {
+        "Dropbox": {
+          "status": "PENDING_PROVIDER",
+          "ack": null
+        },
+        "Drive": {
+          "status": "PENDING_PROVIDER",
+          "ack": null
+        }
+      }
+    }
+  ],
+  "claim_admission": "PASS_SCOPED",
+  "parent_HE_ANG_state": "SOURCE_INPUT_PENDING",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning_effort": "high",
+  "observed_runtime_model": "not independently observable"
+}
