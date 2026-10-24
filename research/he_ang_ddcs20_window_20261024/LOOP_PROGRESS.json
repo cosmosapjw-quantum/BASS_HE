@@ -1,6 +1,6 @@
 {
   "unit_id": "HE-ANG-DDCS20-WINDOW",
-  "status": "SCIENCE_PASS_SCOPED_DELIVERY_IN_PROGRESS",
+  "status": "ALL_20_STAGES_COMPLETE_SCOPED_FINAL_DELIVERY_CAPSULE_PENDING",
   "rows": [
     {
       "stage": "R1",
@@ -18,24 +18,29 @@
       ],
       "completion": true,
       "completion_scope": "theory only per root decision",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -58,24 +63,29 @@
       ],
       "completion": true,
       "completion_scope": "theory only per root decision",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -98,24 +108,29 @@
       ],
       "completion": true,
       "completion_scope": "theory only per root decision",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -138,24 +153,29 @@
       ],
       "completion": true,
       "completion_scope": "theory only per root decision",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -174,24 +194,29 @@
       ],
       "completion": true,
       "completion_scope": "theory only per root decision",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -214,24 +239,29 @@
       ],
       "completion": true,
       "completion_scope": "theory only per root decision",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -250,24 +280,29 @@
       ],
       "completion": true,
       "completion_scope": "theory only per root decision",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -286,24 +321,29 @@
       ],
       "completion": true,
       "completion_scope": "theory only per root decision",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -322,24 +362,29 @@
       ],
       "completion": true,
       "completion_scope": "theory only per root decision",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -362,24 +407,29 @@
       ],
       "completion": true,
       "completion_scope": "theory only per root decision",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -402,24 +452,29 @@
       ],
       "completion": true,
       "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -438,24 +493,29 @@
       ],
       "completion": true,
       "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -474,24 +534,29 @@
       ],
       "completion": true,
       "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -510,24 +575,29 @@
       ],
       "completion": true,
       "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -554,24 +624,29 @@
       ],
       "completion": true,
       "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
-      "checkpoint": "HEANG_DDCS20_R1_R10_C1_C5_20261024",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "id:BSpOijBcT10AAAAAAD_8Lw",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         },
         "Drive": {
           "status": "CONFIRMED_METADATA_READBACK",
-          "ack": "delivery/CHECKPOINT1_BACKUP_ACK.json",
-          "id": "1byop8er71pEUZIbf2nuDbCCmPyngO13n",
-          "metadata_readback_bytes": 106123,
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
           "independent_remote_sha256": null
         }
       }
@@ -595,19 +670,30 @@
       ],
       "completion": true,
       "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
-      "checkpoint": "PENDING_NEXT_CLOSED_CHECKPOINT",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
-          "status": "PENDING_PROVIDER",
-          "ack": null
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
+          "independent_remote_sha256": null
         },
         "Drive": {
-          "status": "PENDING_PROVIDER",
-          "ack": null
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
+          "independent_remote_sha256": null
         }
       }
     },
@@ -629,19 +715,30 @@
       ],
       "completion": true,
       "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
-      "checkpoint": "PENDING_NEXT_CLOSED_CHECKPOINT",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
-          "status": "PENDING_PROVIDER",
-          "ack": null
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
+          "independent_remote_sha256": null
         },
         "Drive": {
-          "status": "PENDING_PROVIDER",
-          "ack": null
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
+          "independent_remote_sha256": null
         }
       }
     },
@@ -667,19 +764,30 @@
       ],
       "completion": true,
       "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
-      "checkpoint": "PENDING_NEXT_CLOSED_CHECKPOINT",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
-          "status": "PENDING_PROVIDER",
-          "ack": null
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
+          "independent_remote_sha256": null
         },
         "Drive": {
-          "status": "PENDING_PROVIDER",
-          "ack": null
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
+          "independent_remote_sha256": null
         }
       }
     },
@@ -701,19 +809,30 @@
       ],
       "completion": true,
       "completion_scope": "root accepted independent C9 PASS_SCOPED; declared window only",
-      "checkpoint": null,
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
-          "status": "PENDING_PROVIDER",
-          "ack": null
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
+          "independent_remote_sha256": null
         },
         "Drive": {
-          "status": "PENDING_PROVIDER",
-          "ack": null
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
+          "independent_remote_sha256": null
         }
       }
     },
@@ -722,7 +841,7 @@
       "DAG_predecessors": [
         "C9"
       ],
-      "status": "DELIVERY_IN_PROGRESS",
+      "status": "COMPLETE_SCOPED",
       "evidence": [
         {
           "path": "RESULTS_KO.md",
@@ -731,24 +850,48 @@
         {
           "path": "HANDOFF_RESEARCH_KO.md",
           "exists_at_checkpoint": false
+        },
+        {
+          "path": "delivery/PUBLICATION.json",
+          "exists_at_checkpoint": true
+        },
+        {
+          "path": "delivery/FINAL_BACKUP_ACK.json",
+          "exists_at_checkpoint": true
         }
       ],
-      "completion": false,
-      "completion_scope": "science accepted; publication and final provider delivery pending",
-      "checkpoint": null,
+      "completion": true,
+      "completion_scope": "science S and central C published; final S+C archive dual-provider ACK confirmed; later delivery capsule pending actual D/E",
+      "checkpoint": "HEANG_DDCS20_20261024_d8bae9f7_6cf7c537",
       "publication": {
-        "status": "PENDING_C9",
-        "commit": null
+        "status": "PUBLISHED_SCOPED",
+        "science_commit": "d8bae9f7e24ad3494e399f7ab46c4167a5623d48",
+        "central_observation_commit": "6cf7c53757ce4049046a3463c57f36bece555830",
+        "pull_request": 94,
+        "draft": true,
+        "no_merge": true,
+        "stage_delivery_record": "current file commit; later external receipt records actual delivery SHA"
       },
       "backup": {
         "Dropbox": {
-          "status": "PENDING_PROVIDER",
-          "ack": null
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "id:BSpOijBcT10AAAAAAD_8YA",
+          "metadata_readback_bytes": 441890,
+          "independent_remote_sha256": null
         },
         "Drive": {
-          "status": "PENDING_PROVIDER",
-          "ack": null
+          "status": "CONFIRMED_METADATA_READBACK",
+          "ack": "delivery/FINAL_BACKUP_ACK.json",
+          "id": "1myTzgvqhm3Dfz9mUH805ASoRNnJhUW64",
+          "metadata_readback_bytes": 441890,
+          "independent_remote_sha256": null
         }
+      },
+      "delivery_commit": {
+        "identity_kind": "commit containing LOOP_PROGRESS and FINAL_BACKUP_ACK/current file",
+        "sha_in_this_file": null,
+        "later_external_receipt": "actual final delivery head recorded after publication"
       }
     }
   ],
@@ -756,5 +899,6 @@
   "parent_HE_ANG_state": "SOURCE_INPUT_PENDING",
   "requested_model": "gpt-6.1-sol",
   "requested_reasoning_effort": "high",
-  "observed_runtime_model": "not independently observable"
+  "observed_runtime_model": "not independently observable",
+  "postdelivery_capsule": "PENDING_ACTUAL_D_E"
 }
