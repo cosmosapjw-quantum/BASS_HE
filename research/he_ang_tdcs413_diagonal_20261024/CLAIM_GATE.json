@@ -102,13 +102,11 @@
     "prior_ledgers_reset_or_transferred": false
   },
   "stage_count": {
-    "complete": 18,
-    "pending": [
-      "R10",
-      "C10"
-    ],
+    "assessed": 20,
+    "complete": 20,
+    "pending": [],
     "total": 20,
-    "scope": "Science snapshot; actual publication and backup delivery close R10/C10 later"
+    "scope": "Defined unit delivery metadata in CURRENT_FILE_COMMIT; E/B3 final external receipts still pending actual"
   },
   "parent_HE_ANG": "SOURCE_INPUT_PENDING",
   "model_status": "DERIVED_PWBE_MODEL_INPUT_AVAILABLE_WITH_FINITE_SOURCE_BENCHMARK",
@@ -137,5 +135,13 @@
     "reviews/C9_REPORT.json",
     "evidence/execution/RESOURCE_LEDGER.json",
     "RESULTS_KO.md"
-  ]
+  ],
+  "delivery": {
+    "S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+    "C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+    "D": "CURRENT_FILE_COMMIT",
+    "B2": "ACTUAL_DUAL_ACK: delivery/B2_BACKUP_ACK.json",
+    "E_B3": "PENDING_ACTUAL_PR98_EXTERNAL_RECEIPT",
+    "C10": "COMPLETE_SCOPED_CURRENT_FILE_COMMIT_DELIVERY_METADATA"
+  }
 }

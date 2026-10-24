@@ -1,7 +1,7 @@
 {
   "unit": "HE-ANG-TDCS413-DIAGONAL",
   "workflow": "user-provided physmath1.0.0",
-  "state": "SCIENCE_ADMITTED_18_COMPLETE_R10_C10_DELIVERY_PENDING",
+  "state": "DEFINED_UNIT_20_STAGE_DELIVERY_CURRENT_FILE_COMMIT; E_B3_EXTERNAL_RECEIPTS_PENDING_ACTUAL",
   "stages": [
     {
       "id": "R1",
@@ -17,9 +17,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -38,9 +40,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -57,9 +61,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -75,9 +81,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -93,9 +101,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -111,9 +121,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -130,9 +142,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -149,9 +163,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -169,28 +185,35 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
       "id": "R10",
       "label": "Closeout and resume",
-      "status": "pending",
+      "status": "complete",
       "evidence": [
         "HANDOFF_RESEARCH_KO.md",
         "delivery/PUBLICATION.json",
-        "delivery/B1_BACKUP_ACK.json"
+        "delivery/S_PUBLICATION_RECEIPT.json",
+        "delivery/C_PUBLICATION_RECEIPT.json",
+        "delivery/B2_BACKUP_ACK.json",
+        "delivery/FINAL_BACKUP_ACK.json"
       ],
-      "note": "Scoped handoff is prepared. Actual S/C publication, B2 and D/E/B3 delivery close this stage later; no future ACK is claimed.",
+      "note": "Defined unit closeout is delivered in CURRENT_FILE_COMMIT after actual S/C publication and B2 dual ACK. E and B3 actual identities remain pending external PR98 final receipt; no future ACK claimed.",
       "checkpoint": {
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -207,9 +230,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -226,9 +251,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -246,9 +273,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -266,9 +295,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -288,9 +319,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -308,9 +341,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -327,9 +362,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -350,9 +387,11 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
@@ -369,35 +408,47 @@
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     },
     {
       "id": "C10",
       "label": "Decision and delivery",
-      "status": "pending",
+      "status": "complete",
       "evidence": [
+        "HANDOFF_RESEARCH_KO.md",
         "delivery/PUBLICATION.json",
-        "delivery/B1_BACKUP_ACK.json",
-        "HANDOFF_RESEARCH_KO.md"
+        "delivery/S_PUBLICATION_RECEIPT.json",
+        "delivery/C_PUBLICATION_RECEIPT.json",
+        "delivery/B2_BACKUP_ACK.json",
+        "delivery/FINAL_BACKUP_ACK.json"
       ],
-      "note": "Scoped handoff is prepared. Actual S/C publication, B2 and D/E/B3 delivery close this stage later; no future ACK is claimed.",
+      "note": "Defined unit closeout is delivered in CURRENT_FILE_COMMIT after actual S/C publication and B2 dual ACK. E and B3 actual identities remain pending external PR98 final receipt; no future ACK claimed.",
       "checkpoint": {
         "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Source/theory/code and prior C8 preparation; later results and repair are outside B1",
-        "Science_S": "PENDING_ACTUAL_PUBLICATION",
-        "Central_C": "PENDING_ACTUAL_PUBLICATION",
-        "next_backup": "B2_EXACT_S_C_PENDING_ACTUAL; includes distinct reused pwbe.py and mpmath wheel dependencies"
+        "Science_S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+        "Central_C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+        "next_backup": "B3 actual D/E overlay pending external PR98 final receipt",
+        "B2": "ACTUAL_DUAL_ACK_AND_SEPARATE_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json"
       }
     }
   ],
   "scientific_execution": "FOUR_ACTUAL_CHILDREN_PASS; NO_FURTHER_EXECUTION_AUTHORIZED",
   "code_import_for_experiment": "COMPLETED_UNDER_EXPLICIT_LOCAL_GO",
-  "publication": "PENDING_ACTUAL_S_C",
-  "backup": "B1_ACTUAL_DUAL_ACK; B2_S_C_PENDING_ACTUAL",
+  "publication": {
+    "S": "de9c9ee9d9406a531b0c360f29004181bf7edc98",
+    "C": "374c355ea2239ad8e924a23e732126a0e2ea6ff0",
+    "D": "CURRENT_FILE_COMMIT",
+    "E": "PENDING_ACTUAL"
+  },
+  "backup": "B1_AND_B2_ACTUAL_DUAL_ACK; B3_PENDING_ACTUAL_PR98_EXTERNAL_RECEIPT",
   "budget": [
     10,
     40
@@ -416,11 +467,9 @@
   "scientific_admission": "PASS_SCOPED: reviews/ROOT_ADMISSION.json",
   "stage_count": {
     "assessed": 20,
-    "complete": 18,
-    "pending": [
-      "R10",
-      "C10"
-    ],
-    "total": 20
+    "complete": 20,
+    "pending": [],
+    "total": 20,
+    "scope": "Defined unit delivery metadata in CURRENT_FILE_COMMIT; E/B3 final external receipts still pending actual"
   }
 }
