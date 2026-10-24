@@ -48,3 +48,9 @@ B1은 실제 dual upload와 별도 metadata readback을 완료했다. 210830 byt
 Parent HE-ANG은 SOURCE_INPUT_PENDING, physical_provider_admitted=false를 유지한다. Analytic PWBE joint model input은 확보했으며 남은 의무는 plane-wave 물리 정확도/calibration, finite-mass recoil, consumer admission 및 required support/uncertainty다. Conditional law의 finite 실행 근거는 실제 C9/root의 scoped admission을 받았다. Full-angle/energy total sigma 적분은 수행하지 않았다.
 
 다음은 root의 실제 Science S/C 게시, exact S/C B2 ACK와 후속 D/E/B3 전달이다. 현재 추가 renderer나 child는 승인되지 않았다. Root가 expected-SHA/nonforce additive draft 게시와 실제 checkpoint 전달을 수행하며 merge/activation하지 않는다. C9-NB-01, C23E, 다른 owner의 OPEN/scoped 상태, REC PR225의 별도 unmerged observation, PHYS86 실제1099/1099, PHYS85 incomplete raw, PHYS84 WAIT, ANGTHERM02 READ_ONLY를 보존한다.
+
+## 현재 additive C8 closeout — 새 prospective continuation 이후
+
+Root의 새 명시적 user-loop authorization으로 old NO_FIFTH snapshot 이후 invocation-count 정책만 한정 갱신했다. 새 예산/reserve 없이 같은8CPU/30wall에서05 saved-output-only render(CPU3/wall10cap)를1회 실행했다. Kernel/source/tests/analysis/Wolfram 재실행은 없다. 실제05PASS CPU1.3375929999999998/wall1.3716336839988799, cumulative5attemptsCPU3.304038/wall3.4507949489989187이며 originalreserve1used0remaining을 유지한다.
+
+독립 C9 delta와 root는 실제 PNG/SVG 및3panel시각확인을 PASS로 채택해 C8-PLOT-01을 닫았다. 왼쪽 peak/legend 공간 공유는 해석가능한 cosmetic observation으로 남겼고 추가 render를 요청하지 않았다. 현재 정의된 PWBE unit은 **20/20 scoped complete**이며 fullphysicalprovider=false/HEANGSOURCE_INPUT_PENDING/전체물리goalpercentnull을 유지한다. PR97 S/D/E 및 B1/B2/B3의 과거19complete/C8partial는 역사 기록으로 그대로다. 현재 closeout은 다음새branch의additive oldC8delta로 게시 대기하며 PR97을 작업자가 수정하지 않는다. 실제 근거: reviews/C9_C8_CONTINUATION_REPORT.json 및 ROOT_ADMISSION_C8_ADDENDUM.json.

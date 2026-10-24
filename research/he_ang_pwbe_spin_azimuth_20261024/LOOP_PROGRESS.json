@@ -1,7 +1,7 @@
 {
   "workflow_version": "1.0.0 user-provided",
   "unit_id": "HE-ANG-PWBE-SPIN-AZIMUTH",
-  "state": "DELIVERY_METADATA_CURRENT_FILE_COMMIT_19_COMPLETE_C8_PARTIAL",
+  "state": "PWBE_20SCOPED_COMPLETE_AFTER_EXPLICIT_C8_CONTINUATION",
   "R1_R5_evidence": "ROOT_AUTHORED_AND_R6_PASS; theory and contract bytes unchanged",
   "stages": [
     {
@@ -494,15 +494,16 @@
     {
       "id": "C8",
       "label": "수치·재현성",
-      "status": "in_progress",
+      "status": "complete",
       "evidence": [
-        "results/AZIMUTH_ANALYSIS.json",
-        "evidence/execution/RESOURCE_LEDGER.json",
-        "evidence/execution/04_03_plot/stderr.txt",
-        "reviews/C8-PLOT-01_BEFORE/STATIC_CORRECTION.json"
+        "evidence/execution/05_03_plot/FINISH.json",
+        "results/figures/PWBE_AZIMUTH.png",
+        "results/figures/PWBE_AZIMUTH.svg",
+        "reviews/C9_C8_CONTINUATION_REPORT.json",
+        "reviews/ROOT_ADMISSION_C8_ADDENDUM.json"
       ],
-      "note": "Finite numerical evidence/versions/cost complete; renderer failed Mathtext. Root authorizes three static label corrections only; NOT_RERENDERED, figure/render/visualreview OPEN. No fifthchild.",
-      "assessment": "PARTIAL",
+      "note": "Actual sole saved-output-only continuation and independent visual PASS; original4attempts/reserveunchanged, no further render.",
+      "assessment": "PASS_SCOPED",
       "publication_state": {
         "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
         "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
@@ -596,7 +597,7 @@
   "budget": "ACTUAL4CHILDREN_CPU1.966445_WALL2.079161265000039_WITHIN8_30; RESERVE1USED0REMAINING; END_TO_END_CPU_UNKNOWN",
   "physical_parent": "HE-ANG SOURCE_INPUT_PENDING",
   "scientific_admission": "PASS_SCOPED_SCIENCE_PRESENTATION_OPEN: reviews/ROOT_ADMISSION.json",
-  "science_runs": 4,
+  "science_runs": 5,
   "remote_mutations": 0,
   "remaining_physical_obligations": [
     "physical accuracy/calibration of plane-wave model",
@@ -605,9 +606,8 @@
   ],
   "child_contribution": "DERIVED_PWBE_MODEL_INPUT_AVAILABLE; continuous pointwise joint density and conditional phi law scoped verified",
   "actual_child_cost": {
-    "cpu_s": 1.966445,
-    "wall_s": 2.079161265000039,
-    "cap_overshoot": false
+    "cpu_s": 3.304038,
+    "wall_s": 3.4507949489989187
   },
   "repair_reserve_used": 1,
   "failures": [
@@ -646,16 +646,15 @@
     }
   ],
   "numerical_evidence": "NUMERICALLY_CHECKED_SCOPED:6finitegeometries; unchanged1e-10criteria",
-  "presentation": "STATIC_SYNTAX_CORRECTED_NOT_RERENDERED; FIGURE_AND_VISUAL_REVIEW_OPEN",
+  "presentation": "ACTUAL_PNG_SVG_AND_INDEPENDENT_VISUAL_PASS",
   "stages_assessed": 20,
   "stage_count": {
     "assessed": 20,
-    "complete": 19,
-    "partial": [
-      "C8"
-    ],
+    "complete": 20,
+    "partial": [],
     "pending": [],
-    "twenty_of_twenty": false
+    "twenty_of_twenty": true,
+    "scope": "PWBE definedunit only"
   },
   "post_S_parallel_owner": {
     "head": "79c042a15e7e29b894dadc32188e286dade73aad",
@@ -666,5 +665,19 @@
     "pressure": "ADMITTED_SCOPED_FINITE_POSITIVE_MEASURE_PRESSURE; exact8/9..1; ownbudgetnotHE",
     "stock": "STATIC_PREPARED_NUMERICAL_NOT_RUN_NOT_RELEASED;physicalstockfalseL4false",
     "E_expected_base": "79c042a15e7e29b894dadc32188e286dade73aad"
+  },
+  "C8_current_closeout": {
+    "status": "COMPLETE_SCOPED_ACTUAL_RENDER_VISUAL_PASS",
+    "review": "reviews/C9_C8_CONTINUATION_REPORT.json",
+    "root": "reviews/ROOT_ADMISSION_C8_ADDENDUM.json",
+    "historical_PR97_D_E": "19complete/C8partial preserved in original commits/archives",
+    "current_additive_stage_count": "20of20scoped",
+    "actual_children": 5,
+    "cumulative_cpu_s": 3.304038,
+    "cumulative_wall_s": 3.4507949489989187,
+    "original_reserve_used": 1,
+    "remaining": 0,
+    "newunit_budget_charged": false,
+    "publication": "PENDING_NEWBRANCH_ADDITIVE_C8_CLOSEOUT"
   }
 }

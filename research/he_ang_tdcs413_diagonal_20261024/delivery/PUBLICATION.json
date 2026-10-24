@@ -1,0 +1,35 @@
+{
+  "unit": "HE-ANG-TDCS413-DIAGONAL",
+  "status": "AUTHORIZED_S_PACKET_PREPARATION; NOT_YET_PUBLISHED",
+  "base_PR": 97,
+  "base_head": "e3b2f786c7597ffa65aa6439194e7cbcae6103e7",
+  "base_tree": "f16961ffba179a4daa211ffea846d257448a9fb5",
+  "branch": "research/he-ang-tdcs413-diagonal-20261024",
+  "PR_base": "research/he-ang-pwbe-spin-azimuth-20261024",
+  "new_PR": "PENDING_ACTUAL_CREATION",
+  "Science_S": "PENDING_ACTUAL_PUBLICATION",
+  "Central_C": "PENDING_ACTUAL_PUBLICATION",
+  "Delivery_D": "PENDING_ACTUAL",
+  "Central_E": "PENDING_ACTUAL",
+  "B1": "ACTUAL_DUAL_ACK: delivery/B1_BACKUP_ACK.json",
+  "B2": "PENDING_ACTUAL_EXACT_S_C_PLUS_REUSED_DEPENDENCIES",
+  "B3": "PENDING_ACTUAL_D_E_OVERLAY",
+  "stage_count": {
+    "assessed": 20,
+    "complete": 18,
+    "pending": [
+      "R10",
+      "C10"
+    ]
+  },
+  "scope": "New unit plus admitted old PWBE C8 additive changes; no PR97 mutation by worker",
+  "latest_central_observation": "85f9ba1350c076e8df01f5858342df74c3574215; root must refresh before publication",
+  "source_private_scope": "B1 holds metadata-only discovery summaries and original raw hashes; full source excerpts/PDF/page images excluded",
+  "B2_dependencies": "Exact unchanged old pwbe.py SHA9485f9... and pinned mpmath1.3.0 wheel must be separate reused dependency members, not new Git diff",
+  "expected_sha": true,
+  "force": false,
+  "draft": true,
+  "merge": false,
+  "activation": false,
+  "own_S_SHA": "No self-SHA asserted before actual publication"
+}
