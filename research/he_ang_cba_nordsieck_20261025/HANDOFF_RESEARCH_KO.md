@@ -1,3 +1,13 @@
+# 전달 D — 실제 S/C/B2를 연결한 정의된 단위20/20
+
+Actual S `a891cd4b9a3548e66db669b9eb472fea88a3b78b`, tree `ee6768ab8a934cb9b47819a24cf5498e4f8b8ece`; C `7caca70d94d03732bff5e7adf2f9aa5cf59310ec`, tree `ebeaf6623dfd0077adae43933f8494056e8974c8`. Draft PR100 <https://github.com/cosmosapjw-quantum/BASS_HE/pull/100>, merge=false/activation=false. D는 CURRENT_FILE_COMMIT이며 R10/C10 COMPLETE_AT_DELIVERY_COMMIT, 정의된 단위20/20 scoped다. 전체 HE-ANG SOURCE_INPUT_PENDING/global completion=null. 실제 E/B3의 external PR100tail은 아직 pending이다.
+
+Actual B2 `HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz`, 2054451bytes/142members; uploaded-byte SHA256 `a3525a7d739695f2755de50f761524b98190b4d7b4dbcb67392e9cd6da4c2911`; Drive `10VI1GXobkRS-r1dWrxb-_nSHjg9phvRV`, Dropbox `id:BSpOijBcT10AAAAAAD_9tg`. Exact local member verification and both providers' actual upload plus separate metadata-size ACK are confirmed. Independent remote wholeGET/SHA256 is not asserted. Contents: exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts. Packaging CPU 0.161368652/wall 0.16143304800061742s is operational cost separate from science; other remote/provider IO remains UNKNOWN_NOT_ZERO.
+
+## Immutable S의 이전 인계와 이후 D보충
+
+다음 이전 인계의 새S/C/PR/B2 pending은 그 S작성시점의 역사적상태이며 현재actual은 위와같다. 과학적범위·식·수치·원장·OPEN은 그대로재사용한다.
+
 # 다음 대화에 복사할 HE-ANG-CBA-NORDSIECK 인계
 
 physmath-research-loop builtin1.0.0, Astra 계약→lower-tier 구현/실행→별도 Astra R6/C9 정책을 유지한다. 정의된 단위 하나 뒤 중단하며 새 loop나 unused reserve 실행을 자동 승인하지 않는다.
@@ -66,3 +76,21 @@ B1 `HEANG_CBA_NORDSIECK_B1_PREEXECUTION_20261025.tar.gz`, 792680bytes/77members,
 Parent PR99 B1/B2/B3 실제 identities/ACK와 oldcosts는 evidence/survey/PR99_CONSTANTS.json 및 INHERITED_LEDGER_REFERENCES.json을 읽는다. Parent B2복원 뒤 B3 exactD/Eoverlay 순서와 원격fullGET검증범위를 유지한다. 새 B1복원 뒤 actual S/C+B2, D/E+B3를 순서대로 적용하며 각 archive manifest/providerACK의 실제 범위를 구분한다. 원전PDF/fulltext/page images/rawsourceprovider bodies/temporaryURLs는 제외하고 identity/선택식/문헌관계를 보존한다.
 
 후속 전달은 reviewedS→freshcanonicalC→exactS/C B2dualACK→D20/20→freshE→exactD/E B3dualACK→actualPRbody/copyhandoff다. S는18/20, D에서R10/C10 COMPLETE_AT_DELIVERY_COMMIT이며 B3실제tail은 externalPRreceipt로만닫는다. 현재 unusedreserve1은 추가science권한이 아니다. HE-ANG SOURCE_INPUT_PENDING와 C9-NB-01/C23E/모든 otherownerOPEN, 실패·unknown·비양도budget을 유지한다. 다음새과학단위는 이 전달 완료 뒤 사용자의 별도 진행 범위에서 계약한다.
+
+
+## 실제 S/C 및 전달 D 보충
+
+앞의 과학 결과/18/20 표는 immutable science S의 당시 상태다. Actual S `a891cd4b9a3548e66db669b9eb472fea88a3b78b`, tree `ee6768ab8a934cb9b47819a24cf5498e4f8b8ece`; actual C `7caca70d94d03732bff5e7adf2f9aa5cf59310ec`, tree `ebeaf6623dfd0077adae43933f8494056e8974c8`이며 Draft PR100 <https://github.com/cosmosapjw-quantum/BASS_HE/pull/100>는 unmerged/activation=false다. C는 fresh b0f02efc canonical base의 모든 other39nodes/40contracts/7authorities/17edges와 oldHE를 그대로 보존하고 own cba_nordsieck_subunit만 추가했다.
+
+S0 `86fc9206d885633b59745fb80dcc22fa163bfd89`의 CSV rawCRLF→LF publication BYTE_IDENTITY_MISMATCH를 그대로 남겼다. Successor S는 rawCSV 하나만 교정했으며 root가87/87 remote blobs/size와 다른88research trees/14rootentries 보존을 확인했다. Original S87stage/과학 code/theory/rawresults/reviews는 변하지 않았다. unit_delivery textpacket의 read_text를 read_bytes().decode로 교정했다. 과학 실패/재실행/추가C9/reserve소비는0이며 publication/provider cost는 UNKNOWN_NOT_ZERO다.
+
+D는 실제 S/C와 B2dual actualACK가 확인된 뒤 작성되는 전달 commit이다. D자기SHA는 CURRENT_FILE_COMMIT이며 정의된 단위만20/20 scoped, R10/C10 COMPLETE_AT_DELIVERY_COMMIT이다. 실제 E/B3와 final externalPR100receipt는 대기한다. 자기 미래 SHA/ACK를 소급 삽입하지 않는다. B1은 preexecution-only, B2는 exactS/C와 실제 포장 manifest scope, D/E overlay B3는 그 실제 생성/업로드 이후 범위로 구분한다. Local archive/member verification 및 dual provider upload/metadata ACK와 독립 remote wholeGET/SHA 검증을 구분한다.
+
+Post-S canonical change에서 CR neutral FP finite-chain과 PHYS89 covariance source diagnosis/typed finite interface는 각owner의 conditional/scoped 결과로 보존됐다. PHYS89 physicalparent PARTIAL_INPUT_DEPENDENCIES, displayed covariance stochastic admission DISALLOWED, defect cause NOT_ESTABLISHED, BASS nuclear consumer NOT_BOUND, HH_R10OFF/production NOT_ISSUED다. 이 HE worker는 owner의 보고된 wholeGET/CRC/restore를 새로 수행하지 않았다. CR fullN4/N5PARTIAL/OPEN/N6N7gated와 Driveunknown, REC227 별도관측/H5 및 C23E/C9-NB-01/allownerOPEN/costs/failures/unknown은 유지한다.
+
+추가 운영 비용: S local assembly CPU0.04895616800000001/wall0.050382883004203904s, C assembly CPU0.050501431/wall0.05072827399999369s. B2 포장 실제 비용/ACK는 별도 root file의 실제 값을 연결한다. Scientific3children CPU4.987974/wall5.122489414992742와 Wolfram/sourcecall/priorledger 숫자를 바꾸거나 합산 총cap으로 승격하지 않는다. 전체 미측정 host/model/provider/IO/prelaunch 비용은 UNKNOWN_NOT_ZERO다.
+
+HE-ANG SOURCE_INPUT_PENDING, physical provider/event_sigma/physical recoil/HE-X1 empirical correction=false, global completion=null을 유지한다. 현재한단위의 actualE/B3/finalPRhandoff를 닫은 뒤 중단하며 unusedreserve/newloop/merge/activation은 실행하지 않는다.
+
+
+B2 actual receipt details: Actual B2 `HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz`, 2054451bytes/142members; uploaded-byte SHA256 `a3525a7d739695f2755de50f761524b98190b4d7b4dbcb67392e9cd6da4c2911`; Drive `10VI1GXobkRS-r1dWrxb-_nSHjg9phvRV`, Dropbox `id:BSpOijBcT10AAAAAAD_9tg`. Exact local member verification and both providers' actual upload plus separate metadata-size ACK are confirmed. Independent remote wholeGET/SHA256 is not asserted. Contents: exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts. Packaging CPU 0.161368652/wall 0.16143304800061742s is operational cost separate from science; other remote/provider IO remains UNKNOWN_NOT_ZERO.

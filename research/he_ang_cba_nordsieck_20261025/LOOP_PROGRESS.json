@@ -2,10 +2,11 @@
   "unit": "HE-ANG-CBA-NORDSIECK",
   "workflow": "physmath-research-loop builtin1.0.0",
   "stage_count": {
-    "complete": 18,
+    "complete": 20,
     "total": 20,
     "scope": "Defined HE-ANG-CBA-NORDSIECK unit only",
-    "R10_C10": "PENDING_ACTUAL_PUBLICATION",
+    "scientific_S_complete": 18,
+    "R10_C10": "COMPLETE_AT_DELIVERY_COMMIT",
     "global_completion_percent": null,
     "E_B3_tail": "PENDING_ACTUAL_EXTERNAL_RECEIPT"
   },
@@ -32,17 +33,26 @@
         "evidence/survey/AGENTS_REUSE_CHECK.json",
         "evidence/survey/entry/ENTRY_PREFLIGHT.json",
         "evidence/survey/FRESH_CENTRAL_BASE_RECEIPT.json",
-        "evidence/survey/CENTRAL_CHANGE_OBSERVATIONS.json"
+        "evidence/survey/CENTRAL_CHANGE_OBSERVATIONS.json",
+        "evidence/survey/post_S/FRESH_CENTRAL_BASE_RECEIPT.v2.json",
+        "evidence/survey/post_S/POST_S_CENTRAL_CHANGE_OBSERVATIONS.json"
       ],
       "checkpoint": {
         "local": "PRESENT",
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -59,10 +69,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -78,10 +95,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -97,10 +121,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -116,10 +147,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -135,10 +173,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -158,10 +203,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -178,10 +230,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -198,32 +257,47 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
       "id": "R10",
       "name": "종료·재개",
-      "status": "PENDING_ACTUAL_PUBLICATION",
+      "status": "COMPLETE_AT_DELIVERY_COMMIT",
       "evidence": [
         "HANDOFF_RESEARCH_KO.md",
         "delivery/PUBLICATION.json",
         "delivery/S_PUBLICATION_RECEIPT.json",
         "delivery/C_PUBLICATION_RECEIPT.json",
-        "delivery/B2_BACKUP_ACK.json"
+        "delivery/B2_BACKUP_ACK.json",
+        "delivery/FINAL_BACKUP_ACK.json"
       ],
       "checkpoint": {
-        "local": "PENDING_ACTUAL_PUBLICATION",
+        "local": "COMPLETE_AT_DELIVERY_COMMIT",
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -239,10 +313,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -258,10 +339,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -278,10 +366,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -299,10 +394,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -317,17 +419,26 @@
         "code/run_bounded.py",
         "evidence/preparation/SYNTAX_ONLY.json",
         "evidence/execution/PRELAUNCH_03_FAILURE.json",
-        "evidence/execution/PRELAUNCH_03_CLEANUP_AUTHORIZATION.json"
+        "evidence/execution/PRELAUNCH_03_CLEANUP_AUTHORIZATION.json",
+        "evidence/publication/S0_BYTE_IDENTITY_MISMATCH.json",
+        "evidence/publication/PUBLICATION_NEWLINE_HELPER_CORRECTION.json"
       ],
       "checkpoint": {
         "local": "PRESENT",
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -344,10 +455,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -364,10 +482,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -386,10 +511,17 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
@@ -405,31 +537,48 @@
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     },
     {
       "id": "C10",
       "name": "저장·전달",
-      "status": "PENDING_ACTUAL_PUBLICATION",
+      "status": "COMPLETE_AT_DELIVERY_COMMIT",
       "evidence": [
         "CLAIM_GATE.json",
         "HANDOFF_RESEARCH_KO.md",
         "delivery/PUBLICATION.json",
-        "delivery/B2_BACKUP_ACK.json"
+        "delivery/B2_BACKUP_ACK.json",
+        "delivery/S_PUBLICATION_RECEIPT.json",
+        "delivery/C_PUBLICATION_RECEIPT.json",
+        "delivery/FINAL_BACKUP_ACK.json"
       ],
       "checkpoint": {
-        "local": "PENDING_ACTUAL_PUBLICATION",
+        "local": "COMPLETE_AT_DELIVERY_COMMIT",
         "B1": "ACTUAL_DUAL_ACK_PREEXECUTION_ONLY",
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_scope": "Prepared source/theory/contract/code and preexecution evidence only; later execution/results/C9/central change/docs are not in immutable B1",
-        "science_S": "CURRENT_FILE_COMMIT_18_OF20_SNAPSHOT_PENDING_ROOT_PUBLICATION",
-        "B2": "PENDING_ACTUAL_EXACT_S_C_DUAL_ACK",
-        "delivery_D": "PENDING_ACTUAL_ROOT_PUBLICATION",
-        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_RECEIPTS"
+        "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "B2": "ACTUAL_DUAL_PROVIDER_UPLOAD_AND_SEPARATE_METADATA_SIZE_ACK_EXACT_S_C",
+        "delivery_D": "CURRENT_FILE_COMMIT",
+        "central_E_B3": "PENDING_ACTUAL_EXTERNAL_PR100_RECEIPT",
+        "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "D_scope": "S87 exact science plus new operational delivery/postS evidence; source/code/rawresults/reviews unchanged",
+        "B2_archive": "HEANG_CBA_NORDSIECK_SCIENCE_20261025_a891cd4b_7caca70d.tar.gz",
+        "B2_scope": "exactS87/C3,wholeB1once,10inheritedledgers,dependencywheel,actualpublication/correction/postSownerreceipts",
+        "B3_scope": "D/E exactoverlay pending; no future ownACK inserted",
+        "current_storage": "Original S87 in actualS/B2; newDmetadata/postSoperational evidence at CURRENT_FILE_COMMIT; E/B3pendingexternal"
       }
     }
   ],
@@ -657,11 +806,55 @@
     }
   },
   "root_summary_identity": {
-    "bytes": 77181,
-    "sha256": "bece83ed4ef816e4a91f060ba15242bee39b6a092fe081525ead1445a876c929",
-    "git_blob_sha1": "7516024daa4d902e33151cebc25fcaf2b99b114b"
+    "bytes": 113028,
+    "sha256": "b41af735bfea43ae8d11c499fc7bb9efa3de0e70b1083876a6e7c3dc6e076a7c",
+    "git_blob_sha1": "f60611d0ae31a3ba5cab6d6619c88e7d9079c864"
   },
-  "actual_delivery": {},
+  "actual_delivery": {
+    "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+    "science_tree": "ee6768ab8a934cb9b47819a24cf5498e4f8b8ece",
+    "central_C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+    "central_C_tree": "ebeaf6623dfd0077adae43933f8494056e8974c8",
+    "PR": 100,
+    "PR_url": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/100",
+    "branch": "research/he-ang-cba-nordsieck-20261025",
+    "PR_base": "research/he-ang-finitemass-shell-20261024",
+    "expected_parent": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+    "force": false,
+    "draft": true,
+    "merged": false,
+    "activation": false,
+    "receipts": {
+      "S_PUBLICATION_RECEIPT": {
+        "path": "cba_nordsieck_ops_20261025/publish/S_PUBLICATION_RECEIPT.json",
+        "identity": {
+          "bytes": 1543,
+          "sha256": "8e0d27e4d10958e2b37a4b8e35f4ee03403279ac8f9bd638df23d8185578bc20",
+          "git_blob_sha1": "492d2f99796b9cae5a01493076bfc7e5fc50b5b3"
+        }
+      },
+      "C_PUBLICATION_RECEIPT": {
+        "path": "cba_nordsieck_ops_20261025/publish/C_PUBLICATION_RECEIPT.json",
+        "identity": {
+          "bytes": 1506,
+          "sha256": "b96641cb7e5021e6d8c9d4707a36ca44f1f621e270eca5a94b2b29ec438e4214",
+          "git_blob_sha1": "80077aaa7b936466fab1b8553c2d898ca0cbd158"
+        }
+      },
+      "B2_BACKUP_ACK": {
+        "path": "cba_nordsieck_ops_20261025/B2_ACTUAL_BACKUP_ACK.json",
+        "identity": {
+          "bytes": 1439,
+          "sha256": "d77a49265e7b6069f265e57912894b4a4bbda1fb656011c71789277af5baa52d",
+          "git_blob_sha1": "7162612e4c26a7e302c48f03fcf1e8d4ec71a955"
+        }
+      }
+    },
+    "delivery_D": "CURRENT_FILE_COMMIT",
+    "central_E": "PENDING_ACTUAL",
+    "B3": "PENDING_ACTUAL_EXTERNAL_PR_RECEIPT",
+    "merge": false
+  },
   "resources": {
     "local_actual_ledger": {
       "schema": "HEANG_CBA_RESOURCE_LEDGER_V1",
@@ -1234,6 +1427,94 @@
     "old_ledgers": "evidence/survey/INHERITED_LEDGER_REFERENCES.json",
     "unmeasured_host_model_provider_IO_prelaunch": "UNKNOWN_NOT_ZERO",
     "global_end_to_end_cap_established": false,
-    "further_science_execution_authorized": false
+    "further_science_execution_authorized": false,
+    "actual_S_publication": {
+      "status": "ACTUAL_S_PUBLISHED_AND_REMOTE87_VERIFIED",
+      "S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+      "tree": "ee6768ab8a934cb9b47819a24cf5498e4f8b8ece",
+      "branch": "research/he-ang-cba-nordsieck-20261025",
+      "parent_baseline": "bec636ffa3014035292c1078a758c7aa1827174d",
+      "publication_predecessor_S0": "86fc9206d885633b59745fb80dcc22fa163bfd89",
+      "guarded_updates": [
+        {
+          "expected": "bec636ffa3014035292c1078a758c7aa1827174d",
+          "new": "86fc9206d885633b59745fb80dcc22fa163bfd89",
+          "force": false
+        },
+        {
+          "expected": "86fc9206d885633b59745fb80dcc22fa163bfd89",
+          "new": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+          "force": false
+        }
+      ],
+      "PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/100",
+      "PR_number": 100,
+      "draft": true,
+      "merged": false,
+      "activation": false,
+      "remote_verification": {
+        "status": "ACTUAL_REMOTE_S87_EXACT_BLOB_AND_SIZE_MATCH",
+        "S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+        "tree": "ee6768ab8a934cb9b47819a24cf5498e4f8b8ece",
+        "own_tree": "4b29c5e853c99452d7992bbf385977936fb78f74",
+        "matched_files": 87,
+        "unrelated_root_entries_preserved": 14,
+        "old_research_subtrees_preserved": 88,
+        "S0_publication_byte_failure": "86fc9206d885633b59745fb80dcc22fa163bfd89",
+        "correction": "rawCSVlineendingsonly,original87stagefilesunchanged",
+        "force": false
+      },
+      "stage_count": 18,
+      "scientific_child_replays": 0,
+      "serialization_failure_preserved": "S0_BYTE_IDENTITY_MISMATCH.json",
+      "remote_CPU": "UNKNOWN_NOT_ZERO"
+    },
+    "actual_C_publication": {
+      "status": "ACTUAL_C_PUBLISHED_THREE_BLOBS_VERIFIED",
+      "C": "7caca70d94d03732bff5e7adf2f9aa5cf59310ec",
+      "tree": "ebeaf6623dfd0077adae43933f8494056e8974c8",
+      "base": "b0f02efc6925a98e670136027561d267f9fa601f",
+      "expected_sha": "b0f02efc6925a98e670136027561d267f9fa601f",
+      "force": false,
+      "science_S": "a891cd4b9a3548e66db669b9eb472fea88a3b78b",
+      "PR": "https://github.com/cosmosapjw-quantum/BASS_HE/pull/100",
+      "actual_blob_matches": 3,
+      "files": [
+        {
+          "path": "research/orchestration_longterm_20261023/assembly/DAG.json",
+          "bytes": 395000,
+          "sha256": "7e859796c0ae1e1df3162e2b75e6f4d41b62a08c119da40de75ea06be758ceda",
+          "git_blob_sha1": "95001c7820ecd8be18c66b6e7985f9fc00ee42b4"
+        },
+        {
+          "path": "research/orchestration_longterm_20261023/assembly/HANDOFF_BASS_HE_KO.md",
+          "bytes": 56875,
+          "sha256": "1fef981bf95cb68d5dd9a6f0c80804ff3ca335cfae6b7bb3d5039275d8f7cffa",
+          "git_blob_sha1": "df4f4ebf97873ccd8d74eaef3d31d9a44c5360b5"
+        },
+        {
+          "path": "research/orchestration_longterm_20261023/assembly/returns/RETURN_HEANG_CBA_NORDSIECK_20261025.json",
+          "bytes": 8544,
+          "sha256": "48f4808addc1c3689204836eb9794397d870c75d62cf3c12dabd07b3935daae9",
+          "git_blob_sha1": "9ab5933145a7c02828d5837e7da12524afaa9d58"
+        }
+      ],
+      "other39_nodes": "preserved exact raw bytes by C_PRESERVATION.json",
+      "contracts": 40,
+      "authorities": 7,
+      "integration_edges": 17,
+      "new_science_execution": 0,
+      "remote_CPU": "UNKNOWN_NOT_ZERO"
+    },
+    "C_local_assembly": {
+      "CPU_s": 0.050501431,
+      "wall_s": 0.05072827399999369
+    },
+    "B2_packaging": {
+      "CPU_s": 0.161368652,
+      "wall_s": 0.16143304800061742,
+      "remote_provider_IO_CPU": "UNKNOWN_NOT_ZERO"
+    },
+    "S0_publication_serialization_failure": "evidence/publication/S0_BYTE_IDENTITY_MISMATCH.json; no scientific replay or reserve consumption"
   }
 }
