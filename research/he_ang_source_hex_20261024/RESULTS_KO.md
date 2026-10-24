@@ -14,6 +14,8 @@
 
 저자 기관이 배포한 [Hex v2.02 source](https://utf.mff.cuni.cz/data/hex/hex-src.tar.gz)와 [Hex-170210.sql.xz](https://utf.mff.cuni.cz/data/hex/Hex-170210.sql.xz)를 실제 확보했다. source에는 ECS 해에서 ionization Chebyshev coefficient를 생성하고 `ionf`에 쓰는 경로가 있다. source archive 자체에는 이온화 coefficient dataset이 없었다. 포함된 DCS 표본은 elastic 1s→1s 사례였다. 원전 기능과 실제 numerical payload를 구분했다.
 
+공식 [data 페이지](https://utf.mff.cuni.cz/data/hex/database.html)는 이 dump의 생성 버전을 **Hex-ecs v2.01**로 기재한다. 이번에 감사한 source archive의 **v2.02**와 별도의 버전 기록으로 보존한다. 배포자의 수렴 설명을 이번 intake의 독립적인 물리 수렴 검증으로 사용하지 않았다.
+
 공개 SQL은 압축 전후 전체 byte identity를 기록하며 EOF까지 읽었다. SQL을 실행하지 않았다.
 
 | 항목 | 실제 관측값 |
@@ -118,14 +120,22 @@ nominal per-child CPU 설정 8초에 대해 두 실제 catalogue의 측정값은
 - [최종 코드 검토](evidence/review/CODE_REVIEW_FINAL.json)
 - [그림 시각 검토](evidence/review/FIGURE_REVIEW.json)
 
-## 6. 저장·재개
+## 6. 전달 완료와 재개
 
-작업 중 실행 환경의 파일 소실을 관측했다. 과학 실행 전이었으며, 이미 저장된 preflight capsule을 Dropbox에서 실제 복원하고 SHA256을 확인한 뒤 source와 계약을 회복했다. 새 코드와 모든 실제 실행은 복구 뒤 수행했다. 이 환경 사건을 과학 실패나 비용 0의 실행으로 합치지 않았다.
+작업 파일 소실을 두 차례 관측했으며 원인은 확정하지 않았다. 첫 사건은 새 과학 실행 전이었다. 이미 저장된 preflight capsule을 Dropbox에서 복원하고 SHA256을 확인한 뒤 source와 계약을 회복했다. 두 번째 사건은 과학 핀 `15053fe4445a32e0544d644e864fe27780d08743` 게시 뒤였다. Git에 제출한 동일한 100개 파일의 payload와 preflight 원자료 백업으로 복원했다. 완료된 과학 실행은 다시 하지 않았고, 실패 기록과 자원 장부를 초기화하지 않았다. 상세 기록은 [POST_PUBLICATION_RECOVERY.json](delivery/POST_PUBLICATION_RECOVERY.json)에 있다.
 
-중앙 브랜치는 작업 중 `0f9d9df...`에서 `68420637a9ab54ada92afd786c5733bc0764b8c9`로 이동했다. 새 bass_cr C23C 근거를 보존하고 HE-ANG 관측 상태만 추가한다. 원 저자 계약과 다른 39개 node는 유지한다.
+이번 과학 핀은 [`15053fe4445a32e0544d644e864fe27780d08743`](https://github.com/cosmosapjw-quantum/BASS_HE/tree/15053fe4445a32e0544d644e864fe27780d08743/research/he_ang_source_hex_20261024)이며 [draft PR93](https://github.com/cosmosapjw-quantum/BASS_HE/pull/93)에 게시했다. 현재 파일이 속한 후속 커밋은 전달 metadata를 완성한다. 과학 핀과 움직이는 게시 HEAD를 구분한다.
 
-정확한 science/delivery commit과 expected-SHA push 결과는 `delivery/PUBLISHED_PINS.json`, 최종 Dropbox/Drive의 provider ACK는 `delivery/FINAL_ARCHIVE_ACK.json`에 기록한다. science archive와 그 archive의 전달 ACK는 별도 identity다.
+중앙 관측 커밋은 `0d3184538fcf27404d1b88572fc5b7f26432acdb`, 실제 백업 ACK 커밋은 `8b6e741ceb305cb0a6fde244ee002eb5926559fe`다. 초기 고정 인계 `0f9d9df...` 뒤의 bass_cr C23C 변경 `68420637...`를 먼저 보존했다. 마지막 전달 중 추가된 C23D 변경 `476587d...`도 새 HEAD에서 읽고 보존했다. 우리 DAG 변경은 HE-ANG의 관측 상태와 근거 추가뿐이며, 원 저자 계약을 바꾸지 않았다. 마지막 중앙 커밋은 ACK 파일 한 개만 추가했다. 모든 성공 push는 해당 실제 부모를 expected SHA로 지정하고 force=false로 수행했다. 첫 중앙 ACK 시도의 서비스 오류와 새 HEAD 확인은 [PUBLISHED_PINS.json](delivery/PUBLISHED_PINS.json)에 남겼다.
 
-다음 실행점은 [NEXT_SOURCE_CONTRACT.json](NEXT_SOURCE_CONTRACT.json)의 **HE-ANG-SOURCE-PAYLOAD**다. 실제 이온화 coefficient 또는 동등한 joint differential payload, producer ABI, normalization, spin/exchange·support, finite-mass 연결이 필요하다. 새 입력이 없는 현재에는 물리 gate를 유지한다. 완료된 X1·HE38·HE-ANG 계약과 이번 unchanged algebra는 다시 실행하지 않는다.
+최종 묶음 `BASS_HE_HEANG_SOURCE_HEX_20261024_15053fe4_0d318453.tar.gz`은 **8,855,085 bytes**, SHA256 `77ac5f1599805fae102f1c6591aa9ae7c1227f32dbb06ebaa7c3f39f52a75b68`이다. 과학 핀 S의 100개 파일, 중앙 관측 C의 4개 파일, 양쪽 AGENTS, 실제 source/data 원자료, 별도 복구 기록과 manifest를 포함한다. 동일한 로컬 파일을 Dropbox와 Drive에 보냈고, 두 provider의 완료 ACK 및 크기 일치를 확인했다.
 
-no_merge / no_activation. 전체 물리 목표에 대한 완료율은 산출하지 않는다.
+- Dropbox: `id:BSpOijBcT10AAAAAAD_6wg`
+- Drive: [최종 묶음](https://drive.google.com/file/d/1ee_QTmniThjkYBylfCuWxg4icboemqz8/view?usp=drivesdk)
+- 실제 수신 근거: [FINAL_ARCHIVE_ACK.json](delivery/FINAL_ARCHIVE_ACK.json)
+
+SHA256은 양쪽에 전달한 로컬 묶음의 값이다. 두 provider의 metadata는 독립적인 원격 SHA256을 반환하지 않았으므로 원격 해시 검증까지 완료했다고 주장하지 않는다. 묶음은 고정된 S/C 근거를 담고, 나중에 생긴 전달 ACK는 별도 metadata로 기록한다. 자기 자신의 미래 ACK를 재귀적으로 묶음에 넣지 않는다.
+
+R1–R10 및 C1–C10은 이번 source intake의 범위에서 COMPLETE_SCOPED다. 물리적 HE-ANG gate는 계속 SOURCE_INPUT_PENDING이다. 다음 실행점은 [NEXT_SOURCE_CONTRACT.json](NEXT_SOURCE_CONTRACT.json)의 **HE-ANG-SOURCE-PAYLOAD**다. 실제 이온화 coefficient 또는 동등한 joint differential payload, producer ABI, normalization, spin/exchange·support, finite-mass 연결이 필요하다. 완료된 X1·HE38·HE-ANG 계약과 이번 unchanged algebra는 재실행하지 않는다. 새 수치 실행이 필요하면 입력에 맞는 별도 범위와 예산을 먼저 고정한다.
+
+no_merge / no_activation. 전체 물리 목표의 완료율은 산출하지 않는다.

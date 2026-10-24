@@ -4,7 +4,9 @@
 
 HE-X1와 HE-ANG-CONTRACT는 COMPLETE_SCOPED로 재사용했다. 이번 HE-ANG-SOURCE-HEX-INTAKE는 actual-source/data intake와 저장된 coefficient의 생략 오차 제어 범위에서 COMPLETE_SCOPED다. 부모 HE-ANG은 SOURCE_INPUT_PENDING이다.
 
-정확한 science SHA 및 게시 HEAD는 delivery/PUBLISHED_PINS.json, 실제 두 백업은 delivery/FINAL_ARCHIVE_ACK.json을 읽어라. 원래 고정 인계0f9d9df825be1dac9ca9bdf73cdc2e8908bcba17와 이후 중앙 bass_cr 변경68420637a9ab54ada92afd786c5733bc0764b8c9를 보존했다.
+과학 핀 S는 `15053fe4445a32e0544d644e864fe27780d08743`, 중앙 관측 C는 `0d3184538fcf27404d1b88572fc5b7f26432acdb`, 실제 중앙 백업 ACK E는 `8b6e741ceb305cb0a6fde244ee002eb5926559fe`다. 정확한 게시 정보는 [PUBLISHED_PINS.json](delivery/PUBLISHED_PINS.json)을 읽어라. E는 실제 부모 `476587d049cc5b265e599fdec45b1026d3bf6b23`의 병렬 C23D 변경을 보존했고 ACK 파일 한 개만 추가했다. 원래 고정 인계0f9d9df825be1dac9ca9bdf73cdc2e8908bcba17와 이후 중앙 bass_cr 변경68420637a9ab54ada92afd786c5733bc0764b8c9도 보존했다.
+
+동일한 최종 로컬 archive에 대한 Dropbox와 Drive 양쪽의 완료 ACK 및 크기 일치를 확인했다. 원문은 [FINAL_ARCHIVE_ACK.json](delivery/FINAL_ARCHIVE_ACK.json), 중앙 게시 ACK는 [중앙 E의 ACK](https://github.com/cosmosapjw-quantum/rei_bianchi/blob/8b6e741ceb305cb0a6fde244ee002eb5926559fe/research/orchestration_longterm_20261023/assembly/returns/BASS_HE_HEANG_SOURCE_BACKUP_ACK_20261024.json)에 있다. Provider metadata가 독립적인 원격 SHA256을 반환하지 않았으므로 원격 SHA256 비교는 **NOT_AVAILABLE**이다. 로컬 archive SHA256과 provider 수신 ACK를 기록하며 독립적인 원격 해시 검증을 주장하지 않는다.
 
 ## 재개할 때 먼저
 
