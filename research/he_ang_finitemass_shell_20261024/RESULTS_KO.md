@@ -161,3 +161,18 @@ R6-reviewed theory SHA256:9a2d927f5a04bbac6e0e6db759dad39fe950c08aae31fa948d2ca9
 확보한 Coulomb-Born 직접 진폭 후보는 원전 Eq16/19로부터 bound overlap -dI/dlambda를 직접 유도하고 phase·normalization·orthogonality를 확인할 수 있다. 하지만 plane/Coulomb 역할을 임의 swap하여 exchange-complete라고 부르지 않으며, fixed-center amplitude에 이번 shell만 붙여 finite-M source consistency를 얻었다고 하지 않는다.
 
 DDCS20 marginal을 전체 event sigma/ion recoil law/HE-X1 경험적 보정으로 확대하지 않는다. C9-NB-01 future partial mu_window theta metadata 의무, 중앙 C23E와 다른 owner의 scoped 결과·OPEN을 유지한다. 새로운 strong no-go나 문헌 최초성 주장은 없다.
+
+
+## 9. 실제 게시·복구·최종 freshness 전달 보충
+
+앞 1–8절은 Science S `8d481ed47f57774f48bcfb412671ff927601316e`의 과학 결과와 당시 조사 상태를 보존한다. 현재 실제 중앙 C는 `407381b302d8b98f251b54d277823997bc4fca9f` (tree `eee49882efa63ca19043d40b7e96b8fe3cbe0382`)이고, 이 전달 D의 자기 SHA는 CURRENT_FILE_COMMIT 의미다. PR99는 draft/open/unmerged이며 activation=false다. 실제 B2 dual ACK 이후 R10/C10은 이 전달 commit에서 COMPLETE_AT_DELIVERY_COMMIT, 정의된 단위는 20/20 scoped다. 중앙 E와 B3의 실제 최종 영수증은 아직 대기하며 PR99 description의 외부 영수증으로 닫는다. 이 단계 수는 전체 HE-ANG 물리 목표 달성률이 아니다.
+
+B2 `HEANG_FINITEMASS_SHELL_SCIENCE_20261024_8d481ed4_407381b3.tar.gz`는 2281167 bytes / 221 members, 로컬 업로드 bytes SHA256 `c45167100ada3287899a5d49b4686948a2f859c9b36b8db78a2f13bd4bbec43a`다. Drive `1jFe0xxImaBLsqz8K1DFgje4MdQjtMzHb`와 Dropbox `id:BSpOijBcT10AAAAAAD_9lw`의 실제 업로드 및 별도 metadata size ACK가 있다. B2 remote full GET/SHA256은 독립 검증하지 않았다. 로컬 member 검증 및 provider ACK와 구분한다. 포장 CPU 0.28118744900000003초 / wall 0.2813142700033495초는 과학 원장 밖의 운영 비용이다.
+
+18:25 UTC에 다시 확인된 로컬 소실의 원인은 NOT_ESTABLISHED다. 게시 S67을 retained literal payload와 actual Git blob/size로 복원했고 실제 B1 full GET bytes/hash를 대조했다. 과학 재실행은0이다. 공개 복구 receipt3개와 source/RECOVERY_PROVENANCE.json은 원본 source URL/hash, 실제 metadata-only 보관 및 full PDF/text/page image 제외를 구분한다. 전체 복구·provider·host 비용은 UNKNOWN_NOT_ZERO이며 이전 원장을 초기화하지 않았다.
+
+S의 LOOP_PROGRESS top-level C9 및 C8 evidence에는 파생된 과거 PENDING 문구가 남았으나 실제 C9_REPORT/ROOT_ADMISSION과 당시 current_stage는 이미 PASS였다. D에서 그 현재 파생 metadata만 정정했다. 이론·계약·코드·원시 결과·그림·독립 과학 review를 바꾸거나 새 review를 수행하지 않았다.
+
+초기 S0 조사 뒤 CR103은 실제 conditional H1/He4 EI finite-chain으로 완료되었고, HH145는 실제 conditional bare finite-window 및 FINAL 전달로 진행했다. 현재 중앙 C는 6de53766의 이 실제 관측을 보존한 base 위에 게시됐다. CR Library/Dropbox R3 PASS와 Drive UNKNOWN_NO_ACK, full N4/N5 OPEN/N6N7 gated를 구분한다. HH 부모 PARTIAL, empirical source equivalence·covariance/tails·named consumer·stopping OPEN, HH_R10 OFF 및 production NOT_ISSUED를 유지한다. HH FINAL의 양 provider whole GET/restore는 실제 읽은 owner 중앙 영수증의 보고이며 이 worker의 새 GET 주장이 아니다. 각 owner의 실패·별도 비용·unknown은 post_S_parallel addendum에 보존했다.
+
+18:28 UTC의 마지막 metadata 조사도 7개 repo/14개 collection/30 pages 모두 terminal이며 1,336 branches와871 open PRs다. REC135의 six-primitive local source Jacobian 및 VIG86의 manufactured dense-curve certificate는 실제 title/HEAD만 읽은 새 lead이고 본문이나 과학 판정을 승인하지 않았다. 초기 조사와 이 최신 metadata pass를 구분한다. 새 H electron-impact physical amplitude/event payload가 이번 metadata에서 보이지 않았다는 관측을 전역 부재 증명으로 바꾸지 않는다. HE-ANG SOURCE_INPUT_PENDING, C9-NB-01, C23E, 모든 다른 owner OPEN 및 비용 unknown은 그대로다.

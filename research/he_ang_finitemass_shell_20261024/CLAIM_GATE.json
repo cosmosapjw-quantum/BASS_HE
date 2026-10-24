@@ -27,12 +27,13 @@
   "C9": "PASS_SCOPED_KINEMATICS",
   "root_admission": "PASS_SCOPED_KINEMATICS",
   "stage_count": {
-    "complete": 18,
+    "complete": 20,
     "total": 20,
-    "pending": [
-      "R10",
-      "C10"
-    ]
+    "scope": "Defined finite-mass shell unit only; completion at the delivery commit containing this file",
+    "R10_C10": "COMPLETE_AT_DELIVERY_COMMIT",
+    "scientific_S_complete": 18,
+    "E_B3_actual_tail": "PENDING_ACTUAL_EXTERNAL_PR99_RECEIPT",
+    "global_completion_percent": null
   },
   "validation": {
     "tests_passed": 14,
@@ -87,5 +88,13 @@
     "evidence/execution/RESOURCE_LEDGER.json",
     "RESULTS_KO.md"
   ],
-  "scientific_statement": "Complete exactnonrel finite-M kinematic construction; testedfinitefixtures; no amplitudefluxphysicalprovider"
+  "scientific_statement": "Complete exactnonrel finite-M kinematic construction; testedfinitefixtures; no amplitudefluxphysicalprovider",
+  "delivery": {
+    "science_S": "8d481ed47f57774f48bcfb412671ff927601316e",
+    "central_C": "407381b302d8b98f251b54d277823997bc4fca9f",
+    "D": "CURRENT_FILE_COMMIT",
+    "B2": "ACTUAL_DUAL_ACK",
+    "E_B3": "PENDING_ACTUAL_EXTERNAL_PR99_RECEIPT",
+    "C10": "COMPLETE_AT_DELIVERY_COMMIT"
+  }
 }
