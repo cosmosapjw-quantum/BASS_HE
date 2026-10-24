@@ -1,0 +1,28 @@
+{
+  "current_unit": "HE-ANG-TDCS54-ANCHORS",
+  "status": "COMPLETE_SCOPED_SCIENCE_C10_PENDING_DELIVERY",
+  "next_local_stages": [
+    "Actual S publication and draft PR",
+    "Fresh current central context and scoped observation C",
+    "B2 actual S+C dual ACK",
+    "D/E metadata publication",
+    "B3 actual delivery supplement dual ACK"
+  ],
+  "science_children_executed": 4,
+  "next_physical_input": "HE-ANG-SOURCE-PAYLOAD",
+  "physical_parent_status": "SOURCE_INPUT_PENDING",
+  "physical_provider_admitted": false,
+  "preserved_open": [
+    "C9-NB-01",
+    "C23E",
+    "other owner scoped results and OPEN contracts"
+  ],
+  "old_budget_transfer": false,
+  "new_strong_no_go": false,
+  "full_goal_completion_percent": null,
+  "no_merge": true,
+  "no_activation": true,
+  "independent_C9": "PASS_AFTER_FIGURE_CORRECTION",
+  "root_decision": "PASS_SCOPED",
+  "repair_reserve_used": 1
+}

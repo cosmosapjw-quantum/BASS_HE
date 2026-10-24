@@ -1,0 +1,22 @@
+{
+  "unit_id": "HE-ANG-TDCS54-ANCHORS",
+  "stage": "C10",
+  "status": "PENDING_ACTUAL_PUBLICATION_AND_DELIVERY",
+  "repository": "cosmosapjw-quantum/BASS_HE",
+  "base": "2cb9f9176c2a1764bb8ceaf2392531a100eb6820",
+  "base_tree": "55e07c195c34596192447348d92787baf57d16bc",
+  "target_branch": "research/he-ang-tdcs54-anchors-20261024",
+  "PR_base": "research/he-ang-ccc-exchange-20261024",
+  "science_commit": null,
+  "pull_request": null,
+  "central_observation_commit": null,
+  "delivery_commit": null,
+  "central_backup_ack_commit": null,
+  "B1_ack": "B1_BACKUP_ACK.json",
+  "B2": "PENDING_ACTUAL_S_AND_C",
+  "B3": "PENDING_ACTUAL_D_AND_E",
+  "force": false,
+  "draft": true,
+  "merge": false,
+  "activation": false
+}
