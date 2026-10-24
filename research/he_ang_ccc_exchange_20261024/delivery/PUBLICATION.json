@@ -1,0 +1,22 @@
+{
+  "unit": "HE-ANG-CCC-EXCHANGE",
+  "stage": "C10",
+  "status": "PENDING_DELIVERY",
+  "science_commit": null,
+  "delivery_commit": null,
+  "central_observation_commit": null,
+  "central_backup_ack_commit": null,
+  "pull_request": null,
+  "repository": "cosmosapjw-quantum/BASS_HE",
+  "new_branch": "research/he-ang-ccc-exchange-20261024",
+  "expected_source_parent": "c8f5818c61d14872837abf7e9bc1a73c670ae25c",
+  "source_base_tree": "5719ad6722239a18f8a2556e42dcfee2fca637d2",
+  "pull_request_base": "research/he-ang-ddcs20-window-20261024",
+  "force": false,
+  "draft": true,
+  "merge": false,
+  "activation": false,
+  "backup_B1": "B1_BACKUP_ACK.json",
+  "final_science_delivery_backup": "PENDING_ACTUAL_ACK",
+  "independent_remote_sha256": "NOT_AVAILABLE unless actual provider supplies"
+}
