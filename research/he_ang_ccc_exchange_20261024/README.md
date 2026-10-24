@@ -69,3 +69,22 @@ ambiguity returns to root. Old evidence is read-only reuse and is not rerun.
 The first panel of the planned figure uses manufactured phase controls; the
 second uses only actual published Table I / printed BRM ratios. Neither is a
 full H ionization provider or a new CCC/BRM solver result.
+
+## Actual publication and delivery
+
+Science S is `63706d605ddfc5d313ca310b09b5fd54a4efdbf4`, published as draft,
+unmerged PR95. Central observation C is
+`d5aa6c94a77b5687052d3d6902d140e2df9ef798`, based on the concurrent CR-N5
+receipt head `f3ff95c4ddbdc4279223929a777072ec4eace577`.
+B2 preserves those exact snapshots: 278842 bytes, SHA256
+`21303684dbb2a0bed96d368802c70093cd343ccd644c53710036f16712c881f0`, 72 members.
+Both Drive and Dropbox completed upload and independent metadata-size readback;
+actual receipts are in `delivery/`. No independent remote SHA256 was supplied.
+
+The 20 stage rows are COMPLETE_SCOPED in this delivery metadata commit, whose
+self-identity is CURRENT_FILE_COMMIT. The final user delivery report awaits actual
+D and central E publication/readback plus the B3 supplement's dual ACK. Science
+code, inputs, numerical outputs, figures, reviews and raw runs are unchanged from
+S; the initial14 methods plus one targeted C9-01 reserve remain reused evidence.
+Complete end-to-end CPU accounting remains known-plus-unknown, with
+end_to_end_cpu_cap_established=false. Physical HE-ANG stays SOURCE_INPUT_PENDING.

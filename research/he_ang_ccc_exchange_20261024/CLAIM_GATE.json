@@ -43,7 +43,12 @@
     "evidence/review/R6_REPORT.json",
     "evidence/review/C9_REPORT.json"
   ],
-  "C10": "PENDING_DELIVERY",
+  "C10": "COMPLETE_SCOPED_CURRENT_FILE_COMMIT",
   "no_merge": true,
-  "no_activation": true
+  "no_activation": true,
+  "science_commit": "63706d605ddfc5d313ca310b09b5fd54a4efdbf4",
+  "delivery_commit": "CURRENT_FILE_COMMIT",
+  "central_observation_commit": "d5aa6c94a77b5687052d3d6902d140e2df9ef798",
+  "backup": "delivery/FINAL_BACKUP_ACK.json",
+  "delivery_E_B3": "PENDING_ACTUAL_RECEIPTS_BEFORE_FINAL_USER_REPORT"
 }

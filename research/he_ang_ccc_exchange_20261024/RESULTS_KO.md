@@ -1,4 +1,4 @@
-# HE-ANG-CCC-EXCHANGE 결과 — C9 PASS_AFTER_CORRECTION, C10 전달 대기
+# HE-ANG-CCC-EXCHANGE 결과 — scoped 승인과 현재 파일의 전달 메타데이터
 
 ## 확보한 범위
 
@@ -8,7 +8,9 @@
 고친 뒤 해당 test_05 한 개만 reserve로 다시 실행해 PASS했다. Source table 8행의 원래 수치
 문자열과 이미 적용된 factor-four를 보존했다. 과학적 독립 R6는
 PASS_AFTER_CORRECTION이다. Coding 독립 C9도 PASS_AFTER_CORRECTION이고
-root는 PASS_SCOPED를 채택했다. 현재19/20이며 최종 전달 C10은 대기다.
+root는 PASS_SCOPED를 채택했다. 현재 전달 메타데이터의 20개 stage row는 COMPLETE_SCOPED다.
+자체 delivery identity는 CURRENT_FILE_COMMIT이며, 최종 사용자 보고는 실제
+D/E 게시·readback과 B3 이중 ACK 뒤에 한다.
 이는 조건부 구현 수용이며 물리 공급자 승격을 대신하지 않는다.
 
 부모 HE-ANG과 HE-ANG-SOURCE-PAYLOAD는 SOURCE_INPUT_PENDING이다.
@@ -135,9 +137,26 @@ b=exp(i phase)의 singlet/triplet control과 이론 phase range다. 오른쪽은
 실제 printed 4CCC/BRM 비율이며 3Ry sequence의 비단조성을 그대로 표시한다.
 Source TP 자료를 full H angular payload로 오해하지 않도록 caption에 적었다.
 
-B1은 실행 전 preparation15/20를 실제 Dropbox와 Drive 양쪽에 저장하고
-metadata size40303bytes를 readback했다. 실제 receipt는
-`delivery/B1_BACKUP_ACK.json`이다. 현재 독립 C9의 유일한 finding C9-01은 닫혔고19/20이다. C10은
-최종 Git/backup 영수증 뒤에만 완료한다.
-no_merge/no_activation을 유지한다. C9-NB-01, C23E와 다른 owner의 상태,
-HE-X1/HE38/contract/Hex/DDCS20 기존 근거와 budget은 변경하지 않았다.
+B1은 실행 전 preparation 15/20를 실제 Dropbox와 Drive 양쪽에 저장하고
+40,303 bytes의 metadata size를 readback했다. Receipt는
+`delivery/B1_BACKUP_ACK.json`이다. 실제 Science S는
+`63706d605ddfc5d313ca310b09b5fd54a4efdbf4`이고 draft PR95로 게시했다.
+Central C는 `d5aa6c94a77b5687052d3d6902d140e2df9ef798`이며 최신 CR-N5
+영수증을 포함한 `f3ff95c4ddbdc4279223929a777072ec4eace577` 위에 추가했다.
+다른 39개 node, 원래 HE-ANG 계약·의존성과 기존 관측을 보존했다.
+
+B2는 S의 65개 파일과 C의 정확한 3개 파일, 게시 receipts와 복원 자료를
+보존한다. Archive는 278,842 bytes, 72 members, SHA256
+`21303684dbb2a0bed96d368802c70093cd343ccd644c53710036f16712c881f0`다.
+Drive `1QuA8qmz8tOuLcQTAIozQEI0Jy-3pjBkV`와 Dropbox
+`id:BSpOijBcT10AAAAAAD_9JQ` 양쪽의 완료 ACK와 독립 metadata size readback이
+일치했다. 별도 remote SHA256는 반환되지 않아 독립 원격 hash 비교를
+주장하지 않는다. `delivery/FINAL_BACKUP_ACK.json`은 이 실제 S+C backup의
+범위를 기록하며, 미래 D/E 또는 B3가 이미 보존됐다고 주장하지 않는다.
+
+현재 파일의 D 전달 메타데이터에서 20개 stage row를 COMPLETE_SCOPED로
+기록했다. Actual D/E 게시와 B3 dual ACK는 후속 실제 receipts로 남긴다.
+과학 code, source, numerical results, figure, 독립 review와 raw 실행은 S와
+동일하며 추가 science를 실행하지 않았다. no_merge/no_activation을 유지한다.
+C9-NB-01, C23E, CR-N5의 Drive ACK unknown을 포함한 다른 owner 상태와 기존
+HE-X1/HE38/contract/Hex/DDCS20 근거·budget·실패·unknown은 보존한다.
