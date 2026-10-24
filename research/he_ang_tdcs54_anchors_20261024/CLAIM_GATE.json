@@ -2,7 +2,7 @@
   "unit_id": "HE-ANG-TDCS54-ANCHORS",
   "root_decision": "PASS_SCOPED",
   "science_status": "COMPLETE_SCOPED",
-  "workflow_status": "C10_PUBLICATION_AND_DELIVERY_PENDING",
+  "workflow_status": "20STAGE_CURRENT_FILE_DELIVERY_METADATA_COMPLETE;ACTUAL_D_E_B3_RECEIPTS_PENDING",
   "evidence_states": [
     "DERIVED",
     "IMPLEMENTATION_VERIFIED",
@@ -96,18 +96,25 @@
     "other-owner scoped results/OPEN and reservations"
   ],
   "publication": {
-    "status": "PENDING_AFTER_REVIEW",
+    "status": "SCIENCE_S_PUBLISHED;DELIVERY_D_CURRENT_FILE_COMMIT",
     "branch": "research/he-ang-tdcs54-anchors-20261024",
     "expected_sha_required": true,
     "force": false,
     "draft": true,
     "merge": false,
-    "activation": false
+    "activation": false,
+    "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+    "delivery_commit": "CURRENT_FILE_COMMIT",
+    "pull_request": 96,
+    "central_observation_commit": "e69b01457f1f27e11806ad724a925a1f723d0c24",
+    "central_backup_ack_commit": "PENDING_ACTUAL_E"
   },
   "backup": {
     "B1": "delivery/B1_BACKUP_ACK.json",
-    "B2": "PENDING_ACTUAL_S_AND_C",
-    "B3": "PENDING_ACTUAL_D_AND_E"
+    "B2": "delivery/B2_BACKUP_ACK.json",
+    "B3": "PENDING_ACTUAL_D_E_SUPPLEMENT"
   },
-  "total_physical_goal_completion_percent": null
+  "total_physical_goal_completion_percent": null,
+  "recovery_observation": "delivery/LOCAL_RECOVERY_OBSERVATION.json",
+  "latest_central_observation_addendum": "delivery/LATEST_CENTRAL_SURVEY_ADDENDUM_KO.md"
 }

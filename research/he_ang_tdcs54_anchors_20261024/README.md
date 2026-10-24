@@ -86,3 +86,26 @@ The unchanged source_analysis raw status is linked to the final CLAIM_GATE,
 not rewritten. Unused context raw stays in the immutable B1 and local evidence;
 public Git carries only CONTEXT_RAW_REFERENCE.json plus actual evaluator evidence.
 `LOOP_PROGRESS.json` distinguishes these axes and identifies each stage's evidence.
+
+## Actual S/C publication and current-file D metadata
+
+Science S is `60cacdb740fa4dadcdcbff43b7ffcb52566e077d`, actual draft/open/unmerged
+PR96. Central C is `e69b01457f1f27e11806ad724a925a1f723d0c24`, based on concurrent
+owner parent `fca9a31de961a85f14972550c1f4c35c4fc3e773`.
+B2 preserves exact S91+C3 and receipts/recovery/rebase observations:546602bytes,
+100members, SHA256
+`1dd283fa7f08fe301e6151acaa34bdc0c9784e65bcbd92d2cb9f759ee915216c`.
+Drive `1sZqUve2jKRwuWb3dlsnG05PM5lxFJoLz` and Dropbox
+`id:BSpOijBcT10AAAAAAD_9Sw` both completed upload and independent metadata-size
+readback. No independent remote SHA256 is claimed.
+
+The defined20stage rows are COMPLETE_SCOPED in the current-file D delivery
+metadata. D self-identity is CURRENT_FILE_COMMIT. Actual E and final B3 receipts
+remain pending; final tail ACK will be in PR96. The original S/source_analysis
+status and S CODE_RESULTS_MANIFEST are historical exact science evidence, not
+rewritten delivery metadata. Inputs, code, numerical output, figures, raw evidence,
+C9 and the science_snapshot remain unchanged. Missing local workspace bytes were
+recovered literally against all91actual S Git blobs; no science was repeated or
+budget reset. Recovery cost is UNKNOWN_NOT_ZERO. Details and the later limited
+central-owner survey addendum are under delivery/. Physical HEANG stays
+SOURCE_INPUT_PENDING. No merge/activation or new scientific run occurred.

@@ -1,11 +1,9 @@
 {
   "unit_id": "HE-ANG-TDCS54-ANCHORS",
   "stage_count": 20,
-  "completed_stage_count": 19,
-  "completion_interpretation": "R1-R10/C1-C9 complete in scoped science; C10 actual publication and delivery pending",
-  "pending_stages": [
-    "C10"
-  ],
+  "completed_stage_count": 20,
+  "completion_interpretation": "Defined20stage unit complete within current-file D metadata; actual D/E/B3 delivery receipts remain distinct and pending until observed",
+  "pending_stages": [],
   "stages": [
     {
       "stage": "R1",
@@ -17,8 +15,16 @@
       ],
       "evidence_connection": "New54.4eV located source and exact diagnostic contract, D baseline",
       "execution": "theory/source/review evidence only; no new local science child",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "R2",
@@ -32,8 +38,16 @@
       ],
       "evidence_connection": "Seven-repo terminal metadata,43exact source docs, primarysource facts and immutable old evidence",
       "execution": "theory/source/review evidence only; no new local science child",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "R3",
@@ -45,8 +59,16 @@
       ],
       "evidence_connection": "Two located coordinates versus8height features; producer/uncertainty boundaries",
       "execution": "theory/source/review evidence only; no new local science child",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "R4",
@@ -58,8 +80,16 @@
       ],
       "evidence_connection": "Choose sparse contrast and exact common-scale diagnostics; no interpolation",
       "execution": "theory/source/review evidence only; no new local science child",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "R5",
@@ -70,8 +100,16 @@
       ],
       "evidence_connection": "Direct necessary/sufficient interval, minimax, sharp contrast and Eq7/8",
       "execution": "theory/source/review evidence only; no new local science child",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "R6",
@@ -83,8 +121,16 @@
       ],
       "evidence_connection": "Actual independent PASS with source-page inspection and extra rational oracles",
       "execution": "theory/source/review evidence only; no new local science child",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "R7",
@@ -97,8 +143,16 @@
       ],
       "evidence_connection": "Actual one bounded evaluator, separate context; helium/NoResults NOT_ADOPTED",
       "execution": "theory/source/review evidence only; no new local science child",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "R8",
@@ -110,8 +164,16 @@
       ],
       "evidence_connection": "Root theory/source selection, numerical C9/admission still pending",
       "execution": "theory/source/review evidence only; no new local science child",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "R9",
@@ -123,8 +185,16 @@
       ],
       "evidence_connection": "Seven functions receive Eqs1-8 and frozen exact controls",
       "execution": "theory/source/review evidence only; no new local science child",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "R10",
@@ -136,8 +206,16 @@
       ],
       "evidence_connection": "Theory-to-code handoff with next physical payload and actual transition",
       "execution": "theory/source/review evidence only; no new local science child",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "C1",
@@ -149,8 +227,16 @@
       ],
       "evidence_connection": "Current source base and allowed-path freeze",
       "execution": "Preparation completed; verified by actual downstream C6/C7/C8, no preparation replay",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "C2",
@@ -163,8 +249,16 @@
       ],
       "evidence_connection": "Source rows/ratios/metadata to7functions and exact JSON serialization",
       "execution": "Preparation completed; verified by actual downstream C6/C7/C8, no preparation replay",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "C3",
@@ -177,8 +271,16 @@
       ],
       "evidence_connection": "Positive Fraction arithmetic, endpoint witnesses, signedgeometry2e-14, fixed-tableprinting scope",
       "execution": "Preparation completed; verified by actual downstream C6/C7/C8, no preparation replay",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "C4",
@@ -191,8 +293,16 @@
       ],
       "evidence_connection": "Distinct8CPU/30wall3plannedchildren+1diagnosedreserve, no oldrepair authority",
       "execution": "Preparation completed; verified by actual downstream C6/C7/C8, no preparation replay",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "C5",
@@ -205,8 +315,16 @@
       ],
       "evidence_connection": "Completed new kernels/input/scripts; no oldscientific import",
       "execution": "Preparation completed; verified by actual downstream C6/C7/C8, no preparation replay",
-      "publication": "PENDING",
-      "checkpoint": "delivery/B1_BACKUP_ACK.json"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "C6",
@@ -220,8 +338,16 @@
       ],
       "evidence_connection": "Pending actual new targeted controls, not initial preparation AST",
       "execution": "ACTUAL_PASS",
-      "publication": "PENDING",
-      "checkpoint": "PENDING_B2_ACTUAL_ACK"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "C7",
@@ -235,8 +361,16 @@
       ],
       "evidence_connection": "Pending actual source group/printing/pair analysis",
       "execution": "ACTUAL_PASS",
-      "publication": "PENDING",
-      "checkpoint": "PENDING_B2_ACTUAL_ACK"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "C8",
@@ -252,8 +386,16 @@
       ],
       "evidence_connection": "Pending actual numeric outputs/costs and source-aware figure inspection",
       "execution": "ACTUAL_PASS",
-      "publication": "PENDING",
-      "checkpoint": "PENDING_B2_ACTUAL_ACK",
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      },
       "display_observation": "Original and corrected PNG inspected; root-authorized singleplotreserve, C9-FIG-01 CLOSED"
     },
     {
@@ -269,24 +411,50 @@
       ],
       "evidence_connection": "Pending fresh independent C9 on actual results",
       "execution": "READ_ONLY_INDEPENDENT_REVIEW_PASS_AFTER_FIGURE_CORRECTION",
-      "publication": "PENDING",
-      "checkpoint": "PENDING_B2_ACTUAL_ACK"
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     },
     {
       "stage": "C10",
       "label": "판정·인계",
-      "status": "PENDING_DELIVERY",
+      "status": "COMPLETE_SCOPED",
       "evidence": [
-        "THEORY_HANDOFF.md",
-        "LOOP_PROGRESS.json"
+        "HANDOFF_RESEARCH_KO.md",
+        "delivery/PUBLICATION.json",
+        "delivery/S_PUBLISHED.json",
+        "delivery/C_PUBLISHED.json",
+        "delivery/FINAL_BACKUP_ACK.json",
+        "delivery/LOCAL_RECOVERY_OBSERVATION.json",
+        "delivery/C_REBASE_OBSERVATION.json"
       ],
-      "evidence_connection": "Pending actual publication, central integration and final dual backups",
-      "execution": "NOT_RUN",
-      "publication": "PENDING",
-      "checkpoint": "B1_PREEXECUTION_PENDING_ACTUAL_DUAL_ACK"
+      "evidence_connection": "Keep defined20stage completion separate from observed provider/publication receipts; no future ACK asserted",
+      "execution": "Actual S/C publication and B1/B2 ACK; current-file D metadata complete; actual D/E/B3 receipts pending",
+      "publication": {
+        "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+        "science_receipt": "delivery/S_PUBLISHED.json",
+        "delivery_metadata_commit": "CURRENT_FILE_COMMIT"
+      },
+      "checkpoint": {
+        "B1_preparation": "delivery/B1_BACKUP_ACK.json",
+        "B2_exact_S_C": "delivery/B2_BACKUP_ACK.json",
+        "D_E_B3_tail": "PENDING_ACTUAL_ACK"
+      }
     }
   ],
   "physical_parent_status": "SOURCE_INPUT_PENDING",
   "physical_provider_admitted": false,
-  "full_goal_completion_percent": null
+  "full_goal_completion_percent": null,
+  "science_commit": "60cacdb740fa4dadcdcbff43b7ffcb52566e077d",
+  "delivery_commit": "CURRENT_FILE_COMMIT",
+  "central_observation_commit": "e69b01457f1f27e11806ad724a925a1f723d0c24",
+  "central_backup_ack_commit": "PENDING_ACTUAL_E",
+  "delivery_finalization": "PREPARED_CURRENT_FILE_D; actual D/E readback and B3 dual ACK pending"
 }
