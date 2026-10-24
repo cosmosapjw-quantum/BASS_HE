@@ -1,3 +1,24 @@
+# PWBE 실제 전달 인계 — D는 CURRENT_FILE_COMMIT
+
+Repository cosmosapjw-quantum/BASS_HE, branch research/he-ang-pwbe-spin-azimuth-20261024, [draft PR97](https://github.com/cosmosapjw-quantum/BASS_HE/pull/97). Actual Science S `db91cbd3ac0f4db7908cd69c1f40e961f81051f9`, tree `d04f1bfb97d9c3a61835b3d0709825453f9b3a3f`. Actual Central C `cdba5c98819ea615c32c4d7cea2c613a737e9eb1`, tree `231b55364af1ba41456da3cfc078e49c2e315bae`. 현재 Delivery D의 정확한 identity는 이 파일을 포함하는 **CURRENT_FILE_COMMIT**이며, actual D 게시 영수증에서40자리 SHA를 제공한다. Central E와 D/E B3 supplement는 아직 PENDING_ACTUAL이다.
+
+B1과 B2는 실제 dual upload와 별도 metadata-size readback을 완료했다. B2는235069bytes/83members/localSHA256 `257d9c570d4ea66bb76b4645ced443215424f679f9976f8a9d1a0fb82e221e11`, Drive `1r5dabbTUT-rTVt4pSwQDs-36ET49PEg3`, Dropbox `id:BSpOijBcT10AAAAAAD_9bg`다. Exact S74/C3 및 private unusedcontext를 보존하며 D/E는 이후 B3 overlay로 전달한다. Independent remote SHA256은 검증하지 않았다. 최종 실제 B3 SHA·provider ACK는 PR97 description에 기록하며 archive 자기 영수증을 재귀적으로 넣지 않는다.
+
+현재 scoped 상태는 **PASS_SCOPED_SCIENCE_PRESENTATION_OPEN / 19 complete / C8 partial**이다. Source-specific fixed-center PWBE analytic D/X와 continuous pointwise joint TDCS, conditional phi/cosine/pair-direction law를 구성했다. FIAS Eq21의 −2DX를 unpolarized law로 채택하지 않았고, 독립 spin trace의 −Re(DX*) 및1/4+3/4를 사용했다. Exact outgoing swap과 BO exchange를 구별한다. 여섯 실제 finite results의 Kbar·cos·pair-dot은 아래와 RESULTS_KO에 보존했다. Initial12PASS+targeted2PASS이며 전체14재실행은 없다.
+
+측정된4children+runner CPU1.966445/wall2.079161265000039,8/30allocation,reserve1used0remaining을 유지한다. 초기 assertion FAIL과 plot FAIL 모두 charge됐다. Host/remote UNKNOWN_NOT_ZERO 및 이전 PR96/DDCS/CCC/HEANG contract/Hex/X1/HE38/D10 원장·실패·unknown은 재사용하고 초기화·전용하지 않는다. Root가 plot Mathtext 세 label만 정적으로 고쳤으며 **NOT_RERENDERED**다. Saved-output-only 실제 render와 visual review는 다음 열린 C8 의무이며 현재 추가 invocation이나 budget은 없다.
+
+ParentHEANG SOURCE_INPUT_PENDING/physical_provider_admitted=false다. Analytic PWBE model input은 사용 가능하고, 다음 물리 의무는 source-qualified plane-wave adequacy/calibration, required support·uncertainty, finite-mass recoil 및 consumer admission이다. Source table fit, full energy/solid-angle sigma 적분, 새 IVP와 consumer activation은 수행하지 않았다. C9-NB-01의 future partial-mu theta metadata, C23E·다른 owner OPEN/scoped 상태, CR finite native-knot 결과와 DriveUNKNOWN, 독립 owner survey의 PHYS86actual1099/1099와 canonical WU node구별, PHYS85 incomplete/PHYS84WAIT, 별도 unmerged REC PR225와 ANGTHERM02READ_ONLY를 유지한다. No merge/no activation.
+
+다음은 actual D 게시·readback 뒤 현재 central HEAD/AGENTS를 확인해 E에 실제 D/B2 ACK만 additive로 연결하고, exact actual D/E+B3를 보존하는 것이다. 새로운 과학 실행은 필요하지 않다. 아래 Science S 당시 인계는 역사적 맥락이며 현재 actual identity와 전달 상태는 이 상단과 delivery/ 영수증이 우선한다.
+
+
+## S 이후 병렬 owner 관측
+
+Central 최신 parent는 `79c042a15e7e29b894dadc32188e286dade73aad`, tree `887f413e928d21f5f80fbd2e04b309610c6a8fc5`다. REI pressure는 실제1child와 exact8/9..1의 scoped admission을 받았으며 이전 S survey의 pressure NOT_RUN 관측만 갱신한다. 해당 비용은 HE 예산이 아니다. 새 Bianchi stock은 theory/static PASS, numerical NOT_RUN/proposal NOT_RELEASED, physicalstock/L4false다. Root가 읽은4문서와 freshness 및 짧은 addendum은 `evidence/survey/post_S_parallel_owner/`에 있다. Assembly/AGENTS는 불변이고48개 owner leaf를 보존한 새 base 위에서 E를 조립한다. S/B2는 불변이며 science 재실행은 없다. ANGTHERM02 READ_ONLY와 fullL1/physicalstock 미채택을 유지한다.
+
+---
+
 # PWBE 현재 인계 — scoped science admitted, presentation open
 
 ## 위치와 현재 결과

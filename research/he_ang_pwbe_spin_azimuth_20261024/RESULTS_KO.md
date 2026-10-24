@@ -57,10 +57,22 @@ The child supplies DERIVED_PWBE_MODEL_INPUT_AVAILABLE: analytic exact-swapped am
 
 Root classified the plot failure as presentation syntax only. The original plot and exact diff are in `reviews/C8-PLOT-01_BEFORE/`. Only `\overline K` → `\overline{K}`, `\frac14` → `\frac{1}{4}`, and `\frac34` → `\frac{3}{4}` changed. **NOT_RERENDERED=true**: no renderer/import/compile or fifth child occurred. C8 is PARTIAL; actual figure/render/visual review remains OPEN.
 
-B1 actual dual upload and separate metadata readback are confirmed by `delivery/B1_BACKUP_ACK.json`: 210830bytes/37members/localSHA256 `4a3f1c5c2e9e7941d113c6217befcf51167eb0f0cb48c58bc0ab87d3652e8b49`; Drive `1mkc6jKqa2trgI_5gjm1UV3DABSGTmrmu`, Dropbox `id:BSpOijBcT10AAAAAAD_9Zg`. Independent remote SHA256 was not checked. Science publication and later B2/B3 remain pending actual.
+B1 actual dual upload and separate metadata readback are confirmed by `delivery/B1_BACKUP_ACK.json`: 210830bytes/37members/localSHA256 `4a3f1c5c2e9e7941d113c6217befcf51167eb0f0cb48c58bc0ab87d3652e8b49`; Drive `1mkc6jKqa2trgI_5gjm1UV3DABSGTmrmu`, Dropbox `id:BSpOijBcT10AAAAAAD_9Zg`. Independent remote SHA256 was not checked. The Science S snapshot recorded publication/B2/B3 as pending at its historical creation; actual S/C/B2 and current D state are updated in the delivery section below.
 
 R7 used one actual evaluator:10booleansTrue, toolwall8.83s/bodyCPU.399022s/bodywall.400572s. Context1toolwall21.435s was unused/NOT_ADOPTED; totalremoteCPUUNKNOWN_NOT_ZERO. The private context bytes/hash are referenced in ASSESSMENT.json; future B2 must preserve private_context/CONTEXT_RAW.json without public documentation excerpts. No Wolfram replay occurred.
 
 ## Adopted outcome and stage completion
 
 Actual C9 and root adopt **PASS_SCOPED_SCIENCE_PRESENTATION_OPEN**, with accepted states DERIVED / IMPLEMENTATION_VERIFIED_SCOPED / NUMERICALLY_CHECKED_SCOPED. Science S assesses all20stages:17complete,C8partial,R10+C10pending actual publication/backup/delivery. Final delivery may close R10/C10 to19complete while retaining C8partial;20/20 is not admitted. There are no open blocking scientific findings. C6-ASSERT-01 is closed with the initialfailure retained. C8-PLOT-01 remains OPEN for a future separately authorized saved-output-only render and actual visual inspection; no invocation is authorized now.
+
+## 실제 S/C·B2와 현재 delivery D
+
+Actual Science S는 `db91cbd3ac0f4db7908cd69c1f40e961f81051f9` (tree `d04f1bfb97d9c3a61835b3d0709825453f9b3a3f`), Central C는 `cdba5c98819ea615c32c4d7cea2c613a737e9eb1` (tree `231b55364af1ba41456da3cfc078e49c2e315bae`)다. PR97은 draft/open/unmerged이며 activation하지 않았다. 각각의 실제 byte readback은 delivery/S_PUBLISHED.json과 C_PUBLISHED.json에 있다.
+
+B2는 2026-10-24 09:12:06UTC에 실제 양쪽 upload와 별도 metadata-size readback을 완료했다. 235069bytes/83members/localSHA256 `257d9c570d4ea66bb76b4645ced443215424f679f9976f8a9d1a0fb82e221e11`, Drive `1r5dabbTUT-rTVt4pSwQDs-36ET49PEg3`, Dropbox `id:BSpOijBcT10AAAAAAD_9bg`이며 양쪽 size는235069다. Independent remote SHA256은 검증하지 않았다. B2는 exact S74/C3와 실제 영수증·보존근거·미채택 privatecontext를 담으며, 이후 D/E는 포함하지 않는다.
+
+현재 D의 commit identity는 **CURRENT_FILE_COMMIT**이다. D는 metadata-only이며 Science S의17complete/C8partial/R10+C10pending을 실제 전달 상태 **19complete/C8partial**로 연결한다. R10/C10의 정의된 scoped 인계·실제 S/C/B2 근거를 현재 containing commit에 결속했다. C8 figure/render/visual review는 OPEN이고20/20완료가 아니다. 후속 Central E와 D/E B3 supplement는 PENDING_ACTUAL이며 실제 B3 SHA/Drive/Dropbox ACK의 최종 위치는 [PR97 description](https://github.com/cosmosapjw-quantum/BASS_HE/pull/97)이다. 이 archive의 미래 ACK를 꾸미거나 science를 재실행하지 않는다.
+
+## S 이후 병렬 owner 관측
+
+Central 최신 parent는 `79c042a15e7e29b894dadc32188e286dade73aad`, tree `887f413e928d21f5f80fbd2e04b309610c6a8fc5`다. REI pressure는 실제1child와 exact8/9..1의 scoped admission을 받았으며 이전 S survey의 pressure NOT_RUN 관측만 갱신한다. 해당 비용은 HE 예산이 아니다. 새 Bianchi stock은 theory/static PASS, numerical NOT_RUN/proposal NOT_RELEASED, physicalstock/L4false다. Root가 읽은4문서와 freshness 및 짧은 addendum은 `evidence/survey/post_S_parallel_owner/`에 있다. Assembly/AGENTS는 불변이고48개 owner leaf를 보존한 새 base 위에서 E를 조립한다. S/B2는 불변이며 science 재실행은 없다. ANGTHERM02 READ_ONLY와 fullL1/physicalstock 미채택을 유지한다.

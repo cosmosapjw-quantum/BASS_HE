@@ -64,8 +64,17 @@
     "historical_failures_costs_unknowns_reset": false
   },
   "B1": "ACTUAL_DUAL_ACK_METADATA_READBACK_CONFIRMED: delivery/B1_BACKUP_ACK.json",
-  "B2_B3": "PENDING_ACTUAL",
-  "publication": "AUTHORIZED_LOCAL_PACKET; ACTUAL_S_NOT_YET_PUBLISHED",
+  "B2_B3": {
+    "B2": "ACTUAL_DUAL_ACK_METADATA_READBACK: delivery/B2_BACKUP_ACK.json",
+    "B3": "PENDING_ACTUAL_D_E_OVERLAY; FINAL_RECEIPT_AT_PR97"
+  },
+  "publication": {
+    "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+    "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+    "Delivery_D": "CURRENT_FILE_COMMIT",
+    "Central_E": "PENDING_ACTUAL",
+    "PR97": "draft/open/unmerged"
+  },
   "physical_provider_admitted": false,
   "parent_HEANG": "SOURCE_INPUT_PENDING",
   "new_strong_no_go": false,
@@ -176,16 +185,13 @@
   ],
   "stage_count": {
     "assessed": 20,
-    "complete": 17,
+    "complete": 19,
     "partial": [
       "C8"
     ],
-    "pending": [
-      "R10",
-      "C10"
-    ],
+    "pending": [],
     "twenty_of_twenty": false
   },
-  "R10": "PENDING_ACTUAL_PUBLICATION_AND_EXACT_S_C_BACKUP",
-  "C10": "PENDING_ACTUAL_DELIVERY"
+  "R10": "COMPLETE_SCOPED_CURRENT_FILE_COMMIT_DELIVERY",
+  "C10": "COMPLETE_SCOPED_CURRENT_FILE_COMMIT_DELIVERY"
 }

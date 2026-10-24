@@ -1,7 +1,7 @@
 {
   "workflow_version": "1.0.0 user-provided",
   "unit_id": "HE-ANG-PWBE-SPIN-AZIMUTH",
-  "state": "SCIENCE_ADMITTED_17_COMPLETE_C8_PARTIAL_R10_C10_PENDING",
+  "state": "DELIVERY_METADATA_CURRENT_FILE_COMMIT_19_COMPLETE_C8_PARTIAL",
   "R1_R5_evidence": "ROOT_AUTHORED_AND_R6_PASS; theory and contract bytes unchanged",
   "stages": [
     {
@@ -14,12 +14,22 @@
         "evidence/survey/CENTRAL_FRESHNESS.json"
       ],
       "note": "Root selected model/scope and prior PR96 baseline; mechanical assembly only.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -34,12 +44,22 @@
         "evidence/REUSED_LEDGER_REFERENCES.json"
       ],
       "note": "Root source reads plus selected changed-owner intake; empirical Table1 not transcribed.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -53,12 +73,22 @@
         "evidence/R6_TO_IMPLEMENTATION_DECISION.json"
       ],
       "note": "Actual independent R6 PASS, root authorizes frozen implementation preparation. No numerical execution implied.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -72,12 +102,22 @@
         "evidence/R6_TO_IMPLEMENTATION_DECISION.json"
       ],
       "note": "Actual independent R6 PASS, root authorizes frozen implementation preparation. No numerical execution implied.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -91,12 +131,22 @@
         "evidence/R6_TO_IMPLEMENTATION_DECISION.json"
       ],
       "note": "Actual independent R6 PASS, root authorizes frozen implementation preparation. No numerical execution implied.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -110,12 +160,22 @@
         "evidence/R6_TO_IMPLEMENTATION_DECISION.json"
       ],
       "note": "Actual independent R6 PASS, root authorizes frozen implementation preparation. No numerical execution implied.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -127,12 +187,22 @@
         "evidence/wolfram/ASSESSMENT.json"
       ],
       "note": "Root actual single evaluator PASS; no repeat by worker. Remote CPU unknown retained.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "prepared source/theory/code only; actual post-B1 execution/review evidence not inside B1; included in future S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -145,12 +215,22 @@
         "CLAIM_GATE.json"
       ],
       "note": "Root adopts actual separate C9 PASS_SCOPED_SCIENCE_PRESENTATION_OPEN; physical parent and C8 obligation retained.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "prepared source/theory/code only; actual post-B1 execution/review evidence not inside B1; included in future S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -164,30 +244,53 @@
         "HANDOFF_RESEARCH_KO.md"
       ],
       "note": "Accepted source-derived model/result and coding contract linked to actual scoped evidence; C8 figure remains open.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "prepared source/theory/code only; actual post-B1 execution/review evidence not inside B1; included in future S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
       "id": "R10",
       "label": "종료·재개",
-      "status": "pending",
+      "status": "complete",
       "evidence": [
         "HANDOFF_RESEARCH_KO.md",
         "delivery/PUBLICATION.json",
-        "delivery/B1_BACKUP_ACK.json"
+        "delivery/FINAL_BACKUP_ACK.json",
+        "delivery/S_PUBLISHED.json",
+        "delivery/C_PUBLISHED.json",
+        "delivery/B2_BACKUP_ACK.json"
       ],
-      "note": "Current handoff prepared and B1 actual; Science S/C publication and B2 plus actual delivery D/E/B3 still pending. No future ACK claimed.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "note": "Scoped result/resume handoff and actual S/C+B2 delivery bound by current containing D commit. Exact future E/B3 ACK remains external PR97tail; C8presentationstillPARTIAL. No20of20.",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -199,12 +302,22 @@
         "evidence/PREPARATION_STATE.json"
       ],
       "note": "Frozen implementation completed and actual affected tests/analysis assessed by C9; original preparation is historical, current raw results in execution/ and results/. C8 render remains open.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -216,12 +329,22 @@
         "code/pwbe.py"
       ],
       "note": "Frozen implementation completed and actual affected tests/analysis assessed by C9; original preparation is historical, current raw results in execution/ and results/. C8 render remains open.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -234,12 +357,22 @@
         "code/run_azimuth_analysis.py"
       ],
       "note": "Frozen implementation completed and actual affected tests/analysis assessed by C9; original preparation is historical, current raw results in execution/ and results/. C8 render remains open.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -252,12 +385,22 @@
         "evidence/execution/RESOURCE_LEDGER.json"
       ],
       "note": "Frozen implementation completed and actual affected tests/analysis assessed by C9; original preparation is historical, current raw results in execution/ and results/. C8 render remains open.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -272,12 +415,22 @@
         "evidence/preparation/SYNTAX_PREPARATION.json"
       ],
       "note": "Frozen implementation completed and actual affected tests/analysis assessed by C9; original preparation is historical, current raw results in execution/ and results/. C8 render remains open.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -293,12 +446,22 @@
         "results/REPAIR_TEST_REPORT.json"
       ],
       "note": "Root diagnosed assertion-contract FALSE_FAIL; initial12PASS reused plus targeted2PASS; original14report preserved, no full14replay.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "prepared source/theory/code only; actual post-B1 execution/review evidence not inside B1; included in future S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -310,12 +473,22 @@
         "evidence/execution/03_02_azimuth_analysis/FINISH.json"
       ],
       "note": "Six frozen finite raw-source-vs-closed comparisons PASS and admitted by actual C9/root; no global or physical accuracy certificate.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "prepared source/theory/code only; actual post-B1 execution/review evidence not inside B1; included in future S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -330,12 +503,22 @@
       ],
       "note": "Finite numerical evidence/versions/cost complete; renderer failed Mathtext. Root authorizes three static label corrections only; NOT_RERENDERED, figure/render/visualreview OPEN. No fifthchild.",
       "assessment": "PARTIAL",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "original plot code preparation only; later failed render + static correction require exact S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
@@ -348,36 +531,67 @@
         "reviews/ROOT_ADMISSION.json"
       ],
       "note": "Actual independent scoped science PASS; C6 assertion finding closed, C8 presentation finding OPEN; no extra reviewer execution.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "metadata_only_CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "prepared source/theory/code only; actual post-B1 execution/review evidence not inside B1; included in future S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     },
     {
       "id": "C10",
       "label": "판정·인계",
-      "status": "pending",
+      "status": "complete",
       "evidence": [
         "HANDOFF_RESEARCH_KO.md",
         "delivery/PUBLICATION.json",
-        "delivery/B1_BACKUP_ACK.json"
+        "delivery/FINAL_BACKUP_ACK.json",
+        "delivery/S_PUBLISHED.json",
+        "delivery/C_PUBLISHED.json",
+        "delivery/B2_BACKUP_ACK.json"
       ],
-      "note": "Current handoff prepared and B1 actual; Science S/C publication and B2 plus actual delivery D/E/B3 still pending. No future ACK claimed.",
-      "publication_state": "PENDING_ACTUAL_S_AT_SNAPSHOT",
+      "note": "Scoped result/resume handoff and actual S/C+B2 delivery bound by current containing D commit. Exact future E/B3 ACK remains external PR97tail; C8presentationstillPARTIAL. No20of20.",
+      "publication_state": {
+        "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+        "source_byte_readback": "74of74GitblobSHA1andbytesMATCH",
+        "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+        "Delivery_D": "CURRENT_FILE_COMMIT"
+      },
       "checkpoint": {
         "B1_receipt": "delivery/B1_BACKUP_ACK.json",
         "B1_actual": "DUAL_ACK_METADATA_READBACK_CONFIRMED",
         "B1_scope": "theory/source/survey and original code preparation; actual later results require S/C B2",
-        "next_checkpoint": "B2_EXACT_S_C_PENDING_ACTUAL"
+        "next_checkpoint": "B3_ACTUAL_D_E_OVERLAY_PENDING; FINAL_ACK_AT_PR97",
+        "Science_S_receipt": "delivery/S_PUBLISHED.json",
+        "Central_C_receipt": "delivery/C_PUBLISHED.json",
+        "B2_actual": "DUAL_UPLOAD_AND_INDEPENDENT_METADATA_SIZE_READBACK",
+        "B2_receipt": "delivery/B2_BACKUP_ACK.json",
+        "B2_scope": "Exact published S74/C3 plus privateunusedcontext; D/E laterB3"
       }
     }
   ],
   "execution": "FOUR_CHILDREN_FINISHED: initialtestsFAIL,targetedrepairPASS,analysisPASS,plotFAIL",
-  "publication": "AUTHORIZED_PACKET_PREPARED_ACTUAL_S_PENDING",
-  "backup": "ACTUAL_B1_DUAL_UPLOAD_AND_METADATA_READBACK_CONFIRMED: delivery/B1_BACKUP_ACK.json",
+  "publication": {
+    "Science_S": "db91cbd3ac0f4db7908cd69c1f40e961f81051f9",
+    "Central_C": "cdba5c98819ea615c32c4d7cea2c613a737e9eb1",
+    "Delivery_D": "CURRENT_FILE_COMMIT",
+    "Central_E": "PENDING_ACTUAL",
+    "PR": 97,
+    "draft": true,
+    "merged": false
+  },
+  "backup": "B1_B2_ACTUAL_DUAL_ACK_METADATA_READBACK; B3_D_E_SUPPLEMENT_PENDING_ACTUAL_EXTERNAL_PR97_RECEIPT",
   "kernel_implementation": "C5_IMPLEMENTED; INITIAL12PASS_REUSED_PLUS_TARGETED2PASS; SIX_CASE_ANALYSIS_PASS",
   "budget": "ACTUAL4CHILDREN_CPU1.966445_WALL2.079161265000039_WITHIN8_30; RESERVE1USED0REMAINING; END_TO_END_CPU_UNKNOWN",
   "physical_parent": "HE-ANG SOURCE_INPUT_PENDING",
@@ -436,14 +650,21 @@
   "stages_assessed": 20,
   "stage_count": {
     "assessed": 20,
-    "complete": 17,
+    "complete": 19,
     "partial": [
       "C8"
     ],
-    "pending": [
-      "R10",
-      "C10"
-    ],
+    "pending": [],
     "twenty_of_twenty": false
+  },
+  "post_S_parallel_owner": {
+    "head": "79c042a15e7e29b894dadc32188e286dade73aad",
+    "tree": "887f413e928d21f5f80fbd2e04b309610c6a8fc5",
+    "assembly_AGENTS_unchanged": true,
+    "REI_new_leaf_files": 48,
+    "evidence": "evidence/survey/post_S_parallel_owner/ADDENDUM_KO.md",
+    "pressure": "ADMITTED_SCOPED_FINITE_POSITIVE_MEASURE_PRESSURE; exact8/9..1; ownbudgetnotHE",
+    "stock": "STATIC_PREPARED_NUMERICAL_NOT_RUN_NOT_RELEASED;physicalstockfalseL4false",
+    "E_expected_base": "79c042a15e7e29b894dadc32188e286dade73aad"
   }
 }
