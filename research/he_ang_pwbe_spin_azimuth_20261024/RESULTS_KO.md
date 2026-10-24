@@ -76,3 +76,9 @@ B2는 2026-10-24 09:12:06UTC에 실제 양쪽 upload와 별도 metadata-size rea
 ## S 이후 병렬 owner 관측
 
 Central 최신 parent는 `79c042a15e7e29b894dadc32188e286dade73aad`, tree `887f413e928d21f5f80fbd2e04b309610c6a8fc5`다. REI pressure는 실제1child와 exact8/9..1의 scoped admission을 받았으며 이전 S survey의 pressure NOT_RUN 관측만 갱신한다. 해당 비용은 HE 예산이 아니다. 새 Bianchi stock은 theory/static PASS, numerical NOT_RUN/proposal NOT_RELEASED, physicalstock/L4false다. Root가 읽은4문서와 freshness 및 짧은 addendum은 `evidence/survey/post_S_parallel_owner/`에 있다. Assembly/AGENTS는 불변이고48개 owner leaf를 보존한 새 base 위에서 E를 조립한다. S/B2는 불변이며 science 재실행은 없다. ANGTHERM02 READ_ONLY와 fullL1/physicalstock 미채택을 유지한다.
+
+## 현재 additive C8 closeout — 새 prospective continuation 이후
+
+Root의 새 명시적 user-loop authorization으로 old NO_FIFTH snapshot 이후 invocation-count 정책만 한정 갱신했다. 새 예산/reserve 없이 같은8CPU/30wall에서05 saved-output-only render(CPU3/wall10cap)를1회 실행했다. Kernel/source/tests/analysis/Wolfram 재실행은 없다. 실제05PASS CPU1.3375929999999998/wall1.3716336839988799, cumulative5attemptsCPU3.304038/wall3.4507949489989187이며 originalreserve1used0remaining을 유지한다.
+
+독립 C9 delta와 root는 실제 PNG/SVG 및3panel시각확인을 PASS로 채택해 C8-PLOT-01을 닫았다. 왼쪽 peak/legend 공간 공유는 해석가능한 cosmetic observation으로 남겼고 추가 render를 요청하지 않았다. 현재 정의된 PWBE unit은 **20/20 scoped complete**이며 fullphysicalprovider=false/HEANGSOURCE_INPUT_PENDING/전체물리goalpercentnull을 유지한다. PR97 S/D/E 및 B1/B2/B3의 과거19complete/C8partial는 역사 기록으로 그대로다. 현재 closeout은 다음새branch의additive oldC8delta로 게시 대기하며 PR97을 작업자가 수정하지 않는다. 실제 근거: reviews/C9_C8_CONTINUATION_REPORT.json 및 ROOT_ADMISSION_C8_ADDENDUM.json.

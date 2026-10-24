@@ -1,6 +1,6 @@
 {
   "unit_id": "HE-ANG-PWBE-SPIN-AZIMUTH",
-  "status": "PASS_SCOPED_SCIENCE_PRESENTATION_OPEN",
+  "status": "PASS_SCOPED_CURRENT_UNIT_COMPLETE",
   "child_contribution": "DERIVED_PWBE_MODEL_INPUT_AVAILABLE",
   "theory": {
     "R6": "PASS",
@@ -32,13 +32,13 @@
     ]
   },
   "C8": {
-    "status": "PARTIAL",
-    "numerics": "FINITE_EVIDENCE_PASS",
-    "plot": "ORIGINAL_RENDER_FAIL; THREE_LABEL_STATIC_CORRECTION_NOT_RERENDERED",
-    "figure_render_visual_review": "OPEN",
-    "fifth_child_authorized": false
+    "status": "COMPLETE_SCOPED",
+    "actual_render": "05PASS",
+    "visual_review": "PASS",
+    "finding": "C8-PLOT-01CLOSED",
+    "more_render_authorized": false
   },
-  "C9": "PASS_SCOPED_SCIENCE_PRESENTATION_OPEN",
+  "C9": "OriginalsciencePASSplusactualC8deltareviewPASS",
   "R8_R9": "ACTUAL_ROOT_ADMISSION_ADOPTED; scoped result and coding handoff complete",
   "claims": {
     "analytic_joint_density": "DERIVED_PWBE_MODEL_INPUT_AVAILABLE",
@@ -185,13 +185,26 @@
   ],
   "stage_count": {
     "assessed": 20,
-    "complete": 19,
-    "partial": [
-      "C8"
-    ],
+    "complete": 20,
+    "partial": [],
     "pending": [],
-    "twenty_of_twenty": false
+    "twenty_of_twenty": true,
+    "scope": "PWBE definedunit only"
   },
   "R10": "COMPLETE_SCOPED_CURRENT_FILE_COMMIT_DELIVERY",
-  "C10": "COMPLETE_SCOPED_CURRENT_FILE_COMMIT_DELIVERY"
+  "C10": "COMPLETE_SCOPED_CURRENT_FILE_COMMIT_DELIVERY",
+  "C8_current_closeout": {
+    "status": "COMPLETE_SCOPED_ACTUAL_RENDER_VISUAL_PASS",
+    "review": "reviews/C9_C8_CONTINUATION_REPORT.json",
+    "root": "reviews/ROOT_ADMISSION_C8_ADDENDUM.json",
+    "historical_PR97_D_E": "19complete/C8partial preserved in original commits/archives",
+    "current_additive_stage_count": "20of20scoped",
+    "actual_children": 5,
+    "cumulative_cpu_s": 3.304038,
+    "cumulative_wall_s": 3.4507949489989187,
+    "original_reserve_used": 1,
+    "remaining": 0,
+    "newunit_budget_charged": false,
+    "publication": "PENDING_NEWBRANCH_ADDITIVE_C8_CLOSEOUT"
+  }
 }
