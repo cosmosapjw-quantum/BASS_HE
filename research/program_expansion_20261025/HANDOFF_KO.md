@@ -76,3 +76,8 @@ P2 readiness 교정: WU-led HE-EXP-NUCLEAR는 species/mass/branch/source 입력�
 - `HE101-EXPORT`
 
 새 예산은 각 원 계약만 따릅니다. 완료 결과를 재계산하거나 자식 완료를 부모 완료로 승격하지 않습니다. 전역 물리 완료율은 null, L4 준비 상태는 false입니다.
+
+
+## HE-EXP-INTAKE-01 후속 결과
+
+2026-10-25의 source intake와 조건부 교환·열폐쇄 구현은 [continuation_20261025/HANDOFF_KO.md](continuation_20261025/HANDOFF_KO.md) 및 [RESULTS_KO.md](continuation_20261025/RESULTS_KO.md)로 이어갑니다. 원 HE101 기록과 예산은 위 인계 그대로 보존합니다. 실제 새 게시·백업 영수증은 continuation_20261025/delivery/를 따릅니다.

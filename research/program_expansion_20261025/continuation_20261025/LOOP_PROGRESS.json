@@ -1,0 +1,129 @@
+{
+  "workflow_version": "1.0.0",
+  "unit_id": "HE-EXP-INTAKE-01",
+  "scope": "source intake+conditional interface; physical campaign outside this unit",
+  "stages": [
+    {
+      "id": "R1",
+      "status": "complete",
+      "evidence": "evidence/PREFLIGHT.json",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "R2",
+      "status": "complete",
+      "evidence": "sources/SOURCE_PROVENANCE.json",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "R3",
+      "status": "complete",
+      "evidence": "species/README_KO.md",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "R4",
+      "status": "complete",
+      "evidence": "pair_source/THEORY_KO.md",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "R5",
+      "status": "complete",
+      "evidence": "exchange/THEORY_KO.md",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "R6",
+      "status": "complete",
+      "evidence": "pair_source/reviews/INDEPENDENT_REVIEW_FINAL.json",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "R7",
+      "status": "complete",
+      "evidence": "evidence/validation/RESOURCE_LEDGER.json",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "R8",
+      "status": "complete",
+      "evidence": "RESULT.json",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "R9",
+      "status": "complete",
+      "evidence": "RESULTS_KO.md",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "R10",
+      "status": "in_progress",
+      "evidence": "HANDOFF_KO.md",
+      "note": "actual publication/dual backup awaited"
+    },
+    {
+      "id": "C1",
+      "status": "complete",
+      "evidence": "evidence/PREFLIGHT.json",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "C2",
+      "status": "complete",
+      "evidence": "species/consumer_inventory.py",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "C3",
+      "status": "complete",
+      "evidence": "exchange/THEORY_KO.md",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "C4",
+      "status": "complete",
+      "evidence": "VALIDATION_CONTRACT.json",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "C5",
+      "status": "complete",
+      "evidence": "exchange/exchange_closure.py",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "C6",
+      "status": "complete",
+      "evidence": "evidence/validation/RESOURCE_LEDGER.json",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "C7",
+      "status": "complete",
+      "evidence": "exchange/PAIR_INDEPENDENT_REVIEW.md",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "C8",
+      "status": "complete",
+      "evidence": "pair_source/reviews/INDEPENDENT_REVIEW_FINAL.json",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "C9",
+      "status": "complete",
+      "evidence": "pair_source/reviews/INDEPENDENT_REVIEW_FINAL.json",
+      "note": "scoped evidence; legacy unchanged science reused"
+    },
+    {
+      "id": "C10",
+      "status": "in_progress",
+      "evidence": "HANDOFF_KO.md",
+      "note": "actual publication/dual backup awaited"
+    }
+  ],
+  "scientific_parent_completion_inferred": false,
+  "HE101_C8": "PARTIAL_EXPORT"
+}
