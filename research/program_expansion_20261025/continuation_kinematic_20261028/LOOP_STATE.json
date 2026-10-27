@@ -55,7 +55,7 @@
       "stage": "S09",
       "theory": "R9",
       "coding": "C9",
-      "status": "pending"
+      "status": "complete_work_product_scoped_reference_accepted_workflow_partial"
     },
     {
       "stage": "S10",
@@ -64,7 +64,7 @@
       "status": "pending"
     }
   ],
-  "current_stage": "S08",
+  "current_stage": "S09",
   "publication_scope": "PREPUBLICATION_WORK_PRODUCT",
   "source_and_backup_receipts": "External STAGE_ACKS.json records actual postcommit outcomes",
   "local_dag": "8 complete +1 partial +3 physical open /12",
@@ -78,5 +78,8 @@
   "symbolic_result": "IDENTITIES_CONFIRMED_BY_REPORTED_TOOL_OUTPUT_AND_DIRECT_ALGEBRA",
   "wolfram_calls": 1,
   "plot": "FAIL_CPU_CAP_EXCEEDED",
-  "workflow": "PARTIAL"
+  "workflow": "PARTIAL",
+  "scientific_decision": "ACCEPT_SCOPED_PHYSICAL_INPUT_REFERENCE_WITH_WORKFLOW_PARTIAL",
+  "review_pass": 1,
+  "review_actual_checks": "11 PASS +1 FAIL /12"
 }

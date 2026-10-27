@@ -102,12 +102,15 @@
       "status": "partial_scoped",
       "inherited": false,
       "description": "Exact physical rest-energy/photon-energy predicate, algebraic fold enclosure, and inherited shared-event acceptance integration",
-      "reason": "Scientific validation14/14PASS; saved-only plot wholeCPU7.040661>6s FAIL; finalreviewpending",
+      "reason": "Scoped scientific reference accepted; plot CPU gate failed, workflow PARTIAL",
       "evidence": [
         "THEORY_KO.md",
         "evidence/VALIDATION_RESULT.json",
-        "evidence/PLOT_RESULT.json"
-      ]
+        "evidence/PLOT_RESULT.json",
+        "review/FINAL_REVIEW.json",
+        "RESULT.json"
+      ],
+      "decision": "ACCEPT_SCOPED_PHYSICAL_INPUT_REFERENCE_WITH_WORKFLOW_PARTIAL"
     }
   ],
   "edges": [
