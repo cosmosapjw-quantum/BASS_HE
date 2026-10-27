@@ -83,8 +83,16 @@
     },
     {
       "id": "APERTURE07-VALIDATED-REFERENCE",
-      "status": "pending_scoped",
-      "inherited": false
+      "status": "complete_scoped",
+      "inherited": false,
+      "evidence": [
+        "review/RESULT_REVIEW.json",
+        "RESULT.json",
+        "tests/test_aperture.py",
+        "evidence/validation/01_tests/FINISH.json",
+        "evidence/plot/FINISH.json",
+        "evidence/plot/APERTURE07_BOUNDS.png"
+      ]
     }
   ],
   "edges": [
@@ -114,8 +122,8 @@
     ]
   ],
   "accounting": {
-    "complete_scoped_nodes": 7,
-    "pending_scoped_nodes": 1,
+    "complete_scoped_nodes": 8,
+    "pending_scoped_nodes": 0,
     "open_physical_inputs": 3,
     "partial_nodes": 0,
     "total_nodes": 11

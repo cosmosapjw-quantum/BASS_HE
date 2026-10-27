@@ -1,3 +1,9 @@
+# 이 문서의 역사적 시점과 현재 S09 상태
+
+아래 C3–C5 preparation/NOT_RUN 서술은 구현 전 격리 준비 당시의 원문 기록이다. 현재 상태를 뜻하지 않는다. 이후 canonical S05에서 새32/32 검사가 PASS했고 새 저장값 그림도 첫 실행 PASS였으며, S09에서 동일 독립 review pass의 실제 결과 검토 PASS·결함0을 근거로 조건부 aperture reference를 채택했다. 현재 continuation DAG는8 complete +0 pending +3 physical open /11이다. 현재 판정·실행 근거·범위는 `RESULT.json`, `review/RESULT_REVIEW.json`, `ACCEPTANCE_KO.md`를 따른다. 이 갱신은 아래 구현이나 실행 계약을 바꾸지 않는다.
+
+---
+
 # APERTURE07 isolated C3–C5 preparation
 
 Status: **NOT_RUN**. These files are outside the canonical unit. No source, test,

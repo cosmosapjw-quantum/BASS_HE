@@ -112,8 +112,13 @@
       "checkpoint": "S09",
       "theory": "R9",
       "coding": "C9",
-      "status": "PENDING",
-      "evidence": []
+      "status": "COMPLETE",
+      "evidence": [
+        "ACCEPTANCE_KO.md",
+        "review/RESULT_REVIEW.json",
+        "RESULT.json",
+        "DAG.json"
+      ]
     },
     {
       "checkpoint": "S10",
@@ -124,8 +129,8 @@
     }
   ],
   "DAG": {
-    "complete_scoped": 7,
-    "pending_scoped": 1,
+    "complete_scoped": 8,
+    "pending_scoped": 0,
     "open_physical": 3,
     "total": 11
   },

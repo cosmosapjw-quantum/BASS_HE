@@ -14,3 +14,12 @@
 - `preflight/`: 게시 후 조사와 선행 publication 확인.
 
 PHOTON05의 24/24 PASS, plotCPU4.40726504>4s FAIL, workflowPARTIAL과 당시4complete+1partial+3physicalopen/8을 보존한다. HE101 C8PARTIAL_EXPORT19/20 reserve0 PASS/FAIL/FAIL도 유지한다. 선행 science/test/plot·백업 재실행과 예산 초기화는 없다. 입자수·열용량·rest/binding·비열적 에너지의 단일 소유권을 유지한다.
+
+
+## 현재 S09 과학적 채택
+
+독립 실제 결과·그림 검토의 동일한 한 review pass가 PASS(실제 결과 검사 10개, 선행 정적 검사 18개 재사용, 결함 0)로 끝났으며, root는 `ACCEPT_SCOPED_CONDITIONAL_APERTURE_REFERENCE`를 채택했다. 현재 continuation DAG는 **8 complete + 0 pending + 3 physical open / 11**이다. 중앙 **28/88**, HE delta 0이며 물리적 전체 완료를 뜻하지 않는다. 채택 범위와 재사용 정리는 `ACCEPTANCE_KO.md`, 실제 독립 판정은 `review/RESULT_REVIEW.json`에 있다. S10 인계는 아직 진행 전이다.
+
+새 검증은 **32/32 PASS**, 1회, repair 0, CPU **0.235556515/4 s**, wall **0.24653371299791615/15 s**였다. Wolfram 1회에서 basis 질량·선형 weight·fold 잔차 **92개가 모두 0**이었다. 원격 실제 CPU는 제공되지 않아 null이다. 새 저장값 그림은 **PASS**, 1회, CPU **4.489548029/6 s**, wall **4.491183639998781/15 s**, 과학 함수 호출 0이었다. 기존 과학·검사·그림 재실행은 없다.
+
+인증은 고정 저장 γ,a와 degree≤8 비음수 Bernstein 밀도의 연속 measure 및 방위각 전체를 받는 annular 창에 한정된다. 짝 사건 API는 대칭 밀도를 요구하며 atom/κ=0은 지원하지 않는다. 기본 API는 ε=σ_event·2^-40의 질량 폭을 보장하고, 수동 δ의 저장 예는 각 반환 구간의 실제 폭과 폭 경계를 적용한다. native12는 저장 γ,a와 합성 밀도만 사용하여 새 적분을 계산했으며 DCS 정규화나 실제 사건률을 채택하지 않는다. 질량·에너지 변환의 물리적 parameter 불확실성, 유한 방위각 3차원 검출기 기하와 세 열린 물리 입력은 이 채택 범위 밖이다.

@@ -1,6 +1,6 @@
 {
   "schema": "HE_APERTURE07_RESULT_V1",
-  "decision": "IMPLEMENTATION_PASS_PENDING_FINAL_RESULT_REVIEW",
+  "decision": "ACCEPT_SCOPED_CONDITIONAL_APERTURE_REFERENCE",
   "unit": "HE-EXP-APERTURE-07",
   "local_tested_commit": "3e41e230ff028fe28eb8aa35d9d6fecb1b22fd1f",
   "published_same_tree_tested_snapshot": "1e6d82845e922e0d733be3d2f80e9bd2efc41e04",
@@ -264,7 +264,19 @@
     "evidence": "evidence/WOLFRAM_APERTURE07.json"
   },
   "final_independent_review": {
-    "status": "PENDING"
+    "status": "PASS",
+    "findings": 0,
+    "nonblocking_findings": 0,
+    "checks": 10,
+    "prior_static_checks": 18,
+    "review_pass": 1,
+    "continuation_of_same_preexecution_review": true,
+    "path": "review/RESULT_REVIEW.json",
+    "sha256": "718e840820c396baef2617b9a9d2ead90df21fe6372f24a6b8b65252ffca8f71",
+    "reviewed_utc": "2026-10-27T14:59:24.663690+00:00",
+    "admission": "PASS_SCOPED_ACTUAL_RESULT_AND_PLOT_C9",
+    "requested_role": "Astra independent scientific reviewer",
+    "runtime_model_identity_observed_by_tool": null
   },
   "physical_open_nodes": 3,
   "global_physical_completion": null,

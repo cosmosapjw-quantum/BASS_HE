@@ -43,8 +43,15 @@ Wolfram Language evaluator를 신규 할당된1회(timeConstraint15s) 실행했�
 
 저장된 native·fold-bin 예들은 명시적으로 δ=2⁻⁴⁰을 지정했다. 각각의 `width`와 `width_bound`가 이 설정의 인증 범위다. 별도의 **기본 API**는 δ=σ2⁻⁴⁰/(16M)를 선택하여 요구한 상대 질량 폭을 보장한다. 수동 δ 예의 모든 hit 경계를 기본 API의2⁻⁴⁰ 목표와 동일시하지 않는다.
 
-## 5. 현재 채택 범위
+## 5. S07 시점의 채택 범위 — 원래 체크포인트 기록
 
 실행 근거는 고정 parameter의 rational preimage·양성 measure·signed moment·공유 사건 구현을 지지한다. 원전 Rice의 convention 확인은 유한 수용각·동일 입자 계수의 과학적 연결을 제공한다. M0475 원본 정규화, 실제 full angular law+photon flux, 명명된 deuteron stopping/deposition의 세 물리 입력은 계속 열린다.
 
 현재 local DAG는 **7complete+1pending+3physicalopen/11**이다. 최종 구현 제품은 저장 데이터 그림과 실제 결과 독립 검토 후 채택한다. 중앙28/88, HEdelta0, globalphysicalnull, L4false와 모든 선행 실패 기록은 유지한다.
+
+
+## 6. S09 독립 검토 후 채택
+
+이 절은 위 S07 기록 이후의 실제 채택 상태다. 새 그림의 첫 실행 PASS와 실제 결과를 같은 독립 review pass에서 이어 검토하여 결과 검사10개 PASS, 결함0으로 판정했다. root는 `ACCEPT_SCOPED_CONDITIONAL_APERTURE_REFERENCE`를 채택했고 `APERTURE07-VALIDATED-REFERENCE`를 완료로 기록했다. 현재 continuation DAG는 **8 complete + 0 pending + 3 physical open / 11**이다. 근거는 `review/RESULT_REVIEW.json`, 채택 정리와 사용 범위는 `ACCEPTANCE_KO.md`, actual plot 판독은 `evidence/PLOT_READ_KO.md`다.
+
+새32/32 검사, 한 번의 기호 검증92개 영잔차, 새 저장값 그림PASS는 위에 기록한 동일 실행을 재사용한다. 추가 과학 실행이나 tolerance 변경은 없다. 고정 저장 parameter·연속 measure·전체 방위각 annular 창이라는 인증 범위, 수동 δ와 기본 ε 보장의 차이, 세 열린 물리 입력과 중앙28/88·HE delta0는 그대로다. S10 인계 전이므로 workflow는 IN_PROGRESS로 유지한다.
