@@ -1,4 +1,20 @@
-# 게시된 역할 확장 인계
+# 역할 확장 연구 인계
+
+## 최신 재개: HE-EXP-PHOTON-05, 2026-10-27
+
+현재 이어서 읽을 파일은 `continuation_photon_20261027/HANDOFF_KO.md`, `RESULTS_KO.md`, `RESULT.json`, `DAG.json`과 해당 `delivery/`다. 선택 NIST 핵 질량과 EXFOR native12 좌표에서 photon+stationary bare alpha→두 deuteron의 상대론적 반동·stress·단일 에너지 소유권을 구현했고, 새24 methods가 한 bounded process에서 PASS했다. 독립 이론·정적·결과 검토를 거쳐 조건부 수치 참조를 수용했다.
+
+그림은 생성됐지만 CPU4.40726504s가4s cap을 넘어 FAIL이다. 원본·그림을 보존하고 재실행하지 않았다. 따라서 새 단위는 4 complete +1 partial +3 physical input open이며 clean full PASS가 아니다. 기존 STATE04의5/8, HE101의 C8PARTIAL_EXPORT19/20·reserve0와 원 실패·소진 예산을 그대로 유지한다.
+
+GitHub 동일 tree 제출의 다섯 번째 실제 반환은 `user rejected MCP tool call`이며 추가 사유는 없다. 원격 HE는 관측 시 ac6042a6에 남아 있고 새 GitHub 게시나 중앙 반영은 없다. 실제 source/tail Git commit·ZIP·Dropbox/Drive ACK와 중앙 후보 검토 상태는 새 unit의 delivery 영수증 및 외부 최종 closeout을 따른다. Native DCS로 물리 rate를 만들지 않았으며 thermal count/Cv/heating/deposition=null, physical admission=false다.
+
+PHOTON05의 실제 S05는 `251c6baa6c3359b1d6997dbce51cea65500b53d6`이며 source ZIP20,425,864bytes/434members의 Dropbox·Drive upload ACK 및 metadata ID/name/size를 확인했다. Full remote download SHA 확인은 하지 않았다. 중앙 후보16upserts는 최신1a38f94f…에 대해 `APPROVED_LOCAL_METADATA_DELTA_ONLY`이며 로컬·미게시 상태다. 최종 D05 delta·backup 결과는 commit 이후의 외부 `BASS_HE_PHOTON05_CLOSEOUT_20261027.json`을 따른다.
+
+## 이전 후속 연구 snapshot: DRIFT02, 2026-10-27
+
+최신 전달 상태는 소스 ZIP Dropbox/Drive 이중백업 확인, runtime 초기화 후 정확한 복구 완료, 중앙 변경안 검토 완료다. GitHub 게시 승인 거절2회로 원격 HEAD는 ac6042a6에 남아 있다. `continuation_20261027/HANDOFF_KO.md`의 최신 복구·전달 상태와 `delivery/PUBLICATION.json`을 우선한다.
+
+새 scoped 결과는 `continuation_20261027/HANDOFF_KO.md`, `RESULTS_KO.md`, `RESULT.json`, `DAG.json`을 먼저 읽는다. 원전 92개 species/state 소비자 투영과 H1/He4 중성 질량 환산, 같은 충돌법칙에서 유도한 선형 drag·2차 drift heating, 20,000 K H–He Q11/Q12의 실제 일관성 잔차 D=0.010085632429451152를 추가했다. 새 24 methods PASS 및 독립 검토 완료 범위이며 physical provider admission은 false다. 실제 게시·중앙 DAG·이중 백업의 영수증은 해당 continuation의 `delivery/`와 PR102에 기록한다. 아래 HE101 역사적 인계와 열린 C8·소진 예산은 그대로 유지한다.
 
 중앙 검토 소스: 641a725ada4be27473069c2c35005a94c2ab0248
 중앙 DAG: https://github.com/cosmosapjw-quantum/rei_bianchi/blob/641a725ada4be27473069c2c35005a94c2ab0248/research/orchestration_expansion_20261025/DAG.json
@@ -81,3 +97,8 @@ P2 readiness 교정: WU-led HE-EXP-NUCLEAR는 species/mass/branch/source 입력�
 ## HE-EXP-INTAKE-01 후속 결과
 
 2026-10-25의 source intake와 조건부 교환·열폐쇄 구현은 [continuation_20261025/HANDOFF_KO.md](continuation_20261025/HANDOFF_KO.md) 및 [RESULTS_KO.md](continuation_20261025/RESULTS_KO.md)로 이어갑니다. 원 HE101 기록과 예산은 위 인계 그대로 보존합니다. 실제 새 게시·백업 영수증은 continuation_20261025/delivery/를 따릅니다.
+
+
+## HE-EXP-EVENT-03 조건부 반응 모멘트 후속 결과
+
+2026-10-27의 새 WU R4 source-only 합집합104 IDs/138 variants/155 event references와 조건부 비상대론 2→2 모멘트 구현은 [continuation_event_20261027/HANDOFF_KO.md](continuation_event_20261027/HANDOFF_KO.md) 및 [RESULTS_KO.md](continuation_event_20261027/RESULTS_KO.md)로 이어집니다. 새22개 검사가 한 프로세스에서 PASS했고 독립 판정은 PASS_SCOPED_CONDITIONAL_EVENT03입니다. HE101 C8/예산과 INTAKE01·DRIFT02 원결과를 보존하며 물리 provider/activation은 false입니다. GitHub 게시 차단으로 새 원격 S와 중앙 변경은 없고 R10/C10은 partial입니다. 실제 전달 상태는 해당 unit의 delivery/PUBLICATION_BLOCK.json을 따릅니다.
