@@ -34,5 +34,11 @@
     "numpy": "2.3.5",
     "matplotlib": "3.10.8"
   },
-  "hpc_policy_application": "No measured hot binary64 kernel in this exact-rational reference; single-thread reference lane, no MPI/native-speed claim"
+  "hpc_policy_application": "No measured hot binary64 kernel in this exact-rational reference; single-thread reference lane, no MPI/native-speed claim",
+  "measurement_boundary": {
+    "authoritative_cap_receipt": "complete run_bounded subprocess and waited descendants including imports/final serialization, measured by outer launcher OS rusage",
+    "outer_bookkeeping": "measured separately for launcher main body; metadata serialization not recursively included",
+    "cap_interpretation": "post-execution whole-run acceptance caps; inner child RLIMIT_CPU preventive; aggregate parent+child hard prevention not claimed",
+    "static_fix": "review01 included runner startup/tail; review02 corrected p/q sign wording; both preexecution changes, no repair allocation spent"
+  }
 }

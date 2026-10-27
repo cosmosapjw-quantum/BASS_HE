@@ -31,7 +31,7 @@
       "stage": "S05",
       "theory": "R5",
       "coding": "C5",
-      "status": "pending"
+      "status": "complete_work_product"
     },
     {
       "stage": "S06",
@@ -64,10 +64,11 @@
       "status": "pending"
     }
   ],
-  "current_stage": "S04",
+  "current_stage": "S05",
   "publication_scope": "PREPUBLICATION_WORK_PRODUCT",
   "source_and_backup_receipts": "External STAGE_ACKS.json records actual postcommit outcomes",
   "local_dag": "8/12",
   "central_dag_at_intake": "28/88",
-  "central_HE_delta": 0
+  "central_HE_delta": 0,
+  "execution": "NOT_YET_RUN"
 }
