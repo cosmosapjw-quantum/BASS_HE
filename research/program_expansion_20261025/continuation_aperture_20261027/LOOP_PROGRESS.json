@@ -47,8 +47,14 @@
       "checkpoint": "S04",
       "theory": "R4",
       "coding": "C4",
-      "status": "PENDING",
-      "evidence": []
+      "status": "COMPLETE",
+      "evidence": [
+        "CONSTRUCTION_AND_DAG_KO.md",
+        "DAG.json",
+        "MODEL_CONTRACT.json",
+        "VALIDATION_CONTRACT.json",
+        "preflight/RUNTIME.json"
+      ]
     },
     {
       "checkpoint": "S05",

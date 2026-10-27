@@ -77,7 +77,32 @@
       "inherited": false
     }
   ],
-  "edges": [],
+  "edges": [
+    [
+      "ANGULAR06-FINITE-MASS-MAP",
+      "APERTURE07-CERTIFIED-PREIMAGE"
+    ],
+    [
+      "ANGULAR06-INVERSE-BRANCHES",
+      "APERTURE07-CERTIFIED-PREIMAGE"
+    ],
+    [
+      "ANGULAR06-QUOTIENT-MEASURE",
+      "APERTURE07-POSITIVE-PAIR-MEASURE"
+    ],
+    [
+      "APERTURE07-CERTIFIED-PREIMAGE",
+      "APERTURE07-POSITIVE-PAIR-MEASURE"
+    ],
+    [
+      "APERTURE07-POSITIVE-PAIR-MEASURE",
+      "APERTURE07-VALIDATED-REFERENCE"
+    ],
+    [
+      "ANGULAR06-VALIDATED-REFERENCE",
+      "APERTURE07-VALIDATED-REFERENCE"
+    ]
+  ],
   "accounting": {
     "complete_scoped_nodes": 5,
     "pending_scoped_nodes": 3,
