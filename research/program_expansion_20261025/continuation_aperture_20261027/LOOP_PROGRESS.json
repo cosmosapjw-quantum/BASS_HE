@@ -1,0 +1,99 @@
+{
+  "schema": "HE_APERTURE07_LOOP_PROGRESS_V1",
+  "unit": "HE-EXP-APERTURE-07",
+  "skill": "physmath-research-loop1.3.0",
+  "selected_scope": {
+    "theory": "R1\u2013R10",
+    "coding": "C1\u2013C10",
+    "extra_cycles": false
+  },
+  "stages": [
+    {
+      "checkpoint": "S01",
+      "theory": "R1",
+      "coding": "C1",
+      "status": "COMPLETE",
+      "evidence": [
+        "CONTRACT_KO.md",
+        "README.md",
+        "preflight/SURVEY_SUMMARY.json",
+        "preflight/ANGULAR06_PUBLICATION_RECEIPT.json"
+      ]
+    },
+    {
+      "checkpoint": "S02",
+      "theory": "R2",
+      "coding": "C2",
+      "status": "PENDING",
+      "evidence": []
+    },
+    {
+      "checkpoint": "S03",
+      "theory": "R3",
+      "coding": "C3",
+      "status": "PENDING",
+      "evidence": []
+    },
+    {
+      "checkpoint": "S04",
+      "theory": "R4",
+      "coding": "C4",
+      "status": "PENDING",
+      "evidence": []
+    },
+    {
+      "checkpoint": "S05",
+      "theory": "R5",
+      "coding": "C5",
+      "status": "PENDING",
+      "evidence": []
+    },
+    {
+      "checkpoint": "S06",
+      "theory": "R6",
+      "coding": "C6",
+      "status": "PENDING",
+      "evidence": []
+    },
+    {
+      "checkpoint": "S07",
+      "theory": "R7",
+      "coding": "C7",
+      "status": "PENDING",
+      "evidence": []
+    },
+    {
+      "checkpoint": "S08",
+      "theory": "R8",
+      "coding": "C8",
+      "status": "PENDING",
+      "evidence": []
+    },
+    {
+      "checkpoint": "S09",
+      "theory": "R9",
+      "coding": "C9",
+      "status": "PENDING",
+      "evidence": []
+    },
+    {
+      "checkpoint": "S10",
+      "theory": "R10",
+      "coding": "C10",
+      "status": "PENDING",
+      "evidence": []
+    }
+  ],
+  "DAG": {
+    "complete_scoped": 5,
+    "pending_scoped": 3,
+    "open_physical": 3,
+    "total": 11
+  },
+  "central": {
+    "complete": 28,
+    "total": 88,
+    "HE_delta": 0
+  },
+  "current_publication_receipts": "External he07_checkpoints/STAGE_ACKS.json records actual post-commit ACKs; commit-local status is pre-publication."
+}
