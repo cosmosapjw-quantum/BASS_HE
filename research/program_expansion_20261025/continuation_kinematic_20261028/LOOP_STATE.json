@@ -1,0 +1,73 @@
+{
+  "unit_id": "HE-EXP-KINEMATIC-08",
+  "workflow_version": "1.0.0",
+  "status": "in_progress",
+  "stages": [
+    {
+      "stage": "S01",
+      "theory": "R1",
+      "coding": "C1",
+      "status": "complete_work_product"
+    },
+    {
+      "stage": "S02",
+      "theory": "R2",
+      "coding": "C2",
+      "status": "pending"
+    },
+    {
+      "stage": "S03",
+      "theory": "R3",
+      "coding": "C3",
+      "status": "pending"
+    },
+    {
+      "stage": "S04",
+      "theory": "R4",
+      "coding": "C4",
+      "status": "pending"
+    },
+    {
+      "stage": "S05",
+      "theory": "R5",
+      "coding": "C5",
+      "status": "pending"
+    },
+    {
+      "stage": "S06",
+      "theory": "R6",
+      "coding": "C6",
+      "status": "pending"
+    },
+    {
+      "stage": "S07",
+      "theory": "R7",
+      "coding": "C7",
+      "status": "pending"
+    },
+    {
+      "stage": "S08",
+      "theory": "R8",
+      "coding": "C8",
+      "status": "pending"
+    },
+    {
+      "stage": "S09",
+      "theory": "R9",
+      "coding": "C9",
+      "status": "pending"
+    },
+    {
+      "stage": "S10",
+      "theory": "R10",
+      "coding": "C10",
+      "status": "pending"
+    }
+  ],
+  "current_stage": "S01",
+  "publication_scope": "PREPUBLICATION_WORK_PRODUCT",
+  "source_and_backup_receipts": "External STAGE_ACKS.json records actual postcommit outcomes",
+  "local_dag": "8/12",
+  "central_dag_at_intake": "28/88",
+  "central_HE_delta": 0
+}
