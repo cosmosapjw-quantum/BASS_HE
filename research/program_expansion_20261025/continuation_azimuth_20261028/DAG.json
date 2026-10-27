@@ -114,9 +114,17 @@
     },
     {
       "id": "AZIMUTH09-FINITE-SECTOR-PAIR-REFERENCE",
-      "status": "pending_scoped",
+      "status": "complete_scoped",
       "inherited": false,
-      "evidence": []
+      "evidence": [
+        "THEORY_KO.md",
+        "evidence/VALIDATION_RESULT.json",
+        "evidence/WOLFRAM_RESULT.json",
+        "evidence/PLOT_RESULT.json",
+        "review/FINAL_REVIEW.json",
+        "RESULT.json"
+      ],
+      "decision": "ACCEPT_SCOPED_FINITE_AZIMUTH_REFERENCE"
     }
   ],
   "edges": [
@@ -154,8 +162,8 @@
     ]
   ],
   "accounting": {
-    "complete_scoped_nodes": 8,
-    "pending_scoped_nodes": 1,
+    "complete_scoped_nodes": 9,
+    "pending_scoped_nodes": 0,
     "open_physical_inputs": 3,
     "partial_nodes": 1,
     "total_nodes": 13
@@ -166,7 +174,7 @@
   "central_HE_delta": 0,
   "global_physical_completion": null,
   "L4_ready": false,
-  "workflow": "NEW_UNIT_PENDING",
+  "workflow": "COMPLETE_SCOPED",
   "protected_PHOTON05": {
     "source": "251c6baa6c3359b1d6997dbce51cea65500b53d6",
     "delivery": "4db5ce7297a7ded4624b93721873aacc9b4ebf30",

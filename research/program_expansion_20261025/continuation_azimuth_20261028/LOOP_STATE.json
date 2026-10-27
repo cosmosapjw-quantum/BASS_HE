@@ -55,7 +55,7 @@
       "stage": "S09",
       "theory": "R9",
       "coding": "C9",
-      "status": "pending"
+      "status": "complete_work_product"
     },
     {
       "stage": "S10",
@@ -64,9 +64,9 @@
       "status": "pending"
     }
   ],
-  "current_stage": "S08",
-  "workflow": "NEW_UNIT_PENDING",
-  "local_dag": "8 complete +1 partial +1 pending +3 physical open /13",
+  "current_stage": "S09",
+  "workflow": "COMPLETE_SCOPED",
+  "local_dag": "9 complete +1 partial +3 physical open /13",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
   "protected_KINEMATIC08": {
@@ -78,5 +78,6 @@
   },
   "automatic_next_node": false,
   "automatic_budget": false,
-  "automatic_rerun": false
+  "automatic_rerun": false,
+  "root_decision": "ACCEPT_SCOPED_FINITE_AZIMUTH_REFERENCE"
 }
