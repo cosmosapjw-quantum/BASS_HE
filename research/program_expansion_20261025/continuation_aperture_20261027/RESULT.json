@@ -215,7 +215,21 @@
     "status": "NOT_RUN"
   },
   "symbolic": {
-    "status": "NOT_RUN"
+    "status": "PASS",
+    "provider": "Wolfram Language evaluator",
+    "calls": 1,
+    "timeConstraint_s": 15,
+    "zero_residuals": 92,
+    "original_sign_domain": [
+      true,
+      true
+    ],
+    "signed_bounds": [
+      "-3/64",
+      "3/64"
+    ],
+    "actual_remote_CPU_s": null,
+    "evidence": "evidence/WOLFRAM_APERTURE07.json"
   },
   "final_independent_review": {
     "status": "PENDING"

@@ -86,8 +86,12 @@
       "checkpoint": "S07",
       "theory": "R7",
       "coding": "C7",
-      "status": "PENDING",
-      "evidence": []
+      "status": "COMPLETE",
+      "evidence": [
+        "SCIENTIFIC_RESULTS_KO.md",
+        "evidence/WOLFRAM_APERTURE07.json",
+        "evidence/validation/SAVED_PLOT_DATA.json"
+      ]
     },
     {
       "checkpoint": "S08",
