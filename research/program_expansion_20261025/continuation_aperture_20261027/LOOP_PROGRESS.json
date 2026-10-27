@@ -36,8 +36,12 @@
       "checkpoint": "S03",
       "theory": "R3",
       "coding": "C3",
-      "status": "PENDING",
-      "evidence": []
+      "status": "COMPLETE",
+      "evidence": [
+        "NUMERICAL_DESIGN_KO.md",
+        "THEORY_CODE_MAP.json",
+        "CONTRACT_KO.md"
+      ]
     },
     {
       "checkpoint": "S04",
