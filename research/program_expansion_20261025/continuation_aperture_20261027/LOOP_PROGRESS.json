@@ -24,8 +24,13 @@
       "checkpoint": "S02",
       "theory": "R2",
       "coding": "C2",
-      "status": "PENDING",
-      "evidence": []
+      "status": "COMPLETE",
+      "evidence": [
+        "preflight/REUSE_SYNTHESIS_KO.md",
+        "preflight/DEPENDENCY_IMPACT_APERTURE07_KO.md",
+        "sources/PRIMARY_RICE_READ_KO.md",
+        "THEORY_CODE_MAP.json"
+      ]
     },
     {
       "checkpoint": "S03",
