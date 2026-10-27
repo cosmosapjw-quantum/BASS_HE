@@ -1,7 +1,7 @@
 {
   "unit_id": "HE-EXP-AZIMUTH-09",
   "workflow_version": "1.0.0",
-  "status": "active",
+  "status": "closed_work_products",
   "stages": [
     {
       "stage": "S01",
@@ -61,10 +61,10 @@
       "stage": "S10",
       "theory": "R10",
       "coding": "C10",
-      "status": "pending"
+      "status": "complete_work_product"
     }
   ],
-  "current_stage": "S09",
+  "current_stage": "S10",
   "workflow": "COMPLETE_SCOPED",
   "local_dag": "9 complete +1 partial +3 physical open /13",
   "central_dag_at_intake": "28/88",
@@ -79,5 +79,6 @@
   "automatic_next_node": false,
   "automatic_budget": false,
   "automatic_rerun": false,
-  "root_decision": "ACCEPT_SCOPED_FINITE_AZIMUTH_REFERENCE"
+  "root_decision": "ACCEPT_SCOPED_FINITE_AZIMUTH_REFERENCE",
+  "publication_state": "POSTPUBLICATION_EXTERNAL_ACK_PENDING"
 }
