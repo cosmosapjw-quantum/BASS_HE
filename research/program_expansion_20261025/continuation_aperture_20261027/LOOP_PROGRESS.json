@@ -3,8 +3,8 @@
   "unit": "HE-EXP-APERTURE-07",
   "skill": "physmath-research-loop1.3.0",
   "selected_scope": {
-    "theory": "R1\u2013R10",
-    "coding": "C1\u2013C10",
+    "theory": "R1–R10",
+    "coding": "C1–C10",
     "extra_cycles": false
   },
   "stages": [
@@ -97,8 +97,16 @@
       "checkpoint": "S08",
       "theory": "R8",
       "coding": "C8",
-      "status": "PENDING",
-      "evidence": []
+      "status": "COMPLETE",
+      "evidence": [
+        "evidence/plot/START.json",
+        "evidence/plot/FINISH.json",
+        "evidence/plot/stdout.txt",
+        "evidence/plot/stderr.txt",
+        "evidence/plot/APERTURE07_BOUNDS.png",
+        "evidence/plot/APERTURE07_BOUNDS.svg",
+        "evidence/PLOT_READ_KO.md"
+      ]
     },
     {
       "checkpoint": "S09",

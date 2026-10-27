@@ -212,7 +212,39 @@
     }
   },
   "plot": {
-    "status": "NOT_RUN"
+    "status": "PASS",
+    "attempts": 1,
+    "exit_code": 0,
+    "start_utc": "2026-10-27T14:52:26.074163+00:00",
+    "end_utc": "2026-10-27T14:52:30.567902+00:00",
+    "cpu_s": 4.489548029,
+    "cpu_cap_s": 6,
+    "child_cpu_s": 4.487824,
+    "runner_cpu_s": 0.001724028999999988,
+    "wall_s": 4.491183639998781,
+    "wall_cap_s": 15,
+    "scientific_function_calls": 0,
+    "timed_out": false,
+    "launch_error": null,
+    "input_sha256": "240eb83fe9636fe2c2e58f81ae911be5238d9b7db79f1dbbd0c93ca8bc96f98d",
+    "local_execution_commit": "84f58df4740751ebf702b6d05350391a1c9f2bd5",
+    "evidence": [
+      "evidence/plot/START.json",
+      "evidence/plot/FINISH.json",
+      "evidence/plot/stdout.txt",
+      "evidence/plot/stderr.txt",
+      "evidence/PLOT_READ_KO.md"
+    ],
+    "png": {
+      "path": "evidence/plot/APERTURE07_BOUNDS.png",
+      "bytes": 149633,
+      "sha256": "7be3b78f4b2b38d1898f3ce12485af7003a893597a593d35a5489bbd859ffbbe"
+    },
+    "svg": {
+      "path": "evidence/plot/APERTURE07_BOUNDS.svg",
+      "bytes": 86349,
+      "sha256": "e60d482888c8940c6d280f36ffd431b786683d4223f4bcdd94e9127e6230b542"
+    }
   },
   "symbolic": {
     "status": "PASS",
