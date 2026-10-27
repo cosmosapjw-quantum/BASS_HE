@@ -60,8 +60,14 @@
       "checkpoint": "S05",
       "theory": "R5",
       "coding": "C5",
-      "status": "PENDING",
-      "evidence": []
+      "status": "COMPLETE",
+      "evidence": [
+        "THEORY_KO.md",
+        "src/aperture.py",
+        "tests/test_aperture.py",
+        "scripts/run_validation.py",
+        "review/ISOLATED_TO_CANONICAL.json"
+      ]
     },
     {
       "checkpoint": "S06",
