@@ -37,7 +37,7 @@
       "stage": "S06",
       "theory": "R6",
       "coding": "C6",
-      "status": "pending"
+      "status": "complete_work_product"
     },
     {
       "stage": "S07",
@@ -64,7 +64,7 @@
       "status": "pending"
     }
   ],
-  "current_stage": "S05",
+  "current_stage": "S06",
   "workflow": "NEW_UNIT_PENDING",
   "local_dag": "8 complete +1 partial +1 pending +3 physical open /13",
   "central_dag_at_intake": "28/88",
