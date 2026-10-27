@@ -99,9 +99,15 @@
     },
     {
       "id": "KINEMATIC08-PHYSICAL-INPUT-REFERENCE",
-      "status": "pending_scoped",
+      "status": "partial_scoped",
       "inherited": false,
-      "description": "Exact physical rest-energy/photon-energy predicate, algebraic fold enclosure, and inherited shared-event acceptance integration"
+      "description": "Exact physical rest-energy/photon-energy predicate, algebraic fold enclosure, and inherited shared-event acceptance integration",
+      "reason": "Scientific validation14/14PASS; saved-only plot wholeCPU7.040661>6s FAIL; finalreviewpending",
+      "evidence": [
+        "THEORY_KO.md",
+        "evidence/VALIDATION_RESULT.json",
+        "evidence/PLOT_RESULT.json"
+      ]
     }
   ],
   "edges": [
@@ -136,9 +142,9 @@
   ],
   "accounting": {
     "complete_scoped_nodes": 8,
-    "pending_scoped_nodes": 1,
+    "pending_scoped_nodes": 0,
     "open_physical_inputs": 3,
-    "partial_nodes": 0,
+    "partial_nodes": 1,
     "total_nodes": 12
   },
   "counter_scope": "APERTURE07 product DAG plus one actual physical-input reference node; distinct from central physical DAG",
@@ -147,7 +153,7 @@
   "central_HE_delta": 0,
   "global_physical_completion": null,
   "L4_ready": false,
-  "workflow": "IN_PROGRESS",
+  "workflow": "PARTIAL",
   "protected_PHOTON05": {
     "source": "251c6baa6c3359b1d6997dbce51cea65500b53d6",
     "delivery": "4db5ce7297a7ded4624b93721873aacc9b4ebf30",

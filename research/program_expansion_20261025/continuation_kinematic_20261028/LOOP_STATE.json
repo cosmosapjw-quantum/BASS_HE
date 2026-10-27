@@ -49,7 +49,7 @@
       "stage": "S08",
       "theory": "R8",
       "coding": "C8",
-      "status": "pending"
+      "status": "complete_work_product_with_plot_resource_failure"
     },
     {
       "stage": "S09",
@@ -64,17 +64,19 @@
       "status": "pending"
     }
   ],
-  "current_stage": "S07",
+  "current_stage": "S08",
   "publication_scope": "PREPUBLICATION_WORK_PRODUCT",
   "source_and_backup_receipts": "External STAGE_ACKS.json records actual postcommit outcomes",
-  "local_dag": "8/12",
+  "local_dag": "8 complete +1 partial +3 physical open /12",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
-  "execution": "PASS_14_TESTS_ONE_SCIENTIFIC_SUITE_AFTER_ONE_ENVIRONMENT_REPAIR",
+  "execution": "VALIDATION_PASS_PLOT_CPU_FAIL",
   "repair_checkpoint": "S05R",
   "repair_reserve_used": 1,
   "tested_local_source": "d004212d560907eb4058d9539eec8e9b262ec406",
   "remote_same_tree_source": "391f1e4c356082c0b5cc693d49fb2aef873a0f2a",
   "symbolic_result": "IDENTITIES_CONFIRMED_BY_REPORTED_TOOL_OUTPUT_AND_DIRECT_ALGEBRA",
-  "wolfram_calls": 1
+  "wolfram_calls": 1,
+  "plot": "FAIL_CPU_CAP_EXCEEDED",
+  "workflow": "PARTIAL"
 }
