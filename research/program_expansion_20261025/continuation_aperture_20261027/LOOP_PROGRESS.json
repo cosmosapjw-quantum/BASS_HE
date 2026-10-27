@@ -73,8 +73,14 @@
       "checkpoint": "S06",
       "theory": "R6",
       "coding": "C6",
-      "status": "PENDING",
-      "evidence": []
+      "status": "COMPLETE",
+      "evidence": [
+        "review/PREEXEC_REVIEW.json",
+        "evidence/validation/01_tests/FINISH.json",
+        "evidence/validation/01_tests/stderr.txt",
+        "evidence/TESTED_DEPENDENCIES_01.json",
+        "RESULT.json"
+      ]
     },
     {
       "checkpoint": "S07",
@@ -106,8 +112,8 @@
     }
   ],
   "DAG": {
-    "complete_scoped": 5,
-    "pending_scoped": 3,
+    "complete_scoped": 7,
+    "pending_scoped": 1,
     "open_physical": 3,
     "total": 11
   },

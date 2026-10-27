@@ -1,0 +1,237 @@
+{
+  "schema": "HE_APERTURE07_RESULT_V1",
+  "decision": "IMPLEMENTATION_PASS_PENDING_FINAL_RESULT_REVIEW",
+  "unit": "HE-EXP-APERTURE-07",
+  "local_tested_commit": "3e41e230ff028fe28eb8aa35d9d6fecb1b22fd1f",
+  "published_same_tree_tested_snapshot": "1e6d82845e922e0d733be3d2f80e9bd2efc41e04",
+  "validation": {
+    "attempts": 1,
+    "methods_run": 32,
+    "methods_passed": 32,
+    "status": "PASS",
+    "exit_code": 0,
+    "cpu_s": 0.23555651500000002,
+    "cpu_cap_s": 4,
+    "wall_s": 0.24653371299791615,
+    "wall_cap_s": 15,
+    "repair_used": 0
+  },
+  "preexec_review": {
+    "status": "PASS",
+    "checks": 18,
+    "findings": 0
+  },
+  "new_saved_data": {
+    "path": "evidence/validation/SAVED_PLOT_DATA.json",
+    "sha256": "240eb83fe9636fe2c2e58f81ae911be5238d9b7db79f1dbbd0c93ca8bc96f98d",
+    "bytes": 64135,
+    "native_parameter_rows": 12,
+    "fold_bins": 6,
+    "convergence_rows": 4
+  },
+  "fold_mass40": {
+    "lower": {
+      "rational": "11636137322867/21990232555520",
+      "display_float": 0.5291502622124881
+    },
+    "upper": {
+      "rational": "2909034330721/5497558138880",
+      "display_float": 0.5291502622132611
+    },
+    "width": {
+      "rational": "17/21990232555520",
+      "display_float": 7.73070496506989e-13
+    },
+    "uncertainty_length": {
+      "rational": "17/10995116277760",
+      "display_float": 1.546140993013978e-12
+    },
+    "width_bound": {
+      "rational": "17/21990232555520",
+      "display_float": 7.73070496506989e-13
+    }
+  },
+  "counterexample": {
+    "coincidence": {
+      "lower": {
+        "rational": "1/2",
+        "display_float": 0.5
+      },
+      "upper": {
+        "rational": "1/2",
+        "display_float": 0.5
+      },
+      "width": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "uncertainty_length": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "width_bound": {
+        "rational": "0",
+        "display_float": 0.0
+      }
+    },
+    "hit_a": {
+      "lower": {
+        "rational": "1/2",
+        "display_float": 0.5
+      },
+      "upper": {
+        "rational": "1/2",
+        "display_float": 0.5
+      },
+      "width": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "uncertainty_length": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "width_bound": {
+        "rational": "0",
+        "display_float": 0.0
+      }
+    },
+    "hit_b": {
+      "lower": {
+        "rational": "1/2",
+        "display_float": 0.5
+      },
+      "upper": {
+        "rational": "1/2",
+        "display_float": 0.5
+      },
+      "width": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "uncertainty_length": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "width_bound": {
+        "rational": "0",
+        "display_float": 0.0
+      }
+    },
+    "inclusive_a": {
+      "lower": {
+        "rational": "1/2",
+        "display_float": 0.5
+      },
+      "upper": {
+        "rational": "1/2",
+        "display_float": 0.5
+      },
+      "width": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "uncertainty_length": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "width_bound": {
+        "rational": "0",
+        "display_float": 0.0
+      }
+    },
+    "inclusive_b": {
+      "lower": {
+        "rational": "1/2",
+        "display_float": 0.5
+      },
+      "upper": {
+        "rational": "1/2",
+        "display_float": 0.5
+      },
+      "width": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "uncertainty_length": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "width_bound": {
+        "rational": "0",
+        "display_float": 0.0
+      }
+    },
+    "coincidence_daughters": {
+      "lower": {
+        "rational": "1",
+        "display_float": 1.0
+      },
+      "upper": {
+        "rational": "1",
+        "display_float": 1.0
+      },
+      "width": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "uncertainty_length": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "width_bound": {
+        "rational": "0",
+        "display_float": 0.0
+      }
+    },
+    "pair_energy_MeV": {
+      "lower": {
+        "rational": "3",
+        "display_float": 3.0
+      },
+      "upper": {
+        "rational": "3",
+        "display_float": 3.0
+      },
+      "width": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "uncertainty_length": {
+        "rational": "0",
+        "display_float": 0.0
+      },
+      "width_bound": {
+        "rational": "0",
+        "display_float": 0.0
+      }
+    },
+    "product_of_marginal_hits": {
+      "rational": "1/4",
+      "display_float": 0.25
+    }
+  },
+  "plot": {
+    "status": "NOT_RUN"
+  },
+  "symbolic": {
+    "status": "NOT_RUN"
+  },
+  "final_independent_review": {
+    "status": "PENDING"
+  },
+  "physical_open_nodes": 3,
+  "global_physical_completion": null,
+  "L4_ready": false,
+  "production": "NOT_APPROVED",
+  "Gamma_thermal": null,
+  "Cv": null,
+  "independent_binding_rhs": null,
+  "thermal_deposition": null,
+  "species_heating": null,
+  "birth_pool": "UNASSIGNED",
+  "old_scientific_suite_replays": 0,
+  "old_plot_replays": 0,
+  "old_backup_regenerations": 0,
+  "budget_reset_or_transfer": false
+}

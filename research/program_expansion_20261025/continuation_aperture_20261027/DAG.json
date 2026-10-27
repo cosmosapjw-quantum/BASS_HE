@@ -63,13 +63,23 @@
     },
     {
       "id": "APERTURE07-CERTIFIED-PREIMAGE",
-      "status": "pending_scoped",
-      "inherited": false
+      "status": "complete_scoped",
+      "inherited": false,
+      "evidence": [
+        "THEORY_KO.md",
+        "review/PREEXEC_REVIEW.json",
+        "evidence/validation/01_tests/FINISH.json"
+      ]
     },
     {
       "id": "APERTURE07-POSITIVE-PAIR-MEASURE",
-      "status": "pending_scoped",
-      "inherited": false
+      "status": "complete_scoped",
+      "inherited": false,
+      "evidence": [
+        "THEORY_KO.md",
+        "review/PREEXEC_REVIEW.json",
+        "evidence/validation/01_tests/FINISH.json"
+      ]
     },
     {
       "id": "APERTURE07-VALIDATED-REFERENCE",
@@ -104,8 +114,8 @@
     ]
   ],
   "accounting": {
-    "complete_scoped_nodes": 5,
-    "pending_scoped_nodes": 3,
+    "complete_scoped_nodes": 7,
+    "pending_scoped_nodes": 1,
     "open_physical_inputs": 3,
     "partial_nodes": 0,
     "total_nodes": 11
