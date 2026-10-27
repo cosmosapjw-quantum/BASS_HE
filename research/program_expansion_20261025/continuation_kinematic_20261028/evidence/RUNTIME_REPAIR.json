@@ -1,0 +1,30 @@
+{
+  "schema": "HE08_DIAGNOSED_RUNTIME_REPAIR_V1",
+  "initial_local_source": "64e5a5aff521c7dea645e573cdbc4be30f43dc98",
+  "initial_remote_same_tree_source": "3a912e91a1f6ae1b0a6eb4716521ef88af56c5b6",
+  "initial_tree": "922179b0d48f34259c1c561f8165a9ba7512f651",
+  "initial_outcome": "ENVIRONMENT_PREFLIGHT_FAIL_BEFORE_SCIENCE",
+  "diagnosis": "git status threaded lstat could not create a thread inside bounded runner; failure occurred before output directory and validation child creation",
+  "scientific_suite_runs_completed": 0,
+  "repair": "Per-command core.preloadIndex=false and index.threads=1 for git status only",
+  "science_tests_tolerances_changed": false,
+  "global_git_config_changed": false,
+  "repair_reserve_used": 1,
+  "repair_reserve_remaining": 0,
+  "initial_cost": {
+    "cpu_s": 0.10332699999999997,
+    "wall_s": 0.11624748499889392,
+    "outer_orchestration_cpu_s": 0.011127208999999999
+  },
+  "cumulative_new_validation_budget": {
+    "cpu_s": 10,
+    "wall_s": 30,
+    "remaining_cpu_s": 9.896673,
+    "remaining_wall_s": 29.883752515001106,
+    "budget_reset": false,
+    "budget_transfer": false,
+    "admission_rule": "Add first preflight cost and authorized repair execution cost; unchanged per-attempt limits are upper guards, cumulative totals determine PASS"
+  },
+  "source_freeze": "S05R before the one authorized retry",
+  "retry_status": "NOT_YET_EXECUTED"
+}

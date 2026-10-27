@@ -41,7 +41,7 @@ if __name__=="__main__":
     cpu0,wall0=time.process_time(),time.perf_counter()
     actual=subprocess.check_output(["git","rev-parse","HEAD"],cwd=ROOT,text=True).strip()
     if actual!=args.source_commit:raise SystemExit("source commit differs from authorized pin")
-    if subprocess.check_output(["git","status","--porcelain","--untracked-files=no"],cwd=ROOT,text=True).strip():
+    if subprocess.check_output(["git","-c","core.preloadIndex=false","-c","index.threads=1","status","--porcelain","--untracked-files=no"],cwd=ROOT,text=True).strip():
         raise SystemExit("tracked working tree is dirty; freeze source before execution")
     output=Path(args.output).resolve()
     output.mkdir(parents=True,exist_ok=False)

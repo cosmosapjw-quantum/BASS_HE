@@ -70,5 +70,7 @@
   "local_dag": "8/12",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
-  "execution": "NOT_YET_RUN"
+  "execution": "ENVIRONMENT_PREFLIGHT_FAIL_BEFORE_SCIENCE",
+  "repair_checkpoint": "S05R",
+  "repair_reserve_used": 1
 }
