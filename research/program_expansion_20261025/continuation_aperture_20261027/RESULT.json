@@ -291,5 +291,46 @@
   "old_scientific_suite_replays": 0,
   "old_plot_replays": 0,
   "old_backup_regenerations": 0,
-  "budget_reset_or_transfer": false
+  "budget_reset_or_transfer": false,
+  "workflow": "COMPLETE_SCOPED_CONDITIONAL",
+  "metadata_scope": "PREPUBLICATION_S10_WORK_PRODUCT",
+  "publication": {
+    "metadata_scope": "PREPUBLICATION_S10_WORK_PRODUCT",
+    "source_repository": "cosmosapjw-quantum/BASS_HE",
+    "source_branch": "research/he-aperture07-20261027",
+    "S01_S09": {
+      "actual_source_publication_ACKs": 9,
+      "actual_dual_backup_ACKs": 9,
+      "prefix_of_requested_ten_checkpoints": "9/10; not a final 10/10 delivery receipt",
+      "byte_exact_receipt_copy": "publication/STAGE_ACKS_THROUGH_S09.json",
+      "receipt_copy_sha256": "ae8d066891d94ee01400e339b7b6f6c8c49475c808ebf189fafd188f2e8ada7d"
+    },
+    "S10": {
+      "status": "PENDING_POST_COMMIT",
+      "local_delivery_identity": "CONTAINING_COMMIT; its actual commit/tree will be recorded by the external post-commit receipt",
+      "remote_publication_commit": null,
+      "source_publication_ACK": false,
+      "dual_backup_ACK": false,
+      "external_final_delivery_receipt": "Root-maintained external post-commit receipt; actual local hash/tree, remote commit, backup ACKs and central ACK are recorded only after they occur"
+    },
+    "central_APERTURE07": {
+      "status": "PENDING",
+      "published": false,
+      "publication_commit": null,
+      "candidate_base_commit": "42cc3a909688d670200ba09c500e2ca83a94fa10",
+      "candidate_base_tree": "3aa90a500c831cfc9d8b05bb891a48d4027555bb",
+      "prior_ANGULAR06_central_commit": "8af3e56dcaa27a8362b2bf74d6fb3c8edd859413",
+      "next_action": "Root freshly reads actual HEAD and AGENTS, preserves latest non-HE content, and publishes reviewed HE-only observation delta by actual expected SHA with force=false. No current central success is asserted.",
+      "historical_base_roles": {
+        "PHOTON05_original_candidate_reviewed_base": "1a38f94fa50c763bb9df6ccc8ba569f287fe97d5",
+        "B3h_observed_ANGULAR06_reviewed_candidate_base": "152b82cac23fedcb75a9effe0c159bae3d800c01",
+        "ANGULAR06_actual_refreshed_publication_base": "74aff0740d1812c732466563a9c66108a3a4d8fd",
+        "ANGULAR06_actual_central_publication": "8af3e56dcaa27a8362b2bf74d6fb3c8edd859413",
+        "APERTURE07_current_candidate_base": "42cc3a909688d670200ba09c500e2ca83a94fa10",
+        "current_base_context": "Later REC and CR changes after8af are preserved; these distinct historical roles do not describe one common original reviewed base."
+      }
+    }
+  },
+  "closeout": "BASS_HE_APERTURE07_CLOSEOUT_20261027.json",
+  "handoff": "BASS_HE_APERTURE07_HANDOFF_KO_20261027.md"
 }

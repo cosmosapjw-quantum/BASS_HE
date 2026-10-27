@@ -124,8 +124,18 @@
       "checkpoint": "S10",
       "theory": "R10",
       "coding": "C10",
-      "status": "PENDING",
-      "evidence": []
+      "status": "COMPLETE",
+      "evidence": [
+        "BASS_HE_APERTURE07_CLOSEOUT_20261027.json",
+        "BASS_HE_APERTURE07_HANDOFF_KO_20261027.md",
+        "publication/STAGE_ACKS_THROUGH_S09.json",
+        "ACCEPTANCE_KO.md",
+        "RESULT.json",
+        "DAG.json"
+      ],
+      "work_product_status": "COMPLETE_WORK_PRODUCT",
+      "theory_status": "COMPLETE_WORK_PRODUCT",
+      "coding_status": "COMPLETE_WORK_PRODUCT"
     }
   ],
   "DAG": {
@@ -139,5 +149,14 @@
     "total": 88,
     "HE_delta": 0
   },
-  "current_publication_receipts": "External he07_checkpoints/STAGE_ACKS.json records actual post-commit ACKs; commit-local status is pre-publication."
+  "current_publication_receipts": "External he07_checkpoints/STAGE_ACKS.json records actual post-commit ACKs; commit-local status is pre-publication.",
+  "all_ten_stages_complete": true,
+  "work_product_status": "COMPLETE_WORK_PRODUCT",
+  "workflow": "COMPLETE_SCOPED_CONDITIONAL",
+  "publication_as_of_S10_precommit": {
+    "metadata_scope": "PREPUBLICATION_S10_WORK_PRODUCT",
+    "S01_S09_actual": "9/9 source and dual backup ACK; prefix9/10",
+    "S10": "PENDING_POST_COMMIT",
+    "central_APERTURE07": "PENDING"
+  }
 }
