@@ -25,7 +25,7 @@
       "stage": "S04",
       "theory": "R4",
       "coding": "C4",
-      "status": "pending"
+      "status": "complete_work_product"
     },
     {
       "stage": "S05",
@@ -64,7 +64,7 @@
       "status": "pending"
     }
   ],
-  "current_stage": "S03",
+  "current_stage": "S04",
   "workflow": "NEW_UNIT_PENDING",
   "local_dag": "8 complete +1 partial +1 pending +3 physical open /13",
   "central_dag_at_intake": "28/88",
