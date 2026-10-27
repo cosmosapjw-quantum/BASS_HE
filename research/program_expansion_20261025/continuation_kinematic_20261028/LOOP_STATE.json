@@ -25,7 +25,7 @@
       "stage": "S04",
       "theory": "R4",
       "coding": "C4",
-      "status": "pending"
+      "status": "complete_work_product"
     },
     {
       "stage": "S05",
@@ -64,7 +64,7 @@
       "status": "pending"
     }
   ],
-  "current_stage": "S03",
+  "current_stage": "S04",
   "publication_scope": "PREPUBLICATION_WORK_PRODUCT",
   "source_and_backup_receipts": "External STAGE_ACKS.json records actual postcommit outcomes",
   "local_dag": "8/12",
