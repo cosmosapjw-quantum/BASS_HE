@@ -37,7 +37,7 @@
       "stage": "S06",
       "theory": "R6",
       "coding": "C6",
-      "status": "pending"
+      "status": "complete_work_product"
     },
     {
       "stage": "S07",
@@ -64,13 +64,15 @@
       "status": "pending"
     }
   ],
-  "current_stage": "S05",
+  "current_stage": "S06",
   "publication_scope": "PREPUBLICATION_WORK_PRODUCT",
   "source_and_backup_receipts": "External STAGE_ACKS.json records actual postcommit outcomes",
   "local_dag": "8/12",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
-  "execution": "ENVIRONMENT_PREFLIGHT_FAIL_BEFORE_SCIENCE",
+  "execution": "PASS_14_TESTS_ONE_SCIENTIFIC_SUITE_AFTER_ONE_ENVIRONMENT_REPAIR",
   "repair_checkpoint": "S05R",
-  "repair_reserve_used": 1
+  "repair_reserve_used": 1,
+  "tested_local_source": "d004212d560907eb4058d9539eec8e9b262ec406",
+  "remote_same_tree_source": "391f1e4c356082c0b5cc693d49fb2aef873a0f2a"
 }
