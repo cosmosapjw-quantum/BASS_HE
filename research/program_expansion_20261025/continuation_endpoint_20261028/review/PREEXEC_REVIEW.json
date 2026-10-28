@@ -28,7 +28,7 @@
       "scripts/campaign.py": "2d0bd0644587b41d54de0ef1af53b13287dd43843f6b0c4f18f21e684dd401ef",
       "scripts/plot_saved.py": "cc250b63cdaa9cc80b8140b12f8646e35f76b48dde1870bdf9b9efe0087a18ed",
       "scripts/run_once.py": "5abdfd0bd1136a8adc3b8fede30434e399d864c663f92ebe2eaf16bf421e3571",
-      "tests/test_endpoint14.py": "d18e4e79ed987b9c11a13b2a1a22a6bb1f974d520be6d0878beeb86d825eb516"
+      "tests/test_endpoint14.py": "57a84b1abf0eb36af1fd617018bf4148f5f3597da5272878e22e0cf746d71c9c"
     },
     "static_syntax_record": "Read six SYNTAX_PASS entries and matched their hashes; syntax compilation was performed by implementer, not rerun by reviewer."
   },
@@ -49,9 +49,17 @@
       "severity": "nonblocking_documentation",
       "subject": "Derivative-sign wording in a test comment",
       "location": "tests/test_endpoint14.py:identities comment immediately before the weighted endpoint checks",
-      "status": "OPEN_NONBLOCKING",
+      "status": "CLOSED_COMMENT_ONLY_DELTA_PASS",
       "observation": "The comment says 2*t^(2j)-2*t^(2j+2). The tail moment G_j used by the code has derivative -2*t^(2j)+2*t^(2j+2). The implementation, contract and THEORY use the correct decreasing tail-moment formula; this comment does not affect an executed assertion or scientific result.",
-      "recommended_correction": "Clarify the comment to use the tail-moment derivative sign. No extra science run or optional review cycle is warranted."
+      "recommended_correction": "Clarify the comment to use the tail-moment derivative sign. No extra science run or optional review cycle is warranted.",
+      "actual_correction": "Root-authorized lower-tier comment correction is present: -2*t^(2j)+2*t^(2j+2). Read the changed line and actual file hash; no test or science execution was performed.",
+      "hash_delta": {
+        "path": "tests/test_endpoint14.py",
+        "previous_sha256": "d18e4e79ed987b9c11a13b2a1a22a6bb1f974d520be6d0878beeb86d825eb516",
+        "current_sha256": "57a84b1abf0eb36af1fd617018bf4148f5f3597da5272878e22e0cf746d71c9c",
+        "scope": "One derivative-sign comment; other five Python source hashes unchanged. Existing S02 review snapshot remains historical; S03 carries this closure."
+      },
+      "science_repair_allowance_consumed": false
     }
   ],
   "checks": [
@@ -117,9 +125,9 @@
     }
   ],
   "blocking_findings": 0,
-  "nonblocking_open_findings": 1,
-  "closed_findings": 1,
-  "stopping_rule": "Static review is complete. Do not broaden this review or rerun completed predecessor evidence. A comment-only F2 correction may be recorded as a hash delta without repeating the scientific review.",
+  "nonblocking_open_findings": 0,
+  "closed_findings": 2,
+  "stopping_rule": "Static review is complete; F1 and F2 are closed. Do not broaden this review or rerun completed predecessor evidence. The comment-only F2 correction was recorded as a hash delta without repeating the scientific review.",
   "next_transition": "PASS -> publish/read back actual S05 source, prepare the mandatory immutable execution pin, then controller GO to the lower-tier executor for the single bounded validation campaign. Admission of actual results remains pending nonauthor result review.",
   "scientific_admission": "PENDING_ACTUAL_EXECUTION_AND_RESULT_REVIEW",
   "execution_observations": {
