@@ -3,7 +3,7 @@
   "workflow_version": "1.0.0",
   "task": "both",
   "unit_id": "HE-EXP-TANGENT-13",
-  "status": "in_progress",
+  "status": "complete_scoped",
   "objective": "Two rigorous258MeV full-positive quartic aperture minima brackets of width<=1e-10",
   "scope": "CONTRACT.md",
   "stages": [
@@ -106,9 +106,16 @@
     },
     {
       "id": "R10",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "HANDOFF_S10_SNAPSHOT_KO.md",
+        "CLOSEOUT_S10_SNAPSHOT.json",
+        "LOOP_STATE.json",
+        "DAG.json",
+        "evidence/DELIVERY_THROUGH_S09.json",
+        "review/HANDOFF_SNAPSHOT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C1",
@@ -209,14 +216,23 @@
     },
     {
       "id": "C10",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "HANDOFF_S10_SNAPSHOT_KO.md",
+        "CLOSEOUT_S10_SNAPSHOT.json",
+        "LOOP_STATE.json",
+        "DAG.json",
+        "evidence/DELIVERY_THROUGH_S09.json",
+        "review/HANDOFF_SNAPSHOT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     }
   ],
-  "work_products_completed": 18,
+  "work_products_completed": 20,
   "work_products_total": 20,
   "local_DAG": "13/17",
   "central_DAG": "28/88",
-  "HE_delta": 0
+  "HE_delta": 0,
+  "metadata_scope": "PREPUBLICATION_S10_SNAPSHOT",
+  "source_S10_and_final_delivery": "PENDING_AT_CREATION"
 }
