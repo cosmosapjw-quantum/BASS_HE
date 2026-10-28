@@ -20,8 +20,13 @@
       "stage": "S02",
       "theory": "R2",
       "coding": "C2",
-      "status": "pending",
-      "evidence": []
+      "status": "complete_work_product",
+      "evidence": [
+        "EVIDENCE_SYNTHESIS_KO.md",
+        "intake/REPO_SYNTHESIS_KO.md",
+        "intake/REPO_SURVEY_SUMMARY.json",
+        "intake/BACKUP_CONTEXT_SURVEY_KO.md"
+      ]
     },
     {
       "stage": "S03",
@@ -80,7 +85,7 @@
       "evidence": []
     }
   ],
-  "current_stage": "S01",
+  "current_stage": "S02",
   "local_dag": "9 complete +1 inherited partial +3 physical open +1 pending /14",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
