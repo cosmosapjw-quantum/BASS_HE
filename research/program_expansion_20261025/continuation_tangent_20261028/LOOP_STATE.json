@@ -83,9 +83,15 @@
     },
     {
       "id": "R8",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "APPRAISAL_AND_REPRODUCIBILITY_KO.md",
+        "review/PLOT_REPORT_REVIEW.json",
+        "evidence/plot/initial/PLOT_RECEIPT.json",
+        "evidence/plot/initial/RESOURCE_RESULT.json",
+        "VALIDATION_KO.md"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R9",
@@ -175,9 +181,15 @@
     },
     {
       "id": "C8",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "APPRAISAL_AND_REPRODUCIBILITY_KO.md",
+        "review/PLOT_REPORT_REVIEW.json",
+        "evidence/plot/initial/PLOT_RECEIPT.json",
+        "evidence/plot/initial/RESOURCE_RESULT.json",
+        "VALIDATION_KO.md"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C9",
@@ -192,7 +204,7 @@
       "reason": "Awaiting actual workproduct"
     }
   ],
-  "work_products_completed": 14,
+  "work_products_completed": 16,
   "work_products_total": 20,
   "local_DAG": "12/17",
   "central_DAG": "28/88",
