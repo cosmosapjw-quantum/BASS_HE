@@ -18,9 +18,14 @@
     },
     {
       "id": "R2",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "EVIDENCE_AND_CODE_MAP_KO.md",
+        "sources/SURVEY_GITHUB_KO.md",
+        "sources/BACKUP_SUMMARY_KO.md",
+        "sources/TANGENT13_PRIMARY_SUPPORT_KO.md"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R3",
@@ -81,9 +86,14 @@
     },
     {
       "id": "C2",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "EVIDENCE_AND_CODE_MAP_KO.md",
+        "sources/SURVEY_GITHUB_KO.md",
+        "sources/BACKUP_SUMMARY_KO.md",
+        "sources/TANGENT13_PRIMARY_SUPPORT_KO.md"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C3",
@@ -134,7 +144,7 @@
       "reason": "Awaiting actual workproduct"
     }
   ],
-  "work_products_completed": 2,
+  "work_products_completed": 4,
   "work_products_total": 20,
   "local_DAG": "12/17",
   "central_DAG": "28/88",
