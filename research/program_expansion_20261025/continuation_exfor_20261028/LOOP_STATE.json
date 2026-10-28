@@ -3,8 +3,8 @@
   "workflow_version": "1.0.0",
   "selected_scope": "R1-R10 and C1-C10",
   "metadata_scope": "PREPUBLICATION_STAGE_SNAPSHOT",
-  "stage": 6,
-  "work_products_completed": 12,
+  "stage": 7,
+  "work_products_completed": 14,
   "work_products_total": 20,
   "stages": [
     {
@@ -66,8 +66,13 @@
     },
     {
       "id": "R7",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "INTERPRETATION_KO.md",
+        "CAS_SUBMITTED.wl",
+        "evidence/WOLFRAM_RAW.json",
+        "evidence/WOLFRAM_RESULT.json"
+      ]
     },
     {
       "id": "R8",
@@ -143,8 +148,13 @@
     },
     {
       "id": "C7",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "INTERPRETATION_KO.md",
+        "CAS_SUBMITTED.wl",
+        "evidence/WOLFRAM_RAW.json",
+        "evidence/WOLFRAM_RESULT.json"
+      ]
     },
     {
       "id": "C8",
@@ -174,5 +184,6 @@
     "fixed_energy_scale_statement": "corrected by root",
     "plot_inner_enclosure_label": "corrected by lower-tier",
     "scientific_repair_debit": 0
-  }
+  },
+  "CAS": "PASS_21_ZERO_8_TRUE"
 }
