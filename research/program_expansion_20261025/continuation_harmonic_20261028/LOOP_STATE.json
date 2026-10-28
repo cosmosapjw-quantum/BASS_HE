@@ -1,7 +1,7 @@
 {
   "unit_id": "HE-EXP-HARMONIC-10",
   "workflow_version": "1.0.0",
-  "status": "in_progress_delivery",
+  "status": "complete_work_products",
   "metadata_scope": "PREPUBLICATION_SOURCE_SNAPSHOT",
   "stages": [
     {
@@ -130,11 +130,18 @@
       "stage": "S10",
       "theory": "R10",
       "coding": "C10",
-      "status": "pending",
-      "evidence": []
+      "status": "complete_work_product",
+      "evidence": [
+        "HANDOFF_SOURCE_SNAPSHOT_KO.md",
+        "CLOSEOUT_SOURCE_SNAPSHOT.json",
+        "STAGE_PUBLICATION_SNAPSHOT.json",
+        "receipts/S09_ACK.json",
+        "RESULT.json",
+        "DAG.json"
+      ]
     }
   ],
-  "current_stage": "S09",
+  "current_stage": "S10",
   "local_dag": "10 complete +1 inherited partial +3 physical open /14",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
@@ -145,5 +152,8 @@
   "root_decision": "ACCEPT_SCOPED_SECOND_HARMONIC_REFERENCE",
   "publication_state": "ACTUAL_ACKS_RECORDED_EXTERNALLY_AFTER_CREATION",
   "wolfram_evaluator_calls": 1,
-  "saved_only_plot_executions": 1
+  "saved_only_plot_executions": 1,
+  "work_products_completed": 20,
+  "work_products_total": 20,
+  "delivery_at_creation": "S10 source/dual-backup, central actual publication and final external receipts pending; later external receipts are delivery authority"
 }

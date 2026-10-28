@@ -1,10 +1,10 @@
 {
   "schema": "HE_EXP_HARMONIC10_SCIENTIFIC_ADMISSION_V1",
   "unit_id": "HE-EXP-HARMONIC-10",
-  "metadata_scope": "PREPUBLICATION_SCIENTIFIC_ADMISSION_SNAPSHOT",
+  "metadata_scope": "PREPUBLICATION_SOURCE_SNAPSHOT",
   "decision": "ACCEPT_SCOPED_SECOND_HARMONIC_REFERENCE",
   "status": "ACCEPTED_SCOPED",
-  "workflow": "SCIENTIFIC_REFERENCE_ACCEPTED_S10_DELIVERY_PENDING",
+  "workflow": "COMPLETE_SCOPED",
   "authority": "Astra parent decision after independent recorded pass1 and actual S08 source/dual-backup ACK",
   "claim": "Certified same-event finite-detector event/count/selected-energy and conditional bounds for a declared nonnegative even degree<=8 second-harmonic Fourier-Bernstein measure at fixed stored kinematics",
   "validation": {
@@ -165,11 +165,33 @@
     "receipts/S08_ACK.json"
   ],
   "stop_rule": {
-    "remaining_work": "S09/S10 publication and dual backups, fresh allowed central HE-only publication, final external handoff",
+    "remaining_work": "S10 actual source publication and dual backups, fresh allowed central HE-only compare-and-swap publication, final external four-document handoff",
     "automatic_next_node": false,
     "automatic_budget": false,
     "automatic_validation": false,
     "automatic_plot": false,
-    "automatic_CAS": false
+    "automatic_CAS": false,
+    "stop_after_delivery": true
+  },
+  "delivery_at_creation": {
+    "qualification": "All20 theory/coding work products complete; this source snapshot precedes its own S10 commit, backup acknowledgments, central compare-and-swap publication and external handoff. Later external receipts are current delivery authority.",
+    "S09_actual": {
+      "local_execution_commit": "4ed1ee7149e72725f4704a5b35e1191c87fdceb2",
+      "remote_publication_commit": "39dc63b4bf4d60b255ea3ca5323661ccc80ca880",
+      "source_tree": "10ab6a622a4e0101cfffefdef93a8156bfe35c32"
+    },
+    "S10": {
+      "local_execution_commit": null,
+      "remote_publication_commit": null,
+      "source_tree": null,
+      "status": "PENDING_CREATION_TIME"
+    },
+    "central": "PENDING_ACTUAL_PUBLICATION",
+    "final_external_authority_documents": [
+      "BASS_HE_HARMONIC10_HANDOFF_KO_20261028.md",
+      "BASS_HE_HARMONIC10_CLOSEOUT_20261028.json",
+      "STAGE_ACKS.json",
+      "CENTRAL_PUBLICATION_RECEIPT.json"
+    ]
   }
 }
