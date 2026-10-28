@@ -90,9 +90,14 @@
     },
     {
       "id": "R7",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "SCIENTIFIC_CHECKS_KO.md",
+        "evidence/WOLFRAM_RESULT.json",
+        "review/CAS_REVIEW.json",
+        "review/PLOT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R8",
@@ -178,9 +183,14 @@
     },
     {
       "id": "C7",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "SCIENTIFIC_CHECKS_KO.md",
+        "evidence/WOLFRAM_RESULT.json",
+        "review/CAS_REVIEW.json",
+        "review/PLOT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C8",
@@ -210,7 +220,7 @@
   "next_actions": [
     "Complete and actually publish S01 baseline pair"
   ],
-  "work_products_completed": 12,
+  "work_products_completed": 14,
   "work_products_total": 20,
   "local_DAG": "13/18",
   "central_DAG": "28/88",
