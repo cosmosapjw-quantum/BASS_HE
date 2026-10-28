@@ -90,8 +90,13 @@
       "stage": "S07",
       "theory": "R7",
       "coding": "C7",
-      "status": "pending",
-      "evidence": []
+      "status": "complete_work_product",
+      "evidence": [
+        "evidence/WOLFRAM_RESULT.json",
+        "evidence/wolfram/WOLFRAM_RAW.json",
+        "scripts/VERIFY_SYMBOLIC.wl",
+        "WOLFRAM_KO.md"
+      ]
     },
     {
       "stage": "S08",
@@ -115,7 +120,7 @@
       "evidence": []
     }
   ],
-  "current_stage": "S06",
+  "current_stage": "S07",
   "local_dag": "9 complete +1 inherited partial +3 physical open +1 pending /14",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
@@ -124,5 +129,6 @@
   "automatic_budget": false,
   "automatic_rerun": false,
   "root_decision": "PENDING_NEW_UNIT_EVIDENCE",
-  "publication_state": "ACTUAL_ACKS_RECORDED_EXTERNALLY_AFTER_CREATION"
+  "publication_state": "ACTUAL_ACKS_RECORDED_EXTERNALLY_AFTER_CREATION",
+  "wolfram_evaluator_calls": 1
 }
