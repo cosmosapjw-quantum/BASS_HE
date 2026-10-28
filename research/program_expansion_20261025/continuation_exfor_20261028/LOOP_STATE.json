@@ -3,8 +3,8 @@
   "workflow_version": "1.0.0",
   "selected_scope": "R1-R10 and C1-C10",
   "metadata_scope": "PREPUBLICATION_STAGE_SNAPSHOT",
-  "stage": 7,
-  "work_products_completed": 14,
+  "stage": 8,
+  "work_products_completed": 16,
   "work_products_total": 20,
   "stages": [
     {
@@ -76,8 +76,13 @@
     },
     {
       "id": "R8",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "APPRAISAL_KO.md",
+        "evidence/plot/initial/EXFOR11.png",
+        "evidence/plot/initial/PLOT_RECEIPT.json",
+        "evidence/PLOT_PROCESS_RESOURCE.json"
+      ]
     },
     {
       "id": "R9",
@@ -158,8 +163,13 @@
     },
     {
       "id": "C8",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "APPRAISAL_KO.md",
+        "evidence/plot/initial/EXFOR11.png",
+        "evidence/plot/initial/PLOT_RECEIPT.json",
+        "evidence/PLOT_PROCESS_RESOURCE.json"
+      ]
     },
     {
       "id": "C9",
@@ -185,5 +195,6 @@
     "plot_inner_enclosure_label": "corrected by lower-tier",
     "scientific_repair_debit": 0
   },
-  "CAS": "PASS_21_ZERO_8_TRUE"
+  "CAS": "PASS_21_ZERO_8_TRUE",
+  "plot": "PASS_SAVED_ONLY_SINGLE_RENDER"
 }
