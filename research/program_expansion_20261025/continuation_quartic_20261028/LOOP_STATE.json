@@ -2,9 +2,9 @@
   "unit_id": "HE-EXP-QUARTIC-12",
   "workflow_version": "1.0.0",
   "selected_scope": "R1-R10 and C1-C10",
-  "metadata_scope": "PREPUBLICATION_S02_SNAPSHOT",
-  "stage": 2,
-  "work_products_completed": 4,
+  "metadata_scope": "PREPUBLICATION_S03_SNAPSHOT",
+  "stage": 3,
+  "work_products_completed": 6,
   "work_products_total": 20,
   "stages": [
     {
@@ -28,8 +28,11 @@
     },
     {
       "id": "R3",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "THEORY.md",
+        "CONTRACT.md"
+      ]
     },
     {
       "id": "R4",
@@ -87,8 +90,11 @@
     },
     {
       "id": "C3",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "THEORY.md",
+        "CONTRACT.md"
+      ]
     },
     {
       "id": "C4",
