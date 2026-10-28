@@ -52,8 +52,23 @@
       "stage": "S05",
       "theory": "R5",
       "coding": "C5",
-      "status": "pending",
-      "evidence": []
+      "status": "complete_work_product",
+      "evidence": [
+        "src/harmonic.py",
+        "tests/test_harmonic.py",
+        "scripts/validate_once.py",
+        "scripts/run_bounded.py",
+        "scripts/measure_execution.py",
+        "scripts/plot_saved.py",
+        "IMPLEMENTATION_KO.md",
+        "review/STATIC_PREPARATION.json",
+        "review/PREEXECUTION_REPAIR.json",
+        "review/PREEXECUTION_REPAIR.diff",
+        "review/STATIC_REVIEW.json",
+        "review/STATIC_REVIEW_KO.md",
+        "scripts/VERIFY_SYMBOLIC.wl",
+        "review/CAS_PROGRAM_PREEXEC_REVIEW.json"
+      ]
     },
     {
       "stage": "S06",
@@ -91,7 +106,7 @@
       "evidence": []
     }
   ],
-  "current_stage": "S04",
+  "current_stage": "S05",
   "local_dag": "9 complete +1 inherited partial +3 physical open +1 pending /14",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
