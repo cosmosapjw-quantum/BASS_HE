@@ -32,8 +32,11 @@
       "stage": "S03",
       "theory": "R3",
       "coding": "C3",
-      "status": "pending",
-      "evidence": []
+      "status": "complete_work_product",
+      "evidence": [
+        "THEORY_KO.md",
+        "CONTRACT_KO.md"
+      ]
     },
     {
       "stage": "S04",
@@ -85,7 +88,7 @@
       "evidence": []
     }
   ],
-  "current_stage": "S02",
+  "current_stage": "S03",
   "local_dag": "9 complete +1 inherited partial +3 physical open +1 pending /14",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,

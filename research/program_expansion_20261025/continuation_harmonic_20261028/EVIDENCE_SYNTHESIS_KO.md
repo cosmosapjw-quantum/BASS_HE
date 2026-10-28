@@ -39,7 +39,7 @@ Repo 관측 UTC 2026-10-27 23:46:26–23:51:18 (KST 2026-10-28 08:46:26–08:51:
 | 1차 문헌 | 읽은 범위 | 직접 사용할 사실과 제한 |
 |---|---|---|
 | Tomusiak, Leidemann, Hofmann, Phys. Rev. C52,1963 (1995), DOI10.1103/PhysRevC.52.1963 | APS official abstract; fulltext auth wall | 4He(γ,d)d에서 photon polarization/asymmetry를 고려할 동기. 실제 계수·정규화 채택0 |
-| Peretiatko et al., VANT2019(3),11–16, DOI10.46813/2019-121-011 | 공식 PDF 전체 텍스트5pages | linearly polarized 4He(γ,pn)d에서 f(φ)=a(1+p cos2φ), p=PγΣ 표기. 세 몸체 채널이므로 dd에 측정값을 이전하지 않음 |
+| Peretiatko et al., VANT2019(3),article starting p.11, DOI10.46813/2019-121-011 | 공식 PDF 전체 텍스트5pages | linearly polarized 4He(γ,pn)d에서 f(φ)=a(1+p cos2φ), p=PγΣ 표기. 세 몸체 채널이므로 dd에 측정값을 이전하지 않음 |
 | arXiv1212.5419, Koshchii et al. | 검색/abstract 수준 | 후보 배경만; fulltext 검토·계수 추출을 주장하지 않음 |
 
 Links:
