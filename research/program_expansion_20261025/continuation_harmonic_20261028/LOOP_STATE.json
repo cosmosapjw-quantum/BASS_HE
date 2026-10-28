@@ -102,8 +102,16 @@
       "stage": "S08",
       "theory": "R8",
       "coding": "C8",
-      "status": "pending",
-      "evidence": []
+      "status": "complete_work_product",
+      "evidence": [
+        "evidence/PLOT_RESULT.json",
+        "evidence/plot/HARMONIC10.png",
+        "evidence/plot/HARMONIC10.svg",
+        "evidence/plot/PLOT_RECEIPT.json",
+        "evidence/plot/PLOT_RESOURCE_01.json",
+        "receipts/S07_ACK.json",
+        "PLOT_KO.md"
+      ]
     },
     {
       "stage": "S09",
@@ -120,7 +128,7 @@
       "evidence": []
     }
   ],
-  "current_stage": "S07",
+  "current_stage": "S08",
   "local_dag": "9 complete +1 inherited partial +3 physical open +1 pending /14",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
@@ -130,5 +138,6 @@
   "automatic_rerun": false,
   "root_decision": "PENDING_NEW_UNIT_EVIDENCE",
   "publication_state": "ACTUAL_ACKS_RECORDED_EXTERNALLY_AFTER_CREATION",
-  "wolfram_evaluator_calls": 1
+  "wolfram_evaluator_calls": 1,
+  "saved_only_plot_executions": 1
 }
