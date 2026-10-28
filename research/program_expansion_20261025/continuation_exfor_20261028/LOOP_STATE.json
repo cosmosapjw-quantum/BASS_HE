@@ -1,0 +1,129 @@
+{
+  "unit_id": "HE-EXP-EXFOR-11",
+  "workflow_version": "1.0.0",
+  "selected_scope": "R1-R10 and C1-C10",
+  "metadata_scope": "PREPUBLICATION_STAGE_SNAPSHOT",
+  "stage": 1,
+  "work_products_completed": 2,
+  "work_products_total": 20,
+  "stages": [
+    {
+      "id": "R1",
+      "status": "complete",
+      "evidence": [
+        "CONTRACT.md",
+        "BASELINE_KO.md",
+        "SURVEY_SUMMARY_KO.md",
+        "DAG.json"
+      ]
+    },
+    {
+      "id": "R2",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "R3",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "R4",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "R5",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "R6",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "R7",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "R8",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "R9",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "R10",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "C1",
+      "status": "complete",
+      "evidence": [
+        "CONTRACT.md",
+        "BASELINE_KO.md",
+        "SURVEY_SUMMARY_KO.md",
+        "DAG.json"
+      ]
+    },
+    {
+      "id": "C2",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "C3",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "C4",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "C5",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "C6",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "C7",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "C8",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "C9",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "C10",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "local_DAG": "10/15",
+  "central_DAG": "28/88",
+  "central_HE_delta": 0,
+  "publication_receipts": "external actual ACKs; creation snapshot is not a later delivery statement",
+  "science_execution": "not_run",
+  "global_physical_completion": null,
+  "L4": false,
+  "production": "NOT_APPROVED"
+}
