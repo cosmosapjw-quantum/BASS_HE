@@ -2,7 +2,7 @@
   "schema": "HE_TANGENT13_REVIEW_FINDINGS_V1",
   "reviewer": "/root/repo_survey",
   "pass": "Same single nonauthor preexecution-to-closeout pass",
-  "checkpoint": "ACTUAL_RESULTS_AND_SAVED_PLOT",
+  "checkpoint": "FINAL_LOCAL_SCIENTIFIC_ADMISSION",
   "findings": [
     {
       "id": "F1",
@@ -99,6 +99,17 @@
       "impact": "Figure cannot serve as the sole precise quantitative presentation. Exact rational saved certificate and readable table in VALIDATION_KO.md remain authoritative; no scientific result changes.",
       "minimum_correction": "Document visual limitation and use exact table/labels for quantitative delivery. No extra render within the frozen one-render contract.",
       "science_or_render_rerun_requested": false,
+      "final_scientific_blocking": false
+    },
+    {
+      "id": "F7",
+      "status": "CLOSED_DOCUMENTATION",
+      "domain": "reproducibility-metadata",
+      "severity": "low",
+      "object": "APPRAISAL_AND_REPRODUCIBILITY_KO.md runtime-record paragraph",
+      "observed_defect": "Earlier wording attributed Python version,platform and full thread environment to START.json; actual START contains executable path,threads,limits and hashes.",
+      "minimum_correction": "Cite runtime_probe for Python version and frozen runner source for thread settings; disclose uncaptured platform/matplotlib/full environment details.",
+      "closure": "Corrected paragraph read:Python3.12.14 from sources/runtime_probe.json,thread variables from scripts/run_once.py,platform/matplotlibversion/full environment not separately captured. No execution.",
       "final_scientific_blocking": false
     }
   ],

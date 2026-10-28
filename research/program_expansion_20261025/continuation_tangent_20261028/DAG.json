@@ -173,10 +173,19 @@
     },
     {
       "id": "TANGENT13-CURVED-CONE-MINIMUM-REFERENCE",
-      "status": "pending",
+      "status": "complete_scoped",
       "inherited": false,
-      "evidence": [],
-      "description": "Two258MeV aperture minima via exact positive-quartic tangent dual and feasible square witness"
+      "evidence": [
+        "THEORY.md",
+        "RESULT_REPORT_KO.md",
+        "RESULT.json",
+        "evidence/validation/repair1/SAVED_PLOT_DATA.json",
+        "evidence/validation/repair1/TEST_REPORT.json",
+        "evidence/validation/repair1/CERTIFICATE_READER.json",
+        "review/FINAL_LOCAL_REVIEW.json"
+      ],
+      "description": "Two258MeV aperture minima via exact positive-quartic tangent dual and feasible square witness",
+      "decision": "ACCEPT_SCOPED_FULL_QUARTIC_MINIMUM_REFERENCE"
     }
   ],
   "edges": [
@@ -230,8 +239,8 @@
     ]
   ],
   "accounting": {
-    "complete_scoped_nodes": 12,
-    "pending_scoped_nodes": 1,
+    "complete_scoped_nodes": 13,
+    "pending_scoped_nodes": 0,
     "partial_nodes": 1,
     "open_physical_inputs": 3,
     "total_nodes": 17

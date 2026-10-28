@@ -95,9 +95,14 @@
     },
     {
       "id": "R9",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "RESULT_REPORT_KO.md",
+        "RESULT.json",
+        "DAG.json",
+        "review/FINAL_LOCAL_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R10",
@@ -193,9 +198,14 @@
     },
     {
       "id": "C9",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "RESULT_REPORT_KO.md",
+        "RESULT.json",
+        "DAG.json",
+        "review/FINAL_LOCAL_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C10",
@@ -204,9 +214,9 @@
       "reason": "Awaiting actual workproduct"
     }
   ],
-  "work_products_completed": 16,
+  "work_products_completed": 18,
   "work_products_total": 20,
-  "local_DAG": "12/17",
+  "local_DAG": "13/17",
   "central_DAG": "28/88",
   "HE_delta": 0
 }
