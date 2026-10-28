@@ -2,9 +2,9 @@
   "unit_id": "HE-EXP-QUARTIC-12",
   "workflow_version": "1.0.0",
   "selected_scope": "R1-R10 and C1-C10",
-  "metadata_scope": "PREPUBLICATION_S07_SNAPSHOT",
-  "stage": 7,
-  "work_products_completed": 14,
+  "metadata_scope": "PREPUBLICATION_S08_SNAPSHOT",
+  "stage": 8,
+  "work_products_completed": 16,
   "work_products_total": 20,
   "stages": [
     {
@@ -78,8 +78,13 @@
     },
     {
       "id": "R8",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "APPRAISAL_KO.md",
+        "evidence/plot/initial/QUARTIC12.png",
+        "evidence/plot/initial/PLOT_RECEIPT.json",
+        "evidence/PLOT_PROCESS_RESOURCE.json"
+      ]
     },
     {
       "id": "R9",
@@ -162,8 +167,13 @@
     },
     {
       "id": "C8",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "APPRAISAL_KO.md",
+        "evidence/plot/initial/QUARTIC12.png",
+        "evidence/plot/initial/PLOT_RECEIPT.json",
+        "evidence/PLOT_PROCESS_RESOURCE.json"
+      ]
     },
     {
       "id": "C9",
@@ -190,5 +200,6 @@
   "controls_pass": 7,
   "controls_fail": 0,
   "science_campaigns": 1,
-  "CAS": "PASS_16_ZERO_12_TRUE"
+  "CAS": "PASS_16_ZERO_12_TRUE",
+  "plot": "PASS_SAVED_ONLY_SINGLE_RENDER"
 }
