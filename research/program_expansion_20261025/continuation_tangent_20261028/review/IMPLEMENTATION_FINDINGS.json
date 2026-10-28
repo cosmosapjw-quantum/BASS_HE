@@ -2,7 +2,7 @@
   "schema": "HE_TANGENT13_REVIEW_FINDINGS_V1",
   "reviewer": "/root/repo_survey",
   "pass": "Same single nonauthor preexecution-to-closeout pass",
-  "checkpoint": "STATIC_IMPLEMENTATION_DRAFT",
+  "checkpoint": "TARGETED_RUNNER_REPAIR_PREEXEC",
   "findings": [
     {
       "id": "F1",
@@ -59,6 +59,34 @@
       "minimum_correction": "Prefix that node evidence with ../continuation_quartic_20261028/ or attach an explicit original evidence_base while preserving status,decision,node identity.",
       "required_check": "Static relative-path inspection against the original QUARTIC12 DAG; no old scientific execution.",
       "closure": "CLOSED_PREEXEC: all7 inherited QUARTIC12 evidence links now have ../continuation_quartic_20261028/ prefix; predecessor state/decision and local counts unchanged."
+    },
+    {
+      "id": "F5",
+      "status": "CLOSED_REPAIR_PREEXEC",
+      "domain": "implementation-environment-interface",
+      "severity": "blocking-for-execution",
+      "object": "scripts/run_once.py group_cpu(child.pid) namespace assumption",
+      "observed_defect": "Initial launch reported monitor711.220077CPU-s but RUSAGE_SELF+waitedchildren0.045071s/wall0.006065s and child-9. Local child PID was used as a host /proc process-group ID. Parent/coding agent current-turn diagnostics report differing local/host PIDs.",
+      "impact": "Unrelated host process-group CPU was attributed to the owned worker, causing premature SIGKILL before controls. No numerical or physical exclusion follows.",
+      "evidence": [
+        "evidence/validation/initial/RESOURCE_RESULT.json",
+        "evidence/validation/initial/START.json"
+      ],
+      "minimum_correction": "Bind the owned local child to its verified host PID/PGID using owned parent children+NSpid or childself-report handshake, then monitor that host PGID. Preserve killpg using the correct caller namespace.",
+      "required_check": "Read minimal corrected runner and one authorized tiny science-free regression; root republish repair sourcepin before authorized repair1 campaign.",
+      "authorization": "Root explicitly authorized one diagnosed targeted runner repair and tiny regression in the current task.",
+      "original_failure_preserved": true,
+      "science_reexecution_by_reviewer": 0,
+      "closure": "The owned child writes its local and host PID/PGID from /proc/self in single-threaded preexec after setsid. Parent validates local PID against Popen child.pid, local new-session PGID, host PID=PGID and NSpid, and monitors the reported host PGID. killpg retains caller-local child.pid. Independent executed-child stdout confirms host298233/local7 mapping. One successful tiny science-free regression follows the preserved missing-children-interface diagnostic failure. Scientific retry has not yet run; actual published repair pin remains required.",
+      "closure_evidence": [
+        "scripts/run_once.py",
+        "evidence/runner_repair1/STATIC_REPAIR1_HANDSHAKE.json",
+        "evidence/runner_repair1/NAMESPACE_REGRESSION_HANDSHAKE.json",
+        "evidence/runner_repair1/regression_handshake_child_stdout.log",
+        "evidence/runner_repair1/NAMESPACE_REGRESSION_FAILURE.json",
+        "evidence/runner_repair1/PROC_PATH_DIAGNOSIS.json",
+        "evidence/REPAIR1_DIAGNOSIS.json"
+      ]
     }
   ],
   "open_blocking_for_final_display": 0,
