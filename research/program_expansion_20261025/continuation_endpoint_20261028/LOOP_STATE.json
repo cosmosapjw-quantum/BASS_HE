@@ -101,9 +101,14 @@
     },
     {
       "id": "R8",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "APPRAISAL_AND_REPRODUCIBILITY_KO.md",
+        "RESULT.json",
+        "evidence/plot/initial/PLOT_RECEIPT.json",
+        "review/ACTUAL_RESULT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R9",
@@ -194,9 +199,14 @@
     },
     {
       "id": "C8",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "APPRAISAL_AND_REPRODUCIBILITY_KO.md",
+        "RESULT.json",
+        "evidence/plot/initial/PLOT_RECEIPT.json",
+        "review/ACTUAL_RESULT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C9",
@@ -220,7 +230,7 @@
   "next_actions": [
     "Complete and actually publish S01 baseline pair"
   ],
-  "work_products_completed": 14,
+  "work_products_completed": 16,
   "work_products_total": 20,
   "local_DAG": "13/18",
   "central_DAG": "28/88",
