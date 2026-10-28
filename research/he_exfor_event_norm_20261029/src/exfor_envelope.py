@@ -132,7 +132,8 @@ def sharp_bounds(points,L,dps=70):
     return {'L_nb_sr_per_deg':str(q(L)),'full_sphere_I_lower_nb':lo,
             'full_sphere_I_upper_nb':hi,'event_sigma_nb':None,
             'physical_rate_m3s':None,'physical_activation':False,
-            'uncertainty_type':'coordinatewise_ERR-S_sensitivity_not_joint_CI'}
+            'uncertainty_type':'coordinatewise_ERR-S_sensitivity_not_joint_CI',
+            'exact_piecewise_geometry':True,'numeric_rounding_certified':False}
 
 def conditional_sigma(points,L,convention,dps=70):
     """Hypothetical full-sphere convention, not EXFOR admission.
