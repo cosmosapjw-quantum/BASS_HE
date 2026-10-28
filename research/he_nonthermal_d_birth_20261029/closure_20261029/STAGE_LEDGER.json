@@ -67,6 +67,17 @@
         "total": 2
       },
       "correction": "Initial R6 checkpoint lacked referenced evidence; corrected before R7 with actual independent review and theory patch"
+    },
+    {
+      "id": "R7",
+      "status": "complete_scoped",
+      "evidence": "stages/R7.md",
+      "timestamp_utc": "2026-10-28T23:02:34.971600+00:00",
+      "original_dag_delta": 0,
+      "conditional_extension_dag": {
+        "complete": 0,
+        "total": 2
+      }
     }
   ],
   "central_dag": {
