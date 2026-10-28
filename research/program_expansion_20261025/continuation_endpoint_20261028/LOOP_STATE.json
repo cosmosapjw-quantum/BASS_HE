@@ -56,9 +56,13 @@
     },
     {
       "id": "R4",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "CONSTRUCTION_AND_EXECUTION.md",
+        "EXECUTION_PLAN.md",
+        "sources/runtime_probe.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R5",
@@ -128,9 +132,13 @@
     },
     {
       "id": "C4",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "CONSTRUCTION_AND_EXECUTION.md",
+        "EXECUTION_PLAN.md",
+        "sources/runtime_probe.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C5",
@@ -178,7 +186,7 @@
   "next_actions": [
     "Complete and actually publish S01 baseline pair"
   ],
-  "work_products_completed": 6,
+  "work_products_completed": 8,
   "work_products_total": 20,
   "local_DAG": "13/18",
   "central_DAG": "28/88",
