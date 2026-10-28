@@ -1,10 +1,10 @@
 {
   "unit_id": "HE-EXP-ENDPOINT-14",
   "workflow_version": "1.0.0",
-  "metadata_scope": "PRE_FINAL_LOCAL_ADMISSION_SNAPSHOT",
+  "metadata_scope": "POST_LOCAL_ADMISSION_PREPUBLICATION_S09_SNAPSHOT",
   "scientific_evidence_status": "PASS_SCOPED",
   "proposed_decision": "ACCEPT_SCOPED_ENDPOINT_ZERO_SEXTIC_REFERENCE",
-  "status": "PENDING_FINAL_LOCAL_ADMISSION",
+  "status": "COMPLETE_SCOPED",
   "scope": "330 MeV EXFOR M0475002 nominal deterministic coordinate windows; endpoint-zero full nonnegative even sextic; declared uniform azimuth and same-event aperture",
   "source_baseline": {
     "commit": "049e79cb453b92ac663c4e0a93577a8364c3cf54",
@@ -105,10 +105,10 @@
   },
   "saved_result_sha256": "749561b17b70411a83dcc773c286a98041bf1f4003f5eefc40585401e5f9966c",
   "local_DAG_current": {
-    "complete": 13,
+    "complete": 14,
     "partial": 1,
     "physical_open": 3,
-    "pending": 1,
+    "pending": 0,
     "total": 18
   },
   "local_DAG_after_admission": {
@@ -141,7 +141,14 @@
     "evidence/validation/initial/SAVED_PLOT_DATA.json",
     "review/ACTUAL_RESULT_REVIEW.json",
     "review/CAS_REVIEW.json",
-    "review/PLOT_REVIEW.json"
+    "review/PLOT_REVIEW.json",
+    "review/FINAL_LOCAL_REVIEW.json"
   ],
-  "next_action": "Final local semantic admission, S09/S10 publication+dual backup, central observed9path publication, sealed final package transport."
+  "next_action": "Complete S09/S10 actual source publication and dual backup, central observed nine-path publication, and sealed final delivery transport.",
+  "decision": "ACCEPT_SCOPED_ENDPOINT_ZERO_SEXTIC_REFERENCE",
+  "final_local_review": {
+    "path": "review/FINAL_LOCAL_REVIEW.json",
+    "decision": "PASS_SCOPED",
+    "sha256": "bdf77853c9b839db172d0b767486a476f1a1c094653f3e8e61818812cd7b62be"
+  }
 }

@@ -112,9 +112,14 @@
     },
     {
       "id": "R9",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "review/FINAL_LOCAL_REVIEW.json",
+        "RESULT.json",
+        "DAG.json",
+        "RESULT_REPORT_KO.md"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R10",
@@ -210,9 +215,14 @@
     },
     {
       "id": "C9",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "review/FINAL_LOCAL_REVIEW.json",
+        "RESULT.json",
+        "DAG.json",
+        "RESULT_REPORT_KO.md"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C10",
@@ -224,15 +234,21 @@
   "claims": [],
   "checks": [],
   "executions": [],
-  "decisions": [],
+  "decisions": [
+    {
+      "decision": "ACCEPT_SCOPED_ENDPOINT_ZERO_SEXTIC_REFERENCE",
+      "evidence": "review/FINAL_LOCAL_REVIEW.json",
+      "scope": "local scientific reference"
+    }
+  ],
   "overrides": [],
   "failures": [],
   "next_actions": [
-    "Complete and actually publish S01 baseline pair"
+    "Complete S09 actual publication and dual backup, then S10 handoff and central/final delivery"
   ],
-  "work_products_completed": 16,
+  "work_products_completed": 18,
   "work_products_total": 20,
-  "local_DAG": "13/18",
+  "local_DAG": "14/18",
   "central_DAG": "28/88",
   "HE_delta": 0,
   "requested_implementation_model": "gpt-6.1-sol",

@@ -2,7 +2,7 @@
 
 Do not execute science, tests, Wolfram or plots before root GO after actual S05 source pin publication. No automatic retries. Preserve a failed output directory, logs and FINISH. A single diagnosed repair is root-authorized only and consumes remaining cumulative CPU/wall allocation.
 
-Primary command, from repository mirror root, after GO:
+Primary command, from workspace root /workspace/scratch/980916233f52, after GO (the completed execution used absolute paths):
 
 ```sh
 python work/BASS_HE/research/program_expansion_20261025/continuation_endpoint_20261028/scripts/run_once.py --mode validation --saved work/BASS_HE/research/program_expansion_20261025/continuation_quartic_20261028/evidence/validation/initial/SAVED_PLOT_DATA.json --official work/BASS_HE/official_source/M0475.x4 --output work/BASS_HE/research/program_expansion_20261025/continuation_endpoint_20261028/evidence/validation/initial

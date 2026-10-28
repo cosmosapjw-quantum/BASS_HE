@@ -189,13 +189,19 @@
     },
     {
       "id": "ENDPOINT14-ZERO-ENDPOINT-SEXTIC-REFERENCE",
-      "status": "pending",
+      "status": "complete_scoped",
       "inherited": false,
       "evidence": [
-        "CONTRACT.md",
-        "BASELINE_KO.md"
+        "THEORY.md",
+        "RESULT_REPORT_KO.md",
+        "RESULT.json",
+        "evidence/validation/initial/SAVED_PLOT_DATA.json",
+        "evidence/validation/initial/TEST_REPORT.json",
+        "evidence/validation/initial/READER_REPORT.json",
+        "review/FINAL_LOCAL_REVIEW.json"
       ],
-      "description": "Endpoint-zero full nonnegative even-sextic conditional reference at330MeV"
+      "description": "Endpoint-zero full nonnegative even-sextic conditional reference at330MeV",
+      "decision": "ACCEPT_SCOPED_ENDPOINT_ZERO_SEXTIC_REFERENCE"
     }
   ],
   "edges": [
@@ -253,13 +259,13 @@
     ]
   ],
   "accounting": {
-    "complete_scoped_nodes": 13,
-    "pending_scoped_nodes": 1,
+    "complete_scoped_nodes": 14,
+    "pending_scoped_nodes": 0,
     "partial_nodes": 1,
     "open_physical_inputs": 3,
     "total_nodes": 18
   },
-  "counter_scope": "Inherited17local nodes plus one pending ENDPOINT14; twenty workflow products counted separately",
+  "counter_scope": "Inherited 17 local nodes plus one admitted ENDPOINT14 reference; twenty workflow products counted separately",
   "central_declared_complete": 28,
   "central_total_nodes": 88,
   "central_HE_delta": 0,
@@ -275,5 +281,5 @@
     "plot_status": "FAIL_CPU_CAP_EXCEEDED",
     "workflow": "PARTIAL"
   },
-  "metadata_scope": "PREPUBLICATION_S01_SNAPSHOT"
+  "metadata_scope": "PREPUBLICATION_S09_SNAPSHOT"
 }
