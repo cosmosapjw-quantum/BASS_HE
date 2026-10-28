@@ -157,12 +157,19 @@
     },
     {
       "id": "QUARTIC12-FULL-POSITIVE-QUARTIC-REFERENCE",
-      "status": "pending_scoped",
+      "status": "complete_scoped",
       "inherited": false,
       "evidence": [
-        "CONTRACT.md"
+        "THEORY.md",
+        "RESULT.json",
+        "evidence/validation/initial/TEST_REPORT.json",
+        "evidence/validation/initial/SAVED_PLOT_DATA.json",
+        "evidence/WOLFRAM_RESULT.json",
+        "evidence/PLOT_PROCESS_RESOURCE.json",
+        "review/FINAL_SCIENCE_REVIEW.json"
       ],
-      "description": "Full nonnegative even-quartic family via certified inner/outer positivity polyhedra"
+      "description": "Full nonnegative even-quartic family via certified inner/outer positivity polyhedra",
+      "decision": "ACCEPT_SCOPED_FULL_POSITIVE_QUARTIC_REFERENCE"
     }
   ],
   "edges": [
@@ -212,8 +219,8 @@
     ]
   ],
   "accounting": {
-    "complete_scoped_nodes": 11,
-    "pending_scoped_nodes": 1,
+    "complete_scoped_nodes": 12,
+    "pending_scoped_nodes": 0,
     "partial_nodes": 1,
     "open_physical_inputs": 3,
     "total_nodes": 16
@@ -224,7 +231,7 @@
   "central_HE_delta": 0,
   "global_physical_completion": null,
   "L4_ready": false,
-  "workflow": "IN_PROGRESS",
+  "workflow": "IN_PROGRESS_FINAL_DELIVERY",
   "protected_PHOTON05": {
     "source": "251c6baa6c3359b1d6997dbce51cea65500b53d6",
     "delivery": "4db5ce7297a7ded4624b93721873aacc9b4ebf30",

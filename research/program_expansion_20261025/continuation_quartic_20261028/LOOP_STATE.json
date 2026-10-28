@@ -2,9 +2,9 @@
   "unit_id": "HE-EXP-QUARTIC-12",
   "workflow_version": "1.0.0",
   "selected_scope": "R1-R10 and C1-C10",
-  "metadata_scope": "PREPUBLICATION_S08_SNAPSHOT",
-  "stage": 8,
-  "work_products_completed": 16,
+  "metadata_scope": "PREPUBLICATION_S09_SNAPSHOT",
+  "stage": 9,
+  "work_products_completed": 18,
   "work_products_total": 20,
   "stages": [
     {
@@ -88,8 +88,13 @@
     },
     {
       "id": "R9",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "RESULT.json",
+        "DAG.json",
+        "review/FINAL_SCIENCE_REVIEW.json",
+        "RESEARCH_REPORT_KO.md"
+      ]
     },
     {
       "id": "R10",
@@ -177,8 +182,13 @@
     },
     {
       "id": "C9",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "RESULT.json",
+        "DAG.json",
+        "review/FINAL_SCIENCE_REVIEW.json",
+        "RESEARCH_REPORT_KO.md"
+      ]
     },
     {
       "id": "C10",
@@ -186,7 +196,7 @@
       "evidence": []
     }
   ],
-  "local_DAG": "11/16",
+  "local_DAG": "12/16",
   "central_DAG": "28/88",
   "central_HE_delta": 0,
   "publication_receipts": "external actual ACKs; creation snapshot is not a later delivery statement",
@@ -201,5 +211,7 @@
   "controls_fail": 0,
   "science_campaigns": 1,
   "CAS": "PASS_16_ZERO_12_TRUE",
-  "plot": "PASS_SAVED_ONLY_SINGLE_RENDER"
+  "plot": "PASS_SAVED_ONLY_SINGLE_RENDER",
+  "admission": "ACCEPT_SCOPED_FULL_POSITIVE_QUARTIC_REFERENCE",
+  "remaining_scientific_repair_reserve": 0
 }
