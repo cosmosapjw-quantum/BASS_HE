@@ -71,9 +71,15 @@
     },
     {
       "id": "R7",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "SCIENTIFIC_CHECKS_KO.md",
+        "evidence/WOLFRAM_RESULT.json",
+        "evidence/WOLFRAM_RAW.json",
+        "review/CAS_REVIEW.json",
+        "review/ACTUAL_RESULT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R8",
@@ -157,9 +163,15 @@
     },
     {
       "id": "C7",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "SCIENTIFIC_CHECKS_KO.md",
+        "evidence/WOLFRAM_RESULT.json",
+        "evidence/WOLFRAM_RAW.json",
+        "review/CAS_REVIEW.json",
+        "review/ACTUAL_RESULT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C8",
@@ -180,7 +192,7 @@
       "reason": "Awaiting actual workproduct"
     }
   ],
-  "work_products_completed": 12,
+  "work_products_completed": 14,
   "work_products_total": 20,
   "local_DAG": "12/17",
   "central_DAG": "28/88",

@@ -2,7 +2,7 @@
   "schema": "HE_TANGENT13_REVIEW_FINDINGS_V1",
   "reviewer": "/root/repo_survey",
   "pass": "Same single nonauthor preexecution-to-closeout pass",
-  "checkpoint": "TARGETED_RUNNER_REPAIR_PREEXEC",
+  "checkpoint": "ACTUAL_RESULTS_AND_SAVED_PLOT",
   "findings": [
     {
       "id": "F1",
@@ -87,8 +87,22 @@
         "evidence/runner_repair1/PROC_PATH_DIAGNOSIS.json",
         "evidence/REPAIR1_DIAGNOSIS.json"
       ]
+    },
+    {
+      "id": "F6",
+      "status": "ACCEPTED_DOCUMENTED_DISPLAY_LIMITATION",
+      "domain": "presentation",
+      "severity": "nonblocking",
+      "object": "evidence/plot/initial/TANGENT13.png and .svg x-axis ticks/offset",
+      "observed_defect": "At approximately1e-14 horizontal spans, numeric x tick labels and offset text overlap heavily; numeric axes are not cleanly readable.",
+      "evidence": "Reviewer directly viewed actual PNG298f6fbd961f76148b1eadd7323b9576303832ea7944b359dbba216df52d6e2a. Exact outward decimal bracket labels, objective names and approximate widths are readable.",
+      "impact": "Figure cannot serve as the sole precise quantitative presentation. Exact rational saved certificate and readable table in VALIDATION_KO.md remain authoritative; no scientific result changes.",
+      "minimum_correction": "Document visual limitation and use exact table/labels for quantitative delivery. No extra render within the frozen one-render contract.",
+      "science_or_render_rerun_requested": false,
+      "final_scientific_blocking": false
     }
   ],
   "open_blocking_for_final_display": 0,
-  "open_preexecution_findings": 0
+  "open_preexecution_findings": 0,
+  "accepted_nonblocking_display_limitations": 1
 }
