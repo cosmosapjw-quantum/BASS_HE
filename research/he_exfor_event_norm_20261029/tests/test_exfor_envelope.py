@@ -103,6 +103,7 @@ class ExforEventNormalization(unittest.TestCase):
             with self.assertRaises(ValueError):load_source(p)
     def test_no_confidence_claim(self):
         self.assertIn('not_joint_CI',sharp_bounds(self.p,'1/200')['uncertainty_type'])
+        self.assertFalse(sharp_bounds(self.p,'1/200')['numeric_rounding_certified'])
     def test_nb_to_m2(self):
         self.assertEqual(NB_TO_M2,F(1,10**37))
 
