@@ -188,6 +188,17 @@
         "complete": 1,
         "total": 2
       }
+    },
+    {
+      "id": "C8",
+      "status": "complete_scoped",
+      "evidence": "stages/C8.md",
+      "timestamp_utc": "2026-10-28T23:11:40.995575+00:00",
+      "original_dag_delta": 0,
+      "conditional_extension_dag": {
+        "complete": 1,
+        "total": 2
+      }
     }
   ],
   "central_dag": {
