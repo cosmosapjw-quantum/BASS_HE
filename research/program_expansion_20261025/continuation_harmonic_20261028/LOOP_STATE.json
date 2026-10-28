@@ -42,8 +42,11 @@
       "stage": "S04",
       "theory": "R4",
       "coding": "C4",
-      "status": "pending",
-      "evidence": []
+      "status": "complete_work_product",
+      "evidence": [
+        "EXECUTION_PLAN_KO.md",
+        "review/THEORY_PREEXEC_REVIEW.json"
+      ]
     },
     {
       "stage": "S05",
@@ -88,7 +91,7 @@
       "evidence": []
     }
   ],
-  "current_stage": "S03",
+  "current_stage": "S04",
   "local_dag": "9 complete +1 inherited partial +3 physical open +1 pending /14",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
