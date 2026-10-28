@@ -210,6 +210,17 @@
         "complete": 2,
         "total": 2
       }
+    },
+    {
+      "id": "C10",
+      "status": "complete_scoped",
+      "evidence": "stages/C10.md",
+      "timestamp_utc": "2026-10-28T23:14:00.177404+00:00",
+      "original_dag_delta": 0,
+      "conditional_extension_dag": {
+        "complete": 2,
+        "total": 2
+      }
     }
   ],
   "central_dag": {
