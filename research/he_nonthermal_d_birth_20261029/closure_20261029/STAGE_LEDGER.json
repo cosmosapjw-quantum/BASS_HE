@@ -177,6 +177,17 @@
         "complete": 0,
         "total": 2
       }
+    },
+    {
+      "id": "C7",
+      "status": "complete_scoped",
+      "evidence": "stages/C7.md",
+      "timestamp_utc": "2026-10-28T23:10:25.896628+00:00",
+      "original_dag_delta": 0,
+      "conditional_extension_dag": {
+        "complete": 1,
+        "total": 2
+      }
     }
   ],
   "central_dag": {
@@ -190,7 +201,7 @@
     "delta": 0
   },
   "conditional_extension_dag": {
-    "complete": 0,
+    "complete": 1,
     "total": 2
   },
   "scope": "source-only; no physical IVP; production HOLD"

@@ -24,7 +24,8 @@ except subprocess.TimeoutExpired as exc:
  exit_code=124;stdout=str(exc.stdout or '');stderr=str(exc.stderr or '')+'\nWALL_LIMIT'
 after=resource.getrusage(resource.RUSAGE_CHILDREN)
 rec=dict(mode=mode,budget_kind=kind,argv=argv,exit_code=exit_code,cpu_s=after.ru_utime+after.ru_stime-before.ru_utime-before.ru_stime,wall_s=time.monotonic()-t,peak_child_rss_KiB=after.ru_maxrss,python=sys.version,platform=platform.platform(),old_science_replays=0,new_physical_IVPs=0)
-rec['stdout']=f'{mode}_stdout.txt';rec['stderr']=f'{mode}_stderr.txt'
+attempt=1+sum(r['mode']==mode for r in ledger['runs'])
+rec['stdout']=f'{mode}_{attempt:02d}_stdout.txt';rec['stderr']=f'{mode}_{attempt:02d}_stderr.txt'
 (ROOT/'evidence'/rec['stdout']).write_text(stdout);(ROOT/'evidence'/rec['stderr']).write_text(stderr)
 rec['input_code_sha256']={str(f.relative_to(ROOT)):hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted((ROOT/'src').glob('*.py'))}
 ledger['runs'].append(rec);tmp=p.with_suffix('.tmp');tmp.write_text(json.dumps(ledger,indent=2)+'\n');os.replace(tmp,p)
