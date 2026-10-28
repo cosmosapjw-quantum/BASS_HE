@@ -55,7 +55,7 @@ It has energy units. After multiplication by R it is the collision gain of tr(P)
     S_N=Σ_(k=0)^N r^k m_(2k),
     E[(1-rx)^-1]-S_N = r^(N+1) E[x^(N+1)/(1-rx)].
 
-Since1≤1/(1-rx)≤1/(1-r), the positive remainder lies between r^(N+1)m_(2N+2) and that value/(1-r). Therefore
+For a nonnegative integer N, since1≤1/(1-rx)≤1/(1-r), the positive remainder lies between r^(N+1)m_(2N+2) and that value/(1-r). Therefore
 
     L_N=2E0-D[S_N+r^(N+1)m_(2N+2)/(1-r)],
     U_N=2E0-D[S_N+r^(N+1)m_(2N+2)],
@@ -63,7 +63,9 @@ Since1≤1/(1-rx)≤1/(1-r), the positive remainder lies between r^(N+1)m_(2N+2)
 
 L_(N+1)-L_N=D r^(N+2)(m_(2N+2)-m_(2N+4))/(1-r)≥0 and U_N-U_(N+1)=D r^(N+2)m_(2N+4)≥0. The intervals are nested and their widths contract by at most r. This is an exact rational truncation bound; arithmetic roundoff is absent in the Fraction lane. Exported decimal centers are illustrative approximations to rational intervals. No optimality over the family is claimed.
 
-The predecessor m2-only Jensen/secant interval remains valid for every nonnegative law with that moment. The new narrower interval conditions on the whole selected sextic law. Its added information is explicit; it does not turn the fitted witness into a measured full angular law.
+At N=0 the raw upper endpoint exceeds the Jensen upper by D r² m2²/(1-r m2). Return the intersection[max(L_N,L_J),min(U_N,U_J)] with the universal interval, while preserving the raw endpoints and remainder width. This intersection is nested and cannot widen the universal bound. At threshold r=0 the constant trace is handled separately; the energy density formula with1/B is used only above threshold.
+
+The predecessor m2-only Jensen/secant interval remains valid for every nonnegative law with that moment. The intersected full-law interval conditions on the whole selected sextic law. Its added information is explicit; it does not turn the fitted witness into a measured full angular law.
 
 ## Literature, data and physical admission
 

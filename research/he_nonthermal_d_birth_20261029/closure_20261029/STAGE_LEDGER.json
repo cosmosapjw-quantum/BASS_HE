@@ -65,7 +65,8 @@
       "conditional_extension_dag": {
         "complete": 0,
         "total": 2
-      }
+      },
+      "correction": "Initial R6 checkpoint lacked referenced evidence; corrected before R7 with actual independent review and theory patch"
     }
   ],
   "central_dag": {
