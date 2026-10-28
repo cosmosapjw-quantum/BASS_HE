@@ -2,9 +2,9 @@
   "unit_id": "HE-EXP-QUARTIC-12",
   "workflow_version": "1.0.0",
   "selected_scope": "R1-R10 and C1-C10",
-  "metadata_scope": "PREPUBLICATION_S04_SNAPSHOT",
-  "stage": 4,
-  "work_products_completed": 8,
+  "metadata_scope": "PREPUBLICATION_S05_SNAPSHOT",
+  "stage": 5,
+  "work_products_completed": 10,
   "work_products_total": 20,
   "stages": [
     {
@@ -45,8 +45,14 @@
     },
     {
       "id": "R5",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "THEORY.md",
+        "src/quartic_aperture.py",
+        "IMPLEMENTATION.md",
+        "STATIC_SYNTAX.json",
+        "review/PREEXEC_REVIEW.json"
+      ]
     },
     {
       "id": "R6",
@@ -111,8 +117,14 @@
     },
     {
       "id": "C5",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "THEORY.md",
+        "src/quartic_aperture.py",
+        "IMPLEMENTATION.md",
+        "STATIC_SYNTAX.json",
+        "review/PREEXEC_REVIEW.json"
+      ]
     },
     {
       "id": "C6",
@@ -148,5 +160,7 @@
   "global_physical_completion": null,
   "L4": false,
   "production": "NOT_APPROVED",
-  "workflow": "IN_PROGRESS"
+  "workflow": "IN_PROGRESS",
+  "preexecution_review": "PASS_PREEXEC_SCOPED",
+  "preexecution_scientific_corrections": 0
 }
