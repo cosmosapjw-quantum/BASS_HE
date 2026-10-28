@@ -59,7 +59,7 @@ HEMISPHERES: A polar[0,1] full-turn; B polar[-1,0] full-turn.
 CAPS: A polar[1/2,1] full-turn; B polar[-1,-1/2] full-turn.
 Integrate each nonnegative psi over every coincidence inner/outer interval union, multiply by exact azimuth strip width, sum to c_lower/c_upper. d is the same family full-sphere integral.
 0<=c_lower<=c_true<=c_upper<=d componentwise. Return actual coefficient widths and global family objective intervals; do not claim a new universal2^-40 relative guarantee for ratios.
-Acceptance p_C=(integral_C f dmu dt)/(integral f dmu dt). Global calibration,2pi, and event-vs-inclusive factor cancel if common positive scales; energy-dependent or angular-dependent response does not cancel.
+Acceptance p_C=(integral_C f dmu dt)/(integral f dmu dt). Global calibration,2pi, and event-vs-inclusive factor cancel if common positive scales; A common positive scale cancels separately at each fixed energy; angle-dependent response, or energy-dependent weighting inside an energy-integrated observable, does not generally cancel.
 Do not equate detector-event probability with inclusive counts or independent daughters. Geometry C is inherited same-event Boolean coincidence.
 
 ## Bounded execution and controls
@@ -87,7 +87,7 @@ S01 scope/baseline/DAG;S02 source synthesis/equation-code mapping;S03 claims/alg
 Append one scoped local node EXFOR11-DATA-CONDITIONED-APERTURE-REFERENCE to inherited14. Start10complete+1partial+3physicalopen+1pending/15; adoption11complete+1partial+3physicalopen/15. Do not increment for20workflow stages.
 Central remains28/88 with HE delta0 unless actual newphysicalclosure evidence legitimately changes it (none currently supplied). Current observedcentraldf806909aee8f25efcfa4faeefca77a5271f546c; freshHEAD required for finalHE-onlyownerreturn.
 Use base tree+only owned newpaths for source publication; expected_sha forcefalse for every existing ref mutation. Preserve all foreign changes. Final central publication appends oneHEreturn pointer/status and scoped metadata, with actual currentHEAD/AGENTS/readback; no non-HE node edits.
-EstablishedbackupfolderDrive1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI; Dropboxns:183516487//BASS_DERIVATION_DOSSIERS_20260912. Newnames BASS_HE_EXFOR11_Sxx_20261028_<sourceprefix>.zip. ActualACKs external/next-stage recorded; do not inject futureACKs into sealed ZIP.
+EstablishedbackupfolderDrive1pkohlay5eIfFJsBwPZ_yn2jIZONZjesI; Dropboxns:183516487//BASS_DERIVATION_DOSSIERS_20260912. Newnames BASS_HE_EXFOR11_Sxx_20261028_<manifestprefix>.zip. ActualACKs external/next-stage recorded; do not inject futureACKs into sealed ZIP.
 Final delivery authority metadata_scope=POSTPUBLICATION_EXTERNAL_DELIVERY; sourcecreationflags remain PREPUBLICATION snapshots.
 Preserve all three physical open nodes, population_rest_energy_witness solebindingowner, independent_binding_RHS/Gamma_thermal/Cv/species_heating/thermal_deposition=null,birth_pool=UNASSIGNED,globalphysicalcompletion=null,L4=false,productionNOT_APPROVED,activationfalse.
 No globalnovelty/strongno-go claim; NG1–NG7 recorded notadmitted because finite model-sensitivity results are the intended contribution.
