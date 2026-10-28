@@ -36,9 +36,14 @@
     },
     {
       "id": "R2",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "EVIDENCE_AND_CODE_MAP_KO.md",
+        "sources/github/SURVEY_GITHUB.json",
+        "sources/backups/COVERAGE_AND_DECISIONS.json",
+        "sources/literature/PRIMARY_SUPPORT_KO.md"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R3",
@@ -100,9 +105,14 @@
     },
     {
       "id": "C2",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "EVIDENCE_AND_CODE_MAP_KO.md",
+        "sources/github/SURVEY_GITHUB.json",
+        "sources/backups/COVERAGE_AND_DECISIONS.json",
+        "sources/literature/PRIMARY_SUPPORT_KO.md"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C3",
@@ -162,7 +172,7 @@
   "next_actions": [
     "Complete and actually publish S01 baseline pair"
   ],
-  "work_products_completed": 2,
+  "work_products_completed": 4,
   "work_products_total": 20,
   "local_DAG": "13/18",
   "central_DAG": "28/88",
