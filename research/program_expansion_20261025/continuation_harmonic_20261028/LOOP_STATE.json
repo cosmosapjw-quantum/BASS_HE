@@ -74,16 +74,16 @@
       "stage": "S06",
       "theory": "R6",
       "coding": "C6",
-      "status": "in_progress_targeted_repair",
+      "status": "complete_work_product",
       "evidence": [
+        "VALIDATION_KO.md",
+        "evidence/VALIDATION_RESULT.json",
+        "evidence/SAVED_PLOT_DATA.json",
         "evidence/validation/initial/TEST_REPORT.json",
-        "evidence/validation/initial/SAVED_PLOT_DATA.json",
-        "evidence/validation/initial/VALIDATION_RESOURCE_01.json",
-        "evidence/validation/initial/S05_EXECUTION_PIN.json",
+        "evidence/validation/targeted01/TEST_REPORT.json",
         "review/F02_FIXTURE_DIAGNOSIS.json",
-        "review/DIAGNOSIS_KO.md",
         "review/REPAIR_PLAN.json",
-        "review/TARGETED_TEST20_REPAIR.diff"
+        "receipts/REPAIR01_ACK.json"
       ]
     },
     {
@@ -119,7 +119,7 @@
   "local_dag": "9 complete +1 inherited partial +3 physical open +1 pending /14",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
-  "scientific_executions": 1,
+  "scientific_executions": 2,
   "automatic_next_node": false,
   "automatic_budget": false,
   "automatic_rerun": false,
