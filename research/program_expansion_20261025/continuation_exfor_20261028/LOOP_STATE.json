@@ -2,9 +2,9 @@
   "unit_id": "HE-EXP-EXFOR-11",
   "workflow_version": "1.0.0",
   "selected_scope": "R1-R10 and C1-C10",
-  "metadata_scope": "PREPUBLICATION_STAGE_SNAPSHOT",
-  "stage": 9,
-  "work_products_completed": 18,
+  "metadata_scope": "PREPUBLICATION_S10_SNAPSHOT",
+  "stage": 10,
+  "work_products_completed": 20,
   "work_products_total": 20,
   "stages": [
     {
@@ -96,8 +96,13 @@
     },
     {
       "id": "R10",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "SOURCE_HANDOFF_SNAPSHOT_KO.md",
+        "CLOSEOUT_SOURCE_SNAPSHOT.json",
+        "evidence/DELIVERY_THROUGH_S09.json",
+        "RESULT.json"
+      ]
     },
     {
       "id": "C1",
@@ -188,8 +193,13 @@
     },
     {
       "id": "C10",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "SOURCE_HANDOFF_SNAPSHOT_KO.md",
+        "CLOSEOUT_SOURCE_SNAPSHOT.json",
+        "evidence/DELIVERY_THROUGH_S09.json",
+        "RESULT.json"
+      ]
     }
   ],
   "local_DAG": "11/15",
@@ -207,5 +217,7 @@
   },
   "CAS": "PASS_21_ZERO_8_TRUE",
   "plot": "PASS_SAVED_ONLY_SINGLE_RENDER",
-  "admission": "ACCEPT_SCOPED_DATA_CONDITIONED_APERTURE_REFERENCE"
+  "admission": "ACCEPT_SCOPED_DATA_CONDITIONED_APERTURE_REFERENCE",
+  "workflow": "COMPLETE_SCOPED",
+  "remaining_scientific_repair_reserve": 0
 }

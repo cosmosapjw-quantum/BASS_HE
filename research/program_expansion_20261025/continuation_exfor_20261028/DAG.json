@@ -211,7 +211,7 @@
   "central_HE_delta": 0,
   "global_physical_completion": null,
   "L4_ready": false,
-  "workflow": "SCOPED_ADMITTED_DELIVERY_PENDING",
+  "workflow": "COMPLETE_SCOPED",
   "protected_PHOTON05": {
     "source": "251c6baa6c3359b1d6997dbce51cea65500b53d6",
     "delivery": "4db5ce7297a7ded4624b93721873aacc9b4ebf30",

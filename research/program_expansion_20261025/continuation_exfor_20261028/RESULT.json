@@ -1,9 +1,9 @@
 {
   "schema": "HE_EXFOR11_RESULT_V1",
   "unit_id": "HE-EXP-EXFOR-11",
-  "metadata_scope": "PREPUBLICATION_S09_ADMISSION_SNAPSHOT",
+  "metadata_scope": "PREPUBLICATION_S10_SNAPSHOT",
   "status": "PASS_SCOPED",
-  "workflow": "SCOPED_ADMITTED_DELIVERY_PENDING",
+  "workflow": "COMPLETE_SCOPED",
   "decision": "ACCEPT_SCOPED_DATA_CONDITIONED_APERTURE_REFERENCE",
   "authority": "root Astra after nonauthor PASS_SCOPED review",
   "scientific_result": "Actual M0475002 rows constrain fixed even coefficient-positive Bernstein families and exact same-event conditional aperture-ratio enclosures; three finite families at 330 MeV have empty outer polytopes.",
