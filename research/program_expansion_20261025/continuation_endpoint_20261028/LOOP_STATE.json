@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "workflow_version": "1.0.0",
+  "task": "both",
+  "unit_id": "HE-EXP-ENDPOINT-14",
+  "status": "in_progress",
+  "objective": "Construct endpoint-zero nonnegative even-sextic witness and fixed N=1,4,16 exact aperture sandwiches at330MeV",
+  "scope": "CONTRACT.md",
+  "dependencies": [],
+  "evidence": [
+    {
+      "id": "CONTRACT.md",
+      "kind": "contract",
+      "locator": "CONTRACT.md",
+      "scope": "ENDPOINT14 frozen scope",
+      "dependency_ids": []
+    },
+    {
+      "id": "BASELINE_KO.md",
+      "kind": "baseline",
+      "locator": "BASELINE_KO.md",
+      "scope": "R1/C1 baseline",
+      "dependency_ids": []
+    }
+  ],
+  "stages": [
+    {
+      "id": "R1",
+      "status": "complete",
+      "evidence_refs": [
+        "CONTRACT.md",
+        "BASELINE_KO.md",
+        "review/CONTRACT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
+    },
+    {
+      "id": "R2",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "R3",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "R4",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "R5",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "R6",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "R7",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "R8",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "R9",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "R10",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "C1",
+      "status": "complete",
+      "evidence_refs": [
+        "CONTRACT.md",
+        "BASELINE_KO.md",
+        "review/CONTRACT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
+    },
+    {
+      "id": "C2",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "C3",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "C4",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "C5",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "C6",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "C7",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "C8",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "C9",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    },
+    {
+      "id": "C10",
+      "status": "pending",
+      "evidence_refs": [],
+      "reason": "Await actual completion; publication tracked separately"
+    }
+  ],
+  "claims": [],
+  "checks": [],
+  "executions": [],
+  "decisions": [],
+  "overrides": [],
+  "failures": [],
+  "next_actions": [
+    "Complete and actually publish S01 baseline pair"
+  ],
+  "work_products_completed": 2,
+  "work_products_total": 20,
+  "local_DAG": "13/18",
+  "central_DAG": "28/88",
+  "HE_delta": 0,
+  "requested_implementation_model": "gpt-6.1-sol",
+  "observed_runtime_model": null
+}
