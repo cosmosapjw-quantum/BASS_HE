@@ -2,9 +2,9 @@
   "unit_id": "HE-EXP-QUARTIC-12",
   "workflow_version": "1.0.0",
   "selected_scope": "R1-R10 and C1-C10",
-  "metadata_scope": "PREPUBLICATION_S09_SNAPSHOT",
-  "stage": 9,
-  "work_products_completed": 18,
+  "metadata_scope": "PREPUBLICATION_S10_SNAPSHOT",
+  "stage": 10,
+  "work_products_completed": 20,
   "work_products_total": 20,
   "stages": [
     {
@@ -98,8 +98,13 @@
     },
     {
       "id": "R10",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "SOURCE_HANDOFF_SNAPSHOT_KO.md",
+        "CLOSEOUT_SOURCE_SNAPSHOT.json",
+        "evidence/DELIVERY_THROUGH_S09.json",
+        "RESULT.json"
+      ]
     },
     {
       "id": "C1",
@@ -192,8 +197,13 @@
     },
     {
       "id": "C10",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "SOURCE_HANDOFF_SNAPSHOT_KO.md",
+        "CLOSEOUT_SOURCE_SNAPSHOT.json",
+        "evidence/DELIVERY_THROUGH_S09.json",
+        "RESULT.json"
+      ]
     }
   ],
   "local_DAG": "12/16",
@@ -204,7 +214,7 @@
   "global_physical_completion": null,
   "L4": false,
   "production": "NOT_APPROVED",
-  "workflow": "IN_PROGRESS",
+  "workflow": "COMPLETE_SCOPED_WORK_PRODUCTS",
   "preexecution_review": "PASS_PREEXEC_SCOPED",
   "preexecution_scientific_corrections": 0,
   "controls_pass": 7,
