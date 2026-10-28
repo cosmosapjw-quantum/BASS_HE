@@ -58,9 +58,16 @@
     },
     {
       "id": "R6",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "VALIDATION_KO.md",
+        "review/ACTUAL_RESULT_REVIEW.json",
+        "evidence/REPAIR1_EXECUTION_PIN.json",
+        "evidence/validation/repair1/TEST_REPORT.json",
+        "evidence/validation/repair1/CERTIFICATE_READER.json",
+        "evidence/validation/repair1/RESOURCE_RESULT.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R7",
@@ -137,9 +144,16 @@
     },
     {
       "id": "C6",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "VALIDATION_KO.md",
+        "review/ACTUAL_RESULT_REVIEW.json",
+        "evidence/REPAIR1_EXECUTION_PIN.json",
+        "evidence/validation/repair1/TEST_REPORT.json",
+        "evidence/validation/repair1/CERTIFICATE_READER.json",
+        "evidence/validation/repair1/RESOURCE_RESULT.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C7",
@@ -166,7 +180,7 @@
       "reason": "Awaiting actual workproduct"
     }
   ],
-  "work_products_completed": 10,
+  "work_products_completed": 12,
   "work_products_total": 20,
   "local_DAG": "12/17",
   "central_DAG": "28/88",
