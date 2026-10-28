@@ -1,0 +1,93 @@
+{
+  "unit_id": "HE-EXP-HARMONIC-10",
+  "workflow_version": "1.0.0",
+  "status": "in_progress",
+  "metadata_scope": "PREPUBLICATION_SOURCE_SNAPSHOT",
+  "stages": [
+    {
+      "stage": "S01",
+      "theory": "R1",
+      "coding": "C1",
+      "status": "complete_work_product",
+      "evidence": [
+        "CONTRACT_KO.md",
+        "BASELINE_KO.md",
+        "RESTORE_SUMMARY.json",
+        "DAG.json"
+      ]
+    },
+    {
+      "stage": "S02",
+      "theory": "R2",
+      "coding": "C2",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "stage": "S03",
+      "theory": "R3",
+      "coding": "C3",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "stage": "S04",
+      "theory": "R4",
+      "coding": "C4",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "stage": "S05",
+      "theory": "R5",
+      "coding": "C5",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "stage": "S06",
+      "theory": "R6",
+      "coding": "C6",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "stage": "S07",
+      "theory": "R7",
+      "coding": "C7",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "stage": "S08",
+      "theory": "R8",
+      "coding": "C8",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "stage": "S09",
+      "theory": "R9",
+      "coding": "C9",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "stage": "S10",
+      "theory": "R10",
+      "coding": "C10",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "current_stage": "S01",
+  "local_dag": "9 complete +1 inherited partial +3 physical open +1 pending /14",
+  "central_dag_at_intake": "28/88",
+  "central_HE_delta": 0,
+  "scientific_executions": 0,
+  "automatic_next_node": false,
+  "automatic_budget": false,
+  "automatic_rerun": false,
+  "root_decision": "PENDING_NEW_UNIT_EVIDENCE",
+  "publication_state": "ACTUAL_ACKS_RECORDED_EXTERNALLY_AFTER_CREATION"
+}
