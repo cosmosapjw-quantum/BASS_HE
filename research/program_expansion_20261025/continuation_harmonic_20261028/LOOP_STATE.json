@@ -1,7 +1,7 @@
 {
   "unit_id": "HE-EXP-HARMONIC-10",
   "workflow_version": "1.0.0",
-  "status": "in_progress",
+  "status": "in_progress_delivery",
   "metadata_scope": "PREPUBLICATION_SOURCE_SNAPSHOT",
   "stages": [
     {
@@ -117,8 +117,14 @@
       "stage": "S09",
       "theory": "R9",
       "coding": "C9",
-      "status": "pending",
-      "evidence": []
+      "status": "complete_work_product",
+      "evidence": [
+        "ADMISSION_KO.md",
+        "RESULT.json",
+        "review/FINAL_REVIEW.json",
+        "review/FINAL_REVIEW_KO.md",
+        "DAG.json"
+      ]
     },
     {
       "stage": "S10",
@@ -128,15 +134,15 @@
       "evidence": []
     }
   ],
-  "current_stage": "S08",
-  "local_dag": "9 complete +1 inherited partial +3 physical open +1 pending /14",
+  "current_stage": "S09",
+  "local_dag": "10 complete +1 inherited partial +3 physical open /14",
   "central_dag_at_intake": "28/88",
   "central_HE_delta": 0,
   "scientific_executions": 2,
   "automatic_next_node": false,
   "automatic_budget": false,
   "automatic_rerun": false,
-  "root_decision": "PENDING_NEW_UNIT_EVIDENCE",
+  "root_decision": "ACCEPT_SCOPED_SECOND_HARMONIC_REFERENCE",
   "publication_state": "ACTUAL_ACKS_RECORDED_EXTERNALLY_AFTER_CREATION",
   "wolfram_evaluator_calls": 1,
   "saved_only_plot_executions": 1
