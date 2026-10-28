@@ -199,6 +199,17 @@
         "complete": 1,
         "total": 2
       }
+    },
+    {
+      "id": "C9",
+      "status": "complete_scoped",
+      "evidence": "stages/C9.md",
+      "timestamp_utc": "2026-10-28T23:11:53.765293+00:00",
+      "original_dag_delta": 0,
+      "conditional_extension_dag": {
+        "complete": 2,
+        "total": 2
+      }
     }
   ],
   "central_dag": {
@@ -212,7 +223,7 @@
     "delta": 0
   },
   "conditional_extension_dag": {
-    "complete": 1,
+    "complete": 2,
     "total": 2
   },
   "scope": "source-only; no physical IVP; production HOLD"

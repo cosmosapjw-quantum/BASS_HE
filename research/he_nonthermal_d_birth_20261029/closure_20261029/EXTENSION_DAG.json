@@ -21,12 +21,19 @@
     },
     {
       "id": "FINITE_MASS_FULL_LAW_TRACE",
-      "status": "pending",
+      "status": "complete_scoped",
       "requires": [
         "full selected sextic moments",
         "exact remainder/intersection",
         "independent high precision reference",
         "independent code review"
+      ],
+      "evidence": [
+        "THEORY.md",
+        "src/energy_gain.py",
+        "evidence/NUMERICAL_REFERENCE.json",
+        "evidence/PLOT_AND_DUAL_AUDIT.md",
+        "review/FINAL_CODE_REVIEW.json"
       ]
     }
   ],
