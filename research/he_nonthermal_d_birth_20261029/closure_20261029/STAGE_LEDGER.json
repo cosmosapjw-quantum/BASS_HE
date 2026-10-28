@@ -33,6 +33,17 @@
         "complete": 0,
         "total": 2
       }
+    },
+    {
+      "id": "R4",
+      "status": "complete_scoped",
+      "evidence": "stages/R4.md",
+      "timestamp_utc": "2026-10-28T22:59:25.057194+00:00",
+      "original_dag_delta": 0,
+      "conditional_extension_dag": {
+        "complete": 0,
+        "total": 2
+      }
     }
   ],
   "central_dag": {
