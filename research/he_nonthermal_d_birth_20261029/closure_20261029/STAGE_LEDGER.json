@@ -78,6 +78,17 @@
         "complete": 0,
         "total": 2
       }
+    },
+    {
+      "id": "R8",
+      "status": "complete_scoped",
+      "evidence": "stages/R8.md",
+      "timestamp_utc": "2026-10-28T23:02:47.447831+00:00",
+      "original_dag_delta": 0,
+      "conditional_extension_dag": {
+        "complete": 0,
+        "total": 2
+      }
     }
   ],
   "central_dag": {
