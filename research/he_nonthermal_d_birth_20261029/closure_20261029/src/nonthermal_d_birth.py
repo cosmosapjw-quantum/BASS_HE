@@ -21,7 +21,7 @@ POOL_ID = 'D_FAST_FROM_HE4_GAMMA_2D_CONDITIONAL'
 
 def exact(x):
     """Preserve decimal/rational provenance; reject rounded float and boolean."""
-    if type(x) in (float, bool):
+    if isinstance(x, (float, bool)):
         raise ValueError('fraction/decimal text/integer required, not float/bool')
     return F(x)
 
