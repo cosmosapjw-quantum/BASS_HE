@@ -29,9 +29,12 @@
     },
     {
       "id": "R3",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "CLAIMS_AND_NUMERICS.md",
+        "CONTRACT.md"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R4",
@@ -97,9 +100,12 @@
     },
     {
       "id": "C3",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Awaiting actual workproduct"
+      "status": "complete",
+      "evidence_refs": [
+        "CLAIMS_AND_NUMERICS.md",
+        "CONTRACT.md"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C4",
@@ -144,7 +150,7 @@
       "reason": "Awaiting actual workproduct"
     }
   ],
-  "work_products_completed": 4,
+  "work_products_completed": 6,
   "work_products_total": 20,
   "local_DAG": "12/17",
   "central_DAG": "28/88",
