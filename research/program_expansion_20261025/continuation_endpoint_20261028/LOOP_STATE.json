@@ -3,7 +3,7 @@
   "workflow_version": "1.0.0",
   "task": "both",
   "unit_id": "HE-EXP-ENDPOINT-14",
-  "status": "in_progress",
+  "status": "complete_scoped",
   "objective": "Construct endpoint-zero nonnegative even-sextic witness and fixed N=1,4,16 exact aperture sandwiches at330MeV",
   "scope": "CONTRACT.md",
   "dependencies": [],
@@ -123,9 +123,14 @@
     },
     {
       "id": "R10",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "HANDOFF_S10_SNAPSHOT_KO.md",
+        "CLOSEOUT_S10_SNAPSHOT.json",
+        "STAGE_ACKS_PRE_S10.json",
+        "review/HANDOFF_SNAPSHOT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C1",
@@ -226,9 +231,14 @@
     },
     {
       "id": "C10",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "HANDOFF_S10_SNAPSHOT_KO.md",
+        "CLOSEOUT_S10_SNAPSHOT.json",
+        "STAGE_ACKS_PRE_S10.json",
+        "review/HANDOFF_SNAPSHOT_REVIEW.json"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     }
   ],
   "claims": [],
@@ -244,13 +254,15 @@
   "overrides": [],
   "failures": [],
   "next_actions": [
-    "Complete S09 actual publication and dual backup, then S10 handoff and central/final delivery"
+    "Actual S10 source/dual backup, central HE-observation publication and final transport; stop before a new research node"
   ],
-  "work_products_completed": 18,
+  "work_products_completed": 20,
   "work_products_total": 20,
   "local_DAG": "14/18",
   "central_DAG": "28/88",
   "HE_delta": 0,
   "requested_implementation_model": "gpt-6.1-sol",
-  "observed_runtime_model": null
+  "observed_runtime_model": null,
+  "metadata_scope": "PREPUBLICATION_S10_SNAPSHOT",
+  "source_S10_and_final_delivery": "PENDING_AT_CREATION"
 }

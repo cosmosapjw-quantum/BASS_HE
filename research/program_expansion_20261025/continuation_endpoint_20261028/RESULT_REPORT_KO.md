@@ -184,7 +184,7 @@ Validation의 whole runner + waited children CPU는 **2.020525 s**, wall은 **1.
 
 ## 8. DAG와 계속 열린 물리 입력
 
-최종 독립 수용을 반영한 Local 목표 상태는 **14 complete + 1 inherited partial + 3 physical open / 18**이며 중앙은 **28/88, HE delta0**다.
+최종 독립 수용을 반영한 Local 상태는 **14 complete + 1 inherited partial + 3 physical open / 18**이며 중앙은 **28/88, HE delta0**다.
 
 다음 세 묶음은 계속 open이다.
 
