@@ -66,9 +66,15 @@
     },
     {
       "id": "R5",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "THEORY.md",
+        "IMPLEMENTATION.md",
+        "STATIC_SYNTAX.json",
+        "review/PREEXEC_REVIEW.json",
+        "CAS_SUBMITTED.wl"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "R6",
@@ -142,9 +148,15 @@
     },
     {
       "id": "C5",
-      "status": "pending",
-      "evidence_refs": [],
-      "reason": "Await actual completion; publication tracked separately"
+      "status": "complete",
+      "evidence_refs": [
+        "THEORY.md",
+        "IMPLEMENTATION.md",
+        "STATIC_SYNTAX.json",
+        "review/PREEXEC_REVIEW.json",
+        "CAS_SUBMITTED.wl"
+      ],
+      "reason": "Actual stage workproduct; source/backup receipt is separately timestamped"
     },
     {
       "id": "C6",
@@ -186,7 +198,7 @@
   "next_actions": [
     "Complete and actually publish S01 baseline pair"
   ],
-  "work_products_completed": 8,
+  "work_products_completed": 10,
   "work_products_total": 20,
   "local_DAG": "13/18",
   "central_DAG": "28/88",
