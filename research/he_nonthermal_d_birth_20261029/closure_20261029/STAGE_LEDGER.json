@@ -133,6 +133,17 @@
         "complete": 0,
         "total": 2
       }
+    },
+    {
+      "id": "C3",
+      "status": "complete_scoped",
+      "evidence": "stages/C3.md",
+      "timestamp_utc": "2026-10-28T23:05:10.366060+00:00",
+      "original_dag_delta": 0,
+      "conditional_extension_dag": {
+        "complete": 0,
+        "total": 2
+      }
     }
   ],
   "central_dag": {
