@@ -166,6 +166,17 @@
         "complete": 0,
         "total": 2
       }
+    },
+    {
+      "id": "C6",
+      "status": "complete_scoped",
+      "evidence": "stages/C6.md",
+      "timestamp_utc": "2026-10-28T23:08:30.232995+00:00",
+      "original_dag_delta": 0,
+      "conditional_extension_dag": {
+        "complete": 0,
+        "total": 2
+      }
     }
   ],
   "central_dag": {
