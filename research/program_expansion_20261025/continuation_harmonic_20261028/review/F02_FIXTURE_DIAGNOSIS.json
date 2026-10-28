@@ -1,0 +1,59 @@
+{
+  "schema": "HARMONIC10_SAME_PASS_ACTUAL_FAILURE_DIAGNOSIS_V1",
+  "unit_id": "HE-EXP-HARMONIC-10",
+  "review_pass": 1,
+  "reviewer": "/root/he10_review_resume",
+  "finding_id": "F02",
+  "verdict": "APPROVE_MINIMAL_FIXTURE_REPAIR_AND_ONE_TARGETED_EXECUTION",
+  "finding_status": "DIAGNOSED_ACTUAL_TEST_FIXTURE_ERROR_REPAIR_RESULT_PENDING",
+  "classification": "TEST_ORACLE_FIXTURE_FALSE_FAIL",
+  "actual_initial_source_commit": "2e1de5c12311b94002ca2c786cfa4d25d050314f",
+  "actual_initial_source_tree": "99fd138c9e4d2d731a1b0a416a9c3a89761a851c",
+  "actual_initial_result": {
+    "unique_methods": 25,
+    "evaluations": 25,
+    "passes": 24,
+    "failures": 1,
+    "errors": 0,
+    "failed_method": "HarmonicTests.test_20_manual_and_default_width_budgets",
+    "assertion": "manual coincidence width0.0 >2^-40",
+    "whole_process_cpu_s": 0.791723,
+    "whole_process_wall_s": 0.8169768509997084,
+    "cpu_cap_met": true,
+    "wall_cap_met": true,
+    "raw_result_preserved": true
+  },
+  "observed_inputs": [
+    "../he10_runs/validation_01/TEST_REPORT.json",
+    "../he10_runs/validation_01/SAVED_PLOT_DATA.json",
+    "../he10_runs/validation_01/RESOURCE_RESULT.json",
+    "../he10_runs/VALIDATION_RESOURCE_01.json",
+    "../BASS_HE/research/program_expansion_20261025/continuation_harmonic_20261028/tests/test_harmonic.py"
+  ],
+  "independent_direct_math": {
+    "model": "A=3,M=2,e=8/3,s=25,H=9,R=9/25,G=17/3,k=40/51",
+    "angular_map": "F(mu)=(40+51mu)/sqrt((40+51mu)^2+2025(1-mu^2)); F increasing, F(-k)=0",
+    "original_fixture": "A polar[0,4/5],B polar[-4/5,0], opposite arcswidth1/3",
+    "empty_event_proof": "Q1 needs mu>=k fromF(-mu)<=0. But F(k)^2=73984/82993>16/25, hence F(mu)>4/5 for allmu>=k, contradictingA. Q2 is reflected and empty. Returned coincidence[0,0] is correct.",
+    "repaired_fixture": "A polar[0,1],B polar[-1,0], original opposite arcswidth1/3 unchanged",
+    "nonzero_width_proof": "The only nontrivial roots±40/51 are nondyadic. Starting length2, delta1/16 gives exact bracketwidth1/16; Q1 andQ2 uncertain intervals do not overlap. For q=.5+.3cos4pi t+.4sin4pi t, J=integral_0^(1/3)qdt=1/6+(12-3sqrt3)/(80pi)>1/6. The true outer-inner mass gap is2*(1/16)*J>1/48, well above2^-40. Certified arithmetic slack is conservative and does not remove this positive gap."
+  },
+  "authorized_scope_recommendation": {
+    "change": "Only test20 polar fixture to[0,1] and[-1,0]; retain original empty fixture as exact-zero assertion inside the same method.",
+    "keep": "All original default epsilon, manual actual-width, width_bound, global_bound and arithmetic-bound assertions unchanged.",
+    "production_code_change": false,
+    "contract_change": false,
+    "tolerance_change": false,
+    "new_unique_method": false,
+    "execution": "One targeted test20 run at a new immutable repaired source, subtracting initial receipt from the same20CPU/60wall cumulative cap; preserve original failure and new result separately.",
+    "publication": "Parent plans actual source+dualbackup repair checkpoint before targeted execution.",
+    "reserve_authorized": 1,
+    "reserve_transferred_from_old_work": false
+  },
+  "prior_finding": "F01 closed pre-execution remains a separate preserved record; original static15PASS is not rewritten as having anticipated this fixture error.",
+  "reviewer_scientific_runtime_calls": 0,
+  "reviewer_test_runs": 0,
+  "reviewer_CAS_runs": 0,
+  "reviewer_plot_runs": 0,
+  "next_action": "Lower-tier applies parent-authorized minimal repair, parent freezes/publishes/backs up repair source, then executes targetedtest20 once within cumulative cap. Same-pass actual outcome review remains pending."
+}
