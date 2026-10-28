@@ -1,0 +1,31 @@
+{
+  "unit": "HE_NONTHERMAL_SOURCE_CLOSURE_20261029",
+  "stages": [
+    {
+      "id": "R1",
+      "status": "complete_scoped",
+      "evidence": "stages/R1.md",
+      "timestamp_utc": "2026-10-28T22:54:45.140453+00:00",
+      "original_dag_delta": 0,
+      "conditional_extension_dag": {
+        "complete": 0,
+        "total": 2
+      }
+    }
+  ],
+  "central_dag": {
+    "complete": 28,
+    "total": 88,
+    "delta": 0
+  },
+  "inherited_HE_dag": {
+    "complete": 14,
+    "total": 18,
+    "delta": 0
+  },
+  "conditional_extension_dag": {
+    "complete": 0,
+    "total": 2
+  },
+  "scope": "source-only; no physical IVP; production HOLD"
+}
