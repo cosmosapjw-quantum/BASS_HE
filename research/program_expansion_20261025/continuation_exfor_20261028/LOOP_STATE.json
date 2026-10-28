@@ -3,8 +3,8 @@
   "workflow_version": "1.0.0",
   "selected_scope": "R1-R10 and C1-C10",
   "metadata_scope": "PREPUBLICATION_STAGE_SNAPSHOT",
-  "stage": 4,
-  "work_products_completed": 8,
+  "stage": 5,
+  "work_products_completed": 10,
   "work_products_total": 20,
   "stages": [
     {
@@ -45,8 +45,14 @@
     },
     {
       "id": "R5",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "THEORY.md",
+        "src/exfor_aperture.py",
+        "IMPLEMENTATION.md",
+        "STATIC_SYNTAX.json",
+        "review/PREEXEC_REVIEW.json"
+      ]
     },
     {
       "id": "R6",
@@ -111,8 +117,14 @@
     },
     {
       "id": "C5",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "THEORY.md",
+        "src/exfor_aperture.py",
+        "IMPLEMENTATION.md",
+        "STATIC_SYNTAX.json",
+        "review/PREEXEC_REVIEW.json"
+      ]
     },
     {
       "id": "C6",
@@ -147,5 +159,10 @@
   "science_execution": "not_run",
   "global_physical_completion": null,
   "L4": false,
-  "production": "NOT_APPROVED"
+  "production": "NOT_APPROVED",
+  "preexecution_corrections": {
+    "fixed_energy_scale_statement": "corrected by root",
+    "plot_inner_enclosure_label": "corrected by lower-tier",
+    "scientific_repair_debit": 0
+  }
 }
