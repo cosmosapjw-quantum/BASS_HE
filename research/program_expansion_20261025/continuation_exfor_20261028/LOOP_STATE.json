@@ -3,8 +3,8 @@
   "workflow_version": "1.0.0",
   "selected_scope": "R1-R10 and C1-C10",
   "metadata_scope": "PREPUBLICATION_STAGE_SNAPSHOT",
-  "stage": 5,
-  "work_products_completed": 10,
+  "stage": 6,
+  "work_products_completed": 12,
   "work_products_total": 20,
   "stages": [
     {
@@ -56,8 +56,13 @@
     },
     {
       "id": "R6",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "VALIDATION_KO.md",
+        "evidence/validation/initial/TEST_REPORT.json",
+        "evidence/validation/initial/SAVED_PLOT_DATA.json",
+        "evidence/VALIDATION_PROCESS_RESOURCE.json"
+      ]
     },
     {
       "id": "R7",
@@ -128,8 +133,13 @@
     },
     {
       "id": "C6",
-      "status": "pending",
-      "evidence": []
+      "status": "complete",
+      "evidence": [
+        "VALIDATION_KO.md",
+        "evidence/validation/initial/TEST_REPORT.json",
+        "evidence/validation/initial/SAVED_PLOT_DATA.json",
+        "evidence/VALIDATION_PROCESS_RESOURCE.json"
+      ]
     },
     {
       "id": "C7",
@@ -156,7 +166,7 @@
   "central_DAG": "28/88",
   "central_HE_delta": 0,
   "publication_receipts": "external actual ACKs; creation snapshot is not a later delivery statement",
-  "science_execution": "not_run",
+  "science_execution": "PASS_SINGLE_INITIAL_CAMPAIGN",
   "global_physical_completion": null,
   "L4": false,
   "production": "NOT_APPROVED",
