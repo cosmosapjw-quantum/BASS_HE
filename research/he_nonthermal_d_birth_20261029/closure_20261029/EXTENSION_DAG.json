@@ -1,0 +1,13 @@
+{
+  "scope": "two conditional theory-to-code science products; distinct from original physical DAG",
+  "original_HE": "14/18 unchanged",
+  "central": "28/88 unchanged",
+  "nodes": [
+    {"id":"KINETIC_ENERGY_BIN_GAIN","status":"pending","requires":["normalized selected angular law","THEORY.md","independent review","new affected tests"]},
+    {"id":"FINITE_MASS_FULL_LAW_TRACE","status":"pending","requires":["full selected sextic moments","exact remainder/intersection","independent high precision reference","independent code review"]}
+  ],
+  "physical_inputs": ["exclusive event normalization/photon history","full actual angular law and frame/state mapping","named physical fast-D pool and stopping/deposition"],
+  "new_physical_IVPs": 0,
+  "physical_activation": false,
+  "production": "HOLD"
+}
