@@ -1,0 +1,978 @@
+{
+  "schema": "BASS_HE_EXFOR_MULTI_SOURCE_LOW_E_MEASURED_DATA_V1",
+  "date_kst": "2026-10-30",
+  "original_repo": "IAEA-NDS/exfor_master",
+  "original_ref": "939a14d7bba1ddce51975cb5e8711ce96b3b0871",
+  "source": {
+    "M0011": {
+      "sha256": "8d45af5ca4f0df3c000a5cf672cd84e2e8512b65b52b03a912c5080d2bf5d9b2",
+      "git_blob": "20804471fb7584e07ab979ecad6a3e96cba0c6a2",
+      "bytes": 2508
+    },
+    "M0826": {
+      "sha256": "05ea65eaa1a7245f19fd47aa14e91bef3d706fe2a55c6d70a512808ee4e9284c",
+      "git_blob": "95010842754215e98eea8d99eff5f3de0799c666",
+      "bytes": 2396
+    },
+    "M0034": {
+      "sha256": "d1dbfa9e8899d91fa7c3993be6e22fd9d2aad0438084f09faf2906922eb3bd93",
+      "git_blob": "7bf684ee6f924c4a87d651a747bee08de1b8ae2d",
+      "bytes": 6262
+    },
+    "M0475": {
+      "sha256": "b2c1c52931e813dd63fb0e98edfc90088bc2eca497fd9142277e748f0935a82f",
+      "git_blob": "c49433293921dbb012d7f1b0387745732a598efa",
+      "bytes": 3349
+    }
+  },
+  "expected_rows": 75,
+  "actual_counts": {
+    "M0011002": 14,
+    "M0011003": 7,
+    "M0826002": 4,
+    "M0826003": 9,
+    "M0034005": 14,
+    "M0034006": 9,
+    "M0475002": 12,
+    "M0475003": 6
+  },
+  "threshold_gamma_lab_MeV": "23.922758940396704688",
+  "Q_MeV": "23.8464782",
+  "data": {
+    "M0011002": {
+      "source": "M0011",
+      "kind": "total_author",
+      "headers": [
+        "EN",
+        "DATA",
+        "ERR-S"
+      ],
+      "units": [
+        "MEV",
+        "MICRO-B",
+        "MICRO-B"
+      ],
+      "observations": [
+        {
+          "EN": "26.",
+          "DATA": "0.87",
+          "ERR-S": "0.26",
+          "pair_Ksum_MeV_fraction": "10767609/5000000",
+          "cross_section_times_pairK_fraction": "936781983/500000000",
+          "stat_ERRS_times_pairK_fraction": "139978917/250000000"
+        },
+        {
+          "EN": "28.",
+          "DATA": "2.90",
+          "ERR-S": "0.51",
+          "pair_Ksum_MeV_fraction": "20767609/5000000",
+          "cross_section_times_pairK_fraction": "602260661/50000000",
+          "stat_ERRS_times_pairK_fraction": "1059148059/500000000"
+        },
+        {
+          "EN": "30.",
+          "DATA": "4.34",
+          "ERR-S": "0.64",
+          "pair_Ksum_MeV_fraction": "30767609/5000000",
+          "cross_section_times_pairK_fraction": "6676571153/250000000",
+          "stat_ERRS_times_pairK_fraction": "30767609/7812500"
+        },
+        {
+          "EN": "32.",
+          "DATA": "5.11",
+          "ERR-S": "0.71",
+          "pair_Ksum_MeV_fraction": "40767609/5000000",
+          "cross_section_times_pairK_fraction": "20832248199/500000000",
+          "stat_ERRS_times_pairK_fraction": "2894500239/500000000"
+        },
+        {
+          "EN": "34.",
+          "DATA": "4.79",
+          "ERR-S": "0.71",
+          "pair_Ksum_MeV_fraction": "50767609/5000000",
+          "cross_section_times_pairK_fraction": "24317684711/500000000",
+          "stat_ERRS_times_pairK_fraction": "3604500239/500000000"
+        },
+        {
+          "EN": "36.",
+          "DATA": "3.04",
+          "ERR-S": "0.58",
+          "pair_Ksum_MeV_fraction": "60767609/5000000",
+          "cross_section_times_pairK_fraction": "1154584571/31250000",
+          "stat_ERRS_times_pairK_fraction": "1762260661/250000000"
+        },
+        {
+          "EN": "38.",
+          "DATA": "2.16",
+          "ERR-S": "0.50",
+          "pair_Ksum_MeV_fraction": "70767609/5000000",
+          "cross_section_times_pairK_fraction": "1910725443/62500000",
+          "stat_ERRS_times_pairK_fraction": "70767609/10000000"
+        },
+        {
+          "EN": "40.",
+          "DATA": "1.98",
+          "ERR-S": "0.48",
+          "pair_Ksum_MeV_fraction": "80767609/5000000",
+          "cross_section_times_pairK_fraction": "7995993291/250000000",
+          "stat_ERRS_times_pairK_fraction": "242302827/31250000"
+        },
+        {
+          "EN": "42.",
+          "DATA": "1.87",
+          "ERR-S": "0.50",
+          "pair_Ksum_MeV_fraction": "90767609/5000000",
+          "cross_section_times_pairK_fraction": "16973542883/500000000",
+          "stat_ERRS_times_pairK_fraction": "90767609/10000000"
+        },
+        {
+          "EN": "44.",
+          "DATA": "1.05",
+          "ERR-S": "0.37",
+          "pair_Ksum_MeV_fraction": "100767609/5000000",
+          "cross_section_times_pairK_fraction": "2116119789/100000000",
+          "stat_ERRS_times_pairK_fraction": "3728401533/500000000"
+        },
+        {
+          "EN": "47.5",
+          "DATA": "0.97",
+          "ERR-S": "0.24",
+          "pair_Ksum_MeV_fraction": "118267609/5000000",
+          "cross_section_times_pairK_fraction": "11471958073/500000000",
+          "stat_ERRS_times_pairK_fraction": "354802827/62500000"
+        },
+        {
+          "EN": "52.5",
+          "DATA": "0.27",
+          "ERR-S": "0.13",
+          "pair_Ksum_MeV_fraction": "143267609/5000000",
+          "cross_section_times_pairK_fraction": "3868225443/500000000",
+          "stat_ERRS_times_pairK_fraction": "1862478917/500000000"
+        },
+        {
+          "EN": "57.5",
+          "DATA": "0.79",
+          "ERR-S": "0.24",
+          "pair_Ksum_MeV_fraction": "168267609/5000000",
+          "cross_section_times_pairK_fraction": "13293141111/500000000",
+          "stat_ERRS_times_pairK_fraction": "504802827/62500000"
+        },
+        {
+          "EN": "65.",
+          "DATA": "0.34",
+          "ERR-S": "0.11",
+          "pair_Ksum_MeV_fraction": "205767609/5000000",
+          "cross_section_times_pairK_fraction": "3498049353/250000000",
+          "stat_ERRS_times_pairK_fraction": "2263443699/500000000"
+        }
+      ],
+      "source_lineage": "AUTHOR_TABLE"
+    },
+    "M0011003": {
+      "source": "M0011",
+      "kind": "E2_author",
+      "headers": [
+        "EN",
+        "DATA",
+        "ERR-S"
+      ],
+      "units": [
+        "MEV",
+        "MICRO-B",
+        "MICRO-B"
+      ],
+      "observations": [
+        {
+          "EN": "26.",
+          "DATA": "0.83",
+          "ERR-S": "0.40",
+          "pair_Ksum_MeV_fraction": "10767609/5000000",
+          "cross_section_times_pairK_fraction": "893711547/500000000",
+          "stat_ERRS_times_pairK_fraction": "10767609/12500000"
+        },
+        {
+          "EN": "28.",
+          "DATA": "2.35",
+          "ERR-S": "0.45",
+          "pair_Ksum_MeV_fraction": "20767609/5000000",
+          "cross_section_times_pairK_fraction": "976077623/100000000",
+          "stat_ERRS_times_pairK_fraction": "186908481/100000000"
+        },
+        {
+          "EN": "30.",
+          "DATA": "3.43",
+          "ERR-S": "0.65",
+          "pair_Ksum_MeV_fraction": "30767609/5000000",
+          "cross_section_times_pairK_fraction": "10553289887/500000000",
+          "stat_ERRS_times_pairK_fraction": "399978917/100000000"
+        },
+        {
+          "EN": "32.",
+          "DATA": "1.27",
+          "ERR-S": "0.80",
+          "pair_Ksum_MeV_fraction": "40767609/5000000",
+          "cross_section_times_pairK_fraction": "5177486343/500000000",
+          "stat_ERRS_times_pairK_fraction": "40767609/6250000"
+        },
+        {
+          "EN": "34.",
+          "DATA": "1.78",
+          "ERR-S": "0.75",
+          "pair_Ksum_MeV_fraction": "50767609/5000000",
+          "cross_section_times_pairK_fraction": "4518317201/250000000",
+          "stat_ERRS_times_pairK_fraction": "152302827/20000000"
+        },
+        {
+          "EN": "36.",
+          "DATA": "1.02",
+          "ERR-S": "0.50",
+          "pair_Ksum_MeV_fraction": "60767609/5000000",
+          "cross_section_times_pairK_fraction": "3099148059/250000000",
+          "stat_ERRS_times_pairK_fraction": "60767609/10000000"
+        },
+        {
+          "EN": "38.",
+          "DATA": "0.43",
+          "ERR-S": "0.50",
+          "pair_Ksum_MeV_fraction": "70767609/5000000",
+          "cross_section_times_pairK_fraction": "3043007187/500000000",
+          "stat_ERRS_times_pairK_fraction": "70767609/10000000"
+        }
+      ],
+      "source_lineage": "AUTHOR_TABLE"
+    },
+    "M0826002": {
+      "source": "M0826",
+      "kind": "total_energy_bin",
+      "headers": [
+        "EN-MIN",
+        "EN-MAX",
+        "DATA",
+        "ERR-S"
+      ],
+      "units": [
+        "MEV",
+        "MEV",
+        "MICRO-B",
+        "MICRO-B"
+      ],
+      "observations": [
+        {
+          "EN-MIN": "30.",
+          "EN-MAX": "40.",
+          "DATA": "2.94",
+          "ERR-S": ".65",
+          "pair_Ksum_support_MeV_fraction": [
+            "30767609/5000000",
+            "80767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "4522838523/250000000",
+            "11872838523/250000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "EN-MIN": "40.",
+          "EN-MAX": "50.",
+          "DATA": "2.47",
+          "ERR-S": ".64",
+          "pair_Ksum_support_MeV_fraction": [
+            "80767609/5000000",
+            "130767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "19949599423/500000000",
+            "32299599423/500000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "EN-MIN": "50.",
+          "EN-MAX": "60.",
+          "DATA": ".79",
+          "ERR-S": ".39",
+          "pair_Ksum_support_MeV_fraction": [
+            "130767609/5000000",
+            "180767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "10330641111/500000000",
+            "14280641111/500000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "EN-MIN": "60.",
+          "EN-MAX": "75.",
+          "DATA": "1.14",
+          "ERR-S": ".43",
+          "pair_Ksum_support_MeV_fraction": [
+            "180767609/5000000",
+            "255767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "10303753713/250000000",
+            "14578753713/250000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        }
+      ],
+      "source_lineage": "AUTHOR_TABLE_ENERGY_WINDOW"
+    },
+    "M0826003": {
+      "source": "M0826",
+      "kind": "DA_energy_angle_bin_digitized",
+      "headers": [
+        "ANG-CM-MIN",
+        "ANG-CM-MAX",
+        "DATA-CM",
+        "ERR-S"
+      ],
+      "units": [
+        "ADEG",
+        "ADEG",
+        "MU-B/SR",
+        "MU-B/SR"
+      ],
+      "observations": [
+        {
+          "ANG-CM-MIN": "0.0",
+          "ANG-CM-MAX": "20.",
+          "DATA-CM": ".193",
+          "ERR-S": ".193",
+          "pair_Ksum_support_MeV_fraction": [
+            "30767609/5000000",
+            "130767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "5938148537/5000000000",
+            "25238148537/5000000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "ANG-CM-MIN": "20.",
+          "ANG-CM-MAX": "40.",
+          "DATA-CM": ".4",
+          "ERR-S": ".164",
+          "pair_Ksum_support_MeV_fraction": [
+            "30767609/5000000",
+            "130767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "30767609/12500000",
+            "130767609/12500000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "ANG-CM-MIN": "40.",
+          "ANG-CM-MAX": "60.",
+          "DATA-CM": ".483",
+          "ERR-S": ".197",
+          "pair_Ksum_support_MeV_fraction": [
+            "30767609/5000000",
+            "130767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "14860755147/5000000000",
+            "63160755147/5000000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "ANG-CM-MIN": "60.",
+          "ANG-CM-MAX": "80.",
+          "DATA-CM": ".51",
+          "ERR-S": ".136",
+          "pair_Ksum_support_MeV_fraction": [
+            "30767609/5000000",
+            "130767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "1569148059/500000000",
+            "6669148059/500000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "ANG-CM-MIN": "80.",
+          "ANG-CM-MAX": "100.",
+          "DATA-CM": ".338",
+          "ERR-S": ".1",
+          "pair_Ksum_support_MeV_fraction": [
+            "30767609/5000000",
+            "130767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "5199725921/2500000000",
+            "22099725921/2500000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "ANG-CM-MIN": "100.",
+          "ANG-CM-MAX": "120.",
+          "DATA-CM": ".498",
+          "ERR-S": ".135",
+          "pair_Ksum_support_MeV_fraction": [
+            "30767609/5000000",
+            "130767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "7661134641/2500000000",
+            "32561134641/2500000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "ANG-CM-MIN": "120.",
+          "ANG-CM-MAX": "140.",
+          "DATA-CM": ".479",
+          "ERR-S": ".197",
+          "pair_Ksum_support_MeV_fraction": [
+            "30767609/5000000",
+            "130767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "14737684711/5000000000",
+            "62637684711/5000000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "ANG-CM-MIN": "140.",
+          "ANG-CM-MAX": "160.",
+          "DATA-CM": ".399",
+          "ERR-S": ".164",
+          "pair_Ksum_support_MeV_fraction": [
+            "30767609/5000000",
+            "130767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "12276275991/5000000000",
+            "52176275991/5000000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        },
+        {
+          "ANG-CM-MIN": "160.",
+          "ANG-CM-MAX": "180.",
+          "DATA-CM": ".193",
+          "ERR-S": ".193",
+          "pair_Ksum_support_MeV_fraction": [
+            "30767609/5000000",
+            "130767609/5000000"
+          ],
+          "cross_section_Ksum_conditional_support_fraction": [
+            "5938148537/5000000000",
+            "25238148537/5000000000"
+          ],
+          "support_note": "CONDITIONAL same nonnegative underlying energy-window response weighting, not measured central sigmaK"
+        }
+      ],
+      "source_lineage": "CURVE_DIGITIZED_ANGLE_WINDOW",
+      "common": {
+        "EN-MIN": "30.",
+        "EN-MAX": "50."
+      }
+    },
+    "M0034005": {
+      "source": "M0034",
+      "kind": "total_curve_digitized",
+      "headers": [
+        "EN",
+        "DATA",
+        "ERR-S"
+      ],
+      "units": [
+        "MEV",
+        "MICRO-B",
+        "MICRO-B"
+      ],
+      "observations": [
+        {
+          "EN": "25.9",
+          "DATA": "0.98",
+          "ERR-S": "0.33",
+          "pair_Ksum_MeV_fraction": "10267609/5000000",
+          "cross_section_times_pairK_fraction": "503112841/250000000",
+          "stat_ERRS_times_pairK_fraction": "338831097/500000000"
+        },
+        {
+          "EN": "28.0",
+          "DATA": "2.93",
+          "ERR-S": "0.43",
+          "pair_Ksum_MeV_fraction": "20767609/5000000",
+          "cross_section_times_pairK_fraction": "6084909437/500000000",
+          "stat_ERRS_times_pairK_fraction": "893007187/500000000"
+        },
+        {
+          "EN": "30.1",
+          "DATA": "4.40",
+          "ERR-S": "0.50",
+          "pair_Ksum_MeV_fraction": "31267609/5000000",
+          "cross_section_times_pairK_fraction": "343943699/12500000",
+          "stat_ERRS_times_pairK_fraction": "31267609/10000000"
+        },
+        {
+          "EN": "32.2",
+          "DATA": "5.20",
+          "ERR-S": "0.66",
+          "pair_Ksum_MeV_fraction": "41767609/5000000",
+          "cross_section_times_pairK_fraction": "542978917/12500000",
+          "stat_ERRS_times_pairK_fraction": "1378331097/250000000"
+        },
+        {
+          "EN": "34.3",
+          "DATA": "4.93",
+          "ERR-S": "0.63",
+          "pair_Ksum_MeV_fraction": "52267609/5000000",
+          "cross_section_times_pairK_fraction": "25767931237/500000000",
+          "stat_ERRS_times_pairK_fraction": "3292859367/500000000"
+        },
+        {
+          "EN": "36.2",
+          "DATA": "3.09",
+          "ERR-S": "0.46",
+          "pair_Ksum_MeV_fraction": "61767609/5000000",
+          "cross_section_times_pairK_fraction": "19086191181/500000000",
+          "stat_ERRS_times_pairK_fraction": "1420655007/250000000"
+        },
+        {
+          "EN": "38.1",
+          "DATA": "2.16",
+          "ERR-S": "0.40",
+          "pair_Ksum_MeV_fraction": "71267609/5000000",
+          "cross_section_times_pairK_fraction": "1924225443/62500000",
+          "stat_ERRS_times_pairK_fraction": "71267609/12500000"
+        },
+        {
+          "EN": "40.2",
+          "DATA": "1.94",
+          "ERR-S": "0.35",
+          "pair_Ksum_MeV_fraction": "81767609/5000000",
+          "cross_section_times_pairK_fraction": "7931458073/250000000",
+          "stat_ERRS_times_pairK_fraction": "572373263/100000000"
+        },
+        {
+          "EN": "42.2",
+          "DATA": "1.86",
+          "ERR-S": "0.42",
+          "pair_Ksum_MeV_fraction": "91767609/5000000",
+          "cross_section_times_pairK_fraction": "8534387637/250000000",
+          "stat_ERRS_times_pairK_fraction": "1927119789/250000000"
+        },
+        {
+          "EN": "44.1",
+          "DATA": "1.06",
+          "ERR-S": "0.28",
+          "pair_Ksum_MeV_fraction": "101267609/5000000",
+          "cross_section_times_pairK_fraction": "5367183277/250000000",
+          "stat_ERRS_times_pairK_fraction": "708873263/125000000"
+        },
+        {
+          "EN": "48.0",
+          "DATA": "0.93",
+          "ERR-S": "0.20",
+          "pair_Ksum_MeV_fraction": "120767609/5000000",
+          "cross_section_times_pairK_fraction": "11231387637/500000000",
+          "stat_ERRS_times_pairK_fraction": "120767609/25000000"
+        },
+        {
+          "EN": "52.6",
+          "DATA": "0.31",
+          "ERR-S": "0.25",
+          "pair_Ksum_MeV_fraction": "143767609/5000000",
+          "cross_section_times_pairK_fraction": "4456795879/500000000",
+          "stat_ERRS_times_pairK_fraction": "143767609/20000000"
+        },
+        {
+          "EN": "57.5",
+          "DATA": "0.82",
+          "ERR-S": "0.18",
+          "pair_Ksum_MeV_fraction": "168267609/5000000",
+          "cross_section_times_pairK_fraction": "6898971969/250000000",
+          "stat_ERRS_times_pairK_fraction": "1514408481/250000000"
+        },
+        {
+          "EN": "65.0",
+          "DATA": "0.31",
+          "ERR-S": "0.13",
+          "pair_Ksum_MeV_fraction": "205767609/5000000",
+          "cross_section_times_pairK_fraction": "6378795879/500000000",
+          "stat_ERRS_times_pairK_fraction": "2674978917/500000000"
+        }
+      ],
+      "source_lineage": "CURVE_DIGITIZED"
+    },
+    "M0034006": {
+      "source": "M0034",
+      "kind": "E2_curve_digitized",
+      "headers": [
+        "EN",
+        "DATA",
+        "ERR-S"
+      ],
+      "units": [
+        "MEV",
+        "MICRO-B",
+        "MICRO-B"
+      ],
+      "observations": [
+        {
+          "EN": "25.9",
+          "DATA": "0.74",
+          "ERR-S": "0.35",
+          "pair_Ksum_MeV_fraction": "10267609/5000000",
+          "cross_section_times_pairK_fraction": "379901533/250000000",
+          "stat_ERRS_times_pairK_fraction": "71873263/100000000"
+        },
+        {
+          "EN": "28.0",
+          "DATA": "2.31",
+          "ERR-S": "0.40",
+          "pair_Ksum_MeV_fraction": "20767609/5000000",
+          "cross_section_times_pairK_fraction": "4797317679/500000000",
+          "stat_ERRS_times_pairK_fraction": "20767609/12500000"
+        },
+        {
+          "EN": "29.9",
+          "DATA": "3.43",
+          "ERR-S": "0.46",
+          "pair_Ksum_MeV_fraction": "30267609/5000000",
+          "cross_section_times_pairK_fraction": "10381789887/500000000",
+          "stat_ERRS_times_pairK_fraction": "696155007/250000000"
+        },
+        {
+          "EN": "30.3",
+          "DATA": "2.59",
+          "ERR-S": "0.30",
+          "pair_Ksum_MeV_fraction": "32267609/5000000",
+          "cross_section_times_pairK_fraction": "8357310731/500000000",
+          "stat_ERRS_times_pairK_fraction": "96802827/50000000"
+        },
+        {
+          "EN": "32.0",
+          "DATA": "2.72",
+          "ERR-S": "0.52",
+          "pair_Ksum_MeV_fraction": "40767609/5000000",
+          "cross_section_times_pairK_fraction": "693049353/31250000",
+          "stat_ERRS_times_pairK_fraction": "529978917/125000000"
+        },
+        {
+          "EN": "34.1",
+          "DATA": "1.78",
+          "ERR-S": "0.49",
+          "pair_Ksum_MeV_fraction": "51267609/5000000",
+          "cross_section_times_pairK_fraction": "4562817201/250000000",
+          "stat_ERRS_times_pairK_fraction": "2512112841/500000000"
+        },
+        {
+          "EN": "36.0",
+          "DATA": "1.03",
+          "ERR-S": "0.38",
+          "pair_Ksum_MeV_fraction": "60767609/5000000",
+          "cross_section_times_pairK_fraction": "6259063727/500000000",
+          "stat_ERRS_times_pairK_fraction": "1154584571/250000000"
+        },
+        {
+          "EN": "38.0",
+          "DATA": "0.37",
+          "ERR-S": "0.37",
+          "pair_Ksum_MeV_fraction": "70767609/5000000",
+          "cross_section_times_pairK_fraction": "2618401533/500000000",
+          "stat_ERRS_times_pairK_fraction": "2618401533/500000000"
+        },
+        {
+          "EN": "40.1",
+          "DATA": "0.86",
+          "ERR-S": "0.54",
+          "pair_Ksum_MeV_fraction": "81267609/5000000",
+          "cross_section_times_pairK_fraction": "3494507187/250000000",
+          "stat_ERRS_times_pairK_fraction": "2194225443/250000000"
+        }
+      ],
+      "source_lineage": "CURVE_DIGITIZED"
+    },
+    "M0475002": {
+      "source": "M0475",
+      "kind": "DA_author",
+      "headers": [
+        "EN",
+        "ANG-CM",
+        "DATA-CM",
+        "ERR-S"
+      ],
+      "units": [
+        "MEV",
+        "ADEG",
+        "NB/SR",
+        "NB/SR"
+      ],
+      "observations": [
+        {
+          "EN": "213.",
+          "ANG-CM": "46.",
+          "DATA-CM": "0.22",
+          "ERR-S": "0.04",
+          "pair_Ksum_MeV_fraction": "945767609/5000000",
+          "cross_section_times_pairK_fraction": "10403443699/250000000",
+          "stat_ERRS_times_pairK_fraction": "945767609/125000000"
+        },
+        {
+          "EN": "213.",
+          "ANG-CM": "61.",
+          "DATA-CM": "0.35",
+          "ERR-S": "0.09",
+          "pair_Ksum_MeV_fraction": "945767609/5000000",
+          "cross_section_times_pairK_fraction": "6620373263/100000000",
+          "stat_ERRS_times_pairK_fraction": "8511908481/500000000"
+        },
+        {
+          "EN": "213.",
+          "ANG-CM": "73.",
+          "DATA-CM": "0.41",
+          "ERR-S": "0.09",
+          "pair_Ksum_MeV_fraction": "945767609/5000000",
+          "cross_section_times_pairK_fraction": "38776471969/500000000",
+          "stat_ERRS_times_pairK_fraction": "8511908481/500000000"
+        },
+        {
+          "EN": "213.",
+          "ANG-CM": "87.",
+          "DATA-CM": "0.54",
+          "ERR-S": "0.1",
+          "pair_Ksum_MeV_fraction": "945767609/5000000",
+          "cross_section_times_pairK_fraction": "25535725443/250000000",
+          "stat_ERRS_times_pairK_fraction": "945767609/50000000"
+        },
+        {
+          "EN": "258.",
+          "ANG-CM": "46.",
+          "DATA-CM": "0.08",
+          "ERR-S": "0.03",
+          "pair_Ksum_MeV_fraction": "1170767609/5000000",
+          "cross_section_times_pairK_fraction": "1170767609/62500000",
+          "stat_ERRS_times_pairK_fraction": "3512302827/500000000"
+        },
+        {
+          "EN": "258.",
+          "ANG-CM": "61.",
+          "DATA-CM": "0.23",
+          "ERR-S": "0.08",
+          "pair_Ksum_MeV_fraction": "1170767609/5000000",
+          "cross_section_times_pairK_fraction": "26927655007/500000000",
+          "stat_ERRS_times_pairK_fraction": "1170767609/62500000"
+        },
+        {
+          "EN": "258.",
+          "ANG-CM": "73.",
+          "DATA-CM": "0.16",
+          "ERR-S": "0.07",
+          "pair_Ksum_MeV_fraction": "1170767609/5000000",
+          "cross_section_times_pairK_fraction": "1170767609/31250000",
+          "stat_ERRS_times_pairK_fraction": "8195373263/500000000"
+        },
+        {
+          "EN": "258.",
+          "ANG-CM": "87.",
+          "DATA-CM": "0.25",
+          "ERR-S": "0.07",
+          "pair_Ksum_MeV_fraction": "1170767609/5000000",
+          "cross_section_times_pairK_fraction": "1170767609/20000000",
+          "stat_ERRS_times_pairK_fraction": "8195373263/500000000"
+        },
+        {
+          "EN": "330.",
+          "ANG-CM": "46.",
+          "DATA-CM": "0.14",
+          "ERR-S": "0.03",
+          "pair_Ksum_MeV_fraction": "1530767609/5000000",
+          "cross_section_times_pairK_fraction": "10715373263/250000000",
+          "stat_ERRS_times_pairK_fraction": "4592302827/500000000"
+        },
+        {
+          "EN": "330.",
+          "ANG-CM": "61.",
+          "DATA-CM": "0.16",
+          "ERR-S": "0.05",
+          "pair_Ksum_MeV_fraction": "1530767609/5000000",
+          "cross_section_times_pairK_fraction": "1530767609/31250000",
+          "stat_ERRS_times_pairK_fraction": "1530767609/100000000"
+        },
+        {
+          "EN": "330.",
+          "ANG-CM": "73.",
+          "DATA-CM": "0.07",
+          "ERR-S": "0.05",
+          "pair_Ksum_MeV_fraction": "1530767609/5000000",
+          "cross_section_times_pairK_fraction": "10715373263/500000000",
+          "stat_ERRS_times_pairK_fraction": "1530767609/100000000"
+        },
+        {
+          "EN": "330.",
+          "ANG-CM": "87.",
+          "DATA-CM": "0.19",
+          "ERR-S": "0.05",
+          "pair_Ksum_MeV_fraction": "1530767609/5000000",
+          "cross_section_times_pairK_fraction": "29084584571/500000000",
+          "stat_ERRS_times_pairK_fraction": "1530767609/100000000"
+        }
+      ],
+      "source_lineage": "AUTHOR_TABLE"
+    },
+    "M0475003": {
+      "source": "M0475",
+      "kind": "total_author_high",
+      "headers": [
+        "EN",
+        "DATA",
+        "ERR-S"
+      ],
+      "units": [
+        "MEV",
+        "NB",
+        "NB"
+      ],
+      "observations": [
+        {
+          "EN": "201.",
+          "DATA": "2.41",
+          "ERR-S": "0.32",
+          "pair_Ksum_MeV_fraction": "885767609/5000000",
+          "cross_section_times_pairK_fraction": "213469993769/500000000",
+          "stat_ERRS_times_pairK_fraction": "885767609/15625000"
+        },
+        {
+          "EN": "225.",
+          "DATA": "1.29",
+          "ERR-S": "0.23",
+          "pair_Ksum_MeV_fraction": "1005767609/5000000",
+          "cross_section_times_pairK_fraction": "129744021561/500000000",
+          "stat_ERRS_times_pairK_fraction": "23132655007/500000000"
+        },
+        {
+          "EN": "253.",
+          "DATA": "0.92",
+          "ERR-S": "0.20",
+          "pair_Ksum_MeV_fraction": "1145767609/5000000",
+          "cross_section_times_pairK_fraction": "26352655007/125000000",
+          "stat_ERRS_times_pairK_fraction": "1145767609/25000000"
+        },
+        {
+          "EN": "285.",
+          "DATA": "1.04",
+          "ERR-S": "0.20",
+          "pair_Ksum_MeV_fraction": "1305767609/5000000",
+          "cross_section_times_pairK_fraction": "16974978917/62500000",
+          "stat_ERRS_times_pairK_fraction": "1305767609/25000000"
+        },
+        {
+          "EN": "320.",
+          "DATA": "0.61",
+          "ERR-S": "0.16",
+          "pair_Ksum_MeV_fraction": "1480767609/5000000",
+          "cross_section_times_pairK_fraction": "90326824149/500000000",
+          "stat_ERRS_times_pairK_fraction": "1480767609/31250000"
+        },
+        {
+          "EN": "359.",
+          "DATA": "0.55",
+          "ERR-S": "0.15",
+          "pair_Ksum_MeV_fraction": "1675767609/5000000",
+          "cross_section_times_pairK_fraction": "18433443699/100000000",
+          "stat_ERRS_times_pairK_fraction": "5027302827/100000000"
+        }
+      ],
+      "source_lineage": "AUTHOR_TABLE"
+    }
+  },
+  "author_table_E2_fraction": [
+    {
+      "E_MeV": "26.",
+      "total_sigma_microbarn": "0.87",
+      "E2_sigma_microbarn": "0.83",
+      "ratio_exact": "83/87",
+      "status": "source reported multipolar component; covariance unknown"
+    },
+    {
+      "E_MeV": "28.",
+      "total_sigma_microbarn": "2.90",
+      "E2_sigma_microbarn": "2.35",
+      "ratio_exact": "47/58",
+      "status": "source reported multipolar component; covariance unknown"
+    },
+    {
+      "E_MeV": "30.",
+      "total_sigma_microbarn": "4.34",
+      "E2_sigma_microbarn": "3.43",
+      "ratio_exact": "49/62",
+      "status": "source reported multipolar component; covariance unknown"
+    },
+    {
+      "E_MeV": "32.",
+      "total_sigma_microbarn": "5.11",
+      "E2_sigma_microbarn": "1.27",
+      "ratio_exact": "127/511",
+      "status": "source reported multipolar component; covariance unknown"
+    },
+    {
+      "E_MeV": "34.",
+      "total_sigma_microbarn": "4.79",
+      "E2_sigma_microbarn": "1.78",
+      "ratio_exact": "178/479",
+      "status": "source reported multipolar component; covariance unknown"
+    },
+    {
+      "E_MeV": "36.",
+      "total_sigma_microbarn": "3.04",
+      "E2_sigma_microbarn": "1.02",
+      "ratio_exact": "51/152",
+      "status": "source reported multipolar component; covariance unknown"
+    },
+    {
+      "E_MeV": "38.",
+      "total_sigma_microbarn": "2.16",
+      "E2_sigma_microbarn": "0.43",
+      "ratio_exact": "43/216",
+      "status": "source reported multipolar component; covariance unknown"
+    }
+  ],
+  "curvedata_E2_fraction": [
+    {
+      "E_MeV": "25.9",
+      "total_sigma_microbarn": "0.98",
+      "E2_sigma_microbarn": "0.74",
+      "ratio_exact": "37/49",
+      "status": "source reported multipolar component; covariance unknown"
+    },
+    {
+      "E_MeV": "28.0",
+      "total_sigma_microbarn": "2.93",
+      "E2_sigma_microbarn": "2.31",
+      "ratio_exact": "231/293",
+      "status": "source reported multipolar component; covariance unknown"
+    }
+  ],
+  "physical_gates": {
+    "original_central": "28/88",
+    "original_HE": "14/18",
+    "new_data_DAG": "3/4",
+    "physical_delta": 0,
+    "kappa": null,
+    "R_event": null,
+    "heat_rate": null,
+    "physical_activation": false,
+    "L4": false,
+    "production": "HOLD"
+  },
+  "warnings": [
+    "EP,SIG with POLAR 2 means electric E2 multipolarity, not beam polarization.",
+    "M0034 curve digitization and M0011 same-group author data not two independent campaigns without provenance.",
+    "M0826 reported photon-energy intervals and CM angular intervals are not point observations.",
+    "Reported ERR-S is statistical; ERR-SYS in M0826 states beam intensity <=5%, no joint covariance.",
+    "No measured E_gamma 330 MeV total SIG."
+  ]
+}
