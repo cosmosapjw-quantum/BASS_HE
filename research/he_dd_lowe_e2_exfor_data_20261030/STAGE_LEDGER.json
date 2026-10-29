@@ -1,0 +1,282 @@
+{
+  "schema": "BASS_HE_HE_DD_LOW_E_EXFOR_R_C_STAGE_LEDGER_V1",
+  "date_kst": "2026-10-30",
+  "branch": "research/he-dd-lowE-e2-exfor-data-20261030",
+  "parent_PR": 113,
+  "parent_HEAD": "da989b83bb37ee4256a1a80ba9400dfe48559084",
+  "sources": {
+    "root": "IAEA-NDS/exfor_master",
+    "ref": "939a14d7bba1ddce51975cb5e8711ce96b3b0871",
+    "entries": [
+      "M0011",
+      "M0826",
+      "M0034",
+      "M0475"
+    ],
+    "rows": 75
+  },
+  "DAG": {
+    "central": "28/88",
+    "HE_physical": "14/18",
+    "new_source_data": "3/4",
+    "prior_high_E_data": "2/2",
+    "physical_delta": 0
+  },
+  "workflow": {
+    "stage_publications": "20/20",
+    "theory_scoped": "9/10",
+    "coding_scoped": "9/10",
+    "distinct_author_R06": "NOT_RUN",
+    "distinct_author_C09": "NOT_RUN",
+    "native_subagents": "NOT_RUN"
+  },
+  "backup": {
+    "google_doc": {
+      "id": "14NneZCLk0EByTjyH4GN0Njlhkdh5WPnGqy3-mBvnS5Y",
+      "url": "https://docs.google.com/document/d/14NneZCLk0EByTjyH4GN0Njlhkdh5WPnGqy3-mBvnS5Y/edit",
+      "revision": "AHj4eMSxqdaL51ULiZYCvzVGrLXLaTRFX0oneIXo2XqeNPJADCDW67l1btgAt7QAhVM1-JOu8_ldXJAsx9bt1dUs0z7RO9GvFMbWpzzfp_I",
+      "rows": 20,
+      "ack_readback": true
+    },
+    "dropbox_paper": {
+      "id": "id:BSpOijBcT10AAAAAAEHV0Q",
+      "url": "https://www.dropbox.com/scl/fi/ivc40v239dms6r28pleeh/BASS_HE_HE_DD_LOW_E_E2_EXFOR_20261030_STAGE_LOG.paper?rlkey=927h2cin0d84xjhhj79l95bo2&dl=0",
+      "revision": "20",
+      "rows": 20,
+      "ack_readback": true
+    },
+    "whole_binary_drive_uploaded": false,
+    "whole_binary_dropbox_uploaded": false,
+    "whole_binary_two_provider_restored": false
+  },
+  "physics_gates": {
+    "kappa": null,
+    "R_event": null,
+    "heat_rate": null,
+    "physical_activation": false,
+    "L4": false,
+    "production": "HOLD"
+  },
+  "stages": [
+    {
+      "id": "R01",
+      "status": "PASS_SCIENCE_GOAL",
+      "git_commit": "495fe1910128e0a41fac4a12688a86a9d0a661f2",
+      "data_complete": 0,
+      "theory_complete": 1,
+      "coding_complete": 0,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "R01 PASS_SCIENCE_GOAL | Git 495fe1910128e0a41fac4a12688a86a9d0a661f2 | central28/88 HE14/18 data0/4 | R1/10 C0/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "R02",
+      "status": "PASS_PRIMARY_4_SOURCE_LOCK",
+      "git_commit": "d4f75f20762bc7028a76067d059ee211fc608b51",
+      "data_complete": 1,
+      "theory_complete": 2,
+      "coding_complete": 0,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "R02 PASS_PRIMARY_4_SOURCE_LOCK | Git d4f75f20762bc7028a76067d059ee211fc608b51 | central28/88 HE14/18 data1/4 | R2/10 C0/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "R03",
+      "status": "PASS_SOURCE_SEMANTICS",
+      "git_commit": "de4629804fb3e2e9a952e89a346118c3cee3c3de",
+      "data_complete": 1,
+      "theory_complete": 3,
+      "coding_complete": 0,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "R03 PASS_SOURCE_SEMANTICS | Git de4629804fb3e2e9a952e89a346118c3cee3c3de | central28/88 HE14/18 data1/4 | R3/10 C0/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "R04",
+      "status": "PASS_CONSTRUCTIVE_PHYSICS_MAP",
+      "git_commit": "184febeac9db1766c7208ae3ec2cec0834b71054",
+      "data_complete": 1,
+      "theory_complete": 4,
+      "coding_complete": 0,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "R04 PASS_CONSTRUCTIVE_PHYSICS_MAP | Git 184febeac9db1766c7208ae3ec2cec0834b71054 | central28/88 HE14/18 data1/4 | R4/10 C0/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "R05",
+      "status": "PASS_E2_7_EXACT_FRACTIONS",
+      "git_commit": "6714cb1fb6c6e0ede77986be44f6f5a9849df815",
+      "data_complete": 2,
+      "theory_complete": 5,
+      "coding_complete": 0,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "R05 PASS_E2_7_EXACT_FRACTIONS | Git 6714cb1fb6c6e0ede77986be44f6f5a9849df815 | central28/88 HE14/18 data2/4 | R5/10 C0/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "R06",
+      "status": "PARTIAL_SELF_AUDIT_DISTINCT_NOT_RUN",
+      "git_commit": "cfe21666e40ed4e6c87610631ee79fcd8e1586dd",
+      "data_complete": 2,
+      "theory_complete": 5,
+      "coding_complete": 0,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "R06 PARTIAL_SELF_AUDIT_DISTINCT_NOT_RUN | Git cfe21666e40ed4e6c87610631ee79fcd8e1586dd | central28/88 HE14/18 data2/4 | R5/10 C0/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "R07",
+      "status": "PASS_SOURCE_PHYSICAL_CHECKS",
+      "git_commit": "75f42d86d83fae4948b29a026b8af08287628599",
+      "data_complete": 2,
+      "theory_complete": 6,
+      "coding_complete": 0,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "R07 PASS_SOURCE_PHYSICAL_CHECKS | Git 75f42d86d83fae4948b29a026b8af08287628599 | central28/88 HE14/18 data2/4 | R6/10 C0/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "R08",
+      "status": "PASS_CLAIM_SCOPE",
+      "git_commit": "c4081d02a3310e86fbb8f456de99a4b5a5b5bdf6",
+      "data_complete": 2,
+      "theory_complete": 7,
+      "coding_complete": 0,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "R08 PASS_CLAIM_SCOPE | Git c4081d02a3310e86fbb8f456de99a4b5a5b5bdf6 | central28/88 HE14/18 data2/4 | R7/10 C0/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "R09",
+      "status": "PASS_MATH_TO_SOURCE_DATA_CONTRACT",
+      "git_commit": "13810bf93468d73940c2931d9463540055e2d19d",
+      "data_complete": 2,
+      "theory_complete": 8,
+      "coding_complete": 0,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "R09 PASS_MATH_TO_SOURCE_DATA_CONTRACT | Git 13810bf93468d73940c2931d9463540055e2d19d | central28/88 HE14/18 data2/4 | R8/10 C0/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "R10",
+      "status": "PASS_SCOPED_THEORY_CHECKPOINT",
+      "git_commit": "45b1453807eb35174e1e4e641ed6f6b9a40b58c8",
+      "data_complete": 2,
+      "theory_complete": 9,
+      "coding_complete": 0,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "R10 PASS_SCOPED_THEORY_CHECKPOINT | Git 45b1453807eb35174e1e4e641ed6f6b9a40b58c8 | central28/88 HE14/18 data2/4 | R9/10 C0/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "C01",
+      "status": "PASS_TARGET_REAL_MEASUREMENT",
+      "git_commit": "5617d3e7771fe04f818c8a83589aeb7756494b22",
+      "data_complete": 2,
+      "theory_complete": 9,
+      "coding_complete": 1,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "C01 PASS_TARGET_REAL_MEASUREMENT | Git 5617d3e7771fe04f818c8a83589aeb7756494b22 | central28/88 HE14/18 data2/4 | R9/10 C1/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "C02",
+      "status": "PASS_CODE_SOURCE_MAPPING",
+      "git_commit": "1d38a9e5728844c9b2d89c1513482b6b0bf0a0a8",
+      "data_complete": 2,
+      "theory_complete": 9,
+      "coding_complete": 2,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "C02 PASS_CODE_SOURCE_MAPPING | Git 1d38a9e5728844c9b2d89c1513482b6b0bf0a0a8 | central28/88 HE14/18 data2/4 | R9/10 C2/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "C03",
+      "status": "PASS_RATIONAL_AND_BIN_ALGORITHM",
+      "git_commit": "62ae9ad2308a9290825ffb92edb2048ebd8123b9",
+      "data_complete": 2,
+      "theory_complete": 9,
+      "coding_complete": 3,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "C03 PASS_RATIONAL_AND_BIN_ALGORITHM | Git 62ae9ad2308a9290825ffb92edb2048ebd8123b9 | central28/88 HE14/18 data2/4 | R9/10 C3/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "C04",
+      "status": "PASS_BOUNDED_REAL_EXECUTION",
+      "git_commit": "5aa71198c73dc290fbbea7daedd6d20f268810a3",
+      "data_complete": 2,
+      "theory_complete": 9,
+      "coding_complete": 4,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "C04 PASS_BOUNDED_REAL_EXECUTION | Git 5aa71198c73dc290fbbea7daedd6d20f268810a3 | central28/88 HE14/18 data2/4 | R9/10 C4/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "C05",
+      "status": "PASS_EXECUTABLE_SOURCE_DATA",
+      "git_commit": "3844704fbc333a8b9ac14a1e2195b446d6fe8657",
+      "data_complete": 2,
+      "theory_complete": 9,
+      "coding_complete": 5,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "C05 PASS_EXECUTABLE_SOURCE_DATA | Git 3844704fbc333a8b9ac14a1e2195b446d6fe8657 | central28/88 HE14/18 data2/4 | R9/10 C5/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "C06",
+      "status": "PASS_FRESH_35_CPP75_AND_SOURCE_SHA",
+      "git_commit": "bae16fde8c648bbcc63b537f4518e3c8573e8e86",
+      "data_complete": 2,
+      "theory_complete": 9,
+      "coding_complete": 6,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "C06 PASS_FRESH_35_CPP75_AND_SOURCE_SHA | Git bae16fde8c648bbcc63b537f4518e3c8573e8e86 | central28/88 HE14/18 data2/4 | R9/10 C6/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "C07",
+      "status": "PASS_SOURCE_SCOPED_D3_PHYSICS",
+      "git_commit": "31b1fddd02c9fcc5ede66ff652c0a09c585dcf21",
+      "data_complete": 3,
+      "theory_complete": 9,
+      "coding_complete": 7,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "C07 PASS_SOURCE_SCOPED_D3_PHYSICS | Git 31b1fddd02c9fcc5ede66ff652c0a09c585dcf21 | central28/88 HE14/18 data3/4 | R9/10 C7/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "C08",
+      "status": "PASS_FOUR_PHYSICS_FIGURES",
+      "git_commit": "8379ca486969a2d7ca93dfdaaebec7e35713add6",
+      "data_complete": 3,
+      "theory_complete": 9,
+      "coding_complete": 8,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "C08 PASS_FOUR_PHYSICS_FIGURES | Git 8379ca486969a2d7ca93dfdaaebec7e35713add6 | central28/88 HE14/18 data3/4 | R9/10 C8/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "C09",
+      "status": "PARTIAL_SELF_AUDIT_NONAUTHOR_NOT_RUN",
+      "git_commit": "90c0e15eab34a7c5750a7ce258340a02e1602d84",
+      "data_complete": 3,
+      "theory_complete": 9,
+      "coding_complete": 8,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "C09 PARTIAL_SELF_AUDIT_NONAUTHOR_NOT_RUN | Git 90c0e15eab34a7c5750a7ce258340a02e1602d84 | central28/88 HE14/18 data3/4 | R9/10 C8/10 | physical_delta0 HOLD"
+    },
+    {
+      "id": "C10",
+      "status": "PASS_SCOPED_RELEASE_HANDOFF",
+      "git_commit": "5bbf4812f25b31c0d8e6e116d2cd52ac781cca19",
+      "data_complete": 3,
+      "theory_complete": 9,
+      "coding_complete": 9,
+      "drive_ack": true,
+      "dropbox_ack": true,
+      "readback_text": "C10 PASS_SCOPED_RELEASE_HANDOFF | Git 5bbf4812f25b31c0d8e6e116d2cd52ac781cca19 | central28/88 HE14/18 data3/4 | R9/10 C9/10 | physical_delta0 HOLD"
+    }
+  ]
+}
