@@ -1,0 +1,50 @@
+{
+  "schema": "BASS_HE_EXFOR_LOW_E_SOURCE_SHA_LOCK_V1",
+  "source_repo": "IAEA-NDS/exfor_master",
+  "ref": "939a14d7bba1ddce51975cb5e8711ce96b3b0871",
+  "files": {
+    "M0011": {
+      "sha256": "8d45af5ca4f0df3c000a5cf672cd84e2e8512b65b52b03a912c5080d2bf5d9b2",
+      "blob": "20804471fb7584e07ab979ecad6a3e96cba0c6a2",
+      "size": 2508,
+      "subentries": [
+        "M0011002",
+        "M0011003"
+      ],
+      "rows": 21
+    },
+    "M0826": {
+      "sha256": "05ea65eaa1a7245f19fd47aa14e91bef3d706fe2a55c6d70a512808ee4e9284c",
+      "blob": "95010842754215e98eea8d99eff5f3de0799c666",
+      "size": 2396,
+      "subentries": [
+        "M0826002",
+        "M0826003"
+      ],
+      "rows": 13
+    },
+    "M0034": {
+      "sha256": "d1dbfa9e8899d91fa7c3993be6e22fd9d2aad0438084f09faf2906922eb3bd93",
+      "blob": "7bf684ee6f924c4a87d651a747bee08de1b8ae2d",
+      "size": 6262,
+      "subentries": [
+        "M0034005",
+        "M0034006"
+      ],
+      "rows": 23
+    },
+    "M0475": {
+      "sha256": "b2c1c52931e813dd63fb0e98edfc90088bc2eca497fd9142277e748f0935a82f",
+      "blob": "c49433293921dbb012d7f1b0387745732a598efa",
+      "size": 3349,
+      "subentries": [
+        "M0475002",
+        "M0475003"
+      ],
+      "rows": 18
+    }
+  },
+  "total_selected_rows": 75,
+  "original_source_count": 4,
+  "byte_identity_checked_current_turn": true
+}

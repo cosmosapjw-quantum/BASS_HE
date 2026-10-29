@@ -1,0 +1,82 @@
+{
+  "schema": "HE_DD_EXFOR_LOW_E_MEASURED_DATA_SUMMARY",
+  "date": "2026-10-30",
+  "total_source_entries": 4,
+  "total_original_rows": 75,
+  "new_rows": 57,
+  "selected_row_counts": {
+    "M0011002": 14,
+    "M0011003": 7,
+    "M0826002": 4,
+    "M0826003": 9,
+    "M0034005": 14,
+    "M0034006": 9,
+    "M0475002": 12,
+    "M0475003": 6
+  },
+  "E2_author_fraction": [
+    [
+      "26",
+      "83/87"
+    ],
+    [
+      "28",
+      "47/58"
+    ],
+    [
+      "30",
+      "49/62"
+    ],
+    [
+      "32",
+      "127/511"
+    ],
+    [
+      "34",
+      "178/479"
+    ],
+    [
+      "36",
+      "51/152"
+    ],
+    [
+      "38",
+      "43/216"
+    ]
+  ],
+  "source_32MeV": {
+    "M0011_E2_microbarn": "1.27",
+    "M0034_E2_curve_microbarn": "2.72",
+    "independent": false,
+    "physical_discrepancy_asserted": false
+  },
+  "M0826": {
+    "source_SIG_energy_bins": 4,
+    "source_DA_angle_bins": 9,
+    "source_ERR_SYS": "photon intensity <=5% not detector response"
+  },
+  "masses_MeV": {
+    "Q": "23.8464782",
+    "photon_threshold": "23.922758940396704688"
+  },
+  "validation": {
+    "python_targeted": "35/35 PASS",
+    "cpp_source": "75/75 plus 7 E2 exact fraction witnesses PASS",
+    "wolfram": "7 E2 fractions and recoil threshold exact identities",
+    "native_independent_R6_C9": "NOT_RUN"
+  },
+  "DAG": {
+    "central": "28/88",
+    "HE": "14/18",
+    "new_data": "3/4",
+    "physical_delta": 0
+  },
+  "gates": {
+    "kappa": null,
+    "R_event": null,
+    "heat_rate": null,
+    "physical_activation": false,
+    "L4": false,
+    "production": "HOLD"
+  }
+}

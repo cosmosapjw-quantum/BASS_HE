@@ -1,0 +1,61 @@
+{
+  "schema": "HE_DD_LOWE_EXFOR_SOURCE_E2_DATA_DAG_V1",
+  "date_kst": "2026-10-30",
+  "parent": {
+    "repo": "cosmosapjw-quantum/BASS_HE",
+    "PR": 113,
+    "HEAD": "da989b83bb37ee4256a1a80ba9400dfe48559084"
+  },
+  "original_DAG": {
+    "central": "28/88",
+    "HE_physical": "14/18",
+    "highE_source": "2/2",
+    "physical_completed_increment": 0
+  },
+  "new_data_DAG": {
+    "completed": 3,
+    "total": 4,
+    "nodes": [
+      {
+        "id": "D1_FOUR_SOURCE_BYTE_IDENTITY",
+        "status": "COMPLETE_SCOPED",
+        "evidence": "Four exact source Git blob and original SHA256, selected 75 original rows"
+      },
+      {
+        "id": "D2_AUTHOR_E2_AND_PHYSICAL_WEIGHT",
+        "status": "COMPLETE_SCOPED",
+        "depends": [
+          "D1_FOUR_SOURCE_BYTE_IDENTITY"
+        ],
+        "evidence": "Seven exact source author E2 / total ratios, sigma_reported(E)*(E-Q)"
+      },
+      {
+        "id": "D3_BIN_GRAIN_AND_SOURCE_LINEAGE",
+        "status": "COMPLETE_CONDITIONAL_SCOPED",
+        "depends": [
+          "D1_FOUR_SOURCE_BYTE_IDENTITY"
+        ],
+        "evidence": "M0826 energy/angle bins retained, M0011 vs M0034 origin diagnostic not independent"
+      },
+      {
+        "id": "D4_EXPERIMENT_METHOD_E2_EXTRACTION_COVARIANCE",
+        "status": "PENDING_ORIGINAL_PRIMARY_METHODS",
+        "depends": [
+          "D2_AUTHOR_E2_AND_PHYSICAL_WEIGHT",
+          "D3_BIN_GRAIN_AND_SOURCE_LINEAGE"
+        ],
+        "evidence": null
+      }
+    ]
+  },
+  "physical_gates": {
+    "kappa": null,
+    "R_event": null,
+    "heat_rate": null,
+    "D_fast_pool": null,
+    "physical_activation": false,
+    "L4": false,
+    "production": "HOLD"
+  },
+  "next": "Get Arkatov 1972/1978/1980 original E2 extraction/covariance and Arends1976 detector normalization; then real MeV gamma/He target/D_fast stopping and Cv."
+}
