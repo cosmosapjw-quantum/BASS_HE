@@ -9,11 +9,7 @@
   "git_blob": "ddeb728a59905ca669b3408e9338b8d300d5c96e",
   "ref": "Pitts et al. 1989, Phys. Rev. C 39, 1679, DOI 10.1103/PhysRevC.39.1679",
   "source_status": "EXFOR APRVD 2000-04-25; DATA-ERR excludes 4% normalization",
-  "subentries": {
-    "C0621002": "8 capture DA nb/sr",
-    "C0621003": "8 dimensionless vector Ay",
-    "C0621004": "8 dimensionless tensor Ayy"
-  },
+  "subentries": {"C0621002": "8 capture DA nb/sr", "C0621003": "8 dimensionless vector Ay", "C0621004": "8 dimensionless tensor Ayy"},
   "new_original_observations": 24,
   "source_experiment_campaigns": 1,
   "new_original_Rice_measurements": 0,
