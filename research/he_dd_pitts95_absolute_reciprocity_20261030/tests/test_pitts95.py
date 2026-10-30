@@ -18,7 +18,7 @@ class MeasuredPitts95(unittest.TestCase):
  def test_source_tamper_fail_closed(self):
   raw=(ROOT/'sources/C0621.x4').read_bytes()
   with tempfile.TemporaryDirectory() as d:
-   p=Path(d)/'x4';p.write_bytes(raw[:-1]+b'!'
+   p=Path(d)/'x4';p.write_bytes(raw[:-1]+b'!')
    with self.assertRaisesRegex(ValueError,'SOURCE_IDENTITY_MISMATCH'):a.source(p)
  def test_input_numerical_absolute_DA(self):
   _,d=a.source(ROOT/'sources/C0621.x4')
