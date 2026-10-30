@@ -6,7 +6,7 @@ Draft PR121: https://github.com/cosmosapjw-quantum/BASS_HE/pull/121 ; immutable 
 IAEA-NDS/exfor_master@939a14d7bba1ddce51975cb5e8711ce96b3b0871 original snapshot Git byte-identical and locally SHA-locked:
 C0122 Whitton1993 PhysRevC48 2355: SHA256 d8607f894d437ae8113f2c230b7d08b13ff49521c589791200564f1ff1a943c7; Git blob ac638ddbea7795b281ab8494d3e75a62606b3f6d; 29 source rows = 14 REL capture DA +15 dual-component polarization rows. REL means NO-DIM, never absolute.
 A1256 Weller1984 PhysRevLett53 1325: SHA256 456fe18134fec0a25d981148989c9af3faae447f4881dddb6f6f7dd102bfe9e4; Git blob b4dba8ecb9ce5eb44501b9afba4c40db329b826b; 12 source rows = 6 PAR DA curve-digitized partial capture plus 6 TAP tensor polarization. Partial capture is not an unpolarized total.
-Historical forward low E source M0011 git blob 20804471fb7584e07ab979ecad6a3e96b3b0871 ; M0826 blob 95010842754215e98eea8d99eff5f3de0799c666. (M0011 above abbreviated mistakenly; authoritative source M0011 blob 20804471fb7584e07ab979ecad6a3e96b3b0871 is NOT correct; use SOURCE_IDENTITY.json exact field.)
+Historical pre-existing forward low-E donor M0011 original Git blob 20804471fb7584e07ab979ecad6a3e96cba0c6a2; M0826 original Git blob 95010842754215e98eea8d99eff5f3de0799c666; source content is preserved byte-identically and is not counted as new measurement.
 Forty-one source experiment rows contain 56 scalar components; they are not forty-one independent experiments. Original sources kept in sources/*.x4. For exact M0011 authority refer SOURCE_IDENTITY.json.
 
 ## Actual physical outputs
