@@ -1,3 +1,5 @@
+> **2026-11-01 research routing update:** [Adversarial REI IGM process audit](docs/strategy_igm_20261101/AUDIT_KO.md) · [Science-first DAG overlay](docs/strategy_igm_20261101/DAG_OVERLAY.json) · [Prospective development policy](docs/strategy_igm_20261101/DEVELOPMENT_POLICY_KO.md). Historical DR/ARSENY research and source-scoped HE-DD results below remain preserved; neither is the current canonical REI EoR scientific milestone.
+
 # BASS_HE — audited He–H collision research kernels
 
 **독립 논문 기반 재구현이며 저자 ARSENY 코드가 아니다.** 물리 production release가 아닌 audit-led research release `0.2.0`이다.

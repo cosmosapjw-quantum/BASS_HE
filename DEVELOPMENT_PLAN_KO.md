@@ -1,3 +1,5 @@
+> **현재 적용할 연구 우선순위 (2026-11-01):** [IGM 과학 중심 DAG overlay](docs/strategy_igm_20261101/DAG_OVERLAY.json) · [적대적 과정 감사](docs/strategy_igm_20261101/AUDIT_KO.md) · [개발방침](docs/strategy_igm_20261101/DEVELOPMENT_POLICY_KO.md). 아래의 2026-10-12 계획은 이전 상태와 증거를 보존하는 **역사적 기록**이며 자동 다음 작업 지시가 아니다. 새 기본 경로는 REI의 실제 source/opacity 소유권(RUX02/RUX03)을 확인하고 RUX04 물리 시나리오와 동일 입력 FLRW/Bianchi-I 결합 결과를 만드는 것이다. HE-DD는 명시적 독립 연구를 허용하되 중앙 IGM의 필수 선행조건으로 추가하지 않는다. 중앙 28/88 및 HE 14/18은 기존 보고 기준으로 유지하고 canonical +0이다. 새 IVP·merge·force-push·자동 다음 노드는 실행하지 않는다.
+
 # BASS_HE 개발계획 — 실제 Case A event bridge 완료
 
 2026-10-12 · `HERE_RUX03_EVENT_BRIDGE_02`

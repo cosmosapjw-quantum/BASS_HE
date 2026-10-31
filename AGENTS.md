@@ -1,3 +1,9 @@
+## Active REI Bianchi IGM science-first routing (2026-11-01)
+
+For new REI/IGM work, read [the adversarial process audit](docs/strategy_igm_20261101/AUDIT_KO.md), [the prospective unchanged-topology DAG overlay](docs/strategy_igm_20261101/DAG_OVERLAY.json), and [the concise development policy](docs/strategy_igm_20261101/DEVELOPMENT_POLICY_KO.md). This priority overlay supersedes older **next-task suggestions**, NOT their physical evidence, source locks, stages, or repository owners. Default priority is source-backed RUX02/RUX03 -> RUX04 -> same-scenario FLRW/Bianchi-I results; optional RUX12 HE precision/fast-D high-energy gamma requires a material physical consumer for default IGM routing. An explicit user-selected fundamental microphysics task remains allowed. Do not count its PRs, rows or stage documents as new central 88-node physics. No new canonical nodes, new mandatory approval gate, or automatic IVP. Preserve current `NO_MORE_IVPS`, `NO_MERGE`, `NO_FORCE_PUSH`, `PRODUCTION=HOLD`, `AUTO_NEXT_NODE=false`.
+
+---
+
 # Research execution contract
 This is a paper-derived independent implementation, NOT the authors' ARSENY code.
 Preserve source statements separately from derivations, numerical evidence and conjectures.
