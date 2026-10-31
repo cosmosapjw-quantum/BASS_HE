@@ -1,0 +1,67 @@
+BOSCH_HALE_DD_FIT_80.csv 80
+FASTD_DD_REACTION_GREEN_25.csv 25
+FASTD_DD_REACTION_CHANNELS_50.csv 50
+FASTD_DD_REACTION_PROFILE_3225.csv 3225
+FASTD_DD_VALIDATION_25.csv 25
+FASTD_SOURCE_DAUGHTER_WINDOW_LINK_20.csv 20
+MAIN {
+  "rows": 3425,
+  "reference": {
+    "z": 100000.0,
+    "K0_MeV": 1.0,
+    "K_terminal_MeV": 0.001,
+    "D_over_H": 2.547e-05,
+    "D_over_H_sigma": 2.9e-07,
+    "tau_dd_nhe3": 9.283582105672229e-11,
+    "tau_dd_pt": 7.573508955861972e-11,
+    "tau_total_DD": 1.6857091061534202e-10,
+    "P_nhe3": 9.283582104889759e-11,
+    "P_pt": 7.573508955223635e-11,
+    "P_any_BH_DD_fusion": 1.6857091060113396e-10,
+    "P_no_BH_DD_fusion": 0.9999999998314291,
+    "P_sum_residual": 0.0,
+    "K_lab_mean_nhe3_MeV": 0.7071489930843398,
+    "K_lab_mean_pt_MeV": 0.7020518768042685,
+    "Q_nhe3_MeV": 3.26885719000029,
+    "Q_pt_MeV": 4.032664000000295,
+    "expected_binding_release_MeV": 6.088812102993712e-10,
+    "expected_unstopped_K_at_reaction_MeV": 1.1881871913697276e-10,
+    "B_H_domain_CM_KEV": "0.5-4900_nhe3__0.5-5000_pT",
+    "n_D_m3": 4837733545.103761,
+    "source_scope": "PUBLISHED_BOSCH_HALE_X_NRL_MOMENT_CHARACTERISTIC",
+    "nuclear_fit_extrapolation": false,
+    "secondary_deposition": "NOT_COMPUTED"
+  },
+  "validation": {
+    "max_160_320_rel": 5.582017922606336e-07,
+    "max_P_normalization_residual": 0.0,
+    "max_secondary_cm_energy_residual": 0.0
+  }
+}
+PLOTS: 4 PNG and 4 SVG
+INDEPENDENT_SAVED_CSV_AUDIT PASS rows 3425
+test_DH_linear_optical_depth (test_fusion.BoschHaleAndDeuteronTest.test_DH_linear_optical_depth) ... ok
+test_Q_values (test_fusion.BoschHaleAndDeuteronTest.test_Q_values) ... ok
+test_bh_benchmark_10kev (test_fusion.BoschHaleAndDeuteronTest.test_bh_benchmark_10kev) ... ok
+test_bh_benchmark_20kev (test_fusion.BoschHaleAndDeuteronTest.test_bh_benchmark_20kev) ... ok
+test_bh_benchmark_3kev (test_fusion.BoschHaleAndDeuteronTest.test_bh_benchmark_3kev) ... ok
+test_channels_probability (test_fusion.BoschHaleAndDeuteronTest.test_channels_probability) ... ok
+test_energy_ledger_secondary_CM (test_fusion.BoschHaleAndDeuteronTest.test_energy_ledger_secondary_CM) ... ok
+test_high_out_of_range (test_fusion.BoschHaleAndDeuteronTest.test_high_out_of_range) ... ok
+test_inflight_probability (test_fusion.BoschHaleAndDeuteronTest.test_inflight_probability) ... ok
+test_invalid_channel (test_fusion.BoschHaleAndDeuteronTest.test_invalid_channel) ... ok
+test_joint_P_survival (test_fusion.BoschHaleAndDeuteronTest.test_joint_P_survival) ... ok
+test_k_monotonic (test_fusion.BoschHaleAndDeuteronTest.test_k_monotonic) ... ok
+test_low_end_stopping (test_fusion.BoschHaleAndDeuteronTest.test_low_end_stopping) ... ok
+test_low_out_of_range (test_fusion.BoschHaleAndDeuteronTest.test_low_out_of_range) ... ok
+test_no_strong_heating_claim (test_fusion.BoschHaleAndDeuteronTest.test_no_strong_heating_claim) ... ok
+test_no_zero_yield (test_fusion.BoschHaleAndDeuteronTest.test_no_zero_yield) ... ok
+test_nuclear_source_only_positive (test_fusion.BoschHaleAndDeuteronTest.test_nuclear_source_only_positive) ... ok
+test_profile_source_domain (test_fusion.BoschHaleAndDeuteronTest.test_profile_source_domain) ... ok
+test_quadrature_agrees (test_fusion.BoschHaleAndDeuteronTest.test_quadrature_agrees) ... ok
+test_reject_outside_high_fit (test_fusion.BoschHaleAndDeuteronTest.test_reject_outside_high_fit) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.100s
+
+OK

@@ -1,0 +1,17 @@
+{
+  "BASS_HE_PARENT_PR": 139,
+  "PARENT_COMMIT": "7fa301e661e339e489ee447a6244892ea52cc3c2",
+  "PARENT_FASTD_SHA256": "e450e9cfb58abd834f10dd0ef79f12547cdb78e40ea685dd128fb4526f6e2979",
+  "PARENT_ZIP_SHA256": "863cb22ed3eee0cc063c7efe0f5f1d3b3185ff3bf49e13283c01412b0d5b416b",
+  "ACROPOLIS_V1.3.1_USER_ZIP_SHA256": "1d933f8d53c614d379166ada9319b4188ec45c0b74e065ba790034da41f0d9e1",
+  "ACROPOLIS_OBS": "pdg2024 D/H = (2.547 ± 0.029)e-5",
+  "BOSCH_HALE_ORIGINAL": "https://doi.org/10.1088/0029-5515/32/4/I07",
+  "BOSCH_HALE_1993_ERRATUM": "https://doi.org/10.1088/0029-5515/33/12/513",
+  "PUBLIC_TRANSCRIPTION": "https://www-internal.psfc.mit.edu/research/MFEFormulary/files/MFEFormulary.pdf#page=79",
+  "ORIGINAL_NRL": "https://www.nrl.navy.mil/Portals/38/PDF%20Files/NRL_Plasma_Formulary_2023.pdf",
+  "CANONICAL_DAG": {
+    "central": "28/88",
+    "he_physical": "14/18",
+    "delta": 0
+  }
+}

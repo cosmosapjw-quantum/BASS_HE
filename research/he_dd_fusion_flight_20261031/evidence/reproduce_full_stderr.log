@@ -1,0 +1,25 @@
+test_DH_linear_optical_depth (test_fusion.BoschHaleAndDeuteronTest.test_DH_linear_optical_depth) ... ok
+test_Q_values (test_fusion.BoschHaleAndDeuteronTest.test_Q_values) ... ok
+test_bh_benchmark_10kev (test_fusion.BoschHaleAndDeuteronTest.test_bh_benchmark_10kev) ... ok
+test_bh_benchmark_20kev (test_fusion.BoschHaleAndDeuteronTest.test_bh_benchmark_20kev) ... ok
+test_bh_benchmark_3kev (test_fusion.BoschHaleAndDeuteronTest.test_bh_benchmark_3kev) ... ok
+test_channels_probability (test_fusion.BoschHaleAndDeuteronTest.test_channels_probability) ... ok
+test_energy_ledger_secondary_CM (test_fusion.BoschHaleAndDeuteronTest.test_energy_ledger_secondary_CM) ... ok
+test_high_out_of_range (test_fusion.BoschHaleAndDeuteronTest.test_high_out_of_range) ... ok
+test_inflight_probability (test_fusion.BoschHaleAndDeuteronTest.test_inflight_probability) ... ok
+test_invalid_channel (test_fusion.BoschHaleAndDeuteronTest.test_invalid_channel) ... ok
+test_joint_P_survival (test_fusion.BoschHaleAndDeuteronTest.test_joint_P_survival) ... ok
+test_k_monotonic (test_fusion.BoschHaleAndDeuteronTest.test_k_monotonic) ... ok
+test_low_end_stopping (test_fusion.BoschHaleAndDeuteronTest.test_low_end_stopping) ... ok
+test_low_out_of_range (test_fusion.BoschHaleAndDeuteronTest.test_low_out_of_range) ... ok
+test_no_strong_heating_claim (test_fusion.BoschHaleAndDeuteronTest.test_no_strong_heating_claim) ... ok
+test_no_zero_yield (test_fusion.BoschHaleAndDeuteronTest.test_no_zero_yield) ... ok
+test_nuclear_source_only_positive (test_fusion.BoschHaleAndDeuteronTest.test_nuclear_source_only_positive) ... ok
+test_profile_source_domain (test_fusion.BoschHaleAndDeuteronTest.test_profile_source_domain) ... ok
+test_quadrature_agrees (test_fusion.BoschHaleAndDeuteronTest.test_quadrature_agrees) ... ok
+test_reject_outside_high_fit (test_fusion.BoschHaleAndDeuteronTest.test_reject_outside_high_fit) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.105s
+
+OK
