@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[2]
 PARENT="research/rei_igm_p19_native_receiver_20261101/"
 THIS="research/rei_rux04_p19_native_source_cone_20261101/"
 INPUT_SHAS={
- PARENT+"results/SCIENCE_RESULTS.json":"75746de21af11ffd639e9ba11db051dabf84ababb8a1e7086b124ee8d873f96d",
+ PARENT+"results/SCIENCE_RESULTS.json":"gitblob:c9a088215c48165aa86f07c6470e93b1d2615141",
  PARENT+"results/ORIGINAL_FOUR_GROUP_PHOTON_ENERGY.csv":"76211946a47ce05c2460422d043317f71db230fa39aae28469193dddef1e9c9f",
  PARENT+"inputs/REI_original_heating_moment_owner.csv":"c4764a24083e86748ff52b18d432577c0d60be267d7e73092565ce0c9451b804"}
 STATE_SHA="cc031a04f5b7b13ccb9ffddf95ec0ced4a9274a9ab999a9e7e3508a5161edb01"
@@ -21,7 +21,8 @@ EV=F("1.602176634e-12")
 def load(root):
  root=Path(root)
  for f,digest in INPUT_SHAS.items():
-  if hashlib.sha256((root/f).read_bytes()).hexdigest()!=digest:raise ValueError("BASS_HE source pin mismatch "+f)
+  data=(root/f).read_bytes(); got=("gitblob:"+hashlib.sha1(f"blob {len(data)}\0".encode()+data).hexdigest()) if digest.startswith("gitblob:") else hashlib.sha256(data).hexdigest()
+  if got!=digest:raise ValueError("BASS_HE source pin mismatch "+f)
  sci=json.loads((root/(PARENT+"results/SCIENCE_RESULTS.json")).read_text())
  src=json.loads((root/(THIS+"source/REI_FOUR_GROUP_SOURCE_SHARES.json")).read_text())
  if src["origin_rei_artifact_sha256"]!=ARTIFACT_SHA or src["original_state_array_sha256"]!=STATE_SHA:raise ValueError("REI source owner drift")
