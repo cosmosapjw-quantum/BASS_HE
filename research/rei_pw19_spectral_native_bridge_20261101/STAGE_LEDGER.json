@@ -141,7 +141,7 @@
     {
       "stage": "R10",
       "track": "theory",
-      "status": "SCIENTIFICALLY_READY_PUBLICATION_PENDING",
+      "status": "COMPLETED_SCOPED_GITHUB_DRAFT_PUBLISHED_CI_NOT_RUN",
       "evidence": "Local evidence and handoff; single scoped research PR; remote CI and cloud provider acknowledgements must be read back",
       "dag": {
         "central": "28/88_REPORTED",
@@ -281,7 +281,7 @@
     {
       "stage": "C10",
       "track": "coding",
-      "status": "SCIENTIFICALLY_READY_PUBLICATION_PENDING",
+      "status": "COMPLETED_SCOPED_GITHUB_DRAFT_PUBLISHED_CI_NOT_RUN",
       "evidence": "Draft publication + content archive and resumable next-thread handoff; no claim of GitHub CI/cloud backup before ACK",
       "dag": {
         "central": "28/88_REPORTED",
