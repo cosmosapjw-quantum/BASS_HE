@@ -21,6 +21,19 @@ def nonnegative_outer(value):
 def overlapping(left,right):
     return bool(np.all(left.lo <= right.hi) and np.all(left.hi >= right.lo))
 
+def escaped_photon_energy_matches(photon_count, native_energy, rtol=6e-12):
+    """Compare the same escaped source in photons and erg after conversion.
+
+    This checks source representation, not a physical acceptance tolerance.
+    The original f interval includes 1, so both lower bounds can be zero;
+    interval intersection alone then cannot detect a wrong energy scale.
+    Use the existing independent audit's 6e-12 representation tolerance.
+    """
+    photons = nonnegative_outer(photon_count)
+    energy = nonnegative_outer(native_energy)
+    return all(np.allclose(n * E_ALPHA_EV * EV_ERG, e, rtol=rtol, atol=0.0)
+               for n, e in zip(photons, energy))
+
 class OriginalEventObserver:
     def __init__(self, original_module):
         self.m=original_module

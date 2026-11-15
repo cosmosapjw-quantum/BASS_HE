@@ -7,7 +7,8 @@ from __future__ import annotations
 import argparse,csv,gzip,hashlib,importlib.util,io,json,math,subprocess,sys
 from pathlib import Path
 import numpy as np
-from capture_original_local_ots import OriginalEventObserver, nonnegative_outer
+from capture_original_local_ots import (OriginalEventObserver, nonnegative_outer,
+                                        escaped_photon_energy_matches)
 
 N=46080
 TICKS=131072
@@ -192,11 +193,11 @@ def execute(repo,private,primary161,he151source,out):
    nsum_local = qsource["absorbed_H"]+qsource["absorbed_HeI"]+qsource["escaped"]
    if not (np.all(qsource["emitted"].lo<=nsum_local.hi) and np.all(qsource["emitted"].hi>=nsum_local.lo)):
     raise ArithmeticError("LYA_PHOTON_COUNT_SOURCE_INTERVAL_NONINTERSECTION")
-   for x,y,name in (
-       ("photoheat","heat_original","SOURCE_HEAT"),
-       ("escaped","escape_original","SOURCE_ESCAPE")):
+   for x,y,name in (("photoheat","heat_original","SOURCE_HEAT"),):
     if not (np.all(qsource[x].lo<=qsource[y].hi) and np.all(qsource[x].hi>=qsource[y].lo)):
      raise ArithmeticError("ORIGINAL_OTS_ENERGY_SOURCE_INTERVAL_NONINTERSECTION_"+name)
+   if not escaped_photon_energy_matches(qsource["escaped"],qsource["escape_original"]):
+    raise ArithmeticError("ORIGINAL_OTS_ESCAPED_PHOTON_ENERGY_REPRESENTATION_MISMATCH")
    if not (np.all(qsource["escape_original"].lo<=radiation.hi)
        and np.all(qsource["escape_original"].hi>=radiation.lo)):
     raise ArithmeticError("ESCAPED_SOURCE_RECOMPUTATION_NONINTERSECTION")
